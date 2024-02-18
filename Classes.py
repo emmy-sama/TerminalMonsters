@@ -36,7 +36,7 @@ class Pokemon:
         self.speed = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSpeed")) * self.level)) + 5)
                                 * natures[self.nature].get("Speed", 1))
 
-    def __init__(self, index, owner, level=1):
+    def __init__(self, index, owner, level=5):
         self.owner = owner
         self.level = level
         self.index = index
@@ -52,6 +52,20 @@ class Pokemon:
         self.calc_stats()
         self.total_exp = pow(self.level, 3)
         self.exp_needed = pow(self.level + 1, 3)
+        self.evolvl = pokedex[index].get("EvoLvl", None)
+        self.evo = pokedex[index].get("Evo", None)
+
+    def evolve(self):
+        self.index = self.evo
+        self.species = pokedex[self.index].get("Species")
+        self.type_one = pokedex[self.index].get("Typeone")
+        self.type_two = pokedex[self.index].get("Typetwo")
+        self.ability_assign(self.index)
+        self.height = pokedex[self.index].get("Height")
+        self.weight = pokedex[self.index].get("Weight")
+        self.calc_stats()
+        self.evolvl = pokedex[self.index].get("EvoLvl", None)
+        self.evo = pokedex[self.index].get("Evo", None)
 
     def getexp(self, amount):
         self.total_exp += amount
@@ -59,6 +73,8 @@ class Pokemon:
             self.level += 1
             self.calc_stats()
             self.exp_needed = pow(self.level + 1, 3)
+            if self.level >= self.evolvl:
+                self.evolve()
 
     def get_stats(self):
         print(self.hp, self.attack, self.defense, self.sp_attack, self.sp_defense, self.speed)
@@ -66,21 +82,13 @@ class Pokemon:
 
 bulb = Pokemon(0, "player")
 
+print(bulb.species)
 print(bulb.level)
 print(bulb.total_exp)
 print(bulb.exp_needed)
 bulb.get_stats()
-bulb.getexp(8)
-print(bulb.level)
-print(bulb.total_exp)
-print(bulb.exp_needed)
-bulb.get_stats()
-bulb.getexp(25)
-print(bulb.level)
-print(bulb.total_exp)
-print(bulb.exp_needed)
-bulb.get_stats()
-bulb.getexp(100)
+bulb.getexp(4096)
+print(bulb.species)
 print(bulb.level)
 print(bulb.total_exp)
 print(bulb.exp_needed)
