@@ -1,4 +1,4 @@
-from Pokemons import pokedex
+from Pokemons import *
 import random
 import math
 
@@ -26,13 +26,18 @@ class Player:
 class Pokemon:
     def calc_stats(self):
         self.hp = math.floor(0.01 * ((2 * pokedex[self.index].get("bHP")) * self.level)) + self.level + 10
-        self.attack = math.floor(0.01 * ((2 * pokedex[self.index].get("bAttack")) * self.level)) + 5
-        self.defense = math.floor(0.01 * ((2 * pokedex[self.index].get("bDefense")) * self.level)) + 5
-        self.sp_attack = math.floor(0.01 * ((2 * pokedex[self.index].get("bSp.Attack")) * self.level)) + 5
-        self.sp_defense = math.floor(0.01 * ((2 * pokedex[self.index].get("bSp.Defense")) * self.level)) + 5
-        self.speed = math.floor(0.01 * ((2 * pokedex[self.index].get("bSpeed")) * self.level)) + 5
+        self.attack = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bAttack")) * self.level)) + 5)
+                                 * natures[self.nature].get("Attack", 1))
+        self.defense = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bDefense")) * self.level)) + 5)
+                                  * natures[self.nature].get("Defense", 1))
+        self.sp_attack = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSp.Attack")) * self.level)) + 5)
+                                    * natures[self.nature].get("Sp.Attack", 1))
+        self.sp_defense = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSp.Defense")) * self.level)) + 5)
+                                     * natures[self.nature].get("Sp.Defense", 1))
+        self.speed = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSpeed")) * self.level)) + 5)
+                                * natures[self.nature].get("Speed", 1))
 
-    def __init__(self, index, owner, level=1):
+    def __init__(self, index, owner, level=5):
         self.owner = owner
         self.level = level
         self.index = index
@@ -44,6 +49,7 @@ class Pokemon:
         self.catch_rate = pokedex[index].get("Catch rate")
         self.height = pokedex[index].get("Height")
         self.weight = pokedex[index].get("Weight")
+        self.nature = random.randint(0, 24)
         self.calc_stats()
 
     def get_stats(self):
@@ -55,4 +61,5 @@ bulb = Pokemon(0, "player")
 
 print(bulb.gender)
 print(bulb.ability)
+print(bulb.nature)
 bulb.get_stats()
