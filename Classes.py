@@ -11,10 +11,6 @@ def gender(percent):
         return "Female"
 
 
-def ability_assign(index):
-    return random.choice(pokedex[index].get("Abilities"))
-
-
 class Player:
     def __init__(self, name, pronouns, starter, team):
         self.name = name
@@ -24,6 +20,9 @@ class Player:
 
 
 class Pokemon:
+    def ability_assign(self, index):
+        self.ability = random.choice(pokedex[index].get("Abilities"))
+
     def calc_stats(self):
         self.hp = math.floor(0.01 * ((2 * pokedex[self.index].get("bHP")) * self.level)) + self.level + 10
         self.attack = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bAttack")) * self.level)) + 5)
@@ -37,20 +36,29 @@ class Pokemon:
         self.speed = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSpeed")) * self.level)) + 5)
                                 * natures[self.nature].get("Speed", 1))
 
-    def __init__(self, index, owner, level=5):
+    def __init__(self, index, owner, level=1):
         self.owner = owner
         self.level = level
         self.index = index
         self.species = pokedex[index].get("Species")
         self.type_one = pokedex[index].get("Typeone")
         self.type_two = pokedex[index].get("Typetwo")
-        self.ability = ability_assign(index)
+        self.ability_assign(index)
         self.gender = gender(pokedex[index].get("Gender Ratio"))
         self.catch_rate = pokedex[index].get("Catch rate")
         self.height = pokedex[index].get("Height")
         self.weight = pokedex[index].get("Weight")
         self.nature = random.randint(0, 24)
         self.calc_stats()
+        self.total_exp = pow(self.level, 3)
+        self.exp_needed = pow(self.level + 1, 3)
+
+    def getexp(self, amount):
+        self.total_exp += amount
+        while self.total_exp >= self.exp_needed:
+            self.level += 1
+            self.calc_stats()
+            self.exp_needed = pow(self.level + 1, 3)
 
     def get_stats(self):
         print(self.hp, self.attack, self.defense, self.sp_attack, self.sp_defense, self.speed)
@@ -58,8 +66,22 @@ class Pokemon:
 
 bulb = Pokemon(0, "player")
 
-
-print(bulb.gender)
-print(bulb.ability)
-print(bulb.nature)
+print(bulb.level)
+print(bulb.total_exp)
+print(bulb.exp_needed)
+bulb.get_stats()
+bulb.getexp(8)
+print(bulb.level)
+print(bulb.total_exp)
+print(bulb.exp_needed)
+bulb.get_stats()
+bulb.getexp(25)
+print(bulb.level)
+print(bulb.total_exp)
+print(bulb.exp_needed)
+bulb.get_stats()
+bulb.getexp(100)
+print(bulb.level)
+print(bulb.total_exp)
+print(bulb.exp_needed)
 bulb.get_stats()
