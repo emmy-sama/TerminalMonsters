@@ -54,6 +54,9 @@ class Pokemon:
         self.exp_needed = pow(self.level + 1, 3)
         self.evolvl = pokedex[index].get("EvoLvl", None)
         self.evo = pokedex[index].get("Evo", None)
+        self.chp = self.hp
+        self.burn = False
+        self.moves = ["Tackle", "growl", "", ""]
 
     def evolve(self):
         self.index = self.evo
@@ -78,18 +81,3 @@ class Pokemon:
 
     def get_stats(self):
         print(self.hp, self.attack, self.defense, self.sp_attack, self.sp_defense, self.speed)
-
-
-bulb = Pokemon(0, "player")
-
-print(bulb.species)
-print(bulb.level)
-print(bulb.total_exp)
-print(bulb.exp_needed)
-bulb.get_stats()
-bulb.getexp(4096)
-print(bulb.species)
-print(bulb.level)
-print(bulb.total_exp)
-print(bulb.exp_needed)
-bulb.get_stats()

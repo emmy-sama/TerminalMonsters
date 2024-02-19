@@ -11,6 +11,7 @@ def openingcls():
     art.tprint("Welcome To Terminal Monsters")
     print("intro text goes here")
 
+
 openingcls()
 player_name = input("\nPlease enter your name: ")
 if player_name == "":
