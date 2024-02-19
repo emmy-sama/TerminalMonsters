@@ -19,10 +19,10 @@ natures = \
   {"Sp.Attack": 1.10, "Sp.Defense": 0.90}, {"Sp.Defense": 1.10, "Attack": 0.90}, {"Sp.Defense": 1.10, "Defense": 0.90},
   {"Sp.Defense": 1.10, "Speed": 0.90}, {"Sp.Defense": 1.10, "Sp.Attack": 0.90}, {}]
 
-moves = {"Tackle": {"Type": "Normal", "DmgType": "Physical", "PP": 35, "Dmg": 35, "Acc": 95, "DoesDmg": True,
-                    "ChangesStats": False}
-}
+moves = {"Tackle": {"Name": "Tackle", "Type": "Normal", "DmgType": "Physical", "PP": 35, "Dmg": 35, "Acc": 95,
+                    "DoesDmg": True, "ChangesStats": False},
+         }
 
-type_effectiveness = {"Normal": {"Rock": 0.5, "Ghost": 0, "Steel": 0.5}
+type_effectiveness = {"Normal": {"Rock": 0.5, "Ghost": 0, "Steel": 0.5},
 
 }

@@ -56,7 +56,7 @@ class Pokemon:
         self.evo = pokedex[index].get("Evo", None)
         self.chp = self.hp
         self.burn = False
-        self.moves = ["Tackle", "growl", "", ""]
+        self.moves = ["Tackle"]
 
     def evolve(self):
         self.index = self.evo
@@ -80,4 +80,4 @@ class Pokemon:
                 self.evolve()
 
     def get_stats(self):
-        print(self.hp, self.attack, self.defense, self.sp_attack, self.sp_defense, self.speed)
+        return self.hp, self.attack, self.defense, self.sp_attack, self.sp_defense, self.speed
