@@ -79,5 +79,19 @@ class Pokemon:
             if self.level >= self.evolvl:
                 self.evolve()
 
-    def get_stats(self):
-        return self.hp, self.attack, self.defense, self.sp_attack, self.sp_defense, self.speed
+    def check_poke_basic(self):
+        print(self.species, self.gender, f"Level: {self.level}", f"Hp: {self.chp}/{self.hp}")
+
+    def check_poke_advanced(self):
+        print(self.species, self.gender, f"Level: {self.level}", f"Hp: {self.chp}/{self.hp}",
+              f" Ability: {self.ability}", "\n", f"Attack: {self.attack}", f"Defense: {self.defense}",
+              f"Sp.Attack: {self.sp_attack}", f"Sp.Defense: {self.sp_defense}", f"Speed: {self.speed}",)
+
+    def check_poke_moves(self):
+        for m in self.moves:
+            print(f"{moves.get(m).get("Name")}:", f"{moves.get(m).get("Type")} Type,", f"{moves.get(m).get("DmgType")} Damage,",
+                  f"Power: {moves.get(m).get("Dmg")}", f"Accuracy: {moves.get(m).get("Acc")}", f"PP: {moves.get(m).get("PP")}"
+            )
+
+
+

@@ -9,51 +9,237 @@ light_screen = False
 
 def battle(player, opponent):
     turn = 0
+    player_active = player.team[0]
+    opponent_active = opponent.team[0]
     while True:
         turn += 1
-        print(f"Turn:{turn}")
-        print(f"Your HP: {player.team[0].hp}")
-        print(f"Opponent's HP: {opponent.team[0].hp}")
-        for m in player.team[0].moves:
-            print(f"{player.team[0].moves.index(m) + 1}.{m}")
-        p_move = moves.get((player.team[0]).moves[int(input("Please Select a move(The number next to move): ")) - 1])
-        ai_move = moves.get((random.choice(opponent.team[0].moves)))
-        if player.team[0].speed > opponent.team[0].speed:
-            first_trainer = player.team[0]
-            first_move = p_move
-            second_trainer = opponent.team[0]
-            second_move = ai_move
-        elif opponent.team[0].speed < player.team[0].speed:
-            first_trainer = opponent.team[0]
-            first_move = ai_move
-            second_trainer = player.team[0]
-            second_move = p_move
-        else:
-            speed_tie = random.randint(0, 1)
-            if speed_tie == 0:
-                first_trainer = player.team[0]
+        print(f"Turn: {turn}")
+        print(f"Your HP: {player_active.chp}/{player_active.hp}")
+        print(f"Opponent's HP: {opponent_active.chp}/{opponent_active.hp}")
+        finished = None
+        p_move = None
+        ai_move = None
+        ai_move = moves.get((random.choice(opponent_active.moves)))
+        while not finished:
+            player_action = int(input("What will you do? 1.Fight 2.Check/Swap Pokemon 3.Open Bag: "))
+            if player_action == 3:
+                print("Will add items later")
+            if player_action == 2:
+                while not finished:
+                    for pokes in player.team:
+                        print(f"{player.team.index(pokes) + 1}.", end=""), pokes.check_poke_basic()
+                    print("7.Back")
+                    x = int(input("Please Select a pokemon to view details of or swap in: "))
+                    if x == 7:
+                        break
+                    while not finished:
+                        player.team[x - 1].check_poke_advanced()
+                        y = int(input("1.Swap 2.Check Moves 3.Back: "))
+                        if y == 3:
+                            break
+                        if y == 2:
+                            while not finished:
+                                player.team[x - 1].check_poke_moves()
+                                z = int(input("1.Swap 2.Back"))
+                                if z == 1:
+                                    player_active = player.team[x - 1]
+                                    print(f"{player.name} sent out {player_active.species}")
+                                    finished = True
+                                if z == 2:
+                                    break
+                        if y == 1:
+                            player_active = player.team[x - 1]
+                            print(f"{player.name} sent out {player_active.species}")
+                            finished = True
+                            break
+            if player_action == 1:
+                for m in player_active.moves:
+                    print(f"{player_active.moves.index(m) + 1}.{m}")
+                print("5.Back")
+                x = int(input("Please Select a move: "))
+                if x == 5:
+                    pass
+                else:
+                    p_move = moves.get(player_active.moves[int(x) - 1])
+                    finished = True
+        if p_move is not None and ai_move is not None:
+            if player_active.speed > opponent_active.speed:
+                first_trainer = player_active
                 first_move = p_move
-                second_trainer = opponent.team[0]
+                second_trainer = opponent_active
                 second_move = ai_move
-            else:
-                first_trainer = opponent.team[0]
+            elif opponent_active.speed < player_active.speed:
+                first_trainer = opponent_active
                 first_move = ai_move
-                second_trainer = player.team[0]
+                second_trainer = player_active
                 second_move = p_move
-        action(first_trainer, second_trainer, first_move)
-        if player.team[0].hp <= 0:
-            player.team.pop(0)
-            if not player.team:
-                break
-        if opponent.team[0].hp <= 0:
-            opponent.team.pop(0)
-            if not opponent.team:
-                break
-        action(second_trainer, first_trainer, second_move)
-    if not opponent.team:
-        print(f"{player.name} Wins!")
-    else:
-        print(f"{opponent.name} Wins!")
+            else:
+                speed_tie = random.randint(0, 1)
+                if speed_tie == 0:
+                    first_trainer = player_active
+                    first_move = p_move
+                    second_trainer = opponent_active
+                    second_move = ai_move
+                else:
+                    first_trainer = opponent_active
+                    first_move = ai_move
+                    second_trainer = player_active
+                    second_move = p_move
+            if first_trainer.chp > 0:
+                action(first_trainer, second_trainer, first_move)
+            if player_active.chp <= 0:
+                player.team.remove(player_active)
+                if not player.team:
+                    print(f"{opponent.name} Wins!")
+                    break
+                player_active = None
+                while player_active is None:
+                    for pokes in player.team:
+                        print(f"{player.team.index(pokes) + 1}.", end=""), pokes.check_poke_basic()
+                    x = int(input("Please Select a pokemon to view details of or swap in: "))
+                    while True:
+                        player.team[x - 1].check_poke_advanced()
+                        y = int(input("1.Swap 2.Check Moves 3.Back: "))
+                        if y == 3:
+                            break
+                        if y == 2:
+                            while True:
+                                player.team[x - 1].check_poke_moves()
+                                z = int(input("1.Swap 2.Back"))
+                                if z == 1:
+                                    player_active = player.team[x - 1]
+                                    print(f"{player.name} sent out {player_active.species}")
+                                    break
+                                if z == 2:
+                                    break
+                        if y == 1:
+                            player_active = player.team[x - 1]
+                            print(f"{player.name} sent out {player_active.species}")
+                            break
+            if opponent_active.chp <= 0:
+                opponent.team.remove(opponent_active)
+                if not opponent.team:
+                    print(f"{player.name} Wins!")
+                    break
+                opponent_active = None
+                opponent_active = random.choice(opponent.team)
+            if second_trainer.chp > 0:
+                action(second_trainer, first_trainer, second_move)
+            if player_active.chp <= 0:
+                player.team.remove(player_active)
+                if not player.team:
+                    print(f"{opponent.name} Wins!")
+                    break
+                player_active = None
+                while player_active is None:
+                    for pokes in player.team:
+                        print(f"{player.team.index(pokes) + 1}.", end=""), pokes.check_poke_basic()
+                    x = int(input("Please Select a pokemon to view details of or swap in: "))
+                    player.team[x - 1].check_poke_advanced()
+                    y = int(input("1.Swap 2.Check Moves 3.Back: "))
+                    if y == 3:
+                        pass
+                    if y == 2:
+                        while True:
+                            player.team[x - 1].check_poke_moves()
+                            z = int(input("1.Swap 2.Back"))
+                            if z == 1:
+                                player_active = player.team[x - 1]
+                                print(f"{player.name} sent out {player_active.species}")
+                                break
+                            if z == 2:
+                                break
+                    if y == 1:
+                        player_active = player.team[x - 1]
+                        print(f"{player.name} sent out {player_active.species}")
+                        break
+            if opponent_active.chp <= 0:
+                opponent.team.remove(opponent_active)
+                if not opponent.team:
+                    print(f"{player.name} Wins!")
+                    break
+                opponent_active = None
+                opponent_active = random.choice(opponent.team)
+        elif p_move is None and ai_move is None:
+            pass
+        elif p_move is None:
+            if opponent_active.chp > 0:
+                action(opponent_active, player_active, ai_move)
+            if player_active.chp <= 0:
+                player.team.remove(player_active)
+                if not player.team:
+                    print(f"{opponent.name} Wins!")
+                    break
+                player_active = None
+                while player_active is None:
+                    for pokes in player.team:
+                        print(f"{player.team.index(pokes) + 1}.", end=""), pokes.check_poke_basic()
+                    x = int(input("Please Select a pokemon to view details of or swap in: "))
+                    while True:
+                        player.team[x - 1].check_poke_advanced()
+                        y = int(input("1.Swap 2.Check Moves 3.Back: "))
+                        if y == 3:
+                            break
+                        if y == 2:
+                            while True:
+                                player.team[x - 1].check_poke_moves()
+                                z = int(input("1.Swap 2.Back"))
+                                if z == 1:
+                                    player_active = player.team[x - 1]
+                                    print(f"{player.name} sent out {player_active.species}")
+                                    break
+                                if z == 2:
+                                    break
+                        if y == 1:
+                            player_active = player.team[x - 1]
+                            print(f"{player.name} sent out {player_active.species}")
+                            break
+            if opponent_active.chp <= 0:
+                opponent.team.remove(opponent_active)
+                if not opponent.team:
+                    print(f"{player.name} Wins!")
+                    break
+                opponent_active = None
+                opponent_active = random.choice(opponent.team)
+        else:
+            if player_active.chp > 0:
+                action(player_active, opponent_active, p_move)
+            if player_active.chp <= 0:
+                player.team.remove(player_active)
+                if not player.team:
+                    print(f"{opponent.name} Wins!")
+                    break
+                player_active = None
+                while player_active is None:
+                    for pokes in player.team:
+                        print(f"{player.team.index(pokes) + 1}.", end=""), pokes.check_poke_basic()
+                    x = int(input("Please Select a pokemon to view details of or swap in: "))
+                    while True:
+                        player.team[x - 1].check_poke_advanced()
+                        y = int(input("1.Swap 2.Check Moves 3.Back: "))
+                        if y == 3:
+                            break
+                        if y == 2:
+                            while True:
+                                player.team[x - 1].check_poke_moves()
+                                z = int(input("1.Swap 2.Back"))
+                                if z == 1:
+                                    player_active = player.team[x - 1]
+                                    print(f"{player.name} sent out {player_active.species}")
+                                    break
+                                if z == 2:
+                                    break
+                        if y == 1:
+                            player_active = player.team[x - 1]
+                            print(f"{player.name} sent out {player_active.species}")
+                            break
+            if opponent_active.chp <= 0:
+                opponent.team.remove(opponent_active)
+                if not opponent.team:
+                    print(f"{player.name} Wins!")
+                    break
+                opponent_active = None
+                opponent_active = random.choice(opponent.team)
 
 
 def dmg_calc(attacker, defender, move):
@@ -120,17 +306,23 @@ def action(attacker, defender, move):
         return
     if move.get("DoesDmg"):
         dmg = dmg_calc(attacker, defender, move)
-        defender.hp -= dmg
+        defender.chp -= dmg
 
 
 ash = Player("Ash", "they/them", 0, [])
-bulb = Pokemon(0, ash)
-ash.team.append(bulb)
+ashbulb1 = Pokemon(0, ash)
+ashbulb2 = Pokemon(0, ash)
+ashbulb3 = Pokemon(0, ash)
+ash.team.append(ashbulb1)
+ash.team.append(ashbulb2)
+ash.team.append(ashbulb3)
 
 garry = Player("Garry", "they/them", 0, [])
-bulb1 = Pokemon(0, garry)
-garry.team.append(bulb1)
+garrybulb1 = Pokemon(0, garry)
+garrybulb2 = Pokemon(0, garry)
+garrybulb3 = Pokemon(0, garry)
+garry.team.append(garrybulb1)
+garry.team.append(garrybulb2)
+garry.team.append(garrybulb3)
 
-print(bulb.get_stats(), bulb1.get_stats())
-print(bulb.nature, bulb1.nature)
 battle(ash, garry)
