@@ -1,14 +1,13 @@
-from Pokemons import *
+from BattleSystem import *
 import random
 import math
-
-
-def gender(percent):
-    rnum = random.uniform(0.0, 1.0)
-    if rnum <= percent:
-        return "Male"
-    else:
-        return "Female"
+import json
+with open("Data/Pokedex.json") as pokedex_json:
+    pokedex = json.load(pokedex_json)
+with open("Data/Moves.json") as moves_json:
+    moves = json.load(moves_json)
+with open("Data/natures.json") as natures_json:
+    natures = json.load(natures_json)
 
 
 class Player:
@@ -20,50 +19,60 @@ class Player:
 
 
 class Pokemon:
-    def ability_assign(self, index):
-        self.ability = random.choice(pokedex[index].get("Abilities"))
+    def __init__(self, species, owner, level=5):
+        self.owner = owner
+        self.level = level
+        for p in pokedex:
+            if p["Species"] == species:
+                self.species = p.get("Species")
+                self.index = pokedex.index(p)
+                break
+        self.type_one = pokedex[self.index].get("types")[0]
+        if len(pokedex[self.index].get("types")) == 2:
+            self.type_two = pokedex[self.index].get("types")[1]
+        else:
+            self.type_two = None
+        self.ability = random.choice(pokedex[self.index].get("Abilities"))
+        self.get_gender(pokedex[self.index].get("Gender Ratio"))
+        self.catch_rate = pokedex[self.index].get("Catch rate")
+        self.height = pokedex[self.index].get("Height")
+        self.weight = pokedex[self.index].get("Weight")
+        self.nature = natures[random.randint(0, 24)]
+        self.calc_stats()
+        self.total_exp = pow(self.level, 3)
+        self.exp_needed = pow(self.level + 1, 3)
+        self.evolvl = pokedex[self.index].get("EvoLvl", None)
+        self.evo = pokedex[self.index].get("Evo", None)
+        self.chp = self.hp
+        self.burned = False
+        self.moves = ["Thunderbolt", "Water Gun"]
+
+    def get_gender(self, percent):
+        rnum = random.uniform(0.0, 1.0)
+        if rnum <= percent:
+            self.gender = "Male"
+        else:
+            self.gender = "Female"
 
     def calc_stats(self):
         self.hp = math.floor(0.01 * ((2 * pokedex[self.index].get("bHP")) * self.level)) + self.level + 10
         self.attack = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bAttack")) * self.level)) + 5)
-                                 * natures[self.nature].get("Attack", 1))
+                                 * self.nature.get("Attack", 1))
         self.defense = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bDefense")) * self.level)) + 5)
-                                  * natures[self.nature].get("Defense", 1))
+                                  * self.nature.get("Defense", 1))
         self.sp_attack = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSp.Attack")) * self.level)) + 5)
-                                    * natures[self.nature].get("Sp.Attack", 1))
+                                    * self.nature.get("Sp.Attack", 1))
         self.sp_defense = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSp.Defense")) * self.level)) + 5)
-                                     * natures[self.nature].get("Sp.Defense", 1))
+                                     * self.nature.get("Sp.Defense", 1))
         self.speed = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSpeed")) * self.level)) + 5)
-                                * natures[self.nature].get("Speed", 1))
-
-    def __init__(self, index, owner, level=5):
-        self.owner = owner
-        self.level = level
-        self.index = index
-        self.species = pokedex[index].get("Species")
-        self.type_one = pokedex[index].get("Typeone")
-        self.type_two = pokedex[index].get("Typetwo")
-        self.ability_assign(index)
-        self.gender = gender(pokedex[index].get("Gender Ratio"))
-        self.catch_rate = pokedex[index].get("Catch rate")
-        self.height = pokedex[index].get("Height")
-        self.weight = pokedex[index].get("Weight")
-        self.nature = random.randint(0, 24)
-        self.calc_stats()
-        self.total_exp = pow(self.level, 3)
-        self.exp_needed = pow(self.level + 1, 3)
-        self.evolvl = pokedex[index].get("EvoLvl", None)
-        self.evo = pokedex[index].get("Evo", None)
-        self.chp = self.hp
-        self.burn = False
-        self.moves = ["Tackle"]
+                                * self.nature.get("Speed", 1))
 
     def evolve(self):
         self.index = self.evo
         self.species = pokedex[self.index].get("Species")
         self.type_one = pokedex[self.index].get("Typeone")
         self.type_two = pokedex[self.index].get("Typetwo")
-        self.ability_assign(self.index)
+        self.ability = random.choice(pokedex[self.index].get("Abilities"))
         self.height = pokedex[self.index].get("Height")
         self.weight = pokedex[self.index].get("Weight")
         self.calc_stats()
@@ -83,15 +92,25 @@ class Pokemon:
         print(self.species, self.gender, f"Level: {self.level}", f"Hp: {self.chp}/{self.hp}")
 
     def check_poke_advanced(self):
-        print(self.species, self.gender, f"Level: {self.level}", f"Hp: {self.chp}/{self.hp}",
-              f" Ability: {self.ability}", "\n", f"Attack: {self.attack}", f"Defense: {self.defense}",
-              f"Sp.Attack: {self.sp_attack}", f"Sp.Defense: {self.sp_defense}", f"Speed: {self.speed}",)
+        print(f"{self.species} {self.gender} Level: {self.level} Hp: {self.chp}/{self.hp} Ability: {self.ability} \n"
+              f"{self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} Sp.Attack: {self.sp_attack} "
+              f"Sp.Defense: {self.sp_defense} Speed: {self.speed}")
 
-    def check_poke_moves(self):
+    def check_poke_moves(self, move_list):
         for m in self.moves:
-            print(f"{moves.get(m).get("Name")}:", f"{moves.get(m).get("Type")} Type,", f"{moves.get(m).get("DmgType")} Damage,",
-                  f"Power: {moves.get(m).get("Dmg")}", f"Accuracy: {moves.get(m).get("Acc")}", f"PP: {moves.get(m).get("PP")}"
-            )
+            for move in move_list:
+                if m == move.get("name"):
+                    print(f"{move.get("name")}:", f"{move.get("type")} Type,", f"{move.get("category")},",
+                          f"Power: {move.get("power")}", f"Accuracy: {move.get("accuracy")}", f"PP: {move.get("pp")}")
+                    break
 
 
+ash = Player("Ash", "they/them", 0, [])
+geo = Pokemon("Geodude", ash)
+ash.team.append(geo)
 
+garry = Player("Garry", "they/them", 0, [])
+squrit = Pokemon("Squirtle", garry)
+garry.team.append(squrit)
+
+battle(ash, garry, moves)

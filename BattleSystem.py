@@ -1,16 +1,18 @@
-from Classes import *
 import math
 import random
+import json
 
 weather = "clear"
 reflect = False
 light_screen = False
 
 
-def battle(player, opponent):
+def battle(player, opponent, moves):
     turn = 0
     player_active = player.team[0]
     opponent_active = opponent.team[0]
+    with open("Data/TypeEffectiveness.json") as effectiveness_json:
+        types = json.load(effectiveness_json)
     while True:
         turn += 1
         print(f"Turn: {turn}")
@@ -19,7 +21,11 @@ def battle(player, opponent):
         finished = None
         p_move = None
         ai_move = None
-        ai_move = moves.get((random.choice(opponent_active.moves)))
+        ai_random = random.choice(opponent_active.moves)
+        for move in moves:
+            if move.get("name") == ai_random:
+                ai_move = move
+                break
         while not finished:
             player_action = int(input("What will you do? 1.Fight 2.Check/Swap Pokemon 3.Open Bag: "))
             if player_action == 3:
@@ -39,7 +45,7 @@ def battle(player, opponent):
                             break
                         if y == 2:
                             while not finished:
-                                player.team[x - 1].check_poke_moves()
+                                player.team[x - 1].check_poke_moves(moves)
                                 z = int(input("1.Swap 2.Back"))
                                 if z == 1:
                                     player_active = player.team[x - 1]
@@ -60,7 +66,10 @@ def battle(player, opponent):
                 if x == 5:
                     pass
                 else:
-                    p_move = moves.get(player_active.moves[int(x) - 1])
+                    for move in moves:
+                        if move.get("name") == player_active.moves[int(x) - 1]:
+                            p_move = move
+                            break
                     finished = True
         if p_move is not None and ai_move is not None:
             if player_active.speed > opponent_active.speed:
@@ -86,7 +95,7 @@ def battle(player, opponent):
                     second_trainer = player_active
                     second_move = p_move
             if first_trainer.chp > 0:
-                action(first_trainer, second_trainer, first_move)
+                action(first_trainer, second_trainer, first_move, types)
             if player_active.chp <= 0:
                 player.team.remove(player_active)
                 if not player.team:
@@ -104,7 +113,7 @@ def battle(player, opponent):
                             break
                         if y == 2:
                             while True:
-                                player.team[x - 1].check_poke_moves()
+                                player.team[x - 1].check_poke_moves(moves)
                                 z = int(input("1.Swap 2.Back"))
                                 if z == 1:
                                     player_active = player.team[x - 1]
@@ -124,7 +133,7 @@ def battle(player, opponent):
                 opponent_active = None
                 opponent_active = random.choice(opponent.team)
             if second_trainer.chp > 0:
-                action(second_trainer, first_trainer, second_move)
+                action(second_trainer, first_trainer, second_move, types)
             if player_active.chp <= 0:
                 player.team.remove(player_active)
                 if not player.team:
@@ -141,7 +150,7 @@ def battle(player, opponent):
                         pass
                     if y == 2:
                         while True:
-                            player.team[x - 1].check_poke_moves()
+                            player.team[x - 1].check_poke_moves(moves)
                             z = int(input("1.Swap 2.Back"))
                             if z == 1:
                                 player_active = player.team[x - 1]
@@ -164,7 +173,7 @@ def battle(player, opponent):
             pass
         elif p_move is None:
             if opponent_active.chp > 0:
-                action(opponent_active, player_active, ai_move)
+                action(opponent_active, player_active, ai_move, types)
             if player_active.chp <= 0:
                 player.team.remove(player_active)
                 if not player.team:
@@ -182,7 +191,7 @@ def battle(player, opponent):
                             break
                         if y == 2:
                             while True:
-                                player.team[x - 1].check_poke_moves()
+                                player.team[x - 1].check_poke_moves(moves)
                                 z = int(input("1.Swap 2.Back"))
                                 if z == 1:
                                     player_active = player.team[x - 1]
@@ -201,9 +210,9 @@ def battle(player, opponent):
                     break
                 opponent_active = None
                 opponent_active = random.choice(opponent.team)
-        else:
+        elif ai_move is None:
             if player_active.chp > 0:
-                action(player_active, opponent_active, p_move)
+                action(player_active, opponent_active, p_move, types)
             if player_active.chp <= 0:
                 player.team.remove(player_active)
                 if not player.team:
@@ -221,7 +230,7 @@ def battle(player, opponent):
                             break
                         if y == 2:
                             while True:
-                                player.team[x - 1].check_poke_moves()
+                                player.team[x - 1].check_poke_moves(moves)
                                 z = int(input("1.Swap 2.Back"))
                                 if z == 1:
                                     player_active = player.team[x - 1]
@@ -242,9 +251,9 @@ def battle(player, opponent):
                 opponent_active = random.choice(opponent.team)
 
 
-def dmg_calc(attacker, defender, move):
-    dmg_type = move.get("DmgType")
-    move_type = move.get("Type")
+def dmg_calc(attacker, defender, move, types):
+    dmg_type = move.get("category")
+    move_type = move.get("type")
     if dmg_type == "Physical":
         atk = attacker.attack
         dfn = defender.defense
@@ -252,12 +261,11 @@ def dmg_calc(attacker, defender, move):
         atk = attacker.sp_attack
         dfn = defender.sp_defense
     crit = False
-    if move.get("CanCrit"):
-        if random.uniform(0, 1) <= 0.0625:
-            crit = True
-            print("A critical hit")
-    total = math.floor(math.floor((math.floor((2 * attacker.level) / 5 + 2) * atk * move.get("Dmg")) / dfn) / 50)
-    if attacker.burn and dmg_type == "Physical":
+    if random.uniform(0, 1) <= 0.0625:
+        crit = True
+        print("A critical hit")
+    total = math.floor(math.floor((math.floor((2 * attacker.level) / 5 + 2) * atk * move.get("power")) / dfn) / 50)
+    if attacker.burned and dmg_type == "Physical":
         total = math.floor(total * 0.5)
     if reflect and dmg_type == "Physical" and not crit:
         total = math.floor(total * 0.5)
@@ -283,13 +291,16 @@ def dmg_calc(attacker, defender, move):
     # Charge
     if move_type == attacker.type_one or move_type == attacker.type_two:
         total = math.floor(total * 1.5)
-    effectiveness = type_effectiveness.get(move_type).get(defender.type_one, 1)
-    if defender.type_two is not None:
-        effectiveness = effectiveness * type_effectiveness.get(move_type).get(defender.type_two, 1)
+    for item in types:
+        if item["name"] == move_type:
+            effectiveness = item.get(defender.type_one, 1)
+            if defender.type_two is not None:
+                effectiveness = effectiveness * item.get(defender.type_two, 1)
+            break
     if effectiveness >= 2:
-        print("it's super effective")
+        print("It's super effective")
     if effectiveness <= 0.5:
-        print("it's not very effective...")
+        print("It's not very effective...")
     total = math.floor(total * effectiveness)
     # Check dmg range values
     # for n in range(85, 101):
@@ -298,31 +309,12 @@ def dmg_calc(attacker, defender, move):
     return total
 
 
-def action(attacker, defender, move):
-    print(f"{attacker.owner.name}'s {attacker.species} used {move.get("Name")}")
+def action(attacker, defender, move, types):
+    print(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
     hit_check = random.randint(1, 100)
-    if hit_check > move.get("Acc"):
+    if hit_check > move.get("accuracy"):
         print(f"{attacker.species} Missed!")
         return
-    if move.get("DoesDmg"):
-        dmg = dmg_calc(attacker, defender, move)
+    if move.get("category") != "Non-Damaging":
+        dmg = dmg_calc(attacker, defender, move, types)
         defender.chp -= dmg
-
-
-ash = Player("Ash", "they/them", 0, [])
-ashbulb1 = Pokemon(0, ash)
-ashbulb2 = Pokemon(0, ash)
-ashbulb3 = Pokemon(0, ash)
-ash.team.append(ashbulb1)
-ash.team.append(ashbulb2)
-ash.team.append(ashbulb3)
-
-garry = Player("Garry", "they/them", 0, [])
-garrybulb1 = Pokemon(0, garry)
-garrybulb2 = Pokemon(0, garry)
-garrybulb3 = Pokemon(0, garry)
-garry.team.append(garrybulb1)
-garry.team.append(garrybulb2)
-garry.team.append(garrybulb3)
-
-battle(ash, garry)
