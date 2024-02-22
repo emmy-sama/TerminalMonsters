@@ -185,7 +185,7 @@
       "49": "firespin"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -212,7 +212,7 @@
     "egg": [
       "ancientpower",
       "beatup",
-      "bellydrum",
+      "Belly Drum",
       "bite",
       "dragondance",
       "outrage",
@@ -260,7 +260,7 @@
       "55": "firespin"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -322,7 +322,7 @@
       "64": "firespin"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -627,7 +627,7 @@
       "47": "silverwind"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -665,7 +665,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "aerialace",
+      "Aerial Ace",
       "morningsun",
       "psychic",
       "sleeppowder"
@@ -699,11 +699,11 @@
       "25": "rage",
       "30": "pursuit",
       "35": "pinmissile",
-      "40": "agility",
+      "40": "Agility",
       "45": "endeavor"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -739,7 +739,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "batonpass",
+      "Baton Pass",
       "sludgebomb",
       "swordsdance",
       "twineedle"
@@ -754,11 +754,11 @@
       "19": "whirlwind",
       "25": "wingattack",
       "31": "featherdance",
-      "39": "agility",
+      "39": "Agility",
       "47": "mirrormove"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -804,11 +804,11 @@
       "20": "whirlwind",
       "27": "wingattack",
       "34": "featherdance",
-      "43": "agility",
+      "43": "Agility",
       "52": "mirrormove"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -852,11 +852,11 @@
       "20": "whirlwind",
       "27": "wingattack",
       "34": "featherdance",
-      "48": "agility",
+      "48": "Agility",
       "62": "mirrormove"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -1024,13 +1024,13 @@
       "7": "leer",
       "13": "furyattack",
       "19": "pursuit",
-      "25": "aerialace",
+      "25": "Aerial Ace",
       "31": "mirrormove",
       "37": "drillpeck",
-      "43": "agility"
+      "43": "Agility"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -1070,8 +1070,8 @@
     ],
     "dreamWorld": [],
     "event": [
-      "aerialace",
-      "batonpass",
+      "Aerial Ace",
+      "Baton Pass",
       "falseswipe",
       "leer"
     ]
@@ -1082,10 +1082,10 @@
       "26": "pursuit",
       "32": "mirrormove",
       "40": "drillpeck",
-      "47": "agility"
+      "47": "Agility"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -1263,7 +1263,7 @@
     ],
     "egg": [
       "bide",
-      "charge",
+      "Charge",
       "doubleslap",
       "encore",
       "present",
@@ -1315,7 +1315,7 @@
       "15": "doubleteam",
       "20": "slam",
       "26": "thunderbolt",
-      "33": "agility",
+      "33": "Agility",
       "41": "thunder",
       "50": "lightscreen"
     },
@@ -1367,8 +1367,8 @@
     ],
     "dreamWorld": [],
     "event": [
-      "agility",
-      "agility",
+      "Agility",
+      "Agility",
       "fly",
       "fly",
       "fly",
@@ -1477,7 +1477,7 @@
       "53": "sandstorm"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -1550,7 +1550,7 @@
       "62": "sandstorm"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -1612,7 +1612,7 @@
       "47": "crunch"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "cut",
@@ -1677,7 +1677,7 @@
       "53": "crunch"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "cut",
@@ -1728,7 +1728,7 @@
       "43": "superpower"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -1835,7 +1835,7 @@
       "waterpulse"
     ],
     "egg": [
-      "amnesia",
+      "Amnesia",
       "beatup",
       "confusion",
       "counter",
@@ -2024,8 +2024,8 @@
       "waterpulse"
     ],
     "egg": [
-      "amnesia",
-      "bellydrum",
+      "Amnesia",
+      "Belly Drum",
       "metronome",
       "mimic",
       "present",
@@ -2079,7 +2079,7 @@
       "attract",
       "blizzard",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "doubleteam",
       "facade",
@@ -2150,7 +2150,7 @@
       "attract",
       "blizzard",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "doubleteam",
       "facade",
@@ -2550,7 +2550,7 @@
       "46": "haze"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -2605,7 +2605,7 @@
       "56": "haze"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -2654,7 +2654,7 @@
       "56": "haze"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -2888,10 +2888,10 @@
       "31": "slash",
       "37": "growth",
       "43": "gigadrain",
-      "49": "aromatherapy"
+      "49": "Aromatherapy"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "bulletseed",
       "cut",
@@ -2952,10 +2952,10 @@
       "35": "slash",
       "43": "growth",
       "51": "gigadrain",
-      "59": "aromatherapy"
+      "59": "Aromatherapy"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "bulletseed",
       "cut",
@@ -3028,7 +3028,7 @@
       "toxic"
     ],
     "egg": [
-      "batonpass",
+      "Baton Pass",
       "gigadrain",
       "screech",
       "signalbeam"
@@ -3059,7 +3059,7 @@
       "52": "psychic"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -3112,7 +3112,7 @@
       "49": "fissure"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "dig",
@@ -3169,7 +3169,7 @@
       "64": "fissure"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "dig",
@@ -3224,7 +3224,7 @@
       "45": "swagger"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "dig",
@@ -3252,8 +3252,8 @@
       "waterpulse"
     ],
     "egg": [
-      "amnesia",
-      "assist",
+      "Amnesia",
+      "Assist",
       "charm",
       "hypnosis",
       "psychup",
@@ -3304,7 +3304,7 @@
       "61": "swagger"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "dig",
@@ -3366,11 +3366,11 @@
       "50": "hydropump"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "dive",
       "doubleteam",
@@ -3446,11 +3446,11 @@
       "58": "hydropump"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "dive",
       "doubleteam",
@@ -3519,10 +3519,10 @@
       "46": "thrash"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "dig",
       "doubleteam",
       "earthquake",
@@ -3597,10 +3597,10 @@
       "62": "thrash"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "dig",
       "doubleteam",
       "earthquake",
@@ -3667,11 +3667,11 @@
       "25": "takedown",
       "31": "flamewheel",
       "37": "helpinghand",
-      "43": "agility",
+      "43": "Agility",
       "49": "flamethrower"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "dig",
       "doubleteam",
@@ -3734,7 +3734,7 @@
       "49": "extremespeed"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "dig",
       "doubleteam",
@@ -3780,7 +3780,7 @@
       "19": "doubleslap",
       "25": "raindance",
       "31": "bodyslam",
-      "37": "bellydrum",
+      "37": "Belly Drum",
       "43": "hydropump"
     },
     "tm": [
@@ -3839,7 +3839,7 @@
       "19": "doubleslap",
       "27": "raindance",
       "35": "bodyslam",
-      "43": "bellydrum",
+      "43": "Belly Drum",
       "51": "hydropump"
     },
     "tm": [
@@ -3902,7 +3902,7 @@
       "attract",
       "blizzard",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "dig",
       "dive",
       "doubleteam",
@@ -4021,7 +4021,7 @@
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -4049,7 +4049,7 @@
       "toxic"
     ],
     "egg": [
-      "barrier",
+      "Barrier",
       "encore",
       "firepunch",
       "icepunch",
@@ -4096,7 +4096,7 @@
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -4158,13 +4158,13 @@
       "23": "reflect",
       "25": "recover",
       "30": "futuresight",
-      "33": "calmmind",
+      "33": "Calm Mind",
       "36": "psychic",
       "43": "trick"
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -4218,7 +4218,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "calmmind",
+      "Calm Mind",
       "futuresight",
       "psychic",
       "trick"
@@ -4241,7 +4241,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "dig",
       "doubleteam",
       "earthquake",
@@ -4312,7 +4312,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "dig",
       "doubleteam",
       "earthquake",
@@ -4375,7 +4375,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "dig",
       "doubleteam",
       "earthquake",
@@ -4586,7 +4586,7 @@
       "19": "acid",
       "25": "bubblebeam",
       "30": "wrap",
-      "36": "barrier",
+      "36": "Barrier",
       "43": "screech",
       "49": "hydropump"
     },
@@ -4642,7 +4642,7 @@
       "19": "acid",
       "25": "bubblebeam",
       "30": "wrap",
-      "38": "barrier",
+      "38": "Barrier",
       "47": "screech",
       "55": "hydropump"
     },
@@ -4723,7 +4723,7 @@
       "toxic"
     ],
     "egg": [
-      "block",
+      "Block",
       "megapunch",
       "rockslide"
     ],
@@ -4885,7 +4885,7 @@
       "19": "stomp",
       "25": "firespin",
       "31": "takedown",
-      "38": "agility",
+      "38": "Agility",
       "45": "bounce",
       "53": "fireblast"
     },
@@ -4936,7 +4936,7 @@
       "19": "stomp",
       "25": "firespin",
       "31": "takedown",
-      "38": "agility",
+      "38": "Agility",
       "40": "furyattack",
       "50": "bounce",
       "63": "fireblast"
@@ -4975,7 +4975,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "batonpass",
+      "Baton Pass",
       "flamethrower",
       "solarbeam",
       "sunnyday"
@@ -4989,14 +4989,14 @@
       "17": "confusion",
       "24": "disable",
       "29": "headbutt",
-      "36": "amnesia",
+      "36": "Amnesia",
       "40": "psychic",
       "47": "psychup"
     },
     "tm": [
       "attract",
       "blizzard",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "dive",
       "doubleteam",
@@ -5026,7 +5026,7 @@
       "waterpulse"
     ],
     "egg": [
-      "bellydrum",
+      "Belly Drum",
       "futuresight",
       "mudsport",
       "safeguard",
@@ -5070,7 +5070,7 @@
       "17": "confusion",
       "24": "disable",
       "29": "headbutt",
-      "36": "amnesia",
+      "36": "Amnesia",
       "37": "withdraw",
       "44": "psychic",
       "55": "psychup"
@@ -5079,7 +5079,7 @@
       "attract",
       "blizzard",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "dive",
       "doubleteam",
@@ -5155,7 +5155,7 @@
       "attract",
       "blizzard",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "dive",
       "doubleteam",
@@ -5322,12 +5322,12 @@
       "21": "knockoff",
       "26": "furycutter",
       "31": "swordsdance",
-      "36": "agility",
+      "36": "Agility",
       "41": "slash",
       "46": "falseswipe"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "doubleteam",
@@ -5371,8 +5371,8 @@
     ],
     "dreamWorld": [],
     "event": [
-      "aerialace",
-      "batonpass",
+      "Aerial Ace",
+      "Baton Pass",
       "slash",
       "swordsdance",
       "wish",
@@ -5388,10 +5388,10 @@
       "25": "rage",
       "33": "uproar",
       "37": "drillpeck",
-      "45": "agility"
+      "45": "Agility"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -5438,10 +5438,10 @@
       "25": "rage",
       "38": "uproar",
       "47": "drillpeck",
-      "60": "agility"
+      "60": "Agility"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -5476,8 +5476,8 @@
     ],
     "dreamWorld": [],
     "event": [
-      "agility",
-      "batonpass",
+      "Agility",
+      "Baton Pass",
       "drillpeck",
       "triattack"
     ]
@@ -5599,7 +5599,7 @@
       "13": "sludge",
       "19": "minimize",
       "26": "screech",
-      "34": "acidarmor",
+      "34": "Acid Armor",
       "43": "sludgebomb",
       "53": "memento"
     },
@@ -5669,7 +5669,7 @@
       "13": "sludge",
       "19": "minimize",
       "26": "screech",
-      "34": "acidarmor",
+      "34": "Acid Armor",
       "47": "sludgebomb",
       "61": "memento"
     },
@@ -5755,7 +5755,7 @@
       "waterpulse"
     ],
     "egg": [
-      "barrier",
+      "Barrier",
       "bubblebeam",
       "iciclespear",
       "rapidspin",
@@ -6061,7 +6061,7 @@
       "toxic"
     ],
     "egg": [
-      "block",
+      "Block",
       "explosion",
       "flail",
       "rockslide"
@@ -6159,7 +6159,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -6185,8 +6185,8 @@
       "toxic"
     ],
     "egg": [
-      "assist",
-      "barrier",
+      "Assist",
+      "Barrier",
       "firepunch",
       "icepunch",
       "roleplay",
@@ -6217,7 +6217,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "bellydrum",
+      "Belly Drum",
       "wish"
     ]
   },
@@ -6235,7 +6235,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -6287,7 +6287,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "batonpass",
+      "Baton Pass",
       "meditate",
       "psychic",
       "shadowball"
@@ -6332,7 +6332,7 @@
       "waterpulse"
     ],
     "egg": [
-      "amnesia",
+      "Amnesia",
       "dig",
       "flail",
       "haze",
@@ -6651,7 +6651,7 @@
       "45": "doubleedge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -6680,7 +6680,7 @@
     ],
     "egg": [
       "ancientpower",
-      "bellydrum",
+      "Belly Drum",
       "perishsong",
       "rockslide",
       "screech",
@@ -6724,7 +6724,7 @@
       "61": "doubleedge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -6789,7 +6789,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "doubleteam",
       "earthquake",
       "facade",
@@ -6850,7 +6850,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "doubleteam",
       "earthquake",
       "facade",
@@ -6900,7 +6900,7 @@
   "hitmonchan": {
     "level": {
       "1": "revenge",
-      "7": "agility",
+      "7": "Agility",
       "13": "pursuit",
       "20": "machpunch",
       "26": "thunderpunch",
@@ -6912,7 +6912,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "doubleteam",
       "earthquake",
       "facade",
@@ -6971,14 +6971,14 @@
       "20": "triplekick",
       "25": "rapidspin",
       "31": "counter",
-      "37": "agility",
+      "37": "Agility",
       "43": "detect",
       "49": "endeavor"
     },
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "dig",
       "doubleteam",
       "earthquake",
@@ -7068,7 +7068,7 @@
       "waterpulse"
     ],
     "egg": [
-      "bellydrum",
+      "Belly Drum",
       "bodyslam",
       "curse",
       "magnitude",
@@ -7390,7 +7390,7 @@
       "attract",
       "blizzard",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "earthquake",
       "facade",
@@ -7428,7 +7428,7 @@
       "waterpulse"
     ],
     "egg": [
-      "aromatherapy",
+      "Aromatherapy",
       "healbell",
       "metronome",
       "present",
@@ -7490,7 +7490,7 @@
       "attract",
       "blizzard",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "earthquake",
       "facade",
@@ -7591,7 +7591,7 @@
       "toxic"
     ],
     "egg": [
-      "amnesia",
+      "Amnesia",
       "confusion",
       "flail",
       "leechseed",
@@ -7632,7 +7632,7 @@
       "49": "reversal"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -7723,7 +7723,7 @@
       "15": "leer",
       "22": "watergun",
       "29": "twister",
-      "36": "agility",
+      "36": "Agility",
       "43": "hydropump",
       "50": "dragondance"
     },
@@ -7774,7 +7774,7 @@
     "level": {
       "1": "watergun",
       "29": "twister",
-      "40": "agility",
+      "40": "Agility",
       "51": "hydropump",
       "62": "dragondance"
     },
@@ -7813,7 +7813,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "agility",
+      "Agility",
       "leer",
       "twister",
       "watergun"
@@ -7823,7 +7823,7 @@
     "level": {
       "1": "watergun",
       "29": "twister",
-      "40": "agility",
+      "40": "Agility",
       "51": "hydropump",
       "62": "dragondance"
     },
@@ -7863,7 +7863,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "agility",
+      "Agility",
       "leer",
       "twister",
       "watergun"
@@ -7878,7 +7878,7 @@
       "29": "furyattack",
       "38": "waterfall",
       "43": "horndrill",
-      "52": "agility",
+      "52": "Agility",
       "57": "megahorn"
     },
     "tm": [
@@ -7930,7 +7930,7 @@
       "29": "furyattack",
       "41": "waterfall",
       "49": "horndrill",
-      "61": "agility",
+      "61": "Agility",
       "69": "megahorn"
     },
     "tm": [
@@ -7975,7 +7975,7 @@
       "6": "watergun",
       "10": "rapidspin",
       "15": "recover",
-      "19": "camouflage",
+      "19": "Camouflage",
       "24": "swift",
       "28": "bubblebeam",
       "33": "minimize",
@@ -8092,7 +8092,7 @@
   },
   "mrmime": {
     "level": {
-      "1": "barrier",
+      "1": "Barrier",
       "5": "confusion",
       "8": "substitute",
       "12": "meditate",
@@ -8105,13 +8105,13 @@
       "36": "trick",
       "40": "roleplay",
       "43": "psychic",
-      "47": "batonpass",
+      "47": "Baton Pass",
       "50": "safeguard"
     },
     "tm": [
       "attract",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -8186,7 +8186,7 @@
       "6": "focusenergy",
       "11": "pursuit",
       "16": "falseswipe",
-      "21": "agility",
+      "21": "Agility",
       "26": "wingattack",
       "31": "slash",
       "36": "swordsdance",
@@ -8194,7 +8194,7 @@
       "46": "furycutter"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "doubleteam",
@@ -8214,7 +8214,7 @@
       "toxic"
     ],
     "egg": [
-      "batonpass",
+      "Baton Pass",
       "counter",
       "endure",
       "lightscreen",
@@ -8253,7 +8253,7 @@
       "6": "focusenergy",
       "11": "pursuit",
       "16": "falseswipe",
-      "21": "agility",
+      "21": "Agility",
       "26": "metalclaw",
       "31": "slash",
       "36": "swordsdance",
@@ -8261,7 +8261,7 @@
       "46": "furycutter"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "doubleteam",
@@ -8320,7 +8320,7 @@
     "tm": [
       "attract",
       "blizzard",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -8389,7 +8389,7 @@
       "attract",
       "blizzard",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -8475,7 +8475,7 @@
       "toxic"
     ],
     "egg": [
-      "barrier",
+      "Barrier",
       "crosschop",
       "firepunch",
       "icepunch",
@@ -8614,7 +8614,7 @@
       "toxic"
     ],
     "egg": [
-      "barrier",
+      "Barrier",
       "crosschop",
       "karatechop",
       "megapunch",
@@ -8719,7 +8719,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "cut",
       "dig",
       "doubleteam",
@@ -9003,7 +9003,7 @@
       "16": "growl",
       "23": "quickattack",
       "30": "bite",
-      "36": "batonpass",
+      "36": "Baton Pass",
       "42": "takedown"
     },
     "tm": [
@@ -9055,7 +9055,7 @@
       "30": "bite",
       "36": "aurorabeam",
       "42": "haze",
-      "47": "acidarmor",
+      "47": "Acid Armor",
       "52": "hydropump"
     },
     "tm": [
@@ -9110,7 +9110,7 @@
       "30": "doublekick",
       "36": "pinmissile",
       "42": "thunderwave",
-      "47": "agility",
+      "47": "Agility",
       "52": "thunder"
     },
     "tm": [
@@ -9217,7 +9217,7 @@
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "cut",
       "dig",
       "doubleteam",
@@ -9327,7 +9327,7 @@
   "porygon": {
     "level": {
       "1": "tackle",
-      "9": "agility",
+      "9": "Agility",
       "12": "psybeam",
       "20": "recover",
       "24": "sharpen",
@@ -9337,7 +9337,7 @@
       "48": "zapcannon"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "blizzard",
       "doubleteam",
       "facade",
@@ -9384,7 +9384,7 @@
   "porygon2": {
     "level": {
       "1": "tackle",
-      "9": "agility",
+      "9": "Agility",
       "12": "psybeam",
       "20": "recover",
       "24": "defensecurl",
@@ -9394,7 +9394,7 @@
       "48": "zapcannon"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "blizzard",
       "doubleteam",
       "facade",
@@ -9567,7 +9567,7 @@
       "55": "ancientpower"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "dig",
@@ -9629,7 +9629,7 @@
       "65": "ancientpower"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -9682,7 +9682,7 @@
   "aerodactyl": {
     "level": {
       "1": "wingattack",
-      "8": "agility",
+      "8": "Agility",
       "15": "bite",
       "22": "supersonic",
       "29": "ancientpower",
@@ -9691,7 +9691,7 @@
       "50": "hyperbeam"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "dragonclaw",
@@ -9747,9 +9747,9 @@
   "snorlax": {
     "level": {
       "1": "tackle",
-      "5": "amnesia",
+      "5": "Amnesia",
       "9": "defensecurl",
-      "13": "bellydrum",
+      "13": "Belly Drum",
       "17": "headbutt",
       "21": "yawn",
       "25": "rest",
@@ -9839,7 +9839,7 @@
     "level": {
       "1": "powdersnow",
       "13": "mist",
-      "25": "agility",
+      "25": "Agility",
       "37": "mindreader",
       "49": "icebeam",
       "61": "reflect",
@@ -9847,7 +9847,7 @@
       "85": "sheercold"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "blizzard",
       "doubleteam",
       "facade",
@@ -9887,8 +9887,8 @@
     ],
     "dreamWorld": [],
     "event": [
-      "agility",
-      "agility",
+      "Agility",
+      "Agility",
       "extrasensory",
       "haze",
       "healbell",
@@ -9905,15 +9905,15 @@
     "level": {
       "1": "thundershock",
       "13": "thunderwave",
-      "25": "agility",
+      "25": "Agility",
       "37": "detect",
       "49": "drillpeck",
-      "61": "charge",
+      "61": "Charge",
       "73": "lightscreen",
       "85": "thunder"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "doubleteam",
       "facade",
       "flash",
@@ -9953,10 +9953,10 @@
     ],
     "dreamWorld": [],
     "event": [
-      "agility",
-      "agility",
-      "batonpass",
-      "charge",
+      "Agility",
+      "Agility",
+      "Baton Pass",
+      "Charge",
       "detect",
       "detect",
       "drillpeck",
@@ -9971,7 +9971,7 @@
     "level": {
       "1": "wingattack",
       "13": "firespin",
-      "25": "agility",
+      "25": "Agility",
       "37": "endure",
       "49": "flamethrower",
       "61": "safeguard",
@@ -9979,7 +9979,7 @@
       "85": "skyattack"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "doubleteam",
       "facade",
       "fireblast",
@@ -10017,8 +10017,8 @@
     ],
     "dreamWorld": [],
     "event": [
-      "agility",
-      "agility",
+      "Agility",
+      "Agility",
       "endure",
       "endure",
       "extrasensory",
@@ -10038,7 +10038,7 @@
       "15": "twister",
       "22": "dragonrage",
       "29": "slam",
-      "36": "agility",
+      "36": "Agility",
       "43": "safeguard",
       "50": "outrage",
       "57": "hyperbeam"
@@ -10100,7 +10100,7 @@
       "1": "wrap",
       "22": "dragonrage",
       "29": "slam",
-      "38": "agility",
+      "38": "Agility",
       "47": "safeguard",
       "56": "outrage",
       "65": "hyperbeam"
@@ -10155,14 +10155,14 @@
       "1": "wrap",
       "22": "dragonrage",
       "29": "slam",
-      "38": "agility",
+      "38": "Agility",
       "47": "safeguard",
       "55": "wingattack",
       "61": "outrage",
       "75": "hyperbeam"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -10225,7 +10225,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "agility",
+      "Agility",
       "dragondance",
       "earthquake",
       "healbell",
@@ -10238,20 +10238,20 @@
   "mewtwo": {
     "level": {
       "1": "disable",
-      "11": "barrier",
+      "11": "Barrier",
       "22": "swift",
       "33": "psychup",
       "44": "recover",
       "55": "safeguard",
       "66": "psychic",
-      "77": "amnesia"
+      "77": "Amnesia"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "blizzard",
       "brickbreak",
-      "bulkup",
-      "calmmind",
+      "Bulk Up",
+      "Calm Mind",
       "doubleteam",
       "earthquake",
       "facade",
@@ -10337,13 +10337,13 @@
       "50": "ancientpower"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "bulletseed",
-      "calmmind",
+      "Calm Mind",
       "cut",
       "dig",
       "dive",
@@ -10639,7 +10639,7 @@
       "46": "flamethrower"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "dig",
@@ -10702,7 +10702,7 @@
       "54": "flamethrower"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -10753,7 +10753,7 @@
       "60": "flamethrower"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -10822,7 +10822,7 @@
       "52": "hydropump"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -10899,7 +10899,7 @@
       "55": "hydropump"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -10962,7 +10962,7 @@
       "58": "hydropump"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -11028,7 +11028,7 @@
       "24": "slam",
       "31": "followme",
       "40": "rest",
-      "49": "amnesia"
+      "49": "Amnesia"
     },
     "tm": [
       "attract",
@@ -11059,7 +11059,7 @@
       "waterpulse"
     ],
     "egg": [
-      "assist",
+      "Assist",
       "doubleedge",
       "focusenergy",
       "pursuit",
@@ -11098,7 +11098,7 @@
       "28": "slam",
       "37": "followme",
       "48": "rest",
-      "59": "amnesia"
+      "59": "Amnesia"
     },
     "tm": [
       "attract",
@@ -11168,7 +11168,7 @@
       "48": "dreameater"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -11229,7 +11229,7 @@
       "57": "dreameater"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -11275,13 +11275,13 @@
       "8": "supersonic",
       "15": "cometpunch",
       "22": "safeguard",
-      "29": "batonpass",
+      "29": "Baton Pass",
       "36": "swift",
-      "43": "agility",
+      "43": "Agility",
       "50": "doubleedge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "dig",
@@ -11327,7 +11327,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "aerialace",
+      "Aerial Ace",
       "psybeam",
       "refresh",
       "supersonic"
@@ -11338,13 +11338,13 @@
       "1": "tackle",
       "15": "cometpunch",
       "24": "safeguard",
-      "33": "batonpass",
+      "33": "Baton Pass",
       "42": "swift",
-      "51": "agility",
+      "51": "Agility",
       "60": "doubleedge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "dig",
@@ -11397,7 +11397,7 @@
       "23": "leechlife",
       "30": "furyswipes",
       "37": "spiderweb",
-      "45": "agility",
+      "45": "Agility",
       "53": "psychic"
     },
     "tm": [
@@ -11421,7 +11421,7 @@
       "toxic"
     ],
     "egg": [
-      "batonpass",
+      "Baton Pass",
       "disable",
       "psybeam",
       "pursuit",
@@ -11453,7 +11453,7 @@
       "25": "leechlife",
       "34": "furyswipes",
       "43": "spiderweb",
-      "53": "agility",
+      "53": "Agility",
       "63": "psychic"
     },
     "tm": [
@@ -11501,7 +11501,7 @@
       "29": "confuseray",
       "37": "takedown",
       "41": "hydropump",
-      "49": "charge"
+      "49": "Charge"
     },
     "tm": [
       "attract",
@@ -11528,7 +11528,7 @@
       "waterpulse"
     ],
     "egg": [
-      "amnesia",
+      "Amnesia",
       "flail",
       "screech"
     ],
@@ -11554,7 +11554,7 @@
       "32": "confuseray",
       "43": "takedown",
       "50": "hydropump",
-      "61": "charge"
+      "61": "Charge"
     },
     "tm": [
       "attract",
@@ -11607,7 +11607,7 @@
       "29": "wish",
       "33": "safeguard",
       "37": "doubleedge",
-      "41": "batonpass"
+      "41": "Baton Pass"
     },
     "tm": [
       "attract",
@@ -11689,10 +11689,10 @@
       "29": "wish",
       "33": "safeguard",
       "37": "doubleedge",
-      "41": "batonpass"
+      "41": "Baton Pass"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "doubleteam",
@@ -11761,9 +11761,9 @@
       "50": "psychic"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -11813,8 +11813,8 @@
     ],
     "dreamWorld": [],
     "event": [
-      "aerialace",
-      "batonpass",
+      "Aerial Ace",
+      "Baton Pass",
       "futuresight",
       "nightshade"
     ]
@@ -11829,9 +11829,9 @@
       "65": "psychic"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -11905,7 +11905,7 @@
     ],
     "egg": [
       "bodyslam",
-      "charge",
+      "Charge",
       "odorsleuth",
       "reflect",
       "safeguard",
@@ -12144,8 +12144,8 @@
       "waterpulse"
     ],
     "egg": [
-      "amnesia",
-      "bellydrum",
+      "Amnesia",
+      "Belly Drum",
       "futuresight",
       "lightscreen",
       "perishsong",
@@ -12242,7 +12242,7 @@
       "9": "flail",
       "17": "lowkick",
       "25": "rockslide",
-      "33": "block",
+      "33": "Block",
       "41": "feintattack",
       "49": "slam",
       "57": "doubleedge"
@@ -12250,7 +12250,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "doubleteam",
       "earthquake",
@@ -12315,7 +12315,7 @@
       "30": "megadrain"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "bulletseed",
       "doubleteam",
@@ -12333,7 +12333,7 @@
       "toxic"
     ],
     "egg": [
-      "amnesia",
+      "Amnesia",
       "confusion",
       "doubleedge",
       "encore",
@@ -12366,7 +12366,7 @@
       "36": "megadrain"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "bulletseed",
       "doubleteam",
@@ -12409,7 +12409,7 @@
       "44": "megadrain"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "bulletseed",
       "doubleteam",
@@ -12447,15 +12447,15 @@
       "1": "tailwhip",
       "6": "sandattack",
       "13": "astonish",
-      "18": "batonpass",
+      "18": "Baton Pass",
       "25": "tickle",
       "31": "furyswipes",
       "38": "swift",
       "43": "screech",
-      "50": "agility"
+      "50": "Agility"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -12486,7 +12486,7 @@
       "waterpulse"
     ],
     "egg": [
-      "agility",
+      "Agility",
       "beatup",
       "counter",
       "doubleslap",
@@ -12645,7 +12645,7 @@
       "49": "screech"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -12691,7 +12691,7 @@
       "1": "watergun",
       "11": "slam",
       "16": "mudshot",
-      "21": "amnesia",
+      "21": "Amnesia",
       "31": "yawn",
       "36": "earthquake",
       "41": "raindance",
@@ -12757,7 +12757,7 @@
       "1": "watergun",
       "11": "slam",
       "16": "mudshot",
-      "23": "amnesia",
+      "23": "Amnesia",
       "35": "yawn",
       "42": "earthquake",
       "49": "raindance",
@@ -12830,9 +12830,9 @@
       "48": "meanlook"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "fly",
@@ -12898,9 +12898,9 @@
       "53": "grudge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -13004,14 +13004,14 @@
       "13": "confusion",
       "19": "stomp",
       "25": "odorsleuth",
-      "31": "agility",
-      "37": "batonpass",
+      "31": "Agility",
+      "37": "Baton Pass",
       "43": "psybeam",
       "49": "crunch"
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "earthquake",
       "facade",
@@ -13039,7 +13039,7 @@
       "toxic"
     ],
     "egg": [
-      "amnesia",
+      "Amnesia",
       "beatup",
       "foresight",
       "futuresight",
@@ -13205,7 +13205,7 @@
     "tm": [
       "attract",
       "blizzard",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "doubleteam",
       "earthquake",
@@ -13277,7 +13277,7 @@
       "52": "guillotine"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "dig",
@@ -13345,7 +13345,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "dig",
       "doubleteam",
       "earthquake",
@@ -13432,7 +13432,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "dig",
       "doubleteam",
       "earthquake",
@@ -13633,7 +13633,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "cut",
       "dig",
       "doubleteam",
@@ -13686,18 +13686,18 @@
       "15": "screech",
       "22": "feintattack",
       "29": "furyswipes",
-      "36": "agility",
+      "36": "Agility",
       "43": "icywind",
       "50": "slash",
       "57": "beatup",
       "64": "metalclaw"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "cut",
       "dig",
       "doubleteam",
@@ -13775,10 +13775,10 @@
       "49": "thrash"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "cut",
       "dig",
       "doubleteam",
@@ -13858,10 +13858,10 @@
       "49": "thrash"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "cut",
       "dig",
       "doubleteam",
@@ -13922,7 +13922,7 @@
       "8": "ember",
       "15": "rockthrow",
       "22": "harden",
-      "29": "amnesia",
+      "29": "Amnesia",
       "36": "flamethrower",
       "43": "rockslide",
       "50": "bodyslam"
@@ -13947,7 +13947,7 @@
       "toxic"
     ],
     "egg": [
-      "acidarmor",
+      "Acid Armor",
       "heatwave"
     ],
     "tutor": [
@@ -13972,7 +13972,7 @@
     "level": {
       "1": "yawn",
       "22": "harden",
-      "29": "amnesia",
+      "29": "Amnesia",
       "36": "flamethrower",
       "48": "rockslide",
       "60": "bodyslam"
@@ -14033,7 +14033,7 @@
       "28": "takedown",
       "37": "mist",
       "46": "blizzard",
-      "55": "amnesia"
+      "55": "Amnesia"
     },
     "tm": [
       "attract",
@@ -14099,7 +14099,7 @@
       "33": "furyattack",
       "42": "mist",
       "56": "blizzard",
-      "70": "amnesia"
+      "70": "Amnesia"
     },
     "tm": [
       "attract",
@@ -14160,7 +14160,7 @@
     "tm": [
       "attract",
       "blizzard",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "doubleteam",
       "earthquake",
@@ -14189,8 +14189,8 @@
       "waterpulse"
     ],
     "egg": [
-      "amnesia",
-      "barrier",
+      "Amnesia",
+      "Barrier",
       "confuseray",
       "iciclespear",
       "ingrain",
@@ -14339,7 +14339,7 @@
       "1": "present"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "doubleteam",
@@ -14396,13 +14396,13 @@
       "8": "supersonic",
       "15": "bubblebeam",
       "22": "takedown",
-      "29": "agility",
+      "29": "Agility",
       "36": "wingattack",
       "43": "waterpulse",
       "50": "confuseray"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "dive",
@@ -14456,7 +14456,7 @@
       "1": "peck",
       "10": "sandattack",
       "13": "swift",
-      "16": "agility",
+      "16": "Agility",
       "26": "furyattack",
       "29": "aircutter",
       "32": "steelwing",
@@ -14464,7 +14464,7 @@
       "45": "metalsound"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "doubleteam",
@@ -14758,11 +14758,11 @@
       "31": "roleplay",
       "37": "takedown",
       "41": "confuseray",
-      "47": "calmmind"
+      "47": "Calm Mind"
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "earthquake",
       "facade",
@@ -14924,10 +14924,10 @@
       "51": "reflect",
       "61": "crunch",
       "71": "thunder",
-      "81": "calmmind"
+      "81": "Calm Mind"
     },
     "tm": [
-      "calmmind",
+      "Calm Mind",
       "cut",
       "dig",
       "doubleteam",
@@ -14990,10 +14990,10 @@
       "51": "flamethrower",
       "61": "swagger",
       "71": "fireblast",
-      "81": "calmmind"
+      "81": "Calm Mind"
     },
     "tm": [
-      "calmmind",
+      "Calm Mind",
       "cut",
       "dig",
       "doubleteam",
@@ -15055,11 +15055,11 @@
       "51": "mist",
       "61": "mirrorcoat",
       "71": "hydropump",
-      "81": "calmmind"
+      "81": "Calm Mind"
     },
     "tm": [
       "blizzard",
-      "calmmind",
+      "Calm Mind",
       "cut",
       "dig",
       "dive",
@@ -15235,7 +15235,7 @@
       "75": "hyperbeam"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -15317,9 +15317,9 @@
       "99": "futuresight"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "blizzard",
-      "calmmind",
+      "Calm Mind",
       "dive",
       "doubleteam",
       "earthquake",
@@ -15401,8 +15401,8 @@
       "99": "futuresight"
     },
     "tm": [
-      "aerialace",
-      "calmmind",
+      "Aerial Ace",
+      "Calm Mind",
       "doubleteam",
       "earthquake",
       "facade",
@@ -15468,12 +15468,12 @@
       "10": "safeguard",
       "20": "ancientpower",
       "30": "futuresight",
-      "40": "batonpass",
+      "40": "Baton Pass",
       "50": "perishsong"
     },
     "tm": [
-      "aerialace",
-      "calmmind",
+      "Aerial Ace",
+      "Calm Mind",
       "cut",
       "doubleteam",
       "facade",
@@ -15522,7 +15522,7 @@
     "event": [
       "ancientpower",
       "ancientpower",
-      "batonpass",
+      "Baton Pass",
       "confusion",
       "futuresight",
       "futuresight",
@@ -15546,13 +15546,13 @@
       "16": "pursuit",
       "21": "screech",
       "26": "megadrain",
-      "31": "agility",
+      "31": "Agility",
       "36": "slam",
       "41": "detect",
       "46": "gigadrain"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "bulletseed",
@@ -15620,13 +15620,13 @@
       "17": "pursuit",
       "23": "screech",
       "29": "leafblade",
-      "35": "agility",
+      "35": "Agility",
       "41": "slam",
       "47": "detect",
       "53": "falseswipe"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "bulletseed",
@@ -15683,13 +15683,13 @@
       "17": "pursuit",
       "23": "screech",
       "29": "leafblade",
-      "35": "agility",
+      "35": "Agility",
       "43": "slam",
       "51": "detect",
       "59": "falseswipe"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "bulletseed",
@@ -15757,7 +15757,7 @@
       "43": "flamethrower"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "dig",
@@ -15818,17 +15818,17 @@
       "16": "doublekick",
       "17": "peck",
       "21": "sandattack",
-      "28": "bulkup",
+      "28": "Bulk Up",
       "32": "quickattack",
       "39": "slash",
       "43": "mirrormove",
       "50": "skyuppercut"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "cut",
       "dig",
       "doubleteam",
@@ -15881,7 +15881,7 @@
       "16": "doublekick",
       "17": "peck",
       "21": "sandattack",
-      "28": "bulkup",
+      "28": "Bulk Up",
       "32": "quickattack",
       "36": "blazekick",
       "42": "slash",
@@ -15889,10 +15889,10 @@
       "59": "skyuppercut"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "cut",
       "dig",
       "doubleteam",
@@ -16280,7 +16280,7 @@
       "29": "covet",
       "33": "flail",
       "37": "rest",
-      "41": "bellydrum"
+      "41": "Belly Drum"
     },
     "tm": [
       "attract",
@@ -16354,7 +16354,7 @@
       "35": "covet",
       "41": "slash",
       "47": "rest",
-      "53": "bellydrum"
+      "53": "Belly Drum"
     },
     "tm": [
       "attract",
@@ -16441,7 +16441,7 @@
       "38": "gigadrain"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -16499,7 +16499,7 @@
       "38": "toxic"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -16751,7 +16751,7 @@
       "toxic"
     ],
     "egg": [
-      "amnesia",
+      "Amnesia",
       "falseswipe",
       "leechseed",
       "quickattack",
@@ -16853,7 +16853,7 @@
       "1": "pound"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "bulletseed",
@@ -16912,11 +16912,11 @@
       "13": "wingattack",
       "19": "doubleteam",
       "26": "endeavor",
-      "34": "aerialace",
-      "43": "agility"
+      "34": "Aerial Ace",
+      "43": "Agility"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -16968,11 +16968,11 @@
       "13": "wingattack",
       "19": "doubleteam",
       "28": "endeavor",
-      "38": "aerialace",
-      "49": "agility"
+      "38": "Aerial Ace",
+      "49": "Agility"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -17006,8 +17006,8 @@
     ],
     "dreamWorld": [],
     "event": [
-      "agility",
-      "batonpass",
+      "Agility",
+      "Baton Pass",
       "facade",
       "skyattack"
     ]
@@ -17020,10 +17020,10 @@
       "21": "mist",
       "31": "quickattack",
       "43": "pursuit",
-      "55": "agility"
+      "55": "Agility"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "doubleteam",
@@ -17045,7 +17045,7 @@
       "waterpulse"
     ],
     "egg": [
-      "agility",
+      "Agility",
       "gust",
       "mist",
       "twister",
@@ -17078,7 +17078,7 @@
       "61": "hydropump"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "doubleteam",
@@ -17124,7 +17124,7 @@
       "6": "confusion",
       "11": "doubleteam",
       "16": "teleport",
-      "21": "calmmind",
+      "21": "Calm Mind",
       "26": "psychic",
       "31": "imprison",
       "36": "futuresight",
@@ -17133,7 +17133,7 @@
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -17201,7 +17201,7 @@
   "kirlia": {
     "level": {
       "1": "teleport",
-      "21": "calmmind",
+      "21": "Calm Mind",
       "26": "psychic",
       "33": "imprison",
       "40": "futuresight",
@@ -17210,7 +17210,7 @@
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -17263,7 +17263,7 @@
   "gardevoir": {
     "level": {
       "1": "teleport",
-      "21": "calmmind",
+      "21": "Calm Mind",
       "26": "psychic",
       "33": "imprison",
       "42": "futuresight",
@@ -17272,7 +17272,7 @@
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -17330,7 +17330,7 @@
       "13": "sweetscent",
       "19": "watersport",
       "25": "bubblebeam",
-      "31": "agility",
+      "31": "Agility",
       "37": "mist"
     },
     "tm": [
@@ -17392,7 +17392,7 @@
       "53": "whirlwind"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "doubleteam",
@@ -17505,7 +17505,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "bulletseed",
       "cut",
       "doubleteam",
@@ -17559,17 +17559,17 @@
       "7": "encore",
       "13": "slackoff",
       "19": "feintattack",
-      "25": "amnesia",
+      "25": "Amnesia",
       "31": "covet",
       "37": "counter",
       "43": "flail"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "cut",
       "doubleteam",
       "facade",
@@ -17640,11 +17640,11 @@
       "49": "reversal"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "cut",
       "doubleteam",
       "earthquake",
@@ -17703,18 +17703,18 @@
     "level": {
       "1": "yawn",
       "19": "feintattack",
-      "25": "amnesia",
+      "25": "Amnesia",
       "31": "covet",
       "36": "swagger",
       "37": "counter",
       "43": "flail"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "cut",
       "doubleteam",
       "earthquake",
@@ -17783,7 +17783,7 @@
       "45": "dig"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "cut",
       "dig",
       "doubleteam",
@@ -17830,11 +17830,11 @@
       "20": "screech",
       "25": "swordsdance",
       "31": "slash",
-      "38": "agility",
-      "45": "batonpass"
+      "38": "Agility",
+      "45": "Baton Pass"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "dig",
@@ -17886,7 +17886,7 @@
       "45": "grudge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "cut",
       "dig",
       "doubleteam",
@@ -17923,8 +17923,8 @@
     ],
     "dreamWorld": [],
     "event": [
-      "agility",
-      "batonpass",
+      "Agility",
+      "Baton Pass",
       "confuseray",
       "doubleteam",
       "furycutter",
@@ -18166,7 +18166,7 @@
       "22": "whirlwind",
       "28": "knockoff",
       "31": "smellingsalts",
-      "37": "bellydrum",
+      "37": "Belly Drum",
       "40": "endure",
       "46": "seismictoss",
       "49": "reversal"
@@ -18174,7 +18174,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "dig",
       "doubleteam",
       "earthquake",
@@ -18241,7 +18241,7 @@
       "22": "whirlwind",
       "29": "knockoff",
       "33": "smellingsalts",
-      "40": "bellydrum",
+      "40": "Belly Drum",
       "44": "endure",
       "51": "seismictoss",
       "55": "reversal"
@@ -18249,7 +18249,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "dig",
       "doubleteam",
       "earthquake",
@@ -18300,7 +18300,7 @@
       "1": "tackle",
       "7": "harden",
       "13": "rockthrow",
-      "16": "block",
+      "16": "Block",
       "22": "thunderwave",
       "28": "rockslide",
       "31": "sandstorm",
@@ -18372,7 +18372,7 @@
       "7": "attract",
       "13": "sing",
       "15": "doubleslap",
-      "19": "assist",
+      "19": "Assist",
       "25": "charm",
       "27": "feintattack",
       "31": "covet",
@@ -18382,7 +18382,7 @@
     "tm": [
       "attract",
       "blizzard",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "doubleteam",
       "facade",
@@ -18407,7 +18407,7 @@
       "waterpulse"
     ],
     "egg": [
-      "batonpass",
+      "Baton Pass",
       "faketears",
       "helpinghand",
       "psychup",
@@ -18457,7 +18457,7 @@
     "tm": [
       "attract",
       "blizzard",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "doubleteam",
       "facade",
@@ -18527,10 +18527,10 @@
       "45": "meanlook"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "cut",
       "dig",
       "doubleteam",
@@ -18606,7 +18606,7 @@
       "16": "sweetscent",
       "21": "vicegrip",
       "26": "feintattack",
-      "31": "batonpass",
+      "31": "Baton Pass",
       "36": "crunch",
       "41": "irondefense",
       "46": "swallow"
@@ -18695,7 +18695,7 @@
       "44": "doubleedge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "dig",
@@ -18757,7 +18757,7 @@
       "53": "doubleedge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "cut",
       "dig",
@@ -18814,7 +18814,7 @@
       "63": "doubleedge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -18899,7 +18899,7 @@
       "17": "hiddenpower",
       "20": "swagger",
       "22": "mindreader",
-      "28": "calmmind",
+      "28": "Calm Mind",
       "32": "highjumpkick",
       "36": "psychup",
       "41": "reversal",
@@ -18908,8 +18908,8 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
-      "calmmind",
+      "Bulk Up",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -18932,7 +18932,7 @@
       "toxic"
     ],
     "egg": [
-      "batonpass",
+      "Baton Pass",
       "dynamicpunch",
       "fakeout",
       "firepunch",
@@ -18980,7 +18980,7 @@
       "17": "hiddenpower",
       "20": "swagger",
       "22": "mindreader",
-      "28": "calmmind",
+      "28": "Calm Mind",
       "32": "highjumpkick",
       "36": "psychup",
       "46": "reversal",
@@ -18989,8 +18989,8 @@
     "tm": [
       "attract",
       "brickbreak",
-      "bulkup",
-      "calmmind",
+      "Bulk Up",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -19053,7 +19053,7 @@
       "28": "roar",
       "33": "bite",
       "36": "thunder",
-      "41": "charge"
+      "41": "Charge"
     },
     "tm": [
       "attract",
@@ -19108,7 +19108,7 @@
       "31": "roar",
       "39": "bite",
       "45": "thunder",
-      "53": "charge"
+      "53": "Charge"
     },
     "tm": [
       "attract",
@@ -19163,10 +19163,10 @@
       "19": "spark",
       "22": "encore",
       "28": "faketears",
-      "31": "charge",
+      "31": "Charge",
       "37": "thunder",
-      "40": "batonpass",
-      "47": "agility"
+      "40": "Baton Pass",
+      "47": "Agility"
     },
     "tm": [
       "attract",
@@ -19232,10 +19232,10 @@
       "19": "spark",
       "22": "encore",
       "28": "charm",
-      "31": "charge",
+      "31": "Charge",
       "37": "thunder",
-      "40": "batonpass",
-      "47": "agility"
+      "40": "Baton Pass",
+      "47": "Agility"
     },
     "tm": [
       "attract",
@@ -19306,7 +19306,7 @@
       "37": "doubleedge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "doubleteam",
@@ -19333,7 +19333,7 @@
       "waterpulse"
     ],
     "egg": [
-      "batonpass",
+      "Baton Pass",
       "silverwind",
       "trick"
     ],
@@ -19376,7 +19376,7 @@
       "37": "covet"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "doubleteam",
@@ -19403,7 +19403,7 @@
       "waterpulse"
     ],
     "egg": [
-      "batonpass",
+      "Baton Pass",
       "growth",
       "silverwind"
     ],
@@ -19447,7 +19447,7 @@
       "41": "ingrain",
       "45": "toxic",
       "49": "petaldance",
-      "53": "aromatherapy",
+      "53": "Aromatherapy",
       "57": "synthesis"
     },
     "tm": [
@@ -19509,7 +19509,7 @@
       "6": "yawn",
       "9": "poisongas",
       "14": "sludge",
-      "17": "amnesia",
+      "17": "Amnesia",
       "23": "encore",
       "28": "toxic",
       "34": "swallow",
@@ -19541,7 +19541,7 @@
       "waterpulse"
     ],
     "egg": [
-      "acidarmor",
+      "Acid Armor",
       "dreameater",
       "painsplit",
       "smog"
@@ -19579,7 +19579,7 @@
   "swalot": {
     "level": {
       "1": "yawn",
-      "17": "amnesia",
+      "17": "Amnesia",
       "23": "encore",
       "26": "bodyslam",
       "31": "toxic",
@@ -19648,7 +19648,7 @@
       "28": "screech",
       "31": "takedown",
       "37": "swagger",
-      "43": "agility"
+      "43": "Agility"
     },
     "tm": [
       "attract",
@@ -19709,7 +19709,7 @@
       "38": "taunt",
       "43": "swagger",
       "48": "skullbash",
-      "53": "agility"
+      "53": "Agility"
     },
     "tm": [
       "attract",
@@ -19769,7 +19769,7 @@
       "32": "mist",
       "37": "rest",
       "41": "waterspout",
-      "46": "amnesia",
+      "46": "Amnesia",
       "50": "hydropump"
     },
     "tm": [
@@ -19833,7 +19833,7 @@
       "32": "mist",
       "37": "rest",
       "44": "waterspout",
-      "52": "amnesia",
+      "52": "Amnesia",
       "59": "hydropump"
     },
     "tm": [
@@ -19879,7 +19879,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "amnesia",
+      "Amnesia",
       "hydropump",
       "mist",
       "rest",
@@ -19896,7 +19896,7 @@
       "19": "magnitude",
       "25": "focusenergy",
       "29": "takedown",
-      "31": "amnesia",
+      "31": "Amnesia",
       "35": "earthquake",
       "41": "flamethrower",
       "49": "doubleedge"
@@ -19958,7 +19958,7 @@
       "1": "tackle",
       "25": "focusenergy",
       "29": "takedown",
-      "31": "amnesia",
+      "31": "Amnesia",
       "33": "rockslide",
       "37": "earthquake",
       "45": "eruption",
@@ -20019,7 +20019,7 @@
       "27": "protect",
       "30": "flamethrower",
       "33": "irondefense",
-      "40": "amnesia",
+      "40": "Amnesia",
       "43": "flail",
       "46": "heatwave"
     },
@@ -20081,7 +20081,7 @@
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -20144,7 +20144,7 @@
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -20215,7 +20215,7 @@
     "tm": [
       "attract",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "dig",
       "doubleteam",
       "facade",
@@ -20243,8 +20243,8 @@
       "waterpulse"
     ],
     "egg": [
-      "assist",
-      "batonpass",
+      "Assist",
+      "Baton Pass",
       "disable",
       "encore",
       "rockslide",
@@ -20598,7 +20598,7 @@
       "48": "perishsong"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "facade",
@@ -20619,7 +20619,7 @@
       "toxic"
     ],
     "egg": [
-      "agility",
+      "Agility",
       "haze",
       "pursuit",
       "rage"
@@ -20660,7 +20660,7 @@
       "59": "skyattack"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "doubleteam",
       "dragonclaw",
@@ -20706,7 +20706,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "aerialace",
+      "Aerial Ace",
       "dragonbreath",
       "dragonbreath",
       "dragondance",
@@ -20732,7 +20732,7 @@
       "55": "falseswipe"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -20902,7 +20902,7 @@
       "49": "explosion"
     },
     "tm": [
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "earthquake",
       "facade",
@@ -20947,7 +20947,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "batonpass",
+      "Baton Pass",
       "confusion",
       "harden",
       "psychic",
@@ -20969,7 +20969,7 @@
       "49": "explosion"
     },
     "tm": [
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "earthquake",
       "facade",
@@ -21017,7 +21017,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "batonpass",
+      "Baton Pass",
       "confusion",
       "cosmicpower",
       "harden",
@@ -21032,7 +21032,7 @@
       "6": "watersport",
       "11": "watergun",
       "16": "magnitude",
-      "21": "amnesia",
+      "21": "Amnesia",
       "26": "snore",
       "31": "earthquake",
       "36": "futuresight",
@@ -21085,7 +21085,7 @@
       "1": "watersport",
       "11": "watergun",
       "16": "magnitude",
-      "21": "amnesia",
+      "21": "Amnesia",
       "26": "snore",
       "36": "earthquake",
       "46": "futuresight",
@@ -21149,7 +21149,7 @@
       "44": "guillotine"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -21216,7 +21216,7 @@
       "52": "guillotine"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -21404,7 +21404,7 @@
       "15": "acid",
       "22": "ingrain",
       "29": "confuseray",
-      "36": "amnesia",
+      "36": "Amnesia",
       "43": "ancientpower",
       "50": "swallow"
     },
@@ -21427,7 +21427,7 @@
       "toxic"
     ],
     "egg": [
-      "barrier",
+      "Barrier",
       "mirrorcoat",
       "recover",
       "rockslide"
@@ -21452,7 +21452,7 @@
     "level": {
       "1": "ingrain",
       "29": "confuseray",
-      "36": "amnesia",
+      "36": "Amnesia",
       "48": "ancientpower",
       "60": "swallow"
     },
@@ -21510,7 +21510,7 @@
       "55": "rockblast"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -21564,7 +21564,7 @@
       "64": "rockblast"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -21785,7 +21785,7 @@
       "49": "ancientpower"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
       "brickbreak",
@@ -21872,7 +21872,7 @@
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -21938,7 +21938,7 @@
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -22005,7 +22005,7 @@
     "tm": [
       "attract",
       "blizzard",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -22077,7 +22077,7 @@
     "tm": [
       "attract",
       "blizzard",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "earthquake",
       "facade",
@@ -22148,7 +22148,7 @@
       "47": "synthesis"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "bulletseed",
       "cut",
@@ -22214,7 +22214,7 @@
     },
     "tm": [
       "attract",
-      "calmmind",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -22281,10 +22281,10 @@
       "46": "perishsong"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "blizzard",
-      "calmmind",
+      "Calm Mind",
       "cut",
       "doubleteam",
       "facade",
@@ -22318,7 +22318,7 @@
       "waterpulse"
     ],
     "egg": [
-      "batonpass",
+      "Baton Pass",
       "curse",
       "doubleedge",
       "feintattack",
@@ -22399,7 +22399,7 @@
       "waterpulse"
     ],
     "egg": [
-      "block",
+      "Block",
       "spikes"
     ],
     "tutor": [
@@ -22685,7 +22685,7 @@
       "waterpulse"
     ],
     "egg": [
-      "barrier",
+      "Barrier",
       "bodyslam",
       "confuseray",
       "mudsport",
@@ -22714,7 +22714,7 @@
       "22": "waterpulse",
       "29": "scaryface",
       "36": "crunch",
-      "43": "batonpass",
+      "43": "Baton Pass",
       "50": "hydropump"
     },
     "tm": [
@@ -22761,11 +22761,11 @@
     "level": {
       "1": "whirlpool",
       "8": "confusion",
-      "15": "agility",
+      "15": "Agility",
       "22": "waterpulse",
-      "29": "amnesia",
+      "29": "Amnesia",
       "36": "psychic",
-      "43": "batonpass",
+      "43": "Baton Pass",
       "50": "hydropump"
     },
     "tm": [
@@ -22825,7 +22825,7 @@
     "tm": [
       "attract",
       "blizzard",
-      "calmmind",
+      "Calm Mind",
       "dive",
       "doubleteam",
       "earthquake",
@@ -22850,7 +22850,7 @@
       "waterpulse"
     ],
     "egg": [
-      "amnesia",
+      "Amnesia",
       "magnitude",
       "rockslide",
       "skullbash",
@@ -22879,7 +22879,7 @@
       "1": "tackle",
       "4": "charm",
       "12": "watergun",
-      "16": "agility",
+      "16": "Agility",
       "24": "takedown",
       "28": "attract",
       "36": "sweetkiss",
@@ -22943,7 +22943,7 @@
       "53": "doubleedge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -23009,7 +23009,7 @@
       "78": "doubleedge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -23065,7 +23065,7 @@
       "93": "doubleedge"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
       "brickbreak",
       "cut",
@@ -23112,7 +23112,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "aerialace",
+      "Aerial Ace",
       "dragonbreath",
       "dragonclaw",
       "dragondance",
@@ -23141,11 +23141,11 @@
       "38": "psychic",
       "44": "irondefense",
       "50": "meteormash",
-      "56": "agility",
+      "56": "Agility",
       "62": "hyperbeam"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "brickbreak",
       "cut",
       "doubleteam",
@@ -23211,11 +23211,11 @@
       "38": "psychic",
       "44": "irondefense",
       "55": "meteormash",
-      "66": "agility",
+      "66": "Agility",
       "77": "hyperbeam"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "brickbreak",
       "cut",
       "doubleteam",
@@ -23352,7 +23352,7 @@
       "17": "curse",
       "25": "superpower",
       "33": "ancientpower",
-      "41": "amnesia",
+      "41": "Amnesia",
       "49": "zapcannon",
       "57": "lockon",
       "65": "hyperbeam"
@@ -23434,7 +23434,7 @@
       "65": "hyperbeam"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "brickbreak",
       "doubleteam",
       "earthquake",
@@ -23512,9 +23512,9 @@
       "50": "charm"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
-      "calmmind",
+      "Calm Mind",
       "cut",
       "dive",
       "doubleteam",
@@ -23599,9 +23599,9 @@
       "50": "dragondance"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "attract",
-      "calmmind",
+      "Calm Mind",
       "cut",
       "dive",
       "doubleteam",
@@ -23677,7 +23677,7 @@
       "5": "scaryface",
       "15": "ancientpower",
       "20": "bodyslam",
-      "30": "calmmind",
+      "30": "Calm Mind",
       "35": "icebeam",
       "45": "hydropump",
       "50": "rest",
@@ -23688,7 +23688,7 @@
     "tm": [
       "blizzard",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "dive",
       "doubleteam",
       "earthquake",
@@ -23737,7 +23737,7 @@
     "dreamWorld": [],
     "event": [
       "bodyslam",
-      "calmmind",
+      "Calm Mind",
       "doubleedge",
       "hydropump",
       "hydropump",
@@ -23752,7 +23752,7 @@
       "5": "scaryface",
       "15": "ancientpower",
       "20": "slash",
-      "30": "bulkup",
+      "30": "Bulk Up",
       "35": "earthquake",
       "45": "fireblast",
       "50": "rest",
@@ -23761,9 +23761,9 @@
       "75": "eruption"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "cut",
       "dig",
       "doubleteam",
@@ -23823,7 +23823,7 @@
     ],
     "dreamWorld": [],
     "event": [
-      "bulkup",
+      "Bulk Up",
       "earthquake",
       "fireblast",
       "fireblast",
@@ -23848,10 +23848,10 @@
       "75": "hyperbeam"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "blizzard",
       "brickbreak",
-      "bulkup",
+      "Bulk Up",
       "dive",
       "doubleteam",
       "dragonclaw",
@@ -23925,8 +23925,8 @@
       "50": "doomdesire"
     },
     "tm": [
-      "aerialace",
-      "calmmind",
+      "Aerial Ace",
+      "Calm Mind",
       "doubleteam",
       "facade",
       "flash",
@@ -24029,9 +24029,9 @@
       "50": "mirrorcoat"
     },
     "tm": [
-      "aerialace",
+      "Aerial Ace",
       "brickbreak",
-      "calmmind",
+      "Calm Mind",
       "cut",
       "doubleteam",
       "facade",

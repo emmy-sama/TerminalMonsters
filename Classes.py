@@ -8,6 +8,8 @@ with open("Data/Moves.json") as moves_json:
     moves = json.load(moves_json)
 with open("Data/natures.json") as natures_json:
     natures = json.load(natures_json)
+with open("Data/LearnSets.json") as learn_sets_json:
+    learn_sets = json.load(learn_sets_json)
 
 
 class Player:
@@ -43,9 +45,10 @@ class Pokemon:
         self.exp_needed = pow(self.level + 1, 3)
         self.evolvl = pokedex[self.index].get("EvoLvl", None)
         self.evo = pokedex[self.index].get("Evo", None)
+        self.moves = self.get_move_set()
         self.chp = self.hp
         self.burned = False
-        self.moves = ["Thunderbolt", "Water Gun"]
+        self.temp_stats = {"attack": 1, "defense": 0, "sp_attack": 0, "sp_defense": 0, "speed": 0, "accuracy": 0, "evasion": 0}
 
     def get_gender(self, percent):
         rnum = random.uniform(0.0, 1.0)
@@ -53,6 +56,18 @@ class Pokemon:
             self.gender = "Male"
         else:
             self.gender = "Female"
+
+    def get_move_set(self):
+        ms = []
+        ls = learn_sets.get(str(self.species).lower())
+        for level in ls.get("level"):
+            if int(level) <= self.level:
+                if len(ms) >= 4:
+                    ms.insert(0, ls.get("level").get(level).title())
+                else:
+                    ms.append(ls.get("level").get(level).title())
+        return ms
+
 
     def calc_stats(self):
         self.hp = math.floor(0.01 * ((2 * pokedex[self.index].get("bHP")) * self.level)) + self.level + 10
@@ -66,6 +81,9 @@ class Pokemon:
                                      * self.nature.get("Sp.Defense", 1))
         self.speed = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSpeed")) * self.level)) + 5)
                                 * self.nature.get("Speed", 1))
+
+    def reset_temp(self):
+        self.temp_stats = self.temp_stats.fromkeys(self.temp_stats.keys(), 0)
 
     def evolve(self):
         self.index = self.evo

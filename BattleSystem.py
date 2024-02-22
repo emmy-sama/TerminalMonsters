@@ -5,6 +5,10 @@ import json
 weather = "clear"
 reflect = False
 light_screen = False
+temp_stat_table_norm = {-6: 2/8, -5: 2/7, -4: 2/6, -3: 2/5, -2: 2/4, -1: 2/3, 0: 2/2, 1: 3/2, 2: 4/2, 3: 5/2, 4: 6/2,
+                        5: 7/2, 6: 8/2}
+temp_stat_table_acc_eva = {-6: 33/100, -5: 36/100, -4: 43/100,	-3: 50/100,	-2: 60/100, -1: 75/100, 0: 100/100,
+                           1: 133/100, 2: 166/100, 3: 200/100, 4: 250/100, 5: 266/100, 6: 300/100}
 
 
 def battle(player, opponent, moves):
@@ -46,14 +50,16 @@ def battle(player, opponent, moves):
                         if y == 2:
                             while not finished:
                                 player.team[x - 1].check_poke_moves(moves)
-                                z = int(input("1.Swap 2.Back"))
+                                z = int(input("1.Swap 2.Back: "))
                                 if z == 1:
+                                    player_active.reset_temp()
                                     player_active = player.team[x - 1]
                                     print(f"{player.name} sent out {player_active.species}")
                                     finished = True
                                 if z == 2:
                                     break
                         if y == 1:
+                            player_active.reset_temp()
                             player_active = player.team[x - 1]
                             print(f"{player.name} sent out {player_active.species}")
                             finished = True
@@ -71,13 +77,15 @@ def battle(player, opponent, moves):
                             p_move = move
                             break
                     finished = True
+        player_speed = math.floor(player_active.speed * temp_stat_table_norm.get(player_active.temp_stats.get("speed")))
+        opponent_speed = math.floor(opponent_active.speed * temp_stat_table_norm.get(opponent_active.temp_stats.get("speed")))
         if p_move is not None and ai_move is not None:
-            if player_active.speed > opponent_active.speed:
+            if player_speed > opponent_speed:
                 first_trainer = player_active
                 first_move = p_move
                 second_trainer = opponent_active
                 second_move = ai_move
-            elif opponent_active.speed < player_active.speed:
+            elif opponent_speed < player_speed:
                 first_trainer = opponent_active
                 first_move = ai_move
                 second_trainer = player_active
@@ -252,18 +260,26 @@ def battle(player, opponent, moves):
 
 
 def dmg_calc(attacker, defender, move, types):
-    dmg_type = move.get("category")
-    move_type = move.get("type")
-    if dmg_type == "Physical":
-        atk = attacker.attack
-        dfn = defender.defense
-    else:
-        atk = attacker.sp_attack
-        dfn = defender.sp_defense
     crit = False
     if random.uniform(0, 1) <= 0.0625:
         crit = True
         print("A critical hit")
+    dmg_type = move.get("category")
+    move_type = move.get("type")
+    if dmg_type == "Physical":
+        if crit:
+            atk = attacker.attack
+            dfn = defender.defense
+        else:
+            atk = math.floor(attacker.attack * temp_stat_table_norm.get(attacker.temp_stats.get("attack")))
+            dfn = math.floor(defender.defense * temp_stat_table_norm.get(defender.temp_stats.get("defense")))
+    else:
+        if crit:
+            atk = attacker.sp_attack
+            dfn = defender.sp_defense
+        else:
+            atk = math.floor(attacker.sp_attack * temp_stat_table_norm.get(attacker.temp_stats.get("sp_attack")))
+            dfn = math.floor(defender.sp_defense * temp_stat_table_norm.get(defender.temp_stats.get("sp_defense")))
     total = math.floor(math.floor((math.floor((2 * attacker.level) / 5 + 2) * atk * move.get("power")) / dfn) / 50)
     if attacker.burned and dmg_type == "Physical":
         total = math.floor(total * 0.5)
@@ -303,16 +319,24 @@ def dmg_calc(attacker, defender, move, types):
         print("It's not very effective...")
     total = math.floor(total * effectiveness)
     # Check dmg range values
-    # for n in range(85, 101):
-        # print(math.floor(total * (n / 100)))
+    for n in range(85, 101):
+        print(math.floor(total * (n / 100)))
     total = math.floor((total * random.randint(85, 100)) / 100)
+    if total == 0:
+        total = 1
     return total
 
 
 def action(attacker, defender, move, types):
     print(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
     hit_check = random.randint(1, 100)
-    if hit_check > move.get("accuracy"):
+    accuracy_stage = attacker.temp_stats.get("accuracy") + defender.temp_stats.get("evasion")
+    if accuracy_stage > 6:
+        accuracy_stage = 6
+    elif accuracy_stage < -6:
+        accuracy_stage = -6
+    accuracy = move.get("accuracy") * temp_stat_table_acc_eva.get(accuracy_stage)
+    if hit_check > accuracy:
         print(f"{attacker.species} Missed!")
         return
     if move.get("category") != "Non-Damaging":
