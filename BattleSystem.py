@@ -30,53 +30,11 @@ def battle(player, opponent, moves):
             if move.get("name") == ai_random:
                 ai_move = move
                 break
-        while not finished:
-            player_action = int(input("What will you do? 1.Fight 2.Check/Swap Pokemon 3.Open Bag: "))
-            if player_action == 3:
-                print("Will add items later")
-            if player_action == 2:
-                while not finished:
-                    for pokes in player.team:
-                        print(f"{player.team.index(pokes) + 1}.", end=""), pokes.check_poke_basic()
-                    print("7.Back")
-                    x = int(input("Please Select a pokemon to view details of or swap in: "))
-                    if x == 7:
-                        break
-                    while not finished:
-                        player.team[x - 1].check_poke_advanced()
-                        y = int(input("1.Swap 2.Check Moves 3.Back: "))
-                        if y == 3:
-                            break
-                        if y == 2:
-                            while not finished:
-                                player.team[x - 1].check_poke_moves(moves)
-                                z = int(input("1.Swap 2.Back: "))
-                                if z == 1:
-                                    player_active.reset_temp()
-                                    player_active = player.team[x - 1]
-                                    print(f"{player.name} sent out {player_active.species}")
-                                    finished = True
-                                if z == 2:
-                                    break
-                        if y == 1:
-                            player_active.reset_temp()
-                            player_active = player.team[x - 1]
-                            print(f"{player.name} sent out {player_active.species}")
-                            finished = True
-                            break
-            if player_action == 1:
-                for m in player_active.moves:
-                    print(f"{player_active.moves.index(m) + 1}.{m}")
-                print("5.Back")
-                x = int(input("Please Select a move: "))
-                if x == 5:
-                    pass
-                else:
-                    for move in moves:
-                        if move.get("name") == player_active.moves[int(x) - 1]:
-                            p_move = move
-                            break
-                    finished = True
+        player_choice = player_turn(player, player_active, moves)
+        if isinstance(player_choice, dict):
+            p_move = player_choice
+        else:
+            player_active = player_choice
         player_speed = math.floor(player_active.speed * temp_stat_table_norm.get(player_active.temp_stats.get("speed")))
         opponent_speed = math.floor(opponent_active.speed * temp_stat_table_norm.get(opponent_active.temp_stats.get("speed")))
         if p_move is not None and ai_move is not None:
@@ -259,6 +217,71 @@ def battle(player, opponent, moves):
                 opponent_active = random.choice(opponent.team)
 
 
+def player_turn(player, player_active, moves):
+    while True:
+        player_action = int(input("What will you do? 1.Fight 2.Check/Swap Pokemon 3.Open Bag: "))
+        if player_action == 3:
+            print("Will add items later")
+        if player_action == 2:
+            while True:
+                for pokes in player.team:
+                    print(f"{player.team.index(pokes) + 1}.", end=""), pokes.check_poke_basic()
+                print("7.Back")
+                x = int(input("Please Select a pokemon to view details of or swap in: "))
+                if x == 7:
+                    break
+                while True:
+                    player.team[x - 1].check_poke_advanced()
+                    y = int(input("1.Swap 2.Check Moves 3.Back: "))
+                    if y == 3:
+                        break
+                    if y == 2:
+                        while True:
+                            player.team[x - 1].check_poke_moves(moves)
+                            z = int(input("1.Swap 2.Back: "))
+                            if z == 1:
+                                player_active.reset_temp()
+                                player_active = player.team[x - 1]
+                                print(f"{player.name} sent out {player_active.species}")
+                                return player_active
+                            if z == 2:
+                                break
+                    if y == 1:
+                        player_active.reset_temp()
+                        player_active = player.team[x - 1]
+                        print(f"{player.name} sent out {player_active.species}")
+                        return player_active
+        if player_action == 1:
+            for m in player_active.moves:
+                print(f"{player_active.moves.index(m) + 1}.{m}")
+            print("5.Back")
+            x = int(input("Please Select a move: "))
+            if x == 5:
+                pass
+            else:
+                for move in moves:
+                    if move.get("name") == player_active.moves[int(x) - 1]:
+                        p_move = move
+                        return p_move
+
+
+def action(attacker, defender, move, types):
+    print(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
+    hit_check = random.randint(1, 100)
+    accuracy_stage = attacker.temp_stats.get("accuracy") + defender.temp_stats.get("evasion")
+    if accuracy_stage > 6:
+        accuracy_stage = 6
+    elif accuracy_stage < -6:
+        accuracy_stage = -6
+    accuracy = move.get("accuracy") * temp_stat_table_acc_eva.get(accuracy_stage)
+    if hit_check > accuracy:
+        print(f"{attacker.species} Missed!")
+        return
+    if move.get("category") != "Non-Damaging":
+        dmg = dmg_calc(attacker, defender, move, types)
+        defender.chp -= dmg
+
+
 def dmg_calc(attacker, defender, move, types):
     crit = False
     if random.uniform(0, 1) <= 0.0625:
@@ -325,20 +348,3 @@ def dmg_calc(attacker, defender, move, types):
     if total == 0:
         total = 1
     return total
-
-
-def action(attacker, defender, move, types):
-    print(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
-    hit_check = random.randint(1, 100)
-    accuracy_stage = attacker.temp_stats.get("accuracy") + defender.temp_stats.get("evasion")
-    if accuracy_stage > 6:
-        accuracy_stage = 6
-    elif accuracy_stage < -6:
-        accuracy_stage = -6
-    accuracy = move.get("accuracy") * temp_stat_table_acc_eva.get(accuracy_stage)
-    if hit_check > accuracy:
-        print(f"{attacker.species} Missed!")
-        return
-    if move.get("category") != "Non-Damaging":
-        dmg = dmg_calc(attacker, defender, move, types)
-        defender.chp -= dmg

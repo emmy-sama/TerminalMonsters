@@ -48,7 +48,7 @@ class Pokemon:
         self.moves = self.get_move_set()
         self.chp = self.hp
         self.burned = False
-        self.temp_stats = {"attack": 1, "defense": 0, "sp_attack": 0, "sp_defense": 0, "speed": 0, "accuracy": 0, "evasion": 0}
+        self.temp_stats = {"attack": 0, "defense": 0, "sp_attack": 0, "sp_defense": 0, "speed": 0, "accuracy": 0, "evasion": 0}
 
     def get_gender(self, percent):
         rnum = random.uniform(0.0, 1.0)
