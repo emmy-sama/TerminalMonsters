@@ -4,10 +4,12 @@ import math
 import json
 with open("Data/Pokedex.json") as pokedex_json:
     pokedex = json.load(pokedex_json)
-with open("Data/Moves.json") as moves_json:
-    moves = json.load(moves_json)
 with open("Data/natures.json") as natures_json:
     natures = json.load(natures_json)
+with open("Data/Moves.json") as moves_json:
+    moves = json.load(moves_json)
+with open("Data/TypeEffectiveness.json") as effectiveness_json:
+    types = json.load(effectiveness_json)
 with open("Data/LearnSets.json") as learn_sets_json:
     learn_sets = json.load(learn_sets_json)
 
@@ -114,9 +116,9 @@ class Pokemon:
               f"{self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} Sp.Attack: {self.sp_attack} "
               f"Sp.Defense: {self.sp_defense} Speed: {self.speed}")
 
-    def check_poke_moves(self, move_list):
+    def check_poke_moves(self):
         for m in self.moves:
-            for move in move_list:
+            for move in moves:
                 if m == move.get("name"):
                     print(f"{move.get("name")}:", f"{move.get("type")} Type,", f"{move.get("category")},",
                           f"Power: {move.get("power")}", f"Accuracy: {move.get("accuracy")}", f"PP: {move.get("pp")}")
@@ -124,11 +126,16 @@ class Pokemon:
 
 
 ash = Player("Ash", "they/them", 0, [])
-geo = Pokemon("Geodude", ash)
-ash.team.append(geo)
+Testmon = Pokemon("Testmon", ash)
+pika = Pokemon("Pikachu", ash)
+ash.team.append(Testmon)
+ash.team.append(pika)
 
 garry = Player("Garry", "they/them", 0, [])
-squrit = Pokemon("Squirtle", garry)
-garry.team.append(squrit)
+Squirtle = Pokemon("Squirtle", garry)
+Charmander = Pokemon("Charmander", garry)
+garry.team.append(Squirtle)
+garry.team.append(Charmander)
 
-battle(ash, garry, moves)
+ash_v_gary = Battle(ash, garry, moves, types)
+ash_v_gary.battle()

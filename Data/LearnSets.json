@@ -24112,5 +24112,19 @@
       "swift",
       "taunt"
     ]
-  }
+  },
+  "testmon": {
+    "level": {
+      "1": "Calm Mind",
+      "2": "Barrier",
+      "3": "Amnesia",
+      "4": "Agility",
+      "20": "spikes",
+      "25": "psychic",
+      "30": "swift",
+      "35": "irondefense",
+      "40": "zapcannon",
+      "45": "psychoboost",
+      "50": "mirrorcoat"
+    }}
 }

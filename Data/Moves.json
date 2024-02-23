@@ -7,10 +7,12 @@
     "priority": 0,
     "pp": 40,
     "description": "Raises the user's Defense by 2.",
+    "stat changes": {"defense": 2},
     "type": "Poison",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Changes Attacker Stats"
     ]
   },
   {
@@ -37,10 +39,12 @@
     "priority": 0,
     "pp": 30,
     "description": "Raises the user's Speed by 2.",
+    "stat changes": {"speed": 2},
     "type": "Psychic",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Changes Attacker Stats"
     ]
   },
   {
@@ -51,10 +55,12 @@
     "priority": 0,
     "pp": 20,
     "description": "Raises the user's Sp. Def by 2.",
+    "stat changes": {"sp_defense": 2},
     "type": "Psychic",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Changes Attacker Stats"
     ]
   },
   {
@@ -94,10 +100,12 @@
     "priority": 0,
     "pp": 30,
     "description": "Raises the user's Defense by 2.",
+    "stat changes": {"defense": 2},
     "type": "Psychic",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Changes Attacker Stats"
     ]
   },
   {
@@ -121,10 +129,14 @@
     "priority": 0,
     "pp": 10,
     "description": "User loses 50% max HP. Maximizes Attack.",
+    "stat changes": {"attack": 12},
+    "hp changes": 0.5,
     "type": "Normal",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Changes Attacker Stats",
+      "Lowers Attacker chp by hp"
     ]
   },
   {
@@ -151,10 +163,15 @@
     "priority": 0,
     "pp": 20,
     "description": "Raises the user's Attack and Defense by 1.",
+    "stat changes": {
+      "attack": 1,
+      "defense": 1
+    },
     "type": "Fighting",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Changes Attacker Stats"
     ]
   },
   {
@@ -165,10 +182,15 @@
     "priority": 0,
     "pp": 20,
     "description": "Raises the user's Sp. Atk and Sp. Def by 1.",
+    "stat changes": {
+      "sp_attack": 1,
+      "sp_defense": 1
+    },
     "type": "Psychic",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Changes Attacker Stats"
     ]
   },
   {
