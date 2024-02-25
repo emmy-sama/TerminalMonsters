@@ -26,6 +26,8 @@ class Battle:
     def battle(self):
         while True:
             self.turn += 1
+            self.player_active.flinched = False
+            self.opponent_active.flinched = False
             print(f"Turn: {self.turn}")
             print(f"{self.player_active.species}'s HP: {self.player_active.chp}/{self.player_active.hp}")
             print(f"{self.opponent_active.species}'s HP: {self.opponent_active.chp}/{self.opponent_active.hp}")
@@ -128,6 +130,10 @@ class Battle:
                 return [self.opponent_active, self.ai_move, self.player_active, self.p_move]
 
     def action(self, attacker, defender, move):
+        if attacker.flinching:
+            attacker.flinching = False
+            print(f"{attacker.owner.name}'s {attacker.species} flinched!")
+            return
         print(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
         if defender is None and "Requires Target" in move.get("flags"):
             print("But it failed")
@@ -146,14 +152,172 @@ class Battle:
         if move.get("category") == "Non-Damaging":
             self.non_dmg_move(attacker, defender, move)
         else:
-            dmg = self.dmg_calc(attacker, defender, move)
-            defender.chp -= dmg
+            # Do Beat Up, Bide, Brick Break, Counter, Covet, Dig, Dive, Double-Edge, Double Kick, Dragon Rage,
+            # Dream Eater, Earthquake, Endeavor, Eruption, Explosion, Facade, Fake Out, False Swipe, Flail, Focus Punch,
+            # Frustration, Gust, Hidden Power, Karate Chop, Knock Off, Leaf Blade, Low Kick, Magnitude, Mirror Coat,
+            # Night Shade, Outrage, Petal Dance, Poison Tail, Pursuit, Rage, Rapid Spin, Razor Wind, Return,
+            # Secret Power, Seismic Toss, Self-Destruct, Skull Bash, Slash, Smelling Salts, Snore, Solar Beam, Spit Up,
+            # Struggle, Surf, Thief, Thrash, Tri Attack, Twineedle, Uproar, Volt Tackle, Water Spout, Weather Ball,
+            # Fissure, Guillotine, Horn Drill, Sheer Cold, Fire Spin, Sand Tomb, Thunder, Whirlpool, Bind, Clamp,
+            # Cross Chop, Psywave, Submission, Bounce, Crabhammer, Doom Desire, Take Down, Wrap, Blast Burn, Blaze Kick,
+            # Bonemerang, Frenzy Plant, Future Sight, High Jump Kick, Hydro Cannon, Hyper Beam, Ice Ball, Present,
+            # Rollout, Sky Attack, Sky Uppercut, Sonic Boom, Super Fang, Triple Kick, Aeroblast, Air Cutter, Fly,
+            # Fury Cutter, Jump Kick, Razor Leaf
+            if "Multi-Hit" in move.get("flags"):
+                hits = (random.choices([2, 3, 4, 5], weights=[37.5, 37.5, 12.5, 12.5], k=1))[0]
+                for hit in range(0, hits):
+                    dmg = self.dmg_calc(attacker, defender, move)
+                    defender.chp -= dmg
+                    if defender.chp <= 0 or attacker.chp <= 0:
+                        print(f"It hit {hit + 1} time(s)")
+                        break
+                if defender.chp > 0 and attacker.chp > 0:
+                    print(f"It hit {hits} time(s)")
+            else:
+                dmg = self.dmg_calc(attacker, defender, move)
+                defender.chp -= dmg
+            if "Secondary" in move.get("flags"):
+                if "Changes Attacker Stats" in move.get("flags") or "Changes Defender Stats" in move.get("flags"):
+                    self.change_stats(attacker, defender, move)
+                if "Flinch" in move.get("flags"):
+                    roll = random.uniform(0, 1)
+                    if roll <= move.get("chance"):
+                        defender.flinching = True
+                if "Confuses" in move.get("flags"):
+                    roll = random.uniform(0, 1)
+                    if roll <= move.get("chance"):
+                        defender.confused = True
+                if "Status" in move.get("flags") and defender.status is None:
+                    roll = random.uniform(0, 1)
+                    if roll <= move.get("chance"):
+                        if (move.get("status") == "burned"
+                                and defender.type_one != "Fire" and defender.type_two != "Fire"):
+                            defender.status = "burned"
+                            print(f"{defender.owner.name}'s {defender.species} was burned!")
+                        elif (move.get("status") == "frozen"
+                              and defender.type_one != "Ice" and defender.type_two != "Ice"):
+                            defender.status = "frozen"
+                            print(f"{defender.owner.name}'s {defender.species} was frozen!")
+                        elif move.get("status") == "paralyzed":
+                            defender.status = "paralyzed"
+                            print(f"{defender.owner.name}'s {defender.species} was paralyzed!")
+                        elif (move.get("status") == "poisoned" and defender.type_one != "Poison"
+                              and defender.type_two != "Poison" and defender.type_one != "Steel"
+                              and defender.type_two != "Steel"):
+                            defender.status = "poisoned"
+                            print(f"{defender.owner.name}'s {defender.species} was poisoned!")
+                        elif (move.get("status") == "badly poisoned" and defender.type_one != "Poison"
+                              and defender.type_two != "Poison" and defender.type_one != "Steel"
+                              and defender.type_two != "Steel"):
+                            defender.status = "badly poisoned"
+                            print(f"{defender.owner.name}'s {defender.species} was badly poisoned!")
+                        elif move.get("status") == "sleeping":
+                            defender.status = "sleeping"
+                            print(f"{defender.owner.name}'s {defender.species} is fast asleep")
+                if "Leech" in move.get("flags"):
+                    if math.floor(dmg * 0.5) == 0:
+                        attacker.chp += 1
+                        if attacker.chp > attacker.hp:
+                            attacker.chp = attacker.hp
+                    else:
+                        attacker.chp += math.floor(dmg * 0.5)
+                        if attacker.chp > attacker.hp:
+                            attacker.chp = attacker.hp
+
+    def non_dmg_move(self, attacker, defender, move):
+        # Do Aromatherapy, Assist, Baton Pass, Block, Camouflage, Conversion, Conversion 2, Curse, Destiny Bond, Detect,
+        # Endure, Grudge, Hail, Haze, Heal Bell, Imprison, Ingrain, Light Screen, Magic Coat, Mean Look, Memento,
+        # Metronome, Mimic, Mirror Move, Mist, Moonlight, Morning Sun, Mud Sport, Nightmare, Pain Split, Perish Song,
+        # Protect, Psych Up, Rain Dance, Recycle, Reflect, Refresh, Rest, Role Play, Safeguard, Sandstorm, Sketch,
+        # Skill Swap, Sleep Talk, Snatch, Spider Web, Spikes, Stockpile, Substitute, Sunny Day, Swallow, Synthesis,
+        # Teleport, Transform, Water Sport, Wish, Yawn, Attract, Encore, Foresight, Lock-On, Mind Reader, Odor Sleuth,
+        # Spite, Taunt, Torment, Trick, Whirlwind, Disable, Leech Seed, Nature Power
+        if move.get("name") == "Charge":
+            attacker.charge = True
+            return
+        if "Lowers Attacker chp by hp" in move.get("flags"):
+            if attacker.chp - math.floor(attacker.hp * move.get("hp changes")) <= 0:
+                print("But it failed")
+                return
+            else:
+                attacker.chp -= math.floor(attacker.hp * move.get("hp changes"))
+        if "Raises Attacker chp by hp" in move.get("flags"):
+            attacker.chp += math.floor(attacker.hp * move.get("hp changes"))
+            if attacker.chp > attacker.hp:
+                attacker.chp = attacker.hp
+        if "Changes Attacker Stats" in move.get("flags") or "Changes Defender Stats" in move.get("flags"):
+            self.change_stats(attacker, defender, move)
+        if "Confuses" in move.get("flags"):
+            defender.confused = True
+            print(f"{defender.owner.name}'s {defender.species} became confused!")
+        if "Status" in move.get("flags") and defender.status is None:
+            if (move.get("status") == "burned"
+                    and defender.type_one != "Fire" and defender.type_two != "Fire"):
+                defender.status = "burned"
+                print(f"{defender.owner.name}'s {defender.species} was burned!")
+            elif (move.get("status") == "frozen"
+                  and defender.type_one != "Ice" and defender.type_two != "Ice"):
+                defender.status = "frozen"
+                print(f"{defender.owner.name}'s {defender.species} was frozen!")
+            elif move.get("status") == "paralyzed":
+                defender.status = "paralyzed"
+                print(f"{defender.owner.name}'s {defender.species} was paralyzed!")
+            elif (move.get("status") == "poisoned" and defender.type_one != "Poison"
+                  and defender.type_two != "Poison" and defender.type_one != "Steel"
+                  and defender.type_two != "Steel"):
+                defender.status = "poisoned"
+                print(f"{defender.owner.name}'s {defender.species} was poisoned!")
+            elif (move.get("status") == "badly poisoned" and defender.type_one != "Poison"
+                  and defender.type_two != "Poison" and defender.type_one != "Steel"
+                  and defender.type_two != "Steel"):
+                defender.status = "badly poisoned"
+                print(f"{defender.owner.name}'s {defender.species} was badly poisoned!")
+            elif move.get("status") == "sleeping":
+                defender.status = "sleeping"
+                print(f"{defender.owner.name}'s {defender.species} is fast asleep")
+
+    def change_stats(self, attacker, defender, move):
+        rng = random.uniform(0, 1)
+        if rng <= move.get("chance"):
+            if "Changes Attacker Stats" in move.get("flags"):
+                for key in list(move.get("stat changes").keys()):
+                    attacker.temp_stats[key] += move.get("stat changes").get(key)
+                    if move.get("stat changes").get(key) > 1:
+                        print(f"{attacker.species}'s {key} rose sharply!")
+                    elif move.get("stat changes").get(key) == 1:
+                        print(f"{attacker.species}'s {key} rose!")
+                    if move.get("stat changes").get(key) == -1:
+                        print(f"{attacker.species}'s {key} fell!")
+                    elif move.get("stat changes").get(key) < -1:
+                        print(f"{attacker.species}'s {key} harshly fell!")
+                    if attacker.temp_stats[key] >= 6:
+                        attacker.temp_stats[key] = 6
+                        print(f"{attacker.species}'s {key} wont go any higher!")
+                    elif attacker.temp_stats[key] <= -6:
+                        attacker.temp_stats[key] = -6
+                        print(f"{attacker.species}'s {key} wont go any lower!")
+                print(attacker.temp_stats)
+            if "Changes Defender Stats" in move.get("flags"):
+                for key in list(move.get("stat changes").keys()):
+                    defender.temp_stats[key] += move.get("stat changes").get(key)
+                    if move.get("stat changes").get(key) > 1:
+                        print(f"{defender.species}'s {key} rose sharply!")
+                    elif move.get("stat changes").get(key) == 1:
+                        print(f"{defender.species}'s {key} rose!")
+                    if move.get("stat changes").get(key) == -1:
+                        print(f"{defender.species}'s {key} fell!")
+                    elif move.get("stat changes").get(key) < -1:
+                        print(f"{defender.species}'s {key} harshly fell!")
+                    if defender.temp_stats[key] >= 6:
+                        defender.temp_stats[key] = 6
+                        print(f"{defender.species}'s {key} wont go any higher!")
+                    elif defender.temp_stats[key] <= -6:
+                        defender.temp_stats[key] = -6
+                        print(f"{defender.species}'s {key} wont go any lower!")
+                print(defender.temp_stats)
 
     def dmg_calc(self, attacker, defender, move):
-        crit = False
-        if random.uniform(0, 1) <= 0.0625:
-            crit = True
-            print("A critical hit")
+        crit = self.crit_check(attacker, move)
         dmg_type = move.get("category")
         move_type = move.get("type")
         if dmg_type == "Physical":
@@ -171,7 +335,7 @@ class Battle:
                 atk = math.floor(attacker.sp_attack * self.temp_stat_table_norm.get(attacker.temp_stats.get("sp_attack")))
                 dfn = math.floor(defender.sp_defense * self.temp_stat_table_norm.get(defender.temp_stats.get("sp_defense")))
         total = math.floor(math.floor((math.floor((2 * attacker.level) / 5 + 2) * atk * move.get("power")) / dfn) / 50)
-        if attacker.burned and dmg_type == "Physical":
+        if attacker.status == "burned" and dmg_type == "Physical":
             total = math.floor(total * 0.5)
         if self.reflect and dmg_type == "Physical" and not crit:
             total = math.floor(total * 0.5)
@@ -194,7 +358,9 @@ class Battle:
         if crit:
             total = math.floor(total * 2)
         # Double Dmg Moves
-        # Charge
+        if attacker.charge and move_type == "Electric":
+            total = math.floor(total * 2)
+            attacker.charge = False
         if move_type == attacker.type_one or move_type == attacker.type_two:
             total = math.floor(total * 1.5)
         for item in self.types:
@@ -216,52 +382,34 @@ class Battle:
             total = 1
         return total
 
-    def non_dmg_move(self, attacker, defender, move):
-        # Do Aromatherapy, Assist, Baton Pass, Block
-        if "Lowers Attacker chp by hp" in move.get("flags"):
-            if attacker.chp - math.floor(attacker.hp * move.get("hp changes")) <= 0:
-                print("But it failed")
-                return
+    def crit_check(self, attacker, move):
+        crit_roll = random.uniform(0, 1)
+        if attacker.temp_stats.get("critical") > 0:
+            if attacker.temp_stats.get("critical") == 1:
+                if crit_roll <= 0.1250:
+                    print("A critical hit")
+                    return True
+                return False
+            elif attacker.temp_stats.get("critical") == 2:
+                if crit_roll <= 0.2500:
+                    print("A critical hit")
+                    return True
+                return False
+            elif attacker.temp_stats.get("critical") == 3:
+                if crit_roll <= 0.3333:
+                    print("A critical hit")
+                    return True
+                return False
             else:
-                attacker.chp -= math.floor(attacker.hp * move.get("hp changes"))
-        if "Changes Attacker Stats" in move.get("flags"):
-            for key in list(move.get("stat changes").keys()):
-                attacker.temp_stats[key] += move.get("stat changes").get(key)
-                if move.get("stat changes").get(key) > 1:
-                    print(f"{attacker.species}'s {key} rose sharply!")
-                elif move.get("stat changes").get(key) == 1:
-                    print(f"{attacker.species}'s {key} rose!")
-                if move.get("stat changes").get(key) == -1:
-                    print(f"{attacker.species}'s {key} fell!")
-                elif move.get("stat changes").get(key) < -1:
-                    print(f"{attacker.species}'s {key} harshly fell!")
-                if attacker.temp_stats[key] >= 6:
-                    attacker.temp_stats[key] = 6
-                    print(f"{attacker.species}'s {key} wont go any higher!")
-                elif attacker.temp_stats[key] <= -6:
-                    attacker.temp_stats[key] = -6
-                    print(f"{attacker.species}'s {key} wont go any lower!")
-                print(attacker.temp_stats)
-        if "Changes Defender Stats" in move.get("flags"):
-            key = list(move.get("stat changes").keys())[0]
-            defender.temp_stats[key] += move.get("stat changes").get(key)
-            if move.get("stat changes").get(key) > 1:
-                print(f"{defender.species}'s {key} rose sharply!")
-            elif move.get("stat changes").get(key) == 1:
-                print(f"{defender.species}'s {key} rose!")
-            if move.get("stat changes").get(key) == -1:
-                print(f"{defender.species}'s {key} fell!")
-            elif move.get("stat changes").get(key) < -1:
-                print(f"{defender.species}'s {key} harshly fell!")
-            if defender.temp_stats[key] >= 6:
-                defender.temp_stats[key] = 6
-                print(f"{defender.species}'s {key} wont go any higher!")
-            elif defender.temp_stats[key] <= -6:
-                defender.temp_stats[key] = -6
-                print(f"{defender.species}'s {key} wont go any lower!")
-            print(defender.temp_stats)
-
-
+                if crit_roll <= 0.5000:
+                    print("A critical hit")
+                    return True
+                return False
+        else:
+            if crit_roll <= 0.0625:
+                print("A critical hit")
+                return True
+            return False
 
     def alive_check(self):
         if self.player_active.chp <= 0 or self.player_active is None:

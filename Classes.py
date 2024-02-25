@@ -49,8 +49,12 @@ class Pokemon:
         self.evo = pokedex[self.index].get("Evo", None)
         self.moves = self.get_move_set()
         self.chp = self.hp
-        self.burned = False
-        self.temp_stats = {"attack": 0, "defense": 0, "sp_attack": 0, "sp_defense": 0, "speed": 0, "accuracy": 0, "evasion": 0}
+        self.status = None
+        self.confused = False
+        self.flinching = False
+        self.temp_stats = {"attack": 0, "defense": 0, "sp_attack": 0, "sp_defense": 0, "speed": 0, "accuracy": 0,
+                           "evasion": 0, "critical": 0}
+        self.charge = False
 
     def get_gender(self, percent):
         rnum = random.uniform(0.0, 1.0)
