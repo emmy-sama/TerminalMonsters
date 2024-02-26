@@ -157,7 +157,7 @@
       "Swords Dance"
     ]
   },
-  "Charmander": {
+  "charmander": {
     "level": {
       "1": "Scratch",
       "7": "Ember",
@@ -843,7 +843,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -908,7 +908,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -1143,7 +1143,7 @@
       "Return",
       "Secret Power",
       "Shock Wave",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -1187,7 +1187,7 @@
       "20": "Slam",
       "26": "Thunderbolt",
       "33": "Agility",
-      "41": "thunder",
+      "41": "Thunder",
       "50": "Light Screen"
     },
     "tm": [
@@ -1210,7 +1210,7 @@
       "Secret Power",
       "Shock Wave",
       "Strength",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -1263,7 +1263,7 @@
       "Shock Wave",
       "Strength",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -1450,7 +1450,7 @@
       "Strength",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -1512,7 +1512,7 @@
       "Strength",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -1573,7 +1573,7 @@
       "Surf",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic",
@@ -1637,7 +1637,7 @@
       "Strength",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -1698,7 +1698,7 @@
       "Strength",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -1758,7 +1758,7 @@
       "Surf",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic",
@@ -1904,7 +1904,7 @@
       "Solar Beam",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -1974,7 +1974,7 @@
       "Solar Beam",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -2209,7 +2209,7 @@
       "Solar Beam",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -2275,7 +2275,7 @@
       "Solar Beam",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -2962,7 +2962,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic",
@@ -3029,7 +3029,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic",
@@ -3225,7 +3225,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -3234,7 +3234,7 @@
       "Counter",
       "Foresight",
       "Meditate",
-      "revenge",
+      "Revenge",
       "reversal",
       "Rock Slide",
       "Smelling Salts"
@@ -3302,7 +3302,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -3860,7 +3860,7 @@
       "13": "Karate Chop",
       "19": "Seismic Toss",
       "22": "Foresight",
-      "25": "revenge",
+      "25": "Revenge",
       "31": "Vital Throw",
       "37": "Submission",
       "40": "Cross Chop",
@@ -3929,7 +3929,7 @@
       "13": "Karate Chop",
       "19": "Seismic Toss",
       "22": "Foresight",
-      "25": "revenge",
+      "25": "Revenge",
       "33": "Vital Throw",
       "41": "Submission",
       "46": "Cross Chop",
@@ -3990,7 +3990,7 @@
       "13": "Karate Chop",
       "19": "Seismic Toss",
       "22": "Foresight",
-      "25": "revenge",
+      "25": "Revenge",
       "33": "Vital Throw",
       "41": "Submission",
       "46": "Cross Chop",
@@ -4810,7 +4810,7 @@
       "Secret Power",
       "Shock Wave",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -4854,7 +4854,7 @@
       "Secret Power",
       "Shock Wave",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -5156,7 +5156,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic"
@@ -5224,7 +5224,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic"
@@ -5488,7 +5488,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic"
@@ -5915,7 +5915,7 @@
       "Shock Wave",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic"
@@ -5962,7 +5962,7 @@
       "Shock Wave",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic"
@@ -6277,7 +6277,7 @@
   },
   "hitmonlee": {
     "level": {
-      "1": "revenge",
+      "1": "Revenge",
       "6": "Meditate",
       "11": "Rolling Kick",
       "16": "jumpkick",
@@ -6335,7 +6335,7 @@
   },
   "hitmonchan": {
     "level": {
-      "1": "revenge",
+      "1": "Revenge",
       "7": "Agility",
       "13": "Pursuit",
       "20": "Mach Punch",
@@ -6489,7 +6489,7 @@
       "Sunny Day",
       "Surf",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -6564,7 +6564,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic"
@@ -6620,7 +6620,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic"
@@ -6676,7 +6676,7 @@
       "Strength",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -6748,7 +6748,7 @@
       "Sunny Day",
       "Surf",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -6827,7 +6827,7 @@
       "Solar Beam",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -6914,7 +6914,7 @@
       "Solar Beam",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -7049,7 +7049,7 @@
       "Sunny Day",
       "Surf",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -7353,7 +7353,7 @@
       "Return",
       "Secret Power",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -7400,7 +7400,7 @@
       "Secret Power",
       "Skill Swap",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -7469,7 +7469,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic"
@@ -7754,7 +7754,7 @@
       "25": "Swift",
       "33": "Screech",
       "41": "Thunderbolt",
-      "49": "thunder"
+      "49": "Thunder"
     },
     "tm": [
       "Attract",
@@ -7775,7 +7775,7 @@
       "Secret Power",
       "Shock Wave",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -7817,7 +7817,7 @@
       "25": "Swift",
       "36": "Screech",
       "47": "Thunderbolt",
-      "58": "thunder"
+      "58": "Thunder"
     },
     "tm": [
       "Attract",
@@ -7841,7 +7841,7 @@
       "Shock Wave",
       "Strength",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -7986,7 +7986,7 @@
       "7": "Bind",
       "13": "Seismic Toss",
       "19": "Harden",
-      "25": "revenge",
+      "25": "Revenge",
       "31": "Brick Break",
       "37": "Guillotine",
       "43": "Submission",
@@ -8076,7 +8076,7 @@
       "Strength",
       "Sunny Day",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -8141,7 +8141,7 @@
       "Strength",
       "Surf",
       "Taunt",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic",
@@ -8199,7 +8199,7 @@
       "Shock Wave",
       "Strength",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -8348,7 +8348,7 @@
       "36": "Pin Missile",
       "42": "Thunder Wave",
       "47": "Agility",
-      "52": "thunder"
+      "52": "Thunder"
     },
     "tm": [
       "Attract",
@@ -8369,7 +8369,7 @@
       "Shadow Ball",
       "Shock Wave",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -8577,7 +8577,7 @@
       "Solar Beam",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -8632,7 +8632,7 @@
       "Solar Beam",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -8993,7 +8993,7 @@
       "Strength",
       "Sunny Day",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -9093,7 +9093,7 @@
       "49": "Drill Peck",
       "61": "Charge",
       "73": "Light Screen",
-      "85": "thunder"
+      "85": "Thunder"
     },
     "tm": [
       "Aerial Ace",
@@ -9116,7 +9116,7 @@
       "Shock Wave",
       "Steel Wing",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -9218,7 +9218,7 @@
       "Shock Wave",
       "Sunny Day",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -9278,7 +9278,7 @@
       "Shock Wave",
       "Sunny Day",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -9346,7 +9346,7 @@
       "Strength",
       "Sunny Day",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -9423,7 +9423,7 @@
       "Strength",
       "Sunny Day",
       "Taunt",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic",
@@ -9520,7 +9520,7 @@
       "Surf",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic",
@@ -10185,7 +10185,7 @@
       "Sunny Day",
       "Surf",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -10550,7 +10550,7 @@
       "Secret Power",
       "Shock Wave",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -10602,7 +10602,7 @@
       "Secret Power",
       "Shock Wave",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -10883,7 +10883,7 @@
       "16": "Thunder Wave",
       "23": "Cotton Spore",
       "30": "Light Screen",
-      "37": "thunder"
+      "37": "Thunder"
     },
     "tm": [
       "Attract",
@@ -10900,7 +10900,7 @@
       "Return",
       "Secret Power",
       "Shock Wave",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -10933,7 +10933,7 @@
       "18": "Thunder Wave",
       "27": "Cotton Spore",
       "36": "Light Screen",
-      "45": "thunder"
+      "45": "Thunder"
     },
     "tm": [
       "Attract",
@@ -10954,7 +10954,7 @@
       "Secret Power",
       "Shock Wave",
       "Strength",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -10986,7 +10986,7 @@
       "27": "Cotton Spore",
       "30": "Thunder Punch",
       "42": "Light Screen",
-      "57": "thunder"
+      "57": "Thunder"
     },
     "tm": [
       "Attract",
@@ -11008,7 +11008,7 @@
       "Secret Power",
       "Shock Wave",
       "Strength",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -11448,7 +11448,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -11862,7 +11862,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic"
@@ -11951,7 +11951,7 @@
       "Strength",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -12132,7 +12132,7 @@
       "Strength",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -12267,7 +12267,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic",
@@ -12350,7 +12350,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic",
@@ -12387,7 +12387,7 @@
       "9": "Minimize",
       "13": "Water Gun",
       "21": "Pin Missile",
-      "25": "revenge",
+      "25": "Revenge",
       "33": "Take Down",
       "37": "Hydro Pump",
       "45": "Destiny Bond"
@@ -13579,7 +13579,7 @@
       "Solar Beam",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -13655,7 +13655,7 @@
       "Strength",
       "Sunny Day",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -13705,7 +13705,7 @@
       "41": "Spark",
       "51": "Reflect",
       "61": "Crunch",
-      "71": "thunder",
+      "71": "Thunder",
       "81": "Calm Mind"
     },
     "tm": [
@@ -13731,7 +13731,7 @@
       "Shock Wave",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -14007,7 +14007,7 @@
       "Sunny Day",
       "Surf",
       "Taunt",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic",
@@ -14084,7 +14084,7 @@
       "Strength",
       "Sunny Day",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -14155,7 +14155,7 @@
       "Steel Wing",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -14954,7 +14954,7 @@
       "Sunny Day",
       "Surf",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -15021,7 +15021,7 @@
       "Sunny Day",
       "Surf",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -16142,7 +16142,7 @@
       "Solar Beam",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -16218,7 +16218,7 @@
       "Strength",
       "Sunny Day",
       "Taunt",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -16287,7 +16287,7 @@
       "Strength",
       "Sunny Day",
       "Taunt",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -16710,7 +16710,7 @@
       "Dynamic Punch",
       "Feint Attack",
       "Foresight",
-      "revenge"
+      "Revenge"
     ],
     "tutor": [
       "Body Slam",
@@ -16825,7 +16825,7 @@
       "Strength",
       "Sunny Day",
       "Taunt",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic"
@@ -16893,7 +16893,7 @@
       "Shock Wave",
       "Solar Beam",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -16955,7 +16955,7 @@
       "Solar Beam",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -17292,7 +17292,7 @@
       "Sunny Day",
       "Surf",
       "Taunt",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -17474,7 +17474,7 @@
       "25": "Odor Sleuth",
       "28": "roar",
       "33": "Bite",
-      "36": "thunder",
+      "36": "Thunder",
       "41": "Charge"
     },
     "tm": [
@@ -17494,7 +17494,7 @@
       "Shock Wave",
       "Strength",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -17527,7 +17527,7 @@
       "25": "Odor Sleuth",
       "31": "roar",
       "39": "Bite",
-      "45": "thunder",
+      "45": "Thunder",
       "53": "Charge"
     },
     "tm": [
@@ -17548,7 +17548,7 @@
       "Shock Wave",
       "Strength",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -17576,7 +17576,7 @@
       "22": "Encore",
       "28": "Fake Tears",
       "31": "Charge",
-      "37": "thunder",
+      "37": "Thunder",
       "40": "Baton Pass",
       "47": "Agility"
     },
@@ -17595,7 +17595,7 @@
       "Return",
       "Secret Power",
       "Shock Wave",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -17635,7 +17635,7 @@
       "22": "Encore",
       "28": "Charm",
       "31": "Charge",
-      "37": "thunder",
+      "37": "Thunder",
       "40": "Baton Pass",
       "47": "Agility"
     },
@@ -17654,7 +17654,7 @@
       "Return",
       "Secret Power",
       "Shock Wave",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -17719,7 +17719,7 @@
       "Solar Beam",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -17786,7 +17786,7 @@
       "Solar Beam",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -18826,7 +18826,7 @@
   },
   "cacturne": {
     "level": {
-      "1": "revenge",
+      "1": "Revenge",
       "13": "Leech Seed",
       "17": "Sand Attack",
       "21": "Pin Missile",
@@ -19040,7 +19040,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -19929,7 +19929,7 @@
       "Solar Beam",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -19998,7 +19998,7 @@
       "Strength",
       "Sunny Day",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -20071,7 +20071,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic"
@@ -20131,7 +20131,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic"
@@ -20456,7 +20456,7 @@
       "Sunny Day",
       "Taunt",
       "Thief",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic",
@@ -21367,7 +21367,7 @@
       "Shock Wave",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -21432,7 +21432,7 @@
       "Secret Power",
       "Shock Wave",
       "Strength",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -21498,7 +21498,7 @@
       "Shock Wave",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -21575,7 +21575,7 @@
       "Steel Wing",
       "Sunny Day",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -21646,7 +21646,7 @@
       "Steel Wing",
       "Sunny Day",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -21710,7 +21710,7 @@
       "Shock Wave",
       "Strength",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -21779,7 +21779,7 @@
       "Solar Beam",
       "Strength",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic"
     ],
@@ -21857,7 +21857,7 @@
       "Strength",
       "Sunny Day",
       "Surf",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Waterfall",
@@ -21917,7 +21917,7 @@
       "Shock Wave",
       "Skill Swap",
       "Sunny Day",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Toxic",
       "Water Pulse"
@@ -21993,7 +21993,7 @@
       "Strength",
       "Sunny Day",
       "Taunt",
-      "thunder",
+      "Thunder",
       "Thunderbolt",
       "Torment",
       "Toxic",
@@ -22029,10 +22029,25 @@
   },
   "testmon": {
     "level": {
-      "1": "Body Slam",
-      "2": "Thunderbolt",
-      "3": "Amnesia",
-      "4": "Agility",
+      "1": "Solar Beam",
+      "2": "Sky Attack",
+      "3": "Skull Bash",
+      "4": "Razor Wind",
+      "20": "Spikes",
+      "25": "Psychic",
+      "30": "Swift",
+      "35": "Iron Defense",
+      "40": "Zap Cannon",
+      "45": "Psycho Boost",
+      "50": "Mirror Coat"
+    }
+  },
+  "testmon2": {
+    "level": {
+      "1": "Tackle",
+      "6": "Dig",
+      "7": "Dig",
+      "8": "Fly",
       "20": "Spikes",
       "25": "Psychic",
       "30": "Swift",

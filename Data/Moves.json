@@ -419,15 +419,10 @@
     "priority": 0,
     "pp": 30,
     "description": "Raises the user's critical hit ratio by 2.",
-    "stat changes": {
-      "critical": 2
-    },
-    "chance": 1,
     "type": "Normal",
     "flags": [
       "Metronome",
-      "Snatch",
-      "Changes Attacker Stats"
+      "Snatch"
     ]
   },
   {
@@ -1291,7 +1286,8 @@
     "type": "Normal",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Raises Attacker chp by hp"
     ]
   },
   {
@@ -1564,7 +1560,8 @@
       "Mirror",
       "Protect",
       "Secondary",
-      "Flinch"
+      "Flinch",
+      "Double Minimized"
     ]
   },
   {
@@ -1889,12 +1886,12 @@
     "description": "Digs underground turn 1, strikes turn 2.",
     "type": "Ground",
     "flags": [
-      "Charge",
       "Contact",
       "Metronome",
       "Mirror",
       "No Sleep Talk",
-      "Protect"
+      "Protect",
+      "Semi-invulnerable"
     ]
   },
   {
@@ -1907,12 +1904,12 @@
     "description": "Dives underwater turn 1, strikes turn 2.",
     "type": "Water",
     "flags": [
-      "Charge",
       "Contact",
       "Metronome",
       "Mirror",
       "No Sleep Talk",
-      "Protect"
+      "Protect",
+      "Semi-invulnerable"
     ]
   },
   {
@@ -1942,12 +1939,15 @@
     "priority": 0,
     "pp": 15,
     "description": "Has 1/3 recoil.",
+    "amount": 0.33,
     "type": "Normal",
     "flags": [
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Recoil",
+      "Secondary"
     ]
   },
   {
@@ -2059,7 +2059,9 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Bypass Dig",
+      "Double Damage"
     ]
   },
   {
@@ -2137,11 +2139,15 @@
     "priority": 0,
     "pp": 5,
     "description": "Target's Def halved during damage. User faints.",
+    "amount": 42069,
     "type": "Normal",
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Recoil",
+      "Explode"
     ]
   },
   {
@@ -2159,7 +2165,8 @@
       "Mirror",
       "Protect",
       "Secondary",
-      "Flinch"
+      "Flinch",
+      "Double Minimized"
     ]
   },
   {
@@ -2464,7 +2471,9 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Bypass Fly",
+      "Double Damage"
     ]
   },
   {
@@ -2601,7 +2610,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "High Crit"
     ]
   },
   {
@@ -2633,7 +2643,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "High Crit"
     ]
   },
   {
@@ -2775,7 +2786,9 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Bypass Dig",
+      "Double Damage"
     ]
   },
   {
@@ -2882,7 +2895,8 @@
       "Mirror",
       "Protect",
       "Secondary",
-      "Flinch"
+      "Flinch",
+      "Double Minimized"
     ]
   },
   {
@@ -3026,12 +3040,17 @@
     "priority": 0,
     "pp": 25,
     "description": "High critical hit ratio. 10% chance to poison.",
+    "status": "poisoned",
+    "chance": 0.10,
     "type": "Poison",
     "flags": [
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "High Crit",
+      "Secondary",
+      "Status"
     ]
   },
   {
@@ -3352,11 +3371,15 @@
     "priority": 0,
     "pp": 5,
     "description": "Target's Def halved during damage. User faints.",
+    "amount": 42069,
     "type": "Normal",
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Recoil",
+      "Explode"
     ]
   },
   {
@@ -3454,7 +3477,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "High Crit"
     ]
   },
   {
@@ -3604,7 +3628,7 @@
   {
     "name": "Spit Up",
     "category": "Physical",
-    "power": 0,
+    "power": 100,
     "accuracy": 100,
     "priority": 0,
     "pp": 10,
@@ -3612,7 +3636,8 @@
     "type": "Normal",
     "flags": [
       "Metronome",
-      "Protect"
+      "Protect",
+      "Cant Crit"
     ]
   },
   {
@@ -3666,7 +3691,8 @@
       "Mirror",
       "Protect",
       "Secondary",
-      "Flinch"
+      "Flinch",
+      "Double Minimized"
     ]
   },
   {
@@ -3737,7 +3763,9 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Bypass Dive",
+      "Double Damage"
     ]
   },
   {
@@ -4019,7 +4047,9 @@
       "Mirror",
       "Protect",
       "Secondary",
-      "Flinch"
+      "Flinch",
+      "Bypass Fly",
+      "Double Damage"
     ]
   },
   {
@@ -4079,12 +4109,15 @@
     "priority": 0,
     "pp": 15,
     "description": "Has 1/3 recoil.",
+    "amount": 0.33,
     "type": "Electric",
     "flags": [
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Recoil",
+      "Secondary"
     ]
   },
   {
@@ -4210,7 +4243,9 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Bypass Dig",
+      "OHKO"
     ]
   },
   {
@@ -4226,7 +4261,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "OHKO"
     ]
   },
   {
@@ -4242,7 +4278,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "OHKO"
     ]
   },
   {
@@ -4257,7 +4294,8 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "OHKO"
     ]
   },
   {
@@ -4511,7 +4549,8 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Bypass Fly"
     ]
   },
   {
@@ -4526,7 +4565,9 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Bypass Dive",
+      "Double Damage"
     ]
   },
   {
@@ -4790,7 +4831,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "High Crit"
     ]
   },
   {
@@ -4906,12 +4948,15 @@
     "priority": 0,
     "pp": 25,
     "description": "Has 1/4 recoil.",
+    "amount": 0.25,
     "type": "Fighting",
     "flags": [
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Recoil",
+      "Secondary"
     ]
   },
   {
@@ -4956,14 +5001,18 @@
     "priority": 0,
     "pp": 5,
     "description": "Bounces turn 1. Hits turn 2. 30% paralyze.",
+    "status": "paralyzed",
+    "chance": 0.30,
     "type": "Flying",
     "flags": [
-      "Charge",
       "Contact",
       "Metronome",
       "Mirror",
       "No Sleep Talk",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Status",
+      "Semi-invulnerable"
     ]
   },
   {
@@ -5017,7 +5066,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "High Crit"
     ]
   },
   {
@@ -5031,7 +5081,8 @@
     "type": "Steel",
     "flags": [
       "Future Move",
-      "Metronome"
+      "Metronome",
+      "Cant Crit"
     ]
   },
   {
@@ -5270,12 +5321,15 @@
     "priority": 0,
     "pp": 20,
     "description": "Has 1/4 recoil.",
+    "amount": 0.25,
     "type": "Normal",
     "flags": [
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Recoil",
+      "Secondary"
     ]
   },
   {
@@ -5326,7 +5380,8 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Recharge"
+      "Recharge",
+      "Secondary"
     ]
   },
   {
@@ -5337,12 +5392,17 @@
     "priority": 0,
     "pp": 10,
     "description": "High critical hit ratio. 10% chance to burn.",
+    "status": "burned",
+    "chance": 0.10,
     "type": "Fire",
     "flags": [
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "High Crit",
+      "Secondary",
+      "Status"
     ]
   },
   {
@@ -5373,7 +5433,8 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Recharge"
+      "Recharge",
+      "Secondary"
     ]
   },
   {
@@ -5387,7 +5448,8 @@
     "type": "Psychic",
     "flags": [
       "Future Move",
-      "Metronome"
+      "Metronome",
+      "Cant Crit"
     ]
   },
   {
@@ -5438,7 +5500,8 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Recharge"
+      "Recharge",
+      "Secondary"
     ]
   },
   {
@@ -5454,7 +5517,8 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Recharge"
+      "Recharge",
+      "Secondary"
     ]
   },
   {
@@ -5644,13 +5708,17 @@
     "priority": 0,
     "pp": 5,
     "description": "Charges, then hits turn 2. 30% flinch. High crit.",
+    "chance": 0.30,
     "type": "Flying",
     "flags": [
       "Charge",
       "Metronome",
       "Mirror",
       "No Sleep Talk",
-      "Protect"
+      "Protect",
+      "High Crit",
+      "Secondary",
+      "Flinch"
     ]
   },
   {
@@ -5666,7 +5734,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Bypass Fly"
     ]
   },
   {
@@ -5772,7 +5841,8 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "High Crit"
     ]
   },
   {
@@ -5787,7 +5857,8 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "High Crit"
     ]
   },
   {
@@ -5838,11 +5909,11 @@
     "description": "Flies up on first turn, then strikes the next turn.",
     "type": "Flying",
     "flags": [
-      "Charge",
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Semi-invulnerable"
     ]
   },
   {
@@ -5966,7 +6037,8 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "High Crit"
     ]
   },
   {

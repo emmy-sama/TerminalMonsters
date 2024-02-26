@@ -53,8 +53,15 @@ class Pokemon:
         self.confused = False
         self.flinching = False
         self.temp_stats = {"attack": 0, "defense": 0, "sp_attack": 0, "sp_defense": 0, "speed": 0, "accuracy": 0,
-                           "evasion": 0, "critical": 0}
+                           "evasion": 0}
         self.charge = False
+        self.stockpile = 0
+        self.semi_invulnerable = None
+        self.minimized = False
+        self.damaged_this_turn = False
+        self.getting_pumped = False
+        self.recharge = False
+        self.charged = False
 
     def get_gender(self, percent):
         rnum = random.uniform(0.0, 1.0)
@@ -130,15 +137,15 @@ class Pokemon:
 
 
 ash = Player("Ash", "they/them", 0, [])
-Testmon = Pokemon("Testmon", ash)
+Testmon = Pokemon("Testmon", ash, 5)
 pika = Pokemon("Pikachu", ash)
 ash.team.append(Testmon)
 ash.team.append(pika)
 
 garry = Player("Garry", "they/them", 0, [])
-Squirtle = Pokemon("Squirtle", garry)
+Testmon2 = Pokemon("Testmon2", garry)
 Charmander = Pokemon("Charmander", garry)
-garry.team.append(Squirtle)
+garry.team.append(Testmon2)
 garry.team.append(Charmander)
 
 ash_v_gary = Battle(ash, garry, moves, types)
