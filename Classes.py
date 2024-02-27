@@ -1,4 +1,3 @@
-from BattleSystem import *
 import random
 import math
 import json
@@ -8,10 +7,10 @@ with open("Data/natures.json") as natures_json:
     natures = json.load(natures_json)
 with open("Data/Moves.json") as moves_json:
     moves = json.load(moves_json)
-with open("Data/TypeEffectiveness.json") as effectiveness_json:
-    types = json.load(effectiveness_json)
 with open("Data/LearnSets.json") as learn_sets_json:
     learn_sets = json.load(learn_sets_json)
+with open("Data/TypeEffectiveness.json") as effectiveness_json:
+    types = json.load(effectiveness_json)
 
 
 class Player:
@@ -62,6 +61,12 @@ class Pokemon:
         self.getting_pumped = False
         self.recharge = False
         self.charged = False
+        self.first_turn = True
+        self.acted = False
+        self.bide = 0
+        self.bide_dmg = 0
+        self.dmg_last_type_taken = None
+        self.dmg_last_taken = 0
 
     def get_gender(self, percent):
         rnum = random.uniform(0.0, 1.0)
@@ -80,7 +85,6 @@ class Pokemon:
                 else:
                     ms.append(ls.get("level").get(level).title())
         return ms
-
 
     def calc_stats(self):
         self.hp = math.floor(0.01 * ((2 * pokedex[self.index].get("bHP")) * self.level)) + self.level + 10
@@ -134,19 +138,3 @@ class Pokemon:
                     print(f"{move.get("name")}:", f"{move.get("type")} Type,", f"{move.get("category")},",
                           f"Power: {move.get("power")}", f"Accuracy: {move.get("accuracy")}", f"PP: {move.get("pp")}")
                     break
-
-
-ash = Player("Ash", "they/them", 0, [])
-Testmon = Pokemon("Testmon", ash, 5)
-pika = Pokemon("Pikachu", ash)
-ash.team.append(Testmon)
-ash.team.append(pika)
-
-garry = Player("Garry", "they/them", 0, [])
-Testmon2 = Pokemon("Testmon2", garry)
-Charmander = Pokemon("Charmander", garry)
-garry.team.append(Testmon2)
-garry.team.append(Charmander)
-
-ash_v_gary = Battle(ash, garry, moves, types)
-ash_v_gary.battle()

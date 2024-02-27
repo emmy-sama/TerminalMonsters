@@ -1604,7 +1604,7 @@
   },
   {
     "name": "Beat Up",
-    "category": "Special",
+    "category": "Physical",
     "power": 10,
     "accuracy": 100,
     "priority": 0,
@@ -2009,11 +2009,13 @@
     "priority": 0,
     "pp": 10,
     "description": "Deals 40 HP of damage to the target.",
+    "amount": 40,
     "type": "Dragon",
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Fixed Damage"
     ]
   },
   {
@@ -2209,11 +2211,14 @@
     "priority": 1,
     "pp": 10,
     "description": "Hits first. First turn out only. 100% flinch chance.",
+    "chance": 1,
     "type": "Normal",
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Flinch"
     ]
   },
   {
@@ -2911,7 +2916,8 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Level Damage"
     ]
   },
   {
@@ -3360,7 +3366,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Level Damage"
     ]
   },
   {
@@ -5746,11 +5753,13 @@
     "priority": 0,
     "pp": 20,
     "description": "Always does 20 HP of damage.",
+    "amount": 20,
     "type": "Normal",
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Fixed Damage"
     ]
   },
   {

@@ -1,9 +1,8 @@
-import math
-import random
+from Classes import *
 
 
 class Battle:
-    def __init__(self, player, opponent, moves, types):
+    def __init__(self, player, opponent):
         self.temp_stat_table_norm = {-6: 2 / 8, -5: 2 / 7, -4: 2 / 6, -3: 2 / 5, -2: 2 / 4, -1: 2 / 3, 0: 2 / 2,
                                      1: 3 / 2, 2: 4 / 2,
                                      3: 5 / 2, 4: 6 / 2, 5: 7 / 2, 6: 8 / 2}
@@ -21,7 +20,9 @@ class Battle:
         self.reflect = False
         self.light_screen = False
         self.p_move = None
+        self.p_move_last = None
         self.ai_move = None
+        self.ai_move_last = None
 
     def battle(self):
         while True:
@@ -30,17 +31,27 @@ class Battle:
             self.opponent_active.flinched = False
             self.player_active.damaged_this_turn = False
             self.opponent_active.damaged_this_turn = False
+            self.player_active.acted = False
+            self.opponent_active.acted = False
+            self.player_active.dmg_last_type_taken = None
+            self.player_active.dmg_last_taken = 0
+            self.opponent_active.dmg_last_type_taken = None
+            self.opponent_active.dmg_last_taken = 0
             print(f"Turn: {self.turn}")
-            print(f"{self.player_active.species}'s HP: {self.player_active.chp}/{self.player_active.hp}")
-            print(f"{self.opponent_active.species}'s HP: {self.opponent_active.chp}/{self.opponent_active.hp}")
-            if self.opponent_active.semi_invulnerable is None and self.opponent_active.charged is False:
+            if self.player_active is not None:
+                print(f"{self.player_active.species}'s HP: {self.player_active.chp}/{self.player_active.hp}")
+            if self.opponent_active is not None:
+                print(f"{self.opponent_active.species}'s HP: {self.opponent_active.chp}/{self.opponent_active.hp}")
+            if (self.opponent_active.semi_invulnerable is None and self.opponent_active.charged is False
+                    and self.opponent_active.bide == 0):
                 if self.opponent_active.recharge:
                     self.ai_move = None
                     self.opponent_active.recharge = False
                     print(f"{self.opponent.name}'s {self.opponent_active.species} must recharge!")
                 else:
                     self.ai_move = self.ai_turn()
-            if self.player_active.semi_invulnerable is None and self.player_active.charged is False:
+            if (self.player_active.semi_invulnerable is None and self.player_active.charged is False
+                    and self.player_active.bide == 0):
                 if self.player_active.recharge:
                     self.p_move = None
                     self.player_active.recharge = False
@@ -48,6 +59,10 @@ class Battle:
                 else:
                     self.p_move = None
                     self.player_turn()
+            if self.p_move is not None and self.p_move.get("name") == "Focus Punch":
+                print(f"{self.player.name}'s {self.player_active.species} is tightening its focus!")
+            if self.ai_move is not None and self.ai_move.get("name") == "Focus Punch":
+                print(f"{self.opponent.name}'s {self.opponent_active.species} is tightening its focus!")
             if self.p_move is not None and self.ai_move is not None:
                 order = self.speed_check()
                 self.action(order[0], order[2], order[1])
@@ -55,7 +70,7 @@ class Battle:
                     if order[0] == self.player_active:
                         self.player.team.remove(self.player_active)
                         self.player_active = None
-                    if order[0] == self.opponent_active:
+                    elif order[0] == self.opponent_active:
                         self.opponent.team.remove(self.opponent_active)
                         self.opponent_active = None
                 if order[2].chp > 0:
@@ -73,6 +88,10 @@ class Battle:
                     self.action(self.player_active, self.opponent_active, self.p_move)
                 if self.alive_check():
                     return
+            if self.player_active.acted:
+                self.player_active.first_turn = False
+            if self.opponent_active.acted:
+                self.opponent_active.first_turn = False
 
     def ai_turn(self):
         ai_random = random.choice(self.opponent_active.moves)
@@ -105,6 +124,7 @@ class Battle:
                                 if z == 1:
                                     self.player_active.reset_temp()
                                     self.player_active = self.player.team[x - 1]
+                                    self.player_active.first_turn = True
                                     print(f"{self.player.name} sent out {self.player_active.species}")
                                     return
                                 if z == 2:
@@ -112,6 +132,7 @@ class Battle:
                         if y == 1:
                             self.player_active.reset_temp()
                             self.player_active = self.player.team[x - 1]
+                            self.player_active.first_turn = True
                             print(f"{self.player.name} sent out {self.player_active.species}")
                             return
             if player_action == 1:
@@ -148,23 +169,28 @@ class Battle:
             attacker.flinching = False
             attacker.charged = False
             print(f"{attacker.owner.name}'s {attacker.species} flinched!")
+            attacker.acted = True
             return
         if "Semi-invulnerable" in move.get("flags") and attacker.semi_invulnerable is None:
             if move.get("name") == "Bounce":
                 attacker.semi_invulnerable = "bounce"
                 print(f"{attacker.owner.name}'s {attacker.species} sprang up!")
+                attacker.acted = True
                 return
             if move.get("name") == "Dig":
                 attacker.semi_invulnerable = "dig"
                 print(f"{attacker.owner.name}'s {attacker.species} dug a hole!")
+                attacker.acted = True
                 return
             if move.get("name") == "Dive":
                 attacker.semi_invulnerable = "dive"
                 print(f"{attacker.owner.name}'s {attacker.species} hide underwater!")
+                attacker.acted = True
                 return
             if move.get("name") == "Fly":
                 attacker.semi_invulnerable = "fly"
                 print(f"{attacker.owner.name}'s {attacker.species} flew up high!")
+                attacker.acted = True
                 return
         elif "Semi-invulnerable" in move.get("flags"):
             attacker.semi_invulnerable = None
@@ -174,6 +200,7 @@ class Battle:
                 attacker.charged = True
                 attacker.temp_stats["defense"] += 1
                 print(f"{attacker.species}'s defense rose!")
+                attacker.acted = True
                 return
             elif move.get("name") == "Solar Beam":
                 if self.weather == "sun":
@@ -181,35 +208,92 @@ class Battle:
                 else:
                     print(f"{attacker.owner.name}'s {attacker.species} took in the sunlight!")
                     attacker.charged = True
+                    attacker.acted = True
                     return
             elif move.get("name") == "Razor Wind":
                 print(f"{attacker.owner.name}'s {attacker.species} whipped up a whirlwind!")
                 attacker.charged = True
+                attacker.acted = True
                 return
             elif move.get("name") == "Sky Attack":
                 print(f"{attacker.owner.name}'s {attacker.species} is glowing!")
                 attacker.charged = True
+                attacker.acted = True
                 return
         elif "Charge" in move.get("flags"):
             attacker.charged = False
+        if move.get("name") == "Bide" and attacker.bide != 0:
+            if attacker.bide == 1:
+                print(f"{attacker.owner.name}'s {attacker.species} is storing energy")
+                attacker.bide = 2
+                attacker.acted = True
+                return
+            else:
+                print(f"{attacker.owner.name}'s {attacker.species} unleashed energy")
+                attacker.bide = 0
+                attacker.acted = True
+                if attacker.bide_dmg == 0:
+                    print("But it failed")
+                else:
+                    defender.chp -= (attacker.bide_dmg * 2)
+                    if defender.bide != 0:
+                        defender.bide_dmg += (attacker.bide_dmg * 2)
+                    defender.damaged_this_turn = True
+                    defender.dmg_last_type_taken = move.get("category")
+                    defender.dmg_last_taken = (attacker.bide_dmg * 2)
+                attacker.bide_dmg = 0
+                return
         print(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
         if defender is None and "Requires Target" in move.get("flags"):
             print("But it failed")
+            attacker.acted = True
+            return
+        if move.get("name") == "Counter":
+            if attacker.dmg_last_taken > 0 and attacker.dmg_last_type_taken == "Physical":
+                defender.chp -= attacker.dmg_last_taken * 2
+                defender.dmg_last_type_taken = move.get("category")
+                defender.dmg_last_taken = attacker.dmg_last_taken * 2
+                if defender.bide != 0:
+                    defender.bide_dmg += attacker.dmg_last_taken * 2
+                defender.damaged_this_turn = True
+                return
+            else:
+                print("But it failed")
+                return
+        if move.get("name") == "Mirror Coat":
+            if attacker.dmg_last_taken > 0 and attacker.dmg_last_type_taken == "Special":
+                defender.chp -= attacker.dmg_last_taken * 2
+                defender.dmg_last_type_taken = move.get("category")
+                defender.dmg_last_taken = attacker.dmg_last_taken * 2
+                if defender.bide != 0:
+                    defender.bide_dmg += attacker.dmg_last_taken * 2
+                defender.damaged_this_turn = True
+                return
+            else:
+                print("But it failed")
+                return
+        if move.get("name") == "Focus Punch" and attacker.damaged_this_turn:
+            print("But it failed")
+            attacker.acted = True
             return
         if defender.semi_invulnerable is not None:
             if (defender.semi_invulnerable == "bounce" or defender.semi_invulnerable == "fly" and
                     "Bypass Fly" not in move.get("flags")):
                 print(f"{attacker.species} Missed!")
+                attacker.acted = True
                 return
             elif defender.semi_invulnerable == "dig" and "Bypass Dig" not in move.get("flags"):
                 print(f"{attacker.species} Missed!")
+                attacker.acted = True
                 return
             elif defender.semi_invulnerable == "dive" and "Bypass Dive" not in move.get("flags"):
                 print(f"{attacker.species} Missed!")
+                attacker.acted = True
                 return
         if "OHKO" in move.get("flags"):
             if attacker.level < defender.level:
                 print(f"{attacker.species} Missed!")
+                attacker.acted = True
                 return
             else:
                 hit_check = random.randint(1, 100)
@@ -217,9 +301,11 @@ class Battle:
                 if hit_check <= accuracy:
                     defender.chp = 0
                     print("It's a one-hit KO!")
+                    attacker.acted = True
                     return
                 else:
                     print(f"{attacker.species} Missed!")
+                    attacker.acted = True
                     return
         if move.get("accuracy") != 0:
             hit_check = random.randint(1, 100)
@@ -231,31 +317,112 @@ class Battle:
             accuracy = move.get("accuracy") * self.temp_stat_table_acc_eva.get(accuracy_stage)
             if hit_check > accuracy:
                 print(f"{attacker.species} Missed!")
+                attacker.acted = True
                 return
+        if move.get("name") == "Bide":
+            attacker.bide = 1
+            print(f"{attacker.owner.name}'s {attacker.species} is storing energy")
+            attacker.acted = True
+            return
         if move.get("category") == "Non-Damaging":
             self.non_dmg_move(attacker, defender, move)
         else:
-            # Do Beat Up, Bide, Brick Break, Counter, Covet, Double Kick, Dragon Rage, Dream Eater, Endeavor, Eruption,
-            # Fake Out, False Swipe, Flail, Focus Punch, Frustration, Hidden Power, Knock Off, Low Kick, Magnitude,
-            # Mirror Coat, Night Shade, Outrage, Petal Dance, Pursuit, Rage, Rapid Spin, Return,Secret Power,
-            # Seismic Toss, Snore, Struggle, Thief, Thrash, Tri Attack, Twineedle, Uproar, Water Spout, Fire Spin,
+            # Do Brick Break, Covet, Double Kick, Dream Eater, Eruption, Flail, Frustration, Hidden Power, Knock Off,
+            # Low Kick, Magnitude, Outrage, Petal Dance, Pursuit, Rage, Rapid Spin, Return, Secret Power,
+            # Snore, Struggle, Thief, Thrash, Tri Attack, Twineedle, Uproar, Water Spout, Fire Spin,
             # Sand Tomb, Thunder, Whirlpool, Bind, Clamp, Psywave, Doom Desire, Wrap, Bonemerang, Future Sight,
-            # High Jump Kick, Ice Ball, Present, Rollout, Sonic Boom, Super Fang, Triple Kick, Fury Cutter, Jump Kick
+            # High Jump Kick, Ice Ball, Present, Rollout, Triple Kick, Fury Cutter, Jump Kick
             if "Multi-Hit" in move.get("flags"):
                 hits = (random.choices([2, 3, 4, 5], weights=[37.5, 37.5, 12.5, 12.5], k=1))[0]
                 for hit in range(0, hits):
                     dmg = self.dmg_calc(attacker, defender, move)
                     defender.chp -= dmg
-                    defender.damaged_this_turn = True
+                    defender.dmg_last_type_taken = move.get("category")
+                    defender.dmg_last_taken = dmg
+                    if defender.bide != 0:
+                        defender.bide_dmg += dmg
                     if defender.chp <= 0 or attacker.chp <= 0:
                         print(f"It hit {hit + 1} time(s)")
                         break
+                defender.damaged_this_turn = True
                 if defender.chp > 0 and attacker.chp > 0:
                     print(f"It hit {hits} time(s)")
+            if move.get("name") == "Beat Up":
+                for mon in attacker.owner.team:
+                    if mon.status is None:
+                        print(f"{mon.species}'s attack!")
+                        crit = self.crit_check(mon, move)
+                        dmg = math.floor(math.floor((math.floor((2 * mon.level) / 5 + 2) * mon.attack * 10) / defender.defense) / 50)
+                        if mon.status == "burned":
+                            dmg = math.floor(dmg * 0.5)
+                        if self.reflect and not crit:
+                            dmg = math.floor(dmg * 0.5)
+                        dmg += 2
+                        if crit:
+                            dmg = math.floor(dmg * 2)
+                        dmg = math.floor((dmg * random.randint(85, 100)) / 100)
+                        if dmg == 0:
+                            dmg = 1
+                        defender.chp -= dmg
+                        defender.dmg_last_type_taken = move.get("category")
+                        defender.dmg_last_taken = dmg
+                        if defender.bide != 0:
+                            defender.bide_dmg += dmg
+                        if defender.chp <= 0 or attacker.chp <= 0:
+                            break
+                defender.damaged_this_turn = True
+            elif "Level Damage" in move.get("flags"):
+                defender.chp -= attacker.level
+                defender.dmg_last_type_taken = move.get("category")
+                defender.dmg_last_taken = attacker.level
+                if defender.bide != 0:
+                    defender.bide_dmg += attacker.level
+                defender.damaged_this_turn = True
+            elif "Fixed Damage" in move.get("flags"):
+                defender.chp -= move.get("amount")
+                defender.dmg_last_type_taken = move.get("category")
+                defender.dmg_last_taken = move.get("amount")
+                if defender.bide != 0:
+                    defender.bide_dmg += move.get("amount")
+                defender.damaged_this_turn = True
+            elif move.get("name") == "Super Fang":
+                dmg = math.floor(defender.chp * 0.5)
+                if dmg == 0:
+                    dmg = 1
+                defender.chp -= dmg
+                defender.dmg_last_type_taken = move.get("category")
+                defender.dmg_last_taken = dmg
+                if defender.bide != 0:
+                    defender.bide_dmg += dmg
+                defender.damaged_this_turn = True
+            elif move.get("name") == "Endeavor":
+                if attacker.chp >= defender.chp:
+                    print("But it failed")
+                    attacker.acted = True
+                    return
+                else:
+                    if defender.bide != 0:
+                        defender.bide_dmg += (defender.chp - attacker.chp)
+                    defender.dmg_last_type_taken = move.get("category")
+                    defender.dmg_last_taken = (defender.chp - attacker.chp)
+                    defender.chp = attacker.chp
+                    defender.damaged_this_turn = True
+            elif (move.get("name") == "Fake Out" and attacker.first_turn is False or
+                  move.get("name") == "Fake Out" and defender.acted):
+                print("But it failed")
+                attacker.acted = True
+                return
             else:
                 dmg = self.dmg_calc(attacker, defender, move)
                 defender.chp -= dmg
-                defender.damaged_this_turn = True
+                if move.get("name") == "False Swipe" and defender.chp <= 0:
+                    defender.chp = 1
+                if dmg > 0:
+                    defender.damaged_this_turn = True
+                    defender.dmg_last_type_taken = move.get("category")
+                    defender.dmg_last_taken = dmg
+                    if defender.bide != 0:
+                        defender.bide_dmg += dmg
             if "Secondary" in move.get("flags"):
                 if "Changes Attacker Stats" in move.get("flags") or "Changes Defender Stats" in move.get("flags"):
                     self.change_stats(attacker, defender, move)
@@ -308,6 +475,7 @@ class Battle:
                     print(f"{attacker.owner.name}'s {attacker.species} is hit with recoil!")
                 if "Recharge" in move.get("flags"):
                     attacker.recharge = True
+        attacker.acted = True
 
     def non_dmg_move(self, attacker, defender, move):
         # Do Aromatherapy, Assist, Baton Pass, Block, Camouflage, Conversion, Conversion 2, Curse, Destiny Bond, Detect,
@@ -577,12 +745,14 @@ class Battle:
                             z = int(input("1.Swap 2.Back"))
                             if z == 1:
                                 self.player_active = self.player.team[x - 1]
+                                self.player_active.first_turn = True
                                 print(f"{self.player.name} sent out {self.player_active.species}")
                                 break
                             if z == 2:
                                 break
                     if y == 1:
                         self.player_active = self.player.team[x - 1]
+                        self.player_active.first_turn = True
                         print(f"{self.player.name} sent out {self.player_active.species}")
                         break
         if self.opponent_active.chp <= 0 or self.opponent_active is None:
@@ -592,4 +762,5 @@ class Battle:
                 return True
             self.opponent_active = None
             self.opponent_active = random.choice(self.opponent.team)
+            self.opponent_active.first_turn = True
             print(f"{self.opponent.name} sent out {self.opponent_active.species}")

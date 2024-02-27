@@ -5,6 +5,7 @@
       "4": "Growl",
       "7": "Leech Seed",
       "10": "Vine Whip",
+      "14": "Poison Powder",
       "15": "Sleep Powder",
       "20": "Razor Leaf",
       "25": "Sweet Scent",
@@ -61,7 +62,12 @@
   "ivysaur": {
     "level": {
       "1": "Tackle",
+      "2": "Growl",
+      "3": "Leech Seed",
+      "4": "Growl",
+      "7": "Leech Seed",
       "10": "Vine Whip",
+      "14": "Poison Powder",
       "15": "Sleep Powder",
       "22": "Razor Leaf",
       "29": "Sweet Scent",
@@ -108,7 +114,14 @@
   },
   "venusaur": {
     "level": {
-      "1": "Vine Whip",
+      "1": "Tackle",
+      "2": "Growl",
+      "3": "Leech Seed",
+      "4": "Vine Whip",
+      "5": "Growl",
+      "7": "Leech Seed",
+      "10": "Vine Whip",
+      "14": "Poison Powder",
       "15": "Sleep Powder",
       "22": "Razor Leaf",
       "29": "Sweet Scent",
@@ -160,9 +173,10 @@
   "charmander": {
     "level": {
       "1": "Scratch",
+      "2": "Growl",
       "7": "Ember",
-      "13": "Smokescreen",
-      "19": "Rage",
+      "13": "Metal Claw",
+      "19": "Smokescreen",
       "25": "Scary Face",
       "31": "Flamethrower",
       "37": "Slash",
@@ -230,8 +244,11 @@
   "Charmeleon": {
     "level": {
       "1": "Scratch",
-      "13": "Smokescreen",
-      "20": "Rage",
+      "2": "Growl",
+      "3": "Ember",
+      "7": "Ember",
+      "13": "Metal Claw",
+      "20": "Smokescreen",
       "27": "Scary Face",
       "34": "Flamethrower",
       "41": "Slash",
@@ -289,8 +306,14 @@
   },
   "charizard": {
     "level": {
-      "1": "Smokescreen",
-      "20": "Rage",
+      "1": "Scratch",
+      "2": "Growl",
+      "3": "Ember",
+      "4": "Heat Wave",
+      "5": "Metal Claw",
+      "7": "Ember",
+      "13": "Metal Claw",
+      "20": "Smokescreen",
       "27": "Scary Face",
       "34": "Flamethrower",
       "36": "Wing Attack",
@@ -426,7 +449,11 @@
   },
   "wartortle": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Bubble",
+      "4": "Tail Whip",
+      "7": "Bubble",
       "10": "Withdraw",
       "13": "Water Gun",
       "19": "Bite",
@@ -486,7 +513,13 @@
   },
   "blastoise": {
     "level": {
-      "1": "Withdraw",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Bubble",
+      "4": "Withdraw",
+      "5": "Tail Whip",
+      "7": "Bubble",
+      "10": "Withdraw",
       "13": "Water Gun",
       "19": "Bite",
       "25": "Rapid Spin",
@@ -549,7 +582,8 @@
   },
   "caterpie": {
     "level": {
-      "1": "Tackle"
+      "1": "Tackle",
+      "2": "String Shot"
     },
     "tm": [],
     "egg": [],
@@ -557,7 +591,8 @@
   },
   "metapod": {
     "level": {
-      "1": "Harden"
+      "1": "Harden",
+      "7": "Harden"
     },
     "tm": [],
     "egg": [],
@@ -566,6 +601,7 @@
   "butterfree": {
     "level": {
       "1": "Confusion",
+      "10": "Confusion",
       "13": "Poison Powder",
       "14": "Stun Spore",
       "15": "Sleep Powder",
@@ -616,7 +652,8 @@
   },
   "weedle": {
     "level": {
-      "1": "String Shot"
+      "1": "Poison Sting",
+      "2": "String Shot"
     },
     "tm": [],
     "egg": [],
@@ -624,7 +661,8 @@
   },
   "kakuna": {
     "level": {
-      "1": "Harden"
+      "1": "Harden",
+      "7": "Harden"
     },
     "tm": [],
     "egg": [],
@@ -633,6 +671,7 @@
   "beedrill": {
     "level": {
       "1": "Fury Attack",
+      "10": "Fury Attack",
       "15": "Focus Energy",
       "20": "Twineedle",
       "25": "Rage",
@@ -730,6 +769,10 @@
   "pidgeotto": {
     "level": {
       "1": "Tackle",
+      "2": "Sand Attack",
+      "3": "Gust",
+      "5": "Sand Attack",
+      "9": "Gust",
       "13": "Quick Attack",
       "20": "Whirlwind",
       "27": "Wing Attack",
@@ -772,6 +815,12 @@
   "pidgeot": {
     "level": {
       "1": "Tackle",
+      "2": "Sand Attack",
+      "3": "Gust",
+      "4": "Quick Attack",
+      "5": "Sand Attack",
+      "9": "Gust",
+      "13": "Quick Attack",
       "20": "Whirlwind",
       "27": "Wing Attack",
       "34": "Feather Dance",
@@ -813,7 +862,8 @@
   },
   "rattata": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
       "7": "Quick Attack",
       "13": "Hyper Fang",
       "20": "Focus Energy",
@@ -876,7 +926,10 @@
   },
   "raticate": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Quick Attack",
+      "7": "Quick Attack",
       "13": "Hyper Fang",
       "20": "Scary Face",
       "30": "Pursuit",
@@ -933,6 +986,7 @@
   "spearow": {
     "level": {
       "1": "Peck",
+      "2": "Growl",
       "7": "Leer",
       "13": "Fury Attack",
       "19": "Pursuit",
@@ -984,6 +1038,11 @@
   "fearow": {
     "level": {
       "1": "Peck",
+      "2": "Growl",
+      "3": "Leer",
+      "4": "Fury Attack",
+      "7": "Leer",
+      "13": "Fury Attack",
       "26": "Pursuit",
       "32": "Mirror Move",
       "40": "Drill Peck",
@@ -1025,6 +1084,7 @@
   "ekans": {
     "level": {
       "1": "Wrap",
+      "2": "Leer",
       "8": "Poison Sting",
       "13": "Bite",
       "20": "Glare",
@@ -22029,10 +22089,10 @@
   },
   "testmon": {
     "level": {
-      "1": "Solar Beam",
-      "2": "Sky Attack",
-      "3": "Skull Bash",
-      "4": "Razor Wind",
+      "1": "Counter",
+      "2": "Mirror Coat",
+      "3": "Bide",
+      "4": "Fake Out",
       "20": "Spikes",
       "25": "Psychic",
       "30": "Swift",
@@ -22044,8 +22104,8 @@
   },
   "testmon2": {
     "level": {
-      "1": "Tackle",
-      "6": "Dig",
+      "6": "Tackle",
+      "1": "Water Gun",
       "7": "Dig",
       "8": "Fly",
       "20": "Spikes",
