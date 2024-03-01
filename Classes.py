@@ -35,6 +35,8 @@ class Pokemon:
             self.type_two = pokedex[self.index].get("types")[1]
         else:
             self.type_two = None
+        self.front_sprite = pokedex[self.index].get("Front Sprite")
+        self.back_sprite = pokedex[self.index].get("Back Sprite")
         self.ability = random.choice(pokedex[self.index].get("Abilities"))
         self.get_gender(pokedex[self.index].get("Gender Ratio"))
         self.catch_rate = pokedex[self.index].get("Catch rate")
@@ -48,7 +50,7 @@ class Pokemon:
         self.evo = pokedex[self.index].get("Evo", None)
         self.moves = self.get_move_set()
         self.chp = self.hp
-        self.status = None
+        self.status = ""
         self.confused = False
         self.flinching = False
         self.temp_stats = {"attack": 0, "defense": 0, "sp_attack": 0, "sp_defense": 0, "speed": 0, "accuracy": 0,
@@ -67,13 +69,18 @@ class Pokemon:
         self.bide_dmg = 0
         self.dmg_last_type_taken = None
         self.dmg_last_taken = 0
+        self.info = (f"{self.gender} Ability: {self.ability} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
+                     f"\nSp.Attack: {self.sp_attack} Sp.Defense: {self.sp_defense} Speed: {self.speed}")
+
+    def __str__(self):
+        return f"LVL {self.level} {self.species}: {self.chp}/{self.hp} {self.status}"
 
     def get_gender(self, percent):
         rnum = random.uniform(0.0, 1.0)
         if rnum <= percent:
-            self.gender = "Male"
+            self.gender = "♂"
         else:
-            self.gender = "Female"
+            self.gender = "♀"
 
     def get_move_set(self):
         ms = []
@@ -122,14 +129,6 @@ class Pokemon:
             self.exp_needed = pow(self.level + 1, 3)
             if self.level >= self.evolvl:
                 self.evolve()
-
-    def check_poke_basic(self):
-        print(self.species, self.gender, f"Level: {self.level}", f"Hp: {self.chp}/{self.hp}")
-
-    def check_poke_advanced(self):
-        print(f"{self.species} {self.gender} Level: {self.level} Hp: {self.chp}/{self.hp} Ability: {self.ability} \n"
-              f"{self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} Sp.Attack: {self.sp_attack} "
-              f"Sp.Defense: {self.sp_defense} Speed: {self.speed}")
 
     def check_poke_moves(self):
         for m in self.moves:

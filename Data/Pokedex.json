@@ -21,7 +21,9 @@
       "Ivysaur"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Caterpie",
@@ -44,7 +46,9 @@
       "Metapod"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Voltorb",
@@ -68,7 +72,9 @@
       "Electrode"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Electrode",
@@ -90,7 +96,9 @@
     "dex_number": 101,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Exeggcute",
@@ -114,7 +122,9 @@
       "Exeggutor"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Exeggutor",
@@ -136,7 +146,9 @@
     "dex_number": 103,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Cubone",
@@ -160,7 +172,9 @@
       "Marowak"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Marowak",
@@ -182,7 +196,9 @@
     "dex_number": 105,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Hitmonlee",
@@ -203,7 +219,9 @@
     "dex_number": 106,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Hitmonchan",
@@ -224,7 +242,9 @@
     "dex_number": 107,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Lickitung",
@@ -246,7 +266,9 @@
     "dex_number": 108,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Koffing",
@@ -269,7 +291,9 @@
       "Weezing"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Metapod",
@@ -292,7 +316,9 @@
       "Butterfree"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Weezing",
@@ -313,7 +339,9 @@
     "dex_number": 110,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Rhyhorn",
@@ -338,7 +366,9 @@
       "Rhydon"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Rhydon",
@@ -361,7 +391,9 @@
     "dex_number": 112,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Chansey",
@@ -385,7 +417,9 @@
       "Blissey"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Tangela",
@@ -406,7 +440,9 @@
     "dex_number": 114,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Kangaskhan",
@@ -427,7 +463,9 @@
     "dex_number": 115,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Horsea",
@@ -450,7 +488,9 @@
       "Seadra"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Seadra",
@@ -473,7 +513,9 @@
       "Kingdra"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Goldeen",
@@ -497,7 +539,9 @@
       "Seaking"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Seaking",
@@ -519,7 +563,9 @@
     "dex_number": 119,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Butterfree",
@@ -541,7 +587,9 @@
     "dex_number": 12,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Staryu",
@@ -565,7 +613,9 @@
       "Starmie"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Starmie",
@@ -588,7 +638,9 @@
     "dex_number": 121,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Mr. Mime",
@@ -609,7 +661,9 @@
     "dex_number": 122,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Scyther",
@@ -633,7 +687,9 @@
       "Scizor"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Jynx",
@@ -655,7 +711,9 @@
     "dex_number": 124,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Electabuzz",
@@ -676,7 +734,9 @@
     "dex_number": 125,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Magmar",
@@ -697,7 +757,9 @@
     "dex_number": 126,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Pinsir",
@@ -718,7 +780,9 @@
     "dex_number": 127,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Tauros",
@@ -739,7 +803,9 @@
     "dex_number": 128,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Magikarp",
@@ -762,7 +828,9 @@
       "Gyarados"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Weedle",
@@ -786,7 +854,9 @@
       "Kakuna"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE031",
+    "Back Sprite": "0xE032"
   },
   {
     "Species": "Gyarados",
@@ -808,7 +878,9 @@
     "dex_number": 130,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Lapras",
@@ -831,7 +903,9 @@
     "dex_number": 131,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ditto",
@@ -852,7 +926,9 @@
     "dex_number": 132,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Eevee",
@@ -879,7 +955,9 @@
       "Vaporeon"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Vaporeon",
@@ -900,7 +978,9 @@
     "dex_number": 134,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Jolteon",
@@ -921,7 +1001,9 @@
     "dex_number": 135,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Flareon",
@@ -942,7 +1024,9 @@
     "dex_number": 136,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Porygon",
@@ -965,7 +1049,9 @@
       "Porygon2"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Omanyte",
@@ -990,7 +1076,9 @@
       "Omastar"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Omastar",
@@ -1013,7 +1101,9 @@
     "dex_number": 139,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Kakuna",
@@ -1037,7 +1127,9 @@
       "Beedrill"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Kabuto",
@@ -1062,7 +1154,9 @@
       "Kabutops"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Kabutops",
@@ -1085,7 +1179,9 @@
     "dex_number": 141,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Aerodactyl",
@@ -1108,7 +1204,9 @@
     "dex_number": 142,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Snorlax",
@@ -1130,7 +1228,9 @@
     "dex_number": 143,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Articuno",
@@ -1152,7 +1252,9 @@
     "dex_number": 144,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Zapdos",
@@ -1174,7 +1276,9 @@
     "dex_number": 145,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Moltres",
@@ -1196,7 +1300,9 @@
     "dex_number": 146,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Dratini",
@@ -1219,7 +1325,9 @@
       "Dragonair"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Dragonair",
@@ -1242,7 +1350,9 @@
       "Dragonite"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Dragonite",
@@ -1264,7 +1374,9 @@
     "dex_number": 149,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Beedrill",
@@ -1286,7 +1398,9 @@
     "dex_number": 15,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Mewtwo",
@@ -1307,7 +1421,9 @@
     "dex_number": 150,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Mew",
@@ -1328,7 +1444,9 @@
     "dex_number": 151,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Chikorita",
@@ -1351,7 +1469,9 @@
       "Bayleef"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Bayleef",
@@ -1374,7 +1494,9 @@
       "Meganium"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Meganium",
@@ -1395,7 +1517,9 @@
     "dex_number": 154,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Cyndaquil",
@@ -1418,7 +1542,9 @@
       "Quilava"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Quilava",
@@ -1441,7 +1567,9 @@
       "Typhlosion"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Typhlosion",
@@ -1462,7 +1590,9 @@
     "dex_number": 157,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Totodile",
@@ -1485,7 +1615,9 @@
       "Croconaw"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Croconaw",
@@ -1508,7 +1640,9 @@
       "Feraligatr"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Pidgey",
@@ -1532,7 +1666,9 @@
       "Pidgeotto"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Feraligatr",
@@ -1553,7 +1689,9 @@
     "dex_number": 160,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Sentret",
@@ -1577,7 +1715,9 @@
       "Furret"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Furret",
@@ -1599,7 +1739,9 @@
     "dex_number": 162,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Hoothoot",
@@ -1624,7 +1766,9 @@
       "Noctowl"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Noctowl",
@@ -1647,7 +1791,9 @@
     "dex_number": 164,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ledyba",
@@ -1672,7 +1818,9 @@
       "Ledian"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ledian",
@@ -1695,7 +1843,9 @@
     "dex_number": 166,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Spinarak",
@@ -1720,7 +1870,9 @@
       "Ariados"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ariados",
@@ -1743,7 +1895,9 @@
     "dex_number": 168,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Crobat",
@@ -1765,7 +1919,9 @@
     "dex_number": 169,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Pidgeotto",
@@ -1789,7 +1945,9 @@
       "Pidgeot"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Chinchou",
@@ -1814,7 +1972,9 @@
       "Lanturn"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Lanturn",
@@ -1837,7 +1997,9 @@
     "dex_number": 171,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Pichu",
@@ -1860,7 +2022,9 @@
       "Pikachu"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Cleffa",
@@ -1883,7 +2047,9 @@
       "Clefairy"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Igglybuff",
@@ -1906,7 +2072,9 @@
       "Jigglypuff"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Togepi",
@@ -1930,7 +2098,9 @@
       "Togetic"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Togetic",
@@ -1953,7 +2123,9 @@
     "dex_number": 176,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Natu",
@@ -1978,7 +2150,9 @@
       "Xatu"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Xatu",
@@ -2001,7 +2175,9 @@
     "dex_number": 178,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Mareep",
@@ -2024,7 +2200,9 @@
       "Flaaffy"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Pidgeot",
@@ -2046,7 +2224,9 @@
     "dex_number": 18,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Flaaffy",
@@ -2069,7 +2249,9 @@
       "Ampharos"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ampharos",
@@ -2090,7 +2272,9 @@
     "dex_number": 181,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Bellossom",
@@ -2111,7 +2295,9 @@
     "dex_number": 182,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Marill",
@@ -2135,7 +2321,9 @@
       "Azumarill"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Azumarill",
@@ -2157,7 +2345,9 @@
     "dex_number": 184,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Sudowoodo",
@@ -2179,7 +2369,9 @@
     "dex_number": 185,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Politoed",
@@ -2201,7 +2393,9 @@
     "dex_number": 186,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Hoppip",
@@ -2225,7 +2419,9 @@
       "Skiploom"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Skiploom",
@@ -2249,7 +2445,9 @@
       "Jumpluff"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Jumpluff",
@@ -2271,7 +2469,9 @@
     "dex_number": 189,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Rattata",
@@ -2295,7 +2495,9 @@
       "Raticate"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Aipom",
@@ -2317,7 +2519,9 @@
     "dex_number": 190,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Sunkern",
@@ -2340,7 +2544,9 @@
       "Sunflora"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Sunflora",
@@ -2361,7 +2567,9 @@
     "dex_number": 192,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Yanma",
@@ -2384,7 +2592,9 @@
     "dex_number": 193,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Wooper",
@@ -2409,7 +2619,9 @@
       "Quagsire"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Quagsire",
@@ -2432,7 +2644,9 @@
     "dex_number": 195,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Espeon",
@@ -2453,7 +2667,9 @@
     "dex_number": 196,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Umbreon",
@@ -2474,7 +2690,9 @@
     "dex_number": 197,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Murkrow",
@@ -2496,7 +2714,9 @@
     "dex_number": 198,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Slowking",
@@ -2519,7 +2739,9 @@
     "dex_number": 199,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ivysaur",
@@ -2543,7 +2765,9 @@
       "Venusaur"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Raticate",
@@ -2565,7 +2789,9 @@
     "dex_number": 20,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Misdreavus",
@@ -2586,7 +2812,9 @@
     "dex_number": 200,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Unown",
@@ -2607,7 +2835,9 @@
     "dex_number": 201,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Wobbuffet",
@@ -2628,7 +2858,9 @@
     "dex_number": 202,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Girafarig",
@@ -2651,7 +2883,9 @@
     "dex_number": 203,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Pineco",
@@ -2674,7 +2908,9 @@
       "Forretress"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Forretress",
@@ -2696,7 +2932,9 @@
     "dex_number": 205,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Dunsparce",
@@ -2718,7 +2956,9 @@
     "dex_number": 206,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Gligar",
@@ -2741,7 +2981,9 @@
     "dex_number": 207,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Steelix",
@@ -2764,7 +3006,9 @@
     "dex_number": 208,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Snubbull",
@@ -2788,7 +3032,9 @@
       "Granbull"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Spearow",
@@ -2812,7 +3058,9 @@
       "Fearow"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Granbull",
@@ -2833,7 +3081,9 @@
     "dex_number": 210,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Qwilfish",
@@ -2856,7 +3106,9 @@
     "dex_number": 211,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Scizor",
@@ -2878,7 +3130,9 @@
     "dex_number": 212,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Shuckle",
@@ -2900,7 +3154,9 @@
     "dex_number": 213,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Heracross",
@@ -2923,7 +3179,9 @@
     "dex_number": 214,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Sneasel",
@@ -2946,7 +3204,9 @@
     "dex_number": 215,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Teddiursa",
@@ -2969,7 +3229,9 @@
       "Ursaring"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ursaring",
@@ -2990,7 +3252,9 @@
     "dex_number": 217,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Slugma",
@@ -3014,7 +3278,9 @@
       "Magcargo"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Magcargo",
@@ -3037,7 +3303,9 @@
     "dex_number": 219,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Fearow",
@@ -3059,7 +3327,9 @@
     "dex_number": 22,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Swinub",
@@ -3083,7 +3353,9 @@
       "Piloswine"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Piloswine",
@@ -3105,7 +3377,9 @@
     "dex_number": 221,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Corsola",
@@ -3128,7 +3402,9 @@
     "dex_number": 222,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Remoraid",
@@ -3151,7 +3427,9 @@
       "Octillery"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Octillery",
@@ -3172,7 +3450,9 @@
     "dex_number": 224,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Delibird",
@@ -3195,7 +3475,9 @@
     "dex_number": 225,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Mantine",
@@ -3218,7 +3500,9 @@
     "dex_number": 226,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Skarmory",
@@ -3241,7 +3525,9 @@
     "dex_number": 227,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Houndour",
@@ -3266,7 +3552,9 @@
       "Houndoom"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Houndoom",
@@ -3289,7 +3577,9 @@
     "dex_number": 229,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ekans",
@@ -3313,7 +3603,9 @@
       "Arbok"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Kingdra",
@@ -3335,7 +3627,9 @@
     "dex_number": 230,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Phanpy",
@@ -3358,7 +3652,9 @@
       "Donphan"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Donphan",
@@ -3379,7 +3675,9 @@
     "dex_number": 232,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Porygon2",
@@ -3400,7 +3698,9 @@
     "dex_number": 233,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Stantler",
@@ -3421,7 +3721,9 @@
     "dex_number": 234,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Smeargle",
@@ -3442,7 +3744,9 @@
     "dex_number": 235,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Tyrogue",
@@ -3467,7 +3771,9 @@
       "Hitmontop"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Hitmontop",
@@ -3488,7 +3794,9 @@
     "dex_number": 237,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Smoochum",
@@ -3512,7 +3820,9 @@
       "Jynx"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Elekid",
@@ -3535,7 +3845,9 @@
       "Electabuzz"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Arbok",
@@ -3557,7 +3869,9 @@
     "dex_number": 24,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Magby",
@@ -3580,7 +3894,9 @@
       "Magmar"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Miltank",
@@ -3601,7 +3917,9 @@
     "dex_number": 241,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Blissey",
@@ -3623,7 +3941,9 @@
     "dex_number": 242,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Raikou",
@@ -3644,7 +3964,9 @@
     "dex_number": 243,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Entei",
@@ -3665,7 +3987,9 @@
     "dex_number": 244,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Suicune",
@@ -3686,7 +4010,9 @@
     "dex_number": 245,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Larvitar",
@@ -3710,7 +4036,9 @@
       "Pupitar"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Pupitar",
@@ -3734,7 +4062,9 @@
       "Tyranitar"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Tyranitar",
@@ -3756,7 +4086,9 @@
     "dex_number": 248,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Lugia",
@@ -3778,7 +4110,9 @@
     "dex_number": 249,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Pikachu",
@@ -3801,7 +4135,9 @@
       "Raichu"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE060",
+    "Back Sprite": "0xE062"
   },
   {
     "Species": "Ho-Oh",
@@ -3823,7 +4159,9 @@
     "dex_number": 250,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Celebi",
@@ -3845,7 +4183,9 @@
     "dex_number": 251,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Treecko",
@@ -3868,7 +4208,9 @@
       "Grovyle"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Grovyle",
@@ -3891,7 +4233,9 @@
       "Sceptile"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Sceptile",
@@ -3912,7 +4256,9 @@
     "dex_number": 254,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Torchic",
@@ -3935,7 +4281,9 @@
       "Combusken"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Combusken",
@@ -3959,7 +4307,9 @@
       "Blaziken"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Blaziken",
@@ -3981,7 +4331,9 @@
     "dex_number": 257,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Mudkip",
@@ -4004,7 +4356,9 @@
       "Marshtomp"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Marshtomp",
@@ -4028,7 +4382,9 @@
       "Swampert"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Raichu",
@@ -4049,7 +4405,9 @@
     "dex_number": 26,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Swampert",
@@ -4071,7 +4429,9 @@
     "dex_number": 260,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Poochyena",
@@ -4094,7 +4454,9 @@
       "Mightyena"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Mightyena",
@@ -4115,7 +4477,9 @@
     "dex_number": 262,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Zigzagoon",
@@ -4138,7 +4502,9 @@
       "Linoone"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Linoone",
@@ -4159,7 +4525,9 @@
     "dex_number": 264,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Wurmple",
@@ -4183,7 +4551,9 @@
       "Silcoon"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Silcoon",
@@ -4206,7 +4576,9 @@
       "Beautifly"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Beautifly",
@@ -4228,7 +4600,9 @@
     "dex_number": 267,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Cascoon",
@@ -4251,7 +4625,9 @@
       "Dustox"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Dustox",
@@ -4273,7 +4649,9 @@
     "dex_number": 269,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Sandshrew",
@@ -4296,7 +4674,9 @@
       "Sandslash"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Lotad",
@@ -4321,7 +4701,9 @@
       "Lombre"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Lombre",
@@ -4346,7 +4728,9 @@
       "Ludicolo"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ludicolo",
@@ -4369,7 +4753,9 @@
     "dex_number": 272,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Seedot",
@@ -4393,7 +4779,9 @@
       "Nuzleaf"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Nuzleaf",
@@ -4418,7 +4806,9 @@
       "Shiftry"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Shiftry",
@@ -4441,7 +4831,9 @@
     "dex_number": 275,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Taillow",
@@ -4465,7 +4857,9 @@
       "Swellow"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Swellow",
@@ -4487,7 +4881,9 @@
     "dex_number": 277,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Wingull",
@@ -4511,7 +4907,9 @@
       "Pelipper"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Pelipper",
@@ -4533,7 +4931,9 @@
     "dex_number": 279,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Sandslash",
@@ -4554,7 +4954,9 @@
     "dex_number": 28,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ralts",
@@ -4578,7 +4980,9 @@
       "Kirlia"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Kirlia",
@@ -4602,7 +5006,9 @@
       "Gardevoir"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Gardevoir",
@@ -4624,7 +5030,9 @@
     "dex_number": 282,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Surskit",
@@ -4648,7 +5056,9 @@
       "Masquerain"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Masquerain",
@@ -4670,7 +5080,9 @@
     "dex_number": 284,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Shroomish",
@@ -4693,7 +5105,9 @@
       "Breloom"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Breloom",
@@ -4715,7 +5129,9 @@
     "dex_number": 286,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Slakoth",
@@ -4738,7 +5154,9 @@
       "Vigoroth"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Vigoroth",
@@ -4761,7 +5179,9 @@
       "Slaking"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Slaking",
@@ -4782,7 +5202,9 @@
     "dex_number": 289,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Nidoran-F",
@@ -4805,7 +5227,9 @@
       "Nidorina"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Nincada",
@@ -4830,7 +5254,9 @@
       "Shedinja"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ninjask",
@@ -4852,7 +5278,9 @@
     "dex_number": 291,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Shedinja",
@@ -4874,7 +5302,9 @@
     "dex_number": 292,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Whismur",
@@ -4897,7 +5327,9 @@
       "Loudred"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Loudred",
@@ -4920,7 +5352,9 @@
       "Exploud"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Exploud",
@@ -4941,7 +5375,9 @@
     "dex_number": 295,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Makuhita",
@@ -4965,7 +5401,9 @@
       "Hariyama"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Hariyama",
@@ -4987,7 +5425,9 @@
     "dex_number": 297,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Azurill",
@@ -5011,7 +5451,9 @@
       "Marill"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Nosepass",
@@ -5033,7 +5475,9 @@
     "dex_number": 299,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Venusaur",
@@ -5055,7 +5499,9 @@
     "dex_number": 3,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Nidorina",
@@ -5078,7 +5524,9 @@
       "Nidoqueen"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Skitty",
@@ -5101,7 +5549,9 @@
       "Delcatty"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Delcatty",
@@ -5122,7 +5572,9 @@
     "dex_number": 301,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Sableye",
@@ -5144,7 +5596,9 @@
     "dex_number": 302,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Mawile",
@@ -5166,7 +5620,9 @@
     "dex_number": 303,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Aron",
@@ -5191,7 +5647,9 @@
       "Lairon"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Lairon",
@@ -5216,7 +5674,9 @@
       "Aggron"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Aggron",
@@ -5239,7 +5699,9 @@
     "dex_number": 306,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Meditite",
@@ -5263,7 +5725,9 @@
       "Medicham"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Medicham",
@@ -5285,7 +5749,9 @@
     "dex_number": 308,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Electrike",
@@ -5309,7 +5775,9 @@
       "Manectric"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Nidoqueen",
@@ -5331,7 +5799,9 @@
     "dex_number": 31,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Manectric",
@@ -5353,7 +5823,9 @@
     "dex_number": 310,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Plusle",
@@ -5374,7 +5846,9 @@
     "dex_number": 311,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Minun",
@@ -5395,7 +5869,9 @@
     "dex_number": 312,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Volbeat",
@@ -5417,7 +5893,9 @@
     "dex_number": 313,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Illumise",
@@ -5438,7 +5916,9 @@
     "dex_number": 314,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Roselia",
@@ -5461,7 +5941,9 @@
     "dex_number": 315,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Gulpin",
@@ -5485,7 +5967,9 @@
       "Swalot"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Swalot",
@@ -5507,7 +5991,9 @@
     "dex_number": 317,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Carvanha",
@@ -5531,7 +6017,9 @@
       "Sharpedo"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Sharpedo",
@@ -5553,7 +6041,9 @@
     "dex_number": 319,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Nidoran-M",
@@ -5576,7 +6066,9 @@
       "Nidorino"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Wailmer",
@@ -5600,7 +6092,9 @@
       "Wailord"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Wailord",
@@ -5622,7 +6116,9 @@
     "dex_number": 321,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Numel",
@@ -5646,7 +6142,9 @@
       "Camerupt"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Camerupt",
@@ -5668,7 +6166,9 @@
     "dex_number": 323,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Torkoal",
@@ -5689,7 +6189,9 @@
     "dex_number": 324,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Spoink",
@@ -5713,7 +6215,9 @@
       "Grumpig"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Grumpig",
@@ -5735,7 +6239,9 @@
     "dex_number": 326,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Spinda",
@@ -5756,7 +6262,9 @@
     "dex_number": 327,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Trapinch",
@@ -5780,7 +6288,9 @@
       "Vibrava"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Vibrava",
@@ -5804,7 +6314,9 @@
       "Flygon"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Nidorino",
@@ -5827,7 +6339,9 @@
       "Nidoking"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Flygon",
@@ -5849,7 +6363,9 @@
     "dex_number": 330,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Cacnea",
@@ -5872,7 +6388,9 @@
       "Cacturne"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Cacturne",
@@ -5894,7 +6412,9 @@
     "dex_number": 332,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Swablu",
@@ -5918,7 +6438,9 @@
       "Altaria"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Altaria",
@@ -5940,7 +6462,9 @@
     "dex_number": 334,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Zangoose",
@@ -5961,7 +6485,9 @@
     "dex_number": 335,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Seviper",
@@ -5982,7 +6508,9 @@
     "dex_number": 336,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Lunatone",
@@ -6004,7 +6532,9 @@
     "dex_number": 337,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Solrock",
@@ -6026,7 +6556,9 @@
     "dex_number": 338,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Barboach",
@@ -6050,7 +6582,9 @@
       "Whiscash"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Nidoking",
@@ -6072,7 +6606,9 @@
     "dex_number": 34,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Whiscash",
@@ -6094,7 +6630,9 @@
     "dex_number": 340,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Corphish",
@@ -6118,7 +6656,9 @@
       "Crawdaunt"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Crawdaunt",
@@ -6141,7 +6681,9 @@
     "dex_number": 342,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Baltoy",
@@ -6165,7 +6707,9 @@
       "Claydol"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Claydol",
@@ -6187,7 +6731,9 @@
     "dex_number": 344,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Lileep",
@@ -6211,7 +6757,9 @@
       "Cradily"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Cradily",
@@ -6233,7 +6781,9 @@
     "dex_number": 346,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Anorith",
@@ -6257,7 +6807,9 @@
       "Armaldo"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Armaldo",
@@ -6279,7 +6831,9 @@
     "dex_number": 348,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Feebas",
@@ -6302,7 +6856,9 @@
       "Milotic"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Clefairy",
@@ -6325,7 +6881,9 @@
       "Clefable"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Milotic",
@@ -6346,7 +6904,9 @@
     "dex_number": 350,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Castform",
@@ -6372,7 +6932,9 @@
       "Castform-Rainy"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Kecleon",
@@ -6393,7 +6955,9 @@
     "dex_number": 352,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Shuppet",
@@ -6416,7 +6980,9 @@
       "Banette"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Banette",
@@ -6437,7 +7003,9 @@
     "dex_number": 354,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Duskull",
@@ -6460,7 +7028,9 @@
       "Dusclops"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Dusclops",
@@ -6481,7 +7051,9 @@
     "dex_number": 356,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Tropius",
@@ -6503,7 +7075,9 @@
     "dex_number": 357,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Chimecho",
@@ -6524,7 +7098,9 @@
     "dex_number": 358,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Absol",
@@ -6545,7 +7121,9 @@
     "dex_number": 359,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Clefable",
@@ -6566,7 +7144,9 @@
     "dex_number": 36,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Wynaut",
@@ -6589,7 +7169,9 @@
       "Wobbuffet"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Snorunt",
@@ -6612,7 +7194,9 @@
       "Glalie"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Glalie",
@@ -6633,7 +7217,9 @@
     "dex_number": 362,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Spheal",
@@ -6657,7 +7243,9 @@
       "Sealeo"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Sealeo",
@@ -6681,7 +7269,9 @@
       "Walrein"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Walrein",
@@ -6703,7 +7293,9 @@
     "dex_number": 365,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Clamperl",
@@ -6727,7 +7319,9 @@
       "Huntail"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Huntail",
@@ -6748,7 +7342,9 @@
     "dex_number": 367,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Gorebyss",
@@ -6769,7 +7365,9 @@
     "dex_number": 368,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Relicanth",
@@ -6792,7 +7390,9 @@
     "dex_number": 369,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Vulpix",
@@ -6815,7 +7415,9 @@
       "Ninetales"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Luvdisc",
@@ -6836,7 +7438,9 @@
     "dex_number": 370,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Bagon",
@@ -6859,7 +7463,9 @@
       "Shelgon"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Shelgon",
@@ -6882,7 +7488,9 @@
       "Salamence"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Salamence",
@@ -6904,7 +7512,9 @@
     "dex_number": 373,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Beldum",
@@ -6928,7 +7538,9 @@
       "Metang"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Metang",
@@ -6952,7 +7564,9 @@
       "Metagross"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Metagross",
@@ -6974,7 +7588,9 @@
     "dex_number": 376,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Regirock",
@@ -6995,7 +7611,9 @@
     "dex_number": 377,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Regice",
@@ -7016,7 +7634,9 @@
     "dex_number": 378,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Registeel",
@@ -7037,7 +7657,9 @@
     "dex_number": 379,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ninetales",
@@ -7058,7 +7680,9 @@
     "dex_number": 38,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Latias",
@@ -7080,7 +7704,9 @@
     "dex_number": 380,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Latios",
@@ -7102,7 +7728,9 @@
     "dex_number": 381,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Kyogre",
@@ -7123,7 +7751,9 @@
     "dex_number": 382,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Groudon",
@@ -7144,7 +7774,9 @@
     "dex_number": 383,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Rayquaza",
@@ -7166,7 +7798,9 @@
     "dex_number": 384,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Jirachi",
@@ -7188,7 +7822,9 @@
     "dex_number": 385,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Deoxys",
@@ -7209,7 +7845,9 @@
     "dex_number": 386,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Deoxys-Attack",
@@ -7230,7 +7868,9 @@
     "dex_number": 386,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Deoxys-Defense",
@@ -7251,7 +7891,9 @@
     "dex_number": 386,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Deoxys-Speed",
@@ -7272,7 +7914,9 @@
     "dex_number": 386,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Jigglypuff",
@@ -7295,7 +7939,9 @@
       "Wigglytuff"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Charmander",
@@ -7318,7 +7964,9 @@
       "Charmeleon"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE00D",
+    "Back Sprite": "0xE00F"
   },
   {
     "Species": "Wigglytuff",
@@ -7339,7 +7987,9 @@
     "dex_number": 40,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Zubat",
@@ -7363,7 +8013,9 @@
       "Golbat"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Golbat",
@@ -7387,7 +8039,9 @@
       "Crobat"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Oddish",
@@ -7411,7 +8065,9 @@
       "Gloom"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Gloom",
@@ -7436,7 +8092,9 @@
       "Vileplume"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Vileplume",
@@ -7458,7 +8116,9 @@
     "dex_number": 45,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Paras",
@@ -7482,7 +8142,9 @@
       "Parasect"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Parasect",
@@ -7504,7 +8166,9 @@
     "dex_number": 47,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Venonat",
@@ -7528,7 +8192,9 @@
       "Venomoth"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Venomoth",
@@ -7550,7 +8216,9 @@
     "dex_number": 49,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Charmeleon",
@@ -7573,7 +8241,9 @@
       "Charizard"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Diglett",
@@ -7597,7 +8267,9 @@
       "Dugtrio"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Dugtrio",
@@ -7619,7 +8291,9 @@
     "dex_number": 51,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Meowth",
@@ -7642,7 +8316,9 @@
       "Persian"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Persian",
@@ -7663,7 +8339,9 @@
     "dex_number": 53,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Psyduck",
@@ -7687,7 +8365,9 @@
       "Golduck"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Golduck",
@@ -7709,7 +8389,9 @@
     "dex_number": 55,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Mankey",
@@ -7732,7 +8414,9 @@
       "Primeape"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Primeape",
@@ -7753,7 +8437,9 @@
     "dex_number": 57,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Growlithe",
@@ -7777,7 +8463,9 @@
       "Arcanine"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Arcanine",
@@ -7799,7 +8487,9 @@
     "dex_number": 59,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Charizard",
@@ -7821,7 +8511,9 @@
     "dex_number": 6,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Poliwag",
@@ -7845,7 +8537,9 @@
       "Poliwhirl"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Poliwhirl",
@@ -7870,7 +8564,9 @@
       "Poliwrath"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE0F0",
+    "Back Sprite": "0xE0F2"
   },
   {
     "Species": "Poliwrath",
@@ -7893,7 +8589,9 @@
     "dex_number": 62,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Abra",
@@ -7917,7 +8615,9 @@
       "Kadabra"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Kadabra",
@@ -7941,7 +8641,9 @@
       "Alakazam"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Alakazam",
@@ -7963,7 +8665,9 @@
     "dex_number": 65,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Machop",
@@ -7986,7 +8690,9 @@
       "Machoke"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Machoke",
@@ -8009,7 +8715,9 @@
       "Machamp"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Machamp",
@@ -8030,7 +8738,9 @@
     "dex_number": 68,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Bellsprout",
@@ -8054,7 +8764,9 @@
       "Weepinbell"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Squirtle",
@@ -8077,7 +8789,9 @@
       "Wartortle"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Weepinbell",
@@ -8101,7 +8815,9 @@
       "Victreebel"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Victreebel",
@@ -8123,7 +8839,9 @@
     "dex_number": 71,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Tentacool",
@@ -8148,7 +8866,9 @@
       "Tentacruel"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Tentacruel",
@@ -8171,7 +8891,9 @@
     "dex_number": 73,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Geodude",
@@ -8196,7 +8918,9 @@
       "Graveler"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Graveler",
@@ -8221,7 +8945,9 @@
       "Golem"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Golem",
@@ -8244,7 +8970,9 @@
     "dex_number": 76,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Ponyta",
@@ -8268,7 +8996,9 @@
       "Rapidash"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Rapidash",
@@ -8290,7 +9020,9 @@
     "dex_number": 78,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Slowpoke",
@@ -8316,7 +9048,9 @@
       "Slowking"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Wartortle",
@@ -8339,7 +9073,9 @@
       "Blastoise"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Slowbro",
@@ -8362,7 +9098,9 @@
     "dex_number": 80,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE13C",
+    "Back Sprite": "0xE13E"
   },
   {
     "Species": "Magnemite",
@@ -8387,7 +9125,9 @@
       "Magneton"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Magneton",
@@ -8410,7 +9150,9 @@
     "dex_number": 82,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Farfetch'd",
@@ -8433,7 +9175,9 @@
     "dex_number": 83,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Doduo",
@@ -8458,7 +9202,9 @@
       "Dodrio"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Dodrio",
@@ -8481,7 +9227,9 @@
     "dex_number": 85,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Seel",
@@ -8504,7 +9252,9 @@
       "Dewgong"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Dewgong",
@@ -8526,7 +9276,9 @@
     "dex_number": 87,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Grimer",
@@ -8550,7 +9302,9 @@
       "Muk"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Muk",
@@ -8572,7 +9326,9 @@
     "dex_number": 89,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Blastoise",
@@ -8593,7 +9349,9 @@
     "dex_number": 9,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Shellder",
@@ -8616,7 +9374,9 @@
       "Cloyster"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Cloyster",
@@ -8638,7 +9398,9 @@
     "dex_number": 91,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Gastly",
@@ -8662,7 +9424,9 @@
       "Haunter"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Haunter",
@@ -8686,7 +9450,9 @@
       "Gengar"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Gengar",
@@ -8708,7 +9474,9 @@
     "dex_number": 94,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Onix",
@@ -8733,7 +9501,9 @@
       "Steelix"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE178",
+    "Back Sprite": "0xE17A"
   },
   {
     "Species": "Drowzee",
@@ -8756,7 +9526,9 @@
       "Hypno"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Hypno",
@@ -8777,7 +9549,9 @@
     "dex_number": 97,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Krabby",
@@ -8801,7 +9575,9 @@
       "Kingler"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Kingler",
@@ -8823,7 +9599,9 @@
     "dex_number": 99,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Castform-Snowy",
@@ -8842,7 +9620,9 @@
       "Forecast"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Castform-Sunny",
@@ -8861,7 +9641,9 @@
       "Forecast"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Castform-Rainy",
@@ -8880,7 +9662,9 @@
       "Forecast"
     ],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Testmon",
@@ -8902,7 +9686,9 @@
     "dex_number": 0,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE000",
+    "Back Sprite": "0xE002"
   },
   {
     "Species": "Testmon2",
@@ -8924,6 +9710,8 @@
     "dex_number": 0,
     "evos": [],
     "Gender Ratio": 0.875,
-    "Catch rate": 11.9
+    "Catch rate": 11.9,
+    "Front Sprite": "0xE244",
+    "Back Sprite": "0xE002"
   }
 ]

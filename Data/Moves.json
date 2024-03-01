@@ -1660,7 +1660,7 @@
     "priority": 0,
     "pp": 15,
     "description": "30% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.30,
     "type": "Normal",
     "flags": [
@@ -1974,7 +1974,7 @@
     "priority": 0,
     "pp": 20,
     "description": "30% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.30,
     "type": "Dragon",
     "flags": [
@@ -2074,7 +2074,7 @@
     "priority": 0,
     "pp": 25,
     "description": "10% chance to burn the target.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -2287,7 +2287,7 @@
     "priority": 0,
     "pp": 15,
     "description": "10% chance to burn the target.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -2323,7 +2323,7 @@
     "priority": 0,
     "pp": 25,
     "description": "10% chance to burn the target. Thaws user.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -2344,7 +2344,7 @@
     "priority": 0,
     "pp": 15,
     "description": "10% chance to burn the target.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -2555,7 +2555,7 @@
     "priority": 0,
     "pp": 10,
     "description": "10% chance to freeze the target.",
-    "status": "frozen",
+    "status": "FRZ",
     "chance": 0.10,
     "type": "Ice",
     "flags": [
@@ -2574,7 +2574,7 @@
     "priority": 0,
     "pp": 15,
     "description": "10% chance to freeze the target.",
-    "status": "frozen",
+    "status": "FRZ",
     "chance": 0.10,
     "type": "Ice",
     "flags": [
@@ -2699,7 +2699,7 @@
     "priority": 0,
     "pp": 30,
     "description": "30% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.30,
     "type": "Ghost",
     "flags": [
@@ -3007,7 +3007,7 @@
     "priority": 0,
     "pp": 15,
     "description": "30% chance to badly poison the target.",
-    "status": "badly poisoned",
+    "status": "TOX",
     "chance": 0.30,
     "type": "Poison",
     "flags": [
@@ -3027,7 +3027,7 @@
     "priority": 0,
     "pp": 35,
     "description": "30% chance to poison the target.",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 0.30,
     "type": "Poison",
     "flags": [
@@ -3046,7 +3046,7 @@
     "priority": 0,
     "pp": 25,
     "description": "High critical hit ratio. 10% chance to poison.",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 0.10,
     "type": "Poison",
     "flags": [
@@ -3083,7 +3083,7 @@
     "priority": 0,
     "pp": 25,
     "description": "10% chance to freeze the foe(s).",
-    "status": "frozen",
+    "status": "FRZ",
     "chance": 0.10,
     "type": "Ice",
     "flags": [
@@ -3496,7 +3496,7 @@
     "priority": 0,
     "pp": 20,
     "description": "30% chance to poison the target.",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 0.30,
     "type": "Poison",
     "flags": [
@@ -3515,7 +3515,7 @@
     "priority": 0,
     "pp": 10,
     "description": "30% chance to poison the target.",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 0.30,
     "type": "Poison",
     "flags": [
@@ -3604,7 +3604,7 @@
     "priority": 0,
     "pp": 20,
     "description": "30% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.30,
     "type": "Electric",
     "flags": [
@@ -3671,7 +3671,7 @@
     "priority": 0,
     "pp": 15,
     "description": "Causes the target to fall asleep.",
-    "status": "asleep",
+    "status": "SLP",
     "chance": 1,
     "type": "Grass",
     "flags": [
@@ -3887,7 +3887,7 @@
     "priority": 0,
     "pp": 15,
     "description": "10% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.10,
     "type": "Electric",
     "flags": [
@@ -3907,7 +3907,7 @@
     "priority": 0,
     "pp": 30,
     "description": "10% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.10,
     "type": "Electric",
     "flags": [
@@ -3926,7 +3926,7 @@
     "priority": 0,
     "pp": 20,
     "description": "Paralyzes the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 1,
     "type": "Electric",
     "flags": [
@@ -3945,7 +3945,7 @@
     "priority": 0,
     "pp": 15,
     "description": "10% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.10,
     "type": "Electric",
     "flags": [
@@ -4332,7 +4332,7 @@
     "priority": 0,
     "pp": 5,
     "description": "100% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 1,
     "type": "Electric",
     "flags": [
@@ -4367,7 +4367,7 @@
     "priority": 0,
     "pp": 15,
     "description": "Causes the target to fall asleep.",
-    "status": "asleep",
+    "status": "SLP",
     "chance": 1,
     "type": "Grass",
     "flags": [
@@ -4387,7 +4387,7 @@
     "priority": 0,
     "pp": 40,
     "description": "Poisons the foe(s).",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 1,
     "type": "Poison",
     "flags": [
@@ -4406,7 +4406,7 @@
     "priority": 0,
     "pp": 15,
     "description": "Causes the target to fall asleep.",
-    "status": "asleep",
+    "status": "SLP",
     "chance": 1,
     "type": "Normal",
     "flags": [
@@ -4444,7 +4444,7 @@
     "priority": 0,
     "pp": 20,
     "description": "Causes the target to fall asleep.",
-    "status": "asleep",
+    "status": "SLP",
     "chance": 1,
     "type": "Psychic",
     "flags": [
@@ -4463,7 +4463,7 @@
     "priority": 0,
     "pp": 5,
     "description": "10% chance to freeze foe(s).",
-    "status": "frozen",
+    "status": "FRZ",
     "chance": 0.10,
     "type": "Ice",
     "flags": [
@@ -4533,7 +4533,7 @@
     "priority": 0,
     "pp": 20,
     "description": "40% chance to poison the target.",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 0.40,
     "type": "Poison",
     "flags": [
@@ -4632,7 +4632,7 @@
     "priority": 0,
     "pp": 30,
     "description": "Paralyzes the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 1,
     "type": "Normal",
     "flags": [
@@ -4673,7 +4673,7 @@
     "priority": 0,
     "pp": 10,
     "description": "Causes the target to fall asleep.",
-    "status": "asleep",
+    "status": "SLP",
     "chance": 1,
     "type": "Normal",
     "flags": [
@@ -4708,7 +4708,7 @@
     "priority": 0,
     "pp": 35,
     "description": "Poisons the target.",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 1,
     "type": "Poison",
     "flags": [
@@ -4743,7 +4743,7 @@
     "priority": 0,
     "pp": 15,
     "description": "Causes the target to fall asleep.",
-    "status": "asleep",
+    "status": "SLP",
     "chance": 1,
     "type": "Grass",
     "flags": [
@@ -4762,7 +4762,7 @@
     "priority": 0,
     "pp": 30,
     "description": "Paralyzes the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 1,
     "type": "Grass",
     "flags": [
@@ -4798,7 +4798,7 @@
     "priority": 0,
     "pp": 15,
     "description": "Burns the target.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 1,
     "type": "Fire",
     "flags": [
@@ -5008,7 +5008,7 @@
     "priority": 0,
     "pp": 5,
     "description": "Bounces turn 1. Hits turn 2. 30% paralyze.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.30,
     "type": "Flying",
     "flags": [
@@ -5117,7 +5117,7 @@
     "priority": 0,
     "pp": 5,
     "description": "10% chance to burn the target.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -5347,7 +5347,7 @@
     "priority": 0,
     "pp": 10,
     "description": "Badly poisons the target.",
-    "status": "badly poisoned",
+    "status": "TOX",
     "chance": 1,
     "type": "Poison",
     "flags": [
@@ -5399,7 +5399,7 @@
     "priority": 0,
     "pp": 10,
     "description": "High critical hit ratio. 10% chance to burn.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -5467,7 +5467,7 @@
     "priority": 0,
     "pp": 10,
     "description": "10% chance to burn the foe(s).",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -6058,7 +6058,7 @@
     "priority": 0,
     "pp": 5,
     "description": "50% chance to burn the target. Thaws user.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.50,
     "type": "Fire",
     "flags": [

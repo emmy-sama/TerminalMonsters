@@ -22089,9 +22089,9 @@
   },
   "testmon": {
     "level": {
-      "1": "Counter",
-      "2": "Mirror Coat",
-      "3": "Bide",
+      "1": "Cross Chop",
+      "2": "Flamethrower",
+      "3": "Self-Destruct",
       "4": "Fake Out",
       "20": "Spikes",
       "25": "Psychic",

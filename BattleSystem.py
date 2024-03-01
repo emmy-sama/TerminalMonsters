@@ -1,4 +1,6 @@
 from Classes import *
+from bearlibterminal import terminal
+import time
 
 
 class Battle:
@@ -24,6 +26,15 @@ class Battle:
         self.ai_move = None
         self.ai_move_last = None
 
+    def print_ui(self):
+        terminal.put(96, 5, int(self.opponent_active.front_sprite, 16))
+        terminal.put(13, 15, int(self.player_active.back_sprite, 16))
+        terminal.put(0, 20, 0xF8FF)
+        terminal.put(53, 20, 0xF8FD)
+        if self.player_active is not None and self.opponent_active is not None:
+            self.hp_bars()
+        terminal.refresh()
+
     def battle(self):
         while True:
             self.turn += 1
@@ -37,17 +48,13 @@ class Battle:
             self.player_active.dmg_last_taken = 0
             self.opponent_active.dmg_last_type_taken = None
             self.opponent_active.dmg_last_taken = 0
-            print(f"Turn: {self.turn}")
-            if self.player_active is not None:
-                print(f"{self.player_active.species}'s HP: {self.player_active.chp}/{self.player_active.hp}")
-            if self.opponent_active is not None:
-                print(f"{self.opponent_active.species}'s HP: {self.opponent_active.chp}/{self.opponent_active.hp}")
+            self.print_ui()
             if (self.opponent_active.semi_invulnerable is None and self.opponent_active.charged is False
                     and self.opponent_active.bide == 0):
                 if self.opponent_active.recharge:
                     self.ai_move = None
                     self.opponent_active.recharge = False
-                    print(f"{self.opponent.name}'s {self.opponent_active.species} must recharge!")
+                    self.print_txt(f"{self.opponent.name}'s {self.opponent_active.species} must recharge!")
                 else:
                     self.ai_move = self.ai_turn()
             if (self.player_active.semi_invulnerable is None and self.player_active.charged is False
@@ -55,14 +62,15 @@ class Battle:
                 if self.player_active.recharge:
                     self.p_move = None
                     self.player_active.recharge = False
-                    print(f"{self.player.name}'s {self.player_active.species} must recharge!")
+                    self.print_txt(f"{self.player.name}'s {self.player_active.species} must recharge!")
                 else:
                     self.p_move = None
                     self.player_turn()
+                    terminal.clear_area(55, 21, 60, 3)
             if self.p_move is not None and self.p_move.get("name") == "Focus Punch":
-                print(f"{self.player.name}'s {self.player_active.species} is tightening its focus!")
+                self.print_txt(f"{self.player.name}'s {self.player_active.species} is tightening its focus!")
             if self.ai_move is not None and self.ai_move.get("name") == "Focus Punch":
-                print(f"{self.opponent.name}'s {self.opponent_active.species} is tightening its focus!")
+                self.print_txt(f"{self.opponent.name}'s {self.opponent_active.species} is tightening its focus!")
             if self.p_move is not None and self.ai_move is not None:
                 order = self.speed_check()
                 self.action(order[0], order[2], order[1])
@@ -101,52 +109,312 @@ class Battle:
 
     def player_turn(self):
         while True:
-            player_action = int(input("What will you do? 1.Fight 2.Check/Swap Pokemon 3.Open Bag: "))
-            if player_action == 3:
-                print("Will add items later")
-            if player_action == 2:
+            terminal.clear_area(55, 21, 60, 3)
+            terminal.printf(55, 21, "1 Fight\n2 Pokemon")
+            self.print_txt("What will you do?", 0)
+            button = terminal.read()
+            if button == terminal.TK_1:
                 while True:
-                    for pokes in self.player.team:
-                        print(f"{self.player.team.index(pokes) + 1}.", end=""), pokes.check_poke_basic()
-                    print("7.Back")
-                    x = int(input("Please Select a pokemon to view details of or swap in: "))
-                    if x == 7:
+                    terminal.clear_area(55, 21, 60, 3)
+                    terminal.printf(55, 21, f"1 {self.player_active.moves[0]}")
+                    if 2 > len(self.player_active.moves):
+                        terminal.printf(85, 21, "Empty Slot")
+                    else:
+                        terminal.printf(85, 21, f"2 {self.player_active.moves[1]}")
+                    if 3 > len(self.player_active.moves):
+                        terminal.printf(55, 22, "Empty Slot")
+                    else:
+                        terminal.printf(55, 22, f"3 {self.player_active.moves[2]}")
+                    if 4 > len(self.player_active.moves):
+                        terminal.printf(85, 22, "Empty Slot")
+                    else:
+                        terminal.printf(85, 22, f"4 {self.player_active.moves[3]}")
+                    self.print_txt("What move would you like to use?(1-4)", 0)
+                    button = terminal.read()
+                    if button == terminal.TK_1:
+                        while True:
+                            for move in moves:
+                                if self.player_active.moves[0] == move.get("name"):
+                                    power = move.get("power")
+                                    acc = move.get("accuracy")
+                                    desc = move.get("description")
+                            self.print_txt(f"Use {self.player_active.moves[0]}?(Enter/Backspace)\n"
+                                           f"Power: {power} Acc: {acc}\n{desc}", 0)
+                            button = terminal.read()
+                            if button == terminal.TK_ENTER:
+                                for move in self.moves:
+                                    if move.get("name") == self.player_active.moves[0]:
+                                        self.p_move = move
+                                        return
+                            elif button == terminal.TK_BACKSPACE:
+                                break
+                    elif button == terminal.TK_2 and 2 <= len(self.player_active.moves):
+                        while True:
+                            for move in moves:
+                                if self.player_active.moves[1] == move.get("name"):
+                                    power = move.get("power")
+                                    acc = move.get("accuracy")
+                                    desc = move.get("description")
+                            self.print_txt(f"Use {self.player_active.moves[1]}?(Enter/Backspace)\n"
+                                           f"Power: {power} Acc: {acc}\n{desc}", 0)
+                            button = terminal.read()
+                            if button == terminal.TK_ENTER:
+                                for move in self.moves:
+                                    if move.get("name") == self.player_active.moves[1]:
+                                        self.p_move = move
+                                        return
+                            elif button == terminal.TK_BACKSPACE:
+                                break
+                    elif button == terminal.TK_3 and 3 <= len(self.player_active.moves):
+                        while True:
+                            for move in moves:
+                                if self.player_active.moves[2] == move.get("name"):
+                                    power = move.get("power")
+                                    acc = move.get("accuracy")
+                                    desc = move.get("description")
+                            self.print_txt(f"Use {self.player_active.moves[2]}?(Enter/Backspace)\n"
+                                           f"Power: {power} Acc: {acc}\n{desc}", 0)
+                            button = terminal.read()
+                            if button == terminal.TK_ENTER:
+                                for move in self.moves:
+                                    if move.get("name") == self.player_active.moves[2]:
+                                        self.p_move = move
+                                        return
+                            elif button == terminal.TK_BACKSPACE:
+                                break
+                    elif button == terminal.TK_4 and 4 <= len(self.player_active.moves):
+                        while True:
+                            for move in moves:
+                                if self.player_active.moves[3] == move.get("name"):
+                                    power = move.get("power")
+                                    acc = move.get("accuracy")
+                                    desc = move.get("description")
+                            self.print_txt(f"Use {self.player_active.moves[3]}?(Enter/Backspace)\n"
+                                           f"Power: {power} Acc: {acc}\n{desc}", 0)
+                            button = terminal.read()
+                            if button == terminal.TK_ENTER:
+                                for move in self.moves:
+                                    if move.get("name") == self.player_active.moves[3]:
+                                        self.p_move = move
+                                        return
+                            elif button == terminal.TK_BACKSPACE:
+                                break
+                    elif button == terminal.TK_BACKSPACE:
                         break
-                    while True:
-                        self.player.team[x - 1].check_poke_advanced()
-                        y = int(input("1.Swap 2.Check Moves 3.Back: "))
-                        if y == 3:
-                            break
-                        if y == 2:
-                            while True:
-                                self.player.team[x - 1].check_poke_moves()
-                                z = int(input("1.Swap 2.Back: "))
-                                if z == 1:
-                                    self.player_active.reset_temp()
-                                    self.player_active = self.player.team[x - 1]
-                                    self.player_active.first_turn = True
-                                    print(f"{self.player.name} sent out {self.player_active.species}")
-                                    return
-                                if z == 2:
+            elif button == terminal.TK_2:
+                while True:
+                    terminal.clear_area(55, 21, 60, 3)
+                    terminal.printf(55, 21, f"1 {self.player.team[0]}")
+                    if 1 >= len(self.player.team):
+                        terminal.printf(85, 21, "Empty Slot")
+                    else:
+                        terminal.printf(85, 21, f"2 {self.player.team[1]}")
+                    if 2 >= len(self.player.team):
+                        terminal.printf(55, 22, "Empty Slot")
+                    else:
+                        terminal.printf(55, 22, f"3 {self.player.team[2]}")
+                    if 3 >= len(self.player.team):
+                        terminal.printf(85, 22, "Empty Slot")
+                    else:
+                        terminal.printf(85, 22, f"4 {self.player.team[3]}")
+                    if 4 >= len(self.player.team):
+                        terminal.printf(55, 23, "Empty Slot")
+                    else:
+                        terminal.printf(55, 23, f"5 {self.player.team[4]}")
+                    if 5 >= len(self.player.team):
+                        terminal.printf(85, 23, "Empty Slot")
+                    else:
+                        terminal.printf(85, 23, f"6 {self.player.team[5]}")
+                    self.print_txt("What Pokemon would you like to view/swap?(1-6)", 0)
+                    button = terminal.read()
+                    if button == terminal.TK_1:
+                        while True:
+                            terminal.clear_area(55, 21, 60, 3)
+                            terminal.printf(55, 21, f"1 {self.player.team[0].moves[0]}")
+                            if 2 > len(self.player.team[0].moves):
+                                terminal.printf(85, 21, "Empty Slot")
+                            else:
+                                terminal.printf(85, 21, f"2 {self.player.team[0].moves[1]}")
+                            if 3 > len(self.player.team[0].moves):
+                                terminal.printf(55, 22, "Empty Slot")
+                            else:
+                                terminal.printf(55, 22, f"3 {self.player.team[0].moves[2]}")
+                            if 4 > len(self.player.team[0].moves):
+                                terminal.printf(85, 22, "Empty Slot")
+                            else:
+                                terminal.printf(85, 22, f"4 {self.player.team[0].moves[3]}")
+                            self.print_txt(f"Swap to {self.player.team[0].species}?(Enter/Backspace)\n"
+                                           f"{self.player.team[0].info}", 0)
+                            button = terminal.read()
+                            if button == terminal.TK_ENTER:
+                                if self.player_active == self.player.team[0]:
+                                    self.print_txt(f"{self.player.team[0].species} is already out")
                                     break
-                        if y == 1:
-                            self.player_active.reset_temp()
-                            self.player_active = self.player.team[x - 1]
-                            self.player_active.first_turn = True
-                            print(f"{self.player.name} sent out {self.player_active.species}")
-                            return
-            if player_action == 1:
-                for m in self.player_active.moves:
-                    print(f"{self.player_active.moves.index(m) + 1}.{m}")
-                print("5.Back")
-                x = int(input("Please Select a move: "))
-                if x == 5:
-                    pass
-                else:
-                    for move in self.moves:
-                        if move.get("name") == self.player_active.moves[int(x) - 1]:
-                            self.p_move = move
-                            return
+                                self.player_active.reset_temp()
+                                self.player_active = self.player.team[0]
+                                self.player_active.first_turn = True
+                                self.print_ui()
+                                self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                                return
+                            if button == terminal.TK_BACKSPACE:
+                                break
+                    elif button == terminal.TK_2 and 2 <= len(self.player.team):
+                        while True:
+                            terminal.clear_area(55, 21, 60, 3)
+                            terminal.printf(55, 21, f"1 {self.player.team[1].moves[0]}")
+                            if 2 > len(self.player.team[1].moves):
+                                terminal.printf(85, 21, "Empty Slot")
+                            else:
+                                terminal.printf(85, 21, f"2 {self.player.team[1].moves[1]}")
+                            if 3 > len(self.player.team[1].moves):
+                                terminal.printf(55, 22, "Empty Slot")
+                            else:
+                                terminal.printf(55, 22, f"3 {self.player.team[1].moves[2]}")
+                            if 4 > len(self.player.team[1].moves):
+                                terminal.printf(85, 22, "Empty Slot")
+                            else:
+                                terminal.printf(85, 22, f"4 {self.player.team[1].moves[3]}")
+                            self.print_txt(f"Swap to {self.player.team[1].species}?(Enter/Backspace)\n"
+                                           f"{self.player.team[1].info}", 0)
+                            button = terminal.read()
+                            if button == terminal.TK_ENTER:
+                                if self.player_active == self.player.team[1]:
+                                    self.print_txt(f"{self.player.team[1].species} is already out")
+                                    break
+                                self.player_active.reset_temp()
+                                self.player_active = self.player.team[1]
+                                self.player_active.first_turn = True
+                                self.print_ui()
+                                self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                                return
+                            if button == terminal.TK_BACKSPACE:
+                                break
+                    elif button == terminal.TK_3 and 3 <= len(self.player.team):
+                        while True:
+                            terminal.clear_area(55, 21, 60, 3)
+                            terminal.printf(55, 21, f"1 {self.player.team[2].moves[0]}")
+                            if 2 > len(self.player.team[2].moves):
+                                terminal.printf(85, 21, "Empty Slot")
+                            else:
+                                terminal.printf(85, 21, f"2 {self.player.team[2].moves[1]}")
+                            if 3 > len(self.player.team[2].moves):
+                                terminal.printf(55, 22, "Empty Slot")
+                            else:
+                                terminal.printf(55, 22, f"3 {self.player.team[2].moves[2]}")
+                            if 4 > len(self.player.team[2].moves):
+                                terminal.printf(85, 22, "Empty Slot")
+                            else:
+                                terminal.printf(85, 22, f"4 {self.player.team[2].moves[3]}")
+                            self.print_txt(f"Swap to {self.player.team[2].species}?(Enter/Backspace)\n"
+                                           f"{self.player.team[2].info}", 0)
+                            button = terminal.read()
+                            if button == terminal.TK_ENTER:
+                                if self.player_active == self.player.team[2]:
+                                    self.print_txt(f"{self.player.team[2].species} is already out")
+                                    break
+                                self.player_active.reset_temp()
+                                self.player_active = self.player.team[2]
+                                self.player_active.first_turn = True
+                                self.print_ui()
+                                self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                                return
+                            if button == terminal.TK_BACKSPACE:
+                                break
+                    elif button == terminal.TK_4 and 4 <= len(self.player.team):
+                        while True:
+                            terminal.clear_area(55, 21, 60, 3)
+                            terminal.printf(55, 21, f"1 {self.player.team[3].moves[0]}")
+                            if 2 > len(self.player.team[3].moves):
+                                terminal.printf(85, 21, "Empty Slot")
+                            else:
+                                terminal.printf(85, 21, f"2 {self.player.team[3].moves[1]}")
+                            if 3 > len(self.player.team[3].moves):
+                                terminal.printf(55, 22, "Empty Slot")
+                            else:
+                                terminal.printf(55, 22, f"3 {self.player.team[3].moves[2]}")
+                            if 4 > len(self.player.team[3].moves):
+                                terminal.printf(85, 22, "Empty Slot")
+                            else:
+                                terminal.printf(85, 22, f"4 {self.player.team[3].moves[3]}")
+                            self.print_txt(f"Swap to {self.player.team[3].species}?(Enter/Backspace)\n"
+                                           f"{self.player.team[3].info}", 0)
+                            button = terminal.read()
+                            if button == terminal.TK_ENTER:
+                                if self.player_active == self.player.team[3]:
+                                    self.print_txt(f"{self.player.team[3].species} is already out")
+                                    break
+                                self.player_active.reset_temp()
+                                self.player_active = self.player.team[3]
+                                self.player_active.first_turn = True
+                                self.print_ui()
+                                self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                                return
+                            if button == terminal.TK_BACKSPACE:
+                                break
+                    elif button == terminal.TK_5 and 5 <= len(self.player.team):
+                        while True:
+                            terminal.clear_area(55, 21, 60, 3)
+                            terminal.printf(55, 21, f"1 {self.player.team[4].moves[0]}")
+                            if 2 > len(self.player.team[4].moves):
+                                terminal.printf(85, 21, "Empty Slot")
+                            else:
+                                terminal.printf(85, 21, f"2 {self.player.team[4].moves[1]}")
+                            if 3 > len(self.player.team[4].moves):
+                                terminal.printf(55, 22, "Empty Slot")
+                            else:
+                                terminal.printf(55, 22, f"3 {self.player.team[4].moves[2]}")
+                            if 4 > len(self.player.team[4].moves):
+                                terminal.printf(85, 22, "Empty Slot")
+                            else:
+                                terminal.printf(85, 22, f"4 {self.player.team[4].moves[3]}")
+                            self.print_txt(f"Swap to {self.player.team[4].species}?(Enter/Backspace)\n"
+                                           f"{self.player.team[4].info}", 0)
+                            button = terminal.read()
+                            if button == terminal.TK_ENTER:
+                                if self.player_active == self.player.team[4]:
+                                    self.print_txt(f"{self.player.team[4].species} is already out")
+                                    break
+                                self.player_active.reset_temp()
+                                self.player_active = self.player.team[4]
+                                self.player_active.first_turn = True
+                                self.print_ui()
+                                self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                                return
+                            if button == terminal.TK_BACKSPACE:
+                                break
+                    elif button == terminal.TK_6 and 6 <= len(self.player.team):
+                        while True:
+                            terminal.clear_area(55, 21, 60, 3)
+                            terminal.printf(55, 21, f"1 {self.player.team[5].moves[0]}")
+                            if 2 > len(self.player.team[5].moves):
+                                terminal.printf(85, 21, "Empty Slot")
+                            else:
+                                terminal.printf(85, 21, f"2 {self.player.team[5].moves[1]}")
+                            if 3 > len(self.player.team[5].moves):
+                                terminal.printf(55, 22, "Empty Slot")
+                            else:
+                                terminal.printf(55, 22, f"3 {self.player.team[5].moves[2]}")
+                            if 4 > len(self.player.team[5].moves):
+                                terminal.printf(85, 22, "Empty Slot")
+                            else:
+                                terminal.printf(85, 22, f"4 {self.player.team[5].moves[3]}")
+                            self.print_txt(f"Swap to {self.player.team[5].species}?(Enter/Backspace)\n"
+                                           f"{self.player.team[5].info}", 0)
+                            button = terminal.read()
+                            if button == terminal.TK_ENTER:
+                                if self.player_active == self.player.team[5]:
+                                    self.print_txt(f"{self.player.team[5].species} is already out")
+                                    break
+                                self.player_active.reset_temp()
+                                self.player_active = self.player.team[5]
+                                self.player_active.first_turn = True
+                                self.print_ui()
+                                self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                                return
+                            if button == terminal.TK_BACKSPACE:
+                                break
+                    elif button == terminal.TK_BACKSPACE:
+                        break
 
     def speed_check(self):
         player_speed = math.floor(self.player_active.speed *
@@ -168,55 +436,55 @@ class Battle:
         if attacker.flinching:
             attacker.flinching = False
             attacker.charged = False
-            print(f"{attacker.owner.name}'s {attacker.species} flinched!")
+            self.print_txt(f"{attacker.owner.name}'s {attacker.species} flinched!")
             attacker.acted = True
             return
         if "Semi-invulnerable" in move.get("flags") and attacker.semi_invulnerable is None:
             if move.get("name") == "Bounce":
                 attacker.semi_invulnerable = "bounce"
-                print(f"{attacker.owner.name}'s {attacker.species} sprang up!")
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} sprang up!")
                 attacker.acted = True
                 return
             if move.get("name") == "Dig":
                 attacker.semi_invulnerable = "dig"
-                print(f"{attacker.owner.name}'s {attacker.species} dug a hole!")
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} dug a hole!")
                 attacker.acted = True
                 return
             if move.get("name") == "Dive":
                 attacker.semi_invulnerable = "dive"
-                print(f"{attacker.owner.name}'s {attacker.species} hide underwater!")
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} hide underwater!")
                 attacker.acted = True
                 return
             if move.get("name") == "Fly":
                 attacker.semi_invulnerable = "fly"
-                print(f"{attacker.owner.name}'s {attacker.species} flew up high!")
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} flew up high!")
                 attacker.acted = True
                 return
         elif "Semi-invulnerable" in move.get("flags"):
             attacker.semi_invulnerable = None
         if "Charge" in move.get("flags") and attacker.charged is False:
             if move.get("name") == "Skull Bash":
-                print(f"{attacker.owner.name}'s {attacker.species} lowered it's head!")
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} lowered it's head!")
                 attacker.charged = True
                 attacker.temp_stats["defense"] += 1
-                print(f"{attacker.species}'s defense rose!")
+                self.print_txt(f"{attacker.species}'s defense rose!")
                 attacker.acted = True
                 return
             elif move.get("name") == "Solar Beam":
                 if self.weather == "sun":
-                    print(f"{attacker.owner.name}'s {attacker.species} took in the sunlight!")
+                    self.print_txt(f"{attacker.owner.name}'s {attacker.species} took in the sunlight!")
                 else:
-                    print(f"{attacker.owner.name}'s {attacker.species} took in the sunlight!")
+                    self.print_txt(f"{attacker.owner.name}'s {attacker.species} took in the sunlight!")
                     attacker.charged = True
                     attacker.acted = True
                     return
             elif move.get("name") == "Razor Wind":
-                print(f"{attacker.owner.name}'s {attacker.species} whipped up a whirlwind!")
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} whipped up a whirlwind!")
                 attacker.charged = True
                 attacker.acted = True
                 return
             elif move.get("name") == "Sky Attack":
-                print(f"{attacker.owner.name}'s {attacker.species} is glowing!")
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} is glowing!")
                 attacker.charged = True
                 attacker.acted = True
                 return
@@ -224,16 +492,16 @@ class Battle:
             attacker.charged = False
         if move.get("name") == "Bide" and attacker.bide != 0:
             if attacker.bide == 1:
-                print(f"{attacker.owner.name}'s {attacker.species} is storing energy")
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} is storing energy")
                 attacker.bide = 2
                 attacker.acted = True
                 return
             else:
-                print(f"{attacker.owner.name}'s {attacker.species} unleashed energy")
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} unleashed energy")
                 attacker.bide = 0
                 attacker.acted = True
                 if attacker.bide_dmg == 0:
-                    print("But it failed")
+                    self.print_txt("But it failed")
                 else:
                     defender.chp -= (attacker.bide_dmg * 2)
                     if defender.bide != 0:
@@ -243,9 +511,9 @@ class Battle:
                     defender.dmg_last_taken = (attacker.bide_dmg * 2)
                 attacker.bide_dmg = 0
                 return
-        print(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
+        self.print_txt(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
         if defender is None and "Requires Target" in move.get("flags"):
-            print("But it failed")
+            self.print_txt("But it failed")
             attacker.acted = True
             return
         if move.get("name") == "Counter":
@@ -258,7 +526,7 @@ class Battle:
                 defender.damaged_this_turn = True
                 return
             else:
-                print("But it failed")
+                self.print_txt("But it failed")
                 return
         if move.get("name") == "Mirror Coat":
             if attacker.dmg_last_taken > 0 and attacker.dmg_last_type_taken == "Special":
@@ -270,29 +538,29 @@ class Battle:
                 defender.damaged_this_turn = True
                 return
             else:
-                print("But it failed")
+                self.print_txt("But it failed")
                 return
         if move.get("name") == "Focus Punch" and attacker.damaged_this_turn:
-            print("But it failed")
+            self.print_txt("But it failed")
             attacker.acted = True
             return
         if defender.semi_invulnerable is not None:
             if (defender.semi_invulnerable == "bounce" or defender.semi_invulnerable == "fly" and
                     "Bypass Fly" not in move.get("flags")):
-                print(f"{attacker.species} Missed!")
+                self.print_txt(f"{attacker.species} Missed!")
                 attacker.acted = True
                 return
             elif defender.semi_invulnerable == "dig" and "Bypass Dig" not in move.get("flags"):
-                print(f"{attacker.species} Missed!")
+                self.print_txt(f"{attacker.species} Missed!")
                 attacker.acted = True
                 return
             elif defender.semi_invulnerable == "dive" and "Bypass Dive" not in move.get("flags"):
-                print(f"{attacker.species} Missed!")
+                self.print_txt(f"{attacker.species} Missed!")
                 attacker.acted = True
                 return
         if "OHKO" in move.get("flags"):
             if attacker.level < defender.level:
-                print(f"{attacker.species} Missed!")
+                self.print_txt(f"{attacker.species} Missed!")
                 attacker.acted = True
                 return
             else:
@@ -300,11 +568,11 @@ class Battle:
                 accuracy = math.floor(30 + (attacker.level - defender.level))
                 if hit_check <= accuracy:
                     defender.chp = 0
-                    print("It's a one-hit KO!")
+                    self.print_txt("It's a one-hit KO!")
                     attacker.acted = True
                     return
                 else:
-                    print(f"{attacker.species} Missed!")
+                    self.print_txt(f"{attacker.species} Missed!")
                     attacker.acted = True
                     return
         if move.get("accuracy") != 0:
@@ -316,12 +584,12 @@ class Battle:
                 accuracy_stage = -6
             accuracy = move.get("accuracy") * self.temp_stat_table_acc_eva.get(accuracy_stage)
             if hit_check > accuracy:
-                print(f"{attacker.species} Missed!")
+                self.print_txt(f"{attacker.species} Missed!")
                 attacker.acted = True
                 return
         if move.get("name") == "Bide":
             attacker.bide = 1
-            print(f"{attacker.owner.name}'s {attacker.species} is storing energy")
+            self.print_txt(f"{attacker.owner.name}'s {attacker.species} is storing energy")
             attacker.acted = True
             return
         if move.get("category") == "Non-Damaging":
@@ -342,18 +610,18 @@ class Battle:
                     if defender.bide != 0:
                         defender.bide_dmg += dmg
                     if defender.chp <= 0 or attacker.chp <= 0:
-                        print(f"It hit {hit + 1} time(s)")
+                        self.print_txt(f"It hit {hit + 1} time(s)")
                         break
                 defender.damaged_this_turn = True
                 if defender.chp > 0 and attacker.chp > 0:
-                    print(f"It hit {hits} time(s)")
+                    self.print_txt(f"It hit {hits} time(s)")
             if move.get("name") == "Beat Up":
                 for mon in attacker.owner.team:
-                    if mon.status is None:
-                        print(f"{mon.species}'s attack!")
+                    if mon.status == "":
+                        self.print_txt(f"{mon.species}'s attack!")
                         crit = self.crit_check(mon, move)
                         dmg = math.floor(math.floor((math.floor((2 * mon.level) / 5 + 2) * mon.attack * 10) / defender.defense) / 50)
-                        if mon.status == "burned":
+                        if mon.status == "BRN":
                             dmg = math.floor(dmg * 0.5)
                         if self.reflect and not crit:
                             dmg = math.floor(dmg * 0.5)
@@ -397,7 +665,7 @@ class Battle:
                 defender.damaged_this_turn = True
             elif move.get("name") == "Endeavor":
                 if attacker.chp >= defender.chp:
-                    print("But it failed")
+                    self.print_txt("But it failed")
                     attacker.acted = True
                     return
                 else:
@@ -409,7 +677,7 @@ class Battle:
                     defender.damaged_this_turn = True
             elif (move.get("name") == "Fake Out" and attacker.first_turn is False or
                   move.get("name") == "Fake Out" and defender.acted):
-                print("But it failed")
+                self.print_txt("But it failed")
                 attacker.acted = True
                 return
             else:
@@ -417,6 +685,7 @@ class Battle:
                 defender.chp -= dmg
                 if move.get("name") == "False Swipe" and defender.chp <= 0:
                     defender.chp = 1
+                time.sleep(1.5)
                 if dmg > 0:
                     defender.damaged_this_turn = True
                     defender.dmg_last_type_taken = move.get("category")
@@ -434,33 +703,33 @@ class Battle:
                     roll = random.uniform(0, 1)
                     if roll <= move.get("chance"):
                         defender.confused = True
-                if "Status" in move.get("flags") and defender.status is None:
+                if "Status" in move.get("flags") and defender.status == "":
                     roll = random.uniform(0, 1)
                     if roll <= move.get("chance"):
-                        if (move.get("status") == "burned"
+                        if (move.get("status") == "BRN"
                                 and defender.type_one != "Fire" and defender.type_two != "Fire"):
-                            defender.status = "burned"
-                            print(f"{defender.owner.name}'s {defender.species} was burned!")
-                        elif (move.get("status") == "frozen"
+                            defender.status = "BRN"
+                            self.print_txt(f"{defender.owner.name}'s {defender.species} was burned!")
+                        elif (move.get("status") == "FRZ"
                               and defender.type_one != "Ice" and defender.type_two != "Ice"):
-                            defender.status = "frozen"
-                            print(f"{defender.owner.name}'s {defender.species} was frozen!")
-                        elif move.get("status") == "paralyzed":
-                            defender.status = "paralyzed"
-                            print(f"{defender.owner.name}'s {defender.species} was paralyzed!")
-                        elif (move.get("status") == "poisoned" and defender.type_one != "Poison"
+                            defender.status = "FRZ"
+                            self.print_txt(f"{defender.owner.name}'s {defender.species} was frozen!")
+                        elif move.get("status") == "PAR":
+                            defender.status = "PAR"
+                            self.print_txt(f"{defender.owner.name}'s {defender.species} was paralyzed!")
+                        elif (move.get("status") == "PSN" and defender.type_one != "Poison"
                               and defender.type_two != "Poison" and defender.type_one != "Steel"
                               and defender.type_two != "Steel"):
-                            defender.status = "poisoned"
-                            print(f"{defender.owner.name}'s {defender.species} was poisoned!")
-                        elif (move.get("status") == "badly poisoned" and defender.type_one != "Poison"
+                            defender.status = "PSN"
+                            self.print_txt(f"{defender.owner.name}'s {defender.species} was poisoned!")
+                        elif (move.get("status") == "TOX" and defender.type_one != "Poison"
                               and defender.type_two != "Poison" and defender.type_one != "Steel"
                               and defender.type_two != "Steel"):
-                            defender.status = "badly poisoned"
-                            print(f"{defender.owner.name}'s {defender.species} was badly poisoned!")
-                        elif move.get("status") == "sleeping":
-                            defender.status = "sleeping"
-                            print(f"{defender.owner.name}'s {defender.species} is fast asleep")
+                            defender.status = "TOX"
+                            self.print_txt(f"{defender.owner.name}'s {defender.species} was badly poisoned!")
+                        elif move.get("status") == "SLP":
+                            defender.status = "SLP"
+                            self.print_txt(f"{defender.owner.name}'s {defender.species} is fast asleep")
                 if "Leech" in move.get("flags"):
                     if math.floor(dmg * 0.5) == 0:
                         attacker.chp += 1
@@ -472,9 +741,10 @@ class Battle:
                             attacker.chp = attacker.hp
                 if "Recoil" in move.get("flags"):
                     attacker.chp -= math.floor(dmg * move.get("amount"))
-                    print(f"{attacker.owner.name}'s {attacker.species} is hit with recoil!")
+                    self.print_txt(f"{attacker.owner.name}'s {attacker.species} is hit with recoil!")
                 if "Recharge" in move.get("flags"):
                     attacker.recharge = True
+        self.hp_bars()
         attacker.acted = True
 
     def non_dmg_move(self, attacker, defender, move):
@@ -493,42 +763,42 @@ class Battle:
             self.change_stats(attacker, defender, move)
         if "Confuses" in move.get("flags"):
             defender.confused = True
-            print(f"{defender.owner.name}'s {defender.species} became confused!")
+            self.print_txt(f"{defender.owner.name}'s {defender.species} became confused!")
         if "Status" in move.get("flags") and defender.status is None:
-            if (move.get("status") == "burned"
+            if (move.get("status") == "BRN"
                     and defender.type_one != "Fire" and defender.type_two != "Fire"):
-                defender.status = "burned"
-                print(f"{defender.owner.name}'s {defender.species} was burned!")
-            elif (move.get("status") == "frozen"
+                defender.status = "BRN"
+                self.print_txt(f"{defender.owner.name}'s {defender.species} was burned!")
+            elif (move.get("status") == "FRZ"
                   and defender.type_one != "Ice" and defender.type_two != "Ice"):
-                defender.status = "frozen"
-                print(f"{defender.owner.name}'s {defender.species} was frozen!")
-            elif move.get("status") == "paralyzed":
-                defender.status = "paralyzed"
-                print(f"{defender.owner.name}'s {defender.species} was paralyzed!")
-            elif (move.get("status") == "poisoned" and defender.type_one != "Poison"
+                defender.status = "FRZ"
+                self.print_txt(f"{defender.owner.name}'s {defender.species} was frozen!")
+            elif move.get("status") == "PAR":
+                defender.status = "PAR"
+                self.print_txt(f"{defender.owner.name}'s {defender.species} was paralyzed!")
+            elif (move.get("status") == "PSN" and defender.type_one != "Poison"
                   and defender.type_two != "Poison" and defender.type_one != "Steel"
                   and defender.type_two != "Steel"):
-                defender.status = "poisoned"
-                print(f"{defender.owner.name}'s {defender.species} was poisoned!")
-            elif (move.get("status") == "badly poisoned" and defender.type_one != "Poison"
+                defender.status = "PSN"
+                self.print_txt(f"{defender.owner.name}'s {defender.species} was poisoned!")
+            elif (move.get("status") == "TOX" and defender.type_one != "Poison"
                   and defender.type_two != "Poison" and defender.type_one != "Steel"
                   and defender.type_two != "Steel"):
-                defender.status = "badly poisoned"
-                print(f"{defender.owner.name}'s {defender.species} was badly poisoned!")
-            elif move.get("status") == "sleeping":
-                defender.status = "sleeping"
-                print(f"{defender.owner.name}'s {defender.species} is fast asleep")
+                defender.status = "TOX"
+                self.print_txt(f"{defender.owner.name}'s {defender.species} was badly poisoned!")
+            elif move.get("status") == "SLP":
+                defender.status = "SLP"
+                self.print_txt(f"{defender.owner.name}'s {defender.species} is fast asleep")
         if "Lowers Attacker chp by hp" in move.get("flags"):
             if attacker.chp - math.floor(attacker.hp * move.get("hp changes")) <= 0:
-                print("But it failed")
+                self.print_txt("But it failed")
                 return
             else:
                 attacker.chp -= math.floor(attacker.hp * move.get("hp changes"))
         if "Raises Attacker chp by hp" in move.get("flags"):
             if move.get("name") == "Swallow":
                 if attacker.stockpile <= 0:
-                    print("But it failed")
+                    self.print_txt("But it failed")
                     return
                 else:
                     hp_change = [0.25, 0.50, 1]
@@ -543,11 +813,11 @@ class Battle:
             return
         if move.get("name") == "Stockpile":
             if attacker.stockpile >= 3:
-                print("But it failed")
+                self.print_txt("But it failed")
                 return
             else:
                 attacker.stockpile += 1
-                print(f"{attacker.owner.name}'s {attacker.species} stockpiled {attacker.stockpile}!")
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} stockpiled {attacker.stockpile}!")
 
     def change_stats(self, attacker, defender, move):
         rng = random.uniform(0, 1)
@@ -556,38 +826,36 @@ class Battle:
                 for key in list(move.get("stat changes").keys()):
                     attacker.temp_stats[key] += move.get("stat changes").get(key)
                     if move.get("stat changes").get(key) > 1:
-                        print(f"{attacker.species}'s {key} rose sharply!")
+                        self.print_txt(f"{attacker.species}'s {key} rose sharply!")
                     elif move.get("stat changes").get(key) == 1:
-                        print(f"{attacker.species}'s {key} rose!")
+                        self.print_txt(f"{attacker.species}'s {key} rose!")
                     if move.get("stat changes").get(key) == -1:
-                        print(f"{attacker.species}'s {key} fell!")
+                        self.print_txt(f"{attacker.species}'s {key} fell!")
                     elif move.get("stat changes").get(key) < -1:
-                        print(f"{attacker.species}'s {key} harshly fell!")
+                        self.print_txt(f"{attacker.species}'s {key} harshly fell!")
                     if attacker.temp_stats[key] >= 6:
                         attacker.temp_stats[key] = 6
-                        print(f"{attacker.species}'s {key} wont go any higher!")
+                        self.print_txt(f"{attacker.species}'s {key} wont go any higher!")
                     elif attacker.temp_stats[key] <= -6:
                         attacker.temp_stats[key] = -6
-                        print(f"{attacker.species}'s {key} wont go any lower!")
-                print(attacker.temp_stats)
+                        self.print_txt(f"{attacker.species}'s {key} wont go any lower!")
             if "Changes Defender Stats" in move.get("flags"):
                 for key in list(move.get("stat changes").keys()):
                     defender.temp_stats[key] += move.get("stat changes").get(key)
                     if move.get("stat changes").get(key) > 1:
-                        print(f"{defender.species}'s {key} rose sharply!")
+                        self.print_txt(f"{defender.species}'s {key} rose sharply!")
                     elif move.get("stat changes").get(key) == 1:
-                        print(f"{defender.species}'s {key} rose!")
+                        self.print_txt(f"{defender.species}'s {key} rose!")
                     if move.get("stat changes").get(key) == -1:
-                        print(f"{defender.species}'s {key} fell!")
+                        self.print_txt(f"{defender.species}'s {key} fell!")
                     elif move.get("stat changes").get(key) < -1:
-                        print(f"{defender.species}'s {key} harshly fell!")
+                        self.print_txt(f"{defender.species}'s {key} harshly fell!")
                     if defender.temp_stats[key] >= 6:
                         defender.temp_stats[key] = 6
-                        print(f"{defender.species}'s {key} wont go any higher!")
+                        self.print_txt(f"{defender.species}'s {key} wont go any higher!")
                     elif defender.temp_stats[key] <= -6:
                         defender.temp_stats[key] = -6
-                        print(f"{defender.species}'s {key} wont go any lower!")
-                print(defender.temp_stats)
+                        self.print_txt(f"{defender.species}'s {key} wont go any lower!")
 
     def dmg_calc(self, attacker, defender, move):
         if "Cant Crit" in move.get("flags"):
@@ -633,7 +901,7 @@ class Battle:
             total = math.floor(math.floor((math.floor((2 * attacker.level) / 5 + 2) * atk * 60) / dfn) / 50)
         else:
             total = math.floor(math.floor((math.floor((2 * attacker.level) / 5 + 2) * atk * move.get("power")) / dfn) / 50)
-        if attacker.status == "burned" and dmg_type == "Physical":
+        if attacker.status == "BRN" and dmg_type == "Physical":
             total = math.floor(total * 0.5)
         if self.reflect and dmg_type == "Physical" and not crit:
             total = math.floor(total * 0.5)
@@ -654,7 +922,7 @@ class Battle:
         total += 2
         if move.get("name") == "Spit Up":
             if attacker.stockpile <= 0:
-                print("But it failed")
+                self.print_txt("But it failed")
                 return 0
             else:
                 total = math.floor(total * attacker.stockpile)
@@ -666,11 +934,11 @@ class Battle:
         if defender.minimized and "Double Minimized" in move.get("flags"):
             total = math.floor(total * 2)
         if (move.get("name") == "Facade" and
-                attacker.status == "burned" or attacker.status == "paralyzed" or attacker.status == "poisoned"):
+                attacker.status == "BRN" or attacker.status == "PAR" or attacker.status == "PSN"):
             total = math.floor(total * 2)
-        if move.get("name") == "Smelling Salts" and defender.status == "paralyzed":
+        if move.get("name") == "Smelling Salts" and defender.status == "PAR":
             total = math.floor(total * 2)
-            defender.status = None
+            defender.status = ""
         if move.get("name") == "Revenge" and attacker.damaged_this_turn:
             total = math.floor(total * 2)
         if move.get("name") == "Weather Ball" and self.weather != "clear":
@@ -687,13 +955,13 @@ class Battle:
                     effectiveness = effectiveness * item.get(defender.type_two, 1)
                 break
         if effectiveness >= 2:
-            print("It's super effective")
+            self.print_txt("It's super effective", 0)
         if effectiveness <= 0.5:
-            print("It's not very effective...")
+            self.print_txt("It's not very effective...", 0)
         total = math.floor(total * effectiveness)
         # Check dmg range values
-        for n in range(85, 101):
-            print(math.floor(total * (n / 100)))
+        # for n in range(85, 101):
+            # print(math.floor(total * (n / 100)))
         if move.get("name") != "Spit Up":
             total = math.floor((total * random.randint(85, 100)) / 100)
         if total == 0:
@@ -704,63 +972,280 @@ class Battle:
         crit_roll = random.uniform(0, 1)
         if "High Crit" in move.get("flags") and attacker.getting_pumped:
             if crit_roll <= 0.3333:
-                print("A critical hit")
+                self.print_txt("[color=red]A critical hit[/color]")
                 return True
             return False
         elif attacker.getting_pumped:
             if crit_roll <= 0.2500:
-                print("A critical hit")
+                self.print_txt("[color=red]A critical hit[/color]")
                 return True
             return False
         elif "High Crit" in move.get("flags"):
             if crit_roll <= 0.1250:
-                print("A critical hit")
+                self.print_txt("[color=red]A critical hit[/color]")
                 return True
             return False
         else:
             if crit_roll <= 0.0625:
-                print("A critical hit")
+                self.print_txt("[color=red]A critical hit[/color]")
                 return True
             return False
 
     def alive_check(self):
-        if self.player_active is None or self.player_active.chp <= 0:
-            self.player.team.remove(self.player_active)
-            if not self.player.team:
-                print(f"{self.opponent.name} Wins!")
-                return True
-            self.player_active = None
-            while self.player_active is None:
-                for pokes in self.player.team:
-                    print(f"{self.player.team.index(pokes) + 1}.", end=""), pokes.check_poke_basic()
-                x = int(input("Please Select a pokemon to view details of or swap in: "))
-                while True:
-                    self.player.team[x - 1].check_poke_advanced()
-                    y = int(input("1.Swap 2.Check Moves 3.Back: "))
-                    if y == 3:
-                        break
-                    if y == 2:
-                        while True:
-                            self.player.team[x - 1].check_poke_moves(self.moves)
-                            z = int(input("1.Swap 2.Back"))
-                            if z == 1:
-                                self.player_active = self.player.team[x - 1]
-                                self.player_active.first_turn = True
-                                print(f"{self.player.name} sent out {self.player_active.species}")
-                                break
-                            if z == 2:
-                                break
-                    if y == 1:
-                        self.player_active = self.player.team[x - 1]
-                        self.player_active.first_turn = True
-                        print(f"{self.player.name} sent out {self.player_active.species}")
-                        break
-        if self.opponent_active.chp <= 0 or self.opponent_active is None:
-            self.opponent.team.remove(self.opponent_active)
+        swapped = False
+        if self.opponent_active is None or self.opponent_active.chp <= 0:
+            if self.opponent_active is not None:
+                self.opponent.team.remove(self.opponent_active)
+                self.opponent_active = None
             if not self.opponent.team:
-                print(f"{self.player.name} Wins!")
+                self.print_txt(f"{self.player.name} Wins!")
                 return True
-            self.opponent_active = None
             self.opponent_active = random.choice(self.opponent.team)
             self.opponent_active.first_turn = True
-            print(f"{self.opponent.name} sent out {self.opponent_active.species}")
+            swapped = True
+        if self.player_active is None or self.player_active.chp <= 0:
+            if self.player_active is not None:
+                self.player.team.remove(self.player_active)
+                self.player_active = None
+            if not self.player.team:
+                self.print_txt(f"{self.opponent.name} Wins!")
+                return True
+            while self.player_active is None:
+                terminal.clear_area(55, 21, 60, 3)
+                terminal.printf(55, 21, f"1 {self.player.team[0]}")
+                if 1 >= len(self.player.team):
+                    terminal.printf(85, 21, "Empty Slot")
+                else:
+                    terminal.printf(85, 21, f"2 {self.player.team[1]}")
+                if 2 >= len(self.player.team):
+                    terminal.printf(55, 22, "Empty Slot")
+                else:
+                    terminal.printf(55, 22, f"3 {self.player.team[2]}")
+                if 3 >= len(self.player.team):
+                    terminal.printf(85, 22, "Empty Slot")
+                else:
+                    terminal.printf(85, 22, f"4 {self.player.team[3]}")
+                if 4 >= len(self.player.team):
+                    terminal.printf(55, 23, "Empty Slot")
+                else:
+                    terminal.printf(55, 23, f"5 {self.player.team[4]}")
+                if 5 >= len(self.player.team):
+                    terminal.printf(85, 23, "Empty Slot")
+                else:
+                    terminal.printf(85, 23, f"6 {self.player.team[5]}")
+                self.print_txt("What Pokemon would you like to view/swap?(1-6)", 0)
+                button = terminal.read()
+                if button == terminal.TK_1:
+                    while True:
+                        terminal.clear_area(55, 21, 60, 3)
+                        terminal.printf(55, 21, f"1 {self.player.team[0].moves[0]}")
+                        if 2 > len(self.player.team[0].moves):
+                            terminal.printf(85, 21, "Empty Slot")
+                        else:
+                            terminal.printf(85, 21, f"2 {self.player.team[0].moves[1]}")
+                        if 3 > len(self.player.team[0].moves):
+                            terminal.printf(55, 22, "Empty Slot")
+                        else:
+                            terminal.printf(55, 22, f"3 {self.player.team[0].moves[2]}")
+                        if 4 > len(self.player.team[0].moves):
+                            terminal.printf(85, 22, "Empty Slot")
+                        else:
+                            terminal.printf(85, 22, f"4 {self.player.team[0].moves[3]}")
+                        self.print_txt(f"Swap to {self.player.team[0].species}?(Enter/Backspace)\n"
+                                       f"{self.player.team[0].info}", 0)
+                        button = terminal.read()
+                        if button == terminal.TK_ENTER:
+                            self.player_active = self.player.team[0]
+                            self.player_active.first_turn = True
+                            self.print_ui()
+                            self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                            if swapped:
+                                self.print_txt(f"{self.opponent.name} sent out {self.opponent_active.species}")
+                            return
+                        if button == terminal.TK_BACKSPACE:
+                            break
+                elif button == terminal.TK_2 and 2 <= len(self.player.team):
+                    while True:
+                        terminal.clear_area(55, 21, 60, 3)
+                        terminal.printf(55, 21, f"1 {self.player.team[1].moves[0]}")
+                        if 2 > len(self.player.team[1].moves):
+                            terminal.printf(85, 21, "Empty Slot")
+                        else:
+                            terminal.printf(85, 21, f"2 {self.player.team[1].moves[1]}")
+                        if 3 > len(self.player.team[1].moves):
+                            terminal.printf(55, 22, "Empty Slot")
+                        else:
+                            terminal.printf(55, 22, f"3 {self.player.team[1].moves[2]}")
+                        if 4 > len(self.player.team[1].moves):
+                            terminal.printf(85, 22, "Empty Slot")
+                        else:
+                            terminal.printf(85, 22, f"4 {self.player.team[1].moves[3]}")
+                        self.print_txt(f"Swap to {self.player.team[1].species}?(Enter/Backspace)\n"
+                                       f"{self.player.team[1].info}", 0)
+                        button = terminal.read()
+                        if button == terminal.TK_ENTER:
+                            self.player_active = self.player.team[1]
+                            self.player_active.first_turn = True
+                            self.print_ui()
+                            self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                            if swapped:
+                                self.print_txt(f"{self.opponent.name} sent out {self.opponent_active.species}")
+                            return
+                        if button == terminal.TK_BACKSPACE:
+                            break
+                elif button == terminal.TK_3 and 3 <= len(self.player.team):
+                    while True:
+                        terminal.clear_area(55, 21, 60, 3)
+                        terminal.printf(55, 21, f"1 {self.player.team[2].moves[0]}")
+                        if 2 > len(self.player.team[2].moves):
+                            terminal.printf(85, 21, "Empty Slot")
+                        else:
+                            terminal.printf(85, 21, f"2 {self.player.team[2].moves[1]}")
+                        if 3 > len(self.player.team[2].moves):
+                            terminal.printf(55, 22, "Empty Slot")
+                        else:
+                            terminal.printf(55, 22, f"3 {self.player.team[2].moves[2]}")
+                        if 4 > len(self.player.team[2].moves):
+                            terminal.printf(85, 22, "Empty Slot")
+                        else:
+                            terminal.printf(85, 22, f"4 {self.player.team[2].moves[3]}")
+                        self.print_txt(f"Swap to {self.player.team[2].species}?(Enter/Backspace)\n"
+                                       f"{self.player.team[2].info}", 0)
+                        button = terminal.read()
+                        if button == terminal.TK_ENTER:
+                            self.player_active = self.player.team[2]
+                            self.player_active.first_turn = True
+                            self.print_ui()
+                            self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                            if swapped:
+                                self.print_txt(f"{self.opponent.name} sent out {self.opponent_active.species}")
+                            return
+                        if button == terminal.TK_BACKSPACE:
+                            break
+                elif button == terminal.TK_4 and 4 <= len(self.player.team):
+                    while True:
+                        terminal.clear_area(55, 21, 60, 3)
+                        terminal.printf(55, 21, f"1 {self.player.team[3].moves[0]}")
+                        if 2 > len(self.player.team[3].moves):
+                            terminal.printf(85, 21, "Empty Slot")
+                        else:
+                            terminal.printf(85, 21, f"2 {self.player.team[3].moves[1]}")
+                        if 3 > len(self.player.team[3].moves):
+                            terminal.printf(55, 22, "Empty Slot")
+                        else:
+                            terminal.printf(55, 22, f"3 {self.player.team[3].moves[2]}")
+                        if 4 > len(self.player.team[3].moves):
+                            terminal.printf(85, 22, "Empty Slot")
+                        else:
+                            terminal.printf(85, 22, f"4 {self.player.team[3].moves[3]}")
+                        self.print_txt(f"Swap to {self.player.team[3].species}?(Enter/Backspace)\n"
+                                       f"{self.player.team[3].info}", 0)
+                        button = terminal.read()
+                        if button == terminal.TK_ENTER:
+                            self.player_active = self.player.team[3]
+                            self.player_active.first_turn = True
+                            self.print_ui()
+                            self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                            if swapped:
+                                self.print_txt(f"{self.opponent.name} sent out {self.opponent_active.species}")
+                            return
+                        if button == terminal.TK_BACKSPACE:
+                            break
+                elif button == terminal.TK_5 and 5 <= len(self.player.team):
+                    while True:
+                        terminal.clear_area(55, 21, 60, 3)
+                        terminal.printf(55, 21, f"1 {self.player.team[4].moves[0]}")
+                        if 2 > len(self.player.team[4].moves):
+                            terminal.printf(85, 21, "Empty Slot")
+                        else:
+                            terminal.printf(85, 21, f"2 {self.player.team[4].moves[1]}")
+                        if 3 > len(self.player.team[4].moves):
+                            terminal.printf(55, 22, "Empty Slot")
+                        else:
+                            terminal.printf(55, 22, f"3 {self.player.team[4].moves[2]}")
+                        if 4 > len(self.player.team[4].moves):
+                            terminal.printf(85, 22, "Empty Slot")
+                        else:
+                            terminal.printf(85, 22, f"4 {self.player.team[4].moves[3]}")
+                        self.print_txt(f"Swap to {self.player.team[4].species}?(Enter/Backspace)\n"
+                                       f"{self.player.team[4].info}", 0)
+                        button = terminal.read()
+                        if button == terminal.TK_ENTER:
+                            self.player_active = self.player.team[4]
+                            self.player_active.first_turn = True
+                            self.print_ui()
+                            self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                            if swapped:
+                                self.print_txt(f"{self.opponent.name} sent out {self.opponent_active.species}")
+                            return
+                        if button == terminal.TK_BACKSPACE:
+                            break
+                elif button == terminal.TK_6 and 6 <= len(self.player.team):
+                    while True:
+                        terminal.clear_area(55, 21, 60, 3)
+                        terminal.printf(55, 21, f"1 {self.player.team[5].moves[0]}")
+                        if 2 > len(self.player.team[5].moves):
+                            terminal.printf(85, 21, "Empty Slot")
+                        else:
+                            terminal.printf(85, 21, f"2 {self.player.team[5].moves[1]}")
+                        if 3 > len(self.player.team[5].moves):
+                            terminal.printf(55, 22, "Empty Slot")
+                        else:
+                            terminal.printf(55, 22, f"3 {self.player.team[5].moves[2]}")
+                        if 4 > len(self.player.team[5].moves):
+                            terminal.printf(85, 22, "Empty Slot")
+                        else:
+                            terminal.printf(85, 22, f"4 {self.player.team[5].moves[3]}")
+                        self.print_txt(f"Swap to {self.player.team[5].species}?(Enter/Backspace)\n"
+                                       f"{self.player.team[5].info}", 0)
+                        button = terminal.read()
+                        if button == terminal.TK_ENTER:
+                            self.player_active = self.player.team[5]
+                            self.player_active.first_turn = True
+                            self.print_ui()
+                            self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                            if swapped:
+                                self.print_txt(f"{self.opponent.name} sent out {self.opponent_active.species}")
+                            return
+                        if button == terminal.TK_BACKSPACE:
+                            break
+
+    def hp_bars(self):
+        hp_symbol = "█"
+        lost_hp = "░"
+        bars = 20
+        opponent_remaining_health_bars = round(self.opponent_active.chp / self.opponent_active.hp * bars)
+        if opponent_remaining_health_bars <= 0:
+            opponent_lost_bars = bars
+        else:
+            opponent_lost_bars = bars - opponent_remaining_health_bars
+        player_remaining_health_bars = round(self.player_active.chp / self.player_active.hp * bars)
+        if player_remaining_health_bars <= 0:
+            player_lost_bars = bars
+        else:
+            player_lost_bars = bars - player_remaining_health_bars
+        terminal.clear_area(1, 1, 26, 3)
+        terminal.printf(3, 1, f"{self.opponent_active.species} {self.opponent_active.gender}")
+        terminal.printf(22, 1, f"Lv{self.opponent_active.level}")
+        terminal.printf(3, 2, f"HP: {opponent_remaining_health_bars * hp_symbol}{opponent_lost_bars * lost_hp}")
+        if self.opponent_active.chp <= 0:
+            terminal.printf(20, 3, f"0/{self.opponent_active.hp}")
+        else:
+            terminal.printf(20, 3, f"{self.opponent_active.chp}/{self.opponent_active.hp}")
+        terminal.put(2, 1, 0xF8FE)
+        terminal.clear_area(84, 16, 26, 3)
+        terminal.printf(85, 16, f"{self.player_active.species} {self.player_active.gender}")
+        terminal.printf(104, 16, f"Lv{self.player_active.level}")
+        terminal.printf(85, 17, f"HP: {player_remaining_health_bars * hp_symbol}{player_lost_bars * lost_hp}")
+        if self.player_active.chp <= 0:
+            terminal.printf(102, 18, f"0/{self.player_active.hp}")
+        else:
+            terminal.printf(102, 18, f"{self.player_active.chp}/{self.player_active.hp}")
+        terminal.put(84, 16, 0xF8FE)
+        terminal.refresh()
+
+    def print_txt(self, txt, delay=1.5):
+        terminal.clear_area(2, 21, 50, 3)
+        terminal.printf(2, 21, txt)
+        terminal.refresh()
+        time.sleep(delay)
