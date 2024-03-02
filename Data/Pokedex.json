@@ -8268,8 +8268,8 @@
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9,
-    "Front Sprite": "0xE000",
-    "Back Sprite": "0xE002"
+    "Front Sprite": "0xE0C4",
+    "Back Sprite": "0xE0C6"
   },
   {
     "Species": "Dugtrio",
@@ -9688,7 +9688,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9,
     "Front Sprite": "0xE000",
-    "Back Sprite": "0xE002"
+    "Back Sprite": "0xE256"
   },
   {
     "Species": "Testmon2",

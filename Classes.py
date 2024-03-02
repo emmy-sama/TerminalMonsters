@@ -69,11 +69,11 @@ class Pokemon:
         self.bide_dmg = 0
         self.dmg_last_type_taken = None
         self.dmg_last_taken = 0
-        self.info = (f"{self.gender} Ability: {self.ability} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
-                     f"\nSp.Attack: {self.sp_attack} Sp.Defense: {self.sp_defense} Speed: {self.speed}")
+        self.info = (f"{self.gender} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
+                     f"Sp.Attack: {self.sp_attack} Sp.Defense: {self.sp_defense} Speed: {self.speed}")
 
     def __str__(self):
-        return f"LVL {self.level} {self.species}: {self.chp}/{self.hp} {self.status}"
+        return f"Lv{self.level} {self.species}{self.gender} : {self.chp}/{self.hp} {self.status}"
 
     def get_gender(self, percent):
         rnum = random.uniform(0.0, 1.0)

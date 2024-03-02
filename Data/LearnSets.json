@@ -2885,7 +2885,7 @@
       "Swift"
     ]
   },
-  "Diglett": {
+  "diglett": {
     "level": {
       "1": "Scratch",
       "5": "Growl",
@@ -22093,7 +22093,7 @@
       "2": "Flamethrower",
       "3": "Self-Destruct",
       "4": "Fake Out",
-      "20": "Spikes",
+      "20": "Self-Destruct",
       "25": "Psychic",
       "30": "Swift",
       "35": "Iron Defense",
