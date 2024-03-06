@@ -1660,7 +1660,7 @@
     "priority": 0,
     "pp": 15,
     "description": "30% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.30,
     "type": "Normal",
     "flags": [
@@ -1963,7 +1963,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Double-Hit"
     ]
   },
   {
@@ -1974,7 +1975,7 @@
     "priority": 0,
     "pp": 20,
     "description": "30% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.30,
     "type": "Dragon",
     "flags": [
@@ -2030,7 +2031,9 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Leech"
     ]
   },
   {
@@ -2074,7 +2077,7 @@
     "priority": 0,
     "pp": 25,
     "description": "10% chance to burn the target.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -2287,7 +2290,7 @@
     "priority": 0,
     "pp": 15,
     "description": "10% chance to burn the target.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -2323,7 +2326,7 @@
     "priority": 0,
     "pp": 25,
     "description": "10% chance to burn the target. Thaws user.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -2344,7 +2347,7 @@
     "priority": 0,
     "pp": 15,
     "description": "10% chance to burn the target.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -2412,7 +2415,7 @@
   {
     "name": "Frustration",
     "category": "Physical",
-    "power": 0,
+    "power": 102,
     "accuracy": 100,
     "priority": 0,
     "pp": 20,
@@ -2503,11 +2506,11 @@
   {
     "name": "Hidden Power",
     "category": "Physical",
-    "power": 0,
+    "power": 60,
     "accuracy": 100,
     "priority": 0,
     "pp": 15,
-    "description": "Varies in power and type based on the user's IVs.",
+    "description": "Type is random for each mon",
     "type": "Normal",
     "flags": [
       "Metronome",
@@ -2555,7 +2558,7 @@
     "priority": 0,
     "pp": 10,
     "description": "10% chance to freeze the target.",
-    "status": "frozen",
+    "status": "FRZ",
     "chance": 0.10,
     "type": "Ice",
     "flags": [
@@ -2574,7 +2577,7 @@
     "priority": 0,
     "pp": 15,
     "description": "10% chance to freeze the target.",
-    "status": "frozen",
+    "status": "FRZ",
     "chance": 0.10,
     "type": "Ice",
     "flags": [
@@ -2699,7 +2702,7 @@
     "priority": 0,
     "pp": 30,
     "description": "30% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.30,
     "type": "Ghost",
     "flags": [
@@ -2949,7 +2952,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Outrage"
     ]
   },
   {
@@ -2996,7 +3000,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Outrage"
     ]
   },
   {
@@ -3007,7 +3012,7 @@
     "priority": 0,
     "pp": 15,
     "description": "30% chance to badly poison the target.",
-    "status": "badly poisoned",
+    "status": "TOX",
     "chance": 0.30,
     "type": "Poison",
     "flags": [
@@ -3027,7 +3032,7 @@
     "priority": 0,
     "pp": 35,
     "description": "30% chance to poison the target.",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 0.30,
     "type": "Poison",
     "flags": [
@@ -3046,7 +3051,7 @@
     "priority": 0,
     "pp": 25,
     "description": "High critical hit ratio. 10% chance to poison.",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 0.10,
     "type": "Poison",
     "flags": [
@@ -3083,7 +3088,7 @@
     "priority": 0,
     "pp": 25,
     "description": "10% chance to freeze the foe(s).",
-    "status": "frozen",
+    "status": "FRZ",
     "chance": 0.10,
     "type": "Ice",
     "flags": [
@@ -3217,7 +3222,7 @@
   {
     "name": "Return",
     "category": "Physical",
-    "power": 0,
+    "power": 102,
     "accuracy": 100,
     "priority": 0,
     "pp": 20,
@@ -3496,7 +3501,7 @@
     "priority": 0,
     "pp": 20,
     "description": "30% chance to poison the target.",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 0.30,
     "type": "Poison",
     "flags": [
@@ -3515,7 +3520,7 @@
     "priority": 0,
     "pp": 10,
     "description": "30% chance to poison the target.",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 0.30,
     "type": "Poison",
     "flags": [
@@ -3604,7 +3609,7 @@
     "priority": 0,
     "pp": 20,
     "description": "30% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.30,
     "type": "Electric",
     "flags": [
@@ -3671,7 +3676,7 @@
     "priority": 0,
     "pp": 15,
     "description": "Causes the target to fall asleep.",
-    "status": "asleep",
+    "status": "SLP",
     "chance": 1,
     "type": "Grass",
     "flags": [
@@ -3876,7 +3881,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Outrage"
     ]
   },
   {
@@ -3887,7 +3893,7 @@
     "priority": 0,
     "pp": 15,
     "description": "10% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.10,
     "type": "Electric",
     "flags": [
@@ -3907,7 +3913,7 @@
     "priority": 0,
     "pp": 30,
     "description": "10% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.10,
     "type": "Electric",
     "flags": [
@@ -3926,7 +3932,7 @@
     "priority": 0,
     "pp": 20,
     "description": "Paralyzes the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 1,
     "type": "Electric",
     "flags": [
@@ -3945,7 +3951,7 @@
     "priority": 0,
     "pp": 15,
     "description": "10% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.10,
     "type": "Electric",
     "flags": [
@@ -4002,11 +4008,14 @@
     "priority": 0,
     "pp": 10,
     "description": "20% chance to paralyze or burn or freeze target.",
+    "status": "PAR",
+    "chance": 0.20,
     "type": "Normal",
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary"
     ]
   },
   {
@@ -4032,11 +4041,16 @@
     "priority": 0,
     "pp": 20,
     "description": "Hits 2 times. Each hit has 20% chance to poison.",
+    "status": "PSN",
+    "chance": 0.20,
     "type": "Bug",
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Double-Hit",
+      "Secondary",
+      "Status"
     ]
   },
   {
@@ -4332,7 +4346,7 @@
     "priority": 0,
     "pp": 5,
     "description": "100% chance to paralyze the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 1,
     "type": "Electric",
     "flags": [
@@ -4367,7 +4381,7 @@
     "priority": 0,
     "pp": 15,
     "description": "Causes the target to fall asleep.",
-    "status": "asleep",
+    "status": "SLP",
     "chance": 1,
     "type": "Grass",
     "flags": [
@@ -4387,7 +4401,7 @@
     "priority": 0,
     "pp": 40,
     "description": "Poisons the foe(s).",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 1,
     "type": "Poison",
     "flags": [
@@ -4406,7 +4420,7 @@
     "priority": 0,
     "pp": 15,
     "description": "Causes the target to fall asleep.",
-    "status": "asleep",
+    "status": "SLP",
     "chance": 1,
     "type": "Normal",
     "flags": [
@@ -4444,7 +4458,7 @@
     "priority": 0,
     "pp": 20,
     "description": "Causes the target to fall asleep.",
-    "status": "asleep",
+    "status": "SLP",
     "chance": 1,
     "type": "Psychic",
     "flags": [
@@ -4463,7 +4477,7 @@
     "priority": 0,
     "pp": 5,
     "description": "10% chance to freeze foe(s).",
-    "status": "frozen",
+    "status": "FRZ",
     "chance": 0.10,
     "type": "Ice",
     "flags": [
@@ -4486,7 +4500,9 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Trapping"
     ]
   },
   {
@@ -4522,7 +4538,9 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Trapping"
     ]
   },
   {
@@ -4533,7 +4551,7 @@
     "priority": 0,
     "pp": 20,
     "description": "40% chance to poison the target.",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 0.40,
     "type": "Poison",
     "flags": [
@@ -4552,12 +4570,16 @@
     "priority": 0,
     "pp": 10,
     "description": "30% chance to paralyze. Can't miss in rain.",
+    "status": "PAR",
+    "chance": 0.30,
     "type": "Electric",
     "flags": [
       "Metronome",
       "Mirror",
       "Protect",
-      "Bypass Fly"
+      "Bypass Fly",
+      "Secondary",
+      "Status"
     ]
   },
   {
@@ -4574,7 +4596,9 @@
       "Mirror",
       "Protect",
       "Bypass Dive",
-      "Double Damage"
+      "Double Damage",
+      "Secondary",
+      "Trapping"
     ]
   },
   {
@@ -4590,7 +4614,9 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Trapping"
     ]
   },
   {
@@ -4606,7 +4632,9 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Trapping"
     ]
   },
   {
@@ -4632,7 +4660,7 @@
     "priority": 0,
     "pp": 30,
     "description": "Paralyzes the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 1,
     "type": "Normal",
     "flags": [
@@ -4673,7 +4701,7 @@
     "priority": 0,
     "pp": 10,
     "description": "Causes the target to fall asleep.",
-    "status": "asleep",
+    "status": "SLP",
     "chance": 1,
     "type": "Normal",
     "flags": [
@@ -4708,7 +4736,7 @@
     "priority": 0,
     "pp": 35,
     "description": "Poisons the target.",
-    "status": "poisoned",
+    "status": "PSN",
     "chance": 1,
     "type": "Poison",
     "flags": [
@@ -4743,7 +4771,7 @@
     "priority": 0,
     "pp": 15,
     "description": "Causes the target to fall asleep.",
-    "status": "asleep",
+    "status": "SLP",
     "chance": 1,
     "type": "Grass",
     "flags": [
@@ -4762,7 +4790,7 @@
     "priority": 0,
     "pp": 30,
     "description": "Paralyzes the target.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 1,
     "type": "Grass",
     "flags": [
@@ -4798,7 +4826,7 @@
     "priority": 0,
     "pp": 15,
     "description": "Burns the target.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 1,
     "type": "Fire",
     "flags": [
@@ -5008,7 +5036,7 @@
     "priority": 0,
     "pp": 5,
     "description": "Bounces turn 1. Hits turn 2. 30% paralyze.",
-    "status": "paralyzed",
+    "status": "PAR",
     "chance": 0.30,
     "type": "Flying",
     "flags": [
@@ -5117,7 +5145,7 @@
     "priority": 0,
     "pp": 5,
     "description": "10% chance to burn the target.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -5347,7 +5375,7 @@
     "priority": 0,
     "pp": 10,
     "description": "Badly poisons the target.",
-    "status": "badly poisoned",
+    "status": "TOX",
     "chance": 1,
     "type": "Poison",
     "flags": [
@@ -5371,7 +5399,9 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Trapping"
     ]
   },
   {
@@ -5399,7 +5429,7 @@
     "priority": 0,
     "pp": 10,
     "description": "High critical hit ratio. 10% chance to burn.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -5424,7 +5454,8 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Double-Hit"
     ]
   },
   {
@@ -5467,7 +5498,7 @@
     "priority": 0,
     "pp": 10,
     "description": "10% chance to burn the foe(s).",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.10,
     "type": "Fire",
     "flags": [
@@ -5826,7 +5857,7 @@
     "name": "Triple Kick",
     "category": "Physical",
     "power": 10,
-    "accuracy": 90,
+    "accuracy": 50,
     "priority": 0,
     "pp": 10,
     "description": "Hits 3 times. Each hit can miss, but power rises.",
@@ -6058,7 +6089,7 @@
     "priority": 0,
     "pp": 5,
     "description": "50% chance to burn the target. Thaws user.",
-    "status": "burned",
+    "status": "BRN",
     "chance": 0.50,
     "type": "Fire",
     "flags": [
