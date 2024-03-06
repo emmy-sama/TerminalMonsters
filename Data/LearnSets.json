@@ -241,7 +241,7 @@
       "Swords Dance"
     ]
   },
-  "Charmeleon": {
+  "charmeleon": {
     "level": {
       "1": "Scratch",
       "2": "Growl",
@@ -1476,7 +1476,7 @@
       "Swords Dance"
     ]
   },
-  "nidoranf": {
+  "Nidoran-F": {
     "level": {
       "1": "Scratch",
       "8": "Tail Whip",
@@ -1664,7 +1664,7 @@
       "Thunder Punch"
     ]
   },
-  "nidoranm": {
+  "Nidoran-M": {
     "level": {
       "1": "Peck",
       "8": "Focus Energy",
@@ -7483,7 +7483,7 @@
       "Thunder Wave"
     ]
   },
-  "mrmime": {
+  "mr. mime": {
     "level": {
       "1": "Barrier",
       "5": "Confusion",
@@ -14169,7 +14169,7 @@
       "Thunder Wave"
     ]
   },
-  "hooh": {
+  "ho-oh": {
     "level": {
       "1": "Whirlwind",
       "11": "Safeguard",
@@ -22089,12 +22089,12 @@
   },
   "testmon": {
     "level": {
-      "1": "Cross Chop",
-      "2": "Flamethrower",
+      "1": "Rollout",
+      "2": "Ice Ball",
       "3": "Self-Destruct",
-      "4": "Fake Out",
-      "20": "Self-Destruct",
-      "25": "Psychic",
+      "4": "Swift",
+      "20": "Swift",
+      "25": "Bounce",
       "30": "Swift",
       "35": "Iron Defense",
       "40": "Zap Cannon",
@@ -22106,10 +22106,10 @@
     "level": {
       "6": "Tackle",
       "1": "Water Gun",
-      "7": "Dig",
-      "8": "Fly",
+      "7": "Clamp",
+      "8": "Fire Spin",
       "20": "Spikes",
-      "25": "Psychic",
+      "25": "Tackle",
       "30": "Swift",
       "35": "Iron Defense",
       "40": "Zap Cannon",

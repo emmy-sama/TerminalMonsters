@@ -1,6 +1,7 @@
 import random
 import math
 import json
+from bearlibterminal import terminal
 with open("Data/Pokedex.json") as pokedex_json:
     pokedex = json.load(pokedex_json)
 with open("Data/natures.json") as natures_json:
@@ -14,10 +15,9 @@ with open("Data/TypeEffectiveness.json") as effectiveness_json:
 
 
 class Player:
-    def __init__(self, name, pronouns, starter, team):
+    def __init__(self, name, team, starter_type=None):
         self.name = name
-        self.pronouns = pronouns
-        self.starter = starter
+        self.starter_type = starter_type
         self.team = team
 
 
@@ -43,9 +43,19 @@ class Pokemon:
         self.height = pokedex[self.index].get("Height")
         self.weight = pokedex[self.index].get("Weight")
         self.nature = natures[random.randint(0, 24)]
-        self.calc_stats()
-        self.total_exp = pow(self.level, 3)
-        self.exp_needed = pow(self.level + 1, 3)
+        self.hidden_type = self.get_hidden_type()
+        self.hp = math.floor(0.01 * ((2 * pokedex[self.index].get("bHP")) * self.level)) + self.level + 10
+        self.attack = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bAttack")) * self.level)) + 5)
+                                 * self.nature.get("Attack", 1))
+        self.defense = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bDefense")) * self.level)) + 5)
+                                  * self.nature.get("Defense", 1))
+        self.sp_attack = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSp.Attack")) * self.level)) + 5)
+                                    * self.nature.get("Sp.Attack", 1))
+        self.sp_defense = math.floor(
+            (math.floor(0.01 * ((2 * pokedex[self.index].get("bSp.Defense")) * self.level)) + 5)
+            * self.nature.get("Sp.Defense", 1))
+        self.speed = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSpeed")) * self.level)) + 5)
+                                * self.nature.get("Speed", 1))
         self.evolvl = pokedex[self.index].get("EvoLvl", None)
         self.evo = pokedex[self.index].get("Evo", None)
         self.moves = self.get_move_set()
@@ -66,7 +76,15 @@ class Pokemon:
         self.first_turn = True
         self.acted = False
         self.bide = 0
+        self.outraging = 0
+        self.rage = False
         self.bide_dmg = 0
+        self.uproar = 0
+        self.trapping = [0, ""]
+        self.rolling = 0
+        self.rolling_hit = False
+        self.fury_cutter = 0
+        self.fury_cutter_hit = False
         self.dmg_last_type_taken = None
         self.dmg_last_taken = 0
         self.info = (f"{self.gender} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
@@ -88,12 +106,22 @@ class Pokemon:
         for level in ls.get("level"):
             if int(level) <= self.level:
                 if len(ms) >= 4:
+                    ms.pop(0)
                     ms.insert(0, ls.get("level").get(level).title())
                 else:
                     ms.append(ls.get("level").get(level).title())
         return ms
 
+    def get_hidden_type(self):
+        options = [["Fighting", "Physical"], ["Flying", "Physical"], ["Poison", "Physical"], ["Ground", "Physical"],
+                   ["Rock", "Physical"], ["Bug", "Physical"], ["Ghost", "Physical"], ["Steel", "Physical"],
+                   ["Fire", "Special"], ["Water", "Special"] ,["Grass", "Special"], ["Electric", "Special"],
+                   ["Psychic", "Special"] ,["Ice", "Special"] ,["Dragon", "Special"] ,["Dark", "Special"]]
+        return random.choices(options, weights=[7.8125, 6.25, 6.25, 6.25, 6.25, 7.8125, 6.25, 6.25, 6.25, 6.25, 7.8125,
+                                                6.25, 6.25, 6.25, 6.25, 1.5625], k=1)[0]
+
     def calc_stats(self):
+        self.chp += (math.floor(0.01 * ((2 * pokedex[self.index].get("bHP")) * self.level)) + self.level + 10) - self.hp
         self.hp = math.floor(0.01 * ((2 * pokedex[self.index].get("bHP")) * self.level)) + self.level + 10
         self.attack = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bAttack")) * self.level)) + 5)
                                  * self.nature.get("Attack", 1))
@@ -108,6 +136,62 @@ class Pokemon:
 
     def reset_temp(self):
         self.temp_stats = self.temp_stats.fromkeys(self.temp_stats.keys(), 0)
+        self.fury_cutter = 0
+        self.rolling = 0
+
+    def learn_move(self):
+        move = learn_sets.get(self.species.lower()).get("level").get(str(self.level))
+        if move is not None:
+            terminal.clear()
+            if len(self.moves) == 4:
+                terminal.printf(10, 10, f"{self.species} wants to learn {move}, replace a move?")
+                terminal.printf(10, 11, f"1 {self.moves[0]}")
+                terminal.printf(10, 12, f"2 {self.moves[1]}")
+                terminal.printf(10, 13, f"3 {self.moves[2]}")
+                terminal.printf(10, 14, f"4 {self.moves[3]}")
+                terminal.printf(10, 15, "5 Keep old moves")
+                terminal.refresh()
+                while True:
+                    button = terminal.read()
+                    if button == terminal.TK_1:
+                        self.moves.pop(0)
+                        self.moves.insert(0, move)
+                        terminal.clear()
+                        terminal.printf(10, 10, f"{self.species} learned {move}")
+                        terminal.refresh()
+                        break
+                    if button == terminal.TK_2:
+                        self.moves.pop(1)
+                        self.moves.insert(1, move)
+                        terminal.clear()
+                        terminal.printf(10, 10, f"{self.species} learned {move}")
+                        terminal.refresh()
+                        break
+                    if button == terminal.TK_3:
+                        self.moves.pop(2)
+                        self.moves.insert(2, move)
+                        terminal.clear()
+                        terminal.printf(10, 10, f"{self.species} learned {move}")
+                        terminal.refresh()
+                        break
+                    if button == terminal.TK_4:
+                        self.moves.pop(3)
+                        self.moves.insert(3, move)
+                        terminal.clear()
+                        terminal.printf(10, 10, f"{self.species} learned {move}")
+                        terminal.refresh()
+                        break
+                    elif button == terminal.TK_5:
+                        terminal.clear()
+                        terminal.printf(10, 10, f"{self.species} kept its old moves")
+                        terminal.refresh()
+                        break
+            else:
+                self.moves.append(move)
+                terminal.clear()
+                terminal.printf(10, 10, f"{self.species} learned {move}")
+                terminal.refresh()
+
 
     def evolve(self):
         self.index = self.evo
@@ -121,19 +205,12 @@ class Pokemon:
         self.evolvl = pokedex[self.index].get("EvoLvl", None)
         self.evo = pokedex[self.index].get("Evo", None)
 
-    def getexp(self, amount):
-        self.total_exp += amount
-        while self.total_exp >= self.exp_needed:
+    def level_up(self, level):
+        while self.level != level:
             self.level += 1
             self.calc_stats()
-            self.exp_needed = pow(self.level + 1, 3)
-            if self.level >= self.evolvl:
-                self.evolve()
-
-    def check_poke_moves(self):
-        for m in self.moves:
-            for move in moves:
-                if m == move.get("name"):
-                    print(f"{move.get("name")}:", f"{move.get("type")} Type,", f"{move.get("category")},",
-                          f"Power: {move.get("power")}", f"Accuracy: {move.get("accuracy")}", f"PP: {move.get("pp")}")
-                    break
+            self.learn_move()
+            if self.evolvl is not None:
+                if self.level >= self.evolvl:
+                    self.evolve()
+                    self.learn_move()

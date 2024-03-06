@@ -1963,7 +1963,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Double-Hit"
     ]
   },
   {
@@ -2030,7 +2031,9 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Leech"
     ]
   },
   {
@@ -2412,7 +2415,7 @@
   {
     "name": "Frustration",
     "category": "Physical",
-    "power": 0,
+    "power": 102,
     "accuracy": 100,
     "priority": 0,
     "pp": 20,
@@ -2503,11 +2506,11 @@
   {
     "name": "Hidden Power",
     "category": "Physical",
-    "power": 0,
+    "power": 60,
     "accuracy": 100,
     "priority": 0,
     "pp": 15,
-    "description": "Varies in power and type based on the user's IVs.",
+    "description": "Type is random for each mon",
     "type": "Normal",
     "flags": [
       "Metronome",
@@ -2949,7 +2952,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Outrage"
     ]
   },
   {
@@ -2996,7 +3000,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Outrage"
     ]
   },
   {
@@ -3217,7 +3222,7 @@
   {
     "name": "Return",
     "category": "Physical",
-    "power": 0,
+    "power": 102,
     "accuracy": 100,
     "priority": 0,
     "pp": 20,
@@ -3876,7 +3881,8 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Outrage"
     ]
   },
   {
@@ -4002,11 +4008,14 @@
     "priority": 0,
     "pp": 10,
     "description": "20% chance to paralyze or burn or freeze target.",
+    "status": "PAR",
+    "chance": 0.20,
     "type": "Normal",
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary"
     ]
   },
   {
@@ -4032,11 +4041,16 @@
     "priority": 0,
     "pp": 20,
     "description": "Hits 2 times. Each hit has 20% chance to poison.",
+    "status": "PSN",
+    "chance": 0.20,
     "type": "Bug",
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Double-Hit",
+      "Secondary",
+      "Status"
     ]
   },
   {
@@ -4486,7 +4500,9 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Trapping"
     ]
   },
   {
@@ -4522,7 +4538,9 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Trapping"
     ]
   },
   {
@@ -4552,12 +4570,16 @@
     "priority": 0,
     "pp": 10,
     "description": "30% chance to paralyze. Can't miss in rain.",
+    "status": "PAR",
+    "chance": 0.30,
     "type": "Electric",
     "flags": [
       "Metronome",
       "Mirror",
       "Protect",
-      "Bypass Fly"
+      "Bypass Fly",
+      "Secondary",
+      "Status"
     ]
   },
   {
@@ -4574,7 +4596,9 @@
       "Mirror",
       "Protect",
       "Bypass Dive",
-      "Double Damage"
+      "Double Damage",
+      "Secondary",
+      "Trapping"
     ]
   },
   {
@@ -4590,7 +4614,9 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Trapping"
     ]
   },
   {
@@ -4606,7 +4632,9 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Trapping"
     ]
   },
   {
@@ -5371,7 +5399,9 @@
       "Contact",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Secondary",
+      "Trapping"
     ]
   },
   {
@@ -5424,7 +5454,8 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Double-Hit"
     ]
   },
   {
@@ -5826,7 +5857,7 @@
     "name": "Triple Kick",
     "category": "Physical",
     "power": 10,
-    "accuracy": 90,
+    "accuracy": 50,
     "priority": 0,
     "pp": 10,
     "description": "Hits 3 times. Each hit can miss, but power rises.",
