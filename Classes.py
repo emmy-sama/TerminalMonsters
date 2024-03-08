@@ -30,13 +30,16 @@ class Pokemon:
                 self.species = p.get("Species")
                 self.index = pokedex.index(p)
                 break
+        self.dex_number = pokedex[self.index].get("dex_number")
+        self.front_sprite = random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 58116),
+                                           hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 58117)])
+        self.back_sprite = random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57344),
+                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57345)])
         self.type_one = pokedex[self.index].get("types")[0]
         if len(pokedex[self.index].get("types")) == 2:
             self.type_two = pokedex[self.index].get("types")[1]
         else:
             self.type_two = None
-        self.front_sprite = pokedex[self.index].get("Front Sprite")
-        self.back_sprite = pokedex[self.index].get("Back Sprite")
         self.ability = random.choice(pokedex[self.index].get("Abilities"))
         self.get_gender(pokedex[self.index].get("Gender Ratio"))
         self.catch_rate = pokedex[self.index].get("Catch rate")
@@ -85,6 +88,9 @@ class Pokemon:
         self.rolling_hit = False
         self.fury_cutter = 0
         self.fury_cutter_hit = False
+        self.blocking = False
+        self.water_sport = False
+        self.mud_sport = False
         self.dmg_last_type_taken = None
         self.dmg_last_taken = 0
         self.info = (f"{self.gender} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
@@ -138,11 +144,17 @@ class Pokemon:
         self.temp_stats = self.temp_stats.fromkeys(self.temp_stats.keys(), 0)
         self.fury_cutter = 0
         self.rolling = 0
+        self.confused = False
+        self.getting_pumped = False
+        self.blocking = False
+        self.water_sport = False
+        self.mud_sport = False
 
     def learn_move(self):
         move = learn_sets.get(self.species.lower()).get("level").get(str(self.level))
         if move is not None:
             terminal.clear()
+            terminal.put(0, 0, 0xF8FC)
             if len(self.moves) == 4:
                 terminal.printf(10, 10, f"{self.species} wants to learn {move}, replace a move?")
                 terminal.printf(10, 11, f"1 {self.moves[0]}")

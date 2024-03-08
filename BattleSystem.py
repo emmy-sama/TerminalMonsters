@@ -264,398 +264,420 @@ class Battle:
                     elif button == terminal.TK_BACKSPACE:
                         break
             elif button == terminal.TK_2:
+                if self.player_swap(False):
+                    break
+
+    def player_swap(self, must_swap):
+        while True:
+            terminal.layer(0)
+            terminal.put(0, 0, 0xF8FD)
+            terminal.layer(1)
+            terminal.clear_area(45, 17, 42, 7)
+            terminal.printf(45, 18, f"1 {self.player.team[0]}")
+            if 1 >= len(self.player.team):
+                terminal.printf(45, 19, "Empty Slot")
+            else:
+                terminal.printf(45, 19, f"2 {self.player.team[1]}")
+            if 2 >= len(self.player.team):
+                terminal.printf(45, 20, "Empty Slot")
+            else:
+                terminal.printf(45, 20, f"3 {self.player.team[2]}")
+            if 3 >= len(self.player.team):
+                terminal.printf(45, 21, "Empty Slot")
+            else:
+                terminal.printf(45, 21, f"4 {self.player.team[3]}")
+            if 4 >= len(self.player.team):
+                terminal.printf(45, 22, "Empty Slot")
+            else:
+                terminal.printf(45, 22, f"5 {self.player.team[4]}")
+            if 5 >= len(self.player.team):
+                terminal.printf(45, 23, "Empty Slot")
+            else:
+                terminal.printf(45, 23, f"6 {self.player.team[5]}")
+            self.print_txt("What Pokemon would you like to view/swap? (1-6)", 0)
+            button = terminal.read()
+            if button == terminal.TK_1:
                 while True:
-                    terminal.layer(0)
-                    terminal.put(0, 0, 0xF8FD)
-                    terminal.layer(1)
                     terminal.clear_area(45, 17, 42, 7)
-                    terminal.printf(45, 18, f"1 {self.player.team[0]}")
-                    if 1 >= len(self.player.team):
-                        terminal.printf(45, 19, "Empty Slot")
-                    else:
-                        terminal.printf(45, 19, f"2 {self.player.team[1]}")
-                    if 2 >= len(self.player.team):
+                    for move in moves:
+                        if self.player.team[0].moves[0] == move.get("name"):
+                            power = move.get("power")
+                            acc = move.get("accuracy")
+                            type = move.get("type")
+                            break
+                    terminal.printf(45, 18, f"Ability: {self.player.team[0].ability}")
+                    terminal.printf(45, 19, f"1 {self.player.team[0].moves[0]} {type} Pwr:{power} Acc:{acc}")
+                    if 2 > len(self.player.team[0].moves):
                         terminal.printf(45, 20, "Empty Slot")
                     else:
-                        terminal.printf(45, 20, f"3 {self.player.team[2]}")
-                    if 3 >= len(self.player.team):
+                        for move in moves:
+                            if self.player.team[0].moves[1] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 20, f"2 {self.player.team[0].moves[1]} {type} Pwr:{power} Acc:{acc}")
+                    if 3 > len(self.player.team[0].moves):
                         terminal.printf(45, 21, "Empty Slot")
                     else:
-                        terminal.printf(45, 21, f"4 {self.player.team[3]}")
-                    if 4 >= len(self.player.team):
+                        for move in moves:
+                            if self.player.team[0].moves[2] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 21, f"3 {self.player.team[0].moves[2]} {type} Pwr:{power} Acc:{acc}")
+                    if 4 > len(self.player.team[0].moves):
                         terminal.printf(45, 22, "Empty Slot")
                     else:
-                        terminal.printf(45, 22, f"5 {self.player.team[4]}")
-                    if 5 >= len(self.player.team):
-                        terminal.printf(45, 23, "Empty Slot")
-                    else:
-                        terminal.printf(45, 23, f"6 {self.player.team[5]}")
-                    self.print_txt("What Pokemon would you like to view/swap? (1-6)", 0)
+                        for move in moves:
+                            if self.player.team[0].moves[3] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 22, f"4 {self.player.team[0].moves[3]} {type} Pwr:{power} Acc:{acc}")
+                    self.print_txt(f"Swap to {self.player.team[0].species}?(Enter/Backspace)"
+                                   f"{self.player.team[0].info}", 0)
                     button = terminal.read()
-                    if button == terminal.TK_1:
-                        while True:
-                            terminal.clear_area(45, 17, 42, 7)
-                            for move in moves:
-                                if self.player.team[0].moves[0] == move.get("name"):
-                                    power = move.get("power")
-                                    acc = move.get("accuracy")
-                                    type = move.get("type")
-                                    break
-                            terminal.printf(45, 18, f"Ability: {self.player.team[0].ability}")
-                            terminal.printf(45, 19, f"1 {self.player.team[0].moves[0]} {type} Pwr:{power} Acc:{acc}")
-                            if 2 > len(self.player.team[0].moves):
-                                terminal.printf(45, 20, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[0].moves[1] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 20, f"2 {self.player.team[0].moves[1]} {type} Pwr:{power} Acc:{acc}")
-                            if 3 > len(self.player.team[0].moves):
-                                terminal.printf(45, 21, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[0].moves[2] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 21, f"3 {self.player.team[0].moves[2]} {type} Pwr:{power} Acc:{acc}")
-                            if 4 > len(self.player.team[0].moves):
-                                terminal.printf(45, 22, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[0].moves[3] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 22, f"4 {self.player.team[0].moves[3]} {type} Pwr:{power} Acc:{acc}")
-                            self.print_txt(f"Swap to {self.player.team[0].species}?(Enter/Backspace)"
-                                           f"{self.player.team[0].info}", 0)
-                            button = terminal.read()
-                            if button == terminal.TK_ENTER:
-                                if self.opponent_active.trapping[0] != 0:
-                                    self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
-                                    break
-                                if self.player_active == self.player.team[0]:
-                                    self.print_txt(f"{self.player.team[0].species} is already out")
-                                    break
-                                self.player_active.reset_temp()
-                                self.player_active = self.player.team[0]
-                                self.player_active.first_turn = True
-                                terminal.clear_area(45, 17, 42, 7)
-                                self.print_ui()
-                                self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
-                                return
-                            if button == terminal.TK_BACKSPACE:
-                                break
-                    elif button == terminal.TK_2 and 2 <= len(self.player.team):
-                        while True:
-                            terminal.clear_area(45, 17, 42, 7)
-                            for move in moves:
-                                if self.player.team[1].moves[0] == move.get("name"):
-                                    power = move.get("power")
-                                    acc = move.get("accuracy")
-                                    type = move.get("type")
-                                    break
-                            terminal.printf(45, 18, f"Ability: {self.player.team[1].ability}")
-                            terminal.printf(45, 19, f"1 {self.player.team[1].moves[0]} {type} Pwr:{power} Acc:{acc}")
-                            if 2 > len(self.player.team[1].moves):
-                                terminal.printf(45, 20, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[1].moves[1] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 20, f"2 {self.player.team[1].moves[1]} {type} Pwr:{power} Acc:{acc}")
-                            if 3 > len(self.player.team[1].moves):
-                                terminal.printf(45, 21, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[1].moves[2] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 21, f"3 {self.player.team[1].moves[2]} {type} Pwr:{power} Acc:{acc}")
-                            if 4 > len(self.player.team[1].moves):
-                                terminal.printf(45, 22, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[1].moves[3] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 22, f"4 {self.player.team[1].moves[3]} {type} Pwr:{power} Acc:{acc}")
-                            self.print_txt(f"Swap to {self.player.team[1].species}?(Enter/Backspace)"
-                                           f"{self.player.team[1].info}", 0)
-                            button = terminal.read()
-                            if button == terminal.TK_ENTER:
-                                if self.opponent_active.trapping[0] != 0:
-                                    self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
-                                    break
-                                if self.player_active == self.player.team[1]:
-                                    self.print_txt(f"{self.player.team[1].species} is already out")
-                                    break
-                                self.player_active.reset_temp()
-                                self.player_active = self.player.team[1]
-                                self.player_active.first_turn = True
-                                terminal.clear_area(45, 17, 42, 7)
-                                self.print_ui()
-                                self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
-                                return
-                            if button == terminal.TK_BACKSPACE:
-                                break
-                    elif button == terminal.TK_3 and 3 <= len(self.player.team):
-                        while True:
-                            terminal.clear_area(45, 17, 42, 7)
-                            for move in moves:
-                                if self.player.team[2].moves[0] == move.get("name"):
-                                    power = move.get("power")
-                                    acc = move.get("accuracy")
-                                    type = move.get("type")
-                                    break
-                            terminal.printf(45, 18, f"Ability: {self.player.team[2].ability}")
-                            terminal.printf(45, 19, f"1 {self.player.team[2].moves[0]} {type} Pwr:{power} Acc:{acc}")
-                            if 2 > len(self.player.team[2].moves):
-                                terminal.printf(45, 20, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[2].moves[1] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 20, f"2 {self.player.team[2].moves[1]} {type} Pwr:{power} Acc:{acc}")
-                            if 3 > len(self.player.team[2].moves):
-                                terminal.printf(45, 21, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[2].moves[2] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 21, f"3 {self.player.team[2].moves[2]} {type} Pwr:{power} Acc:{acc}")
-                            if 4 > len(self.player.team[2].moves):
-                                terminal.printf(45, 22, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[2].moves[3] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 22, f"4 {self.player.team[2].moves[3]} {type} Pwr:{power} Acc:{acc}")
-                            self.print_txt(f"Swap to {self.player.team[2].species}?(Enter/Backspace)"
-                                           f"{self.player.team[2].info}", 0)
-                            button = terminal.read()
-                            if button == terminal.TK_ENTER:
-                                if self.opponent_active.trapping[0] != 0:
-                                    self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
-                                    break
-                                if self.player_active == self.player.team[2]:
-                                    self.print_txt(f"{self.player.team[2].species} is already out")
-                                    break
-                                self.player_active.reset_temp()
-                                self.player_active = self.player.team[2]
-                                self.player_active.first_turn = True
-                                terminal.clear_area(45, 17, 42, 7)
-                                self.print_ui()
-                                self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
-                                return
-                            if button == terminal.TK_BACKSPACE:
-                                break
-                    elif button == terminal.TK_4 and 4 <= len(self.player.team):
-                        while True:
-                            terminal.clear_area(45, 17, 42, 7)
-                            for move in moves:
-                                if self.player.team[3].moves[0] == move.get("name"):
-                                    power = move.get("power")
-                                    acc = move.get("accuracy")
-                                    type = move.get("type")
-                                    break
-                            terminal.printf(45, 18, f"Ability: {self.player.team[3].ability}")
-                            terminal.printf(45, 19, f"1 {self.player.team[3].moves[0]} {type} Pwr:{power} Acc:{acc}")
-                            if 2 > len(self.player.team[3].moves):
-                                terminal.printf(45, 20, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[3].moves[1] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 20, f"2 {self.player.team[3].moves[1]} {type} Pwr:{power} Acc:{acc}")
-                            if 3 > len(self.player.team[3].moves):
-                                terminal.printf(45, 21, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[3].moves[2] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 21, f"3 {self.player.team[3].moves[2]} {type} Pwr:{power} Acc:{acc}")
-                            if 4 > len(self.player.team[3].moves):
-                                terminal.printf(45, 22, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[3].moves[3] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 22, f"4 {self.player.team[3].moves[3]} {type} Pwr:{power} Acc:{acc}")
-                            self.print_txt(f"Swap to {self.player.team[3].species}?(Enter/Backspace)"
-                                           f"{self.player.team[3].info}", 0)
-                            button = terminal.read()
-                            if button == terminal.TK_ENTER:
-                                if self.opponent_active.trapping[0] != 0:
-                                    self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
-                                    break
-                                if self.player_active == self.player.team[3]:
-                                    self.print_txt(f"{self.player.team[3].species} is already out")
-                                    break
-                                self.player_active.reset_temp()
-                                self.player_active = self.player.team[3]
-                                self.player_active.first_turn = True
-                                terminal.clear_area(45, 17, 42, 7)
-                                self.print_ui()
-                                self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
-                                return
-                            if button == terminal.TK_BACKSPACE:
-                                break
-                    elif button == terminal.TK_5 and 5 <= len(self.player.team):
-                        while True:
-                            terminal.clear_area(45, 17, 42, 7)
-                            for move in moves:
-                                if self.player.team[4].moves[0] == move.get("name"):
-                                    power = move.get("power")
-                                    acc = move.get("accuracy")
-                                    type = move.get("type")
-                                    break
-                            terminal.printf(45, 18, f"Ability: {self.player.team[4].ability}")
-                            terminal.printf(45, 19, f"1 {self.player.team[4].moves[0]} {type} Pwr:{power} Acc:{acc}")
-                            if 2 > len(self.player.team[4].moves):
-                                terminal.printf(45, 20, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[4].moves[1] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 20, f"2 {self.player.team[4].moves[1]} {type} Pwr:{power} Acc:{acc}")
-                            if 3 > len(self.player.team[4].moves):
-                                terminal.printf(45, 21, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[4].moves[2] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 21, f"3 {self.player.team[4].moves[2]} {type} Pwr:{power} Acc:{acc}")
-                            if 4 > len(self.player.team[4].moves):
-                                terminal.printf(45, 22, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[4].moves[3] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 22, f"4 {self.player.team[4].moves[3]} {type} Pwr:{power} Acc:{acc}")
-                            self.print_txt(f"Swap to {self.player.team[4].species}?(Enter/Backspace)"
-                                           f"{self.player.team[4].info}", 0)
-                            button = terminal.read()
-                            if button == terminal.TK_ENTER:
-                                if self.opponent_active.trapping[0] != 0:
-                                    self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
-                                    break
-                                if self.player_active == self.player.team[4]:
-                                    self.print_txt(f"{self.player.team[4].species} is already out")
-                                    break
-                                self.player_active.reset_temp()
-                                self.player_active = self.player.team[4]
-                                self.player_active.first_turn = True
-                                terminal.clear_area(45, 17, 42, 7)
-                                self.print_ui()
-                                self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
-                                return
-                            if button == terminal.TK_BACKSPACE:
-                                break
-                    elif button == terminal.TK_6 and 6 <= len(self.player.team):
-                        while True:
-                            terminal.clear_area(45, 17, 42, 7)
-                            for move in moves:
-                                if self.player.team[5].moves[0] == move.get("name"):
-                                    power = move.get("power")
-                                    acc = move.get("accuracy")
-                                    type = move.get("type")
-                                    break
-                            terminal.printf(45, 18, f"Ability: {self.player.team[5].ability}")
-                            terminal.printf(45, 19, f"1 {self.player.team[5].moves[0]} {type} Pwr:{power} Acc:{acc}")
-                            if 2 > len(self.player.team[5].moves):
-                                terminal.printf(45, 20, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[5].moves[1] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 20, f"2 {self.player.team[5].moves[1]} {type} Pwr:{power} Acc:{acc}")
-                            if 3 > len(self.player.team[5].moves):
-                                terminal.printf(45, 21, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[5].moves[2] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 21, f"3 {self.player.team[5].moves[2]} {type} Pwr:{power} Acc:{acc}")
-                            if 4 > len(self.player.team[5].moves):
-                                terminal.printf(45, 22, "Empty Slot")
-                            else:
-                                for move in moves:
-                                    if self.player.team[5].moves[3] == move.get("name"):
-                                        power = move.get("power")
-                                        acc = move.get("accuracy")
-                                        type = move.get("type")
-                                        break
-                                terminal.printf(45, 22, f"4 {self.player.team[5].moves[3]} {type} Pwr:{power} Acc:{acc}")
-                            self.print_txt(f"Swap to {self.player.team[5].species}?(Enter/Backspace)"
-                                           f"{self.player.team[5].info}", 0)
-                            button = terminal.read()
-                            if button == terminal.TK_ENTER:
-                                if self.opponent_active.trapping[0] != 0:
-                                    self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
-                                    break
-                                if self.player_active == self.player.team[5]:
-                                    self.print_txt(f"{self.player.team[5].species} is already out")
-                                    break
-                                self.player_active.reset_temp()
-                                self.player_active = self.player.team[5]
-                                self.player_active.first_turn = True
-                                terminal.clear_area(45, 17, 42, 7)
-                                self.print_ui()
-                                self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
-                                return
-                            if button == terminal.TK_BACKSPACE:
-                                break
-                    elif button == terminal.TK_BACKSPACE:
+                    if button == terminal.TK_ENTER:
+                        if self.opponent_active.trapping[0] != 0:
+                            self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
+                            break
+                        if self.opponent_active.blocking:
+                            self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
+                            break
+                        if self.player_active == self.player.team[0]:
+                            self.print_txt(f"{self.player.team[0].species} is already out")
+                            break
+                        self.player_active.reset_temp()
+                        self.player_active = self.player.team[0]
+                        self.player_active.first_turn = True
                         terminal.clear_area(45, 17, 42, 7)
                         self.print_ui()
+                        self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                        return True
+                    if button == terminal.TK_BACKSPACE:
                         break
+            elif button == terminal.TK_2 and 2 <= len(self.player.team):
+                while True:
+                    terminal.clear_area(45, 17, 42, 7)
+                    for move in moves:
+                        if self.player.team[1].moves[0] == move.get("name"):
+                            power = move.get("power")
+                            acc = move.get("accuracy")
+                            type = move.get("type")
+                            break
+                    terminal.printf(45, 18, f"Ability: {self.player.team[1].ability}")
+                    terminal.printf(45, 19, f"1 {self.player.team[1].moves[0]} {type} Pwr:{power} Acc:{acc}")
+                    if 2 > len(self.player.team[1].moves):
+                        terminal.printf(45, 20, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[1].moves[1] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 20, f"2 {self.player.team[1].moves[1]} {type} Pwr:{power} Acc:{acc}")
+                    if 3 > len(self.player.team[1].moves):
+                        terminal.printf(45, 21, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[1].moves[2] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 21, f"3 {self.player.team[1].moves[2]} {type} Pwr:{power} Acc:{acc}")
+                    if 4 > len(self.player.team[1].moves):
+                        terminal.printf(45, 22, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[1].moves[3] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 22, f"4 {self.player.team[1].moves[3]} {type} Pwr:{power} Acc:{acc}")
+                    self.print_txt(f"Swap to {self.player.team[1].species}?(Enter/Backspace)"
+                                   f"{self.player.team[1].info}", 0)
+                    button = terminal.read()
+                    if button == terminal.TK_ENTER:
+                        if self.opponent_active.trapping[0] != 0:
+                            self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
+                            break
+                        if self.opponent_active.blocking:
+                            self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
+                            break
+                        if self.player_active == self.player.team[1]:
+                            self.print_txt(f"{self.player.team[1].species} is already out")
+                            break
+                        self.player_active.reset_temp()
+                        self.player_active = self.player.team[1]
+                        self.player_active.first_turn = True
+                        terminal.clear_area(45, 17, 42, 7)
+                        self.print_ui()
+                        self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                        return True
+                    if button == terminal.TK_BACKSPACE:
+                        break
+            elif button == terminal.TK_3 and 3 <= len(self.player.team):
+                while True:
+                    terminal.clear_area(45, 17, 42, 7)
+                    for move in moves:
+                        if self.player.team[2].moves[0] == move.get("name"):
+                            power = move.get("power")
+                            acc = move.get("accuracy")
+                            type = move.get("type")
+                            break
+                    terminal.printf(45, 18, f"Ability: {self.player.team[2].ability}")
+                    terminal.printf(45, 19, f"1 {self.player.team[2].moves[0]} {type} Pwr:{power} Acc:{acc}")
+                    if 2 > len(self.player.team[2].moves):
+                        terminal.printf(45, 20, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[2].moves[1] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 20, f"2 {self.player.team[2].moves[1]} {type} Pwr:{power} Acc:{acc}")
+                    if 3 > len(self.player.team[2].moves):
+                        terminal.printf(45, 21, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[2].moves[2] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 21, f"3 {self.player.team[2].moves[2]} {type} Pwr:{power} Acc:{acc}")
+                    if 4 > len(self.player.team[2].moves):
+                        terminal.printf(45, 22, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[2].moves[3] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 22, f"4 {self.player.team[2].moves[3]} {type} Pwr:{power} Acc:{acc}")
+                    self.print_txt(f"Swap to {self.player.team[2].species}?(Enter/Backspace)"
+                                   f"{self.player.team[2].info}", 0)
+                    button = terminal.read()
+                    if button == terminal.TK_ENTER:
+                        if self.opponent_active.trapping[0] != 0:
+                            self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
+                            break
+                        if self.opponent_active.blocking:
+                            self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
+                            break
+                        if self.player_active == self.player.team[2]:
+                            self.print_txt(f"{self.player.team[2].species} is already out")
+                            break
+                        self.player_active.reset_temp()
+                        self.player_active = self.player.team[2]
+                        self.player_active.first_turn = True
+                        terminal.clear_area(45, 17, 42, 7)
+                        self.print_ui()
+                        self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                        return True
+                    if button == terminal.TK_BACKSPACE:
+                        break
+            elif button == terminal.TK_4 and 4 <= len(self.player.team):
+                while True:
+                    terminal.clear_area(45, 17, 42, 7)
+                    for move in moves:
+                        if self.player.team[3].moves[0] == move.get("name"):
+                            power = move.get("power")
+                            acc = move.get("accuracy")
+                            type = move.get("type")
+                            break
+                    terminal.printf(45, 18, f"Ability: {self.player.team[3].ability}")
+                    terminal.printf(45, 19, f"1 {self.player.team[3].moves[0]} {type} Pwr:{power} Acc:{acc}")
+                    if 2 > len(self.player.team[3].moves):
+                        terminal.printf(45, 20, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[3].moves[1] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 20, f"2 {self.player.team[3].moves[1]} {type} Pwr:{power} Acc:{acc}")
+                    if 3 > len(self.player.team[3].moves):
+                        terminal.printf(45, 21, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[3].moves[2] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 21, f"3 {self.player.team[3].moves[2]} {type} Pwr:{power} Acc:{acc}")
+                    if 4 > len(self.player.team[3].moves):
+                        terminal.printf(45, 22, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[3].moves[3] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 22, f"4 {self.player.team[3].moves[3]} {type} Pwr:{power} Acc:{acc}")
+                    self.print_txt(f"Swap to {self.player.team[3].species}?(Enter/Backspace)"
+                                   f"{self.player.team[3].info}", 0)
+                    button = terminal.read()
+                    if button == terminal.TK_ENTER:
+                        if self.opponent_active.trapping[0] != 0:
+                            self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
+                            break
+                        if self.opponent_active.blocking:
+                            self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
+                            break
+                        if self.player_active == self.player.team[3]:
+                            self.print_txt(f"{self.player.team[3].species} is already out")
+                            break
+                        self.player_active.reset_temp()
+                        self.player_active = self.player.team[3]
+                        self.player_active.first_turn = True
+                        terminal.clear_area(45, 17, 42, 7)
+                        self.print_ui()
+                        self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                        return True
+                    if button == terminal.TK_BACKSPACE:
+                        break
+            elif button == terminal.TK_5 and 5 <= len(self.player.team):
+                while True:
+                    terminal.clear_area(45, 17, 42, 7)
+                    for move in moves:
+                        if self.player.team[4].moves[0] == move.get("name"):
+                            power = move.get("power")
+                            acc = move.get("accuracy")
+                            type = move.get("type")
+                            break
+                    terminal.printf(45, 18, f"Ability: {self.player.team[4].ability}")
+                    terminal.printf(45, 19, f"1 {self.player.team[4].moves[0]} {type} Pwr:{power} Acc:{acc}")
+                    if 2 > len(self.player.team[4].moves):
+                        terminal.printf(45, 20, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[4].moves[1] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 20, f"2 {self.player.team[4].moves[1]} {type} Pwr:{power} Acc:{acc}")
+                    if 3 > len(self.player.team[4].moves):
+                        terminal.printf(45, 21, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[4].moves[2] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 21, f"3 {self.player.team[4].moves[2]} {type} Pwr:{power} Acc:{acc}")
+                    if 4 > len(self.player.team[4].moves):
+                        terminal.printf(45, 22, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[4].moves[3] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 22, f"4 {self.player.team[4].moves[3]} {type} Pwr:{power} Acc:{acc}")
+                    self.print_txt(f"Swap to {self.player.team[4].species}?(Enter/Backspace)"
+                                   f"{self.player.team[4].info}", 0)
+                    button = terminal.read()
+                    if button == terminal.TK_ENTER:
+                        if self.opponent_active.trapping[0] != 0:
+                            self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
+                            break
+                        if self.opponent_active.blocking:
+                            self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
+                            break
+                        if self.player_active == self.player.team[4]:
+                            self.print_txt(f"{self.player.team[4].species} is already out")
+                            break
+                        self.player_active.reset_temp()
+                        self.player_active = self.player.team[4]
+                        self.player_active.first_turn = True
+                        terminal.clear_area(45, 17, 42, 7)
+                        self.print_ui()
+                        self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                        return True
+                    if button == terminal.TK_BACKSPACE:
+                        break
+            elif button == terminal.TK_6 and 6 <= len(self.player.team):
+                while True:
+                    terminal.clear_area(45, 17, 42, 7)
+                    for move in moves:
+                        if self.player.team[5].moves[0] == move.get("name"):
+                            power = move.get("power")
+                            acc = move.get("accuracy")
+                            type = move.get("type")
+                            break
+                    terminal.printf(45, 18, f"Ability: {self.player.team[5].ability}")
+                    terminal.printf(45, 19, f"1 {self.player.team[5].moves[0]} {type} Pwr:{power} Acc:{acc}")
+                    if 2 > len(self.player.team[5].moves):
+                        terminal.printf(45, 20, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[5].moves[1] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 20, f"2 {self.player.team[5].moves[1]} {type} Pwr:{power} Acc:{acc}")
+                    if 3 > len(self.player.team[5].moves):
+                        terminal.printf(45, 21, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[5].moves[2] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 21, f"3 {self.player.team[5].moves[2]} {type} Pwr:{power} Acc:{acc}")
+                    if 4 > len(self.player.team[5].moves):
+                        terminal.printf(45, 22, "Empty Slot")
+                    else:
+                        for move in moves:
+                            if self.player.team[5].moves[3] == move.get("name"):
+                                power = move.get("power")
+                                acc = move.get("accuracy")
+                                type = move.get("type")
+                                break
+                        terminal.printf(45, 22, f"4 {self.player.team[5].moves[3]} {type} Pwr:{power} Acc:{acc}")
+                    self.print_txt(f"Swap to {self.player.team[5].species}?(Enter/Backspace)"
+                                   f"{self.player.team[5].info}", 0)
+                    button = terminal.read()
+                    if button == terminal.TK_ENTER:
+                        if self.opponent_active.trapping[0] != 0:
+                            self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
+                            break
+                        if self.opponent_active.blocking:
+                            self.print_txt(f"{self.player_active.species} is trapped and cant switch out!")
+                            break
+                        if self.player_active == self.player.team[5]:
+                            self.print_txt(f"{self.player.team[5].species} is already out")
+                            break
+                        self.player_active.reset_temp()
+                        self.player_active = self.player.team[5]
+                        self.player_active.first_turn = True
+                        terminal.clear_area(45, 17, 42, 7)
+                        self.print_ui()
+                        self.print_txt(f"{self.player.name} sent out {self.player_active.species}")
+                        return True
+                    if button == terminal.TK_BACKSPACE:
+                        break
+            elif button == terminal.TK_BACKSPACE and not must_swap:
+                terminal.clear_area(45, 17, 42, 7)
+                self.print_ui()
+                break
 
     def speed_check(self):
         player_speed = math.floor(self.player_active.speed *
@@ -723,6 +745,31 @@ class Battle:
         if attacker.status == "PAR":
             pass
             # attacker.outraging = 0
+        if move.get("name") == "Assist":
+            choices = []
+            for poke in attacker.owner.team:
+                if poke == attacker:
+                    continue
+                for entry in poke.moves:
+                    for attack in self.moves:
+                        if attack.get("name") == entry:
+                            if "No Assist" not in attack.get("flags"):
+                                choices.append(attack)
+                                break
+                            break
+            if not choices:
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
+                self.print_txt("But it failed")
+                attacker.acted = True
+                return
+            else:
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
+                move = random.choice(choices)
+        if move.get("name") == "Metronome":
+            while True:
+                move = random.choice(self.moves)
+                if "Metronome" in move.get("flags"):
+                    break
         if "Outrage" in move.get("flags"):
             if attacker.outraging == 2:
                 attacker.outraging = 0
@@ -1169,6 +1216,8 @@ class Battle:
                         defender.bide_dmg += dmg
                 if "Secondary" in move.get("flags"):
                     self.secondary(attacker, defender, move, dmg)
+        if attacker.chp > attacker.hp:
+            attacker.chp = attacker.hp
         self.hp_bars()
         if "Outrage" in move.get("flags") and attacker.outraging == 0:
             if attacker.confused:
@@ -1185,17 +1234,13 @@ class Battle:
         attacker.acted = True
 
     def non_dmg_move(self, attacker, defender, move):
-        # Do Aromatherapy, Assist, Baton Pass, Block, Camouflage, Conversion, Conversion 2, Curse, Destiny Bond, Detect,
-        # Endure, Grudge, Hail, Haze, Heal Bell, Imprison, Ingrain, Light Screen, Magic Coat, Mean Look, Memento,
-        # Metronome, Mimic, Mirror Move, Mist, Moonlight, Morning Sun, Mud Sport, Nightmare, Pain Split, Perish Song,
-        # Protect, Psych Up, Rain Dance, Recycle, Reflect, Refresh, Rest, Role Play, Safeguard, Sandstorm, Sketch,
-        # Skill Swap, Sleep Talk, Snatch, Spider Web, Spikes, Substitute, Sunny Day, Synthesis,
+        # Do Camouflage, Conversion, Conversion 2, Curse, Destiny Bond, Detect,
+        # Endure, Grudge, Haze, Imprison, Ingrain, Light Screen, Magic Coat, Memento,
+        # Metronome, Mimic, Mirror Move, Mist, Mud Sport, Nightmare, Pain Split, Perish Song,
+        # Protect, Psych Up, Recycle, Reflect, Refresh, Rest, Role Play, Safeguard, Sketch,
+        # Skill Swap, Snatch, Spikes, Substitute,
         # Teleport, Transform, Water Sport, Wish, Yawn, Attract, Encore, Foresight, Lock-On, Mind Reader, Odor Sleuth,
         # Spite, Taunt, Torment, Trick, Whirlwind, Disable, Leech Seed, Nature Power
-        if move.get("name") == "Minimize":
-            attacker.minimized = True
-        if move.get("name") == "Focus Energy":
-            attacker.getting_pumped = True
         if "Changes Attacker Stats" in move.get("flags") or "Changes Defender Stats" in move.get("flags"):
             self.change_stats(attacker, defender, move)
         if "Confuses" in move.get("flags"):
@@ -1246,19 +1291,98 @@ class Battle:
                     attacker.stockpile = 0
             else:
                 attacker.chp += math.floor(attacker.hp * move.get("hp changes"))
-            if attacker.chp > attacker.hp:
-                attacker.chp = attacker.hp
-        if move.get("name") == "Charge":
+        if "Block" in move.get("flags"):
+            if attacker.blocking:
+                self.print_txt("But it failed")
+            else:
+                attacker.blocking = True
+        elif "Weather" in move.get("flags"):
+            if move.get("name") == "Hail":
+                if self.weather == "hail":
+                    self.print_txt("But it failed")
+                else:
+                    self.weather = "hail"
+                    self.print_txt("It started to hail!")
+            elif move.get("name") == "Rain Dance":
+                if self.weather == "rain":
+                    self.print_txt("But it failed")
+                else:
+                    self.weather = "rain"
+                    self.print_txt("It started to rain!")
+            elif move.get("name") == "Sandstorm":
+                if self.weather == "sand":
+                    self.print_txt("But it failed")
+                else:
+                    self.weather = "sand"
+                    self.print_txt("A sand storm brewed!")
+            elif move.get("name") == "Sunny Day":
+                if self.weather == "sun":
+                    self.print_txt("But it failed")
+                else:
+                    self.weather = "sun"
+                    self.print_txt("The sun light got bright!")
+        elif "Synthesis" in move.get("flags"):
+            if self.weather == "clear":
+                attacker.chp = math.floor(attacker.hp / 2)
+            elif self.weather == "sun":
+                attacker.chp = math.floor(attacker.hp * 0.66)
+            else:
+                attacker.chp = math.floor(attacker.hp / 4)
+        elif move.get("name") == "Water Sport":
+            attacker.water_sport = True
+        elif move.get("name") == "Mud Sport":
+            attacker.mud_sport = True
+        elif move.get("name") == "Aromatherapy" or move.get("name") == "Heal Bell":
+            for poke in attacker.owner.team:
+                poke.status = ""
+        elif move.get("name") == "Minimize":
+            attacker.minimized = True
+        elif move.get("name") == "Focus Energy":
+            attacker.getting_pumped = True
+        elif move.get("name") == "Charge":
             attacker.charge = True
-            return
-        if move.get("name") == "Stockpile":
+        elif move.get("name") == "Stockpile":
             if attacker.stockpile >= 3:
                 self.print_txt("But it failed")
                 return
             else:
                 attacker.stockpile += 1
                 self.print_txt(f"{attacker.owner.name}'s {attacker.species} stockpiled {attacker.stockpile}!")
-
+        elif move.get("name") == "Baton Pass":
+            passer_temp_stats = attacker.temp_stats
+            passer_confused = attacker.confused
+            passer_getting_pumped = attacker.getting_pumped
+            passer_blocking = attacker.blocking
+            # passer_seeded = attacker.seeded
+            # passer_curse = attacker.curse
+            # passer_substitute  = attacker.substitute
+            # passer_ingrain  = attacker.ingrain
+            # passer_perish  = attacker.perish
+            if attacker == self.player_active and len(self.player.team) > 1:
+                self.player_swap(True)
+                self.player_active.temp_stats = passer_temp_stats
+                self.player_active.confused = passer_confused
+                self.player_active.getting_pumped = passer_getting_pumped
+                self.player_active.blocking = passer_blocking
+                # self.player_active.seeded = passer_seeded
+                # self.player_active.curse = passer_curse
+                # self.player_active.substitute  = passer_substitute
+                # self.player_active.ingrain  = passer_ingrain
+                # self.player_active.perish  = passer_perish
+            elif attacker == self.opponent_active and len(self.opponent_active) > 1:
+                self.opponent_active = random.choice(self.opponent.team)
+                self.print_txt(f"{self.opponent.name} sent out {self.opponent_active.species}")
+                self.opponent_active.temp_stats = passer_temp_stats
+                self.opponent_active.confused = passer_confused
+                self.opponent_active.getting_pumped = passer_getting_pumped
+                self.opponent_active.blocking = passer_blocking
+                # self.opponent_active.seeded = passer_seeded
+                # self.opponent_active.curse = passer_curse
+                # self.opponent_active.substitute  = passer_substitute
+                # self.opponent_active.ingrain  = passer_ingrain
+                # self.opponent_active.perish  = passer_perish
+            else:
+                self.print_txt("But it failed")
     def secondary(self, attacker, defender, move, dmg):
         if "Trapping" in move.get("flags"):
             attacker.trapping[0] = random.randint(2, 5)
@@ -1333,12 +1457,8 @@ class Battle:
         if "Leech" in move.get("flags"):
             if math.floor(dmg * 0.5) == 0:
                 attacker.chp += 1
-                if attacker.chp > attacker.hp:
-                    attacker.chp = attacker.hp
             else:
                 attacker.chp += math.floor(dmg * 0.5)
-                if attacker.chp > attacker.hp:
-                    attacker.chp = attacker.hp
         if "Recoil" in move.get("flags"):
             attacker.chp -= math.floor(dmg * move.get("amount"))
             self.print_txt(f"{attacker.owner.name}'s {attacker.species} is hit with recoil!")
@@ -1415,6 +1535,7 @@ class Battle:
         else:
             dmg_type = move.get("category")
             move_type = move.get("type")
+        # Fix Gen 1 Crit Bug
         if dmg_type == "Physical":
             if crit:
                 atk = attacker.attack
@@ -1431,6 +1552,12 @@ class Battle:
             else:
                 atk = math.floor(attacker.sp_attack * self.temp_stat_table_norm.get(attacker.temp_stats.get("sp_attack")))
                 dfn = math.floor(defender.sp_defense * self.temp_stat_table_norm.get(defender.temp_stats.get("sp_defense")))
+        if move_type == "Electric":
+            if attacker.mud_sport or defender.mud_sport:
+                move["power"] = math.floor(move.get("power") / 2)
+        if move_type == "Fire":
+            if attacker.water_sport or defender.water_sport:
+                move["power"] = math.floor(move.get("power") / 2)
         if not move.get("name") != "Solar Beam" and self.weather != "sun" and self.weather != "clear":
             total = math.floor(math.floor((math.floor((2 * attacker.level) / 5 + 2) * atk * 60) / dfn) / 50)
         elif move.get("name") == "Eruption" or move.get("name") == "Water Spout":
@@ -1503,9 +1630,9 @@ class Battle:
             total = math.floor(total * 2)
         if defender.minimized and "Double Minimized" in move.get("flags"):
             total = math.floor(total * 2)
-        if (move.get("name") == "Facade" and
-                attacker.status == "BRN" or attacker.status == "PAR" or attacker.status == "PSN"):
-            total = math.floor(total * 2)
+        if move.get("name") == "Facade":
+            if attacker.status == "BRN" or attacker.status == "PAR" or attacker.status == "PSN":
+                total = math.floor(total * 2)
         if move.get("name") == "Smelling Salts" and defender.status == "PAR":
             total = math.floor(total * 2)
             defender.status = ""

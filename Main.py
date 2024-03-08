@@ -1,11 +1,15 @@
 from BattleSystem import *
 from Classes import *
 
+print("Close me to close program")
 terminal.open()
 terminal.set("window: size=88x25")
-terminal.set("0xE000: data/Gen1-3bit.png, size=256x256, resize=333x333, align=center")
+terminal.set("0xE001: data/BackSprites.png, size=333x333, align=center")
+terminal.set("0xE305: data/FrontSprites.png, size=333x333, align=center")
 terminal.set("0xF8FF: data/Background.png")
 terminal.set("0xF8FD: data/Background2.png")
+terminal.set("0xF8FC: data/BlankBackground.png")
+terminal.set("0xF8FB: data/Random.png, align=center")
 terminal.set("0x2640: data/Female_symbol.png, align=center")
 terminal.set("0x2642: data/Male_symbol.png, align=center")
 terminal.set("font: data/pokemon.ttf, size=16")
@@ -15,27 +19,39 @@ player_pokemon_count = 1
 
 def catch_pokemon():
     choice = None
-    y = 10
-    mon_1 = pokedex[random.randint(0, 388)].get("Species")
-    mon_2 = pokedex[random.randint(0, 388)].get("Species")
-    mon_3 = pokedex[random.randint(0, 388)].get("Species")
+    mon_1 = random.randint(0, 388)
+    mon_1_species = pokedex[mon_1].get("Species")
+    mon_1_dex = pokedex[mon_1].get("dex_number")
+    mon_2 = random.randint(0, 388)
+    mon_2_species = pokedex[mon_2].get("Species")
+    mon_2_dex = pokedex[mon_2].get("dex_number")
+    mon_3 = random.randint(0, 388)
+    mon_3_species = pokedex[mon_3].get("Species")
+    mon_3_dex = pokedex[mon_3].get("dex_number")
     terminal.clear()
-    terminal.printf(10, 10, "What pokemon would you like to try and catch?")
-    terminal.printf(10, 11, f"1 {mon_1}")
-    terminal.printf(10, 12, f"2 {mon_2}")
-    terminal.printf(10, 13, f"3 {mon_3}")
-    terminal.printf(10, 14, "4 Pass")
+    terminal.put(0, 0, 0xF8FC)
+    terminal.printf(22, 6, "What pokemon would you like to try and catch?")
+    terminal.printf(9, 18, f"1 {mon_1_species}")
+    terminal.put(14, 12, int(random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_1_dex) + 58116),
+                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_1_dex) + 58117)]), 16))
+    terminal.printf(37, 18, f"2 {mon_2_species}")
+    terminal.put(42, 12, int(random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_2_dex) + 58116),
+                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_2_dex) + 58117)]), 16))
+    terminal.printf(69, 18, f"3 {mon_3_species}")
+    terminal.put(74, 12, int(random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_3_dex) + 58116),
+                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_3_dex) + 58117)]), 16))
+    terminal.printf(37, 21, "4 Pass")
     terminal.refresh()
     while True:
         button = terminal.read()
         if button == terminal.TK_1:
-            choice = mon_1
+            choice = [mon_1_species, mon_1_dex]
             break
         elif button == terminal.TK_2:
-            choice = mon_2
+            choice = [mon_2_species, mon_2_dex]
             break
         elif button == terminal.TK_3:
-            choice = mon_3
+            choice = [mon_3_species, mon_3_dex]
             break
         elif button == terminal.TK_4:
             break
@@ -43,12 +59,21 @@ def catch_pokemon():
             pass
     if len(player.team) == 6 and choice is not None:
         terminal.clear()
-        terminal.printf(10, 10, f"Would you like to replace one of your pokemon with {choice}")
-        for pokemon in player.team:
-            y += 1
-            terminal.printf(10, y, f"{y - 10} {pokemon.species}")
-        y += 1
-        terminal.printf(10, y, f"{y - 10} give up {choice}")
+        terminal.put(0, 0, 0xF8FC)
+        terminal.printf(13, 1, f"Would you like to replace one of your pokemon with {choice[0]}")
+        terminal.printf(4, 14, f"1 {player.team[0]}")
+        terminal.put(14, 9, int(player.team[0].front_sprite, 16))
+        terminal.printf(32, 14, f"2 {player.team[1]}")
+        terminal.put(42, 9, int(player.team[1].front_sprite, 16))
+        terminal.printf(59, 14, f"3 {player.team[2]}")
+        terminal.put(69, 9, int(player.team[2].front_sprite, 16))
+        terminal.printf(4, 24, f"4 {player.team[3]}")
+        terminal.put(14, 19, int(player.team[3].front_sprite, 16))
+        terminal.printf(32, 24, f"5 {player.team[4]}")
+        terminal.put(42, 19, int(player.team[4].front_sprite, 16))
+        terminal.printf(59, 24, f"6 {player.team[5]}")
+        terminal.put(69, 19, int(player.team[5].front_sprite, 16))
+        terminal.printf(32, 3, f"7 give up {choice[0]}")
         terminal.refresh()
         while True:
             button = terminal.read()
@@ -66,27 +91,36 @@ def catch_pokemon():
                 input = 5
             elif button == terminal.TK_7:
                 input = 6
+            else:
+                input = None
             if input is None:
                 pass
             elif input <= len(player.team) - 1:
                 player.team.pop(input)
-                player.team.insert(input, Pokemon(choice, player))
+                player.team.insert(input, Pokemon(choice[0], player))
                 break
             elif input == len(player.team):
                 break
     elif choice is not None:
-        player.team.append(Pokemon(choice, player))
+        player.team.append(Pokemon(choice[0], player))
 
 
-terminal.printf(10, 10, "What is your name?: ")
-player_name = terminal.read_str(30, 10, "", 12)[1]
+terminal.put(0, 0, 0xF8FC)
+terminal.printf(29, 7, "What is your name?: ")
+player_name = terminal.read_str(49
+                                , 7, "", 12)[1]
 player = Player(player_name, [])
 terminal.clear()
-terminal.printf(10, 10, "What starter would you like?")
-terminal.printf(10, 11, "1 Bulbasaur")
-terminal.printf(10, 12, "2 Charmander")
-terminal.printf(10, 13, "3 Squirtle")
-terminal.printf(10, 14, "4 Random")
+terminal.printf(29, 7, "What starter would you like?")
+terminal.put(0, 0, 0xF8FC)
+terminal.printf(10, 16, "1 Bulbasaur")
+terminal.put(14, 12, 0xE305)
+terminal.printf(27, 16, "2 Charmander")
+terminal.put(31, 12, 0xE30B)
+terminal.printf(48, 16, "3 Squirtle")
+terminal.put(52, 12, 0xE311)
+terminal.printf(69, 16, "4 Random")
+terminal.put(73, 12, 0xF8FB)
 terminal.refresh()
 while True:
     button = terminal.read()

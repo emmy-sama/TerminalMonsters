@@ -167,7 +167,8 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Reflectable"
+      "Reflectable",
+      "Block"
     ]
   },
   {
@@ -468,7 +469,8 @@
     "description": "For 5 turns, hail crashes down.",
     "type": "Ice",
     "flags": [
-      "Metronome"
+      "Metronome",
+      "Weather"
     ]
   },
   {
@@ -640,7 +642,8 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Reflectable"
+      "Reflectable",
+      "Block"
     ]
   },
   {
@@ -806,7 +809,8 @@
     "type": "Normal",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Synthesis"
     ]
   },
   {
@@ -820,7 +824,8 @@
     "type": "Normal",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Synthesis"
     ]
   },
   {
@@ -934,7 +939,8 @@
     "description": "For 5 turns, heavy rain powers Water moves.",
     "type": "Water",
     "flags": [
-      "Metronome"
+      "Metronome",
+      "Weather"
     ]
   },
   {
@@ -1046,7 +1052,8 @@
     "description": "For 5 turns, a sandstorm rages.",
     "type": "Rock",
     "flags": [
-      "Metronome"
+      "Metronome",
+      "Weather"
     ]
   },
   {
@@ -1204,7 +1211,8 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Reflectable"
+      "Reflectable",
+      "Block"
     ]
   },
   {
@@ -1272,7 +1280,8 @@
     "description": "For 5 turns, intense sunlight powers Fire moves.",
     "type": "Fire",
     "flags": [
-      "Metronome"
+      "Metronome",
+      "Weather"
     ]
   },
   {
@@ -1335,7 +1344,8 @@
     "type": "Grass",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Synthesis"
     ]
   },
   {
