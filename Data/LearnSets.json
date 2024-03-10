@@ -902,7 +902,7 @@
       "Counter",
       "Flame Wheel",
       "Fury Swipes",
-      "reversal",
+      "Reversal",
       "Screech",
       "Swagger",
       "UpRoar"
@@ -1213,7 +1213,7 @@
       "Double Slap",
       "Encore",
       "Present",
-      "reversal",
+      "Reversal",
       "Volt Tackle",
       "Wish"
     ],
@@ -3295,7 +3295,7 @@
       "Foresight",
       "Meditate",
       "Revenge",
-      "reversal",
+      "Reversal",
       "Rock Slide",
       "Smelling Salts"
     ],
@@ -6348,7 +6348,7 @@
       "36": "Foresight",
       "41": "endure",
       "46": "Mega Kick",
-      "51": "reversal"
+      "51": "Reversal"
     },
     "tm": [
       "Attract",
@@ -6746,7 +6746,7 @@
       "Crush Claw",
       "Curse",
       "Magnitude",
-      "reversal",
+      "Reversal",
       "Rock Slide",
       "Swords Dance"
     ],
@@ -7072,7 +7072,7 @@
       "31": "Rage",
       "37": "endure",
       "43": "Dizzy Punch",
-      "49": "reversal"
+      "49": "Reversal"
     },
     "tm": [
       "Aerial Ace",
@@ -7605,7 +7605,7 @@
       "endure",
       "Light Screen",
       "Razor Wind",
-      "reversal",
+      "Reversal",
       "Safeguard",
       "Silver Wind"
     ],
@@ -9820,7 +9820,7 @@
       "Fury Swipes",
       "Howl",
       "Quick Attack",
-      "reversal",
+      "Reversal",
       "Thrash"
     ],
     "tutor": [
@@ -10184,7 +10184,7 @@
       "Double-Edge",
       "Focus Energy",
       "Pursuit",
-      "reversal",
+      "Reversal",
       "Slash",
       "Substitute",
       "Trick"
@@ -11681,7 +11681,7 @@
     ],
     "egg": [
       "Leech Life",
-      "reversal",
+      "Reversal",
       "Signal Beam",
       "Silver Wind",
       "Whirlwind"
@@ -12557,7 +12557,7 @@
       "23": "Brick Break",
       "30": "Counter",
       "37": "Take Down",
-      "45": "reversal",
+      "45": "Reversal",
       "53": "Megahorn"
     },
     "tm": [
@@ -13424,7 +13424,7 @@
       "Fire Spin",
       "Pursuit",
       "Rage",
-      "reversal",
+      "Reversal",
       "Spite",
       "Will-O-Wisp"
     ],
@@ -13725,7 +13725,7 @@
       "endure",
       "Present",
       "Psych Up",
-      "reversal",
+      "Reversal",
       "Seismic Toss",
       "Sleep Talk"
     ],
@@ -14527,7 +14527,7 @@
     "egg": [
       "Counter",
       "endure",
-      "reversal",
+      "Reversal",
       "Rock Slide",
       "Smelling Salts",
       "Swagger"
@@ -16247,7 +16247,7 @@
       "31": "Slash",
       "37": "Counter",
       "43": "Focus Punch",
-      "49": "reversal"
+      "49": "Reversal"
     },
     "tm": [
       "Aerial Ace",
@@ -16738,7 +16738,7 @@
       "37": "Belly Drum",
       "40": "endure",
       "46": "Seismic Toss",
-      "49": "reversal"
+      "49": "Reversal"
     },
     "tm": [
       "Attract",
@@ -16805,7 +16805,7 @@
       "40": "Belly Drum",
       "44": "endure",
       "51": "Seismic Toss",
-      "55": "reversal"
+      "55": "Reversal"
     },
     "tm": [
       "Attract",
@@ -17396,7 +17396,7 @@
       "28": "Calm Mind",
       "32": "High Jump Kick",
       "36": "Psych Up",
-      "41": "reversal",
+      "41": "Reversal",
       "44": "Recover"
     },
     "tm": [
@@ -17467,7 +17467,7 @@
       "28": "Calm Mind",
       "32": "High Jump Kick",
       "36": "Psych Up",
-      "46": "reversal",
+      "46": "Reversal",
       "54": "Recover"
     },
     "tm": [
@@ -22329,12 +22329,12 @@
   },
   "testmon": {
     "level": {
-      "1": "Ember",
-      "2": "Sunny Day",
+      "1": "Endeavor",
+      "2": "Synthesis",
       "3": "Rain Dance",
       "4": "Sandstorm",
       "20": "Swift",
-      "25": "Bounce",
+      "25": "False Swipe",
       "30": "Swift",
       "35": "Iron Defense",
       "40": "Zap Cannon",
@@ -22344,10 +22344,10 @@
   },
   "testmon2": {
     "level": {
-      "6": "Tackle",
-      "1": "Water Sport",
+      "8": "Tackle",
+      "6": "Water Sport",
       "7": "Clamp",
-      "8": "Fire Spin",
+      "1": "Fire Spin",
       "20": "Spikes",
       "25": "Tackle",
       "30": "Swift",

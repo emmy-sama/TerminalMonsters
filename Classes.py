@@ -19,6 +19,9 @@ class Player:
         self.name = name
         self.starter_type = starter_type
         self.team = team
+        self.reflect = False
+        self.light_screen = False
+        self.mist = 0
 
 
 class Pokemon:
@@ -91,6 +94,9 @@ class Pokemon:
         self.blocking = False
         self.water_sport = False
         self.mud_sport = False
+        self.cursed = False
+        self.protecting = False
+        self.protecting_chance = 1
         self.dmg_last_type_taken = None
         self.dmg_last_taken = 0
         self.info = (f"{self.gender} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
@@ -121,8 +127,8 @@ class Pokemon:
     def get_hidden_type(self):
         options = [["Fighting", "Physical"], ["Flying", "Physical"], ["Poison", "Physical"], ["Ground", "Physical"],
                    ["Rock", "Physical"], ["Bug", "Physical"], ["Ghost", "Physical"], ["Steel", "Physical"],
-                   ["Fire", "Special"], ["Water", "Special"] ,["Grass", "Special"], ["Electric", "Special"],
-                   ["Psychic", "Special"] ,["Ice", "Special"] ,["Dragon", "Special"] ,["Dark", "Special"]]
+                   ["Fire", "Special"], ["Water", "Special"], ["Grass", "Special"], ["Electric", "Special"],
+                   ["Psychic", "Special"], ["Ice", "Special"], ["Dragon", "Special"], ["Dark", "Special"]]
         return random.choices(options, weights=[7.8125, 6.25, 6.25, 6.25, 6.25, 7.8125, 6.25, 6.25, 6.25, 6.25, 7.8125,
                                                 6.25, 6.25, 6.25, 6.25, 1.5625], k=1)[0]
 
@@ -149,6 +155,9 @@ class Pokemon:
         self.blocking = False
         self.water_sport = False
         self.mud_sport = False
+        self.cursed = False
+        self.protecting = False
+        self.protecting_chance = 1
 
     def learn_move(self):
         move = learn_sets.get(self.species.lower()).get("level").get(str(self.level))
