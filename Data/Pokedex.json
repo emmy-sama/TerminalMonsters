@@ -20,6 +20,7 @@
     "evos": [
       "Ivysaur"
     ],
+    "evo_level": 16,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9,
     "Front Sprite": "0xE000",
@@ -49,6 +50,7 @@
     "evos": [
       "Venusaur"
     ],
+    "evo_level": 32,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9,
     "Front Sprite": "0xE000",
@@ -104,6 +106,7 @@
     "evos": [
       "Charmeleon"
     ],
+    "evo_level": 16,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9,
     "Front Sprite": "0xE00D",
@@ -129,6 +132,7 @@
     "evos": [
       "Charizard"
     ],
+    "evo_level": 36,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -174,6 +178,7 @@
     "evos": [
       "Wartortle"
     ],
+    "evo_level": 16,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -197,6 +202,7 @@
     "evos": [
       "Blastoise"
     ],
+    "evo_level": 36,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -241,6 +247,7 @@
     "evos": [
       "Metapod"
     ],
+    "evo_level": 7,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -264,6 +271,7 @@
     "evos": [
       "Butterfree"
     ],
+    "evo_level": 10,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -310,6 +318,7 @@
     "evos": [
       "Kakuna"
     ],
+    "evo_level": 7,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9,
     "Front Sprite": "0xE031",
@@ -336,6 +345,7 @@
     "evos": [
       "Beedrill"
     ],
+    "evo_level": 10,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -382,6 +392,7 @@
     "evos": [
       "Pidgeotto"
     ],
+    "evo_level": 18,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -406,6 +417,7 @@
     "evos": [
       "Pidgeot"
     ],
+    "evo_level": 36,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -452,6 +464,7 @@
     "evos": [
       "Raticate"
     ],
+    "evo_level": 20,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -498,6 +511,7 @@
     "evos": [
       "Fearow"
     ],
+    "evo_level": 20,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -544,6 +558,7 @@
     "evos": [
       "Arbok"
     ],
+    "evo_level": 22,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -588,6 +603,9 @@
     "dex_number": 25,
     "evos": [
       "Raichu"
+    ],
+    "Stone": [
+      "Thunder"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9,
@@ -635,6 +653,7 @@
     "evos": [
       "Sandslash"
     ],
+    "evo_level": 22,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -679,6 +698,7 @@
     "evos": [
       "Nidorina"
     ],
+    "evo_level": 16,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -701,6 +721,9 @@
     "dex_number": 30,
     "evos": [
       "Nidoqueen"
+    ],
+    "Stone": [
+      "Moon"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
@@ -747,6 +770,7 @@
     "evos": [
       "Nidorino"
     ],
+    "evo_level": 16,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -769,6 +793,9 @@
     "dex_number": 33,
     "evos": [
       "Nidoking"
+    ],
+    "Stone": [
+      "Moon"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
@@ -815,6 +842,9 @@
     "evos": [
       "Clefable"
     ],
+    "Stone": [
+      "Moon"
+    ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -859,6 +889,9 @@
     "evos": [
       "Ninetales"
     ],
+    "Stone": [
+      "Fire"
+    ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -902,6 +935,9 @@
     "dex_number": 39,
     "evos": [
       "Wigglytuff"
+    ],
+    "Stone": [
+      "Moon"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
@@ -948,6 +984,7 @@
     "evos": [
       "Golbat"
     ],
+    "evo_level": 22,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -972,6 +1009,7 @@
     "evos": [
       "Crobat"
     ],
+    "evo_level": 40,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -996,6 +1034,7 @@
     "evos": [
       "Gloom"
     ],
+    "evo_level": 21,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1020,6 +1059,10 @@
     "evos": [
       "Bellossom",
       "Vileplume"
+    ],
+    "Stone": [
+      "Sun",
+      "Leaf"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
@@ -1067,6 +1110,7 @@
     "evos": [
       "Parasect"
     ],
+    "evo_level": 24,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1113,6 +1157,7 @@
     "evos": [
       "Venomoth"
     ],
+    "evo_level": 31,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1159,6 +1204,7 @@
     "evos": [
       "Dugtrio"
     ],
+    "evo_level": 26,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9,
     "Front Sprite": "0xE0C4",
@@ -1206,6 +1252,7 @@
     "evos": [
       "Persian"
     ],
+    "evo_level": 28,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1251,6 +1298,7 @@
     "evos": [
       "Golduck"
     ],
+    "evo_level": 33,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1296,6 +1344,7 @@
     "evos": [
       "Primeape"
     ],
+    "evo_level": 28,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1340,6 +1389,9 @@
     "dex_number": 58,
     "evos": [
       "Arcanine"
+    ],
+    "Stone": [
+      "Fire"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
@@ -1387,6 +1439,7 @@
     "evos": [
       "Poliwhirl"
     ],
+    "evo_level": 25,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1411,6 +1464,10 @@
     "evos": [
       "Politoed",
       "Poliwrath"
+    ],
+    "Stone": [
+      "Sun",
+      "Water"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9,
@@ -1461,6 +1518,7 @@
     "evos": [
       "Kadabra"
     ],
+    "evo_level": 16,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1485,6 +1543,7 @@
     "evos": [
       "Alakazam"
     ],
+    "evo_level": 36,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1530,6 +1589,7 @@
     "evos": [
       "Machoke"
     ],
+    "evo_level": 28,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1553,6 +1613,7 @@
     "evos": [
       "Machamp"
     ],
+    "evo_level": 36,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1598,6 +1659,7 @@
     "evos": [
       "Weepinbell"
     ],
+    "evo_level": 21,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1621,6 +1683,9 @@
     "dex_number": 70,
     "evos": [
       "Victreebel"
+    ],
+    "Stone": [
+      "Leaf"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
@@ -1669,6 +1734,7 @@
     "evos": [
       "Tentacruel"
     ],
+    "evo_level": 30,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1717,6 +1783,7 @@
     "evos": [
       "Graveler"
     ],
+    "evo_level": 25,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1742,6 +1809,7 @@
     "evos": [
       "Golem"
     ],
+    "evo_level": 36,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1789,6 +1857,7 @@
     "evos": [
       "Rapidash"
     ],
+    "evo_level": 40,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1836,6 +1905,10 @@
     "evos": [
       "Slowbro",
       "Slowking"
+    ],
+    "evo_level": 36,
+    "Stone": [
+      "Sun"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
@@ -1887,6 +1960,7 @@
     "evos": [
       "Magneton"
     ],
+    "evo_level": 30,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -1958,6 +2032,7 @@
     "evos": [
       "Dodrio"
     ],
+    "evo_level": 31,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2004,6 +2079,7 @@
     "evos": [
       "Dewgong"
     ],
+    "evo_level": 34,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2050,6 +2126,7 @@
     "evos": [
       "Muk"
     ],
+    "evo_level": 38,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2094,6 +2171,9 @@
     "dex_number": 90,
     "evos": [
       "Cloyster"
+    ],
+    "Stone": [
+      "Water"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
@@ -2141,6 +2221,7 @@
     "evos": [
       "Haunter"
     ],
+    "evo_level": 25,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2165,6 +2246,7 @@
     "evos": [
       "Gengar"
     ],
+    "evo_level": 36,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2212,6 +2294,7 @@
     "evos": [
       "Steelix"
     ],
+    "evo_level": 36,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9,
     "Front Sprite": "0xE178",
@@ -2237,6 +2320,7 @@
     "evos": [
       "Hypno"
     ],
+    "evo_level": 26,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2282,6 +2366,7 @@
     "evos": [
       "Kingler"
     ],
+    "evo_level": 28,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2328,6 +2413,7 @@
     "evos": [
       "Electrode"
     ],
+    "evo_level": 30,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2373,6 +2459,9 @@
     "dex_number": 102,
     "evos": [
       "Exeggutor"
+    ],
+    "Stone": [
+      "Leaf"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
@@ -2420,6 +2509,7 @@
     "evos": [
       "Marowak"
     ],
+    "evo_level": 28,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2529,6 +2619,7 @@
     "evos": [
       "Weezing"
     ],
+    "evo_level": 35,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2575,6 +2666,7 @@
     "evos": [
       "Rhydon"
     ],
+    "evo_level": 42,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2622,6 +2714,7 @@
     "evos": [
       "Blissey"
     ],
+    "evo_level": 40,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2687,6 +2780,7 @@
     "evos": [
       "Seadra"
     ],
+    "evo_level": 32,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2710,6 +2804,7 @@
     "evos": [
       "Kingdra"
     ],
+    "evo_level": 42,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2734,6 +2829,7 @@
     "evos": [
       "Seaking"
     ],
+    "evo_level": 33,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2779,6 +2875,9 @@
     "dex_number": 120,
     "evos": [
       "Starmie"
+    ],
+    "Stone": [
+      "Water"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
@@ -2848,6 +2947,7 @@
     "evos": [
       "Scizor"
     ],
+    "evo_level": 38,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -2977,6 +3077,7 @@
     "evos": [
       "Gyarados"
     ],
+    "evo_level": 20,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -3064,11 +3165,19 @@
     ],
     "dex_number": 133,
     "evos": [
-      "Espeon",
-      "Flareon",
+      "Vaporeon",
       "Jolteon",
+      "Flareon",
       "Umbreon",
-      "Vaporeon"
+      "Espeon"
+
+    ],
+    "Stone": [
+      "Water",
+      "Thunder",
+      "Fire",
+      "Moon",
+      "Sun"
     ],
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
@@ -3156,6 +3265,7 @@
     "evos": [
       "Porygon2"
     ],
+    "evo_level": 36,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -3181,6 +3291,7 @@
     "evos": [
       "Omastar"
     ],
+    "evo_level": 40,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -3229,6 +3340,7 @@
     "evos": [
       "Kabutops"
     ],
+    "evo_level": 40,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -3386,6 +3498,7 @@
     "evos": [
       "Dragonair"
     ],
+    "evo_level": 30,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
@@ -3409,6 +3522,7 @@
     "evos": [
       "Dragonite"
     ],
+    "evo_level": 55,
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },

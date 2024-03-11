@@ -62,8 +62,9 @@ class Pokemon:
             * self.nature.get("Sp.Defense", 1))
         self.speed = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSpeed")) * self.level)) + 5)
                                 * self.nature.get("Speed", 1))
-        self.evolvl = pokedex[self.index].get("EvoLvl", None)
-        self.evo = pokedex[self.index].get("Evo", None)
+        self.evolvl = pokedex[self.index].get("evo_level", None)
+        self.stone = pokedex[self.index].get("Stone", None)
+        self.evo = pokedex[self.index].get("evos", None)
         self.moves = self.get_move_set()
         self.chp = self.hp
         self.status = ""
@@ -214,24 +215,42 @@ class Pokemon:
                 terminal.refresh()
 
 
-    def evolve(self):
-        self.index = self.evo
-        self.species = pokedex[self.index].get("Species")
-        self.type_one = pokedex[self.index].get("Typeone")
-        self.type_two = pokedex[self.index].get("Typetwo")
+    def evolve(self, species):
+        for p in pokedex:
+            if p["Species"] == species:
+                self.species = p.get("Species")
+                self.index = pokedex.index(p)
+                break
+        self.dex_number = pokedex[self.index].get("dex_number")
+        self.front_sprite = random.choice(
+            [hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 58116),
+             hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 58117)])
+        self.back_sprite = random.choice(
+            [hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57344),
+             hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57345)])
+        self.type_one = pokedex[self.index].get("types")[0]
+        if len(pokedex[self.index].get("types")) == 2:
+            self.type_two = pokedex[self.index].get("types")[1]
+        else:
+            self.type_two = None
         self.ability = random.choice(pokedex[self.index].get("Abilities"))
         self.height = pokedex[self.index].get("Height")
         self.weight = pokedex[self.index].get("Weight")
+        self.evolvl = pokedex[self.index].get("evo_level", None)
+        self.stone = pokedex[self.index].get("Stone", None)
+        self.evo = pokedex[self.index].get("evos", None)
         self.calc_stats()
-        self.evolvl = pokedex[self.index].get("EvoLvl", None)
-        self.evo = pokedex[self.index].get("Evo", None)
+        self.info = (f"{self.gender} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
+                     f"Sp.Attack: {self.sp_attack} Sp.Defense: {self.sp_defense} Speed: {self.speed}")
 
     def level_up(self, level):
         while self.level != level:
             self.level += 1
             self.calc_stats()
             self.learn_move()
+            self.info = (f"{self.gender} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
+                         f"Sp.Attack: {self.sp_attack} Sp.Defense: {self.sp_defense} Speed: {self.speed}")
             if self.evolvl is not None:
                 if self.level >= self.evolvl:
-                    self.evolve()
+                    self.evolve(self.evo[0])
                     self.learn_move()
