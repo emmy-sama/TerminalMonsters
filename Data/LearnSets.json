@@ -1482,7 +1482,7 @@
       "Swords Dance"
     ]
   },
-  "Nidoran-F": {
+  "nidoran-f": {
     "level": {
       "1": "Scratch",
       "8": "Tail Whip",
@@ -1670,7 +1670,7 @@
       "Thunder Punch"
     ]
   },
-  "Nidoran-M": {
+  "nidoran-m": {
     "level": {
       "1": "Peck",
       "8": "Focus Energy",
@@ -22335,8 +22335,8 @@
   },
   "testmon": {
     "level": {
-      "1": "Endeavor",
-      "2": "Synthesis",
+      "1": "Psych Up",
+      "2": "Haze",
       "3": "Rain Dance",
       "4": "Sandstorm",
       "20": "Swift",
@@ -22353,7 +22353,7 @@
       "8": "Tackle",
       "6": "Water Sport",
       "7": "Clamp",
-      "1": "Fire Spin",
+      "1": "Swords Dance",
       "20": "Spikes",
       "25": "Tackle",
       "30": "Swift",

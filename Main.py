@@ -14,44 +14,104 @@ terminal.set("0x2640: data/Female_symbol.png, align=center")
 terminal.set("0x2642: data/Male_symbol.png, align=center")
 terminal.set("font: data/pokemon.ttf, size=16")
 
-player_pokemon_count = 1
+rival = "Gary"
 
 
-def catch_pokemon():
+def print_exp(lvl, txt=None):
+    for mons in player.team:
+        mons.level_up(lvl)
+    terminal.clear()
+    terminal.put(0, 0, 0xF8FC)
+    if txt is None:
+        terminal.printf(20, 6, f"You take time to level your pokemon to level {lvl}.")
+    else:
+        terminal.printf(20, 6, txt)
+    terminal.refresh()
+    time.sleep(2)
+
+
+def print_txt(txt):
+    terminal.clear()
+    terminal.put(0, 0, 0xF8FC)
+    terminal.printf(10, 6, txt)
+    terminal.refresh()
+    time.sleep(2)
+
+def poke_center():
+    for mons in player.team:
+        mons.chp = mons.hp
+
+
+def catch_pokemon(lvl):
+    terminal.clear()
+    terminal.put(0, 0, 0xF8FC)
+    terminal.printf(22, 6, "What type of route would you like to go to?")
+    terminal.printf(9, 9, "1 Normal")
+    terminal.printf(37, 9, "2 Forest")
+    terminal.printf(69, 9, "3 Cave")
+    terminal.printf(9, 18, "4 Water")
+    terminal.printf(37, 18, "5 City")
+    terminal.printf(69, 18, "6 Night")
+    terminal.refresh()
+    while True:
+        button = terminal.read()
+        if button == terminal.TK_1:
+            route = "Normal"
+            break
+        elif button == terminal.TK_2:
+            route = "Forest"
+            break
+        elif button == terminal.TK_3:
+            route = "Cave"
+            break
+        elif button == terminal.TK_4:
+            route = "Water"
+            break
+        elif button == terminal.TK_5:
+            route = "City"
+            break
+        elif button == terminal.TK_6:
+            route = "Night"
+            break
+        else:
+            pass
     choice = None
-    mon_1 = random.randint(0, 388)
-    mon_1_species = pokedex[mon_1].get("Species")
-    mon_1_dex = pokedex[mon_1].get("dex_number")
-    mon_2 = random.randint(0, 388)
-    mon_2_species = pokedex[mon_2].get("Species")
-    mon_2_dex = pokedex[mon_2].get("dex_number")
-    mon_3 = random.randint(0, 388)
-    mon_3_species = pokedex[mon_3].get("Species")
-    mon_3_dex = pokedex[mon_3].get("dex_number")
+    mon_1 = random.choice(encounters.get(route).get(lvl))
+    for p in pokedex:
+        if p.get("Species") == mon_1:
+            mon_1 = p
+    mon_2 = random.choice(encounters.get(route).get(lvl))
+    for p in pokedex:
+        if p.get("Species") == mon_2:
+            mon_2 = p
+    mon_3 = random.choice(encounters.get(route).get(lvl))
+    for p in pokedex:
+        if p.get("Species") == mon_3:
+            mon_3 = p
     terminal.clear()
     terminal.put(0, 0, 0xF8FC)
     terminal.printf(22, 6, "What pokemon would you like to try and catch?")
-    terminal.printf(9, 18, f"1 {mon_1_species}")
-    terminal.put(14, 12, int(random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_1_dex) + 58116),
-                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_1_dex) + 58117)]), 16))
-    terminal.printf(37, 18, f"2 {mon_2_species}")
-    terminal.put(42, 12, int(random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_2_dex) + 58116),
-                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_2_dex) + 58117)]), 16))
-    terminal.printf(69, 18, f"3 {mon_3_species}")
-    terminal.put(74, 12, int(random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_3_dex) + 58116),
-                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_3_dex) + 58117)]), 16))
+    terminal.printf(9, 18, f"1 {mon_1.get("Species")}")
+    terminal.put(14, 12, int(random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_1.get("dex_number")) + 58116),
+                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_1.get("dex_number")) + 58117)]), 16))
+    terminal.printf(37, 18, f"2 {mon_2.get("Species")}")
+    terminal.put(42, 12, int(random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_2.get("dex_number")) + 58116),
+                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_2.get("dex_number")) + 58117)]), 16))
+    terminal.printf(69, 18, f"3 {mon_3.get("Species")}")
+    terminal.put(74, 12, int(random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_3.get("dex_number")) + 58116),
+                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_3.get("dex_number")) + 58117)]), 16))
     terminal.printf(37, 21, "4 Pass")
     terminal.refresh()
     while True:
         button = terminal.read()
         if button == terminal.TK_1:
-            choice = [mon_1_species, mon_1_dex]
+            choice = mon_1
             break
         elif button == terminal.TK_2:
-            choice = [mon_2_species, mon_2_dex]
+            choice = mon_2
             break
         elif button == terminal.TK_3:
-            choice = [mon_3_species, mon_3_dex]
+            choice = mon_3
             break
         elif button == terminal.TK_4:
             break
@@ -60,7 +120,7 @@ def catch_pokemon():
     if len(player.team) == 6 and choice is not None:
         terminal.clear()
         terminal.put(0, 0, 0xF8FC)
-        terminal.printf(13, 1, f"Would you like to replace one of your pokemon with {choice[0]}")
+        terminal.printf(13, 1, f"Would you like to replace one of your pokemon with {choice.get("Species")}")
         terminal.printf(4, 14, f"1 {player.team[0]}")
         terminal.put(14, 9, int(player.team[0].front_sprite, 16))
         terminal.printf(32, 14, f"2 {player.team[1]}")
@@ -73,7 +133,7 @@ def catch_pokemon():
         terminal.put(42, 19, int(player.team[4].front_sprite, 16))
         terminal.printf(59, 24, f"6 {player.team[5]}")
         terminal.put(69, 19, int(player.team[5].front_sprite, 16))
-        terminal.printf(32, 3, f"7 give up {choice[0]}")
+        terminal.printf(32, 3, f"7 give up {choice.get("Species")}")
         terminal.refresh()
         while True:
             button = terminal.read()
@@ -97,12 +157,12 @@ def catch_pokemon():
                 pass
             elif input <= len(player.team) - 1:
                 player.team.pop(input)
-                player.team.insert(input, Pokemon(choice[0], player))
+                player.team.insert(input, Pokemon(choice.get("Species"), player))
                 break
             elif input == len(player.team):
                 break
     elif choice is not None:
-        player.team.append(Pokemon(choice[0], player))
+        player.team.append(Pokemon(choice.get("Species"), player))
 
 
 terminal.put(0, 0, 0xF8FC)
@@ -143,240 +203,312 @@ terminal.clear()
 player.starter_type = player_starter.type_one
 player.team.append(player_starter)
 
-catch_pokemon()
-catch_pokemon()
-for pokemon in player.team:
-    pokemon.level_up(14)
+# Rival 1
+catch_pokemon("lvl9")
+print_exp(9)
+poke_center()
+print_txt(f"You stumble into your rival {rival} and they challenge you to a battle!")
 terminal.clear()
 
+rival_1 = Player(f"{rival}", [])
+rival_1.team = [Pokemon("Rattata", rival_1, 7), Pokemon("Treecko", rival_1, 9)]
+
+rival1_battle = Battle(player, rival_1)
+rival1_battle.battle()
+
 # Gym 1
+catch_pokemon("lvl14")
+print_exp(14)
+poke_center()
+print_txt(f"You enter the Rustboro City gym and challenge its leader Roxanne!")
+terminal.clear()
+
 roxanne = Player("Roxanne", [])
-geodude_rox = Pokemon("Geodude", roxanne, 12)
-geodude_rox2 = Pokemon("Geodude", roxanne, 12)
-nosepass_rox = Pokemon("Nosepass", roxanne, 15)
-roxanne.team = [geodude_rox, geodude_rox2, nosepass_rox]
+roxanne.team = [Pokemon("Geodude", roxanne, 12), Pokemon("Geodude", roxanne, 12),
+                Pokemon("Nosepass", roxanne, 14)]
 
 gym1_battle = Battle(player, roxanne)
 gym1_battle.battle()
 
-catch_pokemon()
-catch_pokemon()
-for pokemon in player.team:
-    pokemon.level_up(18)
+# Gym 2
+catch_pokemon("lvl20")
+catch_pokemon("lvl20")
+print_exp(20)
+poke_center()
+print_txt(f"You enter the Dewford Town gym and challenge its leader Brawly!")
 terminal.clear()
 
-# Gym 2
 brawly = Player("Brawly", [])
-machop_bra = Pokemon("Machop", brawly, 16)
-meditite_bra = Pokemon("Meditite", brawly, 16)
-makuhita_bra = Pokemon("Makuhita", brawly, 19)
-brawly.team = [machop_bra, meditite_bra, makuhita_bra]
+brawly.team = [Pokemon("Machop", brawly, 17), Pokemon("Meditite", brawly, 17),
+               Pokemon("Makuhita", brawly, 20)]
 
 gym2_battle = Battle(player, brawly)
 gym2_battle.battle()
 
-catch_pokemon()
-catch_pokemon()
-for pokemon in player.team:
-    pokemon.level_up(23)
+# Gym 3
+
+catch_pokemon("lvl26")
+catch_pokemon("lvl26")
+print_exp(26)
+poke_center()
+print_txt(f"You enter the Mauville City gym and challenge its leader Wattson!")
 terminal.clear()
 
-# Gym 3
 wattson = Player("Wattson", [])
-voltorb_wat = Pokemon("Voltorb", wattson, 20)
-electrike_wat = Pokemon("Electrike", wattson, 20)
-magneton_wat = Pokemon("Magneton", wattson, 22)
-manectric_wat = Pokemon("Manectric", wattson, 24)
-wattson.team = [voltorb_wat, electrike_wat, magneton_wat, manectric_wat]
+wattson.team = [Pokemon("Voltorb", wattson, 22), Pokemon("Electrike", wattson, 22),
+                Pokemon("Magneton", wattson, 24), Pokemon("Manectric", wattson, 26)]
 
 gym3_battle = Battle(player, wattson)
 gym3_battle.battle()
 
-catch_pokemon()
-catch_pokemon()
-for pokemon in player.team:
-    pokemon.level_up(28)
+# Gym 4
+
+catch_pokemon("lvl30")
+catch_pokemon("lvl30")
+print_exp(30)
+poke_center()
+print_txt(f"You enter the Lavaridge Town gym and challenge its leader Flannery!")
 terminal.clear()
 
-# Gym 4
 flannery = Player("Flannery", [])
-numel_fla = Pokemon("Numel", flannery, 24)
-slugma_fla = Pokemon("Slugma", flannery, 24)
-camerupt_fla = Pokemon("Camerupt", flannery, 26)
-torkoal_fla = Pokemon("Torkoal", flannery, 29)
-flannery.team = [numel_fla, slugma_fla, camerupt_fla, torkoal_fla]
+flannery.team = [Pokemon("Numel", flannery, 25), Pokemon("Slugma", flannery, 25),
+                 Pokemon("Camerupt", flannery, 27), Pokemon("Torkoal", flannery, 30)]
 
 gym4_battle = Battle(player, flannery)
 gym4_battle.battle()
 
-catch_pokemon()
-catch_pokemon()
-for pokemon in player.team:
-    pokemon.level_up(30)
+# Rival 2
+catch_pokemon("lvl36")
+print_exp(36)
+poke_center()
+print_txt(f"You stumble into your rival {rival} and they challenge you to a battle!")
 terminal.clear()
 
+rival_2 = Player(f"{rival}", [])
+rival_2.team = [Pokemon("Raticate", rival_2, 36), Pokemon("Swellow", rival_2, 35),
+                Pokemon("Numel", rival_2, 34), Pokemon("Wailmer", rival_2, 35),
+                Pokemon("Sceptile", rival_2, 36)]
+
+rival2_battle = Battle(player, rival_2)
+rival2_battle.battle()
+
 # Gym 5
+
+catch_pokemon("lvl40")
+print_exp(40)
+poke_center()
+print_txt(f"You enter the Petalburg City gym and challenge its leader Norman!")
+terminal.clear()
+
 norman = Player("Norman", [])
-spinda_nor = Pokemon("Spinda", norman, 27)
-vigoroth_nor = Pokemon("Vigoroth", norman, 27)
-linoone_nor = Pokemon("Linoone", norman, 29)
-slaking_nor = Pokemon("Slaking", norman, 31)
-norman.team = [spinda_nor, vigoroth_nor, linoone_nor, slaking_nor]
+norman.team = [Pokemon("Spinda", norman, 36), Pokemon("Vigoroth", norman, 36),
+               Pokemon("Linoone", norman, 38), Pokemon("Slaking", norman, 40)]
 
 gym5_battle = Battle(player, norman)
 gym5_battle.battle()
 
-catch_pokemon()
-catch_pokemon()
-for pokemon in player.team:
-    pokemon.level_up(32)
+# Gym 6
+catch_pokemon("lvl46")
+catch_pokemon("lvl46")
+print_exp(46)
+poke_center()
+print_txt(f"You enter the Fortree City gym and challenge its leader Winona!")
 terminal.clear()
 
-# Gym 6
 winona = Player("Winona", [])
-swablu_win = Pokemon("Swablu", winona, 29)
-tropius_win = Pokemon("Tropius", winona, 29)
-pelipper_win = Pokemon("Pelipper", winona, 30)
-skarmory_win = Pokemon("Skarmory", winona, 31)
-altaria_win = Pokemon("Altaria", winona, 33)
-winona.team = [swablu_win, tropius_win, pelipper_win, skarmory_win, altaria_win]
+winona.team = [Pokemon("Swablu", winona, 42), Pokemon("Tropius", winona, 42),
+               Pokemon("Pelipper", winona, 43), Pokemon("Skarmory", winona, 44),
+               Pokemon("Altaria", winona, 46)]
 
 gym6_battle = Battle(player, winona)
 gym6_battle.battle()
 
-catch_pokemon()
-catch_pokemon()
-for pokemon in player.team:
-    pokemon.level_up(41)
+# Gym 7 Replace eventually
+catch_pokemon("lvl52")
+catch_pokemon("lvl52")
+print_exp(52)
+poke_center()
+print_txt(f"You enter the Mossdeep City gym and challenge its leader's Tate & Liza!")
 terminal.clear()
 
-# Gym 7 Replace eventually
 tate_liza = Player("Tate&Liza", [])
-claydol_tal = Pokemon("Claydol", tate_liza, 41)
-xatu_tal = Pokemon("Xatu", tate_liza, 41)
-lunatone_tal = Pokemon("Lunatone", tate_liza, 42)
-solrock_tal = Pokemon("Solrock", tate_liza, 42)
-tate_liza.team = [claydol_tal, xatu_tal, lunatone_tal, solrock_tal]
+tate_liza.team = [Pokemon("Claydol", tate_liza, 51), Pokemon("Xatu", tate_liza, 51),
+                  Pokemon("Lunatone", tate_liza, 52), Pokemon("Solrock", tate_liza, 52)]
 
 gym7_battle = Battle(player, tate_liza)
 gym7_battle.battle()
 
-catch_pokemon()
-catch_pokemon()
-for pokemon in player.team:
-    pokemon.level_up(45)
+# Gym 8
+catch_pokemon("lvl58")
+catch_pokemon("lvl58")
+print_exp(58)
+poke_center()
+print_txt(f"You enter the Sootopolis City and challenge its leader's Juan!")
 terminal.clear()
 
-# Gym 8
 juan = Player("Juan", [])
-luvdisc_jua = Pokemon("Luvdisc", juan, 41)
-whiscash_jua = Pokemon("Whiscash", juan, 41)
-sealeo_jua = Pokemon("Sealeo", juan, 43)
-crawdaunt_jua = Pokemon("Crawdaunt", juan, 43)
-kingdra_jua = Pokemon("Kingdra", juan, 46)
-juan.team = [luvdisc_jua, whiscash_jua, sealeo_jua, crawdaunt_jua, kingdra_jua]
+juan.team = [Pokemon("Luvdisc", juan, 53), Pokemon("Whiscash", juan, 53),
+             Pokemon("Sealeo", juan, 55), Pokemon("Crawdaunt", juan, 55),
+             Pokemon("Kingdra", juan, 58)]
 
 gym8_battle = Battle(player, juan)
 gym8_battle.battle()
 
-catch_pokemon()
-catch_pokemon()
-for pokemon in player.team:
-    pokemon.level_up(48)
+# Rival 3
+catch_pokemon("lvl58")
+catch_pokemon("lvl58")
+print_exp(64)
+poke_center()
+print_txt(f"You stumble into your rival {rival} and they challenge you to a battle!")
 terminal.clear()
 
+rival_3 = Player(f"{rival}", [])
+rival_3.team = [Pokemon("Gengar", rival_2, 64), Pokemon("Alakazam", rival_2, 64),
+                Pokemon("Arcanine", rival_2, 64), Pokemon("Wailord", rival_2, 64),
+                Pokemon("Sceptile", rival_2, 64), Pokemon("Dragonite", rival_2, 64)]
+
+rival3_battle = Battle(player, rival_3)
+rival3_battle.battle()
+
 # Elite4 1
+print_exp(70)
+poke_center()
+print_txt(f"You enter the Elite 4 you challenge member Sidney first!")
+terminal.clear()
+
 sidney = Player("Sidney", [])
-mightyena_sid = Pokemon("Mightyena", sidney, 46)
-shiftry_sid = Pokemon("Shiftry", sidney, 48)
-cacturne_sid = Pokemon("Cacturne", sidney, 46)
-crawdaunt_sid = Pokemon("Crawdaunt", sidney, 48)
-absol_sid = Pokemon("Absol", sidney, 49)
-sidney.team = [mightyena_sid, shiftry_sid, cacturne_sid, crawdaunt_sid, absol_sid]
+sidney.team = [Pokemon("Mightyena", sidney, 67), Pokemon("Shiftry", sidney, 69),
+               Pokemon("Cacturne", sidney, 67), Pokemon("Crawdaunt", sidney, 69),
+               Pokemon("Absol", sidney, 70)]
 
 elite4_1_battle = Battle(player, sidney)
 elite4_1_battle.battle()
 
-for pokemon in player.team:
-    pokemon.level_up(50)
+# Elite4 2
+print_exp(72, "The battle has brought your pokemon to level 72.")
+poke_center()
+print_txt(f"Next you challenge Member Phoebe!")
 terminal.clear()
 
-# Elite4 2
 phoebe = Player("Phoebe", [])
-dusclops_pho = Pokemon("Dusclops", phoebe, 48)
-banette_pho = Pokemon("Banette", phoebe, 49)
-sableye_pho = Pokemon("Sableye", phoebe, 50)
-banette_pho2 = Pokemon("Banette", phoebe, 49)
-dusclops_pho2 = Pokemon("Dusclops", phoebe, 51)
-phoebe.team = [dusclops_pho, banette_pho, sableye_pho, banette_pho2, dusclops_pho2]
+phoebe.team = [Pokemon("Dusclops", phoebe, 69), Pokemon("Banette", phoebe, 70),
+               Pokemon("Sableye", phoebe, 71), Pokemon("Banette", phoebe, 70),
+               Pokemon("Dusclops", phoebe, 72)]
 
 elite4_2_battle = Battle(player, phoebe)
 elite4_2_battle.battle()
 
-for pokemon in player.team:
-    pokemon.level_up(52)
+# Elite4 3
+print_exp(74, "The battle has brought your pokemon to level 74.")
+poke_center()
+print_txt(f"Next you challenge Member Glacia!")
 terminal.clear()
 
-# Elite4 3
 glacia = Player("Glacia", [])
-sealeo_gla = Pokemon("Sealeo", glacia, 50)
-glalie_gla = Pokemon("Glalie", glacia, 50)
-sealeo_gla2 = Pokemon("Sealeo", glacia, 52)
-glalie_gla2 = Pokemon("Glalie", glacia, 52)
-walrein_gla = Pokemon("Walrein", glacia, 53)
-glacia.team = [mightyena_sid, shiftry_sid, cacturne_sid, crawdaunt_sid, absol_sid]
+glacia.team = [Pokemon("Sealeo", glacia, 71), Pokemon("Glalie", glacia, 71),
+               Pokemon("Sealeo", glacia, 73), Pokemon("Glalie", glacia, 73),
+               Pokemon("Walrein", glacia, 74)]
 
 elite4_3_battle = Battle(player, glacia)
 elite4_3_battle.battle()
 
-for pokemon in player.team:
-    pokemon.level_up(54)
+# Elite4 4
+print_exp(76, "The battle has brought your pokemon to level 76.")
+poke_center()
+print_txt(f"Next you challenge Member Drake!")
 terminal.clear()
 
-# Elite4 4
 drake = Player("Drake", [])
-shelgon_dra = Pokemon("Shelgon", drake, 52)
-altaria_dra = Pokemon("Altaria", drake, 54)
-kingdra_dra = Pokemon("Kingdra", drake, 53)
-flygon_dra = Pokemon("Flygon", drake, 53)
-salamence_dra = Pokemon("Salamence", drake, 55)
-drake.team = [shelgon_dra, altaria_dra, kingdra_dra, flygon_dra, salamence_dra]
+drake.team = [Pokemon("Shelgon", drake, 73), Pokemon("Altaria", drake, 75),
+              Pokemon("Kingdra", drake, 74), Pokemon("Flygon", drake, 74),
+              Pokemon("Salamence", drake, 76)]
 
 elite4_4_battle = Battle(player, drake)
 elite4_4_battle.battle()
 
-for pokemon in player.team:
-    pokemon.level_up(57)
+# Champion
+print_exp(78, "The battle has brought your pokemon to level 78.")
+poke_center()
+print_txt(f"Lastly you challenge the champion Wallace!")
 terminal.clear()
 
-# Champion
 wallace = Player("Wallace", [])
-wailord_wal = Pokemon("Wailord", wallace, 57)
-tentacruel_wal = Pokemon("Tentacruel", wallace, 55)
-ludicolo_wal = Pokemon("Ludicolo", wallace, 56)
-whiscash_wal = Pokemon("Whiscash", wallace, 56)
-gyarados_wal = Pokemon("Gyarados", wallace, 56)
-milotic_wal = Pokemon("Milotic", wallace, 58)
-wallace.team = [wailord_wal, tentacruel_wal, ludicolo_wal, whiscash_wal, gyarados_wal, milotic_wal]
+wallace.team = [Pokemon("Wailord", wallace, 77), Pokemon("Tentacruel", wallace, 75),
+                Pokemon("Ludicolo", wallace, 76), Pokemon("Whiscash", wallace, 76),
+                Pokemon("Gyarados", wallace, 76), Pokemon("Milotic", wallace, 78)]
 
 champion_battle = Battle(player, wallace)
 champion_battle.battle()
 
-catch_pokemon()
-catch_pokemon()
-for pokemon in player.team:
-    pokemon.level_up(77)
+print_txt(f"You have become champion and your journey has come to a end!...")
+
+# Legendary
+print_exp(80, "While resting at home you hear news of a pokemon attacking a nearby town and you go to help!")
+poke_center()
 terminal.clear()
 
+legendary = random.choice(encounters.get("Legendary"))
+legendary_trainer = Player("", [Pokemon(legendary, "", 85)])
+
+if len(player.team) == 6:
+    terminal.clear()
+    terminal.put(0, 0, 0xF8FC)
+    terminal.printf(13, 1, f"Would you like to replace one of your pokemon with {legendary}")
+    terminal.printf(4, 14, f"1 {player.team[0]}")
+    terminal.put(14, 9, int(player.team[0].front_sprite, 16))
+    terminal.printf(32, 14, f"2 {player.team[1]}")
+    terminal.put(42, 9, int(player.team[1].front_sprite, 16))
+    terminal.printf(59, 14, f"3 {player.team[2]}")
+    terminal.put(69, 9, int(player.team[2].front_sprite, 16))
+    terminal.printf(4, 24, f"4 {player.team[3]}")
+    terminal.put(14, 19, int(player.team[3].front_sprite, 16))
+    terminal.printf(32, 24, f"5 {player.team[4]}")
+    terminal.put(42, 19, int(player.team[4].front_sprite, 16))
+    terminal.printf(59, 24, f"6 {player.team[5]}")
+    terminal.put(69, 19, int(player.team[5].front_sprite, 16))
+    terminal.printf(32, 3, f"7 give up {legendary}")
+    terminal.refresh()
+    while True:
+        button = terminal.read()
+        if button == terminal.TK_1:
+            input = 0
+        elif button == terminal.TK_2:
+            input = 1
+        elif button == terminal.TK_3:
+            input = 2
+        elif button == terminal.TK_4:
+            input = 3
+        elif button == terminal.TK_5:
+            input = 4
+        elif button == terminal.TK_6:
+            input = 5
+        elif button == terminal.TK_7:
+            input = 6
+        else:
+            input = None
+        if input is None:
+            pass
+        elif input <= len(player.team) - 1:
+            player.team.pop(input)
+            player.team.insert(input, Pokemon(legendary, player, 85))
+            break
+        elif input == len(player.team):
+            break
+else:
+    player.team.append(Pokemon(legendary, player, 85))
+
 # Steven
+print_txt(f"After catching {legendary} a man named Steven asks to battle you and you accept!")
+poke_center()
+terminal.clear()
+
 steven = Player("Steven", [])
-skarmory_ste = Pokemon("Skarmory", steven, 77)
-claydol_ste = Pokemon("Claydol", steven, 75)
-aggron_ste = Pokemon("Aggron", steven, 76)
-cradily_ste = Pokemon("Cradily", steven, 76)
-armaldo_ste = Pokemon("Armaldo", steven, 76)
-metagross_ste = Pokemon("Metagross", steven, 78)
-steven.team = [skarmory_ste, claydol_ste, aggron_ste, cradily_ste, armaldo_ste, metagross_ste]
+steven.team = [Pokemon("Skarmory", steven, 84), Pokemon("Claydol", steven, 82),
+               Pokemon("Aggron", steven, 83), Pokemon("Cradily", steven, 83),
+               Pokemon("Armaldo", steven, 83), Pokemon("Metagross", steven, 85)]
 
 steven_battle = Battle(player, steven)
 steven_battle.battle()
+
+print_txt(f"Thank you for playing you have finished the game as it is now!")
+terminal.clear()

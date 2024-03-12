@@ -12,6 +12,8 @@ with open("Data/LearnSets.json") as learn_sets_json:
     learn_sets = json.load(learn_sets_json)
 with open("Data/TypeEffectiveness.json") as effectiveness_json:
     types = json.load(effectiveness_json)
+with open("Data/Encounter_Table.json") as encounter_table_json:
+    encounters = json.load(encounter_table_json)
 
 
 class Player:
@@ -44,6 +46,7 @@ class Pokemon:
         else:
             self.type_two = None
         self.ability = random.choice(pokedex[self.index].get("Abilities"))
+        self.gender = None
         self.get_gender(pokedex[self.index].get("Gender Ratio"))
         self.catch_rate = pokedex[self.index].get("Catch rate")
         self.height = pokedex[self.index].get("Height")
@@ -98,6 +101,7 @@ class Pokemon:
         self.cursed = False
         self.protecting = False
         self.protecting_chance = 1
+        self.enduring = False
         self.dmg_last_type_taken = None
         self.dmg_last_taken = 0
         self.info = (f"{self.gender} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
@@ -214,7 +218,6 @@ class Pokemon:
                 terminal.printf(10, 10, f"{self.species} learned {move}")
                 terminal.refresh()
 
-
     def evolve(self, species):
         for p in pokedex:
             if p["Species"] == species:
@@ -252,5 +255,11 @@ class Pokemon:
                          f"Sp.Attack: {self.sp_attack} Sp.Defense: {self.sp_defense} Speed: {self.speed}")
             if self.evolvl is not None:
                 if self.level >= self.evolvl:
-                    self.evolve(self.evo[0])
+                    if self.species == "Tyrogue":
+                        self.evolve(self.evo[random.randint(0, 2)])
+                    elif self.species == "Wurmple":
+                        self.evolve(self.evo[random.randint(0, 1)])
+                    # elif self.species == "Nincada":
+                    else:
+                        self.evolve(self.evo[0])
                     self.learn_move()

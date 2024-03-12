@@ -184,6 +184,16 @@ class Battle:
                 self.opponent_active.protecting = False
             elif not self.opponent_active.protecting:
                 self.opponent_active.protecting_chance = 1
+            if self.player_active.enduring:
+                self.player_active.protecting_chance = self.player_active.protecting_chance / 2
+                self.player_active.enduring = False
+            elif not self.player_active.enduring:
+                self.player_active.protecting_chance = 1
+            if self.opponent_active.enduring:
+                self.opponent_active.protecting_chance = self.opponent_active.protecting_chance / 2
+                self.opponent_active.enduring = False
+            elif not self.opponent_active.enduring:
+                self.opponent_active.protecting_chance = 1
             self.alive_check()
 
     def ai_turn(self):
@@ -889,7 +899,10 @@ class Battle:
                 elif defender.protecting:
                     self.print_txt(f"{defender.species} protected it's self")
                 else:
-                    self.deal_dmg(defender, (attacker.bide_dmg * 2))
+                    if defender.enduring and attacker.bide_dmg * 2 >= defender.chp:
+                        self.deal_dmg(defender, defender.chp - 1)
+                    else:
+                        self.deal_dmg(defender, (attacker.bide_dmg * 2))
                     if defender.bide != 0:
                         defender.bide_dmg += (attacker.bide_dmg * 2)
                     if defender.rage:
@@ -966,7 +979,10 @@ class Battle:
                     return
         if move.get("name") == "Counter":
             if attacker.dmg_last_taken > 0 and attacker.dmg_last_type_taken == "Physical":
-                self.deal_dmg(defender, (attacker.dmg_last_taken * 2))
+                if defender.enduring and attacker.dmg_last_taken * 2 >= defender.chp:
+                    self.deal_dmg(defender, defender.chp - 1)
+                else:
+                    self.deal_dmg(defender, (attacker.dmg_last_taken * 2))
                 defender.dmg_last_type_taken = move.get("category")
                 defender.dmg_last_taken = attacker.dmg_last_taken * 2
                 if defender.bide != 0:
@@ -980,7 +996,10 @@ class Battle:
                 return
         if move.get("name") == "Mirror Coat":
             if attacker.dmg_last_taken > 0 and attacker.dmg_last_type_taken == "Special":
-                self.deal_dmg(defender, (attacker.dmg_last_taken * 2))
+                if defender.enduring and attacker.dmg_last_taken * 2 >= defender.chp:
+                    self.deal_dmg(defender, defender.chp - 1)
+                else:
+                    self.deal_dmg(defender, (attacker.dmg_last_taken * 2))
                 defender.dmg_last_type_taken = move.get("category")
                 defender.dmg_last_taken = attacker.dmg_last_taken * 2
                 if defender.bide != 0:
@@ -1113,6 +1132,8 @@ class Battle:
                 hits = (random.choices([2, 3, 4, 5], weights=[37.5, 37.5, 12.5, 12.5], k=1))[0]
                 for hit in range(0, hits):
                     dmg = self.dmg_calc(attacker, defender, move)
+                    if defender.enduring and dmg >= defender.chp:
+                        dmg = defender.chp - 1
                     self.deal_dmg(defender, dmg)
                     defender.dmg_last_type_taken = move.get("category")
                     defender.dmg_last_taken = dmg
@@ -1129,6 +1150,8 @@ class Battle:
             elif "Double-Hit" in move.get("flags"):
                 for hit in range(0, 2):
                     dmg = self.dmg_calc(attacker, defender, move)
+                    if defender.enduring and dmg >= defender.chp:
+                        dmg = defender.chp - 1
                     self.deal_dmg(defender, dmg)
                     defender.dmg_last_type_taken = move.get("category")
                     defender.dmg_last_taken = dmg
@@ -1158,6 +1181,8 @@ class Battle:
                         if hit_check > accuracy:
                             break
                     dmg = self.dmg_calc(attacker, defender, move)
+                    if defender.enduring and dmg >= defender.chp:
+                        dmg = defender.chp - 1
                     self.deal_dmg(defender, dmg)
                     defender.dmg_last_type_taken = move.get("category")
                     defender.dmg_last_taken = dmg
@@ -1189,6 +1214,8 @@ class Battle:
                         dmg = math.floor((dmg * random.randint(85, 100)) / 100)
                         if dmg == 0:
                             dmg = 1
+                        if defender.enduring and dmg >= defender.chp:
+                            dmg = defender.chp - 1
                         self.deal_dmg(defender, dmg)
                         defender.dmg_last_type_taken = move.get("category")
                         defender.dmg_last_taken = dmg
@@ -1200,7 +1227,10 @@ class Battle:
                             break
                 defender.damaged_this_turn = True
             elif "Level Damage" in move.get("flags"):
-                self.deal_dmg(defender, attacker.level)
+                if defender.enduring and attacker.level >= defender.chp:
+                    self.deal_dmg(defender, defender.chp - 1)
+                else:
+                    self.deal_dmg(defender, attacker.level)
                 defender.dmg_last_type_taken = move.get("category")
                 defender.dmg_last_taken = attacker.level
                 if defender.bide != 0:
@@ -1209,7 +1239,10 @@ class Battle:
                     self.change_stats(attacker, defender, "Rage")
                 defender.damaged_this_turn = True
             elif "Fixed Damage" in move.get("flags"):
-                self.deal_dmg(defender, move.get("amount"))
+                if defender.enduring and move.get("amount") >= defender.chp:
+                    self.deal_dmg(defender, defender.chp - 1)
+                else:
+                    self.deal_dmg(defender, move.get("amount"))
                 defender.dmg_last_type_taken = move.get("category")
                 defender.dmg_last_taken = move.get("amount")
                 if defender.bide != 0:
@@ -1222,6 +1255,8 @@ class Battle:
                 dmg = math.floor((attacker.level * (10 * ran + 50)) / 100)
                 if dmg == 0:
                     dmg = 1
+                if defender.enduring and dmg >= defender.chp:
+                    dmg = defender.chp - 1
                 self.deal_dmg(defender, dmg)
                 defender.dmg_last_type_taken = dmg
                 defender.dmg_last_taken = dmg
@@ -1234,6 +1269,8 @@ class Battle:
                 dmg = math.floor(defender.chp * 0.5)
                 if dmg == 0:
                     dmg = 1
+                if defender.enduring and dmg >= defender.chp:
+                    dmg = defender.chp - 1
                 self.deal_dmg(defender, dmg)
                 defender.dmg_last_type_taken = move.get("category")
                 defender.dmg_last_taken = dmg
@@ -1264,6 +1301,8 @@ class Battle:
                 if power > 0:
                     move["power"] = power
                     dmg = self.dmg_calc(attacker, defender, move)
+                    if defender.enduring and dmg >= defender.chp:
+                        dmg = defender.chp - 1
                     self.deal_dmg(defender, dmg)
                     if dmg > 0:
                         if defender.rage:
@@ -1286,6 +1325,8 @@ class Battle:
                 attacker.fury_cutter += 1
                 attacker.fury_cutter_hit = True
                 dmg = self.dmg_calc(attacker, defender, move)
+                if defender.enduring and dmg >= defender.chp:
+                    dmg = defender.chp - 1
                 self.deal_dmg(defender, dmg)
                 if dmg > 0:
                     if defender.rage:
@@ -1298,6 +1339,8 @@ class Battle:
             elif move.get("name") == "Rollout" or move.get("name") == "Ice Ball":
                 move["power"] = 30 * 2 ** attacker.rolling
                 dmg = self.dmg_calc(attacker, defender, move)
+                if defender.enduring and dmg >= defender.chp:
+                    dmg = defender.chp - 1
                 self.deal_dmg(defender, dmg)
                 if dmg > 0:
                     if defender.rage:
@@ -1315,6 +1358,8 @@ class Battle:
             else:
                 dmg = self.dmg_calc(attacker, defender, move)
                 if move.get("name") == "False Swipe" and dmg >= defender.chp:
+                    dmg = defender.chp - 1
+                if defender.enduring and dmg >= defender.chp:
                     dmg = defender.chp - 1
                 self.deal_dmg(defender, dmg)
                 if dmg > 0:
@@ -1343,13 +1388,10 @@ class Battle:
         attacker.acted = True
 
     def non_dmg_move(self, attacker, defender, move):
-        # Do Camouflage, Conversion, Conversion 2, Curse, Destiny Bond, Detect,
-        # Endure, Grudge, Haze, Imprison, Ingrain, Light Screen, Magic Coat, Memento,
-        # Metronome, Mimic, Mirror Move, Mist, Mud Sport, Nightmare, Pain Split, Perish Song,
-        # Protect, Psych Up, Recycle, Reflect, Refresh, Rest, Role Play, Safeguard, Sketch,
-        # Skill Swap, Snatch, Spikes, Substitute,
-        # Teleport, Transform, Wish, Yawn, Attract, Encore, Foresight, Lock-On, Mind Reader, Odor Sleuth,
-        # Spite, Taunt, Torment, Trick, Whirlwind, Disable, Leech Seed, Nature Power
+        # Do Camouflage, Conversion, Conversion 2, Destiny Bond, Detect, Grudge,  Imprison, Ingrain, Magic Coat,
+        # Memento, Mimic, Mirror Move, Nightmare, Pain Split, Perish Song, Recycle, Rest, Role Play, Safeguard, Sketch,
+        # Skill Swap, Snatch, Spikes, Substitute, Teleport, Transform, Wish, Yawn, Attract, Encore, Foresight, Lock-On,
+        # Mind Reader, Odor Sleuth, Spite, Taunt, Torment, Trick, Whirlwind, Disable, Leech Seed, Nature Power
         if "Changes Attacker Stats" in move.get("flags") or "Changes Defender Stats" in move.get("flags"):
             self.change_stats(attacker, defender, move)
         if "Confuses" in move.get("flags"):
@@ -1437,6 +1479,22 @@ class Battle:
                 self.deal_dmg(attacker, -math.floor(attacker.hp * 0.66))
             else:
                 self.deal_dmg(attacker, -math.floor(attacker.hp / 4))
+        elif move.get("name") == "Psych Up":
+            attacker.temp_stats.update(defender.temp_stats)
+            print(attacker.temp_stats)
+            self.print_txt(f"{attacker.owner.name}'s {attacker.species} copied it's opponents stat changes")
+        elif move.get("name") == "Refresh":
+            if attacker.status == "SLP" or attacker.status == "FRZ" or attacker.status == "":
+                self.print_txt("But it failed")
+            else:
+                attacker.status = ""
+                self.print_txt(f"{attacker.owner.name}'s {attacker.species} status returned to normal!")
+        elif move.get("name") == "Haze":
+            print(attacker.temp_stats)
+            attacker.temp_stats = attacker.temp_stats.fromkeys(attacker.temp_stats.keys(), 0)
+            print(attacker.temp_stats)
+            defender.temp_stats = defender.temp_stats.fromkeys(defender.temp_stats.keys(), 0)
+            self.print_txt("All stat changes were eliminated!")
         elif move.get("name") == "Protect" or move.get("name") == "Detect":
             if defender.acted:
                 self.print_txt("But it failed")
@@ -1444,6 +1502,15 @@ class Battle:
                 if attacker.protecting_chance >= random.uniform(0, 1):
                     attacker.protecting = True
                     self.print_txt(f"{attacker.species} is protecting it's self")
+                else:
+                    self.print_txt("But it failed")
+        elif move.get("name") == "Endure":
+            if defender.acted:
+                self.print_txt("But it failed")
+            else:
+                if attacker.protecting_chance >= random.uniform(0, 1):
+                    attacker.enduring = True
+                    self.print_txt(f"{attacker.species} braced it's self!")
                 else:
                     self.print_txt("But it failed")
         elif move.get("name") == "Reflect":
@@ -1476,8 +1543,10 @@ class Battle:
                 self.print_txt(f"{attacker.species}'s speed fell!")
         elif move.get("name") == "Water Sport":
             attacker.water_sport = True
+            self.print_txt("Fire's power was weakened")
         elif move.get("name") == "Mud Sport":
             attacker.mud_sport = True
+            self.print_txt("Electricity's power was weakened")
         elif move.get("name") == "Aromatherapy" or move.get("name") == "Heal Bell":
             for poke in attacker.owner.team:
                 poke.status = ""
