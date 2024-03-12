@@ -4,15 +4,14 @@
       "1": "Tackle",
       "4": "Growl",
       "7": "Leech Seed",
-      "9": "Vine Whip",
+      "10": "Vine Whip",
       "13": "Poison Powder",
       "14": "Sleep Powder",
-      "15": "Take Down",
-      "19": "Razor Leaf",
-      "21": "Sweet Scent",
-      "25": "Growth",
+      "20": "Razor Leaf",
+      "25": "Sweet Scent",
+      "32": "Growth",
       "33": "Synthesis",
-      "37": "Solar Beam"
+      "46": "Solar Beam"
     },
     "tm": [
       "Attract",
@@ -67,16 +66,14 @@
       "3": "Leech Seed",
       "4": "Growl",
       "7": "Leech Seed",
-      "9": "Vine Whip",
+      "10": "Vine Whip",
       "13": "Poison Powder",
       "14": "Sleep Powder",
-      "15": "Take Down",
-      "20": "Razor Leaf",
-      "23": "Sweet Scent",
-      "28": "Growth",
-      "31": "Double-Edge",
-      "39": "Synthesis",
-      "44": "Solar Beam"
+      "22": "Razor Leaf",
+      "29": "Sweet Scent",
+      "38": "Growth",
+      "47": "Synthesis",
+      "56": "Solar Beam"
     },
     "tm": [
       "Attract",
@@ -123,17 +120,14 @@
       "4": "Vine Whip",
       "5": "Growl",
       "7": "Leech Seed",
-      "9": "Vine Whip",
+      "10": "Vine Whip",
       "13": "Poison Powder",
       "14": "Sleep Powder",
-      "15": "Take Down",
-      "20": "Razor Leaf",
-      "23": "Sweet Scent",
-      "28": "Growth",
-      "31": "Double-Edge",
-      "32": "Petal Dance",
-      "45": "Synthesis",
-      "53": "Solar Beam"
+      "22": "Razor Leaf",
+      "29": "Sweet Scent",
+      "41": "Growth",
+      "53": "Synthesis",
+      "65": "Solar Beam"
     },
     "tm": [
       "Attract",
@@ -1144,6 +1138,9 @@
   "arbok": {
     "level": {
       "1": "Wrap",
+      "2": "Leer",
+      "3": "Poison Sting",
+      "4": "Bite",
       "20": "Glare",
       "28": "Screech",
       "38": "Acid",
@@ -1190,6 +1187,7 @@
   "pichu": {
     "level": {
       "1": "Thunder Shock",
+      "2": "Charm",
       "6": "Tail Whip",
       "8": "Thunder Wave",
       "11": "Sweet Kiss"
@@ -1246,6 +1244,7 @@
   "pikachu": {
     "level": {
       "1": "Thunder Shock",
+      "2": "Growl",
       "6": "Tail Whip",
       "8": "Thunder Wave",
       "11": "Quick Attack",
@@ -1305,7 +1304,10 @@
   },
   "raichu": {
     "level": {
-      "1": "Thunder Shock"
+      "1": "Thunder Shock",
+      "2": "Tail Whip",
+      "3": "Quick Attack",
+      "4": "Thunder Bolt"
     },
     "tm": [
       "Attract",
@@ -1427,6 +1429,8 @@
   "sandSlash": {
     "level": {
       "1": "Scratch",
+      "2": "Defense Curl",
+      "3": "Sand Attack",
       "17": "Poison Sting",
       "24": "Slash",
       "33": "Swift",
@@ -1485,6 +1489,7 @@
   "nidoran-f": {
     "level": {
       "1": "Scratch",
+      "2": "Growl",
       "8": "Tail Whip",
       "12": "Double Kick",
       "17": "Poison Sting",
@@ -1547,6 +1552,7 @@
   "nidorina": {
     "level": {
       "1": "Scratch",
+      "2": "Growl",
       "8": "Tail Whip",
       "12": "Double Kick",
       "18": "Poison Sting",
@@ -1601,6 +1607,9 @@
   "nidoqueen": {
     "level": {
       "1": "Tail Whip",
+      "2": "Scratch",
+      "3": "Double Kick",
+      "4": "Poison Sting",
       "22": "Body Slam",
       "43": "Superpower"
     },
@@ -1673,6 +1682,7 @@
   "nidoran-m": {
     "level": {
       "1": "Peck",
+      "2": "Leer",
       "8": "Focus Energy",
       "12": "Double Kick",
       "17": "Poison Sting",
@@ -1734,6 +1744,7 @@
   "nidorino": {
     "level": {
       "1": "Peck",
+      "2": "Leer",
       "8": "Focus Energy",
       "12": "Double Kick",
       "18": "Poison Sting",
@@ -1787,6 +1798,9 @@
   "nidoking": {
     "level": {
       "1": "Poison Sting",
+      "2": "Peck",
+      "3": "Double Kick",
+      "4": "Focus Energy",
       "22": "Thrash",
       "43": "Megahorn"
     },
@@ -1858,6 +1872,7 @@
   "cleffa": {
     "level": {
       "1": "Pound",
+      "2": "Charm",
       "4": "Encore",
       "8": "Sing",
       "13": "Sweet Kiss",
@@ -1928,6 +1943,7 @@
   "clefairy": {
     "level": {
       "1": "Pound",
+      "2": "Growl",
       "5": "Encore",
       "9": "Sing",
       "13": "Double Slap",
@@ -2006,7 +2022,10 @@
   },
   "clefable": {
     "level": {
-      "1": "Sing"
+      "1": "Sing",
+      "2": "Double Slap",
+      "3": "Minimize",
+      "4": "Metronome"
     },
     "tm": [
       "Attract",
@@ -2133,6 +2152,9 @@
   "ninetales": {
     "level": {
       "1": "Safeguard",
+      "2": "Ember",
+      "3": "Quick Attack",
+      "4": "Confuse Ray",
       "45": "Fire Spin"
     },
     "tm": [
@@ -2172,6 +2194,7 @@
   "igglybuff": {
     "level": {
       "1": "Sing",
+      "2": "Charm",
       "4": "Defense Curl",
       "9": "Pound",
       "14": "Sweet Kiss"
@@ -2309,7 +2332,10 @@
   },
   "wigglytuff": {
     "level": {
-      "1": "Sing"
+      "1": "Sing",
+      "2": "Disable",
+      "3": "Defense Curl",
+      "4": "Double Slap"
     },
     "tm": [
       "Attract",
@@ -2376,7 +2402,8 @@
   "zubat": {
     "level": {
       "1": "Leech Life",
-      "6": "Supersonic",
+      "6": "Astonish",
+      "11": "Supersonic",
       "16": "Bite",
       "21": "Wing Attack",
       "26": "Confuse Ray",
@@ -2430,6 +2457,11 @@
   "golbat": {
     "level": {
       "1": "Supersonic",
+      "2": "Screech",
+      "3": "Astonish",
+      "4": "Leech Life",
+      "6": "Astonish",
+      "11": "Supersonic",
       "16": "Bite",
       "21": "Wing Attack",
       "28": "Confuse Ray",
@@ -2477,6 +2509,11 @@
   "crobat": {
     "level": {
       "1": "Supersonic",
+      "2": "Screech",
+      "3": "Astonish",
+      "4": "Leech Life",
+      "6": "Astonish",
+      "11": "Supersonic",
       "16": "Bite",
       "21": "Wing Attack",
       "28": "Confuse Ray",
@@ -2574,6 +2611,10 @@
   "gloom": {
     "level": {
       "1": "Sweet Scent",
+      "2": "Absorb",
+      "3": "Poison Powder",
+      "7": "Sweet Scent",
+      "14": "Poison Powder",
       "16": "Stun Spore",
       "18": "Sleep Powder",
       "24": "Acid",
@@ -2614,6 +2655,9 @@
   "vileplume": {
     "level": {
       "1": "Stun Spore",
+      "2": "Aromatherapy",
+      "3": "Absorb",
+      "4": "Mega Drain",
       "44": "Petal Dance"
     },
     "tm": [
@@ -2652,6 +2696,9 @@
   "bellossom": {
     "level": {
       "1": "Sweet Scent",
+      "2": "Stun Spore",
+      "3": "Absorb",
+      "4": "Magical Leaf",
       "44": "Petal Dance",
       "55": "Solar Beam"
     },
@@ -2750,6 +2797,10 @@
   "parasect": {
     "level": {
       "1": "Stun Spore",
+      "2": "Scratch",
+      "3": "Poison Powder",
+      "7": "Stun Spore",
+      "13": "Poison Powder",
       "19": "Leech Life",
       "27": "Spore",
       "35": "Slash",
@@ -2799,6 +2850,8 @@
   "venonat": {
     "level": {
       "1": "Tackle",
+      "2": "Disable",
+      "3": "Foresight",
       "9": "Supersonic",
       "17": "Confusion",
       "20": "Poison Powder",
@@ -2848,6 +2901,11 @@
   "venomoth": {
     "level": {
       "1": "Tackle",
+      "2": "Disable",
+      "3": "Foresight",
+      "4": "Supersonic",
+      "5": "Silver Wind",
+      "9": "Supersonic",
       "17": "Confusion",
       "20": "Poison Powder",
       "25": "Leech Life",
@@ -2894,6 +2952,7 @@
   "diglett": {
     "level": {
       "1": "Scratch",
+      "2": "Sand Attack",
       "5": "Growl",
       "9": "Magnitude",
       "17": "Dig",
@@ -2949,6 +3008,10 @@
   "dugtrio": {
     "level": {
       "1": "Tri Attack",
+      "2": "Scratch",
+      "3": "Sand Attack",
+      "4": "Growl",
+      "5": "Growl",
       "9": "Magnitude",
       "17": "Dig",
       "21": "Fury Swipes",
@@ -2997,6 +3060,7 @@
   "meowth": {
     "level": {
       "1": "Scratch",
+      "2": "Growl",
       "10": "Bite",
       "18": "Pay Day",
       "25": "Feint Attack",
@@ -3063,6 +3127,9 @@
   "persian": {
     "level": {
       "1": "Scratch",
+      "2": "Growl",
+      "3": "Bite",
+      "10": "Bite",
       "18": "Pay Day",
       "25": "Feint Attack",
       "34": "Screech",
@@ -3123,6 +3190,7 @@
   "psyduck": {
     "level": {
       "1": "Water Sport",
+      "2": "Scratch",
       "5": "Tail Whip",
       "10": "Disable",
       "16": "Confusion",
@@ -3194,6 +3262,11 @@
   "golduck": {
     "level": {
       "1": "Water Sport",
+      "2": "Scratch",
+      "3": "Tail Whip",
+      "4": "Disable",
+      "5": "Tail Whip",
+      "10": "Disable",
       "16": "Confusion",
       "23": "Screech",
       "31": "Psych Up",
@@ -3256,6 +3329,7 @@
   "mankey": {
     "level": {
       "1": "Scratch",
+      "2": "Leer",
       "6": "Low Kick",
       "11": "Karate Chop",
       "16": "Fury Swipes",
@@ -3333,6 +3407,10 @@
   "primeape": {
     "level": {
       "1": "Scratch",
+      "2": "leer",
+      "3": "Low Kick",
+      "4": "Rage",
+      "6": "Low Kick",
       "11": "Karate Chop",
       "16": "Fury Swipes",
       "21": "Focus Energy",
@@ -3400,6 +3478,7 @@
   "growlithe": {
     "level": {
       "1": "Roar",
+      "2": "Bite",
       "7": "Ember",
       "13": "Leer",
       "19": "Odor Sleuth",
@@ -3455,6 +3534,9 @@
   "arcanine": {
     "level": {
       "1": "Roar",
+      "2": "Bite",
+      "3": "Ember",
+      "4": "Odor Sleuth",
       "49": "Extreme Speed"
     },
     "tm": [
@@ -3552,7 +3634,11 @@
   },
   "poliwhirl": {
     "level": {
-      "1": "Water Gun",
+      "1": "Hypnosis",
+      "2": "Bubble",
+      "3": "Water Gun",
+      "7": "Hypnosis",
+      "13": "Water Gun",
       "19": "Double Slap",
       "27": "Rain Dance",
       "35": "Body Slam",
@@ -3610,7 +3696,11 @@
   },
   "poliwrath": {
     "level": {
-      "1": "Water Gun",
+      "1": "Hypnosis",
+      "2": "Water Gun",
+      "3": "Double Slap",
+      "4": "Submission",
+      "35": "Submission",
       "51": "Mind Reader"
     },
     "tm": [
@@ -3668,7 +3758,11 @@
   },
   "politoed": {
     "level": {
-      "1": "Water Gun",
+      "1": "Hypnosis",
+      "2": "Water Gun",
+      "3": "Double Slap",
+      "4": "Perish Song",
+      "35": "Perish Song",
       "51": "Swagger"
     },
     "tm": [
@@ -3789,6 +3883,9 @@
   "kadabra": {
     "level": {
       "1": "Teleport",
+      "2": "Kinesis",
+      "3": "Confusion",
+      "16": "Confusion",
       "18": "Disable",
       "21": "Psybeam",
       "23": "Reflect",
@@ -3855,6 +3952,9 @@
   "alakazam": {
     "level": {
       "1": "Teleport",
+      "2": "Kinesis",
+      "3": "Confusion",
+      "16": "Confusion",
       "18": "Disable",
       "21": "Psybeam",
       "23": "Reflect",
@@ -3922,6 +4022,7 @@
   "machop": {
     "level": {
       "1": "Low Kick",
+      "2": "Leer",
       "7": "Focus Energy",
       "13": "Karate Chop",
       "19": "Seismic Toss",
@@ -3992,6 +4093,9 @@
   "machoke": {
     "level": {
       "1": "Low Kick",
+      "2": "Leer",
+      "3": "Focus Energy",
+      "7": "Focus Energy",
       "13": "Karate Chop",
       "19": "Seismic Toss",
       "22": "Foresight",
@@ -4053,6 +4157,9 @@
   "machamp": {
     "level": {
       "1": "Low Kick",
+      "2": "Leer",
+      "3": "Focus Energy",
+      "7": "Focus Energy",
       "13": "Karate Chop",
       "19": "Seismic Toss",
       "22": "Foresight",
@@ -4168,6 +4275,10 @@
   "weepinbell": {
     "level": {
       "1": "Wrap",
+      "2": "Growth",
+      "3": "Wrap",
+      "6": "Growth",
+      "11": "Wrap",
       "15": "Sleep Powder",
       "17": "Poison Powder",
       "19": "Stun Spore",
@@ -4210,7 +4321,14 @@
   },
   "victreebel": {
     "level": {
-      "1": "Vine Whip"
+      "1": "Stockpile",
+      "2": "Swallow",
+      "3": "Spit Up",
+      "4": "Vine Whip",
+      "5": "Sweet Scent",
+      "6": "Razor Leaf",
+      "7": "Sleep Powder"
+
     },
     "tm": [
       "Attract",
@@ -4305,6 +4423,10 @@
   "tentacruel": {
     "level": {
       "1": "Supersonic",
+      "2": "Poison Sting",
+      "3": "Constrict",
+      "6": "Supersonic",
+      "12": "Constrict",
       "19": "Acid",
       "25": "Bubble Beam",
       "30": "Wrap",
@@ -4353,6 +4475,7 @@
   "geodude": {
     "level": {
       "1": "Tackle",
+      "2": "Defense Curl",
       "6": "Mud Sport",
       "11": "Rock Throw",
       "16": "Magnitude",
@@ -4417,6 +4540,11 @@
   "graveler": {
     "level": {
       "1": "Tackle",
+      "2": "Defense Curl",
+      "3": "Mud Sport",
+      "4": "Rock Throw",
+      "6": "Mud Sport",
+      "11": "Rock Throw",
       "16": "Magnitude",
       "21": "Self-Destruct",
       "29": "Rollout",
@@ -4475,6 +4603,11 @@
   "golem": {
     "level": {
       "1": "Tackle",
+      "2": "Defense Curl",
+      "3": "Mud Sport",
+      "4": "Rock Throw",
+      "6": "Mud Sport",
+      "11": "Rock Throw",
       "16": "Magnitude",
       "21": "Self-Destruct",
       "29": "Rollout",
@@ -4536,7 +4669,7 @@
   },
   "ponyta": {
     "level": {
-      "1": "Tackle",
+      "1": "Quick Attack",
       "5": "Growl",
       "9": "Tail Whip",
       "14": "Ember",
@@ -4588,7 +4721,13 @@
   },
   "rapidash": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Quick Attack",
+      "2": "Growl",
+      "3": "Tail Whip",
+      "4": "Ember",
+      "5": "Growl",
+      "9": "Tail Whip",
+      "14": "Ember",
       "19": "Stomp",
       "25": "Fire Spin",
       "31": "Take Down",
@@ -4632,7 +4771,9 @@
   },
   "slowpoke": {
     "level": {
-      "1": "Yawn",
+      "1": "Curse",
+      "2": "Tackle",
+      "3": "Yawn",
       "6": "Growl",
       "13": "Water Gun",
       "17": "Confusion",
@@ -4703,7 +4844,11 @@
   },
   "slowbro": {
     "level": {
-      "1": "Yawn",
+      "1": "Curse",
+      "2": "Tackle",
+      "3": "Yawn",
+      "4": "Growl",
+      "6": "Growl",
       "13": "Water Gun",
       "17": "Confusion",
       "24": "Disable",
@@ -4777,7 +4922,9 @@
   },
   "slowking": {
     "level": {
-      "1": "Yawn",
+      "1": "Curse",
+      "2": "Tackle",
+      "3": "Yawn",
       "6": "Growl",
       "13": "Water Gun",
       "17": "Confusion",
@@ -4851,7 +4998,8 @@
   },
   "magnemite": {
     "level": {
-      "1": "Tackle",
+      "1": "Metal Sound",
+      "2": "Tackle",
       "6": "Thunder Shock",
       "11": "Supersonic",
       "16": "Sonic Boom",
@@ -4896,7 +5044,12 @@
   },
   "magneton": {
     "level": {
-      "1": "Thunder Shock",
+      "1": "Tackle",
+      "2": "Metal Sound",
+      "3": "Thunder Shock",
+      "4": "Supersonic",
+      "6": "Thunder Shock",
+      "11": "Supersonic",
       "16": "Sonic Boom",
       "21": "Thunder Wave",
       "26": "Spark",
@@ -4998,6 +5151,7 @@
   "doduo": {
     "level": {
       "1": "Peck",
+      "2": "Growl",
       "9": "Pursuit",
       "13": "Fury Attack",
       "21": "Tri Attack",
@@ -5047,7 +5201,12 @@
   },
   "dodrio": {
     "level": {
-      "1": "Pursuit",
+      "1": "Peck",
+      "2": "Growl",
+      "3": "Pursuit",
+      "4": "Fury Attack",
+      "9": "Pursuit",
+      "13": "Fury Attack",
       "21": "Tri Attack",
       "25": "Rage",
       "38": "UpRoar",
@@ -5147,6 +5306,13 @@
   "dewgong": {
     "level": {
       "1": "Signal Beam",
+      "2": "Headbutt",
+      "3": "Growl",
+      "4": "Icy Wind",
+      "5": "Aurora Beam",
+      "9": "Growl",
+      "17": "Icy Wind",
+      "21": "Aurora Beam",
       "29": "Rest",
       "34": "Sheer Cold",
       "42": "Take Down",
@@ -5191,7 +5357,8 @@
   },
   "grimer": {
     "level": {
-      "1": "Pound",
+      "1": "Poison Gas",
+      "2": "Pound",
       "4": "Harden",
       "8": "Disable",
       "13": "Sludge",
@@ -5255,7 +5422,10 @@
   },
   "muk": {
     "level": {
-      "1": "Pound",
+      "1": "Poison Gas",
+      "2": "Pound",
+      "3": "Harden",
+      "4": "Harden",
       "8": "Disable",
       "13": "Sludge",
       "19": "Minimize",
@@ -5315,14 +5485,15 @@
   },
   "shellder": {
     "level": {
-      "1": "Withdraw",
+      "1": "Tackle",
+      "2": "Withdraw",
       "8": "Icicle Spear",
-      "9": "Supersonic",
-      "17": "Aurora Beam",
-      "25": "Protect",
-      "33": "Leer",
-      "41": "Clamp",
-      "49": "Ice Beam"
+      "15": "Supersonic",
+      "22": "Aurora Beam",
+      "29": "Protect",
+      "36": "Leer",
+      "43": "Clamp",
+      "50": "Ice Beam"
     },
     "tm": [
       "Attract",
@@ -5368,6 +5539,9 @@
   "cloyster": {
     "level": {
       "1": "Withdraw",
+      "2": "Supersonic",
+      "3": "Aurora Beam",
+      "4": "Protect",
       "33": "Spikes",
       "41": "Spike Cannon"
     },
@@ -5409,15 +5583,17 @@
   },
   "gastly": {
     "level": {
-      "1": "Lick",
+      "1": "Hypnosis",
+      "2": "Lick",
       "8": "Spite",
-      "13": "Mean Look",
+      "13": "Curse",
       "16": "Night Shade",
       "21": "Confuse Ray",
       "28": "Dream Eater",
       "33": "Destiny Bond",
       "36": "Shadow Ball",
-      "41": "Nightmare"
+      "41": "Nightmare",
+      "48": "Mean Look"
     },
     "tm": [
       "Attract",
@@ -5468,15 +5644,19 @@
   },
   "haunter": {
     "level": {
-      "1": "Spite",
-      "13": "Mean Look",
+      "1": "Hypnosis",
+      "2": "Lick",
+      "3": "Spite",
+      "8": "Spite",
+      "13": "Curse",
       "16": "Night Shade",
       "21": "Confuse Ray",
       "25": "Shadow Punch",
       "31": "Dream Eater",
       "39": "Destiny Bond",
       "45": "Shadow Ball",
-      "53": "Nightmare"
+      "53": "Nightmare",
+      "64": "Mean Look"
     },
     "tm": [
       "Attract",
@@ -5519,15 +5699,19 @@
   },
   "gengar": {
     "level": {
-      "1": "Spite",
-      "13": "Mean Look",
+      "1": "Hypnosis",
+      "2": "Lick",
+      "3": "Spite",
+      "8": "Spite",
+      "13": "Curse",
       "16": "Night Shade",
       "21": "Confuse Ray",
       "25": "Shadow Punch",
       "31": "Dream Eater",
       "39": "Destiny Bond",
       "45": "Shadow Ball",
-      "53": "Nightmare"
+      "53": "Nightmare",
+      "64": "Mean Look"
     },
     "tm": [
       "Attract",
@@ -5588,15 +5772,16 @@
   "onix": {
     "level": {
       "1": "Tackle",
+      "2": "Screech",
       "8": "Bind",
       "12": "Rock Throw",
       "19": "Harden",
       "23": "Rage",
       "30": "Dragon Breath",
-      "33": "Sandstorm",
-      "37": "Slam",
+      "34": "Sandstorm",
+      "41": "Slam",
       "45": "Iron Tail",
-      "49": "Sand Tomb",
+      "52": "Sand Tomb",
       "56": "Double-Edge"
     },
     "tm": [
@@ -5647,15 +5832,16 @@
   "steelix": {
     "level": {
       "1": "Tackle",
+      "2": "Screech",
       "8": "Bind",
       "12": "Rock Throw",
       "19": "Harden",
       "23": "Rage",
       "30": "Dragon Breath",
-      "33": "Sandstorm",
-      "37": "Slam",
+      "34": "Sandstorm",
+      "41": "Slam",
       "45": "Iron Tail",
-      "49": "Crunch",
+      "52": "Crunch",
       "56": "Double-Edge"
     },
     "tm": [
@@ -5704,6 +5890,7 @@
   "drowzee": {
     "level": {
       "1": "Pound",
+      "2": "Hypnosis",
       "7": "Disable",
       "11": "Confusion",
       "17": "Headbutt",
@@ -5776,7 +5963,13 @@
   },
   "hypno": {
     "level": {
-      "1": "Pound",
+      "1": "Nightmare",
+      "2": "Pound",
+      "3": "Hypnosis",
+      "4": "Disable",
+      "5": "Confusion",
+      "7": "Disable",
+      "11": "Confusion",
       "17": "Headbutt",
       "21": "Poison Gas",
       "29": "Meditate",
@@ -5903,7 +6096,14 @@
   },
   "kingler": {
     "level": {
-      "1": "Vice Grip",
+      "1": "Metal Claw",
+      "2": "Bubble",
+      "3": "Leer",
+      "4": "Vice Grip",
+      "5": "Harden",
+      "6": "Leer",
+      "12": "Vice Grip",
+      "16": "Harden",
       "23": "Mud Shot",
       "27": "Stomp",
       "38": "Guillotine",
@@ -5955,7 +6155,8 @@
   },
   "voltorb": {
     "level": {
-      "1": "Tackle",
+      "1": "Charge",
+      "2": "Tackle",
       "8": "Screech",
       "15": "Sonic Boom",
       "21": "Spark",
@@ -6003,7 +6204,12 @@
   },
   "electrode": {
     "level": {
-      "1": "Tackle",
+      "1": "Charge",
+      "2": "Tackle",
+      "3": "Screech",
+      "4": "Sonic Boom",
+      "8": "Screech",
+      "15": "Sonic Boom",
       "21": "Spark",
       "27": "Self-Destruct",
       "34": "Rollout",
@@ -6051,6 +6257,8 @@
   "exeggcute": {
     "level": {
       "1": "UpRoar",
+      "2": "Barrage",
+      "3": "Hypnosis",
       "7": "Reflect",
       "13": "Leech Seed",
       "19": "Confusion",
@@ -6110,7 +6318,9 @@
   },
   "exeggutor": {
     "level": {
-      "1": "Hypnosis",
+      "1": "Confusion",
+      "2": "Barrage",
+      "3": "Hypnosis",
       "19": "Stomp",
       "31": "Egg Bomb"
     },
@@ -6232,7 +6442,13 @@
   },
   "marowak": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Growl",
+      "2": "Tail Whip",
+      "3": "Bone Club",
+      "4": "Headbutt",
+      "5": "Tail Whip",
+      "9": "Bone Club",
+      "13": "Headbutt",
       "17": "Leer",
       "21": "Focus Energy",
       "25": "Bonemerang",
@@ -6343,7 +6559,8 @@
   },
   "hitmonlee": {
     "level": {
-      "1": "Revenge",
+      "1": "Double Kick",
+      "2": "Revenge",
       "6": "Meditate",
       "11": "Rolling Kick",
       "16": "jumpkick",
@@ -6401,7 +6618,8 @@
   },
   "hitmonchan": {
     "level": {
-      "1": "Revenge",
+      "1": "Comet Punch",
+      "2": "Revenge",
       "7": "Agility",
       "13": "Pursuit",
       "20": "Mach Punch",
@@ -6460,6 +6678,7 @@
   "hitmontop": {
     "level": {
       "1": "Rolling Kick",
+      "2": "Revenge",
       "7": "Focus Energy",
       "13": "Pursuit",
       "19": "Quick Attack",
@@ -6600,7 +6819,8 @@
   },
   "koffing": {
     "level": {
-      "1": "Tackle",
+      "1": "Poison Gas",
+      "2": "Tackle",
       "9": "Smog",
       "17": "Self-Destruct",
       "21": "Sludge",
@@ -6657,7 +6877,12 @@
   },
   "weezing": {
     "level": {
-      "1": "Tackle",
+      "1": "Poison Gas",
+      "2": "Tackle",
+      "3": "Smog",
+      "4": "Self-Destruct",
+      "9": "Smog",
+      "17": "Self-Destruct",
       "21": "Sludge",
       "25": "Smokescreen",
       "33": "Haze",
@@ -6706,7 +6931,8 @@
   },
   "rhyhorn": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Horn Attack",
+      "2": "Tail Whip",
       "10": "Stomp",
       "15": "Fury Attack",
       "24": "Scary Face",
@@ -6775,7 +7001,12 @@
   },
   "rhydon": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Horn Attack",
+      "2": "Tail Whip",
+      "3": "Stomp",
+      "4": "Fury Attack",
+      "10": "Stomp",
+      "15": "Fury Attack",
       "24": "Scary Face",
       "29": "Rock Blast",
       "38": "Horn Drill",
@@ -6846,6 +7077,7 @@
   "chansey": {
     "level": {
       "1": "Pound",
+      "2": "Growl",
       "5": "Tail Whip",
       "9": "Refresh",
       "13": "Soft-Boiled",
@@ -6933,6 +7165,7 @@
   "blissey": {
     "level": {
       "1": "Pound",
+      "2": "Growl",
       "4": "Tail Whip",
       "7": "Refresh",
       "10": "Soft-Boiled",
@@ -7013,6 +7246,7 @@
   "tangela": {
     "level": {
       "1": "Ingrain",
+      "2": "Constrict",
       "4": "Sleep Powder",
       "10": "Absorb",
       "13": "Growth",
@@ -7070,7 +7304,8 @@
   },
   "kangaskhan": {
     "level": {
-      "1": "Leer",
+      "1": "Comet Punch",
+      "2": "Leer",
       "7": "Bite",
       "13": "Tail Whip",
       "19": "Fake Out",
@@ -7207,7 +7442,13 @@
   },
   "seadra": {
     "level": {
-      "1": "Water Gun",
+      "1": "Bubble",
+      "2": "Smokescreen",
+      "3": "Leer",
+      "4": "Water Gun",
+      "8": "Smokescreen",
+      "15": "Leer",
+      "22": "Water Gun",
       "29": "Twister",
       "40": "Agility",
       "51": "Hydro Pump",
@@ -7249,7 +7490,13 @@
   },
   "kingdra": {
     "level": {
-      "1": "Water Gun",
+      "1": "Bubble",
+      "2": "Smokescreen",
+      "3": "Leer",
+      "4": "Water Gun",
+      "8": "Smokescreen",
+      "15": "Leer",
+      "22": "Water Gun",
       "29": "Twister",
       "40": "Agility",
       "51": "Hydro Pump",
@@ -7292,7 +7539,9 @@
   },
   "goldeen": {
     "level": {
-      "1": "Water Sport",
+      "1": "Peck",
+      "2": "Tail Whip",
+      "3": "Water Sport",
       "10": "Supersonic",
       "15": "Horn Attack",
       "24": "Flail",
@@ -7343,7 +7592,11 @@
   },
   "seaking": {
     "level": {
-      "1": "Water Sport",
+      "1": "Peck",
+      "2": "Tail Whip",
+      "3": "Water Sport",
+      "4": "Supersonic",
+      "10": "Supersonic",
       "15": "Horn Attack",
       "24": "Flail",
       "29": "Fury Attack",
@@ -7389,6 +7642,7 @@
   "staryu": {
     "level": {
       "1": "Tackle",
+      "2": "Harden",
       "6": "Water Gun",
       "10": "Rapid Spin",
       "15": "Recover",
@@ -7443,6 +7697,9 @@
   "starmie": {
     "level": {
       "1": "Water Gun",
+      "2": "Rapid Spin",
+      "3": "Recover",
+      "4": "Swift",
       "33": "Confuse Ray"
     },
     "tm": [
@@ -7496,9 +7753,10 @@
       "8": "Substitute",
       "12": "Meditate",
       "15": "Double Slap",
+      "18": "Light Screen",
       "19": "Reflect",
       "22": "Magical Leaf",
-      "25": "Encore",
+      "26": "Encore",
       "29": "Psybeam",
       "33": "Recycle",
       "36": "Trick",
@@ -7575,6 +7833,7 @@
   "scyther": {
     "level": {
       "1": "Quick Attack",
+      "2": "Leer",
       "6": "Focus Energy",
       "11": "Pursuit",
       "16": "False Swipe",
@@ -7632,6 +7891,7 @@
   "scizor": {
     "level": {
       "1": "Quick Attack",
+      "2": "Leer",
       "6": "Focus Energy",
       "11": "Pursuit",
       "16": "False Swipe",
@@ -7682,6 +7942,7 @@
   "smoochum": {
     "level": {
       "1": "Pound",
+      "2": "Lick",
       "9": "Sweet Kiss",
       "13": "Powder Snow",
       "21": "Confusion",
@@ -7749,7 +8010,12 @@
   },
   "jynx": {
     "level": {
-      "1": "Powder Snow",
+      "1": "Pound",
+      "2": "Lick",
+      "3": "Sweet Kiss",
+      "4": "Powder Snow",
+      "9": "Sweet Kiss",
+      "13": "Powder Snow",
       "21": "Double Slap",
       "25": "Ice Punch",
       "35": "Mean Look",
@@ -7815,6 +8081,7 @@
   "elekid": {
     "level": {
       "1": "Quick Attack",
+      "2": "Leer",
       "9": "Thunder Punch",
       "17": "Light Screen",
       "25": "Swift",
@@ -7878,7 +8145,10 @@
   },
   "electabuzz": {
     "level": {
-      "1": "Thunder Punch",
+      "1": "Quick Attack",
+      "2": "Leer",
+      "3": "Thunder Punch",
+      "9": "Thunder Punch",
       "17": "Light Screen",
       "25": "Swift",
       "36": "Screech",
@@ -7996,7 +8266,13 @@
   },
   "magmar": {
     "level": {
-      "1": "Smog",
+      "1": "Ember",
+      "2": "Leer",
+      "3": "Smog",
+      "4": "Fire Punch",
+      "7": "Leer",
+      "13": "Smog",
+      "19": "Fire Punch",
       "25": "Smokescreen",
       "33": "Sunny Day",
       "41": "Flamethrower",
@@ -8049,6 +8325,7 @@
   "pinsir": {
     "level": {
       "1": "Vice Grip",
+      "2": "Focus Energy",
       "7": "Bind",
       "13": "Seismic Toss",
       "19": "Harden",
@@ -8106,7 +8383,8 @@
   },
   "tauros": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
       "4": "Rage",
       "8": "Horn Attack",
       "13": "Scary Face",
@@ -8231,6 +8509,8 @@
   "lapras": {
     "level": {
       "1": "Water Gun",
+      "2": "Growl",
+      "3": "Sing",
       "7": "Mist",
       "13": "Body Slam",
       "19": "Confuse Ray",
@@ -8305,7 +8585,9 @@
   },
   "eevee": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Helping Hand",
       "8": "Sand Attack",
       "16": "Growl",
       "23": "Quick Attack",
@@ -8353,7 +8635,9 @@
   },
   "vaporeon": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Helping Hand",
       "8": "Sand Attack",
       "16": "Water Gun",
       "23": "Quick Attack",
@@ -8406,7 +8690,9 @@
   },
   "jolteon": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Helping Hand",
       "8": "Sand Attack",
       "16": "Thunder Shock",
       "23": "Quick Attack",
@@ -8456,7 +8742,9 @@
   },
   "flareon": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Helping Hand",
       "8": "Sand Attack",
       "16": "Ember",
       "23": "Quick Attack",
@@ -8504,7 +8792,9 @@
   },
   "espeon": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Helping Hand",
       "8": "Sand Attack",
       "16": "Confusion",
       "23": "Quick Attack",
@@ -8558,7 +8848,9 @@
   },
   "umbreon": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Helping Hand",
       "8": "Sand Attack",
       "16": "Pursuit",
       "23": "Quick Attack",
@@ -8612,6 +8904,8 @@
   "porygon": {
     "level": {
       "1": "Tackle",
+      "2": "Conversion",
+      "3": "Conversion 2",
       "9": "Agility",
       "12": "Psybeam",
       "20": "Recover",
@@ -8667,6 +8961,8 @@
   "porygon2": {
     "level": {
       "1": "Tackle",
+      "2": "Conversion",
+      "3": "Conversion 2",
       "9": "Agility",
       "12": "Psybeam",
       "20": "Recover",
@@ -8722,7 +9018,8 @@
   },
   "omanyte": {
     "level": {
-      "1": "Withdraw",
+      "1": "Constrict",
+      "2": "Withdraw",
       "13": "Bite",
       "19": "Water Gun",
       "25": "Mud Shot",
@@ -8781,7 +9078,12 @@
   },
   "omastar": {
     "level": {
-      "1": "Withdraw",
+      "1": "Constrict",
+      "2": "Withdraw",
+      "3": "Bite",
+      "4": "Water Gun",
+      "13": "Bite",
+      "19": "Water Gun",
       "25": "Mud Shot",
       "31": "Leer",
       "37": "Protect",
@@ -8834,6 +9136,7 @@
   "kabuto": {
     "level": {
       "1": "Scratch",
+      "2": "Harden",
       "13": "Absorb",
       "19": "Leer",
       "25": "Mud Shot",
@@ -8894,7 +9197,13 @@
   },
   "kabutops": {
     "level": {
-      "1": "Scratch",
+      "1": "Fury Cutter",
+      "2": "Scratch",
+      "3": "Harden",
+      "4": "Absorb",
+      "5": "Leer",
+      "13": "Absorb",
+      "19": "Leer",
       "25": "Mud Shot",
       "31": "Sand Attack",
       "37": "endure",
@@ -9024,12 +9333,13 @@
       "17": "Headbutt",
       "21": "Yawn",
       "25": "Rest",
-      "28": "Snore",
+      "29": "Snore",
       "33": "Body Slam",
       "37": "Sleep Talk",
-      "42": "Covet",
-      "46": "Rollout",
-      "51": "Hyper Beam"
+      "41": "Block",
+      "45": "Covet",
+      "49": "Rollout",
+      "53": "Hyper Beam"
     },
     "tm": [
       "Attract",
@@ -9101,7 +9411,8 @@
   },
   "articuno": {
     "level": {
-      "1": "Powder Snow",
+      "1": "Gust",
+      "2": "Powder Snow",
       "13": "Mist",
       "25": "Agility",
       "37": "Mind Reader",
@@ -9152,7 +9463,8 @@
   },
   "zapdos": {
     "level": {
-      "1": "Thunder Shock",
+      "1": "Peck",
+      "2": "Thunder Shock",
       "13": "Thunder Wave",
       "25": "Agility",
       "37": "Detect",
@@ -9204,6 +9516,7 @@
   "moltres": {
     "level": {
       "1": "Wing Attack",
+      "2": "Ember",
       "13": "Fire Spin",
       "25": "Agility",
       "37": "endure",
@@ -9253,6 +9566,7 @@
   "dratini": {
     "level": {
       "1": "Wrap",
+      "2": "Leer",
       "8": "Thunder Wave",
       "15": "Twister",
       "22": "Dragon Rage",
@@ -9315,6 +9629,11 @@
   "dragonair": {
     "level": {
       "1": "Wrap",
+      "2": "Leer",
+      "3": "Thunder Wave",
+      "4": "Twister",
+      "8": "Thunder Wave",
+      "15": "Twister",
       "22": "Dragon Rage",
       "29": "Slam",
       "38": "Agility",
@@ -9368,6 +9687,11 @@
   "dragonite": {
     "level": {
       "1": "Wrap",
+      "2": "Leer",
+      "3": "Thunder Wave",
+      "4": "Twister",
+      "8": "Thunder Wave",
+      "15": "Twister",
       "22": "Dragon Rage",
       "29": "Slam",
       "38": "Agility",
@@ -9441,14 +9765,17 @@
   },
   "mewtwo": {
     "level": {
-      "1": "Disable",
+      "1": "Confusion",
+      "2": "Disable",
       "11": "Barrier",
-      "22": "Swift",
-      "33": "Psych Up",
+      "22": "Mist",
+      "33": "Swift",
       "44": "Recover",
       "55": "Safeguard",
       "66": "Psychic",
-      "77": "Amnesia"
+      "77": "Psych Up",
+      "88": "Future Sight",
+      "99": "Amnesia"
     },
     "tm": [
       "Aerial Ace",
