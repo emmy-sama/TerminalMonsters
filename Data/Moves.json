@@ -2367,7 +2367,8 @@
       "Mirror",
       "Protect",
       "Secondary",
-      "Status"
+      "Status",
+      "Thaws"
     ]
   },
   {
@@ -6171,7 +6172,8 @@
       "Mirror",
       "Protect",
       "Secondary",
-      "Status"
+      "Status",
+      "Thaws"
     ]
   }
 ]

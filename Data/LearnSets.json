@@ -11148,7 +11148,7 @@
       "3": "Charm",
       "4": "Metronome",
       "5": "Sweet Kiss",
-      "4": "Metronome",
+      "6": "Metronome",
       "9": "Sweet Kiss",
       "13": "Yawn",
       "17": "Encore",
@@ -23180,7 +23180,7 @@
   },
   "testmon": {
     "level": {
-      "1": "Psych Up",
+      "1": "Toxic",
       "2": "Haze",
       "3": "Rain Dance",
       "4": "Sandstorm",

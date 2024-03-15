@@ -9169,8 +9169,7 @@
     "Weight": 6.9,
     "Height": 0.7,
     "types": [
-      "Grass",
-      "Poison"
+      "Grass"
     ],
     "Abilities": [
       "Overgrow"
