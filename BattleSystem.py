@@ -1,4 +1,4 @@
-import math
+import random
 
 from Classes import *
 from bearlibterminal import terminal
@@ -1714,57 +1714,46 @@ class Battle:
         if "Status" in move.get("flags"):
             if move.get("status") == "BRN":
                 if defender.status != "":
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} is already burned!")
+                    pass
                 elif defender.type_one != "Fire" and defender.type_two != "Fire":
-                    defender.status = "BRN"
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} was burned!")
-                else:
-                    self.print_txt("It has no effect!")
+                    if random.uniform(0, 1) <= move.get("chance"):
+                        defender.status = "BRN"
+                        self.print_txt(f"{defender.owner.name}'s {defender.species} was burned!")
             elif move.get("status") == "FRZ":
                 if defender.status != "":
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} is already frozen!")
+                    pass
                 elif defender.type_one != "Ice" and defender.type_two != "Ice":
-                    defender.status = "FRZ"
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} was frozen!")
-                else:
-                    self.print_txt("It has no effect!")
+                    if random.uniform(0, 1) <= move.get("chance"):
+                        defender.status = "FRZ"
+                        self.print_txt(f"{defender.owner.name}'s {defender.species} was frozen!")
             elif move.get("status") == "PAR":
                 if defender.status != "":
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} is already paralyzed!")
+                    pass
                 else:
-                    defender.status = "PAR"
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} was paralyzed!")
+                    if random.uniform(0, 1) <= move.get("chance"):
+                        defender.status = "PAR"
+                        self.print_txt(f"{defender.owner.name}'s {defender.species} was paralyzed!")
             elif (move.get("status") == "PSN" and defender.type_one != "Poison"
                   and defender.type_two != "Poison" and defender.type_one != "Steel"
                   and defender.type_two != "Steel"):
                 if defender.status != "":
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} is already poisoned!")
+                    pass
                 elif (defender.type_one != "Poison" and defender.type_two != "Poison" and
                       defender.type_one != "Steel" and defender.type_two != "Steel"):
-                    defender.status = "PSN"
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} was poisoned!")
-                else:
-                    self.print_txt("It has no effect!")
+                    if random.uniform(0, 1) <= move.get("chance"):
+                        defender.status = "PSN"
+                        self.print_txt(f"{defender.owner.name}'s {defender.species} was poisoned!")
             elif (move.get("status") == "TOX" and defender.type_one != "Poison"
                   and defender.type_two != "Poison" and defender.type_one != "Steel"
                   and defender.type_two != "Steel"):
                 if defender.status != "":
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} is already poisoned!")
+                    pass
                 elif (defender.type_one != "Poison" and defender.type_two != "Poison" and
                       defender.type_one != "Steel" and defender.type_two != "Steel"):
-                    defender.status = "TOX"
-                    defender.tox_turns = 0
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} was badly poisoned!")
-                else:
-                    self.print_txt("It has no effect!")
-            elif move.get("status") == "SLP":
-                if defender.status != "":
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} is already asleep!")
-                elif attacker.uproar != 0 or defender.uproar != 0:
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} cannot fall asleep due to the uproar!")
-                else:
-                    defender.status = "SLP"
-                    self.print_txt(f"{defender.owner.name}'s {defender.species} is fast asleep")
+                    if random.uniform(0, 1) <= move.get("chance"):
+                        defender.status = "TOX"
+                        defender.tox_turns = 0
+                        self.print_txt(f"{defender.owner.name}'s {defender.species} was badly poisoned!")
         if "Leech" in move.get("flags"):
             if math.floor(dmg * 0.5) == 0:
                 self.deal_dmg(attacker, -1)

@@ -4,22 +4,24 @@ from Classes import *
 print("Close me to close program")
 terminal.open()
 terminal.set("window: size=88x25")
-terminal.set("0xE001: data/BackSprites.png, size=333x333, align=center")
-terminal.set("0xE305: data/FrontSprites.png, size=333x333, align=center")
-terminal.set("0xF8FF: data/Background.png")
-terminal.set("0xF8FD: data/Background2.png")
-terminal.set("0xF8FC: data/BlankBackground.png")
-terminal.set("0xF8FB: data/Random.png, align=center")
-terminal.set("0x2640: data/Female_symbol.png, align=center")
-terminal.set("0x2642: data/Male_symbol.png, align=center")
+terminal.set("0xE001: data/pngs/BackSprites.png, size=333x333, align=center")
+terminal.set("0xE305: data/pngs/FrontSprites.png, size=333x333, align=center")
+terminal.set("0xF8FF: data/pngs/Background.png")
+terminal.set("0xF8FD: data/pngs/Background2.png")
+terminal.set("0xF8FC: data/pngs/BlankBackground.png")
+terminal.set("0xF8FB: data/pngs/Random.png, align=center")
+terminal.set("0xF8FA: data/pngs/Sun.png, align=center")
+terminal.set("0xF8F9: data/pngs/Forest.png, align=center")
+terminal.set("0xF8F8: data/pngs/Cave.png, align=center")
+terminal.set("0xF8F7: data/pngs/Ocean.png, align=center")
+terminal.set("0xF8F6: data/pngs/City.png, align=center")
+terminal.set("0xF8F5: data/pngs/moon.png, align=center")
+terminal.set("0x2640: data/pngs/Female_symbol.png, align=center")
+terminal.set("0x2642: data/pngs/Male_symbol.png, align=center")
 terminal.set("font: data/pokemon.ttf, size=16")
-
-rival = "Gary"
 
 
 def print_exp(lvl, txt=None):
-    for mons in player.team:
-        mons.level_up(lvl)
     terminal.clear()
     terminal.put(0, 0, 0xF8FC)
     if txt is None:
@@ -28,6 +30,9 @@ def print_exp(lvl, txt=None):
         terminal.printf(20, 6, txt)
     terminal.refresh()
     time.sleep(2)
+    terminal.clear()
+    for mons in player.team:
+        mons.level_up(lvl)
 
 
 def print_txt(txt):
@@ -37,6 +42,7 @@ def print_txt(txt):
     terminal.refresh()
     time.sleep(2)
 
+
 def poke_center():
     for mons in player.team:
         mons.chp = mons.hp
@@ -45,13 +51,19 @@ def poke_center():
 def catch_pokemon(lvl):
     terminal.clear()
     terminal.put(0, 0, 0xF8FC)
-    terminal.printf(22, 6, "What type of route would you like to go to?")
-    terminal.printf(9, 9, "1 Normal")
-    terminal.printf(37, 9, "2 Forest")
-    terminal.printf(69, 9, "3 Cave")
-    terminal.printf(9, 18, "4 Water")
-    terminal.printf(37, 18, "5 City")
-    terminal.printf(69, 18, "6 Night")
+    terminal.printf(22, 1, "What type of route would you like to go to?")
+    terminal.printf(9, 5, "1 Normal")
+    terminal.put(13, 10, 0xF8FA)
+    terminal.printf(37, 5, "2 Forest")
+    terminal.put(41, 10, 0xF8F9)
+    terminal.printf(69, 5, "3 Cave")
+    terminal.put(73, 10, 0xF8F8)
+    terminal.printf(9, 15, "4 Water")
+    terminal.put(13, 20, 0xF8F7)
+    terminal.printf(37, 15, "5 City")
+    terminal.put(41, 20, 0xF8F6)
+    terminal.printf(69, 15, "6 Night")
+    terminal.put(73, 20, 0xF8F5)
     terminal.refresh()
     while True:
         button = terminal.read()
@@ -81,10 +93,14 @@ def catch_pokemon(lvl):
         if p.get("Species") == mon_1:
             mon_1 = p
     mon_2 = random.choice(encounters.get(route).get(lvl))
+    while mon_2 == mon_1:
+        mon_2 = random.choice(encounters.get(route).get(lvl))
     for p in pokedex:
         if p.get("Species") == mon_2:
             mon_2 = p
     mon_3 = random.choice(encounters.get(route).get(lvl))
+    while mon_3 == mon_2 or mon_3 == mon_1:
+        mon_3 = random.choice(encounters.get(route).get(lvl))
     for p in pokedex:
         if p.get("Species") == mon_3:
             mon_3 = p
@@ -93,13 +109,13 @@ def catch_pokemon(lvl):
     terminal.printf(22, 6, "What pokemon would you like to try and catch?")
     terminal.printf(9, 18, f"1 {mon_1.get("Species")}")
     terminal.put(14, 12, int(random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_1.get("dex_number")) + 58116),
-                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_1.get("dex_number")) + 58117)]), 16))
+                                            hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_1.get("dex_number")) + 58117)]), 16))
     terminal.printf(37, 18, f"2 {mon_2.get("Species")}")
     terminal.put(42, 12, int(random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_2.get("dex_number")) + 58116),
-                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_2.get("dex_number")) + 58117)]), 16))
+                                            hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_2.get("dex_number")) + 58117)]), 16))
     terminal.printf(69, 18, f"3 {mon_3.get("Species")}")
     terminal.put(74, 12, int(random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_3.get("dex_number")) + 58116),
-                                          hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_3.get("dex_number")) + 58117)]), 16))
+                                            hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_3.get("dex_number")) + 58117)]), 16))
     terminal.printf(37, 21, "4 Pass")
     terminal.refresh()
     while True:
@@ -167,9 +183,13 @@ def catch_pokemon(lvl):
 
 terminal.put(0, 0, 0xF8FC)
 terminal.printf(29, 7, "What is your name?: ")
-player_name = terminal.read_str(49
-                                , 7, "", 12)[1]
+player_name = terminal.read_str(49, 7, "", 12)[1]
 player = Player(player_name, [])
+terminal.clear()
+terminal.put(0, 0, 0xF8FC)
+terminal.printf(29, 7, "What is your rival's name?: ")
+rival_name = terminal.read_str(57, 7, "", 12)[1]
+rival = Ai(rival_name, [])
 terminal.clear()
 terminal.printf(29, 7, "What starter would you like?")
 terminal.put(0, 0, 0xF8FC)
@@ -207,13 +227,12 @@ player.team.append(player_starter)
 catch_pokemon("lvl9")
 print_exp(9)
 poke_center()
-print_txt(f"You stumble into your rival {rival} and they challenge you to a battle!")
+print_txt(f"You stumble into your rival {rival.name} and they challenge you to a battle!")
 terminal.clear()
 
-rival_1 = Player(f"{rival}", [])
-rival_1.team = [Pokemon("Rattata", rival_1, 7), Pokemon("Treecko", rival_1, 9)]
+rival.team = [Pokemon("Rattata", rival, 7), Pokemon("Treecko", rival, 9)]
 
-rival1_battle = Battle(player, rival_1)
+rival1_battle = Battle(player, rival)
 rival1_battle.battle()
 
 # Gym 1
@@ -223,7 +242,7 @@ poke_center()
 print_txt(f"You enter the Rustboro City gym and challenge its leader Roxanne!")
 terminal.clear()
 
-roxanne = Player("Roxanne", [])
+roxanne = Ai("Roxanne", [])
 roxanne.team = [Pokemon("Geodude", roxanne, 12), Pokemon("Geodude", roxanne, 12),
                 Pokemon("Nosepass", roxanne, 14)]
 
@@ -238,7 +257,7 @@ poke_center()
 print_txt(f"You enter the Dewford Town gym and challenge its leader Brawly!")
 terminal.clear()
 
-brawly = Player("Brawly", [])
+brawly = Ai("Brawly", [])
 brawly.team = [Pokemon("Machop", brawly, 17), Pokemon("Meditite", brawly, 17),
                Pokemon("Makuhita", brawly, 20)]
 
@@ -254,7 +273,7 @@ poke_center()
 print_txt(f"You enter the Mauville City gym and challenge its leader Wattson!")
 terminal.clear()
 
-wattson = Player("Wattson", [])
+wattson = Ai("Wattson", [])
 wattson.team = [Pokemon("Voltorb", wattson, 22), Pokemon("Electrike", wattson, 22),
                 Pokemon("Magneton", wattson, 24), Pokemon("Manectric", wattson, 26)]
 
@@ -270,7 +289,7 @@ poke_center()
 print_txt(f"You enter the Lavaridge Town gym and challenge its leader Flannery!")
 terminal.clear()
 
-flannery = Player("Flannery", [])
+flannery = Ai("Flannery", [])
 flannery.team = [Pokemon("Numel", flannery, 25), Pokemon("Slugma", flannery, 25),
                  Pokemon("Camerupt", flannery, 27), Pokemon("Torkoal", flannery, 30)]
 
@@ -281,15 +300,14 @@ gym4_battle.battle()
 catch_pokemon("lvl36")
 print_exp(36)
 poke_center()
-print_txt(f"You stumble into your rival {rival} and they challenge you to a battle!")
+print_txt(f"You stumble into your rival {rival.name} and they challenge you to a battle!")
 terminal.clear()
 
-rival_2 = Player(f"{rival}", [])
-rival_2.team = [Pokemon("Raticate", rival_2, 36), Pokemon("Swellow", rival_2, 35),
-                Pokemon("Numel", rival_2, 34), Pokemon("Wailmer", rival_2, 35),
-                Pokemon("Sceptile", rival_2, 36)]
+rival.team = [Pokemon("Raticate", rival, 36), Pokemon("Swellow", rival, 35),
+                Pokemon("Numel", rival, 34), Pokemon("Wailmer", rival, 35),
+                Pokemon("Sceptile", rival, 36)]
 
-rival2_battle = Battle(player, rival_2)
+rival2_battle = Battle(player, rival)
 rival2_battle.battle()
 
 # Gym 5
@@ -300,7 +318,7 @@ poke_center()
 print_txt(f"You enter the Petalburg City gym and challenge its leader Norman!")
 terminal.clear()
 
-norman = Player("Norman", [])
+norman = Ai("Norman", [])
 norman.team = [Pokemon("Spinda", norman, 36), Pokemon("Vigoroth", norman, 36),
                Pokemon("Linoone", norman, 38), Pokemon("Slaking", norman, 40)]
 
@@ -315,7 +333,7 @@ poke_center()
 print_txt(f"You enter the Fortree City gym and challenge its leader Winona!")
 terminal.clear()
 
-winona = Player("Winona", [])
+winona = Ai("Winona", [])
 winona.team = [Pokemon("Swablu", winona, 42), Pokemon("Tropius", winona, 42),
                Pokemon("Pelipper", winona, 43), Pokemon("Skarmory", winona, 44),
                Pokemon("Altaria", winona, 46)]
@@ -331,7 +349,7 @@ poke_center()
 print_txt(f"You enter the Mossdeep City gym and challenge its leader's Tate & Liza!")
 terminal.clear()
 
-tate_liza = Player("Tate&Liza", [])
+tate_liza = Ai("Tate&Liza", [])
 tate_liza.team = [Pokemon("Claydol", tate_liza, 51), Pokemon("Xatu", tate_liza, 51),
                   Pokemon("Lunatone", tate_liza, 52), Pokemon("Solrock", tate_liza, 52)]
 
@@ -346,7 +364,7 @@ poke_center()
 print_txt(f"You enter the Sootopolis City and challenge its leader's Juan!")
 terminal.clear()
 
-juan = Player("Juan", [])
+juan = Ai("Juan", [])
 juan.team = [Pokemon("Luvdisc", juan, 53), Pokemon("Whiscash", juan, 53),
              Pokemon("Sealeo", juan, 55), Pokemon("Crawdaunt", juan, 55),
              Pokemon("Kingdra", juan, 58)]
@@ -359,15 +377,14 @@ catch_pokemon("lvl58")
 catch_pokemon("lvl58")
 print_exp(64)
 poke_center()
-print_txt(f"You stumble into your rival {rival} and they challenge you to a battle!")
+print_txt(f"You stumble into your rival {rival.name} and they challenge you to a battle!")
 terminal.clear()
 
-rival_3 = Player(f"{rival}", [])
-rival_3.team = [Pokemon("Gengar", rival_2, 64), Pokemon("Alakazam", rival_2, 64),
-                Pokemon("Arcanine", rival_2, 64), Pokemon("Wailord", rival_2, 64),
-                Pokemon("Sceptile", rival_2, 64), Pokemon("Dragonite", rival_2, 64)]
+rival.team = [Pokemon("Gengar", rival, 64), Pokemon("Alakazam", rival, 64),
+              Pokemon("Arcanine", rival, 64), Pokemon("Wailord", rival, 64),
+              Pokemon("Sceptile", rival, 64), Pokemon("Dragonite", rival, 64)]
 
-rival3_battle = Battle(player, rival_3)
+rival3_battle = Battle(player, rival)
 rival3_battle.battle()
 
 # Elite4 1
@@ -376,7 +393,7 @@ poke_center()
 print_txt(f"You enter the Elite 4 you challenge member Sidney first!")
 terminal.clear()
 
-sidney = Player("Sidney", [])
+sidney = Ai("Sidney", [])
 sidney.team = [Pokemon("Mightyena", sidney, 67), Pokemon("Shiftry", sidney, 69),
                Pokemon("Cacturne", sidney, 67), Pokemon("Crawdaunt", sidney, 69),
                Pokemon("Absol", sidney, 70)]
@@ -390,7 +407,7 @@ poke_center()
 print_txt(f"Next you challenge Member Phoebe!")
 terminal.clear()
 
-phoebe = Player("Phoebe", [])
+phoebe = Ai("Phoebe", [])
 phoebe.team = [Pokemon("Dusclops", phoebe, 69), Pokemon("Banette", phoebe, 70),
                Pokemon("Sableye", phoebe, 71), Pokemon("Banette", phoebe, 70),
                Pokemon("Dusclops", phoebe, 72)]
@@ -404,7 +421,7 @@ poke_center()
 print_txt(f"Next you challenge Member Glacia!")
 terminal.clear()
 
-glacia = Player("Glacia", [])
+glacia = Ai("Glacia", [])
 glacia.team = [Pokemon("Sealeo", glacia, 71), Pokemon("Glalie", glacia, 71),
                Pokemon("Sealeo", glacia, 73), Pokemon("Glalie", glacia, 73),
                Pokemon("Walrein", glacia, 74)]
@@ -418,7 +435,7 @@ poke_center()
 print_txt(f"Next you challenge Member Drake!")
 terminal.clear()
 
-drake = Player("Drake", [])
+drake = Ai("Drake", [])
 drake.team = [Pokemon("Shelgon", drake, 73), Pokemon("Altaria", drake, 75),
               Pokemon("Kingdra", drake, 74), Pokemon("Flygon", drake, 74),
               Pokemon("Salamence", drake, 76)]
@@ -432,7 +449,7 @@ poke_center()
 print_txt(f"Lastly you challenge the champion Wallace!")
 terminal.clear()
 
-wallace = Player("Wallace", [])
+wallace = Ai("Wallace", [])
 wallace.team = [Pokemon("Wailord", wallace, 77), Pokemon("Tentacruel", wallace, 75),
                 Pokemon("Ludicolo", wallace, 76), Pokemon("Whiscash", wallace, 76),
                 Pokemon("Gyarados", wallace, 76), Pokemon("Milotic", wallace, 78)]
@@ -448,7 +465,7 @@ poke_center()
 terminal.clear()
 
 legendary = random.choice(encounters.get("Legendary"))
-legendary_trainer = Player("", [Pokemon(legendary, "", 85)])
+legendary_trainer = Ai("", [Pokemon(legendary, "", 85)])
 
 if len(player.team) == 6:
     terminal.clear()
@@ -502,7 +519,7 @@ print_txt(f"After catching {legendary} a man named Steven asks to battle you and
 poke_center()
 terminal.clear()
 
-steven = Player("Steven", [])
+steven = Ai("Steven", [])
 steven.team = [Pokemon("Skarmory", steven, 84), Pokemon("Claydol", steven, 82),
                Pokemon("Aggron", steven, 83), Pokemon("Cradily", steven, 83),
                Pokemon("Armaldo", steven, 83), Pokemon("Metagross", steven, 85)]

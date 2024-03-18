@@ -1,6 +1,8 @@
 import random
 import math
 import json
+import time
+
 from bearlibterminal import terminal
 with open("Data/Pokedex.json") as pokedex_json:
     pokedex = json.load(pokedex_json)
@@ -20,6 +22,15 @@ class Player:
     def __init__(self, name, team, starter_type=None):
         self.name = name
         self.starter_type = starter_type
+        self.team = team
+        self.reflect = False
+        self.light_screen = False
+        self.mist = 0
+
+
+class Ai:
+    def __init__(self, name, team):
+        self.name = name
         self.team = team
         self.reflect = False
         self.light_screen = False
@@ -170,14 +181,14 @@ class Pokemon:
         move = learn_sets.get(self.species.lower()).get("level").get(str(self.level))
         if move is not None:
             terminal.clear()
-            terminal.put(0, 0, 0xF8FC)
             if len(self.moves) == 4:
-                terminal.printf(10, 10, f"{self.species} wants to learn {move}, replace a move?")
-                terminal.printf(10, 11, f"1 {self.moves[0]}")
-                terminal.printf(10, 12, f"2 {self.moves[1]}")
-                terminal.printf(10, 13, f"3 {self.moves[2]}")
-                terminal.printf(10, 14, f"4 {self.moves[3]}")
-                terminal.printf(10, 15, "5 Keep old moves")
+                terminal.put(0, 0, 0xF8FC)
+                terminal.printf(20, 6, f"{self.species} wants to learn {move}, replace a move?")
+                terminal.printf(20, 7, f"1 {self.moves[0]}")
+                terminal.printf(20, 8, f"2 {self.moves[1]}")
+                terminal.printf(20, 9, f"3 {self.moves[2]}")
+                terminal.printf(20, 10, f"4 {self.moves[3]}")
+                terminal.printf(20, 11, "5 Keep old moves")
                 terminal.refresh()
                 while True:
                     button = terminal.read()
@@ -185,40 +196,42 @@ class Pokemon:
                         self.moves.pop(0)
                         self.moves.insert(0, move)
                         terminal.clear()
-                        terminal.printf(10, 10, f"{self.species} learned {move}")
+                        terminal.put(0, 0, 0xF8FC)
+                        terminal.printf(20, 6, f"{self.species} learned {move}")
                         terminal.refresh()
                         break
                     if button == terminal.TK_2:
                         self.moves.pop(1)
                         self.moves.insert(1, move)
                         terminal.clear()
-                        terminal.printf(10, 10, f"{self.species} learned {move}")
+                        terminal.put(0, 0, 0xF8FC)
+                        terminal.printf(20, 6, f"{self.species} learned {move}")
                         terminal.refresh()
                         break
                     if button == terminal.TK_3:
                         self.moves.pop(2)
                         self.moves.insert(2, move)
                         terminal.clear()
-                        terminal.printf(10, 10, f"{self.species} learned {move}")
+                        terminal.put(0, 0, 0xF8FC)
+                        terminal.printf(20, 6, f"{self.species} learned {move}")
                         terminal.refresh()
                         break
                     if button == terminal.TK_4:
                         self.moves.pop(3)
                         self.moves.insert(3, move)
                         terminal.clear()
-                        terminal.printf(10, 10, f"{self.species} learned {move}")
+                        terminal.put(0, 0, 0xF8FC)
+                        terminal.printf(20, 6, f"{self.species} learned {move}")
                         terminal.refresh()
                         break
                     elif button == terminal.TK_5:
                         terminal.clear()
-                        terminal.printf(10, 10, f"{self.species} kept its old moves")
+                        terminal.put(0, 0, 0xF8FC)
+                        terminal.printf(20, 6, f"{self.species} kept its old moves")
                         terminal.refresh()
                         break
             else:
                 self.moves.append(move)
-                terminal.clear()
-                terminal.printf(10, 10, f"{self.species} learned {move}")
-                terminal.refresh()
 
     def evolve(self, species):
         for p in pokedex:
@@ -253,15 +266,29 @@ class Pokemon:
             self.level += 1
             self.calc_stats()
             self.learn_move()
+            time.sleep(0.5)
             self.info = (f"{self.gender} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
                          f"Sp.Attack: {self.sp_attack} Sp.Defense: {self.sp_defense} Speed: {self.speed}")
             if self.evolvl is not None:
                 if self.level >= self.evolvl:
-                    if self.species == "Tyrogue":
-                        self.evolve(self.evo[random.randint(0, 2)])
-                    elif self.species == "Wurmple":
-                        self.evolve(self.evo[random.randint(0, 1)])
-                    # elif self.species == "Nincada":
-                    else:
-                        self.evolve(self.evo[0])
-                    self.learn_move()
+                    terminal.clear()
+                    terminal.put(0, 0, 0xF8FC)
+                    terminal.printf(20, 6, f"{self.species} wants to evolve, should it?")
+                    terminal.printf(20, 7, "(Enter) Yes")
+                    terminal.printf(20, 8, "(BackSpace) No")
+                    terminal.refresh()
+                    while True:
+                        button = terminal.read()
+                        if button == terminal.TK_ENTER:
+                            if self.species == "Tyrogue":
+                                self.evolve(self.evo[random.randint(0, 2)])
+                            elif self.species == "Wurmple":
+                                self.evolve(self.evo[random.randint(0, 1)])
+                            # elif self.species == "Nincada":
+                            else:
+                                self.evolve(self.evo[0])
+                            self.learn_move()
+                            time.sleep(0.5)
+                            break
+                        elif button == terminal.TK_BACKSPACE:
+                            break
