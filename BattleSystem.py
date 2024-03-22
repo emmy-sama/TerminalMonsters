@@ -99,7 +99,7 @@ def change_stats(attacker, defender, move):
 
 
 class Battle:
-    def __init__(self, player, ai):
+    def __init__(self, player, lead, ai):
         self.temp_stat_table_norm = {-6: 2 / 8, -5: 2 / 7, -4: 2 / 6, -3: 2 / 5, -2: 2 / 4, -1: 2 / 3, 0: 2 / 2,
                                      1: 3 / 2, 2: 4 / 2,
                                      3: 5 / 2, 4: 6 / 2, 5: 7 / 2, 6: 8 / 2}
@@ -109,7 +109,7 @@ class Battle:
         self.moves = moves
         self.types = types
         self.player = player
-        self.player.active = player.team[0]
+        self.player.active = lead
         self.ai = ai
         self.ai.active = ai.team[0]
         self.player.opponent = self.ai

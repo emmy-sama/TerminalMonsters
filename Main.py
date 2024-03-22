@@ -21,6 +21,31 @@ terminal.set("0x2642: data/pngs/Male_symbol.png, align=center")
 terminal.set("font: data/pokemon.ttf, size=16")
 
 
+def get_input(inputs=0, enter=False, backspace=False):
+    while True:
+        if inputs == 0 and not enter and not backspace:
+            break
+        button = terminal.read()
+        if button == terminal.TK_1 and inputs > 0:
+            return 0
+        elif button == terminal.TK_2 and inputs > 1:
+            return 1
+        elif button == terminal.TK_3 and inputs > 2:
+            return 2
+        elif button == terminal.TK_4 and inputs > 3:
+            return 3
+        elif button == terminal.TK_5 and inputs > 4:
+            return 4
+        elif button == terminal.TK_6 and inputs > 5:
+            return 5
+        elif button == terminal.TK_7 and inputs > 6:
+            return 6
+        elif button == terminal.TK_ENTER and enter:
+            return True
+        elif button == terminal.TK_BACKSPACE and backspace:
+            return False
+
+
 def print_exp(lvl, txt=None):
     terminal.clear()
     terminal.put(0, 0, 0xF8FC)
@@ -43,9 +68,37 @@ def print_txt(txt):
     time.sleep(2)
 
 
+def print_player_pokemon():
+    x = 4
+    x2 = 14
+    y = 14
+    y2 = 9
+    for mon in player.team:
+        terminal.printf(x, y, f"1 {mon}")
+        terminal.put(x2, y2, int(mon.front_sprite, 16))
+        x += 28
+        x2 += 28
+        if x > 60:
+            x = 4
+            x2 = 14
+            y = 24
+            y2 = 19
+
+
 def poke_center():
     for mons in player.team:
         mons.chp = mons.hp
+
+
+def select_lead():
+    terminal.clear()
+    terminal.put(0, 0, 0xF8FC)
+    terminal.printf(22, 1, "What pokemon would you like to lead?")
+    print_player_pokemon()
+    terminal.refresh()
+    slot = get_input(6)
+    terminal.clear()
+    return player.team[slot]
 
 
 def catch_pokemon(lvl):
@@ -65,29 +118,19 @@ def catch_pokemon(lvl):
     terminal.printf(69, 15, "6 Night")
     terminal.put(73, 20, 0xF8F5)
     terminal.refresh()
-    while True:
-        button = terminal.read()
-        if button == terminal.TK_1:
-            route = "Normal"
-            break
-        elif button == terminal.TK_2:
-            route = "Forest"
-            break
-        elif button == terminal.TK_3:
-            route = "Cave"
-            break
-        elif button == terminal.TK_4:
-            route = "Water"
-            break
-        elif button == terminal.TK_5:
-            route = "City"
-            break
-        elif button == terminal.TK_6:
-            route = "Night"
-            break
-        else:
-            pass
-    choice = None
+    route = get_input(6)
+    if route == 0:
+        route = "Normal"
+    elif route == 1:
+        route = "Forest"
+    elif route == 2:
+        route = "Cave"
+    elif route == 3:
+        route = "Water"
+    elif route == 4:
+        route = "City"
+    elif route == 5:
+        route = "Night"
     mon_1 = pokedex.get(random.choice(encounters.get(route).get(lvl)))
     mon_2 = pokedex.get(random.choice(encounters.get(route).get(lvl)))
     mon_3 = pokedex.get(random.choice(encounters.get(route).get(lvl)))
@@ -105,65 +148,28 @@ def catch_pokemon(lvl):
                                             hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_3.get("dex_number")) + 58117)]), 16))
     terminal.printf(37, 21, "4 Pass")
     terminal.refresh()
-    while True:
-        button = terminal.read()
-        if button == terminal.TK_1:
-            choice = mon_1
-            break
-        elif button == terminal.TK_2:
-            choice = mon_2
-            break
-        elif button == terminal.TK_3:
-            choice = mon_3
-            break
-        elif button == terminal.TK_4:
-            break
-        else:
-            pass
+    i = get_input(4)
+    if i == 0:
+        choice = mon_1
+    elif i == 1:
+        choice = mon_2
+    elif i == 2:
+        choice = mon_3
+    else:
+        choice = None
     if len(player.team) == 6 and choice is not None:
         terminal.clear()
         terminal.put(0, 0, 0xF8FC)
         terminal.printf(13, 1, f"Would you like to replace one of your pokemon with {choice.get("Species")}")
-        terminal.printf(4, 14, f"1 {player.team[0]}")
-        terminal.put(14, 9, int(player.team[0].front_sprite, 16))
-        terminal.printf(32, 14, f"2 {player.team[1]}")
-        terminal.put(42, 9, int(player.team[1].front_sprite, 16))
-        terminal.printf(59, 14, f"3 {player.team[2]}")
-        terminal.put(69, 9, int(player.team[2].front_sprite, 16))
-        terminal.printf(4, 24, f"4 {player.team[3]}")
-        terminal.put(14, 19, int(player.team[3].front_sprite, 16))
-        terminal.printf(32, 24, f"5 {player.team[4]}")
-        terminal.put(42, 19, int(player.team[4].front_sprite, 16))
-        terminal.printf(59, 24, f"6 {player.team[5]}")
-        terminal.put(69, 19, int(player.team[5].front_sprite, 16))
         terminal.printf(32, 3, f"7 give up {choice.get("Species")}")
+        print_player_pokemon()
         terminal.refresh()
-        while True:
-            button = terminal.read()
-            if button == terminal.TK_1:
-                input = 0
-            elif button == terminal.TK_2:
-                input = 1
-            elif button == terminal.TK_3:
-                input = 2
-            elif button == terminal.TK_4:
-                input = 3
-            elif button == terminal.TK_5:
-                input = 4
-            elif button == terminal.TK_6:
-                input = 5
-            elif button == terminal.TK_7:
-                input = 6
-            else:
-                input = None
-            if input is None:
-                pass
-            elif input <= len(player.team) - 1:
-                player.team.pop(input)
-                player.team.insert(input, Pokemon(choice.get("Species"), player))
-                break
-            elif input == len(player.team):
-                break
+        i = get_input(7)
+        if i == 6:
+            pass
+        else:
+            player.team.pop(i)
+            player.team.insert(i, Pokemon(choice.get("Species"), player))
     elif choice is not None:
         player.team.append(Pokemon(choice.get("Species"), player))
 
@@ -189,23 +195,16 @@ terminal.put(52, 12, 0xE311)
 terminal.printf(69, 16, "4 Random")
 terminal.put(73, 12, 0xF8FB)
 terminal.refresh()
-while True:
-    button = terminal.read()
-    if button == terminal.TK_1:
-        player_starter = Pokemon("Bulbasaur", player, 5)
-        break
-    elif button == terminal.TK_2:
-        player_starter = Pokemon("Charmander", player, 5)
-        break
-    elif button == terminal.TK_3:
-        player_starter = Pokemon("Squirtle", player, 5)
-        break
-    elif button == terminal.TK_4:
-        random_starter = random.choice(list(pokedex.keys()))
-        player_starter = Pokemon(random_starter, player, 5)
-        break
-    else:
-        pass
+i = get_input(4)
+if i == 0:
+    player_starter = Pokemon("Bulbasaur", player, 5)
+elif i == 1:
+    player_starter = Pokemon("Charmander", player, 5)
+elif i == 2:
+    player_starter = Pokemon("Squirtle", player, 5)
+else:
+    random_starter = random.choice(list(pokedex.keys()))
+    player_starter = Pokemon(random_starter, player, 5)
 terminal.clear()
 player.starter_type = player_starter.type_one
 player.team.append(player_starter)
@@ -219,7 +218,7 @@ terminal.clear()
 
 rival.team = [Pokemon("Rattata", rival, 7), Pokemon("Treecko", rival, 9)]
 
-rival1_battle = Battle(player, rival)
+rival1_battle = Battle(player, select_lead(), rival)
 rival1_battle.battle()
 
 # Gym 1
@@ -233,7 +232,7 @@ roxanne = Ai("Roxanne", [])
 roxanne.team = [Pokemon("Geodude", roxanne, 12), Pokemon("Geodude", roxanne, 12),
                 Pokemon("Nosepass", roxanne, 14)]
 
-gym1_battle = Battle(player, roxanne)
+gym1_battle = Battle(player, select_lead(), roxanne)
 gym1_battle.battle()
 
 # Gym 2
@@ -248,7 +247,7 @@ brawly = Ai("Brawly", [])
 brawly.team = [Pokemon("Machop", brawly, 17), Pokemon("Meditite", brawly, 17),
                Pokemon("Makuhita", brawly, 20)]
 
-gym2_battle = Battle(player, brawly)
+gym2_battle = Battle(player, select_lead(), brawly)
 gym2_battle.battle()
 
 # Gym 3
@@ -264,7 +263,7 @@ wattson = Ai("Wattson", [])
 wattson.team = [Pokemon("Voltorb", wattson, 22), Pokemon("Electrike", wattson, 22),
                 Pokemon("Magneton", wattson, 24), Pokemon("Manectric", wattson, 26)]
 
-gym3_battle = Battle(player, wattson)
+gym3_battle = Battle(player, select_lead(), wattson)
 gym3_battle.battle()
 
 # Gym 4
@@ -280,7 +279,7 @@ flannery = Ai("Flannery", [])
 flannery.team = [Pokemon("Numel", flannery, 25), Pokemon("Slugma", flannery, 25),
                  Pokemon("Camerupt", flannery, 27), Pokemon("Torkoal", flannery, 30)]
 
-gym4_battle = Battle(player, flannery)
+gym4_battle = Battle(player, select_lead(), flannery)
 gym4_battle.battle()
 
 # Rival 2
@@ -294,7 +293,7 @@ rival.team = [Pokemon("Raticate", rival, 36), Pokemon("Swellow", rival, 35),
                 Pokemon("Numel", rival, 34), Pokemon("Wailmer", rival, 35),
                 Pokemon("Sceptile", rival, 36)]
 
-rival2_battle = Battle(player, rival)
+rival2_battle = Battle(player, select_lead(), rival)
 rival2_battle.battle()
 
 # Gym 5
@@ -309,7 +308,7 @@ norman = Ai("Norman", [])
 norman.team = [Pokemon("Spinda", norman, 36), Pokemon("Vigoroth", norman, 36),
                Pokemon("Linoone", norman, 38), Pokemon("Slaking", norman, 40)]
 
-gym5_battle = Battle(player, norman)
+gym5_battle = Battle(player, select_lead(), norman)
 gym5_battle.battle()
 
 # Gym 6
@@ -325,7 +324,7 @@ winona.team = [Pokemon("Swablu", winona, 42), Pokemon("Tropius", winona, 42),
                Pokemon("Pelipper", winona, 43), Pokemon("Skarmory", winona, 44),
                Pokemon("Altaria", winona, 46)]
 
-gym6_battle = Battle(player, winona)
+gym6_battle = Battle(player, select_lead(), winona)
 gym6_battle.battle()
 
 # Gym 7 Replace eventually
@@ -340,7 +339,7 @@ tate_liza = Ai("Tate&Liza", [])
 tate_liza.team = [Pokemon("Claydol", tate_liza, 51), Pokemon("Xatu", tate_liza, 51),
                   Pokemon("Lunatone", tate_liza, 52), Pokemon("Solrock", tate_liza, 52)]
 
-gym7_battle = Battle(player, tate_liza)
+gym7_battle = Battle(player, select_lead(), tate_liza)
 gym7_battle.battle()
 
 # Gym 8
@@ -356,7 +355,7 @@ juan.team = [Pokemon("Luvdisc", juan, 53), Pokemon("Whiscash", juan, 53),
              Pokemon("Sealeo", juan, 55), Pokemon("Crawdaunt", juan, 55),
              Pokemon("Kingdra", juan, 58)]
 
-gym8_battle = Battle(player, juan)
+gym8_battle = Battle(player, select_lead(), juan)
 gym8_battle.battle()
 
 # Rival 3
@@ -371,7 +370,7 @@ rival.team = [Pokemon("Gengar", rival, 64), Pokemon("Alakazam", rival, 64),
               Pokemon("Arcanine", rival, 64), Pokemon("Wailord", rival, 64),
               Pokemon("Sceptile", rival, 64), Pokemon("Dragonite", rival, 64)]
 
-rival3_battle = Battle(player, rival)
+rival3_battle = Battle(player, select_lead(), rival)
 rival3_battle.battle()
 
 # Elite4 1
@@ -385,7 +384,7 @@ sidney.team = [Pokemon("Mightyena", sidney, 67), Pokemon("Shiftry", sidney, 69),
                Pokemon("Cacturne", sidney, 67), Pokemon("Crawdaunt", sidney, 69),
                Pokemon("Absol", sidney, 70)]
 
-elite4_1_battle = Battle(player, sidney)
+elite4_1_battle = Battle(player, select_lead(), sidney)
 elite4_1_battle.battle()
 
 # Elite4 2
@@ -399,7 +398,7 @@ phoebe.team = [Pokemon("Dusclops", phoebe, 69), Pokemon("Banette", phoebe, 70),
                Pokemon("Sableye", phoebe, 71), Pokemon("Banette", phoebe, 70),
                Pokemon("Dusclops", phoebe, 72)]
 
-elite4_2_battle = Battle(player, phoebe)
+elite4_2_battle = Battle(player, select_lead(), phoebe)
 elite4_2_battle.battle()
 
 # Elite4 3
@@ -413,7 +412,7 @@ glacia.team = [Pokemon("Sealeo", glacia, 71), Pokemon("Glalie", glacia, 71),
                Pokemon("Sealeo", glacia, 73), Pokemon("Glalie", glacia, 73),
                Pokemon("Walrein", glacia, 74)]
 
-elite4_3_battle = Battle(player, glacia)
+elite4_3_battle = Battle(player, select_lead(), glacia)
 elite4_3_battle.battle()
 
 # Elite4 4
@@ -427,7 +426,7 @@ drake.team = [Pokemon("Shelgon", drake, 73), Pokemon("Altaria", drake, 75),
               Pokemon("Kingdra", drake, 74), Pokemon("Flygon", drake, 74),
               Pokemon("Salamence", drake, 76)]
 
-elite4_4_battle = Battle(player, drake)
+elite4_4_battle = Battle(player, select_lead(), drake)
 elite4_4_battle.battle()
 
 # Champion
@@ -441,7 +440,7 @@ wallace.team = [Pokemon("Wailord", wallace, 77), Pokemon("Tentacruel", wallace, 
                 Pokemon("Ludicolo", wallace, 76), Pokemon("Whiscash", wallace, 76),
                 Pokemon("Gyarados", wallace, 76), Pokemon("Milotic", wallace, 78)]
 
-champion_battle = Battle(player, wallace)
+champion_battle = Battle(player, select_lead(), wallace)
 champion_battle.battle()
 
 print_txt(f"You have become champion and your journey has come to a end!...")
@@ -453,51 +452,21 @@ terminal.clear()
 
 legendary = random.choice(encounters.get("Legendary"))
 legendary_trainer = Ai("", [Pokemon(legendary, "", 85)])
+legendary_battle = Battle(player, select_lead(), legendary_trainer)
 
 if len(player.team) == 6:
     terminal.clear()
     terminal.put(0, 0, 0xF8FC)
     terminal.printf(13, 1, f"Would you like to replace one of your pokemon with {legendary}")
-    terminal.printf(4, 14, f"1 {player.team[0]}")
-    terminal.put(14, 9, int(player.team[0].front_sprite, 16))
-    terminal.printf(32, 14, f"2 {player.team[1]}")
-    terminal.put(42, 9, int(player.team[1].front_sprite, 16))
-    terminal.printf(59, 14, f"3 {player.team[2]}")
-    terminal.put(69, 9, int(player.team[2].front_sprite, 16))
-    terminal.printf(4, 24, f"4 {player.team[3]}")
-    terminal.put(14, 19, int(player.team[3].front_sprite, 16))
-    terminal.printf(32, 24, f"5 {player.team[4]}")
-    terminal.put(42, 19, int(player.team[4].front_sprite, 16))
-    terminal.printf(59, 24, f"6 {player.team[5]}")
-    terminal.put(69, 19, int(player.team[5].front_sprite, 16))
     terminal.printf(32, 3, f"7 give up {legendary}")
+    print_player_pokemon()
     terminal.refresh()
-    while True:
-        button = terminal.read()
-        if button == terminal.TK_1:
-            input = 0
-        elif button == terminal.TK_2:
-            input = 1
-        elif button == terminal.TK_3:
-            input = 2
-        elif button == terminal.TK_4:
-            input = 3
-        elif button == terminal.TK_5:
-            input = 4
-        elif button == terminal.TK_6:
-            input = 5
-        elif button == terminal.TK_7:
-            input = 6
-        else:
-            input = None
-        if input is None:
-            pass
-        elif input <= len(player.team) - 1:
-            player.team.pop(input)
-            player.team.insert(input, Pokemon(legendary, player, 85))
-            break
-        elif input == len(player.team):
-            break
+    i = get_input(7)
+    if i == 6:
+        pass
+    else:
+        player.team.pop(i)
+        player.team.insert(i, Pokemon(legendary, player, 85))
 else:
     player.team.append(Pokemon(legendary, player, 85))
 
@@ -511,7 +480,7 @@ steven.team = [Pokemon("Skarmory", steven, 84), Pokemon("Claydol", steven, 82),
                Pokemon("Aggron", steven, 83), Pokemon("Cradily", steven, 83),
                Pokemon("Armaldo", steven, 83), Pokemon("Metagross", steven, 85)]
 
-steven_battle = Battle(player, steven)
+steven_battle = Battle(player, select_lead(), steven)
 steven_battle.battle()
 
 print_txt(f"Thank you for playing you have finished the game as it is now!")
