@@ -88,22 +88,9 @@ def catch_pokemon(lvl):
         else:
             pass
     choice = None
-    mon_1 = random.choice(encounters.get(route).get(lvl))
-    for p in pokedex:
-        if p.get("Species") == mon_1:
-            mon_1 = p
-    mon_2 = random.choice(encounters.get(route).get(lvl))
-    while mon_2 == mon_1:
-        mon_2 = random.choice(encounters.get(route).get(lvl))
-    for p in pokedex:
-        if p.get("Species") == mon_2:
-            mon_2 = p
-    mon_3 = random.choice(encounters.get(route).get(lvl))
-    while mon_3 == mon_2 or mon_3 == mon_1:
-        mon_3 = random.choice(encounters.get(route).get(lvl))
-    for p in pokedex:
-        if p.get("Species") == mon_3:
-            mon_3 = p
+    mon_1 = pokedex.get(random.choice(encounters.get(route).get(lvl)))
+    mon_2 = pokedex.get(random.choice(encounters.get(route).get(lvl)))
+    mon_3 = pokedex.get(random.choice(encounters.get(route).get(lvl)))
     terminal.clear()
     terminal.put(0, 0, 0xF8FC)
     terminal.printf(22, 6, "What pokemon would you like to try and catch?")
@@ -214,7 +201,7 @@ while True:
         player_starter = Pokemon("Squirtle", player, 5)
         break
     elif button == terminal.TK_4:
-        random_starter = pokedex[random.randint(0, 388)].get("Species")
+        random_starter = random.choice(list(pokedex.keys()))
         player_starter = Pokemon(random_starter, player, 5)
         break
     else:

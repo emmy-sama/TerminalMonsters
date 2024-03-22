@@ -1,5 +1,5 @@
-[
-  {
+{
+  "Bulbasaur": {
     "Species": "Bulbasaur",
     "bHP": 45,
     "bAttack": 49,
@@ -29,7 +29,7 @@
       "0xE001"
     ]
   },
-  {
+  "Ivysaur": {
     "Species": "Ivysaur",
     "bHP": 60,
     "bAttack": 62,
@@ -59,7 +59,7 @@
       "0xE003"
     ]
   },
-  {
+  "Venusaur": {
     "Species": "Venusaur",
     "bHP": 80,
     "bAttack": 82,
@@ -86,7 +86,7 @@
       "0xE005"
     ]
   },
-  {
+  "Charmander": {
     "Species": "Charmander",
     "bHP": 39,
     "bAttack": 52,
@@ -112,7 +112,7 @@
     "Front Sprite": "0xE00D",
     "Back Sprite": "0xE00F"
   },
-  {
+  "Charmeleon": {
     "Species": "Charmeleon",
     "bHP": 58,
     "bAttack": 64,
@@ -136,7 +136,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Charizard": {
     "Species": "Charizard",
     "bHP": 78,
     "bAttack": 84,
@@ -158,7 +158,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Squirtle": {
     "Species": "Squirtle",
     "bHP": 44,
     "bAttack": 48,
@@ -182,7 +182,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Wartortle": {
     "Species": "Wartortle",
     "bHP": 59,
     "bAttack": 63,
@@ -206,7 +206,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Blastoise": {
     "Species": "Blastoise",
     "bHP": 79,
     "bAttack": 83,
@@ -227,7 +227,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Caterpie": {
     "Species": "Caterpie",
     "bHP": 45,
     "bAttack": 30,
@@ -251,7 +251,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Metapod": {
     "Species": "Metapod",
     "bHP": 50,
     "bAttack": 20,
@@ -275,7 +275,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Butterfree": {
     "Species": "Butterfree",
     "bHP": 60,
     "bAttack": 45,
@@ -297,7 +297,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Weedle": {
     "Species": "Weedle",
     "bHP": 40,
     "bAttack": 35,
@@ -324,7 +324,7 @@
     "Front Sprite": "0xE031",
     "Back Sprite": "0xE032"
   },
-  {
+  "Kakuna": {
     "Species": "Kakuna",
     "bHP": 45,
     "bAttack": 25,
@@ -349,7 +349,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Beedrill": {
     "Species": "Beedrill",
     "bHP": 65,
     "bAttack": 80,
@@ -371,7 +371,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Pidgey": {
     "Species": "Pidgey",
     "bHP": 40,
     "bAttack": 45,
@@ -396,7 +396,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Pidgeotto": {
     "Species": "Pidgeotto",
     "bHP": 63,
     "bAttack": 60,
@@ -421,7 +421,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Pidgeot": {
     "Species": "Pidgeot",
     "bHP": 83,
     "bAttack": 80,
@@ -443,7 +443,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Rattata": {
     "Species": "Rattata",
     "bHP": 30,
     "bAttack": 56,
@@ -468,7 +468,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Raticate": {
     "Species": "Raticate",
     "bHP": 55,
     "bAttack": 81,
@@ -490,7 +490,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Spearow": {
     "Species": "Spearow",
     "bHP": 40,
     "bAttack": 60,
@@ -515,7 +515,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Fearow": {
     "Species": "Fearow",
     "bHP": 65,
     "bAttack": 90,
@@ -537,7 +537,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ekans": {
     "Species": "Ekans",
     "bHP": 35,
     "bAttack": 60,
@@ -562,7 +562,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Arbok": {
     "Species": "Arbok",
     "bHP": 60,
     "bAttack": 85,
@@ -584,7 +584,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Pikachu": {
     "Species": "Pikachu",
     "bHP": 35,
     "bAttack": 55,
@@ -612,7 +612,7 @@
     "Front Sprite": "0xE060",
     "Back Sprite": "0xE062"
   },
-  {
+  "Raichu": {
     "Species": "Raichu",
     "bHP": 60,
     "bAttack": 90,
@@ -633,7 +633,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Sandshrew": {
     "Species": "Sandshrew",
     "bHP": 50,
     "bAttack": 75,
@@ -657,7 +657,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Sandslash": {
     "Species": "Sandslash",
     "bHP": 75,
     "bAttack": 100,
@@ -678,7 +678,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Nidoran-F": {
     "Species": "Nidoran-F",
     "bHP": 55,
     "bAttack": 47,
@@ -702,7 +702,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Nidorina": {
     "Species": "Nidorina",
     "bHP": 70,
     "bAttack": 62,
@@ -728,7 +728,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Nidoqueen": {
     "Species": "Nidoqueen",
     "bHP": 90,
     "bAttack": 82,
@@ -750,7 +750,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Nidoran-M": {
     "Species": "Nidoran-M",
     "bHP": 46,
     "bAttack": 57,
@@ -774,7 +774,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Nidorino": {
     "Species": "Nidorino",
     "bHP": 61,
     "bAttack": 72,
@@ -800,7 +800,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Nidoking": {
     "Species": "Nidoking",
     "bHP": 81,
     "bAttack": 92,
@@ -822,7 +822,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Clefairy": {
     "Species": "Clefairy",
     "bHP": 70,
     "bAttack": 45,
@@ -848,7 +848,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Clefable": {
     "Species": "Clefable",
     "bHP": 95,
     "bAttack": 70,
@@ -869,7 +869,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Vulpix": {
     "Species": "Vulpix",
     "bHP": 38,
     "bAttack": 41,
@@ -895,7 +895,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ninetales": {
     "Species": "Ninetales",
     "bHP": 73,
     "bAttack": 76,
@@ -916,7 +916,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Jigglypuff": {
     "Species": "Jigglypuff",
     "bHP": 115,
     "bAttack": 45,
@@ -942,7 +942,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Wigglytuff": {
     "Species": "Wigglytuff",
     "bHP": 140,
     "bAttack": 70,
@@ -963,7 +963,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Zubat": {
     "Species": "Zubat",
     "bHP": 40,
     "bAttack": 45,
@@ -988,7 +988,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Golbat": {
     "Species": "Golbat",
     "bHP": 75,
     "bAttack": 80,
@@ -1013,7 +1013,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Oddish": {
     "Species": "Oddish",
     "bHP": 45,
     "bAttack": 50,
@@ -1038,7 +1038,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Gloom": {
     "Species": "Gloom",
     "bHP": 60,
     "bAttack": 65,
@@ -1067,7 +1067,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Vileplume": {
     "Species": "Vileplume",
     "bHP": 75,
     "bAttack": 80,
@@ -1089,7 +1089,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Paras": {
     "Species": "Paras",
     "bHP": 35,
     "bAttack": 70,
@@ -1114,7 +1114,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Parasect": {
     "Species": "Parasect",
     "bHP": 60,
     "bAttack": 95,
@@ -1136,7 +1136,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Venonat": {
     "Species": "Venonat",
     "bHP": 60,
     "bAttack": 55,
@@ -1161,7 +1161,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Venomoth": {
     "Species": "Venomoth",
     "bHP": 70,
     "bAttack": 65,
@@ -1183,7 +1183,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Diglett": {
     "Species": "Diglett",
     "bHP": 10,
     "bAttack": 55,
@@ -1210,7 +1210,7 @@
     "Front Sprite": "0xE0C4",
     "Back Sprite": "0xE0C6"
   },
-  {
+  "Dugtrio": {
     "Species": "Dugtrio",
     "bHP": 35,
     "bAttack": 80,
@@ -1232,7 +1232,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Meowth": {
     "Species": "Meowth",
     "bHP": 40,
     "bAttack": 45,
@@ -1256,7 +1256,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Persian": {
     "Species": "Persian",
     "bHP": 65,
     "bAttack": 70,
@@ -1277,7 +1277,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Psyduck": {
     "Species": "Psyduck",
     "bHP": 50,
     "bAttack": 52,
@@ -1302,7 +1302,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Golduck": {
     "Species": "Golduck",
     "bHP": 80,
     "bAttack": 82,
@@ -1324,7 +1324,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Mankey": {
     "Species": "Mankey",
     "bHP": 40,
     "bAttack": 80,
@@ -1348,7 +1348,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Primeape": {
     "Species": "Primeape",
     "bHP": 65,
     "bAttack": 105,
@@ -1369,7 +1369,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Growlithe": {
     "Species": "Growlithe",
     "bHP": 55,
     "bAttack": 70,
@@ -1396,7 +1396,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Arcanine": {
     "Species": "Arcanine",
     "bHP": 90,
     "bAttack": 110,
@@ -1418,7 +1418,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Poliwag": {
     "Species": "Poliwag",
     "bHP": 40,
     "bAttack": 50,
@@ -1443,7 +1443,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Poliwhirl": {
     "Species": "Poliwhirl",
     "bHP": 65,
     "bAttack": 65,
@@ -1474,7 +1474,7 @@
     "Front Sprite": "0xE0F0",
     "Back Sprite": "0xE0F2"
   },
-  {
+  "Poliwrath": {
     "Species": "Poliwrath",
     "bHP": 90,
     "bAttack": 85,
@@ -1497,7 +1497,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Abra": {
     "Species": "Abra",
     "bHP": 25,
     "bAttack": 20,
@@ -1522,7 +1522,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Kadabra": {
     "Species": "Kadabra",
     "bHP": 40,
     "bAttack": 35,
@@ -1547,7 +1547,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Alakazam": {
     "Species": "Alakazam",
     "bHP": 55,
     "bAttack": 50,
@@ -1569,7 +1569,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Machop": {
     "Species": "Machop",
     "bHP": 70,
     "bAttack": 80,
@@ -1593,7 +1593,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Machoke": {
     "Species": "Machoke",
     "bHP": 80,
     "bAttack": 100,
@@ -1617,7 +1617,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Machamp": {
     "Species": "Machamp",
     "bHP": 90,
     "bAttack": 130,
@@ -1638,7 +1638,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Bellsprout": {
     "Species": "Bellsprout",
     "bHP": 50,
     "bAttack": 75,
@@ -1663,7 +1663,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Weepinbell": {
     "Species": "Weepinbell",
     "bHP": 65,
     "bAttack": 90,
@@ -1690,7 +1690,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Victreebel": {
     "Species": "Victreebel",
     "bHP": 80,
     "bAttack": 105,
@@ -1712,7 +1712,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Tentacool": {
     "Species": "Tentacool",
     "bHP": 40,
     "bAttack": 40,
@@ -1738,7 +1738,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Tentacruel": {
     "Species": "Tentacruel",
     "bHP": 80,
     "bAttack": 70,
@@ -1761,7 +1761,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Geodude": {
     "Species": "Geodude",
     "bHP": 40,
     "bAttack": 80,
@@ -1787,7 +1787,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Graveler": {
     "Species": "Graveler",
     "bHP": 55,
     "bAttack": 95,
@@ -1813,7 +1813,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Golem": {
     "Species": "Golem",
     "bHP": 80,
     "bAttack": 110,
@@ -1836,7 +1836,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ponyta": {
     "Species": "Ponyta",
     "bHP": 50,
     "bAttack": 85,
@@ -1861,7 +1861,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Rapidash": {
     "Species": "Rapidash",
     "bHP": 65,
     "bAttack": 100,
@@ -1883,7 +1883,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Slowpoke": {
     "Species": "Slowpoke",
     "bHP": 90,
     "bAttack": 65,
@@ -1913,7 +1913,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Slowbro": {
     "Species": "Slowbro",
     "bHP": 95,
     "bAttack": 75,
@@ -1938,7 +1938,7 @@
     "Front Sprite": "0xE13C",
     "Back Sprite": "0xE13E"
   },
-  {
+  "Magnemite": {
     "Species": "Magnemite",
     "bHP": 25,
     "bAttack": 35,
@@ -1964,7 +1964,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Magneton": {
     "Species": "Magneton",
     "bHP": 50,
     "bAttack": 60,
@@ -1987,7 +1987,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Farfetch'd": {
     "Species": "Farfetch'd",
     "bHP": 52,
     "bAttack": 65,
@@ -2010,7 +2010,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Doduo": {
     "Species": "Doduo",
     "bHP": 35,
     "bAttack": 85,
@@ -2036,7 +2036,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Dodrio": {
     "Species": "Dodrio",
     "bHP": 60,
     "bAttack": 110,
@@ -2059,7 +2059,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Seel": {
     "Species": "Seel",
     "bHP": 65,
     "bAttack": 45,
@@ -2083,7 +2083,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Dewgong": {
     "Species": "Dewgong",
     "bHP": 90,
     "bAttack": 70,
@@ -2105,7 +2105,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Grimer": {
     "Species": "Grimer",
     "bHP": 80,
     "bAttack": 80,
@@ -2130,7 +2130,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Muk": {
     "Species": "Muk",
     "bHP": 105,
     "bAttack": 105,
@@ -2152,7 +2152,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Shellder": {
     "Species": "Shellder",
     "bHP": 30,
     "bAttack": 65,
@@ -2178,7 +2178,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Cloyster": {
     "Species": "Cloyster",
     "bHP": 50,
     "bAttack": 95,
@@ -2200,7 +2200,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Gastly": {
     "Species": "Gastly",
     "bHP": 30,
     "bAttack": 35,
@@ -2225,7 +2225,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Haunter": {
     "Species": "Haunter",
     "bHP": 45,
     "bAttack": 50,
@@ -2250,7 +2250,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Gengar": {
     "Species": "Gengar",
     "bHP": 60,
     "bAttack": 65,
@@ -2272,7 +2272,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Onix": {
     "Species": "Onix",
     "bHP": 35,
     "bAttack": 45,
@@ -2300,7 +2300,7 @@
     "Front Sprite": "0xE178",
     "Back Sprite": "0xE17A"
   },
-  {
+  "Drowzee": {
     "Species": "Drowzee",
     "bHP": 60,
     "bAttack": 48,
@@ -2324,7 +2324,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Hypno": {
     "Species": "Hypno",
     "bHP": 85,
     "bAttack": 73,
@@ -2345,7 +2345,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Krabby": {
     "Species": "Krabby",
     "bHP": 30,
     "bAttack": 105,
@@ -2370,7 +2370,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Kingler": {
     "Species": "Kingler",
     "bHP": 55,
     "bAttack": 130,
@@ -2392,7 +2392,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Voltorb": {
     "Species": "Voltorb",
     "bHP": 40,
     "bAttack": 30,
@@ -2417,7 +2417,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Electrode": {
     "Species": "Electrode",
     "bHP": 60,
     "bAttack": 50,
@@ -2439,7 +2439,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Exeggcute": {
     "Species": "Exeggcute",
     "bHP": 60,
     "bAttack": 40,
@@ -2466,7 +2466,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Exeggutor": {
     "Species": "Exeggutor",
     "bHP": 95,
     "bAttack": 95,
@@ -2488,7 +2488,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Cubone": {
     "Species": "Cubone",
     "bHP": 50,
     "bAttack": 50,
@@ -2513,7 +2513,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Marowak": {
     "Species": "Marowak",
     "bHP": 60,
     "bAttack": 80,
@@ -2535,7 +2535,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Hitmonlee": {
     "Species": "Hitmonlee",
     "bHP": 50,
     "bAttack": 120,
@@ -2556,7 +2556,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Hitmonchan": {
     "Species": "Hitmonchan",
     "bHP": 50,
     "bAttack": 105,
@@ -2577,7 +2577,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Lickitung": {
     "Species": "Lickitung",
     "bHP": 90,
     "bAttack": 55,
@@ -2599,7 +2599,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Koffing": {
     "Species": "Koffing",
     "bHP": 40,
     "bAttack": 65,
@@ -2623,7 +2623,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Weezing": {
     "Species": "Weezing",
     "bHP": 65,
     "bAttack": 90,
@@ -2644,7 +2644,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Rhyhorn": {
     "Species": "Rhyhorn",
     "bHP": 80,
     "bAttack": 85,
@@ -2670,7 +2670,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Rhydon": {
     "Species": "Rhydon",
     "bHP": 105,
     "bAttack": 130,
@@ -2693,7 +2693,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Chansey": {
     "Species": "Chansey",
     "bHP": 250,
     "bAttack": 5,
@@ -2718,7 +2718,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Tangela": {
     "Species": "Tangela",
     "bHP": 65,
     "bAttack": 55,
@@ -2739,7 +2739,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Kangaskhan": {
     "Species": "Kangaskhan",
     "bHP": 105,
     "bAttack": 95,
@@ -2760,7 +2760,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Horsea": {
     "Species": "Horsea",
     "bHP": 30,
     "bAttack": 40,
@@ -2784,7 +2784,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Seadra": {
     "Species": "Seadra",
     "bHP": 55,
     "bAttack": 65,
@@ -2808,7 +2808,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Goldeen": {
     "Species": "Goldeen",
     "bHP": 45,
     "bAttack": 67,
@@ -2833,7 +2833,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Seaking": {
     "Species": "Seaking",
     "bHP": 80,
     "bAttack": 92,
@@ -2855,7 +2855,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Staryu": {
     "Species": "Staryu",
     "bHP": 30,
     "bAttack": 45,
@@ -2882,7 +2882,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Starmie": {
     "Species": "Starmie",
     "bHP": 60,
     "bAttack": 75,
@@ -2905,7 +2905,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Mr. Mime": {
     "Species": "Mr. Mime",
     "bHP": 40,
     "bAttack": 45,
@@ -2926,7 +2926,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Scyther": {
     "Species": "Scyther",
     "bHP": 70,
     "bAttack": 110,
@@ -2951,7 +2951,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Jynx": {
     "Species": "Jynx",
     "bHP": 65,
     "bAttack": 50,
@@ -2973,7 +2973,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Electabuzz": {
     "Species": "Electabuzz",
     "bHP": 65,
     "bAttack": 83,
@@ -2994,7 +2994,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Magmar": {
     "Species": "Magmar",
     "bHP": 65,
     "bAttack": 95,
@@ -3015,7 +3015,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Pinsir": {
     "Species": "Pinsir",
     "bHP": 65,
     "bAttack": 125,
@@ -3036,7 +3036,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Tauros": {
     "Species": "Tauros",
     "bHP": 75,
     "bAttack": 100,
@@ -3057,7 +3057,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Magikarp": {
     "Species": "Magikarp",
     "bHP": 20,
     "bAttack": 10,
@@ -3081,7 +3081,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Gyarados": {
     "Species": "Gyarados",
     "bHP": 95,
     "bAttack": 125,
@@ -3103,7 +3103,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Lapras": {
     "Species": "Lapras",
     "bHP": 130,
     "bAttack": 85,
@@ -3126,7 +3126,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ditto": {
     "Species": "Ditto",
     "bHP": 48,
     "bAttack": 48,
@@ -3147,7 +3147,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Eevee": {
     "Species": "Eevee",
     "bHP": 55,
     "bAttack": 55,
@@ -3170,7 +3170,6 @@
       "Flareon",
       "Umbreon",
       "Espeon"
-
     ],
     "Stone": [
       "Water",
@@ -3182,7 +3181,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Vaporeon": {
     "Species": "Vaporeon",
     "bHP": 130,
     "bAttack": 65,
@@ -3203,7 +3202,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Jolteon": {
     "Species": "Jolteon",
     "bHP": 65,
     "bAttack": 65,
@@ -3224,7 +3223,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Flareon": {
     "Species": "Flareon",
     "bHP": 65,
     "bAttack": 130,
@@ -3245,7 +3244,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Porygon": {
     "Species": "Porygon",
     "bHP": 65,
     "bAttack": 60,
@@ -3269,7 +3268,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Omanyte": {
     "Species": "Omanyte",
     "bHP": 35,
     "bAttack": 40,
@@ -3295,7 +3294,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Omastar": {
     "Species": "Omastar",
     "bHP": 70,
     "bAttack": 60,
@@ -3318,7 +3317,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Kabuto": {
     "Species": "Kabuto",
     "bHP": 30,
     "bAttack": 80,
@@ -3344,7 +3343,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Kabutops": {
     "Species": "Kabutops",
     "bHP": 60,
     "bAttack": 115,
@@ -3367,7 +3366,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Aerodactyl": {
     "Species": "Aerodactyl",
     "bHP": 80,
     "bAttack": 105,
@@ -3390,7 +3389,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Snorlax": {
     "Species": "Snorlax",
     "bHP": 160,
     "bAttack": 110,
@@ -3412,7 +3411,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Articuno": {
     "Species": "Articuno",
     "bHP": 90,
     "bAttack": 85,
@@ -3434,7 +3433,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Zapdos": {
     "Species": "Zapdos",
     "bHP": 90,
     "bAttack": 90,
@@ -3456,7 +3455,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Moltres": {
     "Species": "Moltres",
     "bHP": 90,
     "bAttack": 100,
@@ -3478,7 +3477,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Dratini": {
     "Species": "Dratini",
     "bHP": 41,
     "bAttack": 64,
@@ -3502,7 +3501,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Dragonair": {
     "Species": "Dragonair",
     "bHP": 61,
     "bAttack": 84,
@@ -3526,7 +3525,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Dragonite": {
     "Species": "Dragonite",
     "bHP": 91,
     "bAttack": 134,
@@ -3548,7 +3547,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Mewtwo": {
     "Species": "Mewtwo",
     "bHP": 106,
     "bAttack": 110,
@@ -3569,7 +3568,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Mew": {
     "Species": "Mew",
     "bHP": 100,
     "bAttack": 100,
@@ -3590,7 +3589,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Chikorita": {
     "Species": "Chikorita",
     "bHP": 45,
     "bAttack": 49,
@@ -3614,7 +3613,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Bayleef": {
     "Species": "Bayleef",
     "bHP": 60,
     "bAttack": 62,
@@ -3638,7 +3637,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Meganium": {
     "Species": "Meganium",
     "bHP": 80,
     "bAttack": 82,
@@ -3659,7 +3658,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Cyndaquil": {
     "Species": "Cyndaquil",
     "bHP": 39,
     "bAttack": 52,
@@ -3683,7 +3682,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Quilava": {
     "Species": "Quilava",
     "bHP": 58,
     "bAttack": 64,
@@ -3707,7 +3706,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Typhlosion": {
     "Species": "Typhlosion",
     "bHP": 78,
     "bAttack": 84,
@@ -3728,7 +3727,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Totodile": {
     "Species": "Totodile",
     "bHP": 50,
     "bAttack": 65,
@@ -3752,7 +3751,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Croconaw": {
     "Species": "Croconaw",
     "bHP": 65,
     "bAttack": 80,
@@ -3776,7 +3775,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Feraligatr": {
     "Species": "Feraligatr",
     "bHP": 85,
     "bAttack": 105,
@@ -3797,7 +3796,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Sentret": {
     "Species": "Sentret",
     "bHP": 35,
     "bAttack": 46,
@@ -3822,7 +3821,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Furret": {
     "Species": "Furret",
     "bHP": 85,
     "bAttack": 76,
@@ -3844,7 +3843,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Hoothoot": {
     "Species": "Hoothoot",
     "bHP": 60,
     "bAttack": 30,
@@ -3870,7 +3869,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Noctowl": {
     "Species": "Noctowl",
     "bHP": 100,
     "bAttack": 50,
@@ -3893,7 +3892,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ledyba": {
     "Species": "Ledyba",
     "bHP": 40,
     "bAttack": 20,
@@ -3919,7 +3918,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ledian": {
     "Species": "Ledian",
     "bHP": 55,
     "bAttack": 35,
@@ -3942,7 +3941,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Spinarak": {
     "Species": "Spinarak",
     "bHP": 40,
     "bAttack": 60,
@@ -3968,7 +3967,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ariados": {
     "Species": "Ariados",
     "bHP": 70,
     "bAttack": 90,
@@ -3991,7 +3990,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Crobat": {
     "Species": "Crobat",
     "bHP": 85,
     "bAttack": 90,
@@ -4013,7 +4012,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Chinchou": {
     "Species": "Chinchou",
     "bHP": 75,
     "bAttack": 38,
@@ -4039,7 +4038,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Lanturn": {
     "Species": "Lanturn",
     "bHP": 125,
     "bAttack": 58,
@@ -4062,7 +4061,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Pichu": {
     "Species": "Pichu",
     "bHP": 20,
     "bAttack": 40,
@@ -4086,7 +4085,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Cleffa": {
     "Species": "Cleffa",
     "bHP": 50,
     "bAttack": 25,
@@ -4110,7 +4109,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Igglybuff": {
     "Species": "Igglybuff",
     "bHP": 90,
     "bAttack": 30,
@@ -4134,7 +4133,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Togepi": {
     "Species": "Togepi",
     "bHP": 35,
     "bAttack": 20,
@@ -4159,7 +4158,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Togetic": {
     "Species": "Togetic",
     "bHP": 55,
     "bAttack": 40,
@@ -4182,7 +4181,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Natu": {
     "Species": "Natu",
     "bHP": 40,
     "bAttack": 50,
@@ -4208,7 +4207,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Xatu": {
     "Species": "Xatu",
     "bHP": 65,
     "bAttack": 75,
@@ -4231,7 +4230,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Mareep": {
     "Species": "Mareep",
     "bHP": 55,
     "bAttack": 40,
@@ -4255,7 +4254,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Flaaffy": {
     "Species": "Flaaffy",
     "bHP": 70,
     "bAttack": 55,
@@ -4279,7 +4278,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ampharos": {
     "Species": "Ampharos",
     "bHP": 90,
     "bAttack": 75,
@@ -4300,7 +4299,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Bellossom": {
     "Species": "Bellossom",
     "bHP": 75,
     "bAttack": 80,
@@ -4321,7 +4320,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Marill": {
     "Species": "Marill",
     "bHP": 70,
     "bAttack": 20,
@@ -4346,7 +4345,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Azumarill": {
     "Species": "Azumarill",
     "bHP": 100,
     "bAttack": 50,
@@ -4368,7 +4367,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Sudowoodo": {
     "Species": "Sudowoodo",
     "bHP": 70,
     "bAttack": 100,
@@ -4390,7 +4389,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Politoed": {
     "Species": "Politoed",
     "bHP": 90,
     "bAttack": 75,
@@ -4412,7 +4411,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Hoppip": {
     "Species": "Hoppip",
     "bHP": 35,
     "bAttack": 35,
@@ -4437,7 +4436,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Skiploom": {
     "Species": "Skiploom",
     "bHP": 55,
     "bAttack": 45,
@@ -4462,7 +4461,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Jumpluff": {
     "Species": "Jumpluff",
     "bHP": 75,
     "bAttack": 55,
@@ -4484,7 +4483,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Aipom": {
     "Species": "Aipom",
     "bHP": 55,
     "bAttack": 70,
@@ -4506,7 +4505,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Sunkern": {
     "Species": "Sunkern",
     "bHP": 30,
     "bAttack": 30,
@@ -4532,7 +4531,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Sunflora": {
     "Species": "Sunflora",
     "bHP": 75,
     "bAttack": 75,
@@ -4553,7 +4552,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Yanma": {
     "Species": "Yanma",
     "bHP": 65,
     "bAttack": 65,
@@ -4576,7 +4575,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Wooper": {
     "Species": "Wooper",
     "bHP": 55,
     "bAttack": 45,
@@ -4602,7 +4601,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Quagsire": {
     "Species": "Quagsire",
     "bHP": 95,
     "bAttack": 85,
@@ -4625,7 +4624,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Espeon": {
     "Species": "Espeon",
     "bHP": 65,
     "bAttack": 65,
@@ -4646,7 +4645,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Umbreon": {
     "Species": "Umbreon",
     "bHP": 95,
     "bAttack": 65,
@@ -4667,7 +4666,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Murkrow": {
     "Species": "Murkrow",
     "bHP": 60,
     "bAttack": 85,
@@ -4689,7 +4688,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Slowking": {
     "Species": "Slowking",
     "bHP": 95,
     "bAttack": 75,
@@ -4712,7 +4711,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Misdreavus": {
     "Species": "Misdreavus",
     "bHP": 60,
     "bAttack": 60,
@@ -4733,7 +4732,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Unown": {
     "Species": "Unown",
     "bHP": 48,
     "bAttack": 72,
@@ -4754,7 +4753,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Wobbuffet": {
     "Species": "Wobbuffet",
     "bHP": 190,
     "bAttack": 33,
@@ -4775,7 +4774,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Girafarig": {
     "Species": "Girafarig",
     "bHP": 70,
     "bAttack": 80,
@@ -4798,7 +4797,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Pineco": {
     "Species": "Pineco",
     "bHP": 50,
     "bAttack": 65,
@@ -4822,7 +4821,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Forretress": {
     "Species": "Forretress",
     "bHP": 75,
     "bAttack": 90,
@@ -4844,7 +4843,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Dunsparce": {
     "Species": "Dunsparce",
     "bHP": 100,
     "bAttack": 70,
@@ -4866,7 +4865,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Gligar": {
     "Species": "Gligar",
     "bHP": 65,
     "bAttack": 75,
@@ -4889,7 +4888,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Steelix": {
     "Species": "Steelix",
     "bHP": 75,
     "bAttack": 85,
@@ -4912,7 +4911,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Snubbull": {
     "Species": "Snubbull",
     "bHP": 60,
     "bAttack": 80,
@@ -4937,7 +4936,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Granbull": {
     "Species": "Granbull",
     "bHP": 90,
     "bAttack": 120,
@@ -4958,7 +4957,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Qwilfish": {
     "Species": "Qwilfish",
     "bHP": 65,
     "bAttack": 95,
@@ -4981,7 +4980,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Scizor": {
     "Species": "Scizor",
     "bHP": 70,
     "bAttack": 130,
@@ -5003,7 +5002,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Shuckle": {
     "Species": "Shuckle",
     "bHP": 20,
     "bAttack": 10,
@@ -5025,7 +5024,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Heracross": {
     "Species": "Heracross",
     "bHP": 80,
     "bAttack": 125,
@@ -5048,7 +5047,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Sneasel": {
     "Species": "Sneasel",
     "bHP": 55,
     "bAttack": 95,
@@ -5071,7 +5070,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Teddiursa": {
     "Species": "Teddiursa",
     "bHP": 60,
     "bAttack": 80,
@@ -5095,7 +5094,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ursaring": {
     "Species": "Ursaring",
     "bHP": 90,
     "bAttack": 130,
@@ -5116,7 +5115,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Slugma": {
     "Species": "Slugma",
     "bHP": 40,
     "bAttack": 40,
@@ -5141,7 +5140,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Magcargo": {
     "Species": "Magcargo",
     "bHP": 50,
     "bAttack": 50,
@@ -5164,7 +5163,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Swinub": {
     "Species": "Swinub",
     "bHP": 50,
     "bAttack": 50,
@@ -5189,7 +5188,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Piloswine": {
     "Species": "Piloswine",
     "bHP": 100,
     "bAttack": 100,
@@ -5211,7 +5210,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Corsola": {
     "Species": "Corsola",
     "bHP": 55,
     "bAttack": 55,
@@ -5234,7 +5233,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Remoraid": {
     "Species": "Remoraid",
     "bHP": 35,
     "bAttack": 65,
@@ -5258,7 +5257,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Octillery": {
     "Species": "Octillery",
     "bHP": 75,
     "bAttack": 105,
@@ -5279,7 +5278,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Delibird": {
     "Species": "Delibird",
     "bHP": 45,
     "bAttack": 55,
@@ -5302,7 +5301,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Mantine": {
     "Species": "Mantine",
     "bHP": 65,
     "bAttack": 40,
@@ -5325,7 +5324,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Skarmory": {
     "Species": "Skarmory",
     "bHP": 65,
     "bAttack": 80,
@@ -5348,7 +5347,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Houndour": {
     "Species": "Houndour",
     "bHP": 45,
     "bAttack": 60,
@@ -5374,7 +5373,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Houndoom": {
     "Species": "Houndoom",
     "bHP": 75,
     "bAttack": 90,
@@ -5397,7 +5396,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Kingdra": {
     "Species": "Kingdra",
     "bHP": 75,
     "bAttack": 95,
@@ -5419,7 +5418,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Phanpy": {
     "Species": "Phanpy",
     "bHP": 90,
     "bAttack": 60,
@@ -5443,7 +5442,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Donphan": {
     "Species": "Donphan",
     "bHP": 90,
     "bAttack": 120,
@@ -5464,7 +5463,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Porygon2": {
     "Species": "Porygon2",
     "bHP": 85,
     "bAttack": 80,
@@ -5485,7 +5484,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Stantler": {
     "Species": "Stantler",
     "bHP": 73,
     "bAttack": 95,
@@ -5506,7 +5505,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Smeargle": {
     "Species": "Smeargle",
     "bHP": 55,
     "bAttack": 20,
@@ -5527,7 +5526,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Tyrogue": {
     "Species": "Tyrogue",
     "bHP": 35,
     "bAttack": 35,
@@ -5553,7 +5552,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Hitmontop": {
     "Species": "Hitmontop",
     "bHP": 50,
     "bAttack": 95,
@@ -5574,7 +5573,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Smoochum": {
     "Species": "Smoochum",
     "bHP": 45,
     "bAttack": 30,
@@ -5599,7 +5598,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Elekid": {
     "Species": "Elekid",
     "bHP": 45,
     "bAttack": 63,
@@ -5623,7 +5622,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Magby": {
     "Species": "Magby",
     "bHP": 45,
     "bAttack": 75,
@@ -5647,7 +5646,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Miltank": {
     "Species": "Miltank",
     "bHP": 95,
     "bAttack": 80,
@@ -5668,7 +5667,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Blissey": {
     "Species": "Blissey",
     "bHP": 255,
     "bAttack": 10,
@@ -5690,7 +5689,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Raikou": {
     "Species": "Raikou",
     "bHP": 90,
     "bAttack": 85,
@@ -5711,7 +5710,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Entei": {
     "Species": "Entei",
     "bHP": 115,
     "bAttack": 115,
@@ -5732,7 +5731,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Suicune": {
     "Species": "Suicune",
     "bHP": 100,
     "bAttack": 75,
@@ -5753,7 +5752,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Larvitar": {
     "Species": "Larvitar",
     "bHP": 50,
     "bAttack": 64,
@@ -5778,7 +5777,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Pupitar": {
     "Species": "Pupitar",
     "bHP": 70,
     "bAttack": 84,
@@ -5803,7 +5802,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Tyranitar": {
     "Species": "Tyranitar",
     "bHP": 100,
     "bAttack": 134,
@@ -5825,7 +5824,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Lugia": {
     "Species": "Lugia",
     "bHP": 106,
     "bAttack": 90,
@@ -5847,7 +5846,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ho-Oh": {
     "Species": "Ho-Oh",
     "bHP": 106,
     "bAttack": 130,
@@ -5869,7 +5868,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Celebi": {
     "Species": "Celebi",
     "bHP": 100,
     "bAttack": 100,
@@ -5891,7 +5890,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Treecko": {
     "Species": "Treecko",
     "bHP": 40,
     "bAttack": 45,
@@ -5915,7 +5914,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Grovyle": {
     "Species": "Grovyle",
     "bHP": 50,
     "bAttack": 65,
@@ -5939,7 +5938,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Sceptile": {
     "Species": "Sceptile",
     "bHP": 70,
     "bAttack": 85,
@@ -5960,7 +5959,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Torchic": {
     "Species": "Torchic",
     "bHP": 45,
     "bAttack": 60,
@@ -5984,7 +5983,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Combusken": {
     "Species": "Combusken",
     "bHP": 60,
     "bAttack": 85,
@@ -6009,7 +6008,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Blaziken": {
     "Species": "Blaziken",
     "bHP": 80,
     "bAttack": 120,
@@ -6031,7 +6030,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Mudkip": {
     "Species": "Mudkip",
     "bHP": 50,
     "bAttack": 70,
@@ -6055,7 +6054,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Marshtomp": {
     "Species": "Marshtomp",
     "bHP": 70,
     "bAttack": 85,
@@ -6080,7 +6079,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Swampert": {
     "Species": "Swampert",
     "bHP": 100,
     "bAttack": 110,
@@ -6102,7 +6101,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Poochyena": {
     "Species": "Poochyena",
     "bHP": 35,
     "bAttack": 55,
@@ -6126,7 +6125,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Mightyena": {
     "Species": "Mightyena",
     "bHP": 70,
     "bAttack": 90,
@@ -6147,7 +6146,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Zigzagoon": {
     "Species": "Zigzagoon",
     "bHP": 38,
     "bAttack": 30,
@@ -6171,7 +6170,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Linoone": {
     "Species": "Linoone",
     "bHP": 78,
     "bAttack": 70,
@@ -6192,7 +6191,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Wurmple": {
     "Species": "Wurmple",
     "bHP": 45,
     "bAttack": 45,
@@ -6217,7 +6216,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Silcoon": {
     "Species": "Silcoon",
     "bHP": 50,
     "bAttack": 35,
@@ -6241,7 +6240,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Beautifly": {
     "Species": "Beautifly",
     "bHP": 60,
     "bAttack": 70,
@@ -6263,7 +6262,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Cascoon": {
     "Species": "Cascoon",
     "bHP": 50,
     "bAttack": 35,
@@ -6287,7 +6286,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Dustox": {
     "Species": "Dustox",
     "bHP": 60,
     "bAttack": 50,
@@ -6309,7 +6308,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Lotad": {
     "Species": "Lotad",
     "bHP": 40,
     "bAttack": 30,
@@ -6335,7 +6334,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Lombre": {
     "Species": "Lombre",
     "bHP": 60,
     "bAttack": 50,
@@ -6363,7 +6362,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ludicolo": {
     "Species": "Ludicolo",
     "bHP": 80,
     "bAttack": 70,
@@ -6386,7 +6385,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Seedot": {
     "Species": "Seedot",
     "bHP": 40,
     "bAttack": 40,
@@ -6411,7 +6410,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Nuzleaf": {
     "Species": "Nuzleaf",
     "bHP": 70,
     "bAttack": 70,
@@ -6439,7 +6438,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Shiftry": {
     "Species": "Shiftry",
     "bHP": 90,
     "bAttack": 100,
@@ -6462,7 +6461,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Taillow": {
     "Species": "Taillow",
     "bHP": 40,
     "bAttack": 55,
@@ -6487,7 +6486,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Swellow": {
     "Species": "Swellow",
     "bHP": 60,
     "bAttack": 85,
@@ -6509,7 +6508,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Wingull": {
     "Species": "Wingull",
     "bHP": 40,
     "bAttack": 30,
@@ -6534,7 +6533,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Pelipper": {
     "Species": "Pelipper",
     "bHP": 60,
     "bAttack": 50,
@@ -6556,7 +6555,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ralts": {
     "Species": "Ralts",
     "bHP": 28,
     "bAttack": 25,
@@ -6581,7 +6580,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Kirlia": {
     "Species": "Kirlia",
     "bHP": 38,
     "bAttack": 35,
@@ -6606,7 +6605,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Gardevoir": {
     "Species": "Gardevoir",
     "bHP": 68,
     "bAttack": 65,
@@ -6628,7 +6627,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Surskit": {
     "Species": "Surskit",
     "bHP": 40,
     "bAttack": 30,
@@ -6653,7 +6652,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Masquerain": {
     "Species": "Masquerain",
     "bHP": 70,
     "bAttack": 60,
@@ -6675,7 +6674,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Shroomish": {
     "Species": "Shroomish",
     "bHP": 60,
     "bAttack": 40,
@@ -6699,7 +6698,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Breloom": {
     "Species": "Breloom",
     "bHP": 60,
     "bAttack": 130,
@@ -6721,7 +6720,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Slakoth": {
     "Species": "Slakoth",
     "bHP": 60,
     "bAttack": 60,
@@ -6745,7 +6744,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Vigoroth": {
     "Species": "Vigoroth",
     "bHP": 80,
     "bAttack": 80,
@@ -6769,7 +6768,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Slaking": {
     "Species": "Slaking",
     "bHP": 150,
     "bAttack": 160,
@@ -6790,7 +6789,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Nincada": {
     "Species": "Nincada",
     "bHP": 31,
     "bAttack": 45,
@@ -6816,7 +6815,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Ninjask": {
     "Species": "Ninjask",
     "bHP": 61,
     "bAttack": 90,
@@ -6838,7 +6837,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Shedinja": {
     "Species": "Shedinja",
     "bHP": 1,
     "bAttack": 90,
@@ -6860,7 +6859,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Whismur": {
     "Species": "Whismur",
     "bHP": 64,
     "bAttack": 51,
@@ -6884,7 +6883,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Loudred": {
     "Species": "Loudred",
     "bHP": 84,
     "bAttack": 71,
@@ -6908,7 +6907,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Exploud": {
     "Species": "Exploud",
     "bHP": 104,
     "bAttack": 91,
@@ -6929,7 +6928,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Makuhita": {
     "Species": "Makuhita",
     "bHP": 72,
     "bAttack": 60,
@@ -6954,7 +6953,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Hariyama": {
     "Species": "Hariyama",
     "bHP": 144,
     "bAttack": 120,
@@ -6976,7 +6975,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Azurill": {
     "Species": "Azurill",
     "bHP": 50,
     "bAttack": 20,
@@ -7001,7 +7000,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Nosepass": {
     "Species": "Nosepass",
     "bHP": 30,
     "bAttack": 45,
@@ -7023,7 +7022,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Skitty": {
     "Species": "Skitty",
     "bHP": 50,
     "bAttack": 45,
@@ -7049,7 +7048,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Delcatty": {
     "Species": "Delcatty",
     "bHP": 70,
     "bAttack": 65,
@@ -7070,7 +7069,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Sableye": {
     "Species": "Sableye",
     "bHP": 50,
     "bAttack": 75,
@@ -7092,7 +7091,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Mawile": {
     "Species": "Mawile",
     "bHP": 50,
     "bAttack": 85,
@@ -7114,7 +7113,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Aron": {
     "Species": "Aron",
     "bHP": 50,
     "bAttack": 70,
@@ -7140,7 +7139,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Lairon": {
     "Species": "Lairon",
     "bHP": 60,
     "bAttack": 90,
@@ -7166,7 +7165,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Aggron": {
     "Species": "Aggron",
     "bHP": 70,
     "bAttack": 110,
@@ -7189,7 +7188,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Meditite": {
     "Species": "Meditite",
     "bHP": 30,
     "bAttack": 40,
@@ -7214,7 +7213,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Medicham": {
     "Species": "Medicham",
     "bHP": 60,
     "bAttack": 60,
@@ -7236,7 +7235,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Electrike": {
     "Species": "Electrike",
     "bHP": 40,
     "bAttack": 45,
@@ -7261,7 +7260,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Manectric": {
     "Species": "Manectric",
     "bHP": 70,
     "bAttack": 75,
@@ -7283,7 +7282,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Plusle": {
     "Species": "Plusle",
     "bHP": 60,
     "bAttack": 50,
@@ -7304,7 +7303,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Minun": {
     "Species": "Minun",
     "bHP": 60,
     "bAttack": 40,
@@ -7325,7 +7324,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Volbeat": {
     "Species": "Volbeat",
     "bHP": 65,
     "bAttack": 73,
@@ -7347,7 +7346,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Illumise": {
     "Species": "Illumise",
     "bHP": 65,
     "bAttack": 47,
@@ -7368,7 +7367,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Roselia": {
     "Species": "Roselia",
     "bHP": 50,
     "bAttack": 60,
@@ -7391,7 +7390,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Gulpin": {
     "Species": "Gulpin",
     "bHP": 70,
     "bAttack": 43,
@@ -7416,7 +7415,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Swalot": {
     "Species": "Swalot",
     "bHP": 100,
     "bAttack": 73,
@@ -7438,7 +7437,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Carvanha": {
     "Species": "Carvanha",
     "bHP": 45,
     "bAttack": 90,
@@ -7463,7 +7462,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Sharpedo": {
     "Species": "Sharpedo",
     "bHP": 70,
     "bAttack": 120,
@@ -7485,7 +7484,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Wailmer": {
     "Species": "Wailmer",
     "bHP": 130,
     "bAttack": 70,
@@ -7510,7 +7509,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Wailord": {
     "Species": "Wailord",
     "bHP": 170,
     "bAttack": 90,
@@ -7532,7 +7531,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Numel": {
     "Species": "Numel",
     "bHP": 60,
     "bAttack": 60,
@@ -7557,7 +7556,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Camerupt": {
     "Species": "Camerupt",
     "bHP": 70,
     "bAttack": 100,
@@ -7579,7 +7578,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Torkoal": {
     "Species": "Torkoal",
     "bHP": 70,
     "bAttack": 85,
@@ -7600,7 +7599,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Spoink": {
     "Species": "Spoink",
     "bHP": 60,
     "bAttack": 25,
@@ -7625,7 +7624,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Grumpig": {
     "Species": "Grumpig",
     "bHP": 80,
     "bAttack": 45,
@@ -7647,7 +7646,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Spinda": {
     "Species": "Spinda",
     "bHP": 60,
     "bAttack": 60,
@@ -7668,7 +7667,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Trapinch": {
     "Species": "Trapinch",
     "bHP": 45,
     "bAttack": 100,
@@ -7693,7 +7692,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Vibrava": {
     "Species": "Vibrava",
     "bHP": 50,
     "bAttack": 70,
@@ -7718,7 +7717,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Flygon": {
     "Species": "Flygon",
     "bHP": 80,
     "bAttack": 100,
@@ -7740,7 +7739,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Cacnea": {
     "Species": "Cacnea",
     "bHP": 50,
     "bAttack": 85,
@@ -7764,7 +7763,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Cacturne": {
     "Species": "Cacturne",
     "bHP": 70,
     "bAttack": 115,
@@ -7786,7 +7785,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Swablu": {
     "Species": "Swablu",
     "bHP": 45,
     "bAttack": 40,
@@ -7811,7 +7810,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Altaria": {
     "Species": "Altaria",
     "bHP": 75,
     "bAttack": 70,
@@ -7833,7 +7832,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Zangoose": {
     "Species": "Zangoose",
     "bHP": 73,
     "bAttack": 115,
@@ -7854,7 +7853,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Seviper": {
     "Species": "Seviper",
     "bHP": 73,
     "bAttack": 100,
@@ -7875,7 +7874,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Lunatone": {
     "Species": "Lunatone",
     "bHP": 70,
     "bAttack": 55,
@@ -7897,7 +7896,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Solrock": {
     "Species": "Solrock",
     "bHP": 70,
     "bAttack": 95,
@@ -7919,7 +7918,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Barboach": {
     "Species": "Barboach",
     "bHP": 50,
     "bAttack": 48,
@@ -7944,7 +7943,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Whiscash": {
     "Species": "Whiscash",
     "bHP": 110,
     "bAttack": 78,
@@ -7966,7 +7965,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Corphish": {
     "Species": "Corphish",
     "bHP": 43,
     "bAttack": 80,
@@ -7991,7 +7990,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Crawdaunt": {
     "Species": "Crawdaunt",
     "bHP": 63,
     "bAttack": 120,
@@ -8014,7 +8013,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Baltoy": {
     "Species": "Baltoy",
     "bHP": 40,
     "bAttack": 40,
@@ -8039,7 +8038,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Claydol": {
     "Species": "Claydol",
     "bHP": 60,
     "bAttack": 70,
@@ -8061,7 +8060,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Lileep": {
     "Species": "Lileep",
     "bHP": 66,
     "bAttack": 41,
@@ -8086,7 +8085,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Cradily": {
     "Species": "Cradily",
     "bHP": 86,
     "bAttack": 81,
@@ -8108,7 +8107,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Anorith": {
     "Species": "Anorith",
     "bHP": 45,
     "bAttack": 95,
@@ -8133,7 +8132,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Armaldo": {
     "Species": "Armaldo",
     "bHP": 75,
     "bAttack": 125,
@@ -8155,7 +8154,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Feebas": {
     "Species": "Feebas",
     "bHP": 20,
     "bAttack": 15,
@@ -8179,7 +8178,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Milotic": {
     "Species": "Milotic",
     "bHP": 95,
     "bAttack": 60,
@@ -8200,7 +8199,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Castform": {
     "Species": "Castform",
     "bHP": 70,
     "bAttack": 70,
@@ -8226,7 +8225,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Kecleon": {
     "Species": "Kecleon",
     "bHP": 60,
     "bAttack": 90,
@@ -8247,7 +8246,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Shuppet": {
     "Species": "Shuppet",
     "bHP": 44,
     "bAttack": 75,
@@ -8271,7 +8270,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Banette": {
     "Species": "Banette",
     "bHP": 64,
     "bAttack": 115,
@@ -8292,7 +8291,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Duskull": {
     "Species": "Duskull",
     "bHP": 20,
     "bAttack": 40,
@@ -8316,7 +8315,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Dusclops": {
     "Species": "Dusclops",
     "bHP": 40,
     "bAttack": 70,
@@ -8337,7 +8336,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Tropius": {
     "Species": "Tropius",
     "bHP": 99,
     "bAttack": 68,
@@ -8359,7 +8358,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Chimecho": {
     "Species": "Chimecho",
     "bHP": 65,
     "bAttack": 50,
@@ -8380,7 +8379,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Absol": {
     "Species": "Absol",
     "bHP": 65,
     "bAttack": 130,
@@ -8401,7 +8400,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Wynaut": {
     "Species": "Wynaut",
     "bHP": 95,
     "bAttack": 23,
@@ -8425,7 +8424,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Snorunt": {
     "Species": "Snorunt",
     "bHP": 50,
     "bAttack": 50,
@@ -8449,7 +8448,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Glalie": {
     "Species": "Glalie",
     "bHP": 80,
     "bAttack": 80,
@@ -8470,7 +8469,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Spheal": {
     "Species": "Spheal",
     "bHP": 70,
     "bAttack": 40,
@@ -8495,7 +8494,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Sealeo": {
     "Species": "Sealeo",
     "bHP": 90,
     "bAttack": 60,
@@ -8520,7 +8519,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Walrein": {
     "Species": "Walrein",
     "bHP": 110,
     "bAttack": 80,
@@ -8542,7 +8541,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Clamperl": {
     "Species": "Clamperl",
     "bHP": 35,
     "bAttack": 64,
@@ -8570,7 +8569,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Huntail": {
     "Species": "Huntail",
     "bHP": 55,
     "bAttack": 104,
@@ -8591,7 +8590,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Gorebyss": {
     "Species": "Gorebyss",
     "bHP": 55,
     "bAttack": 84,
@@ -8612,7 +8611,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Relicanth": {
     "Species": "Relicanth",
     "bHP": 100,
     "bAttack": 90,
@@ -8635,7 +8634,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Luvdisc": {
     "Species": "Luvdisc",
     "bHP": 43,
     "bAttack": 30,
@@ -8656,7 +8655,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Bagon": {
     "Species": "Bagon",
     "bHP": 45,
     "bAttack": 75,
@@ -8680,7 +8679,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Shelgon": {
     "Species": "Shelgon",
     "bHP": 65,
     "bAttack": 95,
@@ -8704,7 +8703,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Salamence": {
     "Species": "Salamence",
     "bHP": 95,
     "bAttack": 135,
@@ -8726,7 +8725,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Beldum": {
     "Species": "Beldum",
     "bHP": 40,
     "bAttack": 55,
@@ -8751,7 +8750,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Metang": {
     "Species": "Metang",
     "bHP": 60,
     "bAttack": 75,
@@ -8776,7 +8775,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Metagross": {
     "Species": "Metagross",
     "bHP": 80,
     "bAttack": 135,
@@ -8798,7 +8797,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Regirock": {
     "Species": "Regirock",
     "bHP": 80,
     "bAttack": 100,
@@ -8819,7 +8818,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Regice": {
     "Species": "Regice",
     "bHP": 80,
     "bAttack": 50,
@@ -8840,7 +8839,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Registeel": {
     "Species": "Registeel",
     "bHP": 80,
     "bAttack": 75,
@@ -8861,7 +8860,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Latias": {
     "Species": "Latias",
     "bHP": 80,
     "bAttack": 80,
@@ -8883,7 +8882,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Latios": {
     "Species": "Latios",
     "bHP": 80,
     "bAttack": 90,
@@ -8905,7 +8904,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Kyogre": {
     "Species": "Kyogre",
     "bHP": 100,
     "bAttack": 100,
@@ -8926,7 +8925,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Groudon": {
     "Species": "Groudon",
     "bHP": 100,
     "bAttack": 150,
@@ -8947,7 +8946,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Rayquaza": {
     "Species": "Rayquaza",
     "bHP": 105,
     "bAttack": 150,
@@ -8969,7 +8968,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Jirachi": {
     "Species": "Jirachi",
     "bHP": 100,
     "bAttack": 100,
@@ -8991,7 +8990,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Deoxys": {
     "Species": "Deoxys",
     "bHP": 50,
     "bAttack": 150,
@@ -9012,7 +9011,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Deoxys-Attack": {
     "Species": "Deoxys-Attack",
     "bHP": 50,
     "bAttack": 180,
@@ -9033,7 +9032,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Deoxys-Defense": {
     "Species": "Deoxys-Defense",
     "bHP": 50,
     "bAttack": 70,
@@ -9054,7 +9053,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Deoxys-Speed": {
     "Species": "Deoxys-Speed",
     "bHP": 50,
     "bAttack": 95,
@@ -9075,7 +9074,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Castform-Snowy": {
     "Species": "Castform-Snowy",
     "bHP": 70,
     "bAttack": 70,
@@ -9094,7 +9093,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Castform-Sunny": {
     "Species": "Castform-Sunny",
     "bHP": 70,
     "bAttack": 70,
@@ -9113,7 +9112,7 @@
     "Gender Ratio": 0.875,
     "Catch rate": 11.9
   },
-  {
+  "Castform-Rainy": {
     "Species": "Castform-Rainy",
     "bHP": 70,
     "bAttack": 70,
@@ -9134,7 +9133,7 @@
     "Front Sprite": "0xE000",
     "Back Sprite": "0xE002"
   },
-  {
+  "Testmon": {
     "Species": "Testmon",
     "bHP": 45,
     "bAttack": 49,
@@ -9158,7 +9157,7 @@
     "Front Sprite": "0xE000",
     "Back Sprite": "0xE256"
   },
-  {
+  "Testmon2": {
     "Species": "Testmon2",
     "bHP": 45,
     "bAttack": 49,
@@ -9181,4 +9180,4 @@
     "Front Sprite": "0xE244",
     "Back Sprite": "0xE002"
   }
-]
+}

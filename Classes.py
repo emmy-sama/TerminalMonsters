@@ -23,6 +23,8 @@ class Player:
         self.name = name
         self.starter_type = starter_type
         self.team = team
+        self.active = None
+        self.opponent = None
         self.reflect = False
         self.light_screen = False
         self.mist = 0
@@ -32,6 +34,8 @@ class Ai:
     def __init__(self, name, team):
         self.name = name
         self.team = team
+        self.active = None
+        self.opponent = None
         self.reflect = False
         self.light_screen = False
         self.mist = 0
@@ -41,46 +45,37 @@ class Pokemon:
     def __init__(self, species, owner, level=5):
         self.owner = owner
         self.level = level
-        for p in pokedex:
-            if p["Species"] == species:
-                self.species = p.get("Species")
-                self.index = pokedex.index(p)
-                break
-        self.dex_number = pokedex[self.index].get("dex_number")
+        dex_entry = pokedex.get(species)
+        self.species = dex_entry.get("Species")
+        self.dex_number = dex_entry.get("dex_number")
         self.front_sprite = random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 58116),
                                            hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 58117)])
         self.back_sprite = random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57344),
                                           hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57345)])
-        self.type_one = pokedex[self.index].get("types")[0]
-        if len(pokedex[self.index].get("types")) == 2:
-            self.type_two = pokedex[self.index].get("types")[1]
+        self.type_one = dex_entry.get("types")[0]
+        if len(dex_entry.get("types")) == 2:
+            self.type_two = dex_entry.get("types")[1]
         else:
             self.type_two = None
-        self.ability = random.choice(pokedex[self.index].get("Abilities"))
+        self.ability = random.choice(dex_entry.get("Abilities"))
         self.gender = None
-        self.get_gender(pokedex[self.index].get("Gender Ratio"))
-        self.catch_rate = pokedex[self.index].get("Catch rate")
-        self.height = pokedex[self.index].get("Height")
-        self.weight = pokedex[self.index].get("Weight")
+        self.get_gender(dex_entry.get("Gender Ratio"))
+        self.catch_rate = dex_entry.get("Catch rate")
+        self.height = dex_entry.get("Height")
+        self.weight = dex_entry.get("Weight")
         self.nature = natures[random.randint(0, 24)]
         self.hidden_type = self.get_hidden_type()
-        self.hp = math.floor(0.01 * ((2 * pokedex[self.index].get("bHP")) * self.level)) + self.level + 10
-        self.attack = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bAttack")) * self.level)) + 5)
-                                 * self.nature.get("Attack", 1))
-        self.defense = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bDefense")) * self.level)) + 5)
-                                  * self.nature.get("Defense", 1))
-        self.sp_attack = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSp.Attack")) * self.level)) + 5)
-                                    * self.nature.get("Sp.Attack", 1))
-        self.sp_defense = math.floor(
-            (math.floor(0.01 * ((2 * pokedex[self.index].get("bSp.Defense")) * self.level)) + 5)
-            * self.nature.get("Sp.Defense", 1))
-        self.speed = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSpeed")) * self.level)) + 5)
-                                * self.nature.get("Speed", 1))
-        self.evolvl = pokedex[self.index].get("evo_level", None)
-        self.stone = pokedex[self.index].get("Stone", None)
-        self.evo = pokedex[self.index].get("evos", None)
+        self.bHp = dex_entry.get("bHP")
+        self.bAttack = dex_entry.get("bAttack")
+        self.bDefense = dex_entry.get("bDefense")
+        self.bSp_attack = dex_entry.get("bSp.Attack")
+        self.bSp_defense = dex_entry.get("bSp.Defense")
+        self.bSpeed = dex_entry.get("bSpeed")
+        self.calc_stats()
+        self.evolvl = dex_entry.get("evo_level", None)
+        self.stone = dex_entry.get("Stone", None)
+        self.evo = dex_entry.get("evos", None)
         self.moves = self.get_move_set()
-        self.chp = self.hp
         self.status = ""
         self.tox_turns = 0
         self.confused = False
@@ -150,17 +145,17 @@ class Pokemon:
                                                 6.25, 6.25, 6.25, 6.25, 1.5625], k=1)[0]
 
     def calc_stats(self):
-        self.chp += (math.floor(0.01 * ((2 * pokedex[self.index].get("bHP")) * self.level)) + self.level + 10) - self.hp
-        self.hp = math.floor(0.01 * ((2 * pokedex[self.index].get("bHP")) * self.level)) + self.level + 10
-        self.attack = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bAttack")) * self.level)) + 5)
+        self.hp = math.floor(0.01 * ((2 * self.bHp) * self.level)) + self.level + 10
+        self.chp = self.hp
+        self.attack = math.floor((math.floor(0.01 * ((2 * self.bAttack) * self.level)) + 5)
                                  * self.nature.get("Attack", 1))
-        self.defense = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bDefense")) * self.level)) + 5)
+        self.defense = math.floor((math.floor(0.01 * ((2 * self.bDefense) * self.level)) + 5)
                                   * self.nature.get("Defense", 1))
-        self.sp_attack = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSp.Attack")) * self.level)) + 5)
+        self.sp_attack = math.floor((math.floor(0.01 * ((2 * self.bSp_attack) * self.level)) + 5)
                                     * self.nature.get("Sp.Attack", 1))
-        self.sp_defense = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSp.Defense")) * self.level)) + 5)
+        self.sp_defense = math.floor((math.floor(0.01 * ((2 * self.bSp_defense) * self.level)) + 5)
                                      * self.nature.get("Sp.Defense", 1))
-        self.speed = math.floor((math.floor(0.01 * ((2 * pokedex[self.index].get("bSpeed")) * self.level)) + 5)
+        self.speed = math.floor((math.floor(0.01 * ((2 * self.bSpeed) * self.level)) + 5)
                                 * self.nature.get("Speed", 1))
 
     def reset_temp(self):
@@ -234,29 +229,26 @@ class Pokemon:
                 self.moves.append(move)
 
     def evolve(self, species):
-        for p in pokedex:
-            if p["Species"] == species:
-                self.species = p.get("Species")
-                self.index = pokedex.index(p)
-                break
-        self.dex_number = pokedex[self.index].get("dex_number")
+        dex_entry = pokedex.get(species)
+        self.species = dex_entry.get("Species")
+        self.dex_number = dex_entry.get("dex_number")
         self.front_sprite = random.choice(
             [hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 58116),
              hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 58117)])
         self.back_sprite = random.choice(
             [hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57344),
              hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57345)])
-        self.type_one = pokedex[self.index].get("types")[0]
-        if len(pokedex[self.index].get("types")) == 2:
-            self.type_two = pokedex[self.index].get("types")[1]
+        self.type_one = dex_entry.get("types")[0]
+        if len(dex_entry.get("types")) == 2:
+            self.type_two = dex_entry.get("types")[1]
         else:
             self.type_two = None
-        self.ability = random.choice(pokedex[self.index].get("Abilities"))
-        self.height = pokedex[self.index].get("Height")
-        self.weight = pokedex[self.index].get("Weight")
-        self.evolvl = pokedex[self.index].get("evo_level", None)
-        self.stone = pokedex[self.index].get("Stone", None)
-        self.evo = pokedex[self.index].get("evos", None)
+        self.ability = random.choice(dex_entry.get("Abilities"))
+        self.height = dex_entry.get("Height")
+        self.weight = dex_entry.get("Weight")
+        self.evolvl = dex_entry.get("evo_level", None)
+        self.stone = dex_entry.get("Stone", None)
+        self.evo = dex_entry.get("evos", None)
         self.calc_stats()
         self.info = (f"{self.gender} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
                      f"Sp.Attack: {self.sp_attack} Sp.Defense: {self.sp_defense} Speed: {self.speed}")

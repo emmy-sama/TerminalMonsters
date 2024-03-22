@@ -23180,8 +23180,8 @@
   },
   "testmon": {
     "level": {
-      "1": "Toxic",
-      "2": "Haze",
+      "1": "Metronome",
+      "2": "Assist",
       "3": "Rain Dance",
       "4": "Sandstorm",
       "20": "Swift",
@@ -23195,10 +23195,10 @@
   },
   "testmon2": {
     "level": {
-      "8": "Tackle",
+      "1": "Tackle",
       "6": "Water Sport",
       "7": "Clamp",
-      "1": "Swords Dance",
+      "8": "Explosion",
       "20": "Spikes",
       "25": "Tackle",
       "30": "Swift",
