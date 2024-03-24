@@ -12,7 +12,7 @@ ash.team.append(poliwhirl)
 
 garry = Ai("Garry", [])
 onix = Pokemon("Testmon2", garry, 5)
-charmander = Pokemon("Charmander", garry, 5)
+charmander = Pokemon("Testmon2", garry, 5)
 slowbro = Pokemon("Slowbro", garry, 5)
 garry.team.append(onix)
 garry.team.append(charmander)

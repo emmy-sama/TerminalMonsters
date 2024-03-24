@@ -74,9 +74,14 @@ def crit_check(attacker, move):
             print_txt("[color=red]A critical hit[/color]")
             return True
         return False
-    
+
 
 def change_stats(attacker, defender, move):
+    if defender.ability in ["Clear Body", "White Smoke"]:
+        if move.get("chance") == 1:
+            print_txt(f"{defender.owner.name} {defender.species}'s stats were not lowered!")
+            # print popup
+        return
     if move == "Rage":
         defender.temp_stats["attack"] += 1
         if defender.temp_stats["attack"] > 6:
@@ -123,6 +128,63 @@ def change_stats(attacker, defender, move):
                     print_txt(f"{defender.species}'s {key} wont go any lower!")
 
 
+def grounded(mon):
+    if mon.type_one == "Flying" or mon.type_two == "Flying":
+        return
+    if mon.ability == "Levitate":
+        return
+    return True
+
+
+def can_swap(mon_1, mon_2):
+    if mon_2.trapping[0] != 0:
+        return
+    if mon_2.blocking:
+        return
+    if mon_2.ability in ["Arena Trap", "Magnet Pull", "Shadow Tag"]:
+        if mon_2.ability == "Arena Trap" and grounded(mon_1):
+            return
+        if mon_2.ability == "Magnet Pull":
+            if mon_1.type_one == "Steel" or mon_1.type_two == "Steel":
+                return
+        if mon_2.ability == "Shadow Tag":
+            return
+    return True
+
+
+def contact(attacker, defender, move):
+    # print pop up
+    if defender.ability == "Cute Charm":
+        # add infatuate
+        pass
+    if attacker.status == "":
+        if defender.ability == "Effect Spore":
+            if random.uniform(0, 1) <= 0.1:
+                status = random.choice(["SLP", "PSN", "PAR"])
+                if status == "SLP":
+                    if attacker.uproar == 0 or defender.uproar == 0:
+                        attacker.status = "SLP"
+                        print_txt(f"{defender.owner.name}'s {defender.species} is fast asleep")
+                elif (status == "PSN" and attacker.type_one != "Poison" and attacker.type_two != "Poison" and
+                      attacker.type_one != "Steel" and attacker.type_two != "Steel"):
+                    attacker.status = "PSN"
+                    print_txt(f"{attacker.owner.name}'s {attacker.species} was poisoned!")
+                elif status == "PAR":
+                    attacker.status = "PAR"
+                    print_txt(f"{defender.owner.name}'s {defender.species} was paralyzed!")
+        if random.uniform(0, 1) <= 0.33:
+            if defender.ability == "Flame Body" and attacker.type_one != "Fire" and attacker.type_two != "Fire":
+                attacker.status = "BRN"
+                print_txt(f"{defender.owner.name}'s {defender.species} was burned!")
+            if (defender.ability == "Poison Point" and attacker.type_one != "Poison" and attacker.type_two != "Poison"
+                    and attacker.type_one != "Steel" and attacker.type_two != "Steel"):
+                attacker.status = "PSN"
+                print_txt(f"{attacker.owner.name}'s {attacker.species} was poisoned!")
+            if defender.ability == "Static":
+                attacker.status = "PAR"
+                print_txt(f"{defender.owner.name}'s {defender.species} was paralyzed!")
+
+
 class Battle:
     def __init__(self, player, lead, ai):
         self.temp_stat_table_norm = {-6: 2 / 8, -5: 2 / 7, -4: 2 / 6, -3: 2 / 5, -2: 2 / 4, -1: 2 / 3, 0: 2 / 2,
@@ -167,7 +229,7 @@ class Battle:
                     self.ai.active.recharge = False
                     print_txt(f"{self.ai.name}'s {self.ai.active.species} must recharge!")
                 else:
-                    self.ai_move = self.ai_turn()
+                    self.ai_move = self.ai_turn().copy()
             if can_attack(self.player.active):
                 if self.player.active.recharge:
                     self.p_move = None
@@ -237,7 +299,7 @@ class Battle:
         while True:
             i = get_input(enter=True, backspace=True)
             if i == 40:
-                self.p_move = move
+                self.p_move = move.copy()
                 return True
             elif i == 42:
                 return False
@@ -274,10 +336,7 @@ class Battle:
                       f"{self.player.team[slot].info}", 0)
             i = get_input(enter=True, backspace=True)
             if i == 40:
-                if self.ai.active.trapping[0] != 0:
-                    print_txt(f"{self.player.active.species} is trapped and cant switch out!")
-                    break
-                if self.ai.active.blocking:
+                if not can_swap(self.player.active, self.ai.active):
                     print_txt(f"{self.player.active.species} is trapped and cant switch out!")
                     break
                 if self.player.active == self.player.team[slot]:
@@ -301,10 +360,18 @@ class Battle:
             return [self.ai, self.ai_move, self.player, self.p_move]
         player_speed = math.floor(self.player.active.speed *
                                   self.temp_stat_table_norm.get(self.player.active.temp_stats.get("speed")))
+        if self.player.active.ability == "Chlorophyll" and self.weather == "Sun":
+            player_speed = math.floor(player_speed * 2)
+        if self.player.active.ability == "Swift Swim" and self.weather == "Rain":
+            player_speed = math.floor(player_speed * 2)
         if self.player.active.status == "PAR":
             player_speed = math.floor(player_speed * 0.25)
         ai_speed = math.floor(self.ai.active.speed *
                               self.temp_stat_table_norm.get(self.ai.active.temp_stats.get("speed")))
+        if self.ai.active.ability == "Chlorophyll" and self.weather == "Sun":
+            ai_speed = math.floor(player_speed * 2)
+        if self.ai.active.ability == "Swift Swim" and self.weather == "Rain":
+            ai_speed = math.floor(player_speed * 2)
         if self.ai.active.status == "PAR":
             ai_speed = math.floor(ai_speed * 0.25)
         if player_speed > ai_speed:
@@ -359,9 +426,10 @@ class Battle:
             else:
                 if attacker.sleep_turns == 0:
                     attacker.sleep_turns = random.randint(2, 6)
-                attacker.sleep_turn -= 1
+                attacker.sleep_turns -= 1
                 if attacker.sleep_turns == 0 or defender.uproar != 0:
                     print_txt(f"{attacker.owner.name}'s {attacker.species} woke up!")
+                    attacker.status = ""
                 else:
                     print_txt(f"{attacker.owner.name}'s {attacker.species} is fast asleep!")
                     attacker.acted = True
@@ -495,6 +563,7 @@ class Battle:
                     defender.damaged_this_turn = True
                     defender.dmg_last_type_taken = move.get("category")
                     defender.dmg_last_taken = (attacker.bide_dmg * 2)
+                    contact(attacker, defender, move)
                 attacker.bide_dmg = 0
                 return
         print_txt(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
@@ -649,6 +718,8 @@ class Battle:
                     self.deal_dmg(defender, 999)
                     print_txt("It's a one-hit KO!")
                     attacker.acted = True
+                    if "Contact" in move.get("flags"):
+                        contact(attacker, defender, move)
                     return
                 else:
                     print_txt(f"{attacker.species} Missed!")
@@ -658,6 +729,8 @@ class Battle:
             attacker.rage = False
         elif move.get("name") == "Rage":
             attacker.rage = True
+        if attacker.ability == "Compound Eyes" and move.get("accuracy") != 0:
+            move["accuracy"] = move.get("accuracy") * 1.3
         if move.get("name") == "Thunder" and self.weather == "rain":
             pass
         elif move.get("name") == "Thunder" and self.weather == "sun":
@@ -783,7 +856,10 @@ class Battle:
                 for mon in attacker.owner.team:
                     if mon.status == "":
                         print_txt(f"{mon.species}'s attack!")
-                        crit = crit_check(mon, move)
+                        if defender.ability in ["Battle Armor", "Shell Armor"]:
+                            crit = False
+                        else:
+                            crit = crit_check(mon, move)
                         dmg = math.floor(math.floor((math.floor((2 * mon.level) / 5 + 2)
                                                      * mon.attack * 10) / defender.defense) / 50)
                         if mon.status == "BRN":
@@ -954,6 +1030,8 @@ class Battle:
                         defender.bide_dmg += dmg
                 if "Secondary" in move.get("flags"):
                     self.secondary(attacker, defender, move, dmg)
+        if "Contact" in move.get("flags"):
+            contact(attacker, defender, move)
         if "Outrage" in move.get("flags") and attacker.outraging == 0:
             if attacker.confused:
                 print_txt(f"{attacker.owner.name}'s {attacker.species} is already confused!")
@@ -1299,7 +1377,7 @@ class Battle:
             attacker.recharge = True
 
     def dmg_calc(self, attacker, defender, move):
-        if "Cant Crit" in move.get("flags"):
+        if "Cant Crit" in move.get("flags") or defender.ability in ["Battle Armor", "Shell Armor"]:
             crit = False
         else:
             crit = crit_check(attacker, move)
@@ -1348,8 +1426,19 @@ class Battle:
             if attacker.mud_sport or defender.mud_sport:
                 move["power"] = math.floor(move.get("power") / 2)
         if move_type == "Fire":
+            if attacker.ability == "Blaze" and attacker.chp <= (attacker.hp * 0.33):
+                move["power"] = math.floor(move.get("power") * 1.5)
             if attacker.water_sport or defender.water_sport:
                 move["power"] = math.floor(move.get("power") / 2)
+        if move_type == "Grass":
+            if attacker.ability == "Overgrow" and attacker.chp <= (attacker.hp * 0.33):
+                move["power"] = math.floor(move.get("power") * 1.5)
+        if move_type == "Water":
+            if attacker.ability == "Torrent" and attacker.chp <= (attacker.hp * 0.33):
+                move["power"] = math.floor(move.get("power") * 1.5)
+        if move_type == "Bug":
+            if attacker.ability == "Swarm" and attacker.chp <= (attacker.hp * 0.33):
+                move["power"] = math.floor(move.get("power") * 1.5)
         if not move.get("name") != "Solar Beam" and self.weather != "sun" and self.weather != "clear":
             total = math.floor(math.floor((math.floor((2 * attacker.level) / 5 + 2) * atk * 60) / dfn) / 50)
         elif move.get("name") == "Eruption" or move.get("name") == "Water Spout":

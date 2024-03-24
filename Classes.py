@@ -78,6 +78,7 @@ class Pokemon:
         self.moves = self.get_move_set()
         self.status = ""
         self.tox_turns = 0
+        self.sleep_turns = 0
         self.confused = False
         self.flinching = False
         self.temp_stats = {"attack": 0, "defense": 0, "sp_attack": 0, "sp_defense": 0, "speed": 0, "accuracy": 0,
