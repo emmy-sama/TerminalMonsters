@@ -3,6 +3,31 @@ from bearlibterminal import terminal
 import time
 
 
+def get_input(inputs=0, enter=False, backspace=False):
+    while True:
+        if inputs == 0 and not enter and not backspace:
+            break
+        button = terminal.read()
+        if button == terminal.TK_1 and inputs > 0:
+            return 0
+        elif button == terminal.TK_2 and inputs > 1:
+            return 1
+        elif button == terminal.TK_3 and inputs > 2:
+            return 2
+        elif button == terminal.TK_4 and inputs > 3:
+            return 3
+        elif button == terminal.TK_5 and inputs > 4:
+            return 4
+        elif button == terminal.TK_6 and inputs > 5:
+            return 5
+        elif button == terminal.TK_7 and inputs > 6:
+            return 6
+        elif button == terminal.TK_ENTER and enter:
+            return terminal.TK_ENTER
+        elif button == terminal.TK_BACKSPACE and backspace:
+            return terminal.TK_BACKSPACE
+
+
 def dmg_range(total):
     for n in range(85, 101):
         print(math.floor(total * (n / 100)))
@@ -177,11 +202,11 @@ class Battle:
             terminal.clear_area(45, 20, 60, 4)
             terminal.printf(45, 20, "1 Fight\n2 Pokemon")
             print_txt("What will you do?", 0)
-            button = terminal.read()
-            if button == terminal.TK_1:
+            i = get_input(2)
+            if i == 0:
                 if self.print_moves(self.player.team.index(self.player.active)):
                     break
-            elif button == terminal.TK_2:
+            elif i == 1:
                 if self.player_swap(False):
                     break
 
@@ -199,31 +224,22 @@ class Battle:
         if not swap:
             while True:
                 print_txt("What move would you like to use?(1-4)", 0)
-                button = terminal.read()
-                if button == terminal.TK_1:
-                    if self.print_move(0):
-                        return True
-                elif button == terminal.TK_2 and 2 <= len(self.player.active.moves):
-                    if self.print_move(1):
-                        return True
-                elif button == terminal.TK_3 and 3 <= len(self.player.active.moves):
-                    if self.print_move(2):
-                        return True
-                elif button == terminal.TK_4 and 4 <= len(self.player.active.moves):
-                    if self.print_move(3):
-                        return True
-                elif button == terminal.TK_BACKSPACE:
+                i = get_input(4, backspace=True)
+                if i == 42:
                     return False
+                else:
+                    if self.print_move(i):
+                        return True
 
     def print_move(self, slot):
         move = self.moves.get(self.player.active.moves[slot])
         print_txt(f"Use {move.get("name")}?(Enter/Backspace) {move.get("description")}", 0)
         while True:
-            button = terminal.read()
-            if button == terminal.TK_ENTER:
+            i = get_input(enter=True, backspace=True)
+            if i == 40:
                 self.p_move = move
                 return True
-            elif button == terminal.TK_BACKSPACE:
+            elif i == 42:
                 return False
 
     def player_swap(self, must_swap):
@@ -240,29 +256,14 @@ class Battle:
                 else:
                     terminal.printf(45, y, "Empty Slot")
             print_txt("What Pokemon would you like to view/swap? (1-6)", 0)
-            button = terminal.read()
-            if button == terminal.TK_1:
-                if self.print_pokemon(0):
-                    return True
-            elif button == terminal.TK_2 and 2 <= len(self.player.team):
-                if self.print_pokemon(1):
-                    return True
-            elif button == terminal.TK_3 and 3 <= len(self.player.team):
-                if self.print_pokemon(2):
-                    return True
-            elif button == terminal.TK_4 and 4 <= len(self.player.team):
-                if self.print_pokemon(3):
-                    return True
-            elif button == terminal.TK_5 and 5 <= len(self.player.team):
-                if self.print_pokemon(4):
-                    return True
-            elif button == terminal.TK_6 and 6 <= len(self.player.team):
-                if self.print_pokemon(5):
-                    return True
-            elif button == terminal.TK_BACKSPACE and not must_swap:
+            i = get_input(6, backspace=True)
+            if i == 42 and not must_swap:
                 terminal.clear_area(45, 17, 42, 7)
                 self.print_ui()
                 break
+            elif i + 1 <= len(self.player.team):
+                if self.print_pokemon(i):
+                    return True
 
     def print_pokemon(self, slot):
         while True:
@@ -271,8 +272,8 @@ class Battle:
             self.print_moves(slot, True)
             print_txt(f"Swap to {self.player.team[slot].species}?(Enter/Backspace)"
                       f"{self.player.team[slot].info}", 0)
-            button = terminal.read()
-            if button == terminal.TK_ENTER:
+            i = get_input(enter=True, backspace=True)
+            if i == 40:
                 if self.ai.active.trapping[0] != 0:
                     print_txt(f"{self.player.active.species} is trapped and cant switch out!")
                     break
@@ -288,8 +289,9 @@ class Battle:
                 self.player.active.first_turn = True
                 terminal.clear_area(45, 20, 42, 4)
                 print_txt(f"{self.player.name} sent out {self.player.active.species}")
+                self.print_ui()
                 return True
-            if button == terminal.TK_BACKSPACE:
+            if i == 42:
                 return False
 
     def speed_check(self):
@@ -1523,7 +1525,18 @@ class Battle:
         elif victim.chp > victim.hp:
             victim.chp = victim.hp
         remaining_health_bars_post = round(victim.chp / victim.hp * bars)
-        if amount > 0:
+        if abs(remaining_health_bars_post - remaining_health_bars_pre) == 0:
+            if amount > 0:
+                if amount > temp_hp:
+                    dmg = temp_hp
+                else:
+                    dmg = amount
+            else:
+                if amount - temp_hp > victim.hp:
+                    dmg = victim.hp - temp_hp
+                else:
+                    dmg = amount
+        elif amount > 0:
             if amount > temp_hp:
                 dmg = math.floor(temp_hp / abs(remaining_health_bars_post - remaining_health_bars_pre))
                 if dmg == 0:

@@ -23180,7 +23180,7 @@
   },
   "testmon": {
     "level": {
-      "1": "Metronome",
+      "1": "Absorb",
       "2": "Assist",
       "3": "Rain Dance",
       "4": "Sandstorm",
@@ -23195,7 +23195,7 @@
   },
   "testmon2": {
     "level": {
-      "1": "Tackle",
+      "1": "Absorb",
       "6": "Water Sport",
       "7": "Clamp",
       "8": "Explosion",

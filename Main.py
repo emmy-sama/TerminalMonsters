@@ -21,31 +21,6 @@ terminal.set("0x2642: data/pngs/Male_symbol.png, align=center")
 terminal.set("font: data/pokemon.ttf, size=16")
 
 
-def get_input(inputs=0, enter=False, backspace=False):
-    while True:
-        if inputs == 0 and not enter and not backspace:
-            break
-        button = terminal.read()
-        if button == terminal.TK_1 and inputs > 0:
-            return 0
-        elif button == terminal.TK_2 and inputs > 1:
-            return 1
-        elif button == terminal.TK_3 and inputs > 2:
-            return 2
-        elif button == terminal.TK_4 and inputs > 3:
-            return 3
-        elif button == terminal.TK_5 and inputs > 4:
-            return 4
-        elif button == terminal.TK_6 and inputs > 5:
-            return 5
-        elif button == terminal.TK_7 and inputs > 6:
-            return 6
-        elif button == terminal.TK_ENTER and enter:
-            return True
-        elif button == terminal.TK_BACKSPACE and backspace:
-            return False
-
-
 def print_exp(lvl, txt=None):
     terminal.clear()
     terminal.put(0, 0, 0xF8FC)
@@ -290,8 +265,8 @@ print_txt(f"You stumble into your rival {rival.name} and they challenge you to a
 terminal.clear()
 
 rival.team = [Pokemon("Raticate", rival, 36), Pokemon("Swellow", rival, 35),
-                Pokemon("Numel", rival, 34), Pokemon("Wailmer", rival, 35),
-                Pokemon("Sceptile", rival, 36)]
+              Pokemon("Numel", rival, 34), Pokemon("Wailmer", rival, 35),
+              Pokemon("Sceptile", rival, 36)]
 
 rival2_battle = Battle(player, select_lead(), rival)
 rival2_battle.battle()
