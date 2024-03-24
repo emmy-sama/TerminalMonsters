@@ -5,12 +5,12 @@
       "4": "Growl",
       "7": "Leech Seed",
       "10": "Vine Whip",
-      "14": "Poison Powder",
-      "15": "Sleep Powder",
+      "13": "Poison Powder",
+      "14": "Sleep Powder",
       "20": "Razor Leaf",
       "25": "Sweet Scent",
       "32": "Growth",
-      "39": "Synthesis",
+      "33": "Synthesis",
       "46": "Solar Beam"
     },
     "tm": [
@@ -48,7 +48,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -67,8 +67,8 @@
       "4": "Growl",
       "7": "Leech Seed",
       "10": "Vine Whip",
-      "14": "Poison Powder",
-      "15": "Sleep Powder",
+      "13": "Poison Powder",
+      "14": "Sleep Powder",
       "22": "Razor Leaf",
       "29": "Sweet Scent",
       "38": "Growth",
@@ -101,7 +101,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -121,8 +121,8 @@
       "5": "Growl",
       "7": "Leech Seed",
       "10": "Vine Whip",
-      "14": "Poison Powder",
-      "15": "Sleep Powder",
+      "13": "Poison Powder",
+      "14": "Sleep Powder",
       "22": "Razor Leaf",
       "29": "Sweet Scent",
       "41": "Growth",
@@ -144,7 +144,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Sludge Bomb",
@@ -158,7 +158,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Frenzy Plant",
       "Fury Cutter",
       "Mimic",
@@ -224,7 +224,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Mega Kick",
@@ -287,7 +287,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Mega Kick",
@@ -343,7 +343,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Steel Wing",
@@ -359,7 +359,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Mega Kick",
@@ -432,7 +432,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -496,7 +496,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -548,7 +548,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Strength",
@@ -564,7 +564,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Hydro Cannon",
       "Ice Punch",
       "Icy Wind",
@@ -640,7 +640,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Nightmare",
       "Sleep Talk",
@@ -705,7 +705,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Sleep Talk",
@@ -755,7 +755,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sky Attack",
@@ -801,7 +801,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sky Attack",
@@ -849,7 +849,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sky Attack",
@@ -902,17 +902,17 @@
       "Counter",
       "Flame Wheel",
       "Fury Swipes",
-      "reversal",
+      "Reversal",
       "Screech",
       "Swagger",
-      "Uproar"
+      "UpRoar"
     ],
     "tutor": [
       "Body Slam",
       "Counter",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -952,7 +952,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Shadow Ball",
@@ -971,7 +971,7 @@
       "Counter",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -1024,7 +1024,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sky Attack",
@@ -1070,7 +1070,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sky Attack",
@@ -1126,7 +1126,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Rock Slide",
       "Sleep Talk",
@@ -1138,6 +1138,9 @@
   "arbok": {
     "level": {
       "1": "Wrap",
+      "2": "Leer",
+      "3": "Poison Sting",
+      "4": "Bite",
       "20": "Glare",
       "28": "Screech",
       "38": "Acid",
@@ -1172,7 +1175,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Rock Slide",
       "Sleep Talk",
@@ -1184,6 +1187,7 @@
   "pichu": {
     "level": {
       "1": "Thunder Shock",
+      "2": "Charm",
       "6": "Tail Whip",
       "8": "Thunder Wave",
       "11": "Sweet Kiss"
@@ -1213,7 +1217,7 @@
       "Double Slap",
       "Encore",
       "Present",
-      "reversal",
+      "Reversal",
       "Volt Tackle",
       "Wish"
     ],
@@ -1222,7 +1226,7 @@
       "Counter",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mega Kick",
       "Mega Punch",
       "Mimic",
@@ -1240,6 +1244,7 @@
   "pikachu": {
     "level": {
       "1": "Thunder Shock",
+      "2": "Growl",
       "6": "Tail Whip",
       "8": "Thunder Wave",
       "11": "Quick Attack",
@@ -1281,7 +1286,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Mega Kick",
       "Mega Punch",
       "Mimic",
@@ -1299,7 +1304,10 @@
   },
   "raichu": {
     "level": {
-      "1": "Thunder Shock"
+      "1": "Thunder Shock",
+      "2": "Tail Whip",
+      "3": "Quick Attack",
+      "4": "Thunder Bolt"
     },
     "tm": [
       "Attract",
@@ -1334,7 +1342,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Mega Kick",
       "Mega Punch",
       "Mimic",
@@ -1403,7 +1411,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -1421,6 +1429,8 @@
   "sandSlash": {
     "level": {
       "1": "Scratch",
+      "2": "Defense Curl",
+      "3": "Sand Attack",
       "17": "Poison Sting",
       "24": "Slash",
       "33": "Swift",
@@ -1461,7 +1471,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -1476,9 +1486,10 @@
       "Swords Dance"
     ]
   },
-  "Nidoran-F": {
+  "nidoran-f": {
     "level": {
       "1": "Scratch",
+      "2": "Growl",
       "8": "Tail Whip",
       "12": "Double Kick",
       "17": "Poison Sting",
@@ -1529,7 +1540,7 @@
       "Counter",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sleep Talk",
@@ -1541,6 +1552,7 @@
   "nidorina": {
     "level": {
       "1": "Scratch",
+      "2": "Growl",
       "8": "Tail Whip",
       "12": "Double Kick",
       "18": "Poison Sting",
@@ -1583,7 +1595,7 @@
       "Counter",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sleep Talk",
@@ -1595,6 +1607,9 @@
   "nidoqueen": {
     "level": {
       "1": "Tail Whip",
+      "2": "Scratch",
+      "3": "Double Kick",
+      "4": "Poison Sting",
       "22": "Body Slam",
       "43": "Superpower"
     },
@@ -1620,7 +1635,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -1646,7 +1661,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -1664,9 +1679,10 @@
       "Thunder Punch"
     ]
   },
-  "Nidoran-M": {
+  "nidoran-m": {
     "level": {
       "1": "Peck",
+      "2": "Leer",
       "8": "Focus Energy",
       "12": "Double Kick",
       "17": "Poison Sting",
@@ -1716,7 +1732,7 @@
       "Counter",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sleep Talk",
@@ -1728,6 +1744,7 @@
   "nidorino": {
     "level": {
       "1": "Peck",
+      "2": "Leer",
       "8": "Focus Energy",
       "12": "Double Kick",
       "18": "Poison Sting",
@@ -1769,7 +1786,7 @@
       "Counter",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sleep Talk",
@@ -1781,6 +1798,9 @@
   "nidoking": {
     "level": {
       "1": "Poison Sting",
+      "2": "Peck",
+      "3": "Double Kick",
+      "4": "Focus Energy",
       "22": "Thrash",
       "43": "Megahorn"
     },
@@ -1805,7 +1825,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -1831,7 +1851,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -1852,6 +1872,7 @@
   "cleffa": {
     "level": {
       "1": "Pound",
+      "2": "Charm",
       "4": "Encore",
       "8": "Sing",
       "13": "Sweet Kiss",
@@ -1900,7 +1921,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mega Kick",
       "Mega Punch",
@@ -1922,6 +1943,7 @@
   "clefairy": {
     "level": {
       "1": "Pound",
+      "2": "Growl",
       "5": "Encore",
       "9": "Sing",
       "13": "Double Slap",
@@ -1977,7 +1999,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -2000,7 +2022,10 @@
   },
   "clefable": {
     "level": {
-      "1": "Sing"
+      "1": "Sing",
+      "2": "Double Slap",
+      "3": "Minimize",
+      "4": "Metronome"
     },
     "tm": [
       "Attract",
@@ -2047,7 +2072,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -2072,7 +2097,7 @@
     "level": {
       "1": "Ember",
       "5": "Tail Whip",
-      "9": "roar",
+      "9": "Roar",
       "13": "Quick Attack",
       "17": "Will-O-Wisp",
       "21": "Confuse Ray",
@@ -2096,7 +2121,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Safeguard",
       "Secret Power",
       "Sunny Day",
@@ -2115,7 +2140,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -2127,6 +2152,9 @@
   "ninetales": {
     "level": {
       "1": "Safeguard",
+      "2": "Ember",
+      "3": "Quick Attack",
+      "4": "Confuse Ray",
       "45": "Fire Spin"
     },
     "tm": [
@@ -2144,7 +2172,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Safeguard",
       "Secret Power",
       "Sunny Day",
@@ -2154,7 +2182,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -2166,6 +2194,7 @@
   "igglybuff": {
     "level": {
       "1": "Sing",
+      "2": "Charm",
       "4": "Defense Curl",
       "9": "Pound",
       "14": "Sweet Kiss"
@@ -2209,7 +2238,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mega Kick",
       "Mega Punch",
@@ -2282,7 +2311,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -2303,7 +2332,10 @@
   },
   "wigglytuff": {
     "level": {
-      "1": "Sing"
+      "1": "Sing",
+      "2": "Disable",
+      "3": "Defense Curl",
+      "4": "Double Slap"
     },
     "tm": [
       "Attract",
@@ -2348,7 +2380,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -2370,7 +2402,8 @@
   "zubat": {
     "level": {
       "1": "Leech Life",
-      "6": "Supersonic",
+      "6": "Astonish",
+      "11": "Supersonic",
       "16": "Bite",
       "21": "Wing Attack",
       "26": "Confuse Ray",
@@ -2412,7 +2445,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -2424,6 +2457,11 @@
   "golbat": {
     "level": {
       "1": "Supersonic",
+      "2": "Screech",
+      "3": "Astonish",
+      "4": "Leech Life",
+      "6": "Astonish",
+      "11": "Supersonic",
       "16": "Bite",
       "21": "Wing Attack",
       "28": "Confuse Ray",
@@ -2459,7 +2497,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -2471,6 +2509,11 @@
   "crobat": {
     "level": {
       "1": "Supersonic",
+      "2": "Screech",
+      "3": "Astonish",
+      "4": "Leech Life",
+      "6": "Astonish",
+      "11": "Supersonic",
       "16": "Bite",
       "21": "Wing Attack",
       "28": "Confuse Ray",
@@ -2507,7 +2550,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -2556,7 +2599,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -2568,6 +2611,10 @@
   "gloom": {
     "level": {
       "1": "Sweet Scent",
+      "2": "Absorb",
+      "3": "Poison Powder",
+      "7": "Sweet Scent",
+      "14": "Poison Powder",
       "16": "Stun Spore",
       "18": "Sleep Powder",
       "24": "Acid",
@@ -2596,7 +2643,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -2608,6 +2655,9 @@
   "vileplume": {
     "level": {
       "1": "Stun Spore",
+      "2": "Aromatherapy",
+      "3": "Absorb",
+      "4": "Mega Drain",
       "44": "Petal Dance"
     },
     "tm": [
@@ -2634,7 +2684,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -2646,6 +2696,9 @@
   "bellossom": {
     "level": {
       "1": "Sweet Scent",
+      "2": "Stun Spore",
+      "3": "Absorb",
+      "4": "Magical Leaf",
       "44": "Petal Dance",
       "55": "Solar Beam"
     },
@@ -2673,7 +2726,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -2731,7 +2784,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Sleep Talk",
@@ -2744,6 +2797,10 @@
   "parasect": {
     "level": {
       "1": "Stun Spore",
+      "2": "Scratch",
+      "3": "Poison Powder",
+      "7": "Stun Spore",
+      "13": "Poison Powder",
       "19": "Leech Life",
       "27": "Spore",
       "35": "Slash",
@@ -2780,7 +2837,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Sleep Talk",
@@ -2793,6 +2850,8 @@
   "venonat": {
     "level": {
       "1": "Tackle",
+      "2": "Disable",
+      "3": "Foresight",
       "9": "Supersonic",
       "17": "Confusion",
       "20": "Poison Powder",
@@ -2830,7 +2889,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -2842,6 +2901,11 @@
   "venomoth": {
     "level": {
       "1": "Tackle",
+      "2": "Disable",
+      "3": "Foresight",
+      "4": "Supersonic",
+      "5": "Silver Wind",
+      "9": "Supersonic",
       "17": "Confusion",
       "20": "Poison Powder",
       "25": "Leech Life",
@@ -2876,7 +2940,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -2888,6 +2952,7 @@
   "diglett": {
     "level": {
       "1": "Scratch",
+      "2": "Sand Attack",
       "5": "Growl",
       "9": "Magnitude",
       "17": "Dig",
@@ -2925,12 +2990,12 @@
       "Pursuit",
       "Rock Slide",
       "Screech",
-      "Uproar"
+      "UpRoar"
     ],
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rock Slide",
@@ -2943,6 +3008,10 @@
   "dugtrio": {
     "level": {
       "1": "Tri Attack",
+      "2": "Scratch",
+      "3": "Sand Attack",
+      "4": "Growl",
+      "5": "Growl",
       "9": "Magnitude",
       "17": "Dig",
       "21": "Fury Swipes",
@@ -2978,7 +3047,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rock Slide",
@@ -2991,6 +3060,7 @@
   "meowth": {
     "level": {
       "1": "Scratch",
+      "2": "Growl",
       "10": "Bite",
       "18": "Pay Day",
       "25": "Feint Attack",
@@ -3041,7 +3111,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -3057,6 +3127,9 @@
   "persian": {
     "level": {
       "1": "Scratch",
+      "2": "Growl",
+      "3": "Bite",
+      "10": "Bite",
       "18": "Pay Day",
       "25": "Feint Attack",
       "34": "Screech",
@@ -3081,7 +3154,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Secret Power",
       "Shadow Ball",
       "Shock Wave",
@@ -3101,7 +3174,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -3117,6 +3190,7 @@
   "psyduck": {
     "level": {
       "1": "Water Sport",
+      "2": "Scratch",
       "5": "Tail Whip",
       "10": "Disable",
       "16": "Confusion",
@@ -3169,7 +3243,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -3188,6 +3262,11 @@
   "golduck": {
     "level": {
       "1": "Water Sport",
+      "2": "Scratch",
+      "3": "Tail Whip",
+      "4": "Disable",
+      "5": "Tail Whip",
+      "10": "Disable",
       "16": "Confusion",
       "23": "Screech",
       "31": "Psych Up",
@@ -3230,7 +3309,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Ice Punch",
       "Icy Wind",
@@ -3250,6 +3329,7 @@
   "mankey": {
     "level": {
       "1": "Scratch",
+      "2": "Leer",
       "6": "Low Kick",
       "11": "Karate Chop",
       "16": "Fury Swipes",
@@ -3295,7 +3375,7 @@
       "Foresight",
       "Meditate",
       "Revenge",
-      "reversal",
+      "Reversal",
       "Rock Slide",
       "Smelling Salts"
     ],
@@ -3305,7 +3385,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -3327,6 +3407,10 @@
   "primeape": {
     "level": {
       "1": "Scratch",
+      "2": "leer",
+      "3": "Low Kick",
+      "4": "Rage",
+      "6": "Low Kick",
       "11": "Karate Chop",
       "16": "Fury Swipes",
       "21": "Focus Energy",
@@ -3372,7 +3456,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -3391,9 +3475,10 @@
       "Thunder Punch"
     ]
   },
-  "Growlithe": {
+  "growlithe": {
     "level": {
-      "1": "roar",
+      "1": "Roar",
+      "2": "Bite",
       "7": "Ember",
       "13": "Leer",
       "19": "Odor Sleuth",
@@ -3417,7 +3502,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Strength",
@@ -3437,7 +3522,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -3448,7 +3533,10 @@
   },
   "arcanine": {
     "level": {
-      "1": "roar",
+      "1": "Roar",
+      "2": "Bite",
+      "3": "Ember",
+      "4": "Odor Sleuth",
       "49": "Extreme Speed"
     },
     "tm": [
@@ -3467,7 +3555,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Strength",
@@ -3479,7 +3567,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -3535,7 +3623,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -3546,7 +3634,11 @@
   },
   "poliwhirl": {
     "level": {
-      "1": "Water Gun",
+      "1": "Hypnosis",
+      "2": "Bubble",
+      "3": "Water Gun",
+      "7": "Hypnosis",
+      "13": "Water Gun",
       "19": "Double Slap",
       "27": "Rain Dance",
       "35": "Body Slam",
@@ -3587,7 +3679,7 @@
       "Counter",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -3604,7 +3696,11 @@
   },
   "poliwrath": {
     "level": {
-      "1": "Water Gun",
+      "1": "Hypnosis",
+      "2": "Water Gun",
+      "3": "Double Slap",
+      "4": "Submission",
+      "35": "Submission",
       "51": "Mind Reader"
     },
     "tm": [
@@ -3645,7 +3741,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -3662,7 +3758,11 @@
   },
   "politoed": {
     "level": {
-      "1": "Water Gun",
+      "1": "Hypnosis",
+      "2": "Water Gun",
+      "3": "Double Slap",
+      "4": "Perish Song",
+      "35": "Perish Song",
       "51": "Swagger"
     },
     "tm": [
@@ -3701,7 +3801,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mega Kick",
       "Mega Punch",
@@ -3762,7 +3862,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -3783,6 +3883,9 @@
   "kadabra": {
     "level": {
       "1": "Teleport",
+      "2": "Kinesis",
+      "3": "Confusion",
+      "16": "Confusion",
       "18": "Disable",
       "21": "Psybeam",
       "23": "Reflect",
@@ -3828,7 +3931,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -3849,6 +3952,9 @@
   "alakazam": {
     "level": {
       "1": "Teleport",
+      "2": "Kinesis",
+      "3": "Confusion",
+      "16": "Confusion",
       "18": "Disable",
       "21": "Psybeam",
       "23": "Reflect",
@@ -3895,7 +4001,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -3916,6 +4022,7 @@
   "machop": {
     "level": {
       "1": "Low Kick",
+      "2": "Leer",
       "7": "Focus Energy",
       "13": "Karate Chop",
       "19": "Seismic Toss",
@@ -3966,7 +4073,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -3986,6 +4093,9 @@
   "machoke": {
     "level": {
       "1": "Low Kick",
+      "2": "Leer",
+      "3": "Focus Energy",
+      "7": "Focus Energy",
       "13": "Karate Chop",
       "19": "Seismic Toss",
       "22": "Foresight",
@@ -4027,7 +4137,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -4047,6 +4157,9 @@
   "machamp": {
     "level": {
       "1": "Low Kick",
+      "2": "Leer",
+      "3": "Focus Energy",
+      "7": "Focus Energy",
       "13": "Karate Chop",
       "19": "Seismic Toss",
       "22": "Foresight",
@@ -4089,7 +4202,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -4150,7 +4263,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -4162,6 +4275,10 @@
   "weepinbell": {
     "level": {
       "1": "Wrap",
+      "2": "Growth",
+      "3": "Wrap",
+      "6": "Growth",
+      "11": "Wrap",
       "15": "Sleep Powder",
       "17": "Poison Powder",
       "19": "Stun Spore",
@@ -4193,7 +4310,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -4204,7 +4321,14 @@
   },
   "victreebel": {
     "level": {
-      "1": "Vine Whip"
+      "1": "Stockpile",
+      "2": "Swallow",
+      "3": "Spit Up",
+      "4": "Vine Whip",
+      "5": "Sweet Scent",
+      "6": "Razor Leaf",
+      "7": "Sleep Powder"
+
     },
     "tm": [
       "Attract",
@@ -4231,7 +4355,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -4286,7 +4410,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -4299,6 +4423,10 @@
   "tentacruel": {
     "level": {
       "1": "Supersonic",
+      "2": "Poison Sting",
+      "3": "Constrict",
+      "6": "Supersonic",
+      "12": "Constrict",
       "19": "Acid",
       "25": "Bubble Beam",
       "30": "Wrap",
@@ -4334,7 +4462,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -4347,6 +4475,7 @@
   "geodude": {
     "level": {
       "1": "Tackle",
+      "2": "Defense Curl",
       "6": "Mud Sport",
       "11": "Rock Throw",
       "16": "Magnitude",
@@ -4391,7 +4520,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fire Punch",
       "Mega Punch",
@@ -4411,6 +4540,11 @@
   "graveler": {
     "level": {
       "1": "Tackle",
+      "2": "Defense Curl",
+      "3": "Mud Sport",
+      "4": "Rock Throw",
+      "6": "Mud Sport",
+      "11": "Rock Throw",
       "16": "Magnitude",
       "21": "Self-Destruct",
       "29": "Rollout",
@@ -4449,7 +4583,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fire Punch",
       "Mega Punch",
@@ -4469,6 +4603,11 @@
   "golem": {
     "level": {
       "1": "Tackle",
+      "2": "Defense Curl",
+      "3": "Mud Sport",
+      "4": "Rock Throw",
+      "6": "Mud Sport",
+      "11": "Rock Throw",
       "16": "Magnitude",
       "21": "Self-Destruct",
       "29": "Rollout",
@@ -4493,7 +4632,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -4509,7 +4648,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fire Punch",
       "Fury Cutter",
@@ -4530,7 +4669,7 @@
   },
   "ponyta": {
     "level": {
-      "1": "Tackle",
+      "1": "Quick Attack",
       "5": "Growl",
       "9": "Tail Whip",
       "14": "Ember",
@@ -4571,7 +4710,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -4582,7 +4721,13 @@
   },
   "rapidash": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Quick Attack",
+      "2": "Growl",
+      "3": "Tail Whip",
+      "4": "Ember",
+      "5": "Growl",
+      "9": "Tail Whip",
+      "14": "Ember",
       "19": "Stomp",
       "25": "Fire Spin",
       "31": "Take Down",
@@ -4615,7 +4760,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -4626,7 +4771,9 @@
   },
   "slowpoke": {
     "level": {
-      "1": "Yawn",
+      "1": "Curse",
+      "2": "Tackle",
+      "3": "Yawn",
       "6": "Growl",
       "13": "Water Gun",
       "17": "Confusion",
@@ -4681,7 +4828,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -4697,7 +4844,11 @@
   },
   "slowbro": {
     "level": {
-      "1": "Yawn",
+      "1": "Curse",
+      "2": "Tackle",
+      "3": "Yawn",
+      "4": "Growl",
+      "6": "Growl",
       "13": "Water Gun",
       "17": "Confusion",
       "24": "Disable",
@@ -4750,7 +4901,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Ice Punch",
       "Icy Wind",
@@ -4771,7 +4922,9 @@
   },
   "slowking": {
     "level": {
-      "1": "Yawn",
+      "1": "Curse",
+      "2": "Tackle",
+      "3": "Yawn",
       "6": "Growl",
       "13": "Water Gun",
       "17": "Confusion",
@@ -4824,7 +4977,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Ice Punch",
       "Icy Wind",
@@ -4845,7 +4998,8 @@
   },
   "magnemite": {
     "level": {
-      "1": "Tackle",
+      "1": "Metal Sound",
+      "2": "Tackle",
       "6": "Thunder Shock",
       "11": "Supersonic",
       "16": "Sonic Boom",
@@ -4877,7 +5031,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Rollout",
       "Sleep Talk",
@@ -4890,7 +5044,12 @@
   },
   "magneton": {
     "level": {
-      "1": "Thunder Shock",
+      "1": "Tackle",
+      "2": "Metal Sound",
+      "3": "Thunder Shock",
+      "4": "Supersonic",
+      "6": "Thunder Shock",
+      "11": "Supersonic",
       "16": "Sonic Boom",
       "21": "Thunder Wave",
       "26": "Spark",
@@ -4921,7 +5080,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Rollout",
       "Sleep Talk",
@@ -4977,7 +5136,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Psych Up",
@@ -4992,11 +5151,12 @@
   "doduo": {
     "level": {
       "1": "Peck",
+      "2": "Growl",
       "9": "Pursuit",
       "13": "Fury Attack",
       "21": "Tri Attack",
       "25": "Rage",
-      "33": "Uproar",
+      "33": "UpRoar",
       "37": "Drill Peck",
       "45": "Agility"
     },
@@ -5028,7 +5188,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sky Attack",
@@ -5041,10 +5201,15 @@
   },
   "dodrio": {
     "level": {
-      "1": "Pursuit",
+      "1": "Peck",
+      "2": "Growl",
+      "3": "Pursuit",
+      "4": "Fury Attack",
+      "9": "Pursuit",
+      "13": "Fury Attack",
       "21": "Tri Attack",
       "25": "Rage",
-      "38": "Uproar",
+      "38": "UpRoar",
       "47": "Drill Peck",
       "60": "Agility"
     },
@@ -5072,7 +5237,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sky Attack",
@@ -5129,7 +5294,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -5141,6 +5306,13 @@
   "dewgong": {
     "level": {
       "1": "Signal Beam",
+      "2": "Headbutt",
+      "3": "Growl",
+      "4": "Icy Wind",
+      "5": "Aurora Beam",
+      "9": "Growl",
+      "17": "Icy Wind",
+      "21": "Aurora Beam",
       "29": "Rest",
       "34": "Sheer Cold",
       "42": "Take Down",
@@ -5174,7 +5346,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -5185,7 +5357,8 @@
   },
   "grimer": {
     "level": {
-      "1": "Pound",
+      "1": "Poison Gas",
+      "2": "Pound",
       "4": "Harden",
       "8": "Disable",
       "13": "Sludge",
@@ -5233,7 +5406,7 @@
     "tutor": [
       "Body Slam",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fire Punch",
       "Ice Punch",
@@ -5249,7 +5422,10 @@
   },
   "muk": {
     "level": {
-      "1": "Pound",
+      "1": "Poison Gas",
+      "2": "Pound",
+      "3": "Harden",
+      "4": "Harden",
       "8": "Disable",
       "13": "Sludge",
       "19": "Minimize",
@@ -5293,7 +5469,7 @@
     "tutor": [
       "Body Slam",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fire Punch",
       "Ice Punch",
@@ -5309,14 +5485,15 @@
   },
   "shellder": {
     "level": {
-      "1": "Withdraw",
+      "1": "Tackle",
+      "2": "Withdraw",
       "8": "Icicle Spear",
-      "9": "Supersonic",
-      "17": "Aurora Beam",
-      "25": "Protect",
-      "33": "Leer",
-      "41": "Clamp",
-      "49": "Ice Beam"
+      "15": "Supersonic",
+      "22": "Aurora Beam",
+      "29": "Protect",
+      "36": "Leer",
+      "43": "Clamp",
+      "50": "Ice Beam"
     },
     "tm": [
       "Attract",
@@ -5347,7 +5524,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Icy Wind",
       "Mimic",
@@ -5362,6 +5539,9 @@
   "cloyster": {
     "level": {
       "1": "Withdraw",
+      "2": "Supersonic",
+      "3": "Aurora Beam",
+      "4": "Protect",
       "33": "Spikes",
       "41": "Spike Cannon"
     },
@@ -5389,7 +5569,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Icy Wind",
       "Mimic",
@@ -5403,15 +5583,17 @@
   },
   "gastly": {
     "level": {
-      "1": "Lick",
+      "1": "Hypnosis",
+      "2": "Lick",
       "8": "Spite",
-      "13": "Mean Look",
+      "13": "Curse",
       "16": "Night Shade",
       "21": "Confuse Ray",
       "28": "Dream Eater",
       "33": "Destiny Bond",
       "36": "Shadow Ball",
-      "41": "Nightmare"
+      "41": "Nightmare",
+      "48": "Mean Look"
     },
     "tm": [
       "Attract",
@@ -5448,7 +5630,7 @@
     ],
     "tutor": [
       "Dream Eater",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Nightmare",
@@ -5462,15 +5644,19 @@
   },
   "haunter": {
     "level": {
-      "1": "Spite",
-      "13": "Mean Look",
+      "1": "Hypnosis",
+      "2": "Lick",
+      "3": "Spite",
+      "8": "Spite",
+      "13": "Curse",
       "16": "Night Shade",
       "21": "Confuse Ray",
       "25": "Shadow Punch",
       "31": "Dream Eater",
       "39": "Destiny Bond",
       "45": "Shadow Ball",
-      "53": "Nightmare"
+      "53": "Nightmare",
+      "64": "Mean Look"
     },
     "tm": [
       "Attract",
@@ -5499,7 +5685,7 @@
     "egg": [],
     "tutor": [
       "Dream Eater",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Nightmare",
@@ -5513,15 +5699,19 @@
   },
   "gengar": {
     "level": {
-      "1": "Spite",
-      "13": "Mean Look",
+      "1": "Hypnosis",
+      "2": "Lick",
+      "3": "Spite",
+      "8": "Spite",
+      "13": "Curse",
       "16": "Night Shade",
       "21": "Confuse Ray",
       "25": "Shadow Punch",
       "31": "Dream Eater",
       "39": "Destiny Bond",
       "45": "Shadow Ball",
-      "53": "Nightmare"
+      "53": "Nightmare",
+      "64": "Mean Look"
     },
     "tm": [
       "Attract",
@@ -5560,7 +5750,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fire Punch",
       "Ice Punch",
@@ -5582,15 +5772,16 @@
   "onix": {
     "level": {
       "1": "Tackle",
+      "2": "Screech",
       "8": "Bind",
       "12": "Rock Throw",
       "19": "Harden",
       "23": "Rage",
       "30": "Dragon Breath",
-      "33": "Sandstorm",
-      "37": "Slam",
+      "34": "Sandstorm",
+      "41": "Slam",
       "45": "Iron Tail",
-      "49": "Sand Tomb",
+      "52": "Sand Tomb",
       "56": "Double-Edge"
     },
     "tm": [
@@ -5605,7 +5796,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -5625,7 +5816,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Mud-Slap",
@@ -5641,15 +5832,16 @@
   "steelix": {
     "level": {
       "1": "Tackle",
+      "2": "Screech",
       "8": "Bind",
       "12": "Rock Throw",
       "19": "Harden",
       "23": "Rage",
       "30": "Dragon Breath",
-      "33": "Sandstorm",
-      "37": "Slam",
+      "34": "Sandstorm",
+      "41": "Slam",
       "45": "Iron Tail",
-      "49": "Crunch",
+      "52": "Crunch",
       "56": "Double-Edge"
     },
     "tm": [
@@ -5666,7 +5858,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -5682,7 +5874,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Mud-Slap",
@@ -5698,6 +5890,7 @@
   "drowzee": {
     "level": {
       "1": "Pound",
+      "2": "Hypnosis",
       "7": "Disable",
       "11": "Confusion",
       "17": "Headbutt",
@@ -5750,7 +5943,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -5770,7 +5963,13 @@
   },
   "hypno": {
     "level": {
-      "1": "Pound",
+      "1": "Nightmare",
+      "2": "Pound",
+      "3": "Hypnosis",
+      "4": "Disable",
+      "5": "Confusion",
+      "7": "Disable",
+      "11": "Confusion",
       "17": "Headbutt",
       "21": "Poison Gas",
       "29": "Meditate",
@@ -5815,7 +6014,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -5883,7 +6082,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mimic",
@@ -5897,7 +6096,14 @@
   },
   "kingler": {
     "level": {
-      "1": "Vice Grip",
+      "1": "Metal Claw",
+      "2": "Bubble",
+      "3": "Leer",
+      "4": "Vice Grip",
+      "5": "Harden",
+      "6": "Leer",
+      "12": "Vice Grip",
+      "16": "Harden",
       "23": "Mud Shot",
       "27": "Stomp",
       "38": "Guillotine",
@@ -5935,7 +6141,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mimic",
@@ -5949,7 +6155,8 @@
   },
   "voltorb": {
     "level": {
-      "1": "Tackle",
+      "1": "Charge",
+      "2": "Tackle",
       "8": "Screech",
       "15": "Sonic Boom",
       "21": "Spark",
@@ -5982,7 +6189,7 @@
     ],
     "egg": [],
     "tutor": [
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Rollout",
@@ -5997,7 +6204,12 @@
   },
   "electrode": {
     "level": {
-      "1": "Tackle",
+      "1": "Charge",
+      "2": "Tackle",
+      "3": "Screech",
+      "4": "Sonic Boom",
+      "8": "Screech",
+      "15": "Sonic Boom",
       "21": "Spark",
       "27": "Self-Destruct",
       "34": "Rollout",
@@ -6029,7 +6241,7 @@
     ],
     "egg": [],
     "tutor": [
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Rollout",
@@ -6044,7 +6256,9 @@
   },
   "exeggcute": {
     "level": {
-      "1": "Uproar",
+      "1": "UpRoar",
+      "2": "Barrage",
+      "3": "Hypnosis",
       "7": "Reflect",
       "13": "Leech Seed",
       "19": "Confusion",
@@ -6089,7 +6303,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Nightmare",
@@ -6104,7 +6318,9 @@
   },
   "exeggutor": {
     "level": {
-      "1": "Hypnosis",
+      "1": "Confusion",
+      "2": "Barrage",
+      "3": "Hypnosis",
       "19": "Stomp",
       "31": "Egg Bomb"
     },
@@ -6137,7 +6353,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Nightmare",
@@ -6207,7 +6423,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Icy Wind",
       "Mega Kick",
@@ -6226,7 +6442,13 @@
   },
   "marowak": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Growl",
+      "2": "Tail Whip",
+      "3": "Bone Club",
+      "4": "Headbutt",
+      "5": "Tail Whip",
+      "9": "Bone Club",
+      "13": "Headbutt",
       "17": "Leer",
       "21": "Focus Energy",
       "25": "Bonemerang",
@@ -6271,7 +6493,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Icy Wind",
       "Mega Kick",
@@ -6322,7 +6544,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mega Kick",
       "Mimic",
       "Mud-Slap",
@@ -6337,7 +6559,8 @@
   },
   "hitmonlee": {
     "level": {
-      "1": "Revenge",
+      "1": "Double Kick",
+      "2": "Revenge",
       "6": "Meditate",
       "11": "Rolling Kick",
       "16": "jumpkick",
@@ -6346,9 +6569,9 @@
       "26": "High Jump Kick",
       "31": "Mind Reader",
       "36": "Foresight",
-      "41": "endure",
+      "41": "Endure",
       "46": "Mega Kick",
-      "51": "reversal"
+      "51": "Reversal"
     },
     "tm": [
       "Attract",
@@ -6378,7 +6601,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Mega Kick",
       "Mega Punch",
       "Metronome",
@@ -6395,7 +6618,8 @@
   },
   "hitmonchan": {
     "level": {
-      "1": "Revenge",
+      "1": "Comet Punch",
+      "2": "Revenge",
       "7": "Agility",
       "13": "Pursuit",
       "20": "Mach Punch",
@@ -6433,7 +6657,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -6454,6 +6678,7 @@
   "hitmontop": {
     "level": {
       "1": "Rolling Kick",
+      "2": "Revenge",
       "7": "Focus Energy",
       "13": "Pursuit",
       "19": "Quick Attack",
@@ -6491,7 +6716,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mega Kick",
       "Mimic",
       "Mud-Slap",
@@ -6571,7 +6796,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -6594,7 +6819,8 @@
   },
   "koffing": {
     "level": {
-      "1": "Tackle",
+      "1": "Poison Gas",
+      "2": "Tackle",
       "9": "Smog",
       "17": "Self-Destruct",
       "21": "Sludge",
@@ -6638,7 +6864,7 @@
       "Will-O-Wisp"
     ],
     "tutor": [
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Rollout",
@@ -6651,7 +6877,12 @@
   },
   "weezing": {
     "level": {
-      "1": "Tackle",
+      "1": "Poison Gas",
+      "2": "Tackle",
+      "3": "Smog",
+      "4": "Self-Destruct",
+      "9": "Smog",
+      "17": "Self-Destruct",
       "21": "Sludge",
       "25": "Smokescreen",
       "33": "Haze",
@@ -6687,7 +6918,7 @@
     ],
     "egg": [],
     "tutor": [
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Rollout",
@@ -6700,7 +6931,8 @@
   },
   "rhyhorn": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Horn Attack",
+      "2": "Tail Whip",
       "10": "Stomp",
       "15": "Fury Attack",
       "24": "Scary Face",
@@ -6727,7 +6959,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -6746,7 +6978,7 @@
       "Crush Claw",
       "Curse",
       "Magnitude",
-      "reversal",
+      "Reversal",
       "Rock Slide",
       "Swords Dance"
     ],
@@ -6754,7 +6986,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -6769,7 +7001,12 @@
   },
   "rhydon": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Horn Attack",
+      "2": "Tail Whip",
+      "3": "Stomp",
+      "4": "Fury Attack",
+      "10": "Stomp",
+      "15": "Fury Attack",
       "24": "Scary Face",
       "29": "Rock Blast",
       "38": "Horn Drill",
@@ -6798,7 +7035,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -6818,7 +7055,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Icy Wind",
@@ -6840,6 +7077,7 @@
   "chansey": {
     "level": {
       "1": "Pound",
+      "2": "Growl",
       "5": "Tail Whip",
       "9": "Refresh",
       "13": "Soft-Boiled",
@@ -6906,7 +7144,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mega Kick",
       "Mega Punch",
@@ -6927,6 +7165,7 @@
   "blissey": {
     "level": {
       "1": "Pound",
+      "2": "Growl",
       "4": "Tail Whip",
       "7": "Refresh",
       "10": "Soft-Boiled",
@@ -6987,7 +7226,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mega Kick",
       "Mega Punch",
@@ -7007,6 +7246,7 @@
   "tangela": {
     "level": {
       "1": "Ingrain",
+      "2": "Constrict",
       "4": "Sleep Powder",
       "10": "Absorb",
       "13": "Growth",
@@ -7052,7 +7292,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Psych Up",
       "Sleep Talk",
@@ -7064,15 +7304,16 @@
   },
   "kangaskhan": {
     "level": {
-      "1": "Leer",
+      "1": "Comet Punch",
+      "2": "Leer",
       "7": "Bite",
       "13": "Tail Whip",
       "19": "Fake Out",
       "25": "Mega Punch",
       "31": "Rage",
-      "37": "endure",
+      "37": "Endure",
       "43": "Dizzy Punch",
-      "49": "reversal"
+      "49": "Reversal"
     },
     "tm": [
       "Aerial Ace",
@@ -7097,7 +7338,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -7129,7 +7370,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -7189,7 +7430,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -7201,7 +7442,13 @@
   },
   "seadra": {
     "level": {
-      "1": "Water Gun",
+      "1": "Bubble",
+      "2": "Smokescreen",
+      "3": "Leer",
+      "4": "Water Gun",
+      "8": "Smokescreen",
+      "15": "Leer",
+      "22": "Water Gun",
       "29": "Twister",
       "40": "Agility",
       "51": "Hydro Pump",
@@ -7231,7 +7478,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -7243,7 +7490,13 @@
   },
   "kingdra": {
     "level": {
-      "1": "Water Gun",
+      "1": "Bubble",
+      "2": "Smokescreen",
+      "3": "Leer",
+      "4": "Water Gun",
+      "8": "Smokescreen",
+      "15": "Leer",
+      "22": "Water Gun",
       "29": "Twister",
       "40": "Agility",
       "51": "Hydro Pump",
@@ -7274,7 +7527,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -7286,7 +7539,9 @@
   },
   "goldeen": {
     "level": {
-      "1": "Water Sport",
+      "1": "Peck",
+      "2": "Tail Whip",
+      "3": "Water Sport",
       "10": "Supersonic",
       "15": "Horn Attack",
       "24": "Flail",
@@ -7325,7 +7580,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -7337,7 +7592,11 @@
   },
   "seaking": {
     "level": {
-      "1": "Water Sport",
+      "1": "Peck",
+      "2": "Tail Whip",
+      "3": "Water Sport",
+      "4": "Supersonic",
+      "10": "Supersonic",
       "15": "Horn Attack",
       "24": "Flail",
       "29": "Fury Attack",
@@ -7370,7 +7629,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -7383,6 +7642,7 @@
   "staryu": {
     "level": {
       "1": "Tackle",
+      "2": "Harden",
       "6": "Water Gun",
       "10": "Rapid Spin",
       "15": "Recover",
@@ -7422,7 +7682,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Psych Up",
@@ -7437,6 +7697,9 @@
   "starmie": {
     "level": {
       "1": "Water Gun",
+      "2": "Rapid Spin",
+      "3": "Recover",
+      "4": "Swift",
       "33": "Confuse Ray"
     },
     "tm": [
@@ -7470,7 +7733,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Nightmare",
@@ -7490,9 +7753,10 @@
       "8": "Substitute",
       "12": "Meditate",
       "15": "Double Slap",
+      "18": "Light Screen",
       "19": "Reflect",
       "22": "Magical Leaf",
-      "25": "Encore",
+      "26": "Encore",
       "29": "Psybeam",
       "33": "Recycle",
       "36": "Trick",
@@ -7547,7 +7811,7 @@
       "Counter",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -7569,6 +7833,7 @@
   "scyther": {
     "level": {
       "1": "Quick Attack",
+      "2": "Leer",
       "6": "Focus Energy",
       "11": "Pursuit",
       "16": "False Swipe",
@@ -7602,17 +7867,17 @@
     "egg": [
       "Baton Pass",
       "Counter",
-      "endure",
+      "Endure",
       "Light Screen",
       "Razor Wind",
-      "reversal",
+      "Reversal",
       "Safeguard",
       "Silver Wind"
     ],
     "tutor": [
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Sleep Talk",
@@ -7626,6 +7891,7 @@
   "scizor": {
     "level": {
       "1": "Quick Attack",
+      "2": "Leer",
       "6": "Focus Energy",
       "11": "Pursuit",
       "16": "False Swipe",
@@ -7662,7 +7928,7 @@
     "tutor": [
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Sleep Talk",
@@ -7676,6 +7942,7 @@
   "smoochum": {
     "level": {
       "1": "Pound",
+      "2": "Lick",
       "9": "Sweet Kiss",
       "13": "Powder Snow",
       "21": "Confusion",
@@ -7724,7 +7991,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -7743,7 +8010,12 @@
   },
   "jynx": {
     "level": {
-      "1": "Powder Snow",
+      "1": "Pound",
+      "2": "Lick",
+      "3": "Sweet Kiss",
+      "4": "Powder Snow",
+      "9": "Sweet Kiss",
+      "13": "Powder Snow",
       "21": "Double Slap",
       "25": "Ice Punch",
       "35": "Mean Look",
@@ -7789,7 +8061,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -7809,6 +8081,7 @@
   "elekid": {
     "level": {
       "1": "Quick Attack",
+      "2": "Leer",
       "9": "Thunder Punch",
       "17": "Light Screen",
       "25": "Swift",
@@ -7853,7 +8126,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -7872,7 +8145,10 @@
   },
   "electabuzz": {
     "level": {
-      "1": "Thunder Punch",
+      "1": "Quick Attack",
+      "2": "Leer",
+      "3": "Thunder Punch",
+      "9": "Thunder Punch",
       "17": "Light Screen",
       "25": "Swift",
       "36": "Screech",
@@ -7911,7 +8187,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -7974,7 +8250,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Mega Kick",
       "Mega Punch",
@@ -7990,7 +8266,13 @@
   },
   "magmar": {
     "level": {
-      "1": "Smog",
+      "1": "Ember",
+      "2": "Leer",
+      "3": "Smog",
+      "4": "Fire Punch",
+      "7": "Leer",
+      "13": "Smog",
+      "19": "Fire Punch",
       "25": "Smokescreen",
       "33": "Sunny Day",
       "41": "Flamethrower",
@@ -8026,7 +8308,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Mega Kick",
       "Mega Punch",
@@ -8043,6 +8325,7 @@
   "pinsir": {
     "level": {
       "1": "Vice Grip",
+      "2": "Focus Energy",
       "7": "Bind",
       "13": "Seismic Toss",
       "19": "Harden",
@@ -8086,7 +8369,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Rock Slide",
@@ -8100,7 +8383,8 @@
   },
   "tauros": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
       "4": "Rage",
       "8": "Horn Attack",
       "13": "Scary Face",
@@ -8145,7 +8429,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -8194,7 +8478,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Sandstorm",
       "Secret Power",
@@ -8212,7 +8496,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -8225,6 +8509,8 @@
   "lapras": {
     "level": {
       "1": "Water Gun",
+      "2": "Growl",
+      "3": "Sing",
       "7": "Mist",
       "13": "Body Slam",
       "19": "Confuse Ray",
@@ -8252,7 +8538,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Safeguard",
       "Secret Power",
@@ -8279,7 +8565,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Nightmare",
@@ -8299,7 +8585,9 @@
   },
   "eevee": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Helping Hand",
       "8": "Sand Attack",
       "16": "Growl",
       "23": "Quick Attack",
@@ -8327,7 +8615,7 @@
     "egg": [
       "Charm",
       "Curse",
-      "endure",
+      "Endure",
       "Flail",
       "Tickle",
       "Wish"
@@ -8335,7 +8623,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sleep Talk",
@@ -8347,7 +8635,9 @@
   },
   "vaporeon": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Helping Hand",
       "8": "Sand Attack",
       "16": "Water Gun",
       "23": "Quick Attack",
@@ -8374,7 +8664,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Secret Power",
       "Shadow Ball",
       "Sunny Day",
@@ -8387,7 +8677,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -8400,7 +8690,9 @@
   },
   "jolteon": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Helping Hand",
       "8": "Sand Attack",
       "16": "Thunder Shock",
       "23": "Quick Attack",
@@ -8424,7 +8716,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Secret Power",
       "Shadow Ball",
       "Shock Wave",
@@ -8437,7 +8729,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sleep Talk",
@@ -8450,7 +8742,9 @@
   },
   "flareon": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Helping Hand",
       "8": "Sand Attack",
       "16": "Ember",
       "23": "Quick Attack",
@@ -8476,7 +8770,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Secret Power",
       "Shadow Ball",
       "Sunny Day",
@@ -8486,7 +8780,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sleep Talk",
@@ -8498,7 +8792,9 @@
   },
   "espeon": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Helping Hand",
       "8": "Sand Attack",
       "16": "Confusion",
       "23": "Quick Attack",
@@ -8538,7 +8834,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Nightmare",
@@ -8552,7 +8848,9 @@
   },
   "umbreon": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Tail Whip",
+      "3": "Helping Hand",
       "8": "Sand Attack",
       "16": "Pursuit",
       "23": "Quick Attack",
@@ -8591,7 +8889,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Nightmare",
@@ -8606,6 +8904,8 @@
   "porygon": {
     "level": {
       "1": "Tackle",
+      "2": "Conversion",
+      "3": "Conversion 2",
       "9": "Agility",
       "12": "Psybeam",
       "20": "Recover",
@@ -8645,7 +8945,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Nightmare",
@@ -8661,6 +8961,8 @@
   "porygon2": {
     "level": {
       "1": "Tackle",
+      "2": "Conversion",
+      "3": "Conversion 2",
       "9": "Agility",
       "12": "Psybeam",
       "20": "Recover",
@@ -8701,7 +9003,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Nightmare",
@@ -8716,7 +9018,8 @@
   },
   "omanyte": {
     "level": {
-      "1": "Withdraw",
+      "1": "Constrict",
+      "2": "Withdraw",
       "13": "Bite",
       "19": "Water Gun",
       "25": "Mud Shot",
@@ -8762,7 +9065,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Rock Slide",
@@ -8775,7 +9078,12 @@
   },
   "omastar": {
     "level": {
-      "1": "Withdraw",
+      "1": "Constrict",
+      "2": "Withdraw",
+      "3": "Bite",
+      "4": "Water Gun",
+      "13": "Bite",
+      "19": "Water Gun",
       "25": "Mud Shot",
       "31": "Leer",
       "37": "Protect",
@@ -8813,7 +9121,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Rock Slide",
@@ -8828,11 +9136,12 @@
   "kabuto": {
     "level": {
       "1": "Scratch",
+      "2": "Harden",
       "13": "Absorb",
       "19": "Leer",
       "25": "Mud Shot",
       "31": "Sand Attack",
-      "37": "endure",
+      "37": "Endure",
       "43": "Metal Sound",
       "49": "Mega Drain",
       "55": "Ancient Power"
@@ -8875,7 +9184,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Rock Slide",
@@ -8888,10 +9197,16 @@
   },
   "kabutops": {
     "level": {
-      "1": "Scratch",
+      "1": "Fury Cutter",
+      "2": "Scratch",
+      "3": "Harden",
+      "4": "Absorb",
+      "5": "Leer",
+      "13": "Absorb",
+      "19": "Leer",
       "25": "Mud Shot",
       "31": "Sand Attack",
-      "37": "endure",
+      "37": "Endure",
       "40": "Slash",
       "46": "Metal Sound",
       "55": "Mega Drain",
@@ -8931,7 +9246,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mega Kick",
@@ -8975,7 +9290,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -8998,7 +9313,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Rock Slide",
       "Sky Attack",
@@ -9018,12 +9333,13 @@
       "17": "Headbutt",
       "21": "Yawn",
       "25": "Rest",
-      "28": "Snore",
+      "29": "Snore",
       "33": "Body Slam",
       "37": "Sleep Talk",
-      "42": "Covet",
-      "46": "Rollout",
-      "51": "Hyper Beam"
+      "41": "Block",
+      "45": "Covet",
+      "49": "Rollout",
+      "53": "Hyper Beam"
     },
     "tm": [
       "Attract",
@@ -9072,7 +9388,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -9095,7 +9411,8 @@
   },
   "articuno": {
     "level": {
-      "1": "Powder Snow",
+      "1": "Gust",
+      "2": "Powder Snow",
       "13": "Mist",
       "25": "Agility",
       "37": "Mind Reader",
@@ -9120,7 +9437,7 @@
       "Reflect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Sandstorm",
       "Secret Power",
@@ -9132,7 +9449,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -9146,7 +9463,8 @@
   },
   "zapdos": {
     "level": {
-      "1": "Thunder Shock",
+      "1": "Peck",
+      "2": "Thunder Shock",
       "13": "Thunder Wave",
       "25": "Agility",
       "37": "Detect",
@@ -9169,7 +9487,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Sandstorm",
       "Secret Power",
@@ -9183,7 +9501,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sky Attack",
@@ -9198,9 +9516,10 @@
   "moltres": {
     "level": {
       "1": "Wing Attack",
+      "2": "Ember",
       "13": "Fire Spin",
       "25": "Agility",
-      "37": "endure",
+      "37": "Endure",
       "49": "Flamethrower",
       "61": "Safeguard",
       "73": "Heat Wave",
@@ -9221,7 +9540,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Safeguard",
       "Sandstorm",
@@ -9233,7 +9552,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sky Attack",
@@ -9247,6 +9566,7 @@
   "dratini": {
     "level": {
       "1": "Wrap",
+      "2": "Leer",
       "8": "Thunder Wave",
       "15": "Twister",
       "22": "Dragon Rage",
@@ -9295,7 +9615,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -9309,6 +9629,11 @@
   "dragonair": {
     "level": {
       "1": "Wrap",
+      "2": "Leer",
+      "3": "Thunder Wave",
+      "4": "Twister",
+      "8": "Thunder Wave",
+      "15": "Twister",
       "22": "Dragon Rage",
       "29": "Slam",
       "38": "Agility",
@@ -9348,7 +9673,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -9362,6 +9687,11 @@
   "dragonite": {
     "level": {
       "1": "Wrap",
+      "2": "Leer",
+      "3": "Thunder Wave",
+      "4": "Twister",
+      "8": "Thunder Wave",
+      "15": "Twister",
       "22": "Dragon Rage",
       "29": "Slam",
       "38": "Agility",
@@ -9395,7 +9725,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Safeguard",
@@ -9417,7 +9747,7 @@
       "Body Slam",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -9435,14 +9765,17 @@
   },
   "mewtwo": {
     "level": {
-      "1": "Disable",
+      "1": "Confusion",
+      "2": "Disable",
       "11": "Barrier",
-      "22": "Swift",
-      "33": "Psych Up",
+      "22": "Mist",
+      "33": "Swift",
       "44": "Recover",
       "55": "Safeguard",
       "66": "Psychic",
-      "77": "Amnesia"
+      "77": "Psych Up",
+      "88": "Future Sight",
+      "99": "Amnesia"
     },
     "tm": [
       "Aerial Ace",
@@ -9496,7 +9829,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -9562,7 +9895,7 @@
       "Reflect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Safeguard",
@@ -9595,7 +9928,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fire Punch",
       "Fury Cutter",
@@ -9627,6 +9960,7 @@
   "chikorita": {
     "level": {
       "1": "Tackle",
+      "2": "Growl",
       "8": "Razor Leaf",
       "12": "Reflect",
       "15": "Poison Powder",
@@ -9672,7 +10006,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sleep Talk",
@@ -9685,6 +10019,11 @@
   "bayleef": {
     "level": {
       "1": "Tackle",
+      "2": "Growl",
+      "3": "Razor Leaf",
+      "4": "Reflect",
+      "8": "Razor Leaf",
+      "12": "Reflect",
       "15": "Poison Powder",
       "23": "Synthesis",
       "31": "Body Slam",
@@ -9721,7 +10060,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -9735,6 +10074,11 @@
   "meganium": {
     "level": {
       "1": "Tackle",
+      "2": "Growl",
+      "3": "Razor Leaf",
+      "4": "Reflect",
+      "8": "Razor Leaf",
+      "12": "Reflect",
       "15": "Poison Powder",
       "23": "Synthesis",
       "31": "Body Slam",
@@ -9773,7 +10117,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -9787,6 +10131,7 @@
   "cyndaquil": {
     "level": {
       "1": "Tackle",
+      "2": "Leer",
       "6": "Smokescreen",
       "12": "Ember",
       "19": "Quick Attack",
@@ -9820,14 +10165,14 @@
       "Fury Swipes",
       "Howl",
       "Quick Attack",
-      "reversal",
+      "Reversal",
       "Thrash"
     ],
     "tutor": [
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rollout",
@@ -9841,6 +10186,9 @@
   "quilava": {
     "level": {
       "1": "Tackle",
+      "2": "Leer",
+      "3": "Smokescreen",
+      "6": "Smokescreen",
       "12": "Ember",
       "21": "Quick Attack",
       "31": "Flame Wheel",
@@ -9864,7 +10212,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Strength",
@@ -9876,7 +10224,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -9891,6 +10239,11 @@
   "typhlosion": {
     "level": {
       "1": "Tackle",
+      "2": "Leer",
+      "3": "Smokescreen",
+      "4": "Ember",
+      "6": "Smokescreen",
+      "12": "Ember",
       "21": "Quick Attack",
       "31": "Flame Wheel",
       "45": "Swift",
@@ -9915,7 +10268,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Strength",
@@ -9929,7 +10282,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Mega Kick",
@@ -9950,6 +10303,7 @@
   "totodile": {
     "level": {
       "1": "Scratch",
+      "2": "Leer",
       "7": "Rage",
       "13": "Water Gun",
       "20": "Bite",
@@ -9999,7 +10353,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -10018,6 +10372,9 @@
   "croconaw": {
     "level": {
       "1": "Scratch",
+      "2": "Leer",
+      "3": "Rage",
+      "7": "Rage",
       "13": "Water Gun",
       "21": "Bite",
       "28": "Scary Face",
@@ -10045,7 +10402,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Strength",
@@ -10060,7 +10417,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Ice Punch",
       "Icy Wind",
@@ -10079,7 +10436,12 @@
   },
   "feraligatr": {
     "level": {
-      "1": "Water Gun",
+      "1": "Scratch",
+      "2": "Leer",
+      "3": "Rage",
+      "4": "Water Gun",
+      "7": "Rage",
+      "13": "Water Gun",
       "21": "Bite",
       "28": "Scary Face",
       "38": "Slash",
@@ -10109,7 +10471,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Strength",
@@ -10124,7 +10486,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Ice Punch",
       "Icy Wind",
@@ -10184,7 +10546,7 @@
       "Double-Edge",
       "Focus Energy",
       "Pursuit",
-      "reversal",
+      "Reversal",
       "Slash",
       "Substitute",
       "Trick"
@@ -10194,7 +10556,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -10212,6 +10574,10 @@
   "furret": {
     "level": {
       "1": "Scratch",
+      "2": "Defense Curl",
+      "3": "Quick Attack",
+      "4": "Defense Curl",
+      "7": "Quick Attack",
       "12": "Fury Swipes",
       "28": "Slam",
       "48": "Rest",
@@ -10256,7 +10622,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -10274,6 +10640,7 @@
   "hoothoot": {
     "level": {
       "1": "Tackle",
+      "2": "Growl",
       "6": "Foresight",
       "11": "Peck",
       "16": "Hypnosis",
@@ -10316,7 +10683,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Nightmare",
@@ -10331,6 +10698,11 @@
   "noctowl": {
     "level": {
       "1": "Tackle",
+      "2": "Growl",
+      "3": "ForeSight",
+      "4": "Peck",
+      "6": "Foresight",
+      "11": "Peck",
       "16": "Hypnosis",
       "25": "Reflect",
       "33": "Take Down",
@@ -10364,7 +10736,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Nightmare",
@@ -10381,7 +10753,9 @@
       "1": "Tackle",
       "8": "Supersonic",
       "15": "Comet Punch",
-      "22": "Safeguard",
+      "21": "Light Screen",
+      "22": "Relect",
+      "23": "Safeguard",
       "29": "Baton Pass",
       "36": "Swift",
       "43": "Agility",
@@ -10419,7 +10793,7 @@
     "tutor": [
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Mega Punch",
       "Mimic",
@@ -10436,8 +10810,12 @@
   "ledian": {
     "level": {
       "1": "Tackle",
+      "2": "Supersonic",
+      "8": "Supersonic",
       "15": "Comet Punch",
-      "24": "Safeguard",
+      "23": "Light Screen",
+      "24": "Relect",
+      "25": "Safeguard",
       "33": "Baton Pass",
       "42": "Swift",
       "51": "Agility",
@@ -10472,7 +10850,7 @@
     "tutor": [
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Mega Punch",
       "Mimic",
@@ -10488,7 +10866,8 @@
   },
   "spinarak": {
     "level": {
-      "1": "String Shot",
+      "1": "Poison Sting",
+      "2": "String Shot",
       "6": "Scary Face",
       "11": "Constrict",
       "17": "Night Shade",
@@ -10529,7 +10908,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -10539,7 +10918,12 @@
   },
   "ariados": {
     "level": {
-      "1": "String Shot",
+      "1": "Poison Sting",
+      "2": "String Shot",
+      "3": "Scary Face",
+      "4": "Constrict",
+      "6": "Scary Face",
+      "11": "Constrict",
       "17": "Night Shade",
       "25": "Leech Life",
       "34": "Fury Swipes",
@@ -10572,7 +10956,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -10582,7 +10966,8 @@
   },
   "chinchou": {
     "level": {
-      "1": "Thunder Wave",
+      "1": "Bubble",
+      "2": "Thunder Wave",
       "5": "Supersonic",
       "13": "Flail",
       "17": "Water Gun",
@@ -10623,7 +11008,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -10634,7 +11019,10 @@
   },
   "lanturn": {
     "level": {
-      "1": "Thunder Wave",
+      "1": "Bubble",
+      "2": "Thunder Wave",
+      "3": "Supersonic",
+      "5": "Supersonic",
       "13": "Flail",
       "17": "Water Gun",
       "25": "Spark",
@@ -10671,7 +11059,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -10683,6 +11071,7 @@
   "togepi": {
     "level": {
       "1": "Growl",
+      "2": "Charm",
       "4": "Metronome",
       "9": "Sweet Kiss",
       "13": "Yawn",
@@ -10734,7 +11123,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mega Kick",
       "Mega Punch",
       "Metronome",
@@ -10754,7 +11143,13 @@
   },
   "togetic": {
     "level": {
-      "1": "Sweet Kiss",
+      "1": "Magical Leaf",
+      "2": "Growl",
+      "3": "Charm",
+      "4": "Metronome",
+      "5": "Sweet Kiss",
+      "6": "Metronome",
+      "9": "Sweet Kiss",
       "13": "Yawn",
       "17": "Encore",
       "21": "Ancient Power",
@@ -10802,7 +11197,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mega Kick",
       "Mega Punch",
       "Metronome",
@@ -10824,6 +11219,7 @@
   "natu": {
     "level": {
       "1": "Peck",
+      "2": "Leer",
       "10": "Night Shade",
       "20": "Teleport",
       "30": "Wish",
@@ -10869,7 +11265,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Nightmare",
       "Psych Up",
@@ -10885,6 +11281,7 @@
   "xatu": {
     "level": {
       "1": "Peck",
+      "2": "Leer",
       "10": "Night Shade",
       "20": "Teleport",
       "35": "Wish",
@@ -10923,7 +11320,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Nightmare",
       "Psych Up",
@@ -10939,6 +11336,7 @@
   "mareep": {
     "level": {
       "1": "Tackle",
+      "2": "Growl",
       "9": "Thunder Shock",
       "16": "Thunder Wave",
       "23": "Cotton Spore",
@@ -10977,7 +11375,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -10989,7 +11387,10 @@
   },
   "flaaffy": {
     "level": {
-      "1": "Thunder Shock",
+      "1": "Tackle",
+      "2": "Growl",
+      "3": "Thunder Shock",
+      "9": "Thunder Shock",
       "18": "Thunder Wave",
       "27": "Cotton Spore",
       "36": "Light Screen",
@@ -11025,7 +11426,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Mega Kick",
       "Mega Punch",
@@ -11042,7 +11443,12 @@
   },
   "ampharos": {
     "level": {
-      "1": "Thunder Wave",
+      "1": "Tackle",
+      "2": "Growl",
+      "3": "Thunder Shock",
+      "4": "Thunder Wave",
+      "9": "Thunder Shock",
+      "18": "Thunder Wave",
       "27": "Cotton Spore",
       "30": "Thunder Punch",
       "42": "Light Screen",
@@ -11079,7 +11485,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Mega Kick",
       "Mega Punch",
@@ -11134,7 +11540,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -11199,7 +11605,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -11217,7 +11623,13 @@
   },
   "azumarill": {
     "level": {
-      "1": "Water Gun",
+      "1": "Tackle",
+      "2": "Defense Curl",
+      "3": "Tail Whip",
+      "4": "Water Gun",
+      "5": "Defense Curl",
+      "6": "Tail Whip",
+      "10": "Water Gun",
       "15": "Rollout",
       "24": "Bubble Beam",
       "34": "Double-Edge",
@@ -11257,7 +11669,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -11276,6 +11688,7 @@
   "sudowoodo": {
     "level": {
       "1": "Rock Throw",
+      "2": "Mimic",
       "9": "Flail",
       "17": "Low Kick",
       "25": "Rock Slide",
@@ -11317,7 +11730,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fire Punch",
       "Ice Punch",
@@ -11340,6 +11753,7 @@
   "hoppip": {
     "level": {
       "1": "Splash",
+      "4": "Synthesis",
       "5": "Tail Whip",
       "10": "Tackle",
       "13": "Poison Powder",
@@ -11378,7 +11792,7 @@
     "tutor": [
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -11389,7 +11803,13 @@
   },
   "skiploom": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Splash",
+      "2": "Synthesis",
+      "3": "Tail Whip",
+      "4": "Tackle",
+      "5": "Synthesis",
+      "6": "Tail Whip",
+      "7": "Tackle",
       "13": "Poison Powder",
       "15": "Stun Spore",
       "17": "Sleep Powder",
@@ -11419,7 +11839,7 @@
     "tutor": [
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -11430,7 +11850,13 @@
   },
   "jumpluff": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Splash",
+      "2": "Synthesis",
+      "3": "Tail Whip",
+      "4": "Tackle",
+      "5": "Synthesis",
+      "6": "Tail Whip",
+      "7": "Tackle",
       "13": "Poison Powder",
       "15": "Stun Spore",
       "17": "Sleep Powder",
@@ -11461,7 +11887,7 @@
     "tutor": [
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -11472,7 +11898,8 @@
   },
   "aipom": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Scratch",
+      "2": "Tail Whip",
       "6": "Sand Attack",
       "13": "Astonish",
       "18": "Baton Pass",
@@ -11530,7 +11957,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -11591,7 +12018,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -11602,7 +12029,8 @@
   },
   "sunflora": {
     "level": {
-      "1": "Pound",
+      "1": "Absorb",
+      "2": "Pound",
       "6": "Growth",
       "13": "Razor Leaf",
       "18": "Ingrain",
@@ -11636,7 +12064,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -11648,15 +12076,16 @@
   "yanma": {
     "level": {
       "1": "Tackle",
+      "2": "Foresight",
       "6": "Quick Attack",
       "12": "Double Team",
       "17": "Sonic Boom",
       "23": "Hypnosis",
-      "25": "Detect",
-      "31": "Supersonic",
-      "34": "Uproar",
+      "28": "Detect",
+      "34": "UpRoar",
       "39": "Wing Attack",
-      "49": "Screech"
+      "45": "Supersonic",
+      "50": "Screech"
     },
     "tm": [
       "Aerial Ace",
@@ -11681,7 +12110,7 @@
     ],
     "egg": [
       "Leech Life",
-      "reversal",
+      "Reversal",
       "Signal Beam",
       "Silver Wind",
       "Whirlwind"
@@ -11689,7 +12118,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -11701,13 +12130,15 @@
   "wooper": {
     "level": {
       "1": "Water Gun",
+      "2": "Tail Whip",
       "11": "Slam",
       "16": "Mud Shot",
       "21": "Amnesia",
       "31": "Yawn",
       "36": "Earthquake",
       "41": "Rain Dance",
-      "51": "Mist"
+      "51": "Mist",
+      "52": "Haze"
     },
     "tm": [
       "Attract",
@@ -11751,7 +12182,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Mimic",
       "Mud-Slap",
@@ -11765,13 +12196,15 @@
   "quagsire": {
     "level": {
       "1": "Water Gun",
+      "2": "Tail Whip",
       "11": "Slam",
       "16": "Mud Shot",
       "23": "Amnesia",
       "35": "Yawn",
       "42": "Earthquake",
       "49": "Rain Dance",
-      "61": "Mist"
+      "61": "Mist",
+      "62": "Haze"
     },
     "tm": [
       "Attract",
@@ -11812,7 +12245,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Mega Kick",
       "Mega Punch",
@@ -11873,7 +12306,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -11890,7 +12323,8 @@
   },
   "misdreavus": {
     "level": {
-      "1": "Psywave",
+      "1": "Growl",
+      "2": "Psywave",
       "6": "Spite",
       "11": "Astonish",
       "17": "Confuse Ray",
@@ -11937,7 +12371,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Nightmare",
       "Psych Up",
@@ -11960,7 +12394,12 @@
   "wynaut": {
     "level": {
       "1": "Splash",
-      "15": "Safeguard"
+      "2": "Charm",
+      "3": "Encore",
+      "15": "Counter",
+      "16": "Mirror Coat",
+      "17": "Safeguard",
+      "18": "Destiny Bound"
     },
     "tm": [],
     "egg": [],
@@ -11968,7 +12407,10 @@
   },
   "wobbuffet": {
     "level": {
-      "1": "Safeguard"
+      "1": "Counter",
+      "2": "Mirror Coat",
+      "3": "Safeguard",
+      "4": "Destiny Bound"
     },
     "tm": [],
     "egg": [],
@@ -11977,6 +12419,7 @@
   "girafarig": {
     "level": {
       "1": "Tackle",
+      "2": "Growl",
       "7": "Astonish",
       "13": "Confusion",
       "19": "Stomp",
@@ -12029,7 +12472,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Nightmare",
@@ -12045,6 +12488,7 @@
   "pineco": {
     "level": {
       "1": "Tackle",
+      "2": "Protect",
       "8": "Self-Destruct",
       "15": "Take Down",
       "22": "Rapid Spin",
@@ -12088,7 +12532,7 @@
       "Counter",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Rock Slide",
@@ -12103,6 +12547,9 @@
   "forretress": {
     "level": {
       "1": "Tackle",
+      "2": "Protect",
+      "3": "Self-Destruct",
+      "8": "Self-Destruct",
       "15": "Take Down",
       "22": "Rapid Spin",
       "29": "Bide",
@@ -12140,7 +12587,7 @@
       "Counter",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Rock Slide",
@@ -12158,12 +12605,13 @@
       "4": "Defense Curl",
       "11": "Yawn",
       "14": "Glare",
-      "21": "Spite",
-      "24": "Pursuit",
-      "31": "Screech",
-      "34": "Take Down",
-      "41": "Endeavor",
-      "44": "Flail"
+      "21": "Rollout",
+      "24": "Spite",
+      "31": "Pursuit",
+      "34": "Screech",
+      "41": "Take Down",
+      "44": "Flail",
+      "51": "Endeavor"
     },
     "tm": [
       "Attract",
@@ -12212,7 +12660,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Nightmare",
@@ -12274,7 +12722,7 @@
       "Counter",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Rock Slide",
@@ -12289,11 +12737,12 @@
   "snubbull": {
     "level": {
       "1": "Tackle",
+      "2": "Scary Face",
       "4": "Tail Whip",
       "8": "Charm",
       "13": "Bite",
       "19": "Lick",
-      "26": "roar",
+      "26": "Roar",
       "34": "Rage",
       "43": "Take Down",
       "53": "Crunch"
@@ -12316,7 +12765,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Shadow Ball",
@@ -12349,7 +12798,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -12369,11 +12818,12 @@
   "granbull": {
     "level": {
       "1": "Tackle",
+      "2": "Scary Face",
       "4": "Tail Whip",
       "8": "Charm",
       "13": "Bite",
       "19": "Lick",
-      "28": "roar",
+      "28": "Roar",
       "38": "Rage",
       "49": "Take Down",
       "61": "Crunch"
@@ -12398,7 +12848,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Secret Power",
@@ -12423,7 +12873,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -12443,7 +12893,10 @@
   },
   "qwilfish": {
     "level": {
-      "1": "Tackle",
+      "1": "Spikes",
+      "2": "Tackle",
+      "3": "Poison Sting",
+      "8": "Harden",
       "9": "Minimize",
       "13": "Water Gun",
       "21": "Pin Missile",
@@ -12485,7 +12938,7 @@
     "tutor": [
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Rollout",
@@ -12501,7 +12954,8 @@
   },
   "shuckle": {
     "level": {
-      "1": "Withdraw",
+      "1": "Constrict",
+      "2": "Withdraw",
       "9": "Wrap",
       "14": "Encore",
       "23": "Safeguard",
@@ -12537,7 +12991,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rock Slide",
@@ -12551,13 +13005,14 @@
   "heracross": {
     "level": {
       "1": "Tackle",
+      "2": "Leer",
       "6": "Horn Attack",
-      "11": "endure",
+      "11": "Endure",
       "17": "Fury Attack",
       "23": "Brick Break",
       "30": "Counter",
       "37": "Take Down",
-      "45": "reversal",
+      "45": "Reversal",
       "53": "Megahorn"
     },
     "tm": [
@@ -12595,7 +13050,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Rock Slide",
@@ -12609,7 +13064,9 @@
   },
   "sneasel": {
     "level": {
-      "1": "Taunt",
+      "1": "Scratch",
+      "2": "Leer",
+      "3": "Taunt",
       "8": "Quick Attack",
       "15": "Screech",
       "22": "Feint Attack",
@@ -12667,7 +13124,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Ice Punch",
       "Icy Wind",
@@ -12686,6 +13143,7 @@
   "teddiursa": {
     "level": {
       "1": "Scratch",
+      "2": "Leer",
       "7": "Lick",
       "13": "Fury Swipes",
       "19": "Fake Tears",
@@ -12712,7 +13170,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Strength",
@@ -12738,7 +13196,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -12761,6 +13219,11 @@
   "ursaring": {
     "level": {
       "1": "Scratch",
+      "2": "Leer",
+      "3": "Lick",
+      "4": "Fury Swipes",
+      "7": "Lick",
+      "13": "Fury Swipes",
       "19": "Fake Tears",
       "25": "Feint Attack",
       "31": "Rest",
@@ -12786,7 +13249,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Secret Power",
@@ -12804,7 +13267,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -12828,6 +13291,7 @@
   "slugma": {
     "level": {
       "1": "Yawn",
+      "2": "Smog",
       "8": "Ember",
       "15": "Rock Throw",
       "22": "Harden",
@@ -12863,7 +13327,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rock Slide",
@@ -12877,7 +13341,12 @@
   },
   "magcargo": {
     "level": {
-      "1": "Yawn",
+      "1": "Smog",
+      "2": "Yawn",
+      "3": "Ember",
+      "4": "Rock Throw",
+      "8": "Ember",
+      "15": "Rock Throw",
       "22": "Harden",
       "29": "Amnesia",
       "36": "Flamethrower",
@@ -12913,7 +13382,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rock Slide",
@@ -12928,8 +13397,9 @@
   "swinub": {
     "level": {
       "1": "Tackle",
+      "2": "Odor Sleuth",
       "10": "Powder Snow",
-      "19": "endure",
+      "19": "Endure",
       "28": "Take Down",
       "37": "Mist",
       "46": "Blizzard",
@@ -12952,7 +13422,7 @@
       "Reflect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -12974,7 +13444,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -12987,7 +13457,12 @@
   },
   "piloswine": {
     "level": {
-      "1": "Powder Snow",
+      "1": "Horn Attack",
+      "2": "Odor Sleuth",
+      "3": "Powder Snow",
+      "4": "Endure",
+      "10": "Powder Snow",
+      "19": "Endure",
       "28": "Take Down",
       "33": "Fury Attack",
       "42": "Mist",
@@ -13012,7 +13487,7 @@
       "Reflect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -13025,7 +13500,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -13041,6 +13516,7 @@
       "1": "Tackle",
       "6": "Harden",
       "12": "Bubble",
+      "16": "Recover",
       "17": "Refresh",
       "23": "Bubble Beam",
       "28": "Spike Cannon",
@@ -13093,7 +13569,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Mud-Slap",
@@ -13110,7 +13586,9 @@
     "level": {
       "1": "Water Gun",
       "11": "Lock-On",
-      "22": "Psybeam",
+      "21": "Psybeam",
+      "22": "Aurora Beam",
+      "23": "Bubble Beam",
       "33": "Focus Energy",
       "44": "Ice Beam",
       "55": "Hyper Beam"
@@ -13152,7 +13630,7 @@
     "tutor": [
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sleep Talk",
@@ -13167,7 +13645,9 @@
     "level": {
       "1": "Water Gun",
       "11": "Constrict",
-      "22": "Psybeam",
+      "21": "Psybeam",
+      "22": "Aurora Beam",
+      "23": "Bubble Beam",
       "25": "Octazooka",
       "38": "Focus Energy",
       "54": "Ice Beam",
@@ -13204,7 +13684,7 @@
     "tutor": [
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Seismic Toss",
@@ -13253,7 +13733,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mega Kick",
       "Mega Punch",
@@ -13271,6 +13751,7 @@
   "mantine": {
     "level": {
       "1": "Tackle",
+      "2": "Bubble",
       "8": "Supersonic",
       "15": "Bubble Beam",
       "22": "Take Down",
@@ -13312,7 +13793,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -13325,7 +13806,8 @@
   },
   "skarmory": {
     "level": {
-      "1": "Peck",
+      "1": "Leer",
+      "2": "Peck",
       "10": "Sand Attack",
       "13": "Swift",
       "16": "Agility",
@@ -13347,7 +13829,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Sandstorm",
       "Secret Power",
@@ -13368,7 +13850,7 @@
     "tutor": [
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rock Slide",
@@ -13383,9 +13865,10 @@
   "houndour": {
     "level": {
       "1": "Leer",
+      "2": "Ember",
       "7": "Howl",
       "13": "Smog",
-      "19": "roar",
+      "19": "Roar",
       "25": "Bite",
       "31": "Odor Sleuth",
       "37": "Feint Attack",
@@ -13405,7 +13888,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Shadow Ball",
@@ -13424,7 +13907,7 @@
       "Fire Spin",
       "Pursuit",
       "Rage",
-      "reversal",
+      "Reversal",
       "Spite",
       "Will-O-Wisp"
     ],
@@ -13433,7 +13916,7 @@
       "Counter",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Nightmare",
@@ -13447,8 +13930,11 @@
   "houndoom": {
     "level": {
       "1": "Leer",
+      "2": "Ember",
+      "3": "Howl",
+      "7": "Howl",
       "13": "Smog",
-      "19": "roar",
+      "19": "Roar",
       "27": "Bite",
       "35": "Odor Sleuth",
       "43": "Feint Attack",
@@ -13469,7 +13955,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Shadow Ball",
@@ -13489,7 +13975,7 @@
       "Counter",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Nightmare",
@@ -13502,12 +13988,14 @@
   },
   "phanpy": {
     "level": {
-      "1": "Tackle",
+      "1": "Odor Sleuth",
+      "2": "Tackle",
+      "3": "Growl",
       "9": "Defense Curl",
       "17": "Flail",
       "25": "Take Down",
       "33": "Rollout",
-      "41": "endure",
+      "41": "Endure",
       "49": "Double-Edge"
     },
     "tm": [
@@ -13521,7 +14009,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -13543,7 +14031,7 @@
       "Counter",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rollout",
@@ -13556,6 +14044,8 @@
   "donphan": {
     "level": {
       "1": "Odor Sleuth",
+      "2": "Horn Attack",
+      "3": "Growl",
       "9": "Defense Curl",
       "17": "Flail",
       "25": "Fury Attack",
@@ -13575,7 +14065,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -13590,7 +14080,7 @@
       "Counter",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rock Slide",
@@ -13631,7 +14121,7 @@
       "Reflect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Secret Power",
       "Shadow Ball",
       "Shock Wave",
@@ -13655,7 +14145,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Nightmare",
@@ -13670,7 +14160,16 @@
   },
   "smeargle": {
     "level": {
-      "1": "Sketch"
+      "1": "Sketch",
+      "11": "Sketch",
+      "21": "Sketch",
+      "31": "Sketch",
+      "41": "Sketch",
+      "51": "Sketch",
+      "61": "Sketch",
+      "71": "Sketch",
+      "81": "Sketch",
+      "91": "Sketch"
     },
     "tm": [],
     "egg": [],
@@ -13722,10 +14221,10 @@
     ],
     "egg": [
       "Curse",
-      "endure",
+      "Endure",
       "Present",
       "Psych Up",
-      "reversal",
+      "Reversal",
       "Seismic Toss",
       "Sleep Talk"
     ],
@@ -13735,7 +14234,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -13758,9 +14257,10 @@
   },
   "raikou": {
     "level": {
-      "1": "Leer",
+      "1": "Bite",
+      "2": "Leer",
       "11": "Thunder Shock",
-      "21": "roar",
+      "21": "Roar",
       "31": "Quick Attack",
       "41": "Spark",
       "51": "Reflect",
@@ -13784,7 +14284,7 @@
       "Reflect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Sandstorm",
       "Secret Power",
@@ -13799,7 +14299,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Psych Up",
@@ -13813,9 +14313,10 @@
   },
   "entei": {
     "level": {
-      "1": "Leer",
+      "1": "Bite",
+      "2": "Leer",
       "11": "Ember",
-      "21": "roar",
+      "21": "Roar",
       "31": "Fire Spin",
       "41": "Stomp",
       "51": "Flamethrower",
@@ -13841,7 +14342,7 @@
       "Reflect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Sandstorm",
       "Secret Power",
@@ -13854,7 +14355,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Psych Up",
@@ -13867,7 +14368,8 @@
   },
   "suicune": {
     "level": {
-      "1": "Leer",
+      "1": "Bite",
+      "2": "Leer",
       "11": "Bubble Beam",
       "21": "Rain Dance",
       "31": "Gust",
@@ -13896,7 +14398,7 @@
       "Reflect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Sandstorm",
       "Secret Power",
@@ -13910,7 +14412,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -13924,7 +14426,8 @@
   },
   "larvitar": {
     "level": {
-      "1": "Leer",
+      "1": "Bite",
+      "2": "Leer",
       "8": "Sandstorm",
       "15": "Screech",
       "22": "Rock Slide",
@@ -13968,7 +14471,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rock Slide",
@@ -13980,7 +14483,12 @@
   },
   "pupitar": {
     "level": {
-      "1": "Screech",
+      "1": "Bite",
+      "2": "Leer",
+      "3": "Sandstorm",
+      "4": "Screech",
+      "8": "Sandstorm",
+      "15": "Screech",
       "22": "Rock Slide",
       "29": "Thrash",
       "38": "Scary Face",
@@ -14014,7 +14522,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rock Slide",
@@ -14026,7 +14534,12 @@
   },
   "tyranitar": {
     "level": {
-      "1": "Screech",
+      "1": "Bite",
+      "2": "Leer",
+      "3": "Sandstorm",
+      "4": "Screech",
+      "8": "Sandstorm",
+      "15": "Screech",
       "22": "Rock Slide",
       "29": "Thrash",
       "38": "Scary Face",
@@ -14057,7 +14570,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -14079,7 +14592,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Mega Kick",
@@ -14132,7 +14645,7 @@
       "Reflect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Safeguard",
       "Sandstorm",
@@ -14155,7 +14668,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -14204,7 +14717,7 @@
       "Reflect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Safeguard",
       "Sandstorm",
@@ -14223,7 +14736,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Nightmare",
@@ -14239,7 +14752,10 @@
   },
   "celebi": {
     "level": {
-      "1": "Recover",
+      "1": "Leech Seed",
+      "2": "Confusion",
+      "3": "Recover",
+      "4": "Heal Bell",
       "10": "Safeguard",
       "20": "Ancient Power",
       "30": "Future Sight",
@@ -14280,7 +14796,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Metronome",
       "Mimic",
       "Mud-Slap",
@@ -14297,6 +14813,7 @@
   "treecko": {
     "level": {
       "1": "Pound",
+      "2": "Leer",
       "6": "Absorb",
       "11": "Quick Attack",
       "16": "Pursuit",
@@ -14347,7 +14864,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mega Kick",
       "Mega Punch",
@@ -14365,7 +14882,12 @@
   },
   "grovyle": {
     "level": {
-      "1": "Quick Attack",
+      "1": "Pound",
+      "2": "Leer",
+      "3": "Absorb",
+      "4": "Quick Attack",
+      "6": "Absorb",
+      "11": "Quick Attack",
       "16": "Fury Cutter",
       "17": "Pursuit",
       "23": "Screech",
@@ -14408,7 +14930,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mega Kick",
       "Mega Punch",
@@ -14426,7 +14948,12 @@
   },
   "sceptile": {
     "level": {
-      "1": "Quick Attack",
+      "1": "Pound",
+      "2": "Leer",
+      "3": "Absorb",
+      "4": "Quick Attack",
+      "6": "Absorb",
+      "11": "Quick Attack",
       "16": "Fury Cutter",
       "17": "Pursuit",
       "23": "Screech",
@@ -14457,7 +14984,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Safeguard",
@@ -14473,7 +15000,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mega Kick",
       "Mega Punch",
@@ -14492,6 +15019,7 @@
   "torchic": {
     "level": {
       "1": "Scratch",
+      "2": "Growl",
       "7": "Focus Energy",
       "10": "Ember",
       "16": "Peck",
@@ -14526,8 +15054,8 @@
     ],
     "egg": [
       "Counter",
-      "endure",
-      "reversal",
+      "Endure",
+      "Reversal",
       "Rock Slide",
       "Smelling Salts",
       "Swagger"
@@ -14536,7 +15064,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mega Kick",
       "Mega Punch",
       "Mimic",
@@ -14554,6 +15082,11 @@
   "combusken": {
     "level": {
       "1": "Scratch",
+      "2": "Growl",
+      "3": "Focus Energy",
+      "4": "Ember",
+      "7": "Focus Energy",
+      "13": "Ember",
       "16": "Double Kick",
       "17": "Peck",
       "21": "Sand Attack",
@@ -14594,7 +15127,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Mega Kick",
@@ -14614,7 +15147,13 @@
   },
   "blaziken": {
     "level": {
-      "1": "Scratch",
+      "1": "Fire Punch",
+      "2": "Scratch",
+      "3": "Growl",
+      "4": "Focus Energy",
+      "5": "Ember",
+      "7": "Focus Energy",
+      "13": "Ember",
       "16": "Double Kick",
       "17": "Peck",
       "21": "Sand Attack",
@@ -14645,7 +15184,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Secret Power",
@@ -14659,7 +15198,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Mega Kick",
@@ -14680,6 +15219,7 @@
   "mudkip": {
     "level": {
       "1": "Tackle",
+      "2": "Growl",
       "6": "Mud-Slap",
       "10": "Water Gun",
       "15": "Bide",
@@ -14722,13 +15262,13 @@
       "Mirror Coat",
       "Refresh",
       "Stomp",
-      "Uproar"
+      "UpRoar"
     ],
     "tutor": [
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -14741,7 +15281,12 @@
   },
   "marshtomp": {
     "level": {
-      "1": "Water Gun",
+      "1": "Tackle",
+      "2": "Growl",
+      "3": "Mud-Slap",
+      "4": "Water Gun",
+      "6": "Mud-Slap",
+      "10": "Water Gun",
       "15": "Bide",
       "16": "Mud Shot",
       "20": "Foresight",
@@ -14785,7 +15330,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -14803,7 +15348,12 @@
   },
   "swampert": {
     "level": {
-      "1": "Water Gun",
+      "1": "Tackle",
+      "2": "Growl",
+      "3": "Mud-Slap",
+      "4": "Water Gun",
+      "6": "Mud-Slap",
+      "10": "Water Gun",
       "15": "Bide",
       "16": "Mud Shot",
       "20": "Foresight",
@@ -14834,7 +15384,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Secret Power",
@@ -14851,7 +15401,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -14874,7 +15424,7 @@
       "9": "Sand Attack",
       "13": "Bite",
       "17": "Odor Sleuth",
-      "21": "roar",
+      "21": "Roar",
       "25": "Swagger",
       "29": "Scary Face",
       "33": "Take Down",
@@ -14894,7 +15444,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Shadow Ball",
@@ -14916,7 +15466,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Psych Up",
@@ -14929,8 +15479,14 @@
   "mightyena": {
     "level": {
       "1": "Tackle",
+      "2": "Howl",
+      "3": "Sand Attack",
+      "4": "Bite",
+      "5": "Howl",
+      "9": "Sand Attack",
+      "13": "Bite",
       "17": "Odor Sleuth",
-      "22": "roar",
+      "22": "Roar",
       "27": "Swagger",
       "32": "Scary Face",
       "37": "Take Down",
@@ -14951,7 +15507,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Shadow Ball",
@@ -14968,7 +15524,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Psych Up",
@@ -14981,6 +15537,7 @@
   "zigzagoon": {
     "level": {
       "1": "Tackle",
+      "2": "Growl",
       "5": "Tail Whip",
       "9": "Headbutt",
       "13": "Sand Attack",
@@ -15030,7 +15587,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mimic",
@@ -15046,7 +15603,12 @@
   },
   "linoone": {
     "level": {
-      "1": "Tail Whip",
+      "1": "Tackle",
+      "2": "Growl",
+      "3": "Tail Whip",
+      "4": "Headbutt",
+      "5": "Tail Whip",
+      "9": "Headbutt",
       "13": "Sand Attack",
       "17": "Odor Sleuth",
       "23": "Mud Sport",
@@ -15072,7 +15634,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Shadow Ball",
@@ -15091,7 +15653,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mimic",
@@ -15108,6 +15670,7 @@
   "wurmple": {
     "level": {
       "1": "Tackle",
+      "2": "String Shot",
       "5": "Poison Sting"
     },
     "tm": [],
@@ -15116,7 +15679,8 @@
   },
   "silcoon": {
     "level": {
-      "1": "Harden"
+      "1": "Harden",
+      "7": "Harden"
     },
     "tm": [],
     "egg": [],
@@ -15125,6 +15689,7 @@
   "beautifly": {
     "level": {
       "1": "Absorb",
+      "10": "Absorb",
       "13": "Gust",
       "17": "Stun Spore",
       "20": "Morning Sun",
@@ -15159,7 +15724,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -15170,7 +15735,8 @@
   },
   "cascoon": {
     "level": {
-      "1": "Harden"
+      "1": "Harden",
+      "7": "Harden"
     },
     "tm": [],
     "egg": [],
@@ -15179,6 +15745,7 @@
   "dustox": {
     "level": {
       "1": "Confusion",
+      "10": "Confusion",
       "13": "Gust",
       "17": "Protect",
       "20": "Moonlight",
@@ -15214,7 +15781,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -15268,7 +15835,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -15288,7 +15855,7 @@
       "25": "Fury Swipes",
       "31": "Water Sport",
       "37": "Thief",
-      "43": "Uproar",
+      "43": "UpRoar",
       "49": "Hydro Pump"
     },
     "tm": [
@@ -15325,7 +15892,7 @@
       "Body Slam",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -15341,7 +15908,10 @@
   },
   "ludicolo": {
     "level": {
-      "1": "Nature Power"
+      "1": "Astonish",
+      "2": "Growl",
+      "3": "Absorb",
+      "4": "Nature Power"
     },
     "tm": [
       "Attract",
@@ -15380,7 +15950,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -15440,7 +16010,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Rollout",
@@ -15497,7 +16067,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Fury Cutter",
       "Mega Kick",
@@ -15516,7 +16086,10 @@
   },
   "shiftry": {
     "level": {
-      "1": "Pound"
+      "1": "Pound",
+      "2": "Harden",
+      "3": "Growth",
+      "4": "Nature Power"
     },
     "tm": [
       "Aerial Ace",
@@ -15551,7 +16124,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Fury Cutter",
       "Mega Kick",
@@ -15571,6 +16144,7 @@
   "taillow": {
     "level": {
       "1": "Peck",
+      "2": "Growl",
       "4": "Focus Energy",
       "8": "Quick Attack",
       "13": "Wing Attack",
@@ -15608,7 +16182,7 @@
     "tutor": [
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sky Attack",
@@ -15621,7 +16195,12 @@
   },
   "swellow": {
     "level": {
-      "1": "Quick Attack",
+      "1": "Peck",
+      "2": "Growl",
+      "3": "Focus Energy",
+      "4": "Quick Attack",
+      "5": "Focus Energy",
+      "8": "Quick Attack",
       "13": "Wing Attack",
       "19": "Double Team",
       "28": "Endeavor",
@@ -15651,7 +16230,7 @@
     "tutor": [
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sky Attack",
@@ -15664,7 +16243,8 @@
   },
   "wingull": {
     "level": {
-      "1": "Water Gun",
+      "1": "Growl",
+      "2": "Water Gun",
       "7": "Supersonic",
       "13": "Wing Attack",
       "21": "Mist",
@@ -15703,7 +16283,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -15717,10 +16297,16 @@
   },
   "pelipper": {
     "level": {
-      "1": "Wing Attack",
+      "1": "Growl",
+      "2": "Water Gun",
+      "3": "Water Sport",
+      "4": "Wing Attack",
+      "5": "Water Gun",
       "7": "Supersonic",
+      "13": "Wing Attack",
       "21": "Mist",
       "25": "Protect",
+      "32": "Stockpile",
       "33": "Swallow",
       "47": "Spit Up",
       "61": "Hydro Pump"
@@ -15752,7 +16338,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -15817,7 +16403,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -15835,7 +16421,14 @@
   },
   "kirlia": {
     "level": {
-      "1": "Teleport",
+      "1": "Magical Leaf",
+      "2": "Growl",
+      "3": "Confusion",
+      "4": "Double Team",
+      "5": "Teleport",
+      "6": "Confusion",
+      "11": "Double Team",
+      "16": "Teleport",
       "21": "Calm Mind",
       "26": "Psychic",
       "33": "Imprison",
@@ -15877,7 +16470,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -15895,7 +16488,13 @@
   },
   "gardevoir": {
     "level": {
-      "1": "Teleport",
+      "1": "Growl",
+      "2": "Confusion",
+      "3": "Double Team",
+      "4": "Teleport",
+      "6": "Confusion",
+      "11": "Double Team",
+      "16": "Teleport",
       "21": "Calm Mind",
       "26": "Psychic",
       "33": "Imprison",
@@ -15938,7 +16537,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -15962,7 +16561,8 @@
       "19": "Water Sport",
       "25": "Bubble Beam",
       "31": "Agility",
-      "37": "Mist"
+      "37": "Mist",
+      "38": "Haze"
     },
     "tm": [
       "Attract",
@@ -15995,7 +16595,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Psych Up",
@@ -16008,7 +16608,13 @@
   },
   "masquerain": {
     "level": {
-      "1": "Water Sport",
+      "1": "Bubble",
+      "2": "Quick Attack",
+      "3": "Sweet Scent",
+      "4": "Water Sport",
+      "7": "Quick Attack",
+      "13": "Sweet Scent",
+      "19": "Water Sport",
       "26": "Gust",
       "33": "Scary Face",
       "40": "Stun Spore",
@@ -16042,7 +16648,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Nightmare",
@@ -16096,7 +16702,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Sleep Talk",
       "Snore",
@@ -16107,7 +16713,13 @@
   },
   "breloom": {
     "level": {
-      "1": "Tackle",
+      "1": "Absorb",
+      "2": "Tackle",
+      "3": "Stun Spore",
+      "4": "Leech Seed",
+      "5": "Tackle",
+      "7": "Stun Spore",
+      "10": "Leech Seed",
       "16": "Mega Drain",
       "22": "Headbutt",
       "23": "Mach Punch",
@@ -16150,7 +16762,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mega Kick",
       "Mega Punch",
@@ -16167,7 +16779,8 @@
   },
   "slakoth": {
     "level": {
-      "1": "Yawn",
+      "1": "Scratch",
+      "2": "Yawn",
       "7": "Encore",
       "13": "Slack Off",
       "19": "Feint Attack",
@@ -16221,7 +16834,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -16241,13 +16854,18 @@
   },
   "vigoroth": {
     "level": {
-      "1": "Uproar",
+      "1": "Scratch",
+      "2": "Focus Energy",
+      "3": "Encore",
+      "4": "Uproar",
+      "7": "Encore",
+      "13": "UpRoar",
       "19": "Fury Swipes",
-      "25": "endure",
+      "25": "Endure",
       "31": "Slash",
       "37": "Counter",
       "43": "Focus Punch",
-      "49": "reversal"
+      "49": "Reversal"
     },
     "tm": [
       "Aerial Ace",
@@ -16269,7 +16887,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Shadow Ball",
@@ -16289,7 +16907,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -16309,7 +16927,12 @@
   },
   "slaking": {
     "level": {
-      "1": "Yawn",
+      "1": "Scratch",
+      "2": "Yawn",
+      "3": "Encore",
+      "4": "Slack Off",
+      "7": "Encore",
+      "13": "Slack Off",
       "19": "Feint Attack",
       "25": "Amnesia",
       "31": "Covet",
@@ -16338,7 +16961,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Shadow Ball",
@@ -16358,7 +16981,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -16379,6 +17002,7 @@
   "nincada": {
     "level": {
       "1": "Scratch",
+      "2": "Harden",
       "5": "Leech Life",
       "9": "Sand Attack",
       "14": "Fury Swipes",
@@ -16409,14 +17033,14 @@
       "Toxic"
     ],
     "egg": [
-      "endure",
+      "Endure",
       "Feint Attack",
       "Gust",
       "Silver Wind"
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -16429,8 +17053,15 @@
   "ninjask": {
     "level": {
       "1": "Scratch",
+      "2": "Harden",
+      "3": "Leech Life",
+      "4": "Sand Attack",
+      "5": "Leech Life",
+      "9": "Sand Attack",
       "14": "Fury Swipes",
-      "19": "Mind Reader",
+      "17": "Mind Reader",
+      "18": "Double Team",
+      "19": "Fury Cutter",
       "20": "Screech",
       "25": "Swords Dance",
       "31": "Slash",
@@ -16463,7 +17094,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -16478,6 +17109,7 @@
   "shedinja": {
     "level": {
       "1": "Scratch",
+      "2": "Harden",
       "5": "Leech Life",
       "9": "Sand Attack",
       "14": "Fury Swipes",
@@ -16513,7 +17145,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -16527,13 +17159,14 @@
   "whismur": {
     "level": {
       "1": "Pound",
-      "5": "Uproar",
+      "5": "UpRoar",
       "11": "Astonish",
       "15": "Howl",
       "21": "Supersonic",
       "25": "Stomp",
       "31": "Screech",
-      "35": "roar",
+      "35": "Roar",
+      "40": "Rest",
       "41": "Sleep Talk",
       "45": "Hyper Voice"
     },
@@ -16551,7 +17184,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Secret Power",
       "Shadow Ball",
       "Shock Wave",
@@ -16573,7 +17206,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -16593,11 +17226,18 @@
   },
   "loudred": {
     "level": {
-      "1": "Uproar",
+      "1": "Pound",
+      "2": "UpRoar",
+      "3": "Astonish",
+      "4": "Howl",
+      "5": "UpRoar",
+      "11": "Astonish",
+      "15": "Howl",
       "23": "Supersonic",
       "29": "Stomp",
       "37": "Screech",
-      "43": "roar",
+      "43": "Roar",
+      "50": "Rest",
       "51": "Sleep Talk",
       "57": "Hyper Voice"
     },
@@ -16618,7 +17258,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Shadow Ball",
@@ -16638,7 +17278,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -16659,12 +17299,19 @@
   },
   "exploud": {
     "level": {
-      "1": "Uproar",
+      "1": "Pound",
+      "2": "UpRoar",
+      "3": "Astonish",
+      "4": "Howl",
+      "5": "UpRoar",
+      "11": "Astonish",
+      "15": "Howl",
       "23": "Supersonic",
       "29": "Stomp",
       "37": "Screech",
       "40": "Hyper Beam",
-      "45": "roar",
+      "45": "Roar",
+      "54": "Rest",
       "55": "Sleep Talk",
       "63": "Hyper Voice"
     },
@@ -16686,7 +17333,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Shadow Ball",
@@ -16706,7 +17353,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -16728,6 +17375,7 @@
   "makuhita": {
     "level": {
       "1": "Tackle",
+      "2": "Focus Energy",
       "4": "Sand Attack",
       "10": "Arm Thrust",
       "13": "Vital Throw",
@@ -16736,9 +17384,9 @@
       "28": "Knock Off",
       "31": "Smelling Salts",
       "37": "Belly Drum",
-      "40": "endure",
+      "40": "Endure",
       "46": "Seismic Toss",
-      "49": "reversal"
+      "49": "Reversal"
     },
     "tm": [
       "Attract",
@@ -16777,7 +17425,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -16797,15 +17445,20 @@
   "hariyama": {
     "level": {
       "1": "Tackle",
+      "2": "Focus Energy",
+      "3": "Sand Attack",
+      "4": "Arm Thrust",
+      "5": "Sand Attack",
+      "10": "Arm Thrust",
       "13": "Vital Throw",
       "19": "Fake Out",
       "22": "Whirlwind",
       "29": "Knock Off",
       "33": "Smelling Salts",
       "40": "Belly Drum",
-      "44": "endure",
+      "44": "Endure",
       "51": "Seismic Toss",
-      "55": "reversal"
+      "55": "Reversal"
     },
     "tm": [
       "Attract",
@@ -16837,7 +17490,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -16900,7 +17553,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fire Punch",
       "Ice Punch",
@@ -16919,7 +17572,8 @@
   },
   "skitty": {
     "level": {
-      "1": "Tackle",
+      "1": "Growl",
+      "2": "Tackle",
       "3": "Tail Whip",
       "7": "Attract",
       "13": "Sing",
@@ -16964,7 +17618,7 @@
       "Psych Up",
       "Substitute",
       "Tickle",
-      "Uproar",
+      "UpRoar",
       "Wish"
     ],
     "tutor": [
@@ -16972,7 +17626,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -16988,7 +17642,10 @@
   },
   "delcatty": {
     "level": {
-      "1": "Sing"
+      "1": "Growl",
+      "2": "Attract",
+      "3": "Sing",
+      "4": "Double Slap"
     },
     "tm": [
       "Attract",
@@ -17026,7 +17683,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -17043,6 +17700,7 @@
   "sableye": {
     "level": {
       "1": "Scratch",
+      "2": "Leer",
       "5": "Foresight",
       "9": "Night Shade",
       "13": "Astonish",
@@ -17097,7 +17755,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -17127,7 +17785,9 @@
       "31": "Baton Pass",
       "36": "Crunch",
       "41": "Iron Defense",
-      "46": "Swallow"
+      "46": "Stockpile",
+      "47": "Swallow",
+      "48": "Spit Up"
     },
     "tm": [
       "Attract",
@@ -17170,7 +17830,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Icy Wind",
       "Mega Kick",
@@ -17196,7 +17856,7 @@
       "10": "Headbutt",
       "13": "Metal Claw",
       "17": "Iron Defense",
-      "21": "roar",
+      "21": "Roar",
       "25": "Take Down",
       "29": "Iron Tail",
       "34": "Protect",
@@ -17218,7 +17878,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -17239,7 +17899,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -17254,9 +17914,15 @@
   "lairon": {
     "level": {
       "1": "Tackle",
+      "2": "Harden",
+      "3": "Mud-Slap",
+      "4": "Headbutt",
+      "5": "Harden",
+      "7": "Mud-Slap",
+      "10": "Headbutt",
       "13": "Metal Claw",
       "17": "Iron Defense",
-      "21": "roar",
+      "21": "Roar",
       "25": "Take Down",
       "29": "Iron Tail",
       "37": "Protect",
@@ -17278,7 +17944,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -17294,7 +17960,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -17309,9 +17975,15 @@
   "aggron": {
     "level": {
       "1": "Tackle",
+      "2": "Harden",
+      "3": "Mud-Slap",
+      "4": "Headbutt",
+      "5": "Harden",
+      "7": "Mud-Slap",
+      "10": "Headbutt",
       "13": "Metal Claw",
       "17": "Iron Defense",
-      "21": "roar",
+      "21": "Roar",
       "25": "Take Down",
       "29": "Iron Tail",
       "37": "Protect",
@@ -17341,7 +18013,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -17364,7 +18036,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -17392,11 +18064,11 @@
       "12": "Detect",
       "17": "Hidden Power",
       "20": "Swagger",
-      "22": "Mind Reader",
+      "25": "Mind Reader",
       "28": "Calm Mind",
-      "32": "High Jump Kick",
+      "33": "High Jump Kick",
       "36": "Psych Up",
-      "41": "reversal",
+      "41": "Reversal",
       "44": "Recover"
     },
     "tm": [
@@ -17440,7 +18112,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -17460,15 +18132,24 @@
   },
   "medicham": {
     "level": {
-      "1": "Thunder Punch",
+      "1": "Fire Punch",
+      "2": "Ice Punch",
+      "3": "Thunder Punch",
+      "4": "Bide",
+      "5": "Meditate",
+      "6": "Confusion",
+      "7": "Detect",
+      "8": "Meditate",
+      "9": "Confusion",
+      "12": "Detect",
       "17": "Hidden Power",
       "20": "Swagger",
-      "22": "Mind Reader",
+      "25": "Mind Reader",
       "28": "Calm Mind",
-      "32": "High Jump Kick",
+      "33": "High Jump Kick",
       "36": "Psych Up",
-      "46": "reversal",
-      "54": "Recover"
+      "47": "Reversal",
+      "56": "Recover"
     },
     "tm": [
       "Attract",
@@ -17504,7 +18185,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Mega Kick",
@@ -17532,7 +18213,7 @@
       "17": "Quick Attack",
       "20": "Spark",
       "25": "Odor Sleuth",
-      "28": "roar",
+      "28": "Roar",
       "33": "Bite",
       "36": "Thunder",
       "41": "Charge"
@@ -17549,7 +18230,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Secret Power",
       "Shock Wave",
       "Strength",
@@ -17563,12 +18244,12 @@
       "Curse",
       "Headbutt",
       "Swift",
-      "Uproar"
+      "UpRoar"
     ],
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sleep Talk",
@@ -17581,11 +18262,17 @@
   },
   "manectric": {
     "level": {
-      "1": "Thunder Wave",
+      "1": "Tackle",
+      "2": "Thunder Wave",
+      "3": "Leer",
+      "4": "Howl",
+      "5": "Thunder Wave",
+      "9": "Leer",
+      "12": "Howl",
       "17": "Quick Attack",
       "20": "Spark",
       "25": "Odor Sleuth",
-      "31": "roar",
+      "31": "Roar",
       "39": "Bite",
       "45": "Thunder",
       "53": "Charge"
@@ -17603,7 +18290,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Secret Power",
       "Shock Wave",
       "Strength",
@@ -17616,7 +18303,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Sleep Talk",
@@ -17669,7 +18356,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Mega Kick",
       "Mega Punch",
       "Metronome",
@@ -17728,7 +18415,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Mega Kick",
       "Mega Punch",
       "Metronome",
@@ -17794,7 +18481,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Mega Kick",
       "Mega Punch",
@@ -17861,7 +18548,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Ice Punch",
       "Mega Kick",
       "Mega Punch",
@@ -17926,7 +18613,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -17949,6 +18636,8 @@
       "17": "Amnesia",
       "23": "Encore",
       "28": "Toxic",
+      "32": "Stockpile",
+      "33": "Spit Up",
       "34": "Swallow",
       "39": "Sludge Bomb"
     },
@@ -17990,7 +18679,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fire Punch",
       "Ice Punch",
@@ -18008,7 +18697,13 @@
   },
   "swalot": {
     "level": {
-      "1": "Yawn",
+      "1": "Pound",
+      "2": "Yawn",
+      "3": "Poison Gas",
+      "4": "Sludge",
+      "6": "Yawn",
+      "9": "Poison Gas",
+      "14": "Sludge",
       "17": "Amnesia",
       "23": "Encore",
       "26": "Body Slam",
@@ -18050,7 +18745,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fire Punch",
       "Ice Punch",
@@ -18068,7 +18763,8 @@
   },
   "carvanha": {
     "level": {
-      "1": "Leer",
+      "1": "Bite",
+      "2": "Leer",
       "7": "Rage",
       "13": "Focus Energy",
       "16": "Scary Face",
@@ -18108,7 +18804,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mimic",
@@ -18122,7 +18818,12 @@
   },
   "sharpedo": {
     "level": {
-      "1": "Rage",
+      "1": "Bite",
+      "2": "Leer",
+      "3": "Rage",
+      "4": "Focus Energy",
+      "7": "Rage",
+      "13": "Focus Energy",
       "16": "Scary Face",
       "22": "Crunch",
       "28": "Screech",
@@ -18148,7 +18849,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Secret Power",
@@ -18164,7 +18865,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mimic",
@@ -18206,7 +18907,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Secret Power",
@@ -18230,7 +18931,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Rollout",
@@ -18243,7 +18944,13 @@
   },
   "wailord": {
     "level": {
-      "1": "Water Gun",
+      "1": "Splash",
+      "2": "Growl",
+      "3": "Water Gun",
+      "4": "Rollout",
+      "5": "Growl",
+      "10": "Water Gun",
+      "14": "Rollout",
       "19": "Whirlpool",
       "23": "Astonish",
       "28": "Water Pulse",
@@ -18269,7 +18976,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Secret Power",
@@ -18284,7 +18991,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Rollout",
@@ -18297,7 +19004,8 @@
   },
   "numel": {
     "level": {
-      "1": "Tackle",
+      "1": "Growl",
+      "2": "Tackle",
       "11": "Ember",
       "19": "Magnitude",
       "25": "Focus Energy",
@@ -18341,7 +19049,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rock Slide",
@@ -18354,7 +19062,12 @@
   },
   "camerupt": {
     "level": {
-      "1": "Tackle",
+      "1": "Growl",
+      "2": "Tackle",
+      "3": "Ember",
+      "4": "Magnitude",
+      "11": "Ember",
+      "19": "Magnitude",
       "25": "Focus Energy",
       "29": "Take Down",
       "31": "Amnesia",
@@ -18378,7 +19091,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Sandstorm",
@@ -18392,7 +19105,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Mud-Slap",
@@ -18441,7 +19154,7 @@
       "Toxic"
     ],
     "egg": [
-      "endure",
+      "Endure",
       "Eruption",
       "Sleep Talk",
       "Yawn"
@@ -18449,7 +19162,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Mud-Slap",
@@ -18471,6 +19184,7 @@
       "25": "Confuse Ray",
       "28": "Magic Coat",
       "34": "Psychic",
+      "36": "Rest",
       "37": "Snore",
       "43": "Bounce"
     },
@@ -18511,7 +19225,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Psych Up",
@@ -18525,6 +19239,12 @@
   "grumpig": {
     "level": {
       "1": "Splash",
+      "2": "Psywave",
+      "3": "Odor Sleuth",
+      "4": "Psybeam",
+      "7": "Psywave",
+      "10": "Odor Sleuth",
+      "16": "Psybeam",
       "19": "Psych Up",
       "25": "Confuse Ray",
       "28": "Magic Coat",
@@ -18568,7 +19288,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -18589,7 +19309,7 @@
   "spinda": {
     "level": {
       "1": "Tackle",
-      "5": "Uproar",
+      "5": "UpRoar",
       "12": "Feint Attack",
       "16": "Psybeam",
       "23": "Hypnosis",
@@ -18647,7 +19367,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -18710,7 +19430,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rock Slide",
@@ -18722,7 +19442,13 @@
   },
   "vibrava": {
     "level": {
-      "1": "Sand Tomb",
+      "1": "Bite",
+      "2": "Sand Attack",
+      "3": "Feint Attack",
+      "4": "Sand Tomb",
+      "9": "Sand Attack",
+      "17": "Feint Attack",
+      "25": "Sand Tomb",
       "33": "Crunch",
       "35": "Dragon Breath",
       "41": "Screech",
@@ -18757,7 +19483,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Rock Slide",
@@ -18770,7 +19496,13 @@
   },
   "flygon": {
     "level": {
-      "1": "Sand Tomb",
+      "1": "Bite",
+      "2": "Sand Attack",
+      "3": "Feint Attack",
+      "4": "Sand Tomb",
+      "9": "Sand Attack",
+      "17": "Feint Attack",
+      "25": "Sand Tomb",
       "33": "Crunch",
       "35": "Dragon Breath",
       "41": "Screech",
@@ -18809,7 +19541,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Mimic",
@@ -18825,6 +19557,7 @@
   "cacnea": {
     "level": {
       "1": "Poison Sting",
+      "2": "Leer",
       "5": "Absorb",
       "9": "Growth",
       "13": "Leech Seed",
@@ -18870,7 +19603,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mega Punch",
       "Mimic",
@@ -18887,6 +19620,12 @@
   "cacturne": {
     "level": {
       "1": "Revenge",
+      "2": "Poison Sting",
+      "3": "Leer",
+      "4": "Absorb",
+      "5": "Growth",
+      "6": "Absorb",
+      "9": "Growth",
       "13": "Leech Seed",
       "17": "Sand Attack",
       "21": "Pin Missile",
@@ -18926,7 +19665,7 @@
       "Counter",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mega Kick",
       "Mega Punch",
@@ -18944,6 +19683,7 @@
   "swablu": {
     "level": {
       "1": "Peck",
+      "2": "Growl",
       "8": "Astonish",
       "11": "Sing",
       "18": "Fury Attack",
@@ -18985,7 +19725,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Psych Up",
@@ -18999,7 +19739,12 @@
   },
   "altaria": {
     "level": {
-      "1": "Sing",
+      "1": "Peck",
+      "2": "Growl",
+      "3": "Astonish",
+      "4": "Sing",
+      "8": "Astonish",
+      "11": "Sing",
       "18": "Fury Attack",
       "21": "Safeguard",
       "28": "Mist",
@@ -19029,7 +19774,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Safeguard",
       "Secret Power",
@@ -19044,7 +19789,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Psych Up",
@@ -19090,7 +19835,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Secret Power",
       "Shadow Ball",
@@ -19111,7 +19856,7 @@
       "Double Kick",
       "Flail",
       "Razor Wind",
-      "roar"
+      "Roar"
     ],
     "tutor": [
       "Body Slam",
@@ -19119,7 +19864,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -19188,7 +19933,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -19202,6 +19947,7 @@
   "lunatone": {
     "level": {
       "1": "Tackle",
+      "2": "Harden",
       "7": "Confusion",
       "13": "Rock Throw",
       "19": "Hypnosis",
@@ -19242,7 +19988,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Psych Up",
@@ -19259,6 +20005,7 @@
   "solrock": {
     "level": {
       "1": "Tackle",
+      "2": "Harden",
       "7": "Confusion",
       "13": "Rock Throw",
       "19": "Fire Spin",
@@ -19302,7 +20049,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Psych Up",
@@ -19319,10 +20066,12 @@
   "barboach": {
     "level": {
       "1": "Mud-Slap",
-      "6": "Water Sport",
+      "6": "Mud Sport",
+      "7": "Water Sport",
       "11": "Water Gun",
       "16": "Magnitude",
       "21": "Amnesia",
+      "25": "Rest",
       "26": "Snore",
       "31": "Earthquake",
       "36": "Future Sight",
@@ -19358,7 +20107,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -19370,10 +20119,16 @@
   },
   "whiscash": {
     "level": {
-      "1": "Water Sport",
+      "1": "Tickle",
+      "2": "Mud-Slap",
+      "3": "Mud Sport",
+      "4": "Water Sport",
+      "6": "Mud Sport",
+      "7": "Water Sport",
       "11": "Water Gun",
       "16": "Magnitude",
       "21": "Amnesia",
+      "25": "Rest",
       "26": "Snore",
       "36": "Earthquake",
       "46": "Future Sight",
@@ -19408,7 +20163,7 @@
     "egg": [],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -19432,7 +20187,7 @@
       "34": "Crabhammer",
       "37": "Swords Dance",
       "43": "Crunch",
-      "44": "Guillotine"
+      "46": "Guillotine"
     },
     "tm": [
       "Aerial Ace",
@@ -19472,7 +20227,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mimic",
@@ -19486,7 +20241,13 @@
   },
   "crawdaunt": {
     "level": {
-      "1": "Vice Grip",
+      "1": "Bubble",
+      "2": "Harden",
+      "3": "Vice Grip",
+      "4": "Leer",
+      "7": "Harden",
+      "10": "Vice Grip",
+      "13": "Leer",
       "19": "Bubble Beam",
       "22": "Protect",
       "25": "Knock Off",
@@ -19494,7 +20255,7 @@
       "38": "Crabhammer",
       "43": "Swords Dance",
       "51": "Crunch",
-      "52": "Guillotine"
+      "56": "Guillotine"
     },
     "tm": [
       "Aerial Ace",
@@ -19531,7 +20292,7 @@
       "Body Slam",
       "Counter",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mimic",
@@ -19587,7 +20348,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Mud-Slap",
@@ -19603,6 +20364,11 @@
   "claydol": {
     "level": {
       "1": "Teleport",
+      "2": "Confusion",
+      "3": "Harden",
+      "4": "Rapid Spin",
+      "5": "Harden",
+      "6": "Rapid Spin",
       "7": "Mud-Slap",
       "11": "Psybeam",
       "15": "Rock Tomb",
@@ -19645,7 +20411,7 @@
     "tutor": [
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Explosion",
       "Mimic",
       "Mud-Slap",
@@ -19667,7 +20433,9 @@
       "29": "Confuse Ray",
       "36": "Amnesia",
       "43": "Ancient Power",
-      "50": "Swallow"
+      "50": "Stockpile",
+      "51": "Swallow",
+      "52": "Spit Up"
     },
     "tm": [
       "Attract",
@@ -19696,7 +20464,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Psych Up",
@@ -19709,11 +20477,19 @@
   },
   "cradily": {
     "level": {
-      "1": "Ingrain",
+      "1": "Astonish",
+      "2": "Constrict",
+      "3": "Acid",
+      "4": "Ingrain",
+      "8": "Constrict",
+      "15": "Acid",
+      "22": "Ingrain",
       "29": "Confuse Ray",
       "36": "Amnesia",
       "48": "Ancient Power",
-      "60": "Swallow"
+      "60": "Stockpile",
+      "61": "Swallow",
+      "62": "Spit Up"
     },
     "tm": [
       "Attract",
@@ -19742,7 +20518,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Mimic",
       "Mud-Slap",
       "Psych Up",
@@ -19796,7 +20572,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -19810,7 +20586,13 @@
   },
   "armaldo": {
     "level": {
-      "1": "Water Gun",
+      "1": "Scratch",
+      "2": "Harden",
+      "3": "Mud Sport",
+      "4": "Water Gun",
+      "7": "Harden",
+      "13": "Mud Sport",
+      "19": "Water Gun",
       "25": "Metal Claw",
       "31": "Protect",
       "37": "Ancient Power",
@@ -19847,7 +20629,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -19896,7 +20678,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -19947,7 +20729,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -19963,7 +20745,11 @@
     "level": {
       "1": "Tackle",
       "10": "Water Gun",
-      "20": "Sunny Day",
+      "11": "Ember",
+      "12": "Powder Snow",
+      "18": "Rain Dance",
+      "19": "Sunny Day",
+      "20": "Hail",
       "30": "Weather Ball"
     },
     "tm": [
@@ -20002,7 +20788,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Psych Up",
@@ -20017,7 +20803,11 @@
   "kecleon": {
     "level": {
       "1": "Thief",
-      "4": "Bind",
+      "2": "Scratch",
+      "3": "Tail Whip",
+      "4": "Astonish",
+      "5": "Lick",
+      "6": "Bind",
       "7": "Feint Attack",
       "12": "Fury Swipes",
       "17": "Psybeam",
@@ -20074,7 +20864,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Ice Punch",
@@ -20147,7 +20937,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Nightmare",
@@ -20161,7 +20951,13 @@
   },
   "banette": {
     "level": {
-      "1": "Screech",
+      "1": "Knock Off",
+      "2": "Screech",
+      "3": "Night Shade",
+      "4": "Curse",
+      "8": "Screech",
+      "13": "Night Shade",
+      "20": "Curse",
       "25": "Spite",
       "32": "Will-O-Wisp",
       "39": "Feint Attack",
@@ -20201,7 +20997,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Metronome",
       "Mimic",
@@ -20217,7 +21013,8 @@
   },
   "duskull": {
     "level": {
-      "1": "Night Shade",
+      "1": "Leer",
+      "2": "Night Shade",
       "5": "Disable",
       "12": "Foresight",
       "16": "Astonish",
@@ -20265,7 +21062,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Nightmare",
@@ -20278,7 +21075,11 @@
   },
   "dusclops": {
     "level": {
-      "1": "Night Shade",
+      "1": "Bind",
+      "2": "Leer",
+      "3": "Night Shade",
+      "4": "Disable",
+      "5": "Disable",
       "12": "Foresight",
       "16": "Astonish",
       "23": "Confuse Ray",
@@ -20327,7 +21128,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -20350,6 +21151,7 @@
   "tropius": {
     "level": {
       "1": "Leer",
+      "2": "Gust",
       "7": "Growth",
       "11": "Razor Leaf",
       "17": "Stomp",
@@ -20377,7 +21179,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Safeguard",
       "Secret Power",
@@ -20397,7 +21199,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -20415,7 +21217,7 @@
       "9": "Astonish",
       "14": "Confusion",
       "17": "Take Down",
-      "22": "Uproar",
+      "22": "UpRoar",
       "25": "Yawn",
       "30": "Psywave",
       "33": "Double-Edge",
@@ -20459,7 +21261,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Nightmare",
@@ -20535,7 +21337,7 @@
       "Counter",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mimic",
@@ -20555,6 +21357,7 @@
   "snorunt": {
     "level": {
       "1": "Powder Snow",
+      "2": "Leer",
       "7": "Double Team",
       "10": "Bite",
       "16": "Icy Wind",
@@ -20593,7 +21396,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -20605,6 +21408,11 @@
   "glalie": {
     "level": {
       "1": "Powder Snow",
+      "2": "Leer",
+      "3": "Double Team",
+      "4": "Bite",
+      "7": "Double Team",
+      "10": "Bite",
       "16": "Icy Wind",
       "19": "Headbutt",
       "25": "Protect",
@@ -20644,7 +21452,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Explosion",
       "Icy Wind",
       "Mimic",
@@ -20658,12 +21466,16 @@
   },
   "spheal": {
     "level": {
-      "1": "Water Gun",
+      "1": "Power Snow",
+      "2": "Growl",
+      "3": "Water Gun",
+      "4": "Defense Curl",
       "7": "Encore",
       "13": "Ice Ball",
       "19": "Body Slam",
       "25": "Aurora Beam",
       "31": "Hail",
+      "36": "Rest",
       "37": "Snore",
       "43": "Blizzard",
       "49": "Sheer Cold"
@@ -20707,7 +21519,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -20721,11 +21533,16 @@
   },
   "sealeo": {
     "level": {
-      "1": "Water Gun",
+      "1": "Power Snow",
+      "2": "Growl",
+      "3": "Water Gun",
+      "4": "Defense Curl",
+      "7": "Encore",
       "13": "Ice Ball",
       "19": "Body Slam",
       "25": "Aurora Beam",
       "31": "Hail",
+      "38": "Rest",
       "39": "Snore",
       "47": "Blizzard",
       "55": "Sheer Cold"
@@ -20746,7 +21563,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Secret Power",
@@ -20761,7 +21578,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -20775,11 +21592,16 @@
   },
   "walrein": {
     "level": {
-      "1": "Water Gun",
+      "1": "Power Snow",
+      "2": "Growl",
+      "3": "Water Gun",
+      "4": "Defense Curl",
+      "7": "Encore",
       "13": "Ice Ball",
       "19": "Body Slam",
       "25": "Aurora Beam",
       "31": "Hail",
+      "38": "Rest",
       "39": "Snore",
       "50": "Blizzard",
       "61": "Sheer Cold"
@@ -20801,7 +21623,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Secret Power",
@@ -20816,7 +21638,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -20830,7 +21652,10 @@
   },
   "clamperl": {
     "level": {
-      "1": "Whirlpool"
+      "1": "Clamp",
+      "2": "Iron Defense",
+      "3": "Water Gun",
+      "4": "Whirlpool"
     },
     "tm": [
       "Attract",
@@ -20863,7 +21688,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Sleep Talk",
@@ -20910,7 +21735,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -20960,7 +21785,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -20973,7 +21798,8 @@
   },
   "relicanth": {
     "level": {
-      "1": "Tackle",
+      "1": "Harden",
+      "2": "Tackle",
       "8": "Water Gun",
       "15": "Rock Tomb",
       "22": "Yawn",
@@ -21022,7 +21848,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -21075,7 +21901,7 @@
     ],
     "tutor": [
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Psych Up",
@@ -21116,7 +21942,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Secret Power",
@@ -21134,7 +21960,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -21148,6 +21974,12 @@
   "shelgon": {
     "level": {
       "1": "Rage",
+      "2": "Bite",
+      "3": "Leer",
+      "4": "Headbutt",
+      "5": "Bite",
+      "9": "Leer",
+      "17": "Headbutt",
       "21": "Focus Energy",
       "25": "Ember",
       "30": "Protect",
@@ -21173,7 +22005,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Secret Power",
@@ -21186,7 +22018,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -21201,6 +22033,12 @@
   "salamence": {
     "level": {
       "1": "Rage",
+      "2": "Bite",
+      "3": "Leer",
+      "4": "Headbutt",
+      "5": "Bite",
+      "9": "Leer",
+      "17": "Headbutt",
       "21": "Focus Energy",
       "25": "Ember",
       "30": "Protect",
@@ -21231,7 +22069,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Secret Power",
@@ -21245,7 +22083,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Mimic",
       "Mud-Slap",
@@ -21269,6 +22107,7 @@
   "metang": {
     "level": {
       "1": "Take Down",
+      "19": "Confusion",
       "20": "Metal Claw",
       "26": "Scary Face",
       "32": "Pursuit",
@@ -21312,7 +22151,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fury Cutter",
       "Ice Punch",
@@ -21334,6 +22173,12 @@
   "metagross": {
     "level": {
       "1": "Take Down",
+      "2": "Confusion",
+      "3": "Metal Claw",
+      "4": "Scary Face",
+      "19": "Confusion",
+      "20": "Metal Claw",
+      "26": "Scary Face",
       "32": "Pursuit",
       "38": "Psychic",
       "44": "Iron Defense",
@@ -21375,7 +22220,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fury Cutter",
       "Ice Punch",
@@ -21438,7 +22283,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Fire Punch",
       "Ice Punch",
@@ -21503,7 +22348,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Ice Punch",
       "Icy Wind",
@@ -21531,6 +22376,7 @@
       "17": "Curse",
       "25": "Superpower",
       "33": "Ancient Power",
+      "40": "Amnesia",
       "41": "Iron Defense",
       "49": "Zap Cannon",
       "57": "Lock-On",
@@ -21569,7 +22415,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Explosion",
       "Ice Punch",
       "Mega Kick",
@@ -21625,7 +22471,7 @@
       "Reflect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Safeguard",
       "Sandstorm",
       "Secret Power",
@@ -21646,7 +22492,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mimic",
@@ -21696,7 +22542,7 @@
       "Reflect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Safeguard",
       "Sandstorm",
       "Secret Power",
@@ -21717,7 +22563,7 @@
       "Body Slam",
       "Double-Edge",
       "Dream Eater",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mimic",
@@ -21762,7 +22608,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Safeguard",
@@ -21781,7 +22627,7 @@
       "Body Slam",
       "Defense Curl",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Icy Wind",
       "Mimic",
       "Mud-Slap",
@@ -21829,7 +22675,7 @@
       "Protect",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Rock Tomb",
       "Safeguard",
@@ -21850,7 +22696,7 @@
       "Defense Curl",
       "Double-Edge",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Fury Cutter",
       "Mega Kick",
@@ -21908,7 +22754,7 @@
       "Rain Dance",
       "Rest",
       "Return",
-      "roar",
+      "Roar",
       "Rock Smash",
       "Sandstorm",
       "Secret Power",
@@ -21927,7 +22773,7 @@
     "tutor": [
       "Body Slam",
       "Double-Edge",
-      "endure",
+      "Endure",
       "Fury Cutter",
       "Icy Wind",
       "Mimic",
@@ -21945,6 +22791,7 @@
   "jirachi": {
     "level": {
       "1": "Wish",
+      "2": "Confusion",
       "5": "Rest",
       "10": "Swift",
       "20": "Psychic",
@@ -21989,7 +22836,7 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -22009,17 +22856,18 @@
   },
   "deoxys": {
     "level": {
-      "1": "Wrap",
+      "1": "Leer",
+      "2": "Wrap",
       "5": "Night Shade",
       "10": "Teleport",
-      "15": "Taunt",
-      "20": "Spikes",
+      "15": "Knock Off",
+      "20": "Pursuit",
       "25": "Psychic",
-      "30": "Swift",
-      "35": "Iron Defense",
-      "40": "Zap Cannon",
+      "30": "Snatch",
+      "35": "Cosmic Power",
+      "40": "Recover",
       "45": "Psycho Boost",
-      "50": "Mirror Coat"
+      "50": "Hyper Beam"
     },
     "tm": [
       "Aerial Ace",
@@ -22066,7 +22914,250 @@
       "Double-Edge",
       "Dream Eater",
       "Dynamic Punch",
-      "endure",
+      "Endure",
+      "Fire Punch",
+      "Ice Punch",
+      "Icy Wind",
+      "Mega Kick",
+      "Mega Punch",
+      "Mimic",
+      "Mud-Slap",
+      "Nightmare",
+      "Psych Up",
+      "Rock Slide",
+      "Seismic Toss",
+      "Sleep Talk",
+      "Snore",
+      "Substitute",
+      "Swagger",
+      "Swift",
+      "Thunder Punch",
+      "Thunder Wave"
+    ]
+  },
+  "deoxys-attack": {
+    "level": {
+      "1": "Leer",
+      "2": "Wrap",
+      "5": "Night Shade",
+      "10": "Teleport",
+      "15": "Knock Off",
+      "20": "Pursuit",
+      "25": "Psychic",
+      "30": "Snatch",
+      "35": "Cosmic Power",
+      "40": "Recover",
+      "45": "Psycho Boost",
+      "50": "Hyper Beam"
+    },
+    "tm": [
+      "Aerial Ace",
+      "Brick Break",
+      "Calm Mind",
+      "Cut",
+      "Double Team",
+      "Facade",
+      "Flash",
+      "Focus Punch",
+      "Frustration",
+      "Hidden Power",
+      "Hyper Beam",
+      "Ice Beam",
+      "Light Screen",
+      "Protect",
+      "Psychic",
+      "Rain Dance",
+      "Reflect",
+      "Rest",
+      "Return",
+      "Rock Smash",
+      "Rock Tomb",
+      "Safeguard",
+      "Secret Power",
+      "Shadow Ball",
+      "Shock Wave",
+      "Skill Swap",
+      "Snatch",
+      "Solar Beam",
+      "Strength",
+      "Sunny Day",
+      "Taunt",
+      "Thunder",
+      "Thunderbolt",
+      "Torment",
+      "Toxic",
+      "Water Pulse"
+    ],
+    "egg": [],
+    "tutor": [
+      "Body Slam",
+      "Counter",
+      "Double-Edge",
+      "Dream Eater",
+      "Dynamic Punch",
+      "Endure",
+      "Fire Punch",
+      "Ice Punch",
+      "Icy Wind",
+      "Mega Kick",
+      "Mega Punch",
+      "Mimic",
+      "Mud-Slap",
+      "Nightmare",
+      "Psych Up",
+      "Rock Slide",
+      "Seismic Toss",
+      "Sleep Talk",
+      "Snore",
+      "Substitute",
+      "Swagger",
+      "Swift",
+      "Thunder Punch",
+      "Thunder Wave"
+    ]
+  },
+  "deoxys-defense": {
+    "level": {
+      "1": "Leer",
+      "2": "Wrap",
+      "5": "Night Shade",
+      "10": "Teleport",
+      "15": "Knock Off",
+      "20": "Pursuit",
+      "25": "Psychic",
+      "30": "Snatch",
+      "35": "Cosmic Power",
+      "40": "Recover",
+      "45": "Psycho Boost",
+      "50": "Hyper Beam"
+    },
+    "tm": [
+      "Aerial Ace",
+      "Brick Break",
+      "Calm Mind",
+      "Cut",
+      "Double Team",
+      "Facade",
+      "Flash",
+      "Focus Punch",
+      "Frustration",
+      "Hidden Power",
+      "Hyper Beam",
+      "Ice Beam",
+      "Light Screen",
+      "Protect",
+      "Psychic",
+      "Rain Dance",
+      "Reflect",
+      "Rest",
+      "Return",
+      "Rock Smash",
+      "Rock Tomb",
+      "Safeguard",
+      "Secret Power",
+      "Shadow Ball",
+      "Shock Wave",
+      "Skill Swap",
+      "Snatch",
+      "Solar Beam",
+      "Strength",
+      "Sunny Day",
+      "Taunt",
+      "Thunder",
+      "Thunderbolt",
+      "Torment",
+      "Toxic",
+      "Water Pulse"
+    ],
+    "egg": [],
+    "tutor": [
+      "Body Slam",
+      "Counter",
+      "Double-Edge",
+      "Dream Eater",
+      "Dynamic Punch",
+      "Endure",
+      "Fire Punch",
+      "Ice Punch",
+      "Icy Wind",
+      "Mega Kick",
+      "Mega Punch",
+      "Mimic",
+      "Mud-Slap",
+      "Nightmare",
+      "Psych Up",
+      "Rock Slide",
+      "Seismic Toss",
+      "Sleep Talk",
+      "Snore",
+      "Substitute",
+      "Swagger",
+      "Swift",
+      "Thunder Punch",
+      "Thunder Wave"
+    ]
+  },
+  "deoxys-speed": {
+    "level": {
+      "1": "Leer",
+      "2": "Wrap",
+      "5": "Night Shade",
+      "10": "Teleport",
+      "15": "Knock Off",
+      "20": "Pursuit",
+      "25": "Psychic",
+      "30": "Snatch",
+      "35": "Cosmic Power",
+      "40": "Recover",
+      "45": "Psycho Boost",
+      "50": "Hyper Beam"
+    },
+    "tm": [
+      "Aerial Ace",
+      "Brick Break",
+      "Calm Mind",
+      "Cut",
+      "Double Team",
+      "Facade",
+      "Flash",
+      "Focus Punch",
+      "Frustration",
+      "Hidden Power",
+      "Hyper Beam",
+      "Ice Beam",
+      "Light Screen",
+      "Protect",
+      "Psychic",
+      "Rain Dance",
+      "Reflect",
+      "Rest",
+      "Return",
+      "Rock Smash",
+      "Rock Tomb",
+      "Safeguard",
+      "Secret Power",
+      "Shadow Ball",
+      "Shock Wave",
+      "Skill Swap",
+      "Snatch",
+      "Solar Beam",
+      "Strength",
+      "Sunny Day",
+      "Taunt",
+      "Thunder",
+      "Thunderbolt",
+      "Torment",
+      "Toxic",
+      "Water Pulse"
+    ],
+    "egg": [],
+    "tutor": [
+      "Body Slam",
+      "Counter",
+      "Double-Edge",
+      "Dream Eater",
+      "Dynamic Punch",
+      "Endure",
       "Fire Punch",
       "Ice Punch",
       "Icy Wind",
@@ -22089,12 +23180,12 @@
   },
   "testmon": {
     "level": {
-      "1": "Rollout",
-      "2": "Ice Ball",
-      "3": "Self-Destruct",
-      "4": "Swift",
+      "1": "Tackle",
+      "2": "Sand Attack",
+      "3": "Rain Dance",
+      "4": "Sandstorm",
       "20": "Swift",
-      "25": "Bounce",
+      "25": "False Swipe",
       "30": "Swift",
       "35": "Iron Defense",
       "40": "Zap Cannon",
@@ -22104,10 +23195,10 @@
   },
   "testmon2": {
     "level": {
-      "6": "Tackle",
-      "1": "Water Gun",
+      "1": "Tackle",
+      "6": "Water Sport",
       "7": "Clamp",
-      "8": "Fire Spin",
+      "8": "Explosion",
       "20": "Spikes",
       "25": "Tackle",
       "30": "Swift",

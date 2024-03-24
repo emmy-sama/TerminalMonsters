@@ -1,5 +1,5 @@
-[
-  {
+{
+  "Acid Armor": {
     "name": "Acid Armor",
     "category": "Non-Damaging",
     "power": 0,
@@ -18,7 +18,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Aerial Ace": {
     "name": "Aerial Ace",
     "category": "Physical",
     "power": 60,
@@ -34,7 +34,7 @@
       "Protect"
     ]
   },
-  {
+  "Agility": {
     "name": "Agility",
     "category": "Non-Damaging",
     "power": 0,
@@ -53,7 +53,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Amnesia": {
     "name": "Amnesia",
     "category": "Non-Damaging",
     "power": 0,
@@ -72,7 +72,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Aromatherapy": {
     "name": "Aromatherapy",
     "category": "Non-Damaging",
     "power": 0,
@@ -86,7 +86,7 @@
       "Snatch"
     ]
   },
-  {
+  "Assist": {
     "name": "Assist",
     "category": "Non-Damaging",
     "power": 0,
@@ -101,7 +101,7 @@
       "No Sleep Talk"
     ]
   },
-  {
+  "Barrier": {
     "name": "Barrier",
     "category": "Non-Damaging",
     "power": 0,
@@ -120,7 +120,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Baton Pass": {
     "name": "Baton Pass",
     "category": "Non-Damaging",
     "power": 0,
@@ -133,7 +133,7 @@
       "Metronome"
     ]
   },
-  {
+  "Belly Drum": {
     "name": "Belly Drum",
     "category": "Non-Damaging",
     "power": 0,
@@ -154,7 +154,7 @@
       "Lowers Attacker chp by hp"
     ]
   },
-  {
+  "Block": {
     "name": "Block",
     "category": "Non-Damaging",
     "power": 0,
@@ -167,10 +167,12 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Reflectable"
+      "Reflectable",
+      "Block",
+      "Requires Target"
     ]
   },
-  {
+  "Bulk Up": {
     "name": "Bulk Up",
     "category": "Non-Damaging",
     "power": 0,
@@ -190,7 +192,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Calm Mind": {
     "name": "Calm Mind",
     "category": "Non-Damaging",
     "power": 0,
@@ -210,7 +212,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Camouflage": {
     "name": "Camouflage",
     "category": "Non-Damaging",
     "power": 0,
@@ -224,7 +226,7 @@
       "Snatch"
     ]
   },
-  {
+  "Charge": {
     "name": "Charge",
     "category": "Non-Damaging",
     "power": 0,
@@ -238,7 +240,7 @@
       "Snatch"
     ]
   },
-  {
+  "Conversion": {
     "name": "Conversion",
     "category": "Non-Damaging",
     "power": 0,
@@ -251,21 +253,21 @@
       "Metronome"
     ]
   },
-  {
+  "Conversion 2": {
     "name": "Conversion 2",
     "category": "Non-Damaging",
     "power": 0,
     "accuracy": 0,
     "priority": 0,
     "pp": 30,
-    "description": "User's type changes to resist last move against it.",
+    "description": "user's type changes to resist last move against it.",
     "type": "Normal",
     "flags": [
       "Bypasses Substitute",
       "Metronome"
     ]
   },
-  {
+  "Cosmic Power": {
     "name": "Cosmic Power",
     "category": "Non-Damaging",
     "power": 0,
@@ -285,7 +287,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Curse": {
     "name": "Curse",
     "category": "Non-Damaging",
     "power": 0,
@@ -298,7 +300,7 @@
       "Metronome"
     ]
   },
-  {
+  "Defense Curl": {
     "name": "Defense Curl",
     "category": "Non-Damaging",
     "power": 0,
@@ -317,7 +319,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Destiny Bond": {
     "name": "Destiny Bond",
     "category": "Non-Damaging",
     "power": 0,
@@ -328,10 +330,11 @@
     "type": "Ghost",
     "flags": [
       "Bypasses Substitute",
-      "No Assist"
+      "No Assist",
+      "Requires Target"
     ]
   },
-  {
+  "Detect": {
     "name": "Detect",
     "category": "Non-Damaging",
     "power": 0,
@@ -344,7 +347,7 @@
       "No Assist"
     ]
   },
-  {
+  "Double Team": {
     "name": "Double Team",
     "category": "Non-Damaging",
     "power": 0,
@@ -363,7 +366,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Dragon Dance": {
     "name": "Dragon Dance",
     "category": "Non-Damaging",
     "power": 0,
@@ -383,7 +386,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Endure": {
     "name": "Endure",
     "category": "Non-Damaging",
     "power": 0,
@@ -396,7 +399,7 @@
       "No Assist"
     ]
   },
-  {
+  "Feint Attack": {
     "name": "Feint Attack",
     "category": "Special",
     "power": 60,
@@ -411,7 +414,7 @@
       "Protect"
     ]
   },
-  {
+  "Focus Energy": {
     "name": "Focus Energy",
     "category": "Non-Damaging",
     "power": 0,
@@ -425,7 +428,7 @@
       "Snatch"
     ]
   },
-  {
+  "Growth": {
     "name": "Growth",
     "category": "Non-Damaging",
     "power": 0,
@@ -444,7 +447,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Grudge": {
     "name": "Grudge",
     "category": "Non-Damaging",
     "power": 0,
@@ -458,7 +461,7 @@
       "Metronome"
     ]
   },
-  {
+  "Hail": {
     "name": "Hail",
     "category": "Non-Damaging",
     "power": 0,
@@ -468,10 +471,11 @@
     "description": "For 5 turns, hail crashes down.",
     "type": "Ice",
     "flags": [
-      "Metronome"
+      "Metronome",
+      "Weather"
     ]
   },
-  {
+  "Harden": {
     "name": "Harden",
     "category": "Non-Damaging",
     "power": 0,
@@ -490,7 +494,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Haze": {
     "name": "Haze",
     "category": "Non-Damaging",
     "power": 0,
@@ -504,7 +508,7 @@
       "Metronome"
     ]
   },
-  {
+  "Heal Bell": {
     "name": "Heal Bell",
     "category": "Non-Damaging",
     "power": 0,
@@ -519,7 +523,7 @@
       "Sound"
     ]
   },
-  {
+  "Howl": {
     "name": "Howl",
     "category": "Non-Damaging",
     "power": 0,
@@ -538,7 +542,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Imprison": {
     "name": "Imprison",
     "category": "Non-Damaging",
     "power": 0,
@@ -552,7 +556,7 @@
       "Metronome"
     ]
   },
-  {
+  "Ingrain": {
     "name": "Ingrain",
     "category": "Non-Damaging",
     "power": 0,
@@ -566,7 +570,7 @@
       "Snatch"
     ]
   },
-  {
+  "Iron Defense": {
     "name": "Iron Defense",
     "category": "Non-Damaging",
     "power": 0,
@@ -585,7 +589,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Light Screen": {
     "name": "Light Screen",
     "category": "Non-Damaging",
     "power": 0,
@@ -599,7 +603,7 @@
       "Snatch"
     ]
   },
-  {
+  "Magic Coat": {
     "name": "Magic Coat",
     "category": "Non-Damaging",
     "power": 0,
@@ -612,7 +616,7 @@
       "Metronome"
     ]
   },
-  {
+  "Magical Leaf": {
     "name": "Magical Leaf",
     "category": "Special",
     "power": 60,
@@ -627,7 +631,7 @@
       "Protect"
     ]
   },
-  {
+  "Mean Look": {
     "name": "Mean Look",
     "category": "Non-Damaging",
     "power": 0,
@@ -640,10 +644,12 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Reflectable"
+      "Reflectable",
+      "Block",
+      "Requires Target"
     ]
   },
-  {
+  "Meditate": {
     "name": "Meditate",
     "category": "Non-Damaging",
     "power": 0,
@@ -662,7 +668,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Memento": {
     "name": "Memento",
     "category": "Non-Damaging",
     "power": 0,
@@ -674,10 +680,11 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "String Shot": {
     "name": "String Shot",
     "category": "Non-Damaging",
     "power": 0,
@@ -695,10 +702,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Metronome": {
     "name": "Metronome",
     "category": "Non-Damaging",
     "power": 0,
@@ -713,7 +721,7 @@
       "No Sleep Talk"
     ]
   },
-  {
+  "Milk Drink": {
     "name": "Milk Drink",
     "category": "Non-Damaging",
     "power": 0,
@@ -729,7 +737,7 @@
       "Raises Attacker chp by hp"
     ]
   },
-  {
+  "Mimic": {
     "name": "Mimic",
     "category": "Non-Damaging",
     "power": 0,
@@ -746,7 +754,7 @@
       "Protect"
     ]
   },
-  {
+  "Minimize": {
     "name": "Minimize",
     "category": "Non-Damaging",
     "power": 0,
@@ -765,7 +773,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Mirror Move": {
     "name": "Mirror Move",
     "category": "Non-Damaging",
     "power": 0,
@@ -781,7 +789,7 @@
       "No Sleep Talk"
     ]
   },
-  {
+  "Mist": {
     "name": "Mist",
     "category": "Non-Damaging",
     "power": 0,
@@ -795,7 +803,7 @@
       "Snatch"
     ]
   },
-  {
+  "Moonlight": {
     "name": "Moonlight",
     "category": "Non-Damaging",
     "power": 0,
@@ -806,10 +814,11 @@
     "type": "Normal",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Synthesis"
     ]
   },
-  {
+  "Morning Sun": {
     "name": "Morning Sun",
     "category": "Non-Damaging",
     "power": 0,
@@ -820,10 +829,11 @@
     "type": "Normal",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Synthesis"
     ]
   },
-  {
+  "Mud Sport": {
     "name": "Mud Sport",
     "category": "Non-Damaging",
     "power": 0,
@@ -836,7 +846,7 @@
       "Metronome"
     ]
   },
-  {
+  "Tackle": {
     "name": "Tackle",
     "category": "Physical",
     "power": 35,
@@ -852,7 +862,7 @@
       "Protect"
     ]
   },
-  {
+  "Nightmare": {
     "name": "Nightmare",
     "category": "Non-Damaging",
     "power": 0,
@@ -864,10 +874,11 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "Pain Split": {
     "name": "Pain Split",
     "category": "Non-Damaging",
     "power": 0,
@@ -879,10 +890,11 @@
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "Perish Song": {
     "name": "Perish Song",
     "category": "Non-Damaging",
     "power": 0,
@@ -893,10 +905,11 @@
     "type": "Normal",
     "flags": [
       "Metronome",
-      "Sound"
+      "Sound",
+      "Requires Target"
     ]
   },
-  {
+  "Protect": {
     "name": "Protect",
     "category": "Non-Damaging",
     "power": 0,
@@ -909,7 +922,7 @@
       "No Assist"
     ]
   },
-  {
+  "Psych Up": {
     "name": "Psych Up",
     "category": "Non-Damaging",
     "power": 0,
@@ -921,10 +934,11 @@
     "flags": [
       "Bypasses Substitute",
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Requires Target"
     ]
   },
-  {
+  "Rain Dance": {
     "name": "Rain Dance",
     "category": "Non-Damaging",
     "power": 0,
@@ -934,10 +948,11 @@
     "description": "For 5 turns, heavy rain powers Water moves.",
     "type": "Water",
     "flags": [
-      "Metronome"
+      "Metronome",
+      "Weather"
     ]
   },
-  {
+  "Recover": {
     "name": "Recover",
     "category": "Non-Damaging",
     "power": 0,
@@ -953,7 +968,7 @@
       "Raises Attacker chp by hp"
     ]
   },
-  {
+  "Recycle": {
     "name": "Recycle",
     "category": "Non-Damaging",
     "power": 0,
@@ -966,7 +981,7 @@
       "Metronome"
     ]
   },
-  {
+  "Reflect": {
     "name": "Reflect",
     "category": "Non-Damaging",
     "power": 0,
@@ -980,7 +995,7 @@
       "Snatch"
     ]
   },
-  {
+  "Refresh": {
     "name": "Refresh",
     "category": "Non-Damaging",
     "power": 0,
@@ -994,7 +1009,7 @@
       "Snatch"
     ]
   },
-  {
+  "Rest": {
     "name": "Rest",
     "category": "Non-Damaging",
     "power": 0,
@@ -1008,7 +1023,7 @@
       "Snatch"
     ]
   },
-  {
+  "Role Play": {
     "name": "Role Play",
     "category": "Non-Damaging",
     "power": 0,
@@ -1019,10 +1034,11 @@
     "type": "Psychic",
     "flags": [
       "Bypasses Substitute",
-      "Metronome"
+      "Metronome",
+      "Requires Target"
     ]
   },
-  {
+  "Safeguard": {
     "name": "Safeguard",
     "category": "Non-Damaging",
     "power": 0,
@@ -1036,7 +1052,7 @@
       "Snatch"
     ]
   },
-  {
+  "Sandstorm": {
     "name": "Sandstorm",
     "category": "Non-Damaging",
     "power": 0,
@@ -1046,10 +1062,11 @@
     "description": "For 5 turns, a sandstorm rages.",
     "type": "Rock",
     "flags": [
-      "Metronome"
+      "Metronome",
+      "Weather"
     ]
   },
-  {
+  "Shadow Punch": {
     "name": "Shadow Punch",
     "category": "Physical",
     "power": 60,
@@ -1065,7 +1082,7 @@
       "Protect"
     ]
   },
-  {
+  "Sharpen": {
     "name": "Sharpen",
     "category": "Non-Damaging",
     "power": 0,
@@ -1084,7 +1101,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Shock Wave": {
     "name": "Shock Wave",
     "category": "Special",
     "power": 60,
@@ -1099,7 +1116,7 @@
       "Protect"
     ]
   },
-  {
+  "Sketch": {
     "name": "Sketch",
     "category": "Non-Damaging",
     "power": 0,
@@ -1115,7 +1132,7 @@
       "No Assist"
     ]
   },
-  {
+  "Skill Swap": {
     "name": "Skill Swap",
     "category": "Non-Damaging",
     "power": 0,
@@ -1128,10 +1145,11 @@
       "Bypasses Substitute",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "Slack Off": {
     "name": "Slack Off",
     "category": "Non-Damaging",
     "power": 0,
@@ -1147,7 +1165,7 @@
       "Raises Attacker chp by hp"
     ]
   },
-  {
+  "Sleep Talk": {
     "name": "Sleep Talk",
     "category": "Non-Damaging",
     "power": 0,
@@ -1161,7 +1179,7 @@
       "No Sleep Talk"
     ]
   },
-  {
+  "Snatch": {
     "name": "Snatch",
     "category": "Non-Damaging",
     "power": 0,
@@ -1172,10 +1190,11 @@
     "type": "Dark",
     "flags": [
       "Bypasses Substitute",
-      "No Assist"
+      "No Assist",
+      "Requires Target"
     ]
   },
-  {
+  "Soft-Boiled": {
     "name": "Soft-Boiled",
     "category": "Non-Damaging",
     "power": 0,
@@ -1191,7 +1210,7 @@
       "Raises Attacker chp by hp"
     ]
   },
-  {
+  "Spider Web": {
     "name": "Spider Web",
     "category": "Non-Damaging",
     "power": 0,
@@ -1204,10 +1223,12 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Reflectable"
+      "Reflectable",
+      "Block",
+      "Requires Target"
     ]
   },
-  {
+  "Spikes": {
     "name": "Spikes",
     "category": "Non-Damaging",
     "power": 0,
@@ -1221,7 +1242,7 @@
       "Must Pressure"
     ]
   },
-  {
+  "Splash": {
     "name": "Splash",
     "category": "Non-Damaging",
     "power": 0,
@@ -1234,7 +1255,7 @@
       "Metronome"
     ]
   },
-  {
+  "Stockpile": {
     "name": "Stockpile",
     "category": "Non-Damaging",
     "power": 0,
@@ -1248,7 +1269,7 @@
       "Snatch"
     ]
   },
-  {
+  "Substitute": {
     "name": "Substitute",
     "category": "Non-Damaging",
     "power": 0,
@@ -1262,7 +1283,7 @@
       "Snatch"
     ]
   },
-  {
+  "Sunny Day": {
     "name": "Sunny Day",
     "category": "Non-Damaging",
     "power": 0,
@@ -1272,10 +1293,11 @@
     "description": "For 5 turns, intense sunlight powers Fire moves.",
     "type": "Fire",
     "flags": [
-      "Metronome"
+      "Metronome",
+      "Weather"
     ]
   },
-  {
+  "Swallow": {
     "name": "Swallow",
     "category": "Non-Damaging",
     "power": 0,
@@ -1290,7 +1312,7 @@
       "Raises Attacker chp by hp"
     ]
   },
-  {
+  "Swift": {
     "name": "Swift",
     "category": "Physical",
     "power": 60,
@@ -1305,7 +1327,7 @@
       "Protect"
     ]
   },
-  {
+  "Swords Dance": {
     "name": "Swords Dance",
     "category": "Non-Damaging",
     "power": 0,
@@ -1324,7 +1346,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Synthesis": {
     "name": "Synthesis",
     "category": "Non-Damaging",
     "power": 0,
@@ -1335,10 +1357,11 @@
     "type": "Grass",
     "flags": [
       "Metronome",
-      "Snatch"
+      "Snatch",
+      "Synthesis"
     ]
   },
-  {
+  "Tail Glow": {
     "name": "Tail Glow",
     "category": "Non-Damaging",
     "power": 0,
@@ -1357,7 +1380,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Teleport": {
     "name": "Teleport",
     "category": "Non-Damaging",
     "power": 0,
@@ -1370,7 +1393,7 @@
       "Metronome"
     ]
   },
-  {
+  "Transform": {
     "name": "Transform",
     "category": "Non-Damaging",
     "power": 0,
@@ -1382,10 +1405,11 @@
     "flags": [
       "Bypasses Substitute",
       "Fail Encore",
-      "Metronome"
+      "Metronome",
+      "Requires Target"
     ]
   },
-  {
+  "Vital Throw": {
     "name": "Vital Throw",
     "category": "Physical",
     "power": 70,
@@ -1401,7 +1425,7 @@
       "Protect"
     ]
   },
-  {
+  "Water Sport": {
     "name": "Water Sport",
     "category": "Non-Damaging",
     "power": 0,
@@ -1414,7 +1438,7 @@
       "Metronome"
     ]
   },
-  {
+  "Wish": {
     "name": "Wish",
     "category": "Non-Damaging",
     "power": 0,
@@ -1427,7 +1451,7 @@
       "Metronome"
     ]
   },
-  {
+  "Withdraw": {
     "name": "Withdraw",
     "category": "Non-Damaging",
     "power": 0,
@@ -1446,7 +1470,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Yawn": {
     "name": "Yawn",
     "category": "Non-Damaging",
     "power": 0,
@@ -1459,10 +1483,11 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Reflectable"
+      "Reflectable",
+      "Requires Target"
     ]
   },
-  {
+  "Absorb": {
     "name": "Absorb",
     "category": "Special",
     "power": 20,
@@ -1479,7 +1504,7 @@
       "Leech"
     ]
   },
-  {
+  "Acid": {
     "name": "Acid",
     "category": "Physical",
     "power": 40,
@@ -1490,7 +1515,7 @@
     "stat changes": {
       "defense": -1
     },
-    "chance": 0.10,
+    "chance": 0.1,
     "stat": "defense",
     "type": "Poison",
     "flags": [
@@ -1501,7 +1526,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Ancient Power": {
     "name": "Ancient Power",
     "category": "Physical",
     "power": 60,
@@ -1516,7 +1541,7 @@
       "sp_defense": 1,
       "speed": 1
     },
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Rock",
     "flags": [
       "Contact",
@@ -1527,7 +1552,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Arm Thrust": {
     "name": "Arm Thrust",
     "category": "Physical",
     "power": 15,
@@ -1544,7 +1569,7 @@
       "Multi-Hit"
     ]
   },
-  {
+  "Astonish": {
     "name": "Astonish",
     "category": "Physical",
     "power": 30,
@@ -1552,7 +1577,7 @@
     "priority": 0,
     "pp": 15,
     "description": "30% chance to make the target flinch.",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Ghost",
     "flags": [
       "Contact",
@@ -1564,7 +1589,7 @@
       "Double Minimized"
     ]
   },
-  {
+  "Attract": {
     "name": "Attract",
     "category": "Non-Damaging",
     "power": 0,
@@ -1578,10 +1603,11 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Reflectable"
+      "Reflectable",
+      "Requires Target"
     ]
   },
-  {
+  "Aurora Beam": {
     "name": "Aurora Beam",
     "category": "Special",
     "power": 65,
@@ -1592,7 +1618,7 @@
     "stat changes": {
       "attack": -1
     },
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Ice",
     "flags": [
       "Metronome",
@@ -1602,7 +1628,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Beat Up": {
     "name": "Beat Up",
     "category": "Physical",
     "power": 10,
@@ -1617,7 +1643,7 @@
       "Protect"
     ]
   },
-  {
+  "Bide": {
     "name": "Bide",
     "category": "Physical",
     "power": 0,
@@ -1633,7 +1659,7 @@
       "Protect"
     ]
   },
-  {
+  "Bite": {
     "name": "Bite",
     "category": "Special",
     "power": 60,
@@ -1641,7 +1667,7 @@
     "priority": 0,
     "pp": 25,
     "description": "30% chance to make the target flinch.",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Dark",
     "flags": [
       "Contact",
@@ -1652,7 +1678,7 @@
       "Flinch"
     ]
   },
-  {
+  "Body Slam": {
     "name": "Body Slam",
     "category": "Physical",
     "power": 85,
@@ -1661,7 +1687,7 @@
     "pp": 15,
     "description": "30% chance to paralyze the target.",
     "status": "PAR",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Normal",
     "flags": [
       "Contact",
@@ -1672,7 +1698,7 @@
       "Status"
     ]
   },
-  {
+  "Brick Break": {
     "name": "Brick Break",
     "category": "Physical",
     "power": 75,
@@ -1688,7 +1714,7 @@
       "Protect"
     ]
   },
-  {
+  "Bubble": {
     "name": "Bubble",
     "category": "Special",
     "power": 20,
@@ -1699,7 +1725,7 @@
     "stat changes": {
       "speed": -1
     },
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Water",
     "flags": [
       "Metronome",
@@ -1709,7 +1735,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Bubble Beam": {
     "name": "Bubble Beam",
     "category": "Special",
     "power": 65,
@@ -1720,7 +1746,7 @@
     "stat changes": {
       "speed": -1
     },
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Water",
     "flags": [
       "Metronome",
@@ -1730,7 +1756,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Bullet Seed": {
     "name": "Bullet Seed",
     "category": "Special",
     "power": 10,
@@ -1746,7 +1772,7 @@
       "Multi-Hit"
     ]
   },
-  {
+  "Charm": {
     "name": "Charm",
     "category": "Non-Damaging",
     "power": 0,
@@ -1764,10 +1790,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Confuse Ray": {
     "name": "Confuse Ray",
     "category": "Non-Damaging",
     "power": 0,
@@ -1781,10 +1808,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Confuses"
+      "Confuses",
+      "Requires Target"
     ]
   },
-  {
+  "Confusion": {
     "name": "Confusion",
     "category": "Special",
     "power": 50,
@@ -1792,7 +1820,7 @@
     "priority": 0,
     "pp": 25,
     "description": "10% chance to confuse the target.",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Psychic",
     "flags": [
       "Metronome",
@@ -1802,7 +1830,7 @@
       "Confuses"
     ]
   },
-  {
+  "Constrict": {
     "name": "Constrict",
     "category": "Physical",
     "power": 10,
@@ -1813,7 +1841,7 @@
     "stat changes": {
       "speed": -1
     },
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Normal",
     "flags": [
       "Contact",
@@ -1824,7 +1852,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Counter": {
     "name": "Counter",
     "category": "Physical",
     "power": 0,
@@ -1839,7 +1867,7 @@
       "Protect"
     ]
   },
-  {
+  "Covet": {
     "name": "Covet",
     "category": "Physical",
     "power": 40,
@@ -1854,7 +1882,7 @@
       "Protect"
     ]
   },
-  {
+  "Crunch": {
     "name": "Crunch",
     "category": "Special",
     "power": 80,
@@ -1865,7 +1893,7 @@
     "stat changes": {
       "sp_defense": -1
     },
-    "chance": 0.20,
+    "chance": 0.2,
     "type": "Dark",
     "flags": [
       "Contact",
@@ -1876,7 +1904,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Dig": {
     "name": "Dig",
     "category": "Physical",
     "power": 60,
@@ -1894,7 +1922,7 @@
       "Semi-invulnerable"
     ]
   },
-  {
+  "Dive": {
     "name": "Dive",
     "category": "Special",
     "power": 60,
@@ -1912,7 +1940,7 @@
       "Semi-invulnerable"
     ]
   },
-  {
+  "Dizzy Punch": {
     "name": "Dizzy Punch",
     "category": "Physical",
     "power": 70,
@@ -1920,7 +1948,7 @@
     "priority": 0,
     "pp": 10,
     "description": "20% chance to confuse the target.",
-    "chance": 0.20,
+    "chance": 0.2,
     "type": "Normal",
     "flags": [
       "Contact",
@@ -1931,7 +1959,7 @@
       "Confuses"
     ]
   },
-  {
+  "Double-Edge": {
     "name": "Double-Edge",
     "category": "Physical",
     "power": 120,
@@ -1950,7 +1978,7 @@
       "Secondary"
     ]
   },
-  {
+  "Double Kick": {
     "name": "Double Kick",
     "category": "Physical",
     "power": 30,
@@ -1967,7 +1995,7 @@
       "Double-Hit"
     ]
   },
-  {
+  "Dragon Breath": {
     "name": "Dragon Breath",
     "category": "Special",
     "power": 60,
@@ -1976,7 +2004,7 @@
     "pp": 20,
     "description": "30% chance to paralyze the target.",
     "status": "PAR",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Dragon",
     "flags": [
       "Metronome",
@@ -1986,7 +2014,7 @@
       "Status"
     ]
   },
-  {
+  "Dragon Claw": {
     "name": "Dragon Claw",
     "category": "Special",
     "power": 80,
@@ -2002,7 +2030,7 @@
       "Protect"
     ]
   },
-  {
+  "Dragon Rage": {
     "name": "Dragon Rage",
     "category": "Special",
     "power": 0,
@@ -2019,7 +2047,7 @@
       "Fixed Damage"
     ]
   },
-  {
+  "Dream Eater": {
     "name": "Dream Eater",
     "category": "Special",
     "power": 100,
@@ -2036,7 +2064,7 @@
       "Leech"
     ]
   },
-  {
+  "Drill Peck": {
     "name": "Drill Peck",
     "category": "Physical",
     "power": 80,
@@ -2052,7 +2080,7 @@
       "Protect"
     ]
   },
-  {
+  "Earthquake": {
     "name": "Earthquake",
     "category": "Physical",
     "power": 100,
@@ -2069,7 +2097,7 @@
       "Double Damage"
     ]
   },
-  {
+  "Ember": {
     "name": "Ember",
     "category": "Special",
     "power": 40,
@@ -2078,7 +2106,7 @@
     "pp": 25,
     "description": "10% chance to burn the target.",
     "status": "BRN",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Fire",
     "flags": [
       "Metronome",
@@ -2088,7 +2116,7 @@
       "Status"
     ]
   },
-  {
+  "Encore": {
     "name": "Encore",
     "category": "Non-Damaging",
     "power": 0,
@@ -2102,10 +2130,11 @@
       "Fail Encore",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "Endeavor": {
     "name": "Endeavor",
     "category": "Physical",
     "power": 0,
@@ -2121,7 +2150,7 @@
       "Protect"
     ]
   },
-  {
+  "Eruption": {
     "name": "Eruption",
     "category": "Special",
     "power": 150,
@@ -2136,14 +2165,14 @@
       "Protect"
     ]
   },
-  {
+  "Explosion": {
     "name": "Explosion",
     "category": "Physical",
     "power": 250,
     "accuracy": 100,
     "priority": 0,
     "pp": 5,
-    "description": "Target's Def halved during damage. User faints.",
+    "description": "target's Def halved during damage. User faints.",
     "amount": 42069,
     "type": "Normal",
     "flags": [
@@ -2155,7 +2184,7 @@
       "Explode"
     ]
   },
-  {
+  "Extrasensory": {
     "name": "Extrasensory",
     "category": "Special",
     "power": 80,
@@ -2163,7 +2192,7 @@
     "priority": 0,
     "pp": 30,
     "description": "10% chance to make the target flinch.",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Psychic",
     "flags": [
       "Metronome",
@@ -2174,7 +2203,7 @@
       "Double Minimized"
     ]
   },
-  {
+  "Extreme Speed": {
     "name": "Extreme Speed",
     "category": "Physical",
     "power": 80,
@@ -2190,7 +2219,7 @@
       "Protect"
     ]
   },
-  {
+  "Facade": {
     "name": "Facade",
     "category": "Physical",
     "power": 70,
@@ -2206,7 +2235,7 @@
       "Protect"
     ]
   },
-  {
+  "Fake Out": {
     "name": "Fake Out",
     "category": "Physical",
     "power": 40,
@@ -2224,7 +2253,7 @@
       "Flinch"
     ]
   },
-  {
+  "Fake Tears": {
     "name": "Fake Tears",
     "category": "Non-Damaging",
     "power": 0,
@@ -2242,10 +2271,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "False Swipe": {
     "name": "False Swipe",
     "category": "Physical",
     "power": 40,
@@ -2261,7 +2291,7 @@
       "Protect"
     ]
   },
-  {
+  "Feather Dance": {
     "name": "Feather Dance",
     "category": "Non-Damaging",
     "power": 0,
@@ -2279,10 +2309,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Fire Punch": {
     "name": "Fire Punch",
     "category": "Special",
     "power": 75,
@@ -2291,7 +2322,7 @@
     "pp": 15,
     "description": "10% chance to burn the target.",
     "status": "BRN",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Fire",
     "flags": [
       "Contact",
@@ -2302,7 +2333,7 @@
       "Status"
     ]
   },
-  {
+  "Flail": {
     "name": "Flail",
     "category": "Physical",
     "power": 0,
@@ -2318,7 +2349,7 @@
       "Protect"
     ]
   },
-  {
+  "Flame Wheel": {
     "name": "Flame Wheel",
     "category": "Special",
     "power": 60,
@@ -2327,7 +2358,7 @@
     "pp": 25,
     "description": "10% chance to burn the target. Thaws user.",
     "status": "BRN",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Fire",
     "flags": [
       "Contact",
@@ -2336,10 +2367,11 @@
       "Mirror",
       "Protect",
       "Secondary",
-      "Status"
+      "Status",
+      "Thaws"
     ]
   },
-  {
+  "Flamethrower": {
     "name": "Flamethrower",
     "category": "Special",
     "power": 95,
@@ -2348,7 +2380,7 @@
     "pp": 15,
     "description": "10% chance to burn the target.",
     "status": "BRN",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Fire",
     "flags": [
       "Metronome",
@@ -2358,7 +2390,7 @@
       "Status"
     ]
   },
-  {
+  "Flatter": {
     "name": "Flatter",
     "category": "Non-Damaging",
     "power": 0,
@@ -2377,10 +2409,11 @@
       "Protect",
       "Reflectable",
       "Changes Defender Stats",
-      "Confuses"
+      "Confuses",
+      "Requires Target"
     ]
   },
-  {
+  "Focus Punch": {
     "name": "Focus Punch",
     "category": "Physical",
     "power": 150,
@@ -2396,7 +2429,7 @@
       "Protect"
     ]
   },
-  {
+  "Foresight": {
     "name": "Foresight",
     "category": "Non-Damaging",
     "power": 0,
@@ -2412,7 +2445,7 @@
       "Protect"
     ]
   },
-  {
+  "Frustration": {
     "name": "Frustration",
     "category": "Physical",
     "power": 102,
@@ -2428,7 +2461,7 @@
       "Protect"
     ]
   },
-  {
+  "Giga Drain": {
     "name": "Giga Drain",
     "category": "Special",
     "power": 60,
@@ -2445,7 +2478,7 @@
       "Leech"
     ]
   },
-  {
+  "Growl": {
     "name": "Growl",
     "category": "Non-Damaging",
     "power": 0,
@@ -2464,10 +2497,11 @@
       "Protect",
       "Reflectable",
       "Sound",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Gust": {
     "name": "Gust",
     "category": "Physical",
     "power": 40,
@@ -2484,7 +2518,7 @@
       "Double Damage"
     ]
   },
-  {
+  "Headbutt": {
     "name": "Headbutt",
     "category": "Physical",
     "power": 70,
@@ -2492,7 +2526,7 @@
     "priority": 0,
     "pp": 15,
     "description": "30% chance to make the target flinch.",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Normal",
     "flags": [
       "Contact",
@@ -2503,7 +2537,7 @@
       "Flinch"
     ]
   },
-  {
+  "Hidden Power": {
     "name": "Hidden Power",
     "category": "Physical",
     "power": 60,
@@ -2518,7 +2552,7 @@
       "Protect"
     ]
   },
-  {
+  "Horn Attack": {
     "name": "Horn Attack",
     "category": "Physical",
     "power": 65,
@@ -2534,7 +2568,7 @@
       "Protect"
     ]
   },
-  {
+  "Hyper Voice": {
     "name": "Hyper Voice",
     "category": "Physical",
     "power": 90,
@@ -2550,7 +2584,7 @@
       "Sound"
     ]
   },
-  {
+  "Ice Beam": {
     "name": "Ice Beam",
     "category": "Special",
     "power": 95,
@@ -2559,7 +2593,7 @@
     "pp": 10,
     "description": "10% chance to freeze the target.",
     "status": "FRZ",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Ice",
     "flags": [
       "Metronome",
@@ -2569,7 +2603,7 @@
       "Status"
     ]
   },
-  {
+  "Ice Punch": {
     "name": "Ice Punch",
     "category": "Special",
     "power": 75,
@@ -2578,7 +2612,7 @@
     "pp": 15,
     "description": "10% chance to freeze the target.",
     "status": "FRZ",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Ice",
     "flags": [
       "Contact",
@@ -2589,7 +2623,7 @@
       "Status"
     ]
   },
-  {
+  "Icicle Spear": {
     "name": "Icicle Spear",
     "category": "Special",
     "power": 10,
@@ -2605,7 +2639,7 @@
       "Multi-Hit"
     ]
   },
-  {
+  "Karate Chop": {
     "name": "Karate Chop",
     "category": "Physical",
     "power": 50,
@@ -2622,14 +2656,14 @@
       "High Crit"
     ]
   },
-  {
+  "Knock Off": {
     "name": "Knock Off",
     "category": "Special",
     "power": 20,
     "accuracy": 100,
     "priority": 0,
     "pp": 20,
-    "description": "Target's item is lost and it cannot obtain another.",
+    "description": "target's item is lost and it cannot obtain another.",
     "type": "Dark",
     "flags": [
       "Contact",
@@ -2638,7 +2672,7 @@
       "Protect"
     ]
   },
-  {
+  "Leaf Blade": {
     "name": "Leaf Blade",
     "category": "Special",
     "power": 70,
@@ -2655,7 +2689,7 @@
       "High Crit"
     ]
   },
-  {
+  "Leech Life": {
     "name": "Leech Life",
     "category": "Physical",
     "power": 20,
@@ -2673,7 +2707,7 @@
       "Leech"
     ]
   },
-  {
+  "Leer": {
     "name": "Leer",
     "category": "Non-Damaging",
     "power": 0,
@@ -2691,10 +2725,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Lick": {
     "name": "Lick",
     "category": "Physical",
     "power": 20,
@@ -2703,7 +2738,7 @@
     "pp": 30,
     "description": "30% chance to paralyze the target.",
     "status": "PAR",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Ghost",
     "flags": [
       "Contact",
@@ -2714,22 +2749,23 @@
       "Status"
     ]
   },
-  {
+  "Lock-On": {
     "name": "Lock-On",
     "category": "Non-Damaging",
     "power": 0,
     "accuracy": 100,
     "priority": 0,
     "pp": 5,
-    "description": "User's next move will not miss the target.",
+    "description": "user's next move will not miss the target.",
     "type": "Normal",
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "Low Kick": {
     "name": "Low Kick",
     "category": "Physical",
     "power": 0,
@@ -2745,7 +2781,7 @@
       "Protect"
     ]
   },
-  {
+  "Luster Purge": {
     "name": "Luster Purge",
     "category": "Special",
     "power": 70,
@@ -2756,7 +2792,7 @@
     "stat changes": {
       "sp_defense": -1
     },
-    "chance": 0.50,
+    "chance": 0.5,
     "type": "Psychic",
     "flags": [
       "Metronome",
@@ -2766,7 +2802,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Mach Punch": {
     "name": "Mach Punch",
     "category": "Physical",
     "power": 40,
@@ -2782,7 +2818,7 @@
       "Protect"
     ]
   },
-  {
+  "Magnitude": {
     "name": "Magnitude",
     "category": "Physical",
     "power": 0,
@@ -2799,7 +2835,7 @@
       "Double Damage"
     ]
   },
-  {
+  "Mega Drain": {
     "name": "Mega Drain",
     "category": "Special",
     "power": 40,
@@ -2816,22 +2852,23 @@
       "Leech"
     ]
   },
-  {
+  "Mind Reader": {
     "name": "Mind Reader",
     "category": "Non-Damaging",
     "power": 0,
     "accuracy": 100,
     "priority": 0,
     "pp": 5,
-    "description": "User's next move will not miss the target.",
+    "description": "user's next move will not miss the target.",
     "type": "Normal",
     "flags": [
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "Mirror Coat": {
     "name": "Mirror Coat",
     "category": "Special",
     "power": 0,
@@ -2845,7 +2882,7 @@
       "Protect"
     ]
   },
-  {
+  "Mist Ball": {
     "name": "Mist Ball",
     "category": "Special",
     "power": 70,
@@ -2856,7 +2893,7 @@
     "stat changes": {
       "sp_defense": -1
     },
-    "chance": 0.50,
+    "chance": 0.5,
     "type": "Psychic",
     "flags": [
       "Metronome",
@@ -2866,7 +2903,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Mud-Slap": {
     "name": "Mud-Slap",
     "category": "Physical",
     "power": 20,
@@ -2887,7 +2924,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Needle Arm": {
     "name": "Needle Arm",
     "category": "Special",
     "power": 60,
@@ -2895,7 +2932,7 @@
     "priority": 0,
     "pp": 15,
     "description": "30% chance to make the target flinch.",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Grass",
     "flags": [
       "Contact",
@@ -2907,7 +2944,7 @@
       "Double Minimized"
     ]
   },
-  {
+  "Night Shade": {
     "name": "Night Shade",
     "category": "Physical",
     "power": 0,
@@ -2923,7 +2960,7 @@
       "Level Damage"
     ]
   },
-  {
+  "Odor Sleuth": {
     "name": "Odor Sleuth",
     "category": "Non-Damaging",
     "power": 0,
@@ -2939,7 +2976,7 @@
       "Protect"
     ]
   },
-  {
+  "Outrage": {
     "name": "Outrage",
     "category": "Special",
     "power": 90,
@@ -2956,7 +2993,7 @@
       "Outrage"
     ]
   },
-  {
+  "Pay Day": {
     "name": "Pay Day",
     "category": "Physical",
     "power": 40,
@@ -2971,7 +3008,7 @@
       "Protect"
     ]
   },
-  {
+  "Peck": {
     "name": "Peck",
     "category": "Physical",
     "power": 35,
@@ -2987,7 +3024,7 @@
       "Protect"
     ]
   },
-  {
+  "Petal Dance": {
     "name": "Petal Dance",
     "category": "Special",
     "power": 70,
@@ -3004,7 +3041,7 @@
       "Outrage"
     ]
   },
-  {
+  "Poison Fang": {
     "name": "Poison Fang",
     "category": "Physical",
     "power": 50,
@@ -3013,7 +3050,7 @@
     "pp": 15,
     "description": "30% chance to badly poison the target.",
     "status": "TOX",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Poison",
     "flags": [
       "Contact",
@@ -3024,7 +3061,7 @@
       "Status"
     ]
   },
-  {
+  "Poison Sting": {
     "name": "Poison Sting",
     "category": "Physical",
     "power": 15,
@@ -3033,7 +3070,7 @@
     "pp": 35,
     "description": "30% chance to poison the target.",
     "status": "PSN",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Poison",
     "flags": [
       "Metronome",
@@ -3043,7 +3080,7 @@
       "Status"
     ]
   },
-  {
+  "Poison Tail": {
     "name": "Poison Tail",
     "category": "Physical",
     "power": 50,
@@ -3052,7 +3089,7 @@
     "pp": 25,
     "description": "High critical hit ratio. 10% chance to poison.",
     "status": "PSN",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Poison",
     "flags": [
       "Contact",
@@ -3064,7 +3101,7 @@
       "Status"
     ]
   },
-  {
+  "Pound": {
     "name": "Pound",
     "category": "Physical",
     "power": 40,
@@ -3080,7 +3117,7 @@
       "Protect"
     ]
   },
-  {
+  "Powder Snow": {
     "name": "Powder Snow",
     "category": "Special",
     "power": 40,
@@ -3089,7 +3126,7 @@
     "pp": 25,
     "description": "10% chance to freeze the foe(s).",
     "status": "FRZ",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Ice",
     "flags": [
       "Metronome",
@@ -3099,7 +3136,7 @@
       "Status"
     ]
   },
-  {
+  "Psybeam": {
     "name": "Psybeam",
     "category": "Special",
     "power": 65,
@@ -3107,7 +3144,7 @@
     "priority": 0,
     "pp": 20,
     "description": "10% chance to confuse the target.",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Psychic",
     "flags": [
       "Metronome",
@@ -3117,7 +3154,7 @@
       "Confuses"
     ]
   },
-  {
+  "Psychic": {
     "name": "Psychic",
     "category": "Special",
     "power": 90,
@@ -3128,7 +3165,7 @@
     "stat changes": {
       "sp_defense": -1
     },
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Psychic",
     "flags": [
       "Metronome",
@@ -3138,7 +3175,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Pursuit": {
     "name": "Pursuit",
     "category": "Special",
     "power": 40,
@@ -3154,7 +3191,7 @@
       "Protect"
     ]
   },
-  {
+  "Quick Attack": {
     "name": "Quick Attack",
     "category": "Physical",
     "power": 40,
@@ -3170,7 +3207,7 @@
       "Protect"
     ]
   },
-  {
+  "Rage": {
     "name": "Rage",
     "category": "Physical",
     "power": 20,
@@ -3186,7 +3223,7 @@
       "Protect"
     ]
   },
-  {
+  "Rapid Spin": {
     "name": "Rapid Spin",
     "category": "Physical",
     "power": 20,
@@ -3202,7 +3239,7 @@
       "Protect"
     ]
   },
-  {
+  "Razor Wind": {
     "name": "Razor Wind",
     "category": "Physical",
     "power": 80,
@@ -3219,7 +3256,7 @@
       "Protect"
     ]
   },
-  {
+  "Return": {
     "name": "Return",
     "category": "Physical",
     "power": 102,
@@ -3235,7 +3272,7 @@
       "Protect"
     ]
   },
-  {
+  "Revenge": {
     "name": "Revenge",
     "category": "Physical",
     "power": 60,
@@ -3251,7 +3288,7 @@
       "Protect"
     ]
   },
-  {
+  "Reversal": {
     "name": "Reversal",
     "category": "Physical",
     "power": 0,
@@ -3267,7 +3304,7 @@
       "Protect"
     ]
   },
-  {
+  "Roar": {
     "name": "Roar",
     "category": "Non-Damaging",
     "power": 0,
@@ -3281,10 +3318,11 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Sound"
+      "Sound",
+      "Requires Target"
     ]
   },
-  {
+  "Rock Smash": {
     "name": "Rock Smash",
     "category": "Physical",
     "power": 20,
@@ -3295,7 +3333,7 @@
     "stat changes": {
       "defense": -1
     },
-    "chance": 0.50,
+    "chance": 0.5,
     "type": "Fighting",
     "flags": [
       "Contact",
@@ -3306,7 +3344,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Sand Attack": {
     "name": "Sand Attack",
     "category": "Non-Damaging",
     "power": 0,
@@ -3324,10 +3362,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Scratch": {
     "name": "Scratch",
     "category": "Physical",
     "power": 40,
@@ -3343,7 +3382,7 @@
       "Protect"
     ]
   },
-  {
+  "Secret Power": {
     "name": "Secret Power",
     "category": "Physical",
     "power": 70,
@@ -3358,7 +3397,7 @@
       "Protect"
     ]
   },
-  {
+  "Seismic Toss": {
     "name": "Seismic Toss",
     "category": "Physical",
     "power": 0,
@@ -3375,14 +3414,14 @@
       "Level Damage"
     ]
   },
-  {
+  "Self-Destruct": {
     "name": "Self-Destruct",
     "category": "Physical",
     "power": 200,
     "accuracy": 100,
     "priority": 0,
     "pp": 5,
-    "description": "Target's Def halved during damage. User faints.",
+    "description": "target's Def halved during damage. User faints.",
     "amount": 42069,
     "type": "Normal",
     "flags": [
@@ -3394,7 +3433,7 @@
       "Explode"
     ]
   },
-  {
+  "Shadow Ball": {
     "name": "Shadow Ball",
     "category": "Physical",
     "power": 80,
@@ -3405,7 +3444,7 @@
     "stat changes": {
       "sp_defense": -1
     },
-    "chance": 0.20,
+    "chance": 0.2,
     "type": "Ghost",
     "flags": [
       "Metronome",
@@ -3415,7 +3454,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Signal Beam": {
     "name": "Signal Beam",
     "category": "Physical",
     "power": 75,
@@ -3423,7 +3462,7 @@
     "priority": 0,
     "pp": 15,
     "description": "10% chance to confuse the target.",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Bug",
     "flags": [
       "Metronome",
@@ -3433,7 +3472,7 @@
       "Confuses"
     ]
   },
-  {
+  "Silver Wind": {
     "name": "Silver Wind",
     "category": "Physical",
     "power": 60,
@@ -3448,7 +3487,7 @@
       "sp_defense": 1,
       "speed": 1
     },
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Bug",
     "flags": [
       "Metronome",
@@ -3458,7 +3497,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Skull Bash": {
     "name": "Skull Bash",
     "category": "Physical",
     "power": 100,
@@ -3476,7 +3515,7 @@
       "Protect"
     ]
   },
-  {
+  "Slash": {
     "name": "Slash",
     "category": "Physical",
     "power": 70,
@@ -3493,7 +3532,7 @@
       "High Crit"
     ]
   },
-  {
+  "Sludge": {
     "name": "Sludge",
     "category": "Physical",
     "power": 65,
@@ -3502,7 +3541,7 @@
     "pp": 20,
     "description": "30% chance to poison the target.",
     "status": "PSN",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Poison",
     "flags": [
       "Metronome",
@@ -3512,7 +3551,7 @@
       "Status"
     ]
   },
-  {
+  "Sludge Bomb": {
     "name": "Sludge Bomb",
     "category": "Physical",
     "power": 90,
@@ -3521,7 +3560,7 @@
     "pp": 10,
     "description": "30% chance to poison the target.",
     "status": "PSN",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Poison",
     "flags": [
       "Metronome",
@@ -3531,7 +3570,7 @@
       "Status"
     ]
   },
-  {
+  "Smelling Salts": {
     "name": "Smelling Salts",
     "category": "Physical",
     "power": 60,
@@ -3547,7 +3586,7 @@
       "Protect"
     ]
   },
-  {
+  "Smokescreen": {
     "name": "Smokescreen",
     "category": "Non-Damaging",
     "power": 0,
@@ -3565,10 +3604,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Snore": {
     "name": "Snore",
     "category": "Physical",
     "power": 40,
@@ -3584,7 +3624,7 @@
       "Sound"
     ]
   },
-  {
+  "Solar Beam": {
     "name": "Solar Beam",
     "category": "Special",
     "power": 120,
@@ -3601,7 +3641,7 @@
       "Protect"
     ]
   },
-  {
+  "Spark": {
     "name": "Spark",
     "category": "Special",
     "power": 65,
@@ -3610,7 +3650,7 @@
     "pp": 20,
     "description": "30% chance to paralyze the target.",
     "status": "PAR",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Electric",
     "flags": [
       "Contact",
@@ -3621,7 +3661,7 @@
       "Status"
     ]
   },
-  {
+  "Spike Cannon": {
     "name": "Spike Cannon",
     "category": "Physical",
     "power": 20,
@@ -3637,7 +3677,7 @@
       "Multi-Hit"
     ]
   },
-  {
+  "Spit Up": {
     "name": "Spit Up",
     "category": "Physical",
     "power": 100,
@@ -3652,7 +3692,7 @@
       "Cant Crit"
     ]
   },
-  {
+  "Spite": {
     "name": "Spite",
     "category": "Non-Damaging",
     "power": 0,
@@ -3665,10 +3705,11 @@
       "Bypasses Substitute",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "Spore": {
     "name": "Spore",
     "category": "Non-Damaging",
     "power": 0,
@@ -3684,10 +3725,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Stomp": {
     "name": "Stomp",
     "category": "Physical",
     "power": 65,
@@ -3695,7 +3737,7 @@
     "priority": 0,
     "pp": 20,
     "description": "30% chance to make the target flinch.",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Normal",
     "flags": [
       "Contact",
@@ -3707,7 +3749,7 @@
       "Double Minimized"
     ]
   },
-  {
+  "Strength": {
     "name": "Strength",
     "category": "Physical",
     "power": 80,
@@ -3723,7 +3765,7 @@
       "Protect"
     ]
   },
-  {
+  "Struggle": {
     "name": "Struggle",
     "category": "Physical",
     "power": 50,
@@ -3740,7 +3782,7 @@
       "Protect"
     ]
   },
-  {
+  "Superpower": {
     "name": "Superpower",
     "category": "Physical",
     "power": 120,
@@ -3763,7 +3805,7 @@
       "Changes Attackers Stats"
     ]
   },
-  {
+  "Surf": {
     "name": "Surf",
     "category": "Special",
     "power": 95,
@@ -3780,7 +3822,7 @@
       "Double Damage"
     ]
   },
-  {
+  "Sweet Scent": {
     "name": "Sweet Scent",
     "category": "Non-Damaging",
     "power": 0,
@@ -3798,10 +3840,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Tail Whip": {
     "name": "Tail Whip",
     "category": "Non-Damaging",
     "power": 0,
@@ -3819,10 +3862,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Taunt": {
     "name": "Taunt",
     "category": "Non-Damaging",
     "power": 0,
@@ -3834,10 +3878,11 @@
     "flags": [
       "Bypasses Substitute",
       "Metronome",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "Teeter Dance": {
     "name": "Teeter Dance",
     "category": "Non-Damaging",
     "power": 0,
@@ -3849,10 +3894,11 @@
     "flags": [
       "Metronome",
       "Protect",
-      "Confuses"
+      "Confuses",
+      "Requires Target"
     ]
   },
-  {
+  "Thief": {
     "name": "Thief",
     "category": "Special",
     "power": 40,
@@ -3868,7 +3914,7 @@
       "Protect"
     ]
   },
-  {
+  "Thrash": {
     "name": "Thrash",
     "category": "Physical",
     "power": 90,
@@ -3885,7 +3931,7 @@
       "Outrage"
     ]
   },
-  {
+  "Thunder Punch": {
     "name": "Thunder Punch",
     "category": "Special",
     "power": 75,
@@ -3894,7 +3940,7 @@
     "pp": 15,
     "description": "10% chance to paralyze the target.",
     "status": "PAR",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Electric",
     "flags": [
       "Contact",
@@ -3905,7 +3951,7 @@
       "Status"
     ]
   },
-  {
+  "Thunder Shock": {
     "name": "Thunder Shock",
     "category": "Special",
     "power": 40,
@@ -3914,7 +3960,7 @@
     "pp": 30,
     "description": "10% chance to paralyze the target.",
     "status": "PAR",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Electric",
     "flags": [
       "Metronome",
@@ -3924,7 +3970,7 @@
       "Status"
     ]
   },
-  {
+  "Thunder Wave": {
     "name": "Thunder Wave",
     "category": "Non-Damaging",
     "power": 0,
@@ -3940,10 +3986,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Thunderbolt": {
     "name": "Thunderbolt",
     "category": "Special",
     "power": 95,
@@ -3952,7 +3999,7 @@
     "pp": 15,
     "description": "10% chance to paralyze the target.",
     "status": "PAR",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Electric",
     "flags": [
       "Metronome",
@@ -3962,7 +4009,7 @@
       "Status"
     ]
   },
-  {
+  "Tickle": {
     "name": "Tickle",
     "category": "Non-Damaging",
     "power": 0,
@@ -3981,10 +4028,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Torment": {
     "name": "Torment",
     "category": "Non-Damaging",
     "power": 0,
@@ -3997,10 +4045,11 @@
       "Bypasses Substitute",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "Tri Attack": {
     "name": "Tri Attack",
     "category": "Physical",
     "power": 80,
@@ -4009,7 +4058,7 @@
     "pp": 10,
     "description": "20% chance to paralyze or burn or freeze target.",
     "status": "PAR",
-    "chance": 0.20,
+    "chance": 0.2,
     "type": "Normal",
     "flags": [
       "Metronome",
@@ -4018,7 +4067,7 @@
       "Secondary"
     ]
   },
-  {
+  "Trick": {
     "name": "Trick",
     "category": "Non-Damaging",
     "power": 0,
@@ -4030,10 +4079,11 @@
     "flags": [
       "Mirror",
       "No Assist",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "Twineedle": {
     "name": "Twineedle",
     "category": "Physical",
     "power": 25,
@@ -4042,7 +4092,7 @@
     "pp": 20,
     "description": "Hits 2 times. Each hit has 20% chance to poison.",
     "status": "PSN",
-    "chance": 0.20,
+    "chance": 0.2,
     "type": "Bug",
     "flags": [
       "Metronome",
@@ -4053,7 +4103,7 @@
       "Status"
     ]
   },
-  {
+  "Twister": {
     "name": "Twister",
     "category": "Special",
     "power": 40,
@@ -4061,7 +4111,7 @@
     "priority": 0,
     "pp": 20,
     "description": "20% chance to make the foe(s) flinch.",
-    "chance": 0.20,
+    "chance": 0.2,
     "type": "Dragon",
     "flags": [
       "Metronome",
@@ -4073,7 +4123,7 @@
       "Double Damage"
     ]
   },
-  {
+  "Uproar": {
     "name": "Uproar",
     "category": "Physical",
     "power": 50,
@@ -4090,7 +4140,7 @@
       "Sound"
     ]
   },
-  {
+  "Vice Grip": {
     "name": "Vice Grip",
     "category": "Physical",
     "power": 55,
@@ -4106,7 +4156,7 @@
       "Protect"
     ]
   },
-  {
+  "Vine Whip": {
     "name": "Vine Whip",
     "category": "Special",
     "power": 35,
@@ -4122,7 +4172,7 @@
       "Protect"
     ]
   },
-  {
+  "Volt Tackle": {
     "name": "Volt Tackle",
     "category": "Special",
     "power": 120,
@@ -4141,7 +4191,7 @@
       "Secondary"
     ]
   },
-  {
+  "Water Gun": {
     "name": "Water Gun",
     "category": "Special",
     "power": 40,
@@ -4156,7 +4206,7 @@
       "Protect"
     ]
   },
-  {
+  "Water Pulse": {
     "name": "Water Pulse",
     "category": "Special",
     "power": 60,
@@ -4164,7 +4214,7 @@
     "priority": 0,
     "pp": 20,
     "description": "20% chance to confuse the target.",
-    "chance": 0.20,
+    "chance": 0.2,
     "type": "Water",
     "flags": [
       "Metronome",
@@ -4174,7 +4224,7 @@
       "Confuses"
     ]
   },
-  {
+  "Water Spout": {
     "name": "Water Spout",
     "category": "Special",
     "power": 150,
@@ -4189,7 +4239,7 @@
       "Protect"
     ]
   },
-  {
+  "Waterfall": {
     "name": "Waterfall",
     "category": "Special",
     "power": 80,
@@ -4205,7 +4255,7 @@
       "Protect"
     ]
   },
-  {
+  "Weather Ball": {
     "name": "Weather Ball",
     "category": "Physical",
     "power": 50,
@@ -4220,7 +4270,7 @@
       "Protect"
     ]
   },
-  {
+  "Whirlwind": {
     "name": "Whirlwind",
     "category": "Non-Damaging",
     "power": 0,
@@ -4233,10 +4283,11 @@
       "Bypasses Substitute",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "Wing Attack": {
     "name": "Wing Attack",
     "category": "Physical",
     "power": 60,
@@ -4252,7 +4303,7 @@
       "Protect"
     ]
   },
-  {
+  "Fissure": {
     "name": "Fissure",
     "category": "Physical",
     "power": 0,
@@ -4269,7 +4320,7 @@
       "OHKO"
     ]
   },
-  {
+  "Guillotine": {
     "name": "Guillotine",
     "category": "Physical",
     "power": 0,
@@ -4286,7 +4337,7 @@
       "OHKO"
     ]
   },
-  {
+  "Horn Drill": {
     "name": "Horn Drill",
     "category": "Physical",
     "power": 0,
@@ -4303,7 +4354,7 @@
       "OHKO"
     ]
   },
-  {
+  "Sheer Cold": {
     "name": "Sheer Cold",
     "category": "Special",
     "power": 0,
@@ -4319,7 +4370,7 @@
       "OHKO"
     ]
   },
-  {
+  "Dynamic Punch": {
     "name": "Dynamic Punch",
     "category": "Physical",
     "power": 100,
@@ -4338,7 +4389,7 @@
       "Confuses"
     ]
   },
-  {
+  "Zap Cannon": {
     "name": "Zap Cannon",
     "category": "Special",
     "power": 100,
@@ -4357,7 +4408,7 @@
       "Status"
     ]
   },
-  {
+  "Disable": {
     "name": "Disable",
     "category": "Non-Damaging",
     "power": 0,
@@ -4370,10 +4421,11 @@
       "Bypasses Substitute",
       "Metronome",
       "Mirror",
-      "Protect"
+      "Protect",
+      "Requires Target"
     ]
   },
-  {
+  "Grass Whistle": {
     "name": "Grass Whistle",
     "category": "Non-Damaging",
     "power": 0,
@@ -4390,10 +4442,11 @@
       "Protect",
       "Reflectable",
       "Sound",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Poison Gas": {
     "name": "Poison Gas",
     "category": "Non-Damaging",
     "power": 0,
@@ -4409,10 +4462,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Sing": {
     "name": "Sing",
     "category": "Non-Damaging",
     "power": 0,
@@ -4429,10 +4483,11 @@
       "Protect",
       "Reflectable",
       "Sound",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Supersonic": {
     "name": "Supersonic",
     "category": "Non-Damaging",
     "power": 0,
@@ -4447,10 +4502,11 @@
       "Protect",
       "Reflectable",
       "Sound",
-      "Confuses"
+      "Confuses",
+      "Requires Target"
     ]
   },
-  {
+  "Hypnosis": {
     "name": "Hypnosis",
     "category": "Non-Damaging",
     "power": 0,
@@ -4466,10 +4522,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Blizzard": {
     "name": "Blizzard",
     "category": "Special",
     "power": 120,
@@ -4478,7 +4535,7 @@
     "pp": 5,
     "description": "10% chance to freeze foe(s).",
     "status": "FRZ",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Ice",
     "flags": [
       "Metronome",
@@ -4488,7 +4545,7 @@
       "Status"
     ]
   },
-  {
+  "Fire Spin": {
     "name": "Fire Spin",
     "category": "Special",
     "power": 15,
@@ -4505,7 +4562,7 @@
       "Trapping"
     ]
   },
-  {
+  "Flash": {
     "name": "Flash",
     "category": "Non-Damaging",
     "power": 0,
@@ -4523,10 +4580,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Sand Tomb": {
     "name": "Sand Tomb",
     "category": "Physical",
     "power": 15,
@@ -4543,7 +4601,7 @@
       "Trapping"
     ]
   },
-  {
+  "Smog": {
     "name": "Smog",
     "category": "Physical",
     "power": 20,
@@ -4552,7 +4610,7 @@
     "pp": 20,
     "description": "40% chance to poison the target.",
     "status": "PSN",
-    "chance": 0.40,
+    "chance": 0.4,
     "type": "Poison",
     "flags": [
       "Metronome",
@@ -4562,16 +4620,16 @@
       "Status"
     ]
   },
-  {
+  "Thunder": {
     "name": "Thunder",
     "category": "Special",
     "power": 120,
     "accuracy": 70,
     "priority": 0,
     "pp": 10,
-    "description": "30% chance to paralyze. Can't miss in rain.",
+    "description": "30% chance to paralyze. can't miss in rain.",
     "status": "PAR",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Electric",
     "flags": [
       "Metronome",
@@ -4582,7 +4640,7 @@
       "Status"
     ]
   },
-  {
+  "Whirlpool": {
     "name": "Whirlpool",
     "category": "Special",
     "power": 15,
@@ -4601,7 +4659,7 @@
       "Trapping"
     ]
   },
-  {
+  "Bind": {
     "name": "Bind",
     "category": "Physical",
     "power": 15,
@@ -4619,7 +4677,7 @@
       "Trapping"
     ]
   },
-  {
+  "Clamp": {
     "name": "Clamp",
     "category": "Special",
     "power": 35,
@@ -4637,7 +4695,7 @@
       "Trapping"
     ]
   },
-  {
+  "Egg Bomb": {
     "name": "Egg Bomb",
     "category": "Physical",
     "power": 100,
@@ -4652,7 +4710,7 @@
       "Protect"
     ]
   },
-  {
+  "Glare": {
     "name": "Glare",
     "category": "Non-Damaging",
     "power": 0,
@@ -4668,10 +4726,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Iron Tail": {
     "name": "Iron Tail",
     "category": "Physical",
     "power": 100,
@@ -4682,7 +4741,7 @@
     "stat changes": {
       "defense": -1
     },
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Steel",
     "flags": [
       "Contact",
@@ -4693,7 +4752,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Lovely Kiss": {
     "name": "Lovely Kiss",
     "category": "Non-Damaging",
     "power": 0,
@@ -4709,10 +4768,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Mega Kick": {
     "name": "Mega Kick",
     "category": "Physical",
     "power": 120,
@@ -4728,7 +4788,7 @@
       "Protect"
     ]
   },
-  {
+  "Poison Powder": {
     "name": "Poison Powder",
     "category": "Non-Damaging",
     "power": 0,
@@ -4744,10 +4804,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Slam": {
     "name": "Slam",
     "category": "Physical",
     "power": 80,
@@ -4763,7 +4824,7 @@
       "Protect"
     ]
   },
-  {
+  "Sleep Powder": {
     "name": "Sleep Powder",
     "category": "Non-Damaging",
     "power": 0,
@@ -4779,10 +4840,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Stun Spore": {
     "name": "Stun Spore",
     "category": "Non-Damaging",
     "power": 0,
@@ -4798,10 +4860,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Sweet Kiss": {
     "name": "Sweet Kiss",
     "category": "Non-Damaging",
     "power": 0,
@@ -4815,10 +4878,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Confuses"
+      "Confuses",
+      "Requires Target"
     ]
   },
-  {
+  "Will-O-Wisp": {
     "name": "Will-O-Wisp",
     "category": "Non-Damaging",
     "power": 0,
@@ -4834,10 +4898,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Bone Rush": {
     "name": "Bone Rush",
     "category": "Physical",
     "power": 25,
@@ -4853,7 +4918,7 @@
       "Multi-Hit"
     ]
   },
-  {
+  "Cross Chop": {
     "name": "Cross Chop",
     "category": "Physical",
     "power": 100,
@@ -4870,7 +4935,7 @@
       "High Crit"
     ]
   },
-  {
+  "Fury Swipes": {
     "name": "Fury Swipes",
     "category": "Physical",
     "power": 18,
@@ -4887,7 +4952,7 @@
       "Multi-Hit"
     ]
   },
-  {
+  "Hydro Pump": {
     "name": "Hydro Pump",
     "category": "Special",
     "power": 120,
@@ -4902,7 +4967,7 @@
       "Protect"
     ]
   },
-  {
+  "Kinesis": {
     "name": "Kinesis",
     "category": "Non-Damaging",
     "power": 0,
@@ -4920,10 +4985,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Psywave": {
     "name": "Psywave",
     "category": "Special",
     "power": 0,
@@ -4938,7 +5004,7 @@
       "Protect"
     ]
   },
-  {
+  "Rock Blast": {
     "name": "Rock Blast",
     "category": "Physical",
     "power": 25,
@@ -4954,7 +5020,7 @@
       "Multi-Hit"
     ]
   },
-  {
+  "Rock Tomb": {
     "name": "Rock Tomb",
     "category": "Physical",
     "power": 50,
@@ -4975,7 +5041,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Submission": {
     "name": "Submission",
     "category": "Physical",
     "power": 80,
@@ -4994,7 +5060,7 @@
       "Secondary"
     ]
   },
-  {
+  "Barrage": {
     "name": "Barrage",
     "category": "Physical",
     "power": 15,
@@ -5010,7 +5076,7 @@
       "Multi-Hit"
     ]
   },
-  {
+  "Bone Club": {
     "name": "Bone Club",
     "category": "Physical",
     "power": 65,
@@ -5018,7 +5084,7 @@
     "priority": 0,
     "pp": 20,
     "description": "10% chance to make the target flinch.",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Ground",
     "flags": [
       "Metronome",
@@ -5028,7 +5094,7 @@
       "Flinch"
     ]
   },
-  {
+  "Bounce": {
     "name": "Bounce",
     "category": "Physical",
     "power": 85,
@@ -5037,7 +5103,7 @@
     "pp": 5,
     "description": "Bounces turn 1. Hits turn 2. 30% paralyze.",
     "status": "PAR",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Flying",
     "flags": [
       "Contact",
@@ -5050,7 +5116,7 @@
       "Semi-invulnerable"
     ]
   },
-  {
+  "Comet Punch": {
     "name": "Comet Punch",
     "category": "Physical",
     "power": 18,
@@ -5067,7 +5133,7 @@
       "Multi-Hit"
     ]
   },
-  {
+  "Cotton Spore": {
     "name": "Cotton Spore",
     "category": "Non-Damaging",
     "power": 0,
@@ -5085,10 +5151,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Crabhammer": {
     "name": "Crabhammer",
     "category": "Special",
     "power": 90,
@@ -5105,7 +5172,7 @@
       "High Crit"
     ]
   },
-  {
+  "Doom Desire": {
     "name": "Doom Desire",
     "category": "Physical",
     "power": 120,
@@ -5120,7 +5187,7 @@
       "Cant Crit"
     ]
   },
-  {
+  "Double Slap": {
     "name": "Double Slap",
     "category": "Physical",
     "power": 15,
@@ -5137,7 +5204,7 @@
       "Multi-Hit"
     ]
   },
-  {
+  "Fire Blast": {
     "name": "Fire Blast",
     "category": "Special",
     "power": 120,
@@ -5146,7 +5213,7 @@
     "pp": 5,
     "description": "10% chance to burn the target.",
     "status": "BRN",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Fire",
     "flags": [
       "Metronome",
@@ -5156,7 +5223,7 @@
       "Status"
     ]
   },
-  {
+  "Fury Attack": {
     "name": "Fury Attack",
     "category": "Physical",
     "power": 15,
@@ -5173,7 +5240,7 @@
       "Multi-Hit"
     ]
   },
-  {
+  "Mega Punch": {
     "name": "Mega Punch",
     "category": "Physical",
     "power": 80,
@@ -5189,7 +5256,7 @@
       "Protect"
     ]
   },
-  {
+  "Megahorn": {
     "name": "Megahorn",
     "category": "Physical",
     "power": 120,
@@ -5205,7 +5272,7 @@
       "Protect"
     ]
   },
-  {
+  "Metal Sound": {
     "name": "Metal Sound",
     "category": "Non-Damaging",
     "power": 0,
@@ -5224,10 +5291,11 @@
       "Protect",
       "Reflectable",
       "Sound",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Meteor Mash": {
     "name": "Meteor Mash",
     "category": "Physical",
     "power": 100,
@@ -5238,7 +5306,7 @@
     "stat changes": {
       "attack": 1
     },
-    "chance": 0.20,
+    "chance": 0.2,
     "type": "Steel",
     "flags": [
       "Contact",
@@ -5249,7 +5317,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Muddy Water": {
     "name": "Muddy Water",
     "category": "Special",
     "power": 95,
@@ -5260,7 +5328,7 @@
     "stat changes": {
       "accuracy": -1
     },
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Water",
     "flags": [
       "Metronome",
@@ -5270,7 +5338,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Octazooka": {
     "name": "Octazooka",
     "category": "Special",
     "power": 65,
@@ -5281,7 +5349,7 @@
     "stat changes": {
       "accuracy": -1
     },
-    "chance": 0.50,
+    "chance": 0.5,
     "type": "Water",
     "flags": [
       "Metronome",
@@ -5291,7 +5359,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Pin Missile": {
     "name": "Pin Missile",
     "category": "Physical",
     "power": 14,
@@ -5307,7 +5375,7 @@
       "Multi-Hit"
     ]
   },
-  {
+  "Rolling Kick": {
     "name": "Rolling Kick",
     "category": "Physical",
     "power": 60,
@@ -5315,7 +5383,7 @@
     "priority": 0,
     "pp": 15,
     "description": "30% chance to make the target flinch.",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Fighting",
     "flags": [
       "Contact",
@@ -5326,7 +5394,7 @@
       "Flinch"
     ]
   },
-  {
+  "Screech": {
     "name": "Screech",
     "category": "Non-Damaging",
     "power": 0,
@@ -5345,10 +5413,11 @@
       "Protect",
       "Reflectable",
       "Sound",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Take Down": {
     "name": "Take Down",
     "category": "Physical",
     "power": 90,
@@ -5367,7 +5436,7 @@
       "Secondary"
     ]
   },
-  {
+  "Toxic": {
     "name": "Toxic",
     "category": "Non-Damaging",
     "power": 0,
@@ -5383,10 +5452,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Status"
+      "Status",
+      "Requires Target"
     ]
   },
-  {
+  "Wrap": {
     "name": "Wrap",
     "category": "Physical",
     "power": 15,
@@ -5404,7 +5474,7 @@
       "Trapping"
     ]
   },
-  {
+  "Blast Burn": {
     "name": "Blast Burn",
     "category": "Special",
     "power": 150,
@@ -5421,7 +5491,7 @@
       "Secondary"
     ]
   },
-  {
+  "Blaze Kick": {
     "name": "Blaze Kick",
     "category": "Special",
     "power": 85,
@@ -5430,7 +5500,7 @@
     "pp": 10,
     "description": "High critical hit ratio. 10% chance to burn.",
     "status": "BRN",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Fire",
     "flags": [
       "Contact",
@@ -5442,7 +5512,7 @@
       "Status"
     ]
   },
-  {
+  "Bonemerang": {
     "name": "Bonemerang",
     "category": "Physical",
     "power": 50,
@@ -5458,7 +5528,7 @@
       "Double-Hit"
     ]
   },
-  {
+  "Frenzy Plant": {
     "name": "Frenzy Plant",
     "category": "Special",
     "power": 150,
@@ -5475,7 +5545,7 @@
       "Secondary"
     ]
   },
-  {
+  "Future Sight": {
     "name": "Future Sight",
     "category": "Special",
     "power": 80,
@@ -5490,7 +5560,7 @@
       "Cant Crit"
     ]
   },
-  {
+  "Heat Wave": {
     "name": "Heat Wave",
     "category": "Special",
     "power": 100,
@@ -5499,7 +5569,7 @@
     "pp": 10,
     "description": "10% chance to burn the foe(s).",
     "status": "BRN",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Fire",
     "flags": [
       "Metronome",
@@ -5509,7 +5579,7 @@
       "Status"
     ]
   },
-  {
+  "High Jump Kick": {
     "name": "High Jump Kick",
     "category": "Physical",
     "power": 85,
@@ -5525,7 +5595,7 @@
       "Protect"
     ]
   },
-  {
+  "Hydro Cannon": {
     "name": "Hydro Cannon",
     "category": "Special",
     "power": 150,
@@ -5542,7 +5612,7 @@
       "Secondary"
     ]
   },
-  {
+  "Hyper Beam": {
     "name": "Hyper Beam",
     "category": "Physical",
     "power": 150,
@@ -5559,7 +5629,7 @@
       "Secondary"
     ]
   },
-  {
+  "Hyper Fang": {
     "name": "Hyper Fang",
     "category": "Physical",
     "power": 80,
@@ -5567,7 +5637,7 @@
     "priority": 0,
     "pp": 15,
     "description": "10% chance to make the target flinch.",
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Normal",
     "flags": [
       "Contact",
@@ -5578,7 +5648,7 @@
       "Flinch"
     ]
   },
-  {
+  "Ice Ball": {
     "name": "Ice Ball",
     "category": "Special",
     "power": 30,
@@ -5594,7 +5664,7 @@
       "Protect"
     ]
   },
-  {
+  "Leech Seed": {
     "name": "Leech Seed",
     "category": "Non-Damaging",
     "power": 0,
@@ -5607,10 +5677,11 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Reflectable"
+      "Reflectable",
+      "Requires Target"
     ]
   },
-  {
+  "Overheat": {
     "name": "Overheat",
     "category": "Special",
     "power": 140,
@@ -5632,7 +5703,7 @@
       "Changes Attackers Stats"
     ]
   },
-  {
+  "Present": {
     "name": "Present",
     "category": "Physical",
     "power": 0,
@@ -5647,7 +5718,7 @@
       "Protect"
     ]
   },
-  {
+  "Psycho Boost": {
     "name": "Psycho Boost",
     "category": "Special",
     "power": 140,
@@ -5668,7 +5739,7 @@
       "Changes Attackers Stats"
     ]
   },
-  {
+  "Rock Slide": {
     "name": "Rock Slide",
     "category": "Physical",
     "power": 75,
@@ -5676,7 +5747,7 @@
     "priority": 0,
     "pp": 10,
     "description": "30% chance to make the foe(s) flinch.",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Rock",
     "flags": [
       "Metronome",
@@ -5686,7 +5757,7 @@
       "Flinch"
     ]
   },
-  {
+  "Rock Throw": {
     "name": "Rock Throw",
     "category": "Physical",
     "power": 50,
@@ -5701,7 +5772,7 @@
       "Protect"
     ]
   },
-  {
+  "Rollout": {
     "name": "Rollout",
     "category": "Physical",
     "power": 30,
@@ -5717,7 +5788,7 @@
       "Protect"
     ]
   },
-  {
+  "Scary Face": {
     "name": "Scary Face",
     "category": "Non-Damaging",
     "power": 0,
@@ -5735,10 +5806,11 @@
       "Mirror",
       "Protect",
       "Reflectable",
-      "Changes Defender Stats"
+      "Changes Defender Stats",
+      "Requires Target"
     ]
   },
-  {
+  "Sky Attack": {
     "name": "Sky Attack",
     "category": "Physical",
     "power": 140,
@@ -5746,7 +5818,7 @@
     "priority": 0,
     "pp": 5,
     "description": "Charges, then hits turn 2. 30% flinch. High crit.",
-    "chance": 0.30,
+    "chance": 0.3,
     "type": "Flying",
     "flags": [
       "Charge",
@@ -5759,7 +5831,7 @@
       "Flinch"
     ]
   },
-  {
+  "Sky Uppercut": {
     "name": "Sky Uppercut",
     "category": "Physical",
     "power": 85,
@@ -5776,7 +5848,7 @@
       "Bypass Fly"
     ]
   },
-  {
+  "Sonic Boom": {
     "name": "Sonic Boom",
     "category": "Physical",
     "power": 0,
@@ -5793,7 +5865,7 @@
       "Fixed Damage"
     ]
   },
-  {
+  "Steel Wing": {
     "name": "Steel Wing",
     "category": "Physical",
     "power": 70,
@@ -5804,7 +5876,7 @@
     "stat changes": {
       "defense": 1
     },
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Steel",
     "flags": [
       "Contact",
@@ -5815,7 +5887,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Super Fang": {
     "name": "Super Fang",
     "category": "Physical",
     "power": 0,
@@ -5831,7 +5903,7 @@
       "Protect"
     ]
   },
-  {
+  "Swagger": {
     "name": "Swagger",
     "category": "Non-Damaging",
     "power": 0,
@@ -5850,10 +5922,11 @@
       "Protect",
       "Reflectable",
       "Changes Defender Stats",
-      "Confuses"
+      "Confuses",
+      "Requires Target"
     ]
   },
-  {
+  "Triple Kick": {
     "name": "Triple Kick",
     "category": "Physical",
     "power": 10,
@@ -5869,7 +5942,7 @@
       "Protect"
     ]
   },
-  {
+  "Aeroblast": {
     "name": "Aeroblast",
     "category": "Physical",
     "power": 100,
@@ -5885,7 +5958,7 @@
       "High Crit"
     ]
   },
-  {
+  "Air Cutter": {
     "name": "Air Cutter",
     "category": "Physical",
     "power": 55,
@@ -5901,7 +5974,7 @@
       "High Crit"
     ]
   },
-  {
+  "Crush Claw": {
     "name": "Crush Claw",
     "category": "Physical",
     "power": 75,
@@ -5912,7 +5985,7 @@
     "stat changes": {
       "defense": -1
     },
-    "chance": 0.50,
+    "chance": 0.5,
     "type": "Normal",
     "flags": [
       "Contact",
@@ -5923,7 +5996,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Cut": {
     "name": "Cut",
     "category": "Physical",
     "power": 50,
@@ -5939,7 +6012,7 @@
       "Protect"
     ]
   },
-  {
+  "Fly": {
     "name": "Fly",
     "category": "Physical",
     "power": 70,
@@ -5956,7 +6029,7 @@
       "Semi-invulnerable"
     ]
   },
-  {
+  "Fury Cutter": {
     "name": "Fury Cutter",
     "category": "Physical",
     "power": 10,
@@ -5972,7 +6045,7 @@
       "Protect"
     ]
   },
-  {
+  "Icy Wind": {
     "name": "Icy Wind",
     "category": "Special",
     "power": 55,
@@ -5980,7 +6053,7 @@
     "priority": 0,
     "pp": 15,
     "description": "100% chance to lower the foe(s) Speed by 1.",
-     "stat changes": {
+    "stat changes": {
       "speed": -1
     },
     "chance": 1,
@@ -5993,7 +6066,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Jump Kick": {
     "name": "Jump Kick",
     "category": "Physical",
     "power": 70,
@@ -6009,7 +6082,7 @@
       "Protect"
     ]
   },
-  {
+  "Metal Claw": {
     "name": "Metal Claw",
     "category": "Physical",
     "power": 50,
@@ -6020,7 +6093,7 @@
     "stat changes": {
       "attack": 1
     },
-    "chance": 0.10,
+    "chance": 0.1,
     "type": "Steel",
     "flags": [
       "Contact",
@@ -6031,7 +6104,7 @@
       "Changes Attacker Stats"
     ]
   },
-  {
+  "Mud Shot": {
     "name": "Mud Shot",
     "category": "Physical",
     "power": 55,
@@ -6052,7 +6125,7 @@
       "Changes Defender Stats"
     ]
   },
-  {
+  "Nature Power": {
     "name": "Nature Power",
     "category": "Non-Damaging",
     "power": 0,
@@ -6062,10 +6135,11 @@
     "description": "Attack changes based on terrain. (Swift)",
     "type": "Normal",
     "flags": [
-      "Metronome"
+      "Metronome",
+      "Requires Target"
     ]
   },
-  {
+  "Razor Leaf": {
     "name": "Razor Leaf",
     "category": "Special",
     "power": 55,
@@ -6081,7 +6155,7 @@
       "High Crit"
     ]
   },
-  {
+  "Sacred Fire": {
     "name": "Sacred Fire",
     "category": "Special",
     "power": 100,
@@ -6090,7 +6164,7 @@
     "pp": 5,
     "description": "50% chance to burn the target. Thaws user.",
     "status": "BRN",
-    "chance": 0.50,
+    "chance": 0.5,
     "type": "Fire",
     "flags": [
       "Defrost",
@@ -6098,7 +6172,8 @@
       "Mirror",
       "Protect",
       "Secondary",
-      "Status"
+      "Status",
+      "Thaws"
     ]
   }
-]
+}
