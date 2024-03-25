@@ -3,7 +3,7 @@ from Classes import *
 
 
 ash = Player("Ash", [])
-weedle = Pokemon("Feraligatr", ash, 30)
+weedle = Pokemon("Testmon", ash, 5)
 pikachu = Pokemon("Pikachu", ash, 5)
 poliwhirl = Pokemon("Poliwhirl", ash, 5)
 ash.team.append(weedle)

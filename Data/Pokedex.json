@@ -457,7 +457,6 @@
       "Normal"
     ],
     "Abilities": [
-      "Run Away",
       "Guts"
     ],
     "dex_number": 19,
@@ -482,7 +481,6 @@
       "Normal"
     ],
     "Abilities": [
-      "Run Away",
       "Guts"
     ],
     "dex_number": 20,
@@ -1850,7 +1848,6 @@
       "Fire"
     ],
     "Abilities": [
-      "Run Away",
       "Flash Fire"
     ],
     "dex_number": 77,
@@ -1875,7 +1872,6 @@
       "Fire"
     ],
     "Abilities": [
-      "Run Away",
       "Flash Fire"
     ],
     "dex_number": 78,
@@ -2025,7 +2021,6 @@
       "Flying"
     ],
     "Abilities": [
-      "Run Away",
       "Early Bird"
     ],
     "dex_number": 84,
@@ -2051,7 +2046,6 @@
       "Flying"
     ],
     "Abilities": [
-      "Run Away",
       "Early Bird"
     ],
     "dex_number": 85,
@@ -2869,7 +2863,6 @@
       "Water"
     ],
     "Abilities": [
-      "Illuminate",
       "Natural Cure"
     ],
     "dex_number": 120,
@@ -2897,7 +2890,6 @@
       "Psychic"
     ],
     "Abilities": [
-      "Illuminate",
       "Natural Cure"
     ],
     "dex_number": 121,
@@ -3161,7 +3153,7 @@
       "Normal"
     ],
     "Abilities": [
-      "Run Away"
+      "Cute Charm"
     ],
     "dex_number": 133,
     "evos": [
@@ -3810,7 +3802,6 @@
       "Normal"
     ],
     "Abilities": [
-      "Run Away",
       "Keen Eye"
     ],
     "dex_number": 161,
@@ -3835,7 +3826,6 @@
       "Normal"
     ],
     "Abilities": [
-      "Run Away",
       "Keen Eye"
     ],
     "dex_number": 162,
@@ -4027,8 +4017,7 @@
       "Electric"
     ],
     "Abilities": [
-      "Volt Absorb",
-      "Illuminate"
+      "Volt Absorb"
     ],
     "dex_number": 170,
     "evos": [
@@ -4053,8 +4042,7 @@
       "Electric"
     ],
     "Abilities": [
-      "Volt Absorb",
-      "Illuminate"
+      "Volt Absorb"
     ],
     "dex_number": 171,
     "evos": [],
@@ -4497,7 +4485,6 @@
       "Normal"
     ],
     "Abilities": [
-      "Run Away",
       "Pickup"
     ],
     "dex_number": 190,
@@ -4857,8 +4844,7 @@
       "Normal"
     ],
     "Abilities": [
-      "Serene Grace",
-      "Run Away"
+      "Serene Grace"
     ],
     "dex_number": 206,
     "evos": [],
@@ -4925,8 +4911,7 @@
       "Normal"
     ],
     "Abilities": [
-      "Intimidate",
-      "Run Away"
+      "Intimidate"
     ],
     "dex_number": 209,
     "evos": [
@@ -6115,7 +6100,7 @@
       "Dark"
     ],
     "Abilities": [
-      "Run Away"
+      "Intimidate"
     ],
     "dex_number": 261,
     "evos": [
@@ -7296,7 +7281,7 @@
       "Electric"
     ],
     "Abilities": [
-      "Plus"
+      "Lightning Rod"
     ],
     "dex_number": 311,
     "evos": [],
@@ -7317,7 +7302,7 @@
       "Electric"
     ],
     "Abilities": [
-      "Minus"
+      "Volt Absorb"
     ],
     "dex_number": 312,
     "evos": [],
@@ -7338,7 +7323,6 @@
       "Bug"
     ],
     "Abilities": [
-      "Illuminate",
       "Swarm"
     ],
     "dex_number": 313,
@@ -9148,7 +9132,7 @@
       "Poison"
     ],
     "Abilities": [
-      "Drizzle"
+      "Intimidate"
     ],
     "dex_number": 386,
     "evos": [],
@@ -9171,7 +9155,7 @@
       "Grass"
     ],
     "Abilities": [
-      "Drought"
+      "Keen Eye"
     ],
     "dex_number": 386,
     "evos": [],

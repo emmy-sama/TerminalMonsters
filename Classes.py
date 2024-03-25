@@ -93,6 +93,7 @@ class Pokemon:
         self.charged = False
         self.first_turn = True
         self.acted = False
+        self.flash_fired = False
         self.bide = 0
         self.outraging = 0
         self.rage = False
@@ -172,6 +173,7 @@ class Pokemon:
         self.cursed = False
         self.protecting = False
         self.protecting_chance = 1
+        self.flash_fired = False
 
     def learn_move(self):
         move = learn_sets.get(self.species.lower()).get("level").get(str(self.level))
