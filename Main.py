@@ -16,6 +16,9 @@ terminal.set("0xF8F8: data/pngs/Cave.png, align=center")
 terminal.set("0xF8F7: data/pngs/Ocean.png, align=center")
 terminal.set("0xF8F6: data/pngs/City.png, align=center")
 terminal.set("0xF8F5: data/pngs/moon.png, align=center")
+terminal.set("0xF8F4: data/pngs/Pokeball.png, align=bottom-right")
+terminal.set("0xF8F3: data/pngs/Pokeball_Half_Open.png, align=bottom-right")
+terminal.set("0xF8F2: data/pngs/Pokeball_Open.png, align=bottom-right")
 terminal.set("0x2640: data/pngs/Female_symbol.png, align=center")
 terminal.set("0x2642: data/pngs/Male_symbol.png, align=center")
 terminal.set("font: data/pokemon.ttf, size=16")
@@ -48,8 +51,10 @@ def print_player_pokemon():
     x2 = 14
     y = 14
     y2 = 9
+    i = 0
     for mon in player.team:
-        terminal.printf(x, y, f"1 {mon}")
+        i += 1
+        terminal.printf(x, y, f"{i} {mon}")
         terminal.put(x2, y2, int(mon.front_sprite, 16))
         x += 28
         x2 += 28

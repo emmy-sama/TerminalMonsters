@@ -1,3 +1,5 @@
+import math
+
 from Classes import *
 from bearlibterminal import terminal
 import time
@@ -206,21 +208,21 @@ class Battle:
         self.p_move_last = None
         self.ai_move = None
         self.ai_move_last = None
+        self.print_ui(True)
+        self.on_switch_in(player.active, ai.active)
+        self.on_switch_in(ai.active, player.active)
+        self.finished = False
 
-    def print_ui(self):
+    def print_ui(self, first_turn=False):
         terminal.layer(0)
         terminal.put(0, 0, 0xF8FF)
         terminal.layer(1)
-        if self.player.active is not None and self.ai.active is not None:
-            terminal.put(68, 5, int(self.ai.active.front_sprite, 16))
-        if self.player.active is not None and self.ai.active is not None:
-            terminal.put(23, 14, int(self.player.active.back_sprite, 16))
-        if self.player.active is not None and self.ai.active is not None:
+        if self.player.active is not None and self.ai.active is not None and not first_turn:
             self.hp_bars()
         terminal.refresh()
 
     def battle(self):
-        while True:
+        while not self.finished:
             self.clean_up()
             self.print_ui()
             if can_attack(self.ai.active):
@@ -324,10 +326,10 @@ class Battle:
                 self.print_ui()
                 break
             elif i + 1 <= len(self.player.team):
-                if self.print_pokemon(i):
+                if self.print_pokemon(i, must_swap):
                     return True
 
-    def print_pokemon(self, slot):
+    def print_pokemon(self, slot, must_swap):
         while True:
             terminal.clear_area(45, 17, 42, 7)
             self.print_ui()
@@ -336,7 +338,7 @@ class Battle:
                       f"{self.player.team[slot].info}", 0)
             i = get_input(enter=True, backspace=True)
             if i == 40:
-                if not can_swap(self.player.active, self.ai.active):
+                if not must_swap and not can_swap(self.player.active, self.ai.active):
                     print_txt(f"{self.player.active.species} is trapped and cant switch out!")
                     break
                 if self.player.active == self.player.team[slot]:
@@ -345,13 +347,29 @@ class Battle:
                 if self.player.active is not None:
                     self.player.active.reset_temp()
                 self.player.active = self.player.team[slot]
-                self.player.active.first_turn = True
-                terminal.clear_area(45, 20, 42, 4)
-                print_txt(f"{self.player.name} sent out {self.player.active.species}")
-                self.print_ui()
+                self.on_switch_in(self.player.active, self.ai.active)
                 return True
             if i == 42:
                 return False
+
+    def on_switch_in(self, mon_1, mon_2):
+        terminal.clear_area(1, 20, 42, 4)
+        mon_1.first_turn = True
+        terminal.clear_area(45, 20, 42, 4)
+        self.poke_ball_animation(mon_1.owner)
+        print_txt(f"{mon_1.owner.name} sent out {mon_1.species}")
+        if mon_1.ability == "Drizzle":
+            self.weather = "Rain"
+            print_txt("It started to rain!")
+            # print pop up
+        elif mon_1.ability == "Drought":
+            self.weather = "Sun"
+            print_txt("The sun light got bright!")
+            # print pop up
+        elif mon_1.ability == "Sand Stream":
+            self.weather = "Sand"
+            print_txt("A sand storm brewed!")
+            # print pop up
 
     def speed_check(self):
         if self.p_move.get("priority") > self.ai_move.get("priority"):
@@ -571,6 +589,12 @@ class Battle:
             if ("Requires Target" in move.get("flags") or move.get("category") == "Special"
                     or move.get("category") == "Physical"):
                 print_txt("But it failed")
+                attacker.acted = True
+                return
+        if "Explode" in move.get("flags"):
+            if defender.ability == "Damp" or attacker.ability == "Damp":
+                print_txt("But it failed")
+                # print pop up
                 attacker.acted = True
                 return
         if defender.protecting and "Protect" in move.get("flags"):
@@ -1269,6 +1293,7 @@ class Battle:
                 # self.player.active.perish  = passer_perish
             elif attacker == self.ai.active and len(self.ai.active) > 1:
                 self.ai.active = random.choice(self.ai.team)
+                self.poke_ball_animation(self.ai)
                 print_txt(f"{self.ai.name} sent out {self.ai.active.species}")
                 self.ai.active.temp_stats = passer_temp_stats
                 self.ai.active.confused = passer_confused
@@ -1556,6 +1581,7 @@ class Battle:
                 self.ai.active = None
             if not self.ai.team:
                 print_txt(f"{self.player.name} Wins!")
+                self.finished = True
                 return True
             self.ai.active = random.choice(self.ai.team)
             self.ai.active.first_turn = True
@@ -1567,9 +1593,11 @@ class Battle:
                 self.player.active = None
             if not self.player.team:
                 print_txt(f"{self.ai.name} Wins!")
+                self.finished = True
                 return True
             self.player_swap(True)
         if swapped:
+            self.poke_ball_animation(self.ai)
             print_txt(f"{self.ai.name} sent out {self.ai.active.species}")
 
     def deal_dmg(self, victim, amount):
@@ -1592,10 +1620,10 @@ class Battle:
         else:
             for blink in range(0, 4):
                 if amount >= 0:
-                    terminal.clear_area(68, 5, 1, 1)
+                    terminal.clear_area(66, 5, 1, 1)
                     terminal.refresh()
                     time.sleep(0.1)
-                    terminal.put(68, 5, int(self.ai.active.front_sprite, 16))
+                    terminal.put(66, 5, int(self.ai.active.front_sprite, 16))
                     terminal.refresh()
                     time.sleep(0.15)
             x = 3
@@ -1681,7 +1709,7 @@ class Battle:
         if self.ai.active is not None and self.ai.active.chp <= 0:
             self.ai.team.remove(self.ai.active)
             print_txt(f"{self.ai.name}'s {self.ai.active.species} fainted!")
-            terminal.clear_area(68, 5, 1, 1)
+            terminal.clear_area(66, 5, 1, 1)
             self.ai.active = None
         if self.player.active is not None and self.player.active.chp <= 0:
             self.player.team.remove(self.player.active)
@@ -1689,36 +1717,78 @@ class Battle:
             terminal.clear_area(23, 14, 1, 1)
             self.player.active = None
 
-    def hp_bars(self):
+    def poke_ball_animation(self, side):
+        if isinstance(side, Player):
+            path = [[0, 13], [2, 12], [4, 11], [6, 11], [8, 11], [10, 12], [12, 13], [14, 14], [16, 15], [18, 16],
+                    [20, 17], [22, 18]]
+            for cord in path:
+                terminal.clear_area(0, 11, 30, 8)
+                terminal.put(cord[0], cord[1], 0xF8F4)
+                terminal.refresh()
+                time.sleep(0.1)
+            terminal.clear_area(0, 11, 30, 8)
+            terminal.put(22, 18, 0xF8F3)
+            terminal.refresh()
+            time.sleep(0.1)
+            terminal.clear_area(0, 11, 30, 8)
+            terminal.put(22, 18, 0xF8F2)
+            terminal.refresh()
+            time.sleep(0.2)
+            terminal.clear_area(0, 11, 30, 8)
+            self.hp_bars(ai=False)
+            terminal.put(23, 14, int(side.active.back_sprite, 16))
+        if isinstance(side, Ai):
+            path = [[87, 4], [86, 3], [84, 2], [82, 2], [80, 2], [78, 3], [76, 4], [74, 5], [72, 6], [70, 7], [68, 8],
+                    [66, 9]]
+            for cord in path:
+                terminal.clear_area(68, 2, 30, 8)
+                terminal.put(cord[0], cord[1], 0xF8F4)
+                terminal.refresh()
+                time.sleep(0.1)
+            terminal.clear_area(66, 2, 30, 8)
+            terminal.put(66, 9, 0xF8F3)
+            terminal.refresh()
+            time.sleep(0.1)
+            terminal.clear_area(66, 2, 30, 8)
+            terminal.put(66, 9, 0xF8F2)
+            terminal.refresh()
+            time.sleep(0.2)
+            terminal.clear_area(66, 2, 30, 8)
+            self.hp_bars(player=False)
+            terminal.put(66, 5, int(side.active.front_sprite, 16))
+
+    def hp_bars(self, ai=True, player=True):
         hp_symbol = "█"
         lost_hp = "░"
         bars = 20
-        ai_remaining_health_bars = round(self.ai.active.chp / self.ai.active.hp * bars)
-        if ai_remaining_health_bars <= 0:
-            ai_lost_bars = bars
-        else:
-            ai_lost_bars = bars - ai_remaining_health_bars
-        terminal.clear_area(1, 1, 26, 3)
-        terminal.printf(3, 1, f"{self.ai.active.species} {self.ai.active.gender}")
-        terminal.printf(22, 1, f"Lv{self.ai.active.level}")
-        terminal.printf(3, 2, f"HP: {ai_remaining_health_bars * hp_symbol}{ai_lost_bars * lost_hp}")
-        if self.ai.active.chp <= 0:
-            terminal.printf(20, 3, f"0/{self.ai.active.hp}")
-        else:
-            terminal.printf(20, 3, f"{self.ai.active.chp}/{self.ai.active.hp}")
-        player_remaining_health_bars = round(self.player.active.chp / self.player.active.hp * bars)
-        if player_remaining_health_bars <= 0:
-            player_lost_bars = bars
-        else:
-            player_lost_bars = bars - player_remaining_health_bars
-        terminal.clear_area(61, 16, 26, 3)
-        terminal.printf(61, 16, f"{self.player.active.species} {self.player.active.gender}")
-        terminal.printf(80, 16, f"Lv{self.player.active.level}")
-        terminal.printf(61, 17, f"HP: {player_remaining_health_bars * hp_symbol}{player_lost_bars * lost_hp}")
-        if self.player.active.chp <= 0:
-            terminal.printf(78, 18, f"0/{self.player.active.hp}")
-        else:
-            terminal.printf(78, 18, f"{self.player.active.chp}/{self.player.active.hp}")
+        if ai:
+            ai_remaining_health_bars = round(self.ai.active.chp / self.ai.active.hp * bars)
+            if ai_remaining_health_bars <= 0:
+                ai_lost_bars = bars
+            else:
+                ai_lost_bars = bars - ai_remaining_health_bars
+            terminal.clear_area(1, 1, 26, 3)
+            terminal.printf(3, 1, f"{self.ai.active.species} {self.ai.active.gender}")
+            terminal.printf(22, 1, f"Lv{self.ai.active.level}")
+            terminal.printf(3, 2, f"HP: {ai_remaining_health_bars * hp_symbol}{ai_lost_bars * lost_hp}")
+            if self.ai.active.chp <= 0:
+                terminal.printf(20, 3, f"0/{self.ai.active.hp}")
+            else:
+                terminal.printf(20, 3, f"{self.ai.active.chp}/{self.ai.active.hp}")
+        if player:
+            player_remaining_health_bars = round(self.player.active.chp / self.player.active.hp * bars)
+            if player_remaining_health_bars <= 0:
+                player_lost_bars = bars
+            else:
+                player_lost_bars = bars - player_remaining_health_bars
+            terminal.clear_area(61, 16, 26, 3)
+            terminal.printf(61, 16, f"{self.player.active.species} {self.player.active.gender}")
+            terminal.printf(80, 16, f"Lv{self.player.active.level}")
+            terminal.printf(61, 17, f"HP: {player_remaining_health_bars * hp_symbol}{player_lost_bars * lost_hp}")
+            if self.player.active.chp <= 0:
+                terminal.printf(78, 18, f"0/{self.player.active.hp}")
+            else:
+                terminal.printf(78, 18, f"{self.player.active.chp}/{self.player.active.hp}")
         terminal.refresh()
 
     def turn_end(self):
@@ -1741,6 +1811,8 @@ class Battle:
                         f"{trainer.opponent.name}'s {trainer.opponent.active.species} "
                         f"was hurt by {trainer.active.trapping[1]}!")
                     self.deal_dmg(trainer.opponent.active, math.floor(trainer.opponent.active.hp / 16))
+                    if trainer.active is None:
+                        break
                     trainer.opponent.active.damaged_this_turn = True
                     if trainer.opponent.active.bide != 0:
                         trainer.opponent.active.bide_dmg += math.floor(trainer.opponent.active.hp / 16)
@@ -1756,6 +1828,8 @@ class Battle:
                 if trainer.active.cursed:
                     print_txt(f"{trainer.name}'s {trainer.active.species} was hurt by the curse")
                     self.deal_dmg(trainer.active, math.floor(trainer.active.hp / 4))
+                    if trainer.active is None:
+                        break
                     if trainer.active.rage:
                         change_stats(trainer.active, trainer.active, "Rage")
                         trainer.active.damaged_this_turn = True
@@ -1765,14 +1839,16 @@ class Battle:
                 if trainer.active.status == "BRN":
                     print_txt(f"{trainer.name}'s {trainer.active.species} was hurt by it's burn!")
                     self.deal_dmg(trainer.active, math.floor(trainer.active.hp / 8))
-                if trainer.active.status == "PSN":
+                elif trainer.active.status == "PSN":
                     print_txt(f"{trainer.name}'s {trainer.active.species} was hurt by poison!", 0.5)
                     self.deal_dmg(trainer.active, math.floor(trainer.active.hp / 8))
-                if trainer.active.status == "TOX":
+                elif trainer.active.status == "TOX":
                     print_txt(f"{trainer.name}'s {trainer.active.species} was hurt by poison!", 0.5)
                     trainer.active.tox_turns += 1
                     dmg = math.floor(trainer.active.hp * (trainer.active.tox_turns / 16))
                     self.deal_dmg(trainer.active, dmg)
+                if trainer.active is None:
+                    break
                 if trainer.reflect > 0:
                     trainer.reflect -= 1
                 if trainer.light_screen > 0:

@@ -23195,10 +23195,10 @@
   },
   "testmon2": {
     "level": {
-      "1": "Tackle",
+      "8": "Tackle",
       "6": "Water Sport",
       "7": "Clamp",
-      "8": "Explosion",
+      "1": "Leer",
       "20": "Spikes",
       "25": "Tackle",
       "30": "Swift",

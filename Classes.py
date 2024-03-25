@@ -129,7 +129,7 @@ class Pokemon:
         ms = []
         ls = learn_sets.get(str(self.species).lower())
         for level in ls.get("level"):
-            if int(level) <= self.level:
+            if int(level) <= self.level and ls.get("level").get(level).title() not in ms:
                 if len(ms) >= 4:
                     ms.pop(0)
                     ms.insert(0, ls.get("level").get(level).title())
@@ -175,7 +175,7 @@ class Pokemon:
 
     def learn_move(self):
         move = learn_sets.get(self.species.lower()).get("level").get(str(self.level))
-        if move is not None:
+        if move is not None and move not in self.moves:
             terminal.clear()
             if len(self.moves) == 4:
                 terminal.put(0, 0, 0xF8FC)
@@ -226,8 +226,14 @@ class Pokemon:
                         terminal.printf(20, 6, f"{self.species} kept its old moves")
                         terminal.refresh()
                         break
+                time.sleep(1.5)
             else:
                 self.moves.append(move)
+                terminal.clear()
+                terminal.put(0, 0, 0xF8FC)
+                terminal.printf(20, 6, f"{self.species} learned {move}")
+                terminal.refresh()
+                time.sleep(1.5)
 
     def evolve(self, species):
         dex_entry = pokedex.get(species)
@@ -250,6 +256,12 @@ class Pokemon:
         self.evolvl = dex_entry.get("evo_level", None)
         self.stone = dex_entry.get("Stone", None)
         self.evo = dex_entry.get("evos", None)
+        self.bHp = dex_entry.get("bHP")
+        self.bAttack = dex_entry.get("bAttack")
+        self.bDefense = dex_entry.get("bDefense")
+        self.bSp_attack = dex_entry.get("bSp.Attack")
+        self.bSp_defense = dex_entry.get("bSp.Defense")
+        self.bSpeed = dex_entry.get("bSpeed")
         self.calc_stats()
         self.info = (f"{self.gender} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
                      f"Sp.Attack: {self.sp_attack} Sp.Defense: {self.sp_defense} Speed: {self.speed}")
@@ -259,7 +271,6 @@ class Pokemon:
             self.level += 1
             self.calc_stats()
             self.learn_move()
-            time.sleep(0.5)
             self.info = (f"{self.gender} {self.nature.get("Name")} Attack: {self.attack} Defense: {self.defense} "
                          f"Sp.Attack: {self.sp_attack} Sp.Defense: {self.sp_defense} Speed: {self.speed}")
             if self.evolvl is not None:
@@ -281,7 +292,7 @@ class Pokemon:
                             else:
                                 self.evolve(self.evo[0])
                             self.learn_move()
-                            time.sleep(0.5)
+                            time.sleep(1.5)
                             break
                         elif button == terminal.TK_BACKSPACE:
                             break
