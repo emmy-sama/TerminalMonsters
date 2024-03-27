@@ -84,6 +84,7 @@ class Pokemon:
         self.temp_stats = {"attack": 0, "defense": 0, "sp_attack": 0, "sp_defense": 0, "speed": 0, "accuracy": 0,
                            "evasion": 0}
         self.charge = False
+        self.loafing = False
         self.stockpile = 0
         self.semi_invulnerable = None
         self.minimized = False
@@ -161,19 +162,33 @@ class Pokemon:
                                 * self.nature.get("Speed", 1))
 
     def reset_temp(self):
+        # Stat Changes
         self.temp_stats = self.temp_stats.fromkeys(self.temp_stats.keys(), 0)
-        self.fury_cutter = 0
-        self.rolling = 0
+        self.getting_pumped = False
+        # Status
         self.tox_turns = 0
         self.confused = False
-        self.getting_pumped = False
+        self.cursed = False
+        self.flinching = False
+        # Moves
+        self.fury_cutter = 0
+        self.fury_cutter_hit = False
+        self.rolling = 0
+        self.rolling_hit = False
         self.blocking = False
         self.water_sport = False
         self.mud_sport = False
-        self.cursed = False
         self.protecting = False
+        self.enduring = False
         self.protecting_chance = 1
+        # Abilities
         self.flash_fired = False
+        # Battle Effects
+        self.first_turn = True
+        self.acted = False
+        self.damaged_this_turn = False
+        self.dmg_last_type_taken = None
+        self.dmg_last_taken = 0
 
     def learn_move(self):
         move = learn_sets.get(self.species.lower()).get("level").get(str(self.level))

@@ -31,8 +31,10 @@ def get_input(inputs=0, enter=False, backspace=False):
 
 
 def dmg_range(total):
+    l = []
     for n in range(85, 101):
-        print(math.floor(total * (n / 100)))
+        l.append(math.floor(total * (n / 100)))
+    print(l)
 
 
 def print_txt(txt, delay=1.5):
@@ -102,6 +104,8 @@ def change_stats(attacker, defender, move):
             # print popup
         return
     rng = random.uniform(0, 1)
+    if attacker.ability == "Serene Grace":
+        move["chance"] = move.get("chance") * 2
     if rng <= move.get("chance"):
         if "Changes Attacker Stats" in move.get("flags"):
             for key in list(move.get("stat changes").keys()):
@@ -166,47 +170,29 @@ def can_swap(mon_1, mon_2):
     return True
 
 
-def contact(attacker, defender, move):
-    # print pop up
-    if defender.ability == "Cute Charm":
-        # add infatuate
-        pass
-    if attacker.status == "":
-        if defender.ability == "Effect Spore":
-            if random.uniform(0, 1) <= 0.1:
-                # print pop up
-                status = random.choice(["SLP", "PSN", "PAR"])
-                if status == "SLP":
-                    give_status(attacker, defender, "SLP")
-                elif status == "PSN":
-                    give_status(attacker, defender, "PSN")
-                elif status == "PAR":
-                    give_status(attacker, defender, "PAR")
-        if random.uniform(0, 1) <= 0.33:
-            # print pop up
-            if defender.ability == "Flame Body":
-                give_status(attacker, defender, "BRN")
-            if defender.ability == "Poison Point":
-                give_status(attacker, defender, "PSN")
-            if defender.ability == "Static":
-                give_status(attacker, defender, "PAR")
-
-
 def give_status(attacker, defender, status, display=True):
     if status == "BRN":
-        if defender.status != "" and display:
-            print_txt(f"{defender.owner.name}'s {defender.species} is already burned!")
+        if defender.status != "":
+            if defender.status == "BRN" and display:
+                print_txt(f"{defender.owner.name}'s {defender.species} is already burned!")
+            elif display:
+                print_txt("It has no effect!")
         elif defender.type_one != "Fire" and defender.type_two != "Fire" and defender.ability != "Water Veil":
             defender.status = "BRN"
             print_txt(f"{defender.owner.name}'s {defender.species} was burned!")
+            if defender.ability == "Synchronize":
+                give_status(defender, attacker, status)
         elif display:
             if defender.ability == "Water Veil":
                 pass
             # print pop up
             print_txt("It has no effect!")
     elif status == "FRZ":
-        if defender.status != "" and display:
-            print_txt(f"{defender.owner.name}'s {defender.species} is already frozen!")
+        if defender.status != "":
+            if defender.status == "FRZ" and display:
+                print_txt(f"{defender.owner.name}'s {defender.species} is already frozen!")
+            elif display:
+                print_txt("It has no effect!")
         elif defender.type_one != "Ice" and defender.type_two != "Ice" and defender.ability != "Magma Armor":
             defender.status = "FRZ"
             print_txt(f"{defender.owner.name}'s {defender.species} was frozen!")
@@ -216,43 +202,65 @@ def give_status(attacker, defender, status, display=True):
             # print pop up
             print_txt("It has no effect!")
     elif status == "PAR":
-        if defender.status != "" and display:
-            print_txt(f"{defender.owner.name}'s {defender.species} is already paralyzed!")
+        if defender.status != "":
+            if defender.status == "PAR" and display:
+                print_txt(f"{defender.owner.name}'s {defender.species} is already paralyzed!")
+            elif display:
+                print_txt("It has no effect!")
         elif defender.ability != "Limber":
             defender.status = "PAR"
             print_txt(f"{defender.owner.name}'s {defender.species} was paralyzed!")
+            if defender.ability == "Synchronize":
+                give_status(defender, attacker, status)
         elif defender.ability == "Limber" and display:
             # print pop up
             print_txt("It has no effect!")
     elif status == "PSN":
-        if defender.status != "" and display:
-            print_txt(f"{defender.owner.name}'s {defender.species} is already poisoned!")
+        if defender.status != "":
+            if defender.status == "PSN" and display:
+                print_txt(f"{defender.owner.name}'s {defender.species} is already poisoned!")
+            elif defender.status == "TOX" and display:
+                print_txt(f"{defender.owner.name}'s {defender.species} is already poisoned!")
+            elif display:
+                print_txt("It has no effect!")
         elif (defender.type_one != "Poison" and defender.type_two != "Poison" and
               defender.type_one != "Steel" and defender.type_two != "Steel" and defender.ability != "Immunity"):
             defender.status = "PSN"
             print_txt(f"{defender.owner.name}'s {defender.species} was poisoned!")
+            if defender.ability == "Synchronize":
+                give_status(defender, attacker, status)
         elif display:
             if defender.ability == "Immunity":
                 pass
             # print pop up
             print_txt("It has no effect!")
     elif status == "TOX":
-        if defender.status != "" and display:
-            print_txt(f"{defender.owner.name}'s {defender.species} is already poisoned!")
+        if defender.status != "":
+            if defender.status == "PSN" and display:
+                print_txt(f"{defender.owner.name}'s {defender.species} is already poisoned!")
+            elif defender.status == "TOX" and display:
+                print_txt(f"{defender.owner.name}'s {defender.species} is already poisoned!")
+            elif display:
+                print_txt("It has no effect!")
         elif (defender.type_one != "Poison" and defender.type_two != "Poison" and
               defender.type_one != "Steel" and defender.type_two != "Steel" and defender.ability != "Immunity"):
             defender.status = "TOX"
             defender.tox_turns = 0
             print_txt(f"{defender.owner.name}'s {defender.species} was badly poisoned!")
+            if defender.ability == "Synchronize":
+                give_status(defender, attacker, "PSN")
         elif display:
             if defender.ability == "Immunity":
                 pass
             # print pop up
             print_txt("It has no effect!")
     elif status == "SLP":
-        if defender.status != "" and display:
-            print_txt(f"{defender.owner.name}'s {defender.species} is already asleep!")
-        elif attacker.uproar != 0 or defender.uproar != 0:
+        if defender.status != "":
+            if defender.status == "SLP" and display:
+                print_txt(f"{defender.owner.name}'s {defender.species} is already asleep!")
+            elif display:
+                print_txt("It has no effect!")
+        elif defender.ability != "Soundproof" and attacker.uproar != 0 or defender.ability != "Soundproof" and defender.uproar != 0:
             print_txt(f"{defender.owner.name}'s {defender.species} cannot fall asleep due to the uproar!")
         elif defender.ability not in ["Insomnia", "Vital Spirit"]:
             defender.status = "SLP"
@@ -278,6 +286,33 @@ def check_for_status_cure(mon_1):
     elif mon_1.ability == "Water Veil" and mon_1.status == "BRN":
         mon_1.status = ""
         # print pop up
+
+
+def clean_up(order):
+    for mon in order:
+        mon.first_turn = False
+        mon.acted = False
+        mon.damaged_this_turn = False
+        mon.dmg_last_type_taken = None
+        mon.dmg_last_taken = 0
+        if mon.fury_cutter != 0 and not mon.fury_cutter_hit:
+            mon.fury_cutter = 0
+        elif mon.fury_cutter_hit:
+            mon.fury_cutter_hit = False
+        if mon.rolling != 0 and not mon.rolling_hit:
+            mon.rolling = 0
+        elif mon.rolling_hit:
+            mon.rolling_hit = False
+        if mon.protecting:
+            mon.protecting_chance = mon.protecting_chance / 2
+            mon.protecting = False
+        elif not mon.protecting:
+            mon.protecting_chance = 1
+        if mon.enduring:
+            mon.protecting_chance = mon.protecting_chance / 2
+            mon.enduring = False
+        elif not mon.enduring:
+            mon.protecting_chance = 1
 
 
 class Battle:
@@ -316,12 +351,12 @@ class Battle:
 
     def battle(self):
         while not self.finished:
-            self.clean_up()
             self.print_ui()
             if can_attack(self.ai.active):
                 if self.ai.active.recharge:
                     self.ai_move = None
                     self.ai.active.recharge = False
+                    self.ai.active.loafing = False
                     print_txt(f"{self.ai.name}'s {self.ai.active.species} must recharge!")
                 else:
                     self.ai_move = self.ai_turn().copy()
@@ -329,6 +364,7 @@ class Battle:
                 if self.player.active.recharge:
                     self.p_move = None
                     self.player.active.recharge = False
+                    self.player.active.loafing = False
                     print_txt(f"{self.player.name}'s {self.player.active.species} must recharge!")
                 else:
                     self.p_move = None
@@ -348,7 +384,7 @@ class Battle:
                 self.action(self.ai.active, self.player.active, self.ai_move)
             elif self.p_move is not None and self.player.active is not None:
                 self.action(self.player.active, self.ai.active, self.p_move)
-            self.turn_end()
+            self.end_of_turn_effects()
 
     def ai_turn(self):
         ai_random = random.choice(self.ai.active.moves)
@@ -438,6 +474,10 @@ class Battle:
                     print_txt(f"{self.player.team[slot].species} is already out")
                     break
                 if self.player.active is not None:
+                    if self.player.active.ability == "Natural Cure" and self.player.active.status != "":
+                        # print pop up
+                        print_txt(f"{self.player.name}'s {self.player.active.species}'s cured it's status")
+                        self.player.active.status = ""
                     self.player.active.reset_temp()
                 self.player.active = self.player.team[slot]
                 self.on_switch_in(self.player.active, self.ai.active)
@@ -447,7 +487,6 @@ class Battle:
 
     def on_switch_in(self, mon_1, mon_2):
         terminal.clear_area(1, 20, 42, 4)
-        mon_1.first_turn = True
         terminal.clear_area(45, 20, 42, 4)
         self.poke_ball_animation(mon_1.owner)
         print_txt(f"{mon_1.owner.name} sent out {mon_1.species}")
@@ -456,15 +495,15 @@ class Battle:
         if mon_1.ability == "Own Tempo" and mon_1.confused:
             mon_1.confused = False
         elif mon_1.ability == "Drizzle":
-            self.weather = "Rain"
+            self.weather = "rain"
             print_txt("It started to rain!")
             # print pop up
         elif mon_1.ability == "Drought":
-            self.weather = "Sun"
+            self.weather = "sun"
             print_txt("The sun light got bright!")
             # print pop up
         elif mon_1.ability == "Sand Stream":
-            self.weather = "Sand"
+            self.weather = "sand"
             print_txt("A sand storm brewed!")
             # print pop up
         elif mon_1.ability == "Intimidate":
@@ -480,17 +519,17 @@ class Battle:
             return [self.ai, self.ai_move, self.player, self.p_move]
         player_speed = math.floor(self.player.active.speed *
                                   self.temp_stat_table_norm.get(self.player.active.temp_stats.get("speed")))
-        if self.player.active.ability == "Chlorophyll" and self.weather == "Sun":
+        if self.player.active.ability == "Chlorophyll" and self.weather == "sun":
             player_speed = math.floor(player_speed * 2)
-        if self.player.active.ability == "Swift Swim" and self.weather == "Rain":
+        if self.player.active.ability == "Swift Swim" and self.weather == "rain":
             player_speed = math.floor(player_speed * 2)
         if self.player.active.status == "PAR":
             player_speed = math.floor(player_speed * 0.25)
         ai_speed = math.floor(self.ai.active.speed *
                               self.temp_stat_table_norm.get(self.ai.active.temp_stats.get("speed")))
-        if self.ai.active.ability == "Chlorophyll" and self.weather == "Sun":
+        if self.ai.active.ability == "Chlorophyll" and self.weather == "sun":
             ai_speed = math.floor(player_speed * 2)
-        if self.ai.active.ability == "Swift Swim" and self.weather == "Rain":
+        if self.ai.active.ability == "Swift Swim" and self.weather == "rain":
             ai_speed = math.floor(player_speed * 2)
         if self.ai.active.status == "PAR":
             ai_speed = math.floor(ai_speed * 0.25)
@@ -504,6 +543,18 @@ class Battle:
         return [self.ai, self.ai_move, self.player, self.p_move]
 
     def action(self, attacker, defender, move):
+        if attacker.ability == "Truant":
+            if attacker.loafing:
+                attacker.flinching = False
+                attacker.charged = False
+                attacker.semi_invulnerable = None
+                # print pop up
+                print_txt(f"{attacker.owner.name}'s {attacker.species} is loafing around!")
+                attacker.acted = True
+                attacker.loafing = False
+                return
+            else:
+                attacker.loafing = True
         if attacker.status != "":
             check_for_status_cure(attacker)
         if defender.status != "":
@@ -558,7 +609,7 @@ class Battle:
                         attacker.sleep_turns = math.floor(attacker.sleep_turns / 2)
                 else:
                     attacker.sleep_turns -= 1
-                if attacker.sleep_turns == 0 or defender.uproar != 0:
+                if attacker.sleep_turns == 0 or defender.ability != "Soundproof" and defender.uproar != 0:
                     print_txt(f"{attacker.owner.name}'s {attacker.species} woke up!")
                     attacker.status = ""
                 else:
@@ -694,7 +745,7 @@ class Battle:
                     defender.damaged_this_turn = True
                     defender.dmg_last_type_taken = move.get("category")
                     defender.dmg_last_taken = (attacker.bide_dmg * 2)
-                    contact(attacker, defender, move)
+                    self.contact(attacker, defender, move)
                 attacker.bide_dmg = 0
                 return
         print_txt(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
@@ -725,6 +776,21 @@ class Battle:
             elif move.get("name") == "Rage":
                 attacker.rage = True
             return
+        if "Sound" in move.get("flags") and defender.ability == "Soundproof":
+            # print pop up
+            print_txt("It had no effect")
+            attacker.acted = True
+            return
+        if defender.ability == "Wonder Guard":
+            if move.get("category") != "Non-Damaging" and "Typeless" not in move.get("flags"):
+                effectiveness = self.types.get(move.get("type")).get(defender.type_one, 1)
+                if defender.type_two is not None:
+                    effectiveness = effectiveness * self.types.get(move.get("type")).get(defender.type_two, 1)
+                if effectiveness < 2:
+                    # print pop up
+                    print_txt("It had no effect")
+                    attacker.acted = True
+                    return
         if move.get("type") == "Ghost":
             if move.get("category") == "Special" or move.get("category") == "Physical":
                 if defender.type_one == "Normal" or defender.type_two == "Normal":
@@ -733,11 +799,25 @@ class Battle:
                     return
         elif move.get("type") == "Ground":
             if move.get("category") == "Special" or move.get("category") == "Physical":
-                if defender.type_one == "Flying" or defender.type_two == "Flying":
+                if not grounded(defender):
                     print_txt("It had no effect")
                     attacker.acted = True
                     return
         elif move.get("type") == "Electric":
+            if defender.ability == "Lightning Rod":
+                # print pop up
+                print_txt("It had no effect")
+                if defender.type_one != "Ground" and defender.type_two != "Ground":
+                    change_stats(defender, attacker, {"chance": 1, "flags": ["Changes Attacker Stats"],
+                                                      "stat changes": {"sp_attack": 1}})
+                attacker.acted = True
+                return
+            elif defender.ability == "Volt Absorb" and move.get("category") != "Non-Damaging":
+                # print pop up
+                print_txt("It had no effect")
+                self.deal_dmg(defender, -math.floor(defender.hp / 4))
+                attacker.acted = True
+                return
             if move.get("category") == "Special" or move.get("category") == "Physical":
                 if defender.type_one == "Ground" or defender.type_two == "Ground":
                     print_txt("It had no effect")
@@ -774,6 +854,15 @@ class Battle:
                 defender.flash_fired = True
                 attacker.acted = True
                 return
+        elif move.get("type") == "Water":
+            if defender.ability == "Water Absorb":
+                # print pop up
+                print_txt("It had no effect")
+                self.deal_dmg(defender, -math.floor(defender.hp / 4))
+                attacker.acted = True
+                return
+        if attacker.ability == "Stench" and move.get("category") != "Non-Damaging" and "Flinch" not in move.get("flags"):
+            move.get("flags").append("Secondary")
         if move.get("name") == "Counter":
             if attacker.dmg_last_taken > 0 and attacker.dmg_last_type_taken == "Physical":
                 if defender.enduring and attacker.dmg_last_taken * 2 >= defender.chp:
@@ -851,7 +940,11 @@ class Battle:
                 attacker.acted = True
                 return
         if "OHKO" in move.get("flags"):
-            if attacker.level < defender.level:
+            if defender.ability == "Sturdy":
+                # print pop up
+                attacker.acted = True
+                return
+            elif attacker.level < defender.level:
                 print_txt(f"{attacker.species} Missed!")
                 attacker.acted = True
                 return
@@ -863,7 +956,7 @@ class Battle:
                     print_txt("It's a one-hit KO!")
                     attacker.acted = True
                     if "Contact" in move.get("flags"):
-                        contact(attacker, defender, move)
+                        self.contact(attacker, defender, move)
                     return
                 else:
                     print_txt(f"{attacker.species} Missed!")
@@ -901,6 +994,8 @@ class Battle:
             elif accuracy_stage < -6:
                 accuracy_stage = -6
             accuracy = move.get("accuracy") * self.temp_stat_table_acc_eva.get(accuracy_stage)
+            if self.weather == "sand" and defender.ability == "Sand Veil":
+                accuracy = math.floor(accuracy * 0.8)
             if hit_check > accuracy:
                 print_txt(f"{attacker.species} Missed!")
                 if move.get("name") == "Uproar" and attacker.uproar == 1:
@@ -928,8 +1023,7 @@ class Battle:
         if move.get("category") == "Non-Damaging":
             self.non_dmg_move(attacker, defender, move)
         else:
-            # Do Secret Power, Covet, Knock Off, Thief, Struggle, Pursuit, Brick Break, Rapid Spin,
-            # Doom Desire, Future Sight
+            # Do Secret Power, Covet, Knock Off, Thief, Struggle, Pursuit, Rapid Spin, Doom Desire, Future Sight
             if "Multi-Hit" in move.get("flags"):
                 hits = (random.choices([2, 3, 4, 5], weights=[37.5, 37.5, 12.5, 12.5], k=1))[0]
                 for hit in range(0, hits):
@@ -943,7 +1037,10 @@ class Battle:
                         defender.bide_dmg += dmg
                     if defender.rage:
                         change_stats(attacker, defender, "Rage")
-                    if defender.chp <= 0 or attacker.chp <= 0:
+                    if "Contact" in move.get("flags"):
+                        self.contact(attacker, defender, move)
+                    if (defender.chp <= 0 or attacker.chp <= 0 or
+                            defender.ability == "Effect Spore" and attacker.status == "SLP"):
                         print_txt(f"It hit {hit + 1} time(s)")
                         break
                 defender.damaged_this_turn = True
@@ -961,7 +1058,10 @@ class Battle:
                         defender.bide_dmg += dmg
                     if defender.rage:
                         change_stats(attacker, defender, "Rage")
-                    if defender.chp <= 0 or attacker.chp <= 0:
+                    if "Contact" in move.get("flags"):
+                        self.contact(attacker, defender, move)
+                    if (defender.chp <= 0 or attacker.chp <= 0 or
+                            defender.ability == "Effect Spore" and attacker.status == "SLP"):
                         print_txt("It hit 1 time(s)")
                         break
                     if "Secondary" in move.get("flags"):
@@ -989,7 +1089,9 @@ class Battle:
                     defender.dmg_last_type_taken = move.get("category")
                     defender.dmg_last_taken = dmg
                     hits += 1
-                    if defender.chp <= 0 or attacker.chp <= 0:
+                    self.contact(attacker, defender, move)
+                    if (defender.chp <= 0 or attacker.chp <= 0 or
+                            defender.ability == "Effect Spore" and attacker.status == "SLP"):
                         print_txt(f"It hit {hit + 1} time(s)")
                         break
                 if defender.bide != 0:
@@ -1179,7 +1281,7 @@ class Battle:
                 if "Secondary" in move.get("flags"):
                     self.secondary(attacker, defender, move, dmg)
         if "Contact" in move.get("flags"):
-            contact(attacker, defender, move)
+            self.contact(attacker, defender, move)
         if "Outrage" in move.get("flags") and attacker.outraging == 0:
             if attacker.confused:
                 print_txt(f"{attacker.owner.name}'s {attacker.species} is already confused!")
@@ -1191,8 +1293,6 @@ class Battle:
                 attacker.confused = True
         if defender.rage and defender.damaged_this_turn:
             print_txt(f"{defender.owner.name}'s {defender.species}'s rage is building!")
-        if move.get("name") == "Uproar" and attacker.uproar == 1:
-            print_txt(f"{attacker.owner.name}'s {attacker.species} calmed down.")
         elif move.get("name") == "Uproar" and attacker.uproar > 1:
             print_txt(f"{attacker.owner.name}'s {attacker.species} caused a uproar!")
         attacker.acted = True
@@ -1236,7 +1336,7 @@ class Battle:
             else:
                 attacker.blocking = True
         elif "Weather" in move.get("flags"):
-            if move.get("name") == "Hail":
+            if move.get("name") == "hail":
                 if self.weather == "hail":
                     print_txt("But it failed")
                 else:
@@ -1335,7 +1435,8 @@ class Battle:
             print_txt("Electricity's power was weakened")
         elif move.get("name") == "Aromatherapy" or move.get("name") == "Heal Bell":
             for poke in attacker.owner.team:
-                poke.status = ""
+                if poke.ability != "Soundproof":
+                    poke.status = ""
         elif move.get("name") == "Minimize":
             attacker.minimized = True
         elif move.get("name") == "Focus Energy":
@@ -1387,7 +1488,7 @@ class Battle:
                 print_txt("But it failed")
 
     def secondary(self, attacker, defender, move, dmg):
-        if move.get("name") == "Tri Attack" and defender.status == "":
+        if move.get("name") == "Tri Attack" and defender.status == "" and defender.ability != "Shield Dust":
             roll = random.uniform(0, 1)
             if roll <= 0.0667:
                 give_status(attacker, defender, "BRN", False)
@@ -1414,20 +1515,32 @@ class Battle:
             if move.get("name") == "Wrap":
                 print_txt(f"{defender.owner.name}'s {defender.species} was wrapped by {attacker.species}!")
         if "Changes Attacker Stats" in move.get("flags") or "Changes Defender Stats" in move.get("flags"):
-            change_stats(attacker, defender, move)
-        if "Flinch" in move.get("flags") and not defender.acted:
-            roll = random.uniform(0, 1)
+            if defender.ability == "Shield Dust" and "Changes Defender Stats" in move.get("flags"):
+                pass
+            else:
+                change_stats(attacker, defender, move)
+        if "Flinch" in move.get("flags") and not defender.acted and defender.ability != "Shield Dust":
             if defender.ability == "Inner Focus":
                 if move.get("chance") == 1:
-                    # pop up
+                    # print pop up
                     print_txt(f"{defender.owner.name}'s {defender.species}'s Inner Focus prevents flinching!")
-            elif roll <= move.get("chance"):
+            else:
+                if attacker.ability == "Serene Grace":
+                    move["chance"] = move.get("chance") * 2
+                if random.uniform(0, 1) <= move.get("chance"):
+                    defender.flinching = True
+        if (attacker.ability == "Stench" and not defender.acted and defender.ability != "Shield Dust"
+                and defender.ability != "Inner Focus"):
+            if random.uniform(0, 1) <= 0.1:
                 defender.flinching = True
-        if "Confuses" in move.get("flags") and defender.ability != "Own Tempo":
-            roll = random.uniform(0, 1)
-            if roll <= move.get("chance"):
+        if "Confuses" in move.get("flags") and defender.ability != "Own Tempo" and defender.ability != "Shield Dust":
+            if attacker.ability == "Serene Grace":
+                move["chance"] = move.get("chance") * 2
+            if random.uniform(0, 1) <= move.get("chance"):
                 defender.confused = True
-        if "Status" in move.get("flags"):
+        if "Status" in move.get("flags") and defender.ability != "Shield Dust":
+            if attacker.ability == "Serene Grace":
+                move["chance"] = move.get("chance") * 2
             if random.uniform(0, 1) <= move.get("chance"):
                 give_status(attacker, defender, move.get("status"), False)
         if "Leech" in move.get("flags"):
@@ -1436,8 +1549,11 @@ class Battle:
             else:
                 self.deal_dmg(attacker, -math.floor(dmg * 0.5))
         if "Recoil" in move.get("flags"):
-            self.deal_dmg(attacker, (math.floor(dmg * move.get("amount"))))
-            print_txt(f"{attacker.owner.name}'s {attacker.species} is hit with recoil!")
+            if attacker.ability == "Rock Head" and "Explode" not in move.get("flags"):
+                pass
+            else:
+                self.deal_dmg(attacker, (math.floor(dmg * move.get("amount"))))
+                print_txt(f"{attacker.owner.name}'s {attacker.species} is hit with recoil!")
         if "Recharge" in move.get("flags"):
             attacker.recharge = True
 
@@ -1486,7 +1602,6 @@ class Battle:
                 atk = math.floor(atk * 1.5)
             if defender.ability == "Marvel Scale" and attacker.status != "":
                 dfn = math.floor(dfn * 1.5)
-
         else:
             if crit:
                 atk = attacker.sp_attack
@@ -1499,20 +1614,25 @@ class Battle:
         if move_type == "Electric":
             if attacker.mud_sport or defender.mud_sport:
                 move["power"] = math.floor(move.get("power") / 2)
-        if move_type == "Fire":
+        elif move_type == "Fire":
             if attacker.ability == "Blaze" and attacker.chp <= (attacker.hp * 0.33):
                 move["power"] = math.floor(move.get("power") * 1.5)
             if attacker.water_sport or defender.water_sport:
                 move["power"] = math.floor(move.get("power") / 2)
-        if move_type == "Grass":
+            if defender.ability == "Thick Fat":
+                atk = math.floor(atk / 2)
+        elif move_type == "Grass":
             if attacker.ability == "Overgrow" and attacker.chp <= (attacker.hp * 0.33):
                 move["power"] = math.floor(move.get("power") * 1.5)
-        if move_type == "Water":
+        elif move_type == "Water":
             if attacker.ability == "Torrent" and attacker.chp <= (attacker.hp * 0.33):
                 move["power"] = math.floor(move.get("power") * 1.5)
-        if move_type == "Bug":
+        elif move_type == "Bug":
             if attacker.ability == "Swarm" and attacker.chp <= (attacker.hp * 0.33):
                 move["power"] = math.floor(move.get("power") * 1.5)
+        elif move_type == "Ice":
+            if defender.ability == "Thick Fat":
+                atk = math.floor(atk / 2)
         if not move.get("name") != "Solar Beam" and self.weather != "sun" and self.weather != "clear":
             total = math.floor(math.floor((math.floor((2 * attacker.level) / 5 + 2) * atk * 60) / dfn) / 50)
         elif move.get("name") == "Eruption" or move.get("name") == "Water Spout":
@@ -1603,19 +1723,16 @@ class Battle:
             attacker.charge = False
         if move_type == attacker.type_one or move_type == attacker.type_two:
             total = math.floor(total * 1.5)
-        effectiveness = 1
-        for item in self.types:
-            if item["name"] == move_type:
-                effectiveness = item.get(defender.type_one, 1)
-                if defender.type_two is not None:
-                    effectiveness = effectiveness * item.get(defender.type_two, 1)
-                break
+        effectiveness = self.types.get(move_type).get(defender.type_one, 1)
+        if defender.type_two is not None:
+            effectiveness = effectiveness * self.types.get(move_type).get(defender.type_two, 1)
         if effectiveness >= 2 and move.get("name") != "Jump Kick" and move.get("name") != "High Jump Kick":
             print_txt("It's super effective", 0)
         if effectiveness <= 0.5 and move.get("name") != "Jump Kick" and move.get("name") != "High Jump Kick":
             print_txt("It's not very effective...", 0)
         total = math.floor(total * effectiveness)
-        # dmg_range(total)
+        dmg_range(total)
+        print(crit)
         if move.get("name") != "Spit Up":
             total = math.floor((total * random.randint(85, 100)) / 100)
         if total == 0:
@@ -1631,10 +1748,12 @@ class Battle:
                 self.ai.active = None
             if not self.ai.team:
                 print_txt(f"{self.player.name} Wins!")
+                for mon in self.player.team:
+                    mon.reset_temp()
                 self.finished = True
                 return True
             self.ai.active = random.choice(self.ai.team)
-            self.ai.active.first_turn = True
+            self.ai.active.reset_temp()
             swapped = True
         if self.player.active is None or self.player.active.chp <= 0:
             if self.player.active is not None:
@@ -1767,6 +1886,34 @@ class Battle:
             terminal.clear_area(23, 14, 1, 1)
             self.player.active = None
 
+    def contact(self, attacker, defender, move):
+        if defender.ability == "Cute Charm":
+            # print pop up
+            # add infatuate
+            pass
+        elif defender.ability == "Rough Skin":
+            # print pop up
+            self.deal_dmg(attacker, math.floor(attacker.hp / 16))
+        if attacker.status == "":
+            if defender.ability == "Effect Spore":
+                if random.uniform(0, 1) <= 0.1:
+                    # print pop up
+                    status = random.choice(["SLP", "PSN", "PAR"])
+                    if status == "SLP":
+                        give_status(attacker, defender, "SLP")
+                    elif status == "PSN":
+                        give_status(attacker, defender, "PSN")
+                    elif status == "PAR":
+                        give_status(attacker, defender, "PAR")
+            if random.uniform(0, 1) <= 0.33:
+                # print pop up
+                if defender.ability == "Flame Body":
+                    give_status(attacker, defender, "BRN")
+                if defender.ability == "Poison Point":
+                    give_status(attacker, defender, "PSN")
+                if defender.ability == "Static":
+                    give_status(attacker, defender, "PAR")
+
     def poke_ball_animation(self, side):
         if isinstance(side, Player):
             path = [[0, 13], [2, 12], [4, 11], [6, 11], [8, 11], [10, 12], [12, 13], [14, 14], [16, 15], [18, 16],
@@ -1841,89 +1988,116 @@ class Battle:
                 terminal.printf(78, 18, f"{self.player.active.chp}/{self.player.active.hp}")
         terminal.refresh()
 
-    def turn_end(self):
-        trainers = [self.player, self.ai]
-        for trainer in trainers:
-            if trainer.active is not None:
-                if trainer.active.acted:
-                    trainer.active.first_turn = False
-                if trainer.active.uproar != 0:
-                    if self.player.active is not None and self.player.active.status == "SLP":
-                        self.player.active.status = ""
-                        print_txt(f"{self.player.name}'s {self.player.active.species} woke up!")
-                    if self.ai.active is not None and self.ai.active.status == "SLP":
-                        self.ai.active.status = ""
-                        print_txt(f"{self.ai.name}'s {self.ai.active.species} woke up!")
-                if trainer.active.uproar == 1:
-                    trainer.active.uproar = 0
-                if trainer.active.trapping[0] != 0:
-                    print_txt(
-                        f"{trainer.opponent.name}'s {trainer.opponent.active.species} "
-                        f"was hurt by {trainer.active.trapping[1]}!")
-                    self.deal_dmg(trainer.opponent.active, math.floor(trainer.opponent.active.hp / 16))
-                    if trainer.active is None:
-                        break
-                    trainer.opponent.active.damaged_this_turn = True
-                    if trainer.opponent.active.bide != 0:
-                        trainer.opponent.active.bide_dmg += math.floor(trainer.opponent.active.hp / 16)
-                    trainer.active.trapping[0] -= 1
-                if trainer.active.fury_cutter != 0 and not trainer.active.fury_cutter_hit:
-                    trainer.active.fury_cutter = 0
-                elif trainer.active.fury_cutter_hit:
-                    trainer.active.fury_cutter_hit = False
-                if trainer.active.rolling != 0 and not trainer.active.rolling_hit:
-                    trainer.active.rolling = 0
-                elif trainer.active.rolling_hit:
-                    trainer.active.rolling_hit = False
-                if trainer.active.cursed:
-                    print_txt(f"{trainer.name}'s {trainer.active.species} was hurt by the curse")
-                    self.deal_dmg(trainer.active, math.floor(trainer.active.hp / 4))
-                    if trainer.active is None:
-                        break
-                    if trainer.active.rage:
-                        change_stats(trainer.active, trainer.active, "Rage")
-                        trainer.active.damaged_this_turn = True
-                        trainer.active.dmg_last_taken = math.floor(trainer.active.hp / 4)
-                    if trainer.active.bide != 0:
-                        trainer.active.bide_dmg += math.floor(trainer.active.hp / 4)
-                if trainer.active.status == "BRN":
-                    print_txt(f"{trainer.name}'s {trainer.active.species} was hurt by it's burn!")
-                    self.deal_dmg(trainer.active, math.floor(trainer.active.hp / 8))
-                elif trainer.active.status == "PSN":
-                    print_txt(f"{trainer.name}'s {trainer.active.species} was hurt by poison!", 0.5)
-                    self.deal_dmg(trainer.active, math.floor(trainer.active.hp / 8))
-                elif trainer.active.status == "TOX":
-                    print_txt(f"{trainer.name}'s {trainer.active.species} was hurt by poison!", 0.5)
-                    trainer.active.tox_turns += 1
-                    dmg = math.floor(trainer.active.hp * (trainer.active.tox_turns / 16))
-                    self.deal_dmg(trainer.active, dmg)
-                if trainer.active is None:
-                    break
-                if trainer.reflect > 0:
-                    trainer.reflect -= 1
-                if trainer.light_screen > 0:
-                    trainer.light_screen -= 1
-                if trainer.mist > 0:
-                    trainer.mist -= 1
-                if trainer.active.protecting:
-                    trainer.active.protecting_chance = trainer.active.protecting_chance / 2
-                    trainer.active.protecting = False
-                elif not trainer.active.protecting:
-                    trainer.active.protecting_chance = 1
-                if trainer.active.enduring:
-                    trainer.active.protecting_chance = trainer.active.protecting_chance / 2
-                    trainer.active.enduring = False
-                elif not trainer.active.enduring:
-                    trainer.active.protecting_chance = 1
+    def end_of_turn_effects(self):
+        try:
+            if self.player.active.speed > self.ai.active.speed:
+                order = [self.player, self.ai]
+                order_m = [self.player.active, self.ai.active]
+            else:
+                order = [self.ai, self.player]
+                order_m = [self.ai.active, self.player.active]
+        except AttributeError:
+            if self.player.active is not None:
+                order = [self.player, self.ai]
+                order_m = [self.player.active]
+            elif self.ai.active is not None:
+                order = [self.ai, self.player]
+                order_m = [self.ai.active]
+            else:
+                order = [self.ai, self.player]
+                order_m = []
+        # weather turns
+        if self.weather != "clear":
+            if self.weather == "hail":
+                for mon in order_m:
+                    if mon.type_one != "Ice" and mon.type_two != "Ice":
+                        print_txt(f"{mon.owner.name}'s {mon.species} is stricken by Hail!", 0.5)
+                        self.deal_dmg(mon, math.floor(mon.hp / 16))
+            elif self.weather == "sand":
+                for mon in order_m:
+                    immune_type = ["Rock", "Steel", "Ground"]
+                    if (mon.type_one not in immune_type and mon.type_two not in immune_type
+                            and mon.ability != "Sand Veil"):
+                        print_txt(f"{mon.owner.name}'s {mon.species} is buffeted by the sandstorm!", 0.5)
+                        self.deal_dmg(mon, math.floor(mon.hp / 16))
+            elif self.weather == "rain":
+                for mon in order_m:
+                    if mon.ability == "Rain Dish":
+                        # print pop up
+                        self.deal_dmg(mon, -math.floor(mon.hp / 16))
+        # future moves
+        # wish
+        for mon in order_m:
+            if mon.uproar != 0:
+                for m in order_m:
+                    if m.status == "SLP" and m.ability != "Soundproof":
+                        m.status = ""
+                        print_txt(f"{m.owner.name}'s {m.species} woke up!")
+            if mon.status != "" and mon.ability == "Shed Skin":
+                if random.randint(1,3) == 1:
+                    # print pop up
+                    mon.status = ""
+            # leftovers
+        # ingrain
+        # leech seed
+        for mon in order_m:
+            if mon.status == "PSN":
+                print_txt(f"{mon.owner.name}'s {mon.species} was hurt by poison!", 0.5)
+                self.deal_dmg(mon, math.floor(mon.hp / 8))
+            elif mon.status == "TOX":
+                print_txt(f"{mon.owner.name}'s {mon.species} was hurt by poison!", 0.5)
+                mon.tox_turns += 1
+                self.deal_dmg(mon, math.floor(mon.hp * (mon.tox_turns / 16)))
+            elif mon.status == "BRN":
+                print_txt(f"{mon.owner.name}'s {mon.species} was hurt by it's burn!", 0.5)
+                self.deal_dmg(mon, math.floor(mon.hp / 8))
+            if mon.chp <= 0:
+                order_m.pop(mon)
+        # nightmare
+        for mon in order_m:
+            if mon.cursed:
+                print_txt(f"{mon.owner.name}'s {mon.species} was hurt by the curse")
+                self.deal_dmg(mon, math.floor(mon.hp / 4))
+            if mon.chp <= 0:
+                order_m.pop(mon)
+        for mon in order_m:
+            if mon.trapping[0] != 0:
+                if mon.owner.opponent.active is not None:
+                    print_txt(f"{mon.owner.opponent.name}'s {mon.owner.opponent.active.species} "
+                              f"was hurt by {mon.trapping[1]}!")
+                    self.deal_dmg(mon.owner.opponent.active, math.floor(mon.owner.opponent.active.hp / 16))
+                    mon.trapping[0] -= 1
+                    for m in order_m:
+                        if m.chp <= 0:
+                            order_m.pop(m)
+                else:
+                    mon.trapping[0] = 0
+        # taunt fade
+        # encore fade
+        # disable fade
+        # yawn
+        # perish count
+        for trainer in order:
+            if trainer.reflect > 0:
+                trainer.reflect -= 1
+        for trainer in order:
+            if trainer.light_screen > 0:
+                trainer.light_screen -= 1
+        # safeguard
+        for trainer in order:
+            if trainer.mist > 0:
+                trainer.mist -= 1
+        for mon in order_m:
+            if mon.uproar == 1:
+                mon.uproar = 0
+                print_txt(f"{mon.owner.name}'s {mon.species} calmed down.")
+            if mon.ability == "Speed Boost":
+                if mon.first_turn and not mon.acted:
+                    pass
+                else:
+                    # print pop up
+                    change_stats(mon, mon, {"chance": 1, "flags": ["Changes Attacker Stats"],
+                                            "stat changes": {"speed": 1}})
+        clean_up(order_m)
         self.alive_check()
-
-    def clean_up(self):
-        trainers = [self.player, self.ai]
-        for trainer in trainers:
-            if trainer.active is not None:
-                trainer.active.flinched = False
-                trainer.active.damaged_this_turn = False
-                trainer.active.acted = False
-                trainer.active.dmg_last_type_taken = None
-                trainer.active.dmg_last_taken = 0
         

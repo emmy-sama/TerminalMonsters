@@ -76,7 +76,7 @@ def select_lead():
     terminal.printf(22, 1, "What pokemon would you like to lead?")
     print_player_pokemon()
     terminal.refresh()
-    slot = get_input(6)
+    slot = get_input(len(player.team))
     terminal.clear()
     return player.team[slot]
 
