@@ -23180,10 +23180,10 @@
   },
   "testmon": {
     "level": {
-      "1": "Explosion",
-      "2": "Will-O-Wisp",
-      "3": "Razor Leaf",
-      "4": "Sandstorm",
+      "1": "Memento",
+      "2": "Magic Coat",
+      "3": "Stockpile",
+      "4": "Protect",
       "20": "Swift",
       "25": "False Swipe",
       "30": "Swift",
@@ -23198,7 +23198,7 @@
       "8": "Tackle",
       "6": "Water Sport",
       "7": "Clamp",
-      "1": "Toxic",
+      "1": "Charm",
       "20": "Spikes",
       "25": "Tackle",
       "30": "Swift",

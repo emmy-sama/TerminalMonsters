@@ -53,11 +53,15 @@ class Pokemon:
         self.back_sprite = random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57344),
                                           hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57345)])
         self.type_one = dex_entry.get("types")[0]
+        self.type_one_og = self.type_one
         if len(dex_entry.get("types")) == 2:
             self.type_two = dex_entry.get("types")[1]
+            self.type_two_og = self.type_two
         else:
             self.type_two = None
+            self.type_two = None
         self.ability = random.choice(dex_entry.get("Abilities"))
+        self.ability_og = self.ability
         self.gender = None
         self.get_gender(dex_entry.get("Gender Ratio"))
         self.catch_rate = dex_entry.get("Catch rate")
@@ -100,6 +104,9 @@ class Pokemon:
         self.rage = False
         self.bide_dmg = 0
         self.uproar = 0
+        self.bonded = False
+        self.rooted = False
+        self.reflecting = False
         self.trapping = [0, ""]
         self.rolling = 0
         self.rolling_hit = False
@@ -165,6 +172,9 @@ class Pokemon:
         # Stat Changes
         self.temp_stats = self.temp_stats.fromkeys(self.temp_stats.keys(), 0)
         self.getting_pumped = False
+        self.ability = self.ability_og
+        self.type_one = self.type_one_og
+        self.type_two = self.type_two_og
         # Status
         self.tox_turns = 0
         self.confused = False
@@ -181,6 +191,9 @@ class Pokemon:
         self.protecting = False
         self.enduring = False
         self.protecting_chance = 1
+        self.bonded = False
+        self.rooted = False
+        self.reflecting = False
         # Abilities
         self.flash_fired = False
         # Battle Effects
@@ -263,11 +276,15 @@ class Pokemon:
             [hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57344),
              hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57345)])
         self.type_one = dex_entry.get("types")[0]
+        self.type_one_og = self.type_one
         if len(dex_entry.get("types")) == 2:
             self.type_two = dex_entry.get("types")[1]
+            self.type_two_og = self.type_two
         else:
             self.type_two = None
+            self.type_two_og = None
         self.ability = random.choice(dex_entry.get("Abilities"))
+        self.ability_og = self.ability
         self.height = dex_entry.get("Height")
         self.weight = dex_entry.get("Weight")
         self.evolvl = dex_entry.get("evo_level", None)

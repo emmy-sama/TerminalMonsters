@@ -219,7 +219,7 @@
     "accuracy": 0,
     "priority": 0,
     "pp": 20,
-    "description": "Changes user's type based on terrain. (Normal)",
+    "description": "Changes user's type to a type that resist's but is not immune to the targets primary type",
     "type": "Normal",
     "flags": [
       "Metronome",
@@ -681,7 +681,10 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Requires Target"
+      "Requires Target",
+      "Bypass Fly",
+      "Bypass Dig",
+      "Bypass Dive"
     ]
   },
   "String Shot": {

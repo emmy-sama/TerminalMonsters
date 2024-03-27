@@ -1,5 +1,5 @@
-import math
-
+import inspect
+from inspect import signature
 from Classes import *
 from bearlibterminal import terminal
 import time
@@ -155,6 +155,8 @@ def grounded(mon):
 
 
 def can_swap(mon_1, mon_2):
+    if mon_1.rooted:
+        return
     if mon_2.trapping[0] != 0:
         return
     if mon_2.blocking:
@@ -295,6 +297,7 @@ def clean_up(order):
         mon.damaged_this_turn = False
         mon.dmg_last_type_taken = None
         mon.dmg_last_taken = 0
+        mon.reflecting = False
         if mon.fury_cutter != 0 and not mon.fury_cutter_hit:
             mon.fury_cutter = 0
         elif mon.fury_cutter_hit:
@@ -543,6 +546,7 @@ class Battle:
         return [self.ai, self.ai_move, self.player, self.p_move]
 
     def action(self, attacker, defender, move):
+        attacker.bonded = False
         if attacker.ability == "Truant":
             if attacker.loafing:
                 attacker.flinching = False
@@ -746,6 +750,8 @@ class Battle:
                     defender.dmg_last_type_taken = move.get("category")
                     defender.dmg_last_taken = (attacker.bide_dmg * 2)
                     self.contact(attacker, defender, move)
+                    if defender.chp <= 0 and defender.bonded:
+                        self.deal_dmg(attacker, attacker.hp)
                 attacker.bide_dmg = 0
                 return
         print_txt(f"{attacker.owner.name}'s {attacker.species} used {move.get("name")}")
@@ -771,11 +777,18 @@ class Battle:
                 attacker.dmg_last_taken = dmg / 2
             elif move.get("name") == "Explosion" or move.get("name") == "Self-Destruct":
                 self.deal_dmg(attacker, 999)
+            elif move.get("name") == "Memento":
+                self.deal_dmg(attacker, attacker.chp)
             elif attacker.rage and move.get("name") != "Rage":
                 attacker.rage = False
             elif move.get("name") == "Rage":
                 attacker.rage = True
             return
+        if defender.reflecting and "Reflectable" in move.get("flags"):
+            print_txt(f"{attacker.owner.name}'s {attacker.species}'s {move.get("name")} was bounced back!")
+            temp = attacker
+            attacker = defender
+            defender = temp
         if "Sound" in move.get("flags") and defender.ability == "Soundproof":
             # print pop up
             print_txt("It had no effect")
@@ -957,6 +970,8 @@ class Battle:
                     attacker.acted = True
                     if "Contact" in move.get("flags"):
                         self.contact(attacker, defender, move)
+                    if defender.chp <= 0 and defender.bonded:
+                        self.deal_dmg(attacker, attacker.hp)
                     return
                 else:
                     print_txt(f"{attacker.species} Missed!")
@@ -1295,10 +1310,12 @@ class Battle:
             print_txt(f"{defender.owner.name}'s {defender.species}'s rage is building!")
         elif move.get("name") == "Uproar" and attacker.uproar > 1:
             print_txt(f"{attacker.owner.name}'s {attacker.species} caused a uproar!")
+        if defender.chp <= 0 and defender.bonded:
+            self.deal_dmg(attacker, attacker.hp)
         attacker.acted = True
 
     def non_dmg_move(self, attacker, defender, move):
-        # Do Camouflage, Conversion, Conversion 2, Destiny Bond, Detect, Grudge,  Imprison, Ingrain, Magic Coat,
+        # Do Conversion 2, Grudge,  Imprison,
         # Memento, Mimic, Mirror Move, Nightmare, Pain Split, Perish Song, Recycle, Rest, Role Play, Safeguard, Sketch,
         # Skill Swap, Snatch, Spikes, Substitute, Teleport, Transform, Wish, Yawn, Attract, Encore, Foresight, Lock-On,
         # Mind Reader, Odor Sleuth, Spite, Taunt, Torment, Trick, Whirlwind, Disable, Leech Seed, Nature Power
@@ -1367,125 +1384,18 @@ class Battle:
                 self.deal_dmg(attacker, -math.floor(attacker.hp * 0.66))
             else:
                 self.deal_dmg(attacker, -math.floor(attacker.hp / 4))
-        elif move.get("name") == "Psych Up":
-            attacker.temp_stats.update(defender.temp_stats)
-            print(attacker.temp_stats)
-            print_txt(f"{attacker.owner.name}'s {attacker.species} copied it's opponents stat changes")
-        elif move.get("name") == "Refresh":
-            if attacker.status == "SLP" or attacker.status == "FRZ" or attacker.status == "":
-                print_txt("But it failed")
-            else:
-                attacker.status = ""
-                print_txt(f"{attacker.owner.name}'s {attacker.species} status returned to normal!")
-        elif move.get("name") == "Haze":
-            attacker.temp_stats = attacker.temp_stats.fromkeys(attacker.temp_stats.keys(), 0)
-            defender.temp_stats = defender.temp_stats.fromkeys(defender.temp_stats.keys(), 0)
-            print_txt("All stat changes were eliminated!")
-        elif move.get("name") == "Protect" or move.get("name") == "Detect":
-            if defender.acted:
-                print_txt("But it failed")
-            else:
-                if attacker.protecting_chance >= random.uniform(0, 1):
-                    attacker.protecting = True
-                    print_txt(f"{attacker.species} is protecting it's self")
+        else:
+            s = move.get("name").lower()
+            s = s.replace(" ", "_")
+            a = getattr(self, s, None)
+            if a:
+                sig = str(inspect.signature(a))
+                if "attacker" and "defender" in sig:
+                    a(attacker=attacker, defender=defender)
+                elif "attacker" in sig:
+                    a(attacker)
                 else:
-                    print_txt("But it failed")
-        elif move.get("name") == "Endure":
-            if defender.acted:
-                print_txt("But it failed")
-            else:
-                if attacker.protecting_chance >= random.uniform(0, 1):
-                    attacker.enduring = True
-                    print_txt(f"{attacker.species} braced it's self!")
-                else:
-                    print_txt("But it failed")
-        elif move.get("name") == "Reflect":
-            if attacker.owner.reflect > 0:
-                print_txt("But it failed")
-            else:
-                attacker.owner.reflect = 5
-        elif move.get("name") == "Light Screen":
-            if attacker.owner.light_screen > 0:
-                print_txt("But it failed")
-            else:
-                attacker.owner.light_screen = 5
-        elif move.get("name") == "Mist":
-            if attacker.owner.mist > 0:
-                print_txt("But it failed")
-            else:
-                attacker.owner.mist = 5
-        elif move.get("name") == "Curse":
-            if attacker.type_one == "Ghost" or attacker.type_two == "Ghost":
-                self.deal_dmg(attacker, (math.floor(attacker.hp / 2)))
-                defender.cursed = True
-                print_txt(f"{attacker.owner.name}'s {attacker.species} cut its own HP in half and laid a curse on"
-                          f" {defender.owner.name}'s {defender.species}")
-            else:
-                attacker.temp_stats["attack"] += 1
-                print_txt(f"{attacker.species}'s attack rose!")
-                attacker.temp_stats["defense"] += 1
-                print_txt(f"{attacker.species}'s defense rose!")
-                attacker.temp_stats["speed"] -= 1
-                print_txt(f"{attacker.species}'s speed fell!")
-        elif move.get("name") == "Water Sport":
-            attacker.water_sport = True
-            print_txt("Fire's power was weakened")
-        elif move.get("name") == "Mud Sport":
-            attacker.mud_sport = True
-            print_txt("Electricity's power was weakened")
-        elif move.get("name") == "Aromatherapy" or move.get("name") == "Heal Bell":
-            for poke in attacker.owner.team:
-                if poke.ability != "Soundproof":
-                    poke.status = ""
-        elif move.get("name") == "Minimize":
-            attacker.minimized = True
-        elif move.get("name") == "Focus Energy":
-            attacker.getting_pumped = True
-        elif move.get("name") == "Charge":
-            attacker.charge = True
-        elif move.get("name") == "Stockpile":
-            if attacker.stockpile >= 3:
-                print_txt("But it failed")
-                return
-            else:
-                attacker.stockpile += 1
-                print_txt(f"{attacker.owner.name}'s {attacker.species} stockpiled {attacker.stockpile}!")
-        elif move.get("name") == "Baton Pass":
-            passer_temp_stats = attacker.temp_stats
-            passer_confused = attacker.confused
-            passer_getting_pumped = attacker.getting_pumped
-            passer_blocking = attacker.blocking
-            # passer_seeded = attacker.seeded
-            # passer_curse = attacker.curse
-            # passer_substitute  = attacker.substitute
-            # passer_ingrain  = attacker.ingrain
-            # passer_perish  = attacker.perish
-            if attacker == self.player.active and len(self.player.team) > 1:
-                self.player_swap(True)
-                self.player.active.temp_stats = passer_temp_stats
-                self.player.active.confused = passer_confused
-                self.player.active.getting_pumped = passer_getting_pumped
-                self.player.active.blocking = passer_blocking
-                # self.player.active.seeded = passer_seeded
-                # self.player.active.curse = passer_curse
-                # self.player.active.substitute  = passer_substitute
-                # self.player.active.ingrain  = passer_ingrain
-                # self.player.active.perish  = passer_perish
-            elif attacker == self.ai.active and len(self.ai.active) > 1:
-                self.ai.active = random.choice(self.ai.team)
-                self.poke_ball_animation(self.ai)
-                print_txt(f"{self.ai.name} sent out {self.ai.active.species}")
-                self.ai.active.temp_stats = passer_temp_stats
-                self.ai.active.confused = passer_confused
-                self.ai.active.getting_pumped = passer_getting_pumped
-                self.ai.active.blocking = passer_blocking
-                # self.ai.active.seeded = passer_seeded
-                # self.ai.active.curse = passer_curse
-                # self.ai.active.substitute  = passer_substitute
-                # self.ai.active.ingrain  = passer_ingrain
-                # self.ai.active.perish  = passer_perish
-            else:
-                print_txt("But it failed")
+                    a(defender)
 
     def secondary(self, attacker, defender, move, dmg):
         if move.get("name") == "Tri Attack" and defender.status == "" and defender.ability != "Shield Dust":
@@ -1753,7 +1663,6 @@ class Battle:
                 self.finished = True
                 return True
             self.ai.active = random.choice(self.ai.team)
-            self.ai.active.reset_temp()
             swapped = True
         if self.player.active is None or self.player.active.chp <= 0:
             if self.player.active is not None:
@@ -2011,15 +1920,19 @@ class Battle:
             if self.weather == "hail":
                 for mon in order_m:
                     if mon.type_one != "Ice" and mon.type_two != "Ice":
-                        print_txt(f"{mon.owner.name}'s {mon.species} is stricken by Hail!", 0.5)
+                        print_txt(f"{mon.owner.name}'s {mon.species} is stricken by Hail!", 1)
                         self.deal_dmg(mon, math.floor(mon.hp / 16))
+                    if mon.chp <= 0:
+                        order_m.remove(mon)
             elif self.weather == "sand":
                 for mon in order_m:
                     immune_type = ["Rock", "Steel", "Ground"]
                     if (mon.type_one not in immune_type and mon.type_two not in immune_type
                             and mon.ability != "Sand Veil"):
-                        print_txt(f"{mon.owner.name}'s {mon.species} is buffeted by the sandstorm!", 0.5)
+                        print_txt(f"{mon.owner.name}'s {mon.species} is buffeted by the sandstorm!", 1)
                         self.deal_dmg(mon, math.floor(mon.hp / 16))
+                    if mon.chp <= 0:
+                        order_m.remove(mon)
             elif self.weather == "rain":
                 for mon in order_m:
                     if mon.ability == "Rain Dish":
@@ -2034,32 +1947,35 @@ class Battle:
                         m.status = ""
                         print_txt(f"{m.owner.name}'s {m.species} woke up!")
             if mon.status != "" and mon.ability == "Shed Skin":
-                if random.randint(1,3) == 1:
+                if random.randint(1, 3) == 1:
                     # print pop up
                     mon.status = ""
             # leftovers
-        # ingrain
+        for mon in order_m:
+            if mon.rooted:
+                print_txt(f"{mon.owner.name}'s {mon.species} absorbed some nutrients!", 1)
+                self.deal_dmg(mon, -math.floor(mon.hp / 16))
         # leech seed
         for mon in order_m:
             if mon.status == "PSN":
-                print_txt(f"{mon.owner.name}'s {mon.species} was hurt by poison!", 0.5)
+                print_txt(f"{mon.owner.name}'s {mon.species} was hurt by poison!", 1)
                 self.deal_dmg(mon, math.floor(mon.hp / 8))
             elif mon.status == "TOX":
-                print_txt(f"{mon.owner.name}'s {mon.species} was hurt by poison!", 0.5)
+                print_txt(f"{mon.owner.name}'s {mon.species} was hurt by poison!", 1)
                 mon.tox_turns += 1
                 self.deal_dmg(mon, math.floor(mon.hp * (mon.tox_turns / 16)))
             elif mon.status == "BRN":
-                print_txt(f"{mon.owner.name}'s {mon.species} was hurt by it's burn!", 0.5)
+                print_txt(f"{mon.owner.name}'s {mon.species} was hurt by it's burn!", 1)
                 self.deal_dmg(mon, math.floor(mon.hp / 8))
             if mon.chp <= 0:
-                order_m.pop(mon)
+                order_m.remove(mon)
         # nightmare
         for mon in order_m:
             if mon.cursed:
                 print_txt(f"{mon.owner.name}'s {mon.species} was hurt by the curse")
                 self.deal_dmg(mon, math.floor(mon.hp / 4))
             if mon.chp <= 0:
-                order_m.pop(mon)
+                order_m.remove(mon)
         for mon in order_m:
             if mon.trapping[0] != 0:
                 if mon.owner.opponent.active is not None:
@@ -2069,7 +1985,7 @@ class Battle:
                     mon.trapping[0] -= 1
                     for m in order_m:
                         if m.chp <= 0:
-                            order_m.pop(m)
+                            order_m.remove(m)
                 else:
                     mon.trapping[0] = 0
         # taunt fade
@@ -2100,4 +2016,229 @@ class Battle:
                                             "stat changes": {"speed": 1}})
         clean_up(order_m)
         self.alive_check()
-        
+
+    # Attacks
+
+    @staticmethod
+    def aromatherapy(attacker):
+        for poke in attacker.owner.team:
+            if poke.ability != "Soundproof":
+                poke.status = ""
+
+    def baton_pass(self, attacker):
+        passer_temp_stats = attacker.temp_stats
+        passer_confused = attacker.confused
+        passer_getting_pumped = attacker.getting_pumped
+        passer_blocking = attacker.blocking
+        # passer_seeded = attacker.seeded
+        passer_cursed = attacker.cursed
+        # passer_substitute  = attacker.substitute
+        passer_rooted = attacker.rooted
+        # passer_perish  = attacker.perish
+        if attacker == self.player.active and len(self.player.team) > 1:
+            self.player_swap(True)
+            self.player.active.temp_stats = passer_temp_stats
+            self.player.active.confused = passer_confused
+            self.player.active.getting_pumped = passer_getting_pumped
+            self.player.active.blocking = passer_blocking
+            # self.player.active.seeded = passer_seeded
+            self.player.active.cursed = passer_cursed
+            # self.player.active.substitute  = passer_substitute
+            self.player.active.rooted = passer_rooted
+            # self.player.active.perish  = passer_perish
+        elif attacker == self.ai.active and len(self.ai.active) > 1:
+            self.ai.active = random.choice(self.ai.team)
+            self.poke_ball_animation(self.ai)
+            print_txt(f"{self.ai.name} sent out {self.ai.active.species}")
+            self.ai.active.temp_stats = passer_temp_stats
+            self.ai.active.confused = passer_confused
+            self.ai.active.getting_pumped = passer_getting_pumped
+            self.ai.active.blocking = passer_blocking
+            # self.ai.active.seeded = passer_seeded
+            self.ai.active.cursed = passer_cursed
+            # self.ai.active.substitute  = passer_substitute
+            self.ai.active.rooted = passer_rooted
+            # self.ai.active.perish  = passer_perish
+        else:
+            print_txt("But it failed")
+
+    def camouflage(self, attacker, defender):
+        t = []
+        for x, y in self.types.get(defender.type_one).items():
+            if y < 1:
+                t.append(x)
+        attacker.type_one = random.choice(t)
+        attacker.type_two = None
+        print_txt(f"{attacker.owner.name}'s {attacker.species} became {attacker.type_one.lower()} type")
+
+    @staticmethod
+    def conversion(attacker):
+        t = []
+        for attack in attacker.moves:
+            if moves[attack].get("type") not in [attacker.type_one, attacker.type_two]:
+                t.append(moves[attack].get("type"))
+        if t:
+            attacker.type_one = random.choice(t)
+            attacker.type_two = None
+            print_txt(f"{attacker.owner.name}'s {attacker.species} became {attacker.type_one.lower()} type")
+        else:
+            print_txt("But it failed")
+
+    # def conversion_2(self, attacker, defender):
+    #    t = []
+    #    for x, y in self.types.get(defender.type_one).items():
+    #        if y < 1:
+    #            t.append(x)
+    #    attacker.type_one = random.choice(t)
+    #    attacker.type_two = None
+    #    print_txt(f"{attacker.owner.name}'s {attacker.species} became {attacker.type_one.lower()} type")
+
+    @staticmethod
+    def charge(attacker):
+        attacker.charge = True
+
+    def curse(self, attacker, defender):
+        if attacker.type_one == "Ghost" or attacker.type_two == "Ghost":
+            self.deal_dmg(attacker, (math.floor(attacker.hp / 2)))
+            defender.cursed = True
+            print_txt(f"{attacker.owner.name}'s {attacker.species} cut its own HP in half and laid a curse on"
+                      f" {defender.owner.name}'s {defender.species}")
+        else:
+            attacker.temp_stats["attack"] += 1
+            print_txt(f"{attacker.species}'s attack rose!")
+            attacker.temp_stats["defense"] += 1
+            print_txt(f"{attacker.species}'s defense rose!")
+            attacker.temp_stats["speed"] -= 1
+            print_txt(f"{attacker.species}'s speed fell!")
+
+    @staticmethod
+    def destiny_bond(attacker):
+        attacker.bonded = True
+
+    @staticmethod
+    def detect(attacker, defender):
+        if defender.acted:
+            print_txt("But it failed")
+        else:
+            if attacker.protecting_chance >= random.uniform(0, 1):
+                attacker.protecting = True
+                print_txt(f"{attacker.species} is protecting it's self")
+            else:
+                print_txt("But it failed")
+
+    @staticmethod
+    def endure(attacker, defender):
+        if defender.acted:
+            print_txt("But it failed")
+        else:
+            if attacker.protecting_chance >= random.uniform(0, 1):
+                attacker.enduring = True
+                print_txt(f"{attacker.species} braced it's self!")
+            else:
+                print_txt("But it failed")
+
+    @staticmethod
+    def focus_energy(attacker):
+        attacker.getting_pumped = True
+
+    @staticmethod
+    def haze(attacker, defender):
+        attacker.temp_stats = attacker.temp_stats.fromkeys(attacker.temp_stats.keys(), 0)
+        defender.temp_stats = defender.temp_stats.fromkeys(defender.temp_stats.keys(), 0)
+        print_txt("All stat changes were eliminated!")
+
+    @staticmethod
+    def heal_bell(attacker):
+        for poke in attacker.owner.team:
+            if poke.ability != "Soundproof":
+                poke.status = ""
+
+    @staticmethod
+    def ingrain(attacker):
+        attacker.rooted = True
+        print_txt(f"{attacker.owner.name} {attacker.species} planted it's roots!")
+
+    @staticmethod
+    def light_screen(attacker):
+        if attacker.owner.light_screen > 0:
+            print_txt("But it failed")
+        else:
+            attacker.owner.light_screen = 5
+
+    @staticmethod
+    def magic_coat(attacker, defender):
+        if defender.acted:
+            print_txt("But it failed")
+        else:
+            attacker.reflecting = True
+            print_txt(f"{attacker.owner.name}'s {attacker.species} shrouded it's self in magic coat!")
+
+    def memento(self, attacker, defender):
+        if defender.temp_stats.get("attack") == 6 and defender.temp_stats.get("sp_attack") == 6:
+            print_txt("But it failed")
+        else:
+            self.deal_dmg(attacker, attacker.chp)
+            change_stats(attacker, defender, {"chance": 1, "flags": ["Changes Defender Stats"],
+                                              "stat changes": {"attack": -2, "sp_attack": -2}})
+
+    @staticmethod
+    def minimize(attacker):
+        attacker.minimized = True
+
+    @staticmethod
+    def mist(attacker):
+        if attacker.owner.mist > 0:
+            print_txt("But it failed")
+        else:
+            attacker.owner.mist = 5
+
+    @staticmethod
+    def mud_sport(attacker):
+        attacker.mud_sport = True
+        print_txt("Electricity's power was weakened")
+
+    @staticmethod
+    def protect(attacker, defender):
+        if defender.acted:
+            print_txt("But it failed")
+        else:
+            if attacker.protecting_chance >= random.uniform(0, 1):
+                attacker.protecting = True
+                print_txt(f"{attacker.species} is protecting it's self")
+            else:
+                print_txt("But it failed")
+
+    @staticmethod
+    def psych_up(attacker, defender):
+        attacker.temp_stats.update(defender.temp_stats)
+        print(attacker.temp_stats)
+        print_txt(f"{attacker.owner.name}'s {attacker.species} copied it's opponents stat changes")
+
+    @staticmethod
+    def reflect(attacker):
+        if attacker.owner.reflect > 0:
+            print_txt("But it failed")
+        else:
+            attacker.owner.reflect = 5
+
+    @staticmethod
+    def refresh(attacker):
+        if attacker.status == "SLP" or attacker.status == "FRZ" or attacker.status == "":
+            print_txt("But it failed")
+        else:
+            attacker.status = ""
+            print_txt(f"{attacker.owner.name}'s {attacker.species} status returned to normal!")
+
+    @staticmethod
+    def stockpile(attacker):
+        if attacker.stockpile >= 3:
+            print_txt("But it failed")
+            return
+        else:
+            attacker.stockpile += 1
+            print_txt(f"{attacker.owner.name}'s {attacker.species} stockpiled {attacker.stockpile}!")
+
+    @staticmethod
+    def water_sport(attacker):
+        attacker.water_sport = True
+        print_txt("Fire's power was weakened")
