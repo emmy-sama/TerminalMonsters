@@ -4,10 +4,10 @@ from Classes import *
 
 ash = Player("Ash", [])
 weedle = Pokemon("Testmon", ash, 5)
-pikachu = Pokemon("Pikachu", ash, 5)
+wobbuffet = Pokemon("Wobbuffet", ash, 5)
 poliwhirl = Pokemon("Poliwhirl", ash, 5)
 ash.team.append(weedle)
-ash.team.append(pikachu)
+ash.team.append(wobbuffet)
 ash.team.append(poliwhirl)
 
 garry = Ai("Garry", [])

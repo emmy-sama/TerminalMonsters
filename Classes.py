@@ -59,7 +59,7 @@ class Pokemon:
             self.type_two_og = self.type_two
         else:
             self.type_two = None
-            self.type_two = None
+            self.type_two_og = None
         self.ability = random.choice(dex_entry.get("Abilities"))
         self.ability_og = self.ability
         self.gender = None

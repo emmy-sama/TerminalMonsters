@@ -9132,7 +9132,7 @@
       "Poison"
     ],
     "Abilities": [
-      "Stench"
+      "Overgrow"
     ],
     "dex_number": 386,
     "evos": [],
@@ -9152,10 +9152,10 @@
     "Weight": 6.9,
     "Height": 0.7,
     "types": [
-      "Grass"
+      "Ground"
     ],
     "Abilities": [
-      "Synchronize"
+      "Overgrow"
     ],
     "dex_number": 386,
     "evos": [],

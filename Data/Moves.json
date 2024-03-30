@@ -1806,6 +1806,7 @@
     "priority": 0,
     "pp": 10,
     "description": "Confuses the target.",
+    "chance": 1,
     "type": "Ghost",
     "flags": [
       "Metronome",
@@ -1996,7 +1997,8 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Double-Hit"
+      "Double-Hit",
+      "Multi-Hit"
     ]
   },
   "Dragon Breath": {
@@ -2184,7 +2186,6 @@
       "Mirror",
       "Protect",
       "Secondary",
-      "Recoil",
       "Explode"
     ]
   },
@@ -2988,6 +2989,7 @@
     "priority": 0,
     "pp": 15,
     "description": "Lasts 2-3 turns. Confuses the user afterwards.",
+    "chance": 1,
     "type": "Dragon",
     "flags": [
       "Contact",
@@ -3036,6 +3038,7 @@
     "priority": 0,
     "pp": 20,
     "description": "Lasts 2-3 turns. Confuses the user afterwards.",
+    "chance": 1,
     "type": "Grass",
     "flags": [
       "Contact",
@@ -3053,7 +3056,7 @@
     "priority": 0,
     "pp": 15,
     "description": "30% chance to badly poison the target.",
-    "status": "TOX",
+    "status": "PSN",
     "chance": 0.3,
     "type": "Poison",
     "flags": [
@@ -3433,7 +3436,6 @@
       "Mirror",
       "Protect",
       "Secondary",
-      "Recoil",
       "Explode"
     ]
   },
@@ -3894,6 +3896,7 @@
     "priority": 0,
     "pp": 20,
     "description": "Confuses adjacent Pokemon.",
+    "chance": 1,
     "type": "Normal",
     "flags": [
       "Metronome",
@@ -3926,6 +3929,7 @@
     "priority": 0,
     "pp": 20,
     "description": "Lasts 2-3 turns. Confuses the user afterwards.",
+    "chance": 1,
     "type": "Normal",
     "flags": [
       "Contact",
@@ -4103,6 +4107,7 @@
       "Mirror",
       "Protect",
       "Double-Hit",
+      "Multi-Hit",
       "Secondary",
       "Status"
     ]
@@ -4499,6 +4504,7 @@
     "priority": 0,
     "pp": 20,
     "description": "Causes the target to become confused.",
+    "chance": 1,
     "type": "Normal",
     "flags": [
       "Metronome",
@@ -4876,6 +4882,7 @@
     "priority": 0,
     "pp": 10,
     "description": "Causes the target to become confused.",
+    "chance": 1,
     "type": "Normal",
     "flags": [
       "Metronome",
@@ -5530,7 +5537,8 @@
       "Metronome",
       "Mirror",
       "Protect",
-      "Double-Hit"
+      "Double-Hit",
+      "Multi-Hit"
     ]
   },
   "Frenzy Plant": {

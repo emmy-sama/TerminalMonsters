@@ -68,6 +68,7 @@ def print_player_pokemon():
 def poke_center():
     for mons in player.team:
         mons.chp = mons.hp
+        mons.status = ""
 
 
 def select_lead():

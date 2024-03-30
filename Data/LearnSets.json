@@ -905,7 +905,7 @@
       "Reversal",
       "Screech",
       "Swagger",
-      "UpRoar"
+      "Uproar"
     ],
     "tutor": [
       "Body Slam",
@@ -2990,7 +2990,7 @@
       "Pursuit",
       "Rock Slide",
       "Screech",
-      "UpRoar"
+      "Uproar"
     ],
     "tutor": [
       "Body Slam",
@@ -5156,7 +5156,7 @@
       "13": "Fury Attack",
       "21": "Tri Attack",
       "25": "Rage",
-      "33": "UpRoar",
+      "33": "Uproar",
       "37": "Drill Peck",
       "45": "Agility"
     },
@@ -5209,7 +5209,7 @@
       "13": "Fury Attack",
       "21": "Tri Attack",
       "25": "Rage",
-      "38": "UpRoar",
+      "38": "Uproar",
       "47": "Drill Peck",
       "60": "Agility"
     },
@@ -6256,7 +6256,7 @@
   },
   "exeggcute": {
     "level": {
-      "1": "UpRoar",
+      "1": "Uproar",
       "2": "Barrage",
       "3": "Hypnosis",
       "7": "Reflect",
@@ -12082,7 +12082,7 @@
       "17": "Sonic Boom",
       "23": "Hypnosis",
       "28": "Detect",
-      "34": "UpRoar",
+      "34": "Uproar",
       "39": "Wing Attack",
       "45": "Supersonic",
       "50": "Screech"
@@ -12399,7 +12399,7 @@
       "15": "Counter",
       "16": "Mirror Coat",
       "17": "Safeguard",
-      "18": "Destiny Bound"
+      "18": "Destiny Bond"
     },
     "tm": [],
     "egg": [],
@@ -12410,7 +12410,7 @@
       "1": "Counter",
       "2": "Mirror Coat",
       "3": "Safeguard",
-      "4": "Destiny Bound"
+      "4": "Destiny Bond"
     },
     "tm": [],
     "egg": [],
@@ -15262,7 +15262,7 @@
       "Mirror Coat",
       "Refresh",
       "Stomp",
-      "UpRoar"
+      "Uproar"
     ],
     "tutor": [
       "Body Slam",
@@ -15855,7 +15855,7 @@
       "25": "Fury Swipes",
       "31": "Water Sport",
       "37": "Thief",
-      "43": "UpRoar",
+      "43": "Uproar",
       "49": "Hydro Pump"
     },
     "tm": [
@@ -16859,7 +16859,7 @@
       "3": "Encore",
       "4": "Uproar",
       "7": "Encore",
-      "13": "UpRoar",
+      "13": "Uproar",
       "19": "Fury Swipes",
       "25": "Endure",
       "31": "Slash",
@@ -17159,7 +17159,7 @@
   "whismur": {
     "level": {
       "1": "Pound",
-      "5": "UpRoar",
+      "5": "Uproar",
       "11": "Astonish",
       "15": "Howl",
       "21": "Supersonic",
@@ -17227,10 +17227,10 @@
   "loudred": {
     "level": {
       "1": "Pound",
-      "2": "UpRoar",
+      "2": "Uproar",
       "3": "Astonish",
       "4": "Howl",
-      "5": "UpRoar",
+      "5": "Uproar",
       "11": "Astonish",
       "15": "Howl",
       "23": "Supersonic",
@@ -17300,10 +17300,10 @@
   "exploud": {
     "level": {
       "1": "Pound",
-      "2": "UpRoar",
+      "2": "Uproar",
       "3": "Astonish",
       "4": "Howl",
-      "5": "UpRoar",
+      "5": "Uproar",
       "11": "Astonish",
       "15": "Howl",
       "23": "Supersonic",
@@ -17618,7 +17618,7 @@
       "Psych Up",
       "Substitute",
       "Tickle",
-      "UpRoar",
+      "Uproar",
       "Wish"
     ],
     "tutor": [
@@ -18244,7 +18244,7 @@
       "Curse",
       "Headbutt",
       "Swift",
-      "UpRoar"
+      "Uproar"
     ],
     "tutor": [
       "Body Slam",
@@ -19309,7 +19309,7 @@
   "spinda": {
     "level": {
       "1": "Tackle",
-      "5": "UpRoar",
+      "5": "Uproar",
       "12": "Feint Attack",
       "16": "Psybeam",
       "23": "Hypnosis",
@@ -21217,7 +21217,7 @@
       "9": "Astonish",
       "14": "Confusion",
       "17": "Take Down",
-      "22": "UpRoar",
+      "22": "Uproar",
       "25": "Yawn",
       "30": "Psywave",
       "33": "Double-Edge",
@@ -23180,10 +23180,10 @@
   },
   "testmon": {
     "level": {
-      "1": "Memento",
-      "2": "Magic Coat",
-      "3": "Stockpile",
-      "4": "Protect",
+      "1": "Thunder Wave",
+      "2": "Bide",
+      "3": "Fly",
+      "4": "Dig",
       "20": "Swift",
       "25": "False Swipe",
       "30": "Swift",
