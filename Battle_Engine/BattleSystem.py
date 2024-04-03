@@ -1,33 +1,14 @@
-from queue_custom import *
-from Classes import *
+from Helpers.queue_custom import *
+from Classes import Ai, Player, Pokemon
+from Helpers import get_input
 from bearlibterminal import terminal
+from Data_Builders import *
 import time
 import inspect
+import math
 
-
-def get_input(inputs=0, enter=False, backspace=False):
-    while True:
-        if inputs == 0 and not enter and not backspace:
-            break
-        button = terminal.read()
-        if button == terminal.TK_1 and inputs > 0:
-            return 0
-        elif button == terminal.TK_2 and inputs > 1:
-            return 1
-        elif button == terminal.TK_3 and inputs > 2:
-            return 2
-        elif button == terminal.TK_4 and inputs > 3:
-            return 3
-        elif button == terminal.TK_5 and inputs > 4:
-            return 4
-        elif button == terminal.TK_6 and inputs > 5:
-            return 5
-        elif button == terminal.TK_7 and inputs > 6:
-            return 6
-        elif button == terminal.TK_ENTER and enter:
-            return terminal.TK_ENTER
-        elif button == terminal.TK_BACKSPACE and backspace:
-            return terminal.TK_BACKSPACE
+moves = get_moves()
+types = get_type_effectiveness()
 
 
 def dmg_range(total):
@@ -35,9 +16,6 @@ def dmg_range(total):
     for n in range(85, 101):
         r.append(math.floor(total * (n / 100)))
     print(r)
-
-
-
 
 
 def grounded(mon):
@@ -485,14 +463,14 @@ class Battle:
                 self.print_moves(self.player.team.index(self.player.active))
                 while True:
                     self.print_txt("What move would you like to use?(1-4)", 0)
-                    i = get_input(4, backspace=True)
+                    i = get_input(4, is_backspace_used=True)
                     if i == 42:
                         break
                     else:
                         move = self.moves.get(self.player.active.moves[i])
                         self.print_txt(f"Use {move.get("name")}?(Enter/Backspace) {move.get("description")}", 0)
                         while True:
-                            i = get_input(enter=True, backspace=True)
+                            i = get_input(is_enter_used=True, is_backspace_used=True)
                             if i == 40:
                                 return move.copy()
                             elif i == 42:
@@ -528,7 +506,7 @@ class Battle:
                 else:
                     terminal.printf(45, y, "Empty Slot")
             self.print_txt("What Pokemon would you like to view/swap? (1-6)", 0)
-            i = get_input(6, backspace=True)
+            i = get_input(6, is_backspace_used=True)
             if i == 42 and not must_swap:
                 terminal.clear_area(45, 17, 42, 7)
                 self.print_ui()
@@ -540,7 +518,7 @@ class Battle:
                     self.print_moves(i)
                     self.print_txt(f"Swap to {self.player.team[i].species}?(Enter/Backspace)"
                                    f"{self.player.team[i].info}", 0)
-                    x = get_input(enter=True, backspace=True)
+                    x = get_input(is_enter_used=True, is_backspace_used=True)
                     if x == 40:
                         if not must_swap and not can_swap(self.player.active, self.ai.active):
                             self.print_txt(f"{self.player.active.species} is trapped and cant switch out!")

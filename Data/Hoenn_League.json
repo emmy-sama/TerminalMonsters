@@ -1,0 +1,1062 @@
+[
+  {
+    "encounter_name": "{name}",
+    "amount_of_encounters": 1,
+    "encounter_lvl": "lvl9",
+    "level_up_amount": 9,
+    "text": "You stumble into your rival {name} and they challenge you to a battle!",
+    "team": [
+      {
+        "species": "Taillow",
+        "level": 7,
+        "ability": "Guts",
+        "held_item": "",
+        "move_set": [
+          "Peck",
+          "Growl",
+          "Focus Energy",
+          "Quick Attack"
+        ]
+      },
+      {
+        "species": "Treecko",
+        "level": 9,
+        "ability": "Overgrow",
+        "held_item": "",
+        "move_set": [
+          "Pound",
+          "Leer",
+          "Absorb",
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Roxanne",
+    "amount_of_encounters": 1,
+    "encounter_lvl": "lvl14",
+    "level_up_amount": 15,
+    "text": "You enter the Rustboro City gym and challenge its leader Roxanne!",
+    "team": [
+      {
+        "species": "Geodude",
+        "level": 12,
+        "ability": "Rock Head",
+        "held_item": "",
+        "move_set": [
+          "Tackle",
+          "Defense Curl",
+          "Rock Throw",
+          "Rock Tomb"
+        ]
+      },
+      {
+        "species": "Geodude",
+        "level": 12,
+        "ability": "Rock Head",
+        "held_item": "",
+        "move_set": [
+          "Tackle",
+          "Defense Curl",
+          "Rock Throw",
+          "Rock Tomb"
+        ]
+      },
+      {
+        "species": "Nosepass",
+        "level": 15,
+        "ability": "Sturdy",
+        "held_item": "Oran Berry",
+        "move_set": [
+          "Block",
+          "Harden",
+          "Tackle",
+          "Rock Tomb"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Brawly",
+    "amount_of_encounters": 2,
+    "encounter_lvl": "lvl14",
+    "level_up_amount": 19,
+    "text": "You enter the Dewford Town gym and challenge its leader Brawly!",
+    "team": [
+      {
+        "species": "Machop",
+        "level": 16,
+        "ability": "Guts",
+        "held_item": "",
+        "move_set": [
+          "Karate Chop",
+          "Low Kick",
+          "Seismic Toss",
+          "Bulk Up"
+        ]
+      },
+      {
+        "species": "Meditite",
+        "level": 16,
+        "ability": "Pure Power",
+        "held_item": "",
+        "move_set": [
+          "Focus Punch",
+          "Light Screen",
+          "Reflect",
+          "Bulk Up"
+        ]
+      },
+      {
+        "species": "Makuhita",
+        "level": 19,
+        "ability": "Thick Fat",
+        "held_item": "Sitrus Berry",
+        "move_set": [
+          "Arm Thrust",
+          "Vital Throw",
+          "Reversal",
+          "Bulk Up"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Wattson",
+    "amount_of_encounters": 2,
+    "encounter_lvl": "lvl20",
+    "level_up_amount": 24,
+    "text": "You enter the Mauville City gym and challenge its leader Wattson!",
+    "team": [
+      {
+        "species": "Voltorb",
+        "level": 20,
+        "ability": "Soundproof",
+        "held_item": "",
+        "move_set": [
+          "Rollout",
+          "Spark",
+          "Self-Destruct",
+          "Shock Wave"
+        ]
+      },
+      {
+        "species": "Electrike",
+        "level": 20,
+        "ability": "Static",
+        "held_item": "",
+        "move_set": [
+          "Shock Wave",
+          "Leer",
+          "Quick Attack",
+          "Howl"
+        ]
+      },
+      {
+        "species": "Magneton",
+        "level": 22,
+        "ability": "Magnet Pull",
+        "held_item": "",
+        "move_set": [
+          "Supersonic",
+          "Shock Wave",
+          "Thunder Wave",
+          "Sonic Boom"
+        ]
+      },
+      {
+        "species": "Manectric",
+        "level": 24,
+        "ability": "Static",
+        "held_item": "Sitrus Berry",
+        "move_set": [
+          "Quick Attack",
+          "Leer",
+          "Shock Wave",
+          "Howl"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Flannery",
+    "amount_of_encounters": 2,
+    "encounter_lvl": "lvl26",
+    "level_up_amount": 29,
+    "text": "You enter the Lavaridge Town gym and challenge its leader Flannery!",
+    "team": [
+      {
+        "species": "Numel",
+        "level": 24,
+        "ability": "Oblivious",
+        "held_item": "",
+        "move_set": [
+          "Overheat",
+          "Take Down",
+          "Magnitude",
+          "Sunny Day"
+        ]
+      },
+      {
+        "species": "Slugma",
+        "level": 24,
+        "ability": "Magma Armor",
+        "held_item": "",
+        "move_set": [
+          "Overheat",
+          "Smog",
+          "Light Screen",
+          "Sunny Day"
+        ]
+      },
+      {
+        "species": "Camerupt",
+        "level": 26,
+        "ability": "Magma Armor",
+        "held_item": "",
+        "move_set": [
+          "Overheat",
+          "Tackle",
+          "Sunny Day",
+          "Attract"
+        ]
+      },
+      {
+        "species": "Torkoal",
+        "level": 29,
+        "ability": "White Smoke",
+        "held_item": "White Herb",
+        "move_set": [
+          "Overheat",
+          "Sunny Day",
+          "Body Slam",
+          "Attract"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "{name}",
+    "amount_of_encounters": 1,
+    "encounter_lvl": "lvl30",
+    "level_up_amount": 31,
+    "text": "You stumble into your rival {name} and they challenge you to a battle!",
+    "team": [
+      {
+        "species": "Swellow",
+        "level": 28,
+        "ability": "Guts",
+        "held_item": "",
+        "move_set": [
+          "Wing Attack",
+          "Quick Attack",
+          "Double Team",
+          "Steel Wing"
+        ]
+      },
+      {
+        "species": "Slugma",
+        "level": 29,
+        "ability": "Magma Armor",
+        "held_item": "",
+        "move_set": [
+          "Ember",
+          "Rock Throw",
+          "Harden",
+          "Amnesia"
+        ]
+      },
+      {
+        "species": "Wailmer",
+        "level": 29,
+        "ability": "Water Veil",
+        "held_item": "",
+        "move_set": [
+          "Water Pulse",
+          "Mist",
+          "Ice Beam",
+          "Rest"
+        ]
+      },
+      {
+        "species": "Grovyle",
+        "level": 31,
+        "ability": "Overgrow",
+        "held_item": "",
+        "move_set": [
+          "Fury Cutter",
+          "Pursuit",
+          "Screech",
+          "Leaf Blade"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Norman",
+    "amount_of_encounters": 1,
+    "encounter_lvl": "lvl30",
+    "level_up_amount": 31,
+    "text": "You enter the Petalburg City gym and challenge its leader Norman!",
+    "team": [
+      {
+        "species": "Spinda",
+        "level": 27,
+        "ability": "Own Tempo",
+        "held_item": "",
+        "move_set": [
+          "Teeter Dance",
+          "Psybeam",
+          "Facade",
+          "Encore"
+        ]
+      },
+      {
+        "species": "Vigoroth",
+        "level": 27,
+        "ability": "Vital Spirit",
+        "held_item": "",
+        "move_set": [
+          "Slash",
+          "Facade",
+          "Encore",
+          "Faint Attack"
+        ]
+      },
+      {
+        "species": "Linoone",
+        "level": 29,
+        "ability": "Pickup",
+        "held_item": "",
+        "move_set": [
+          "Slash",
+          "Belly Drum",
+          "Facade",
+          "Headbutt"
+        ]
+      },
+      {
+        "species": "Slaking",
+        "level": 31,
+        "ability": "Truant",
+        "held_item": "Sitrus Berry",
+        "move_set": [
+          "Counter",
+          "Yawn",
+          "Facade",
+          "Faint Attack"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Winona",
+    "amount_of_encounters": 2,
+    "encounter_lvl": "lvl30",
+    "level_up_amount": 33,
+    "text": "You enter the Fortree City gym and challenge its leader Winona!",
+    "team": [
+      {
+        "species": "Swablu",
+        "level": 29,
+        "ability": "Natural Cure",
+        "held_item": "",
+        "move_set": [
+          "Perish Song",
+          "Mirror Move",
+          "Safeguard",
+          "Aerial Ace"
+        ]
+      },
+      {
+        "species": "Tropius",
+        "level": 29,
+        "ability": "Chlorophyll",
+        "held_item": "",
+        "move_set": [
+          "Sunny Day",
+          "Aerial Ace",
+          "Solar Beam",
+          "Synthesis"
+        ]
+      },
+      {
+        "species": "Pelipper",
+        "level": 30,
+        "ability": "Keen Eye",
+        "held_item": "",
+        "move_set": [
+          "Water Gun",
+          "Supersonic",
+          "Protect",
+          "Aerial Ace"
+        ]
+      },
+      {
+        "species": "Skarmory",
+        "level": 31,
+        "ability": "Keen Eye",
+        "held_item": "",
+        "move_set": [
+          "Sand Attack",
+          "Fury Attack",
+          "Steel Wing",
+          "Aerial Ace"
+        ]
+      },
+      {
+        "species": "Altaria",
+        "level": 33,
+        "ability": "Natural Cure",
+        "held_item": "Oran Berry",
+        "move_set": [
+          "Earthquake",
+          "Dragon Breath",
+          "Dragon Dance",
+          "Aerial Ace"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Tate & Liza",
+    "amount_of_encounters": 2,
+    "encounter_lvl": "lvl40",
+    "level_up_amount": 42,
+    "text": "You enter the Mossdeep City gym and challenge its leader's Tate & Liza!",
+    "team": [
+      {
+        "species": "Claydol",
+        "level": 41,
+        "ability": "Levitate",
+        "held_item": "",
+        "move_set": [
+          "Earthquake",
+          "Ancient Power",
+          "Psychic",
+          "Light Screen"
+        ]
+      },
+      {
+        "species": "Xatu",
+        "level": 41,
+        "ability": "Synchronize",
+        "held_item": "",
+        "move_set": [
+          "Psychic",
+          "Sunny Day",
+          "Confuse Ray",
+          "Calm Mind"
+        ]
+      },
+      {
+        "species": "Lunatone",
+        "level": 42,
+        "ability": "Levitate",
+        "held_item": "Sitrus Berry",
+        "move_set": [
+          "Light Screen",
+          "Psychic",
+          "Hypnosis",
+          "Calm Mind"
+        ]
+      },
+      {
+        "species": "Solrock",
+        "level": 42,
+        "ability": "Levitate",
+        "held_item": "Sitrus Berry",
+        "move_set": [
+          "Sunny Day",
+          "Solar Beam",
+          "Psychic",
+          "Flamethrower"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Juan",
+    "amount_of_encounters": 2,
+    "encounter_lvl": "lvl46",
+    "level_up_amount": 46,
+    "text": "You enter the Sootopolis City and challenge its leader's Juan!",
+    "team": [
+      {
+        "species": "Luvdisc",
+        "level": 41,
+        "ability": "Swift Swim",
+        "held_item": "",
+        "move_set": [
+          "Water Pulse",
+          "Attract",
+          "Sweet Kiss",
+          "Flail"
+        ]
+      },
+      {
+        "species": "Whiscash",
+        "level": 41,
+        "ability": "Oblivious",
+        "held_item": "",
+        "move_set": [
+          "Rain Dance",
+          "Water Pulse",
+          "Amnesia",
+          "Earthquake"
+        ]
+      },
+      {
+        "species": "Sealeo",
+        "level": 43,
+        "ability": "Thick Fat",
+        "held_item": "",
+        "move_set": [
+          "Encore",
+          "Body Slam",
+          "Aurora Beam",
+          "Water Pulse"
+        ]
+      },
+      {
+        "species": "Crawdaunt",
+        "level": 43,
+        "ability": "Hyper Cutter",
+        "held_item": "",
+        "move_set": [
+          "Water Pulse",
+          "Crabhammer",
+          "Taunt",
+          "Leer"
+        ]
+      },
+      {
+        "species": "Kingdra",
+        "level": 46,
+        "ability": "Swift Swim",
+        "held_item": "Chesto Berry",
+        "move_set": [
+          "Water Pulse",
+          "Double Team",
+          "Ice Beam",
+          "Rest"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "{name}",
+    "amount_of_encounters": 1,
+    "encounter_lvl": "lvl52",
+    "level_up_amount": 49,
+    "text": "You stumble into your rival {name} and they challenge you to a battle!",
+    "team": [
+      {
+        "species": "Swellow",
+        "level": 48,
+        "ability": "Guts",
+        "held_item": "",
+        "move_set": [
+          "Aerial Ace",
+          "Quick Attack",
+          "Agility",
+          "Steel Wing"
+        ]
+      },
+      {
+        "species": "Raichu",
+        "level": 48,
+        "ability": "Static",
+        "held_item": "",
+        "move_set": [
+          "Thunder Wave",
+          "Thunder Bolt",
+          "Quick Attack",
+          "Light Screen"
+        ]
+      },
+      {
+        "species": "Magcargo",
+        "level": 48,
+        "ability": "Magma Armor",
+        "held_item": "",
+        "move_set": [
+          "Earthquake",
+          "Flamethrower",
+          "Body Slam",
+          "Rock Slide"
+        ]
+      },
+      {
+        "species": "Wailord",
+        "level": 48,
+        "ability": "Water Veil",
+        "held_item": "",
+        "move_set": [
+          "Surf",
+          "Body Slam",
+          "Earthquake",
+          "Ice Beam"
+        ]
+      },
+      {
+        "species": "Sceptile",
+        "level": 49,
+        "ability": "Overgrow",
+        "held_item": "",
+        "move_set": [
+          "Leaf Blade",
+          "Fury Cutter",
+          "Dragon Claw",
+          "Pursuit"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Sidney",
+    "amount_of_encounters": 1,
+    "encounter_lvl": "lvl58",
+    "level_up_amount": 49,
+    "text": "You enter the Elite 4 you challenge member Sidney first!",
+    "team": [
+      {
+        "species": "Mightyena",
+        "level": 46,
+        "ability": "Intimidate",
+        "held_item": "",
+        "move_set": [
+          "Roar",
+          "Double-Edge",
+          "Sand Attack",
+          "Crunch"
+        ]
+      },
+      {
+        "species": "Shiftry",
+        "level": 48,
+        "ability": "Chlorophyll",
+        "held_item": "",
+        "move_set": [
+          "Torment",
+          "Double Team",
+          "Swagger",
+          "Extrasensory"
+        ]
+      },
+      {
+        "species": "Cacturne",
+        "level": 46,
+        "ability": "Sand Veil",
+        "held_item": "",
+        "move_set": [
+          "Leech Seed",
+          "Faint Attack",
+          "Needle Arm",
+          "Cotton Spore"
+        ]
+      },
+      {
+        "species": "Crawdaunt",
+        "level": 48,
+        "ability": "Hyper Cutter",
+        "held_item": "",
+        "move_set": [
+          "Surf",
+          "Swords Dance",
+          "Strength",
+          "Facade"
+        ]
+      },
+      {
+        "species": "Absol",
+        "level": 49,
+        "ability": "Pressure",
+        "held_item": "Sitrus Berry",
+        "move_set": [
+          "Aerial Ace",
+          "Rock Slide",
+          "Swords Dance",
+          "Slash"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Phoebe",
+    "amount_of_encounters": 0,
+    "encounter_lvl": "lvl9",
+    "level_up_amount": 51,
+    "text": "Next you challenge Member Phoebe!",
+    "team": [
+      {
+        "species": "Dusclops",
+        "level": 48,
+        "ability": "Pressure",
+        "held_item": "",
+        "move_set": [
+          "Shadow Punch",
+          "Confuse Ray",
+          "Curse",
+          "Protect"
+        ]
+      },
+      {
+        "species": "Banette",
+        "level": 49,
+        "ability": "Insomnia",
+        "held_item": "",
+        "move_set": [
+          "Shadow Ball",
+          "Grudge",
+          "Will-O-Wisp",
+          "Faint Attack"
+        ]
+      },
+      {
+        "species": "Sableye",
+        "level": 50,
+        "ability": "Keen Eye",
+        "held_item": "",
+        "move_set": [
+          "Shadow Ball",
+          "Double Team",
+          "Night Shade",
+          "Faint Attack"
+        ]
+      },
+      {
+        "species": "Banette",
+        "level": 49,
+        "ability": "Insomnia",
+        "held_item": "",
+        "move_set": [
+          "Shadow Ball",
+          "Psychic",
+          "Thunderbolt",
+          "Facade"
+        ]
+      },
+      {
+        "species": "Dusclops",
+        "level": 51,
+        "ability": "Pressure",
+        "held_item": "Sitrus Berry",
+        "move_set": [
+          "Shadow Ball",
+          "Ice Beam",
+          "Rock Slide",
+          "Earthquake"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Glacia",
+    "amount_of_encounters": 0,
+    "encounter_lvl": "lvl9",
+    "level_up_amount": 53,
+    "text": "Next you challenge Member Glacia!",
+    "team": [
+      {
+        "species": "Sealeo",
+        "level": 50,
+        "ability": "Thick Fat",
+        "held_item": "",
+        "move_set": [
+          "Encore",
+          "Body Slam",
+          "Hail",
+          "Ice Ball"
+        ]
+      },
+      {
+        "species": "Glalie",
+        "level": 50,
+        "ability": "Inner Focus",
+        "held_item": "",
+        "move_set": [
+          "Light Screen",
+          "Crunch",
+          "Icy Wind",
+          "Ice Beam"
+        ]
+      },
+      {
+        "species": "Sealeo",
+        "level": 52,
+        "ability": "Thick Fat",
+        "held_item": "",
+        "move_set": [
+          "Attract",
+          "Double-Edge",
+          "Hail",
+          "Blizzard"
+        ]
+      },
+      {
+        "species": "Glalie",
+        "level": 52,
+        "ability": "Inner Focus",
+        "held_item": "",
+        "move_set": [
+          "Shadow Ball",
+          "Explosion",
+          "Hail",
+          "Ice Beam"
+        ]
+      },
+      {
+        "species": "Walrein",
+        "level": 53,
+        "ability": "Thick Fat",
+        "held_item": "Sitrus Berry",
+        "move_set": [
+          "Surf",
+          "Body Slam",
+          "Ice Beam",
+          "Sheer Cold"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Drake",
+    "amount_of_encounters": 0,
+    "encounter_lvl": "lvl9",
+    "level_up_amount": 55,
+    "text": "Next you challenge Member Drake!",
+    "team": [
+      {
+        "species": "Shelgon",
+        "level": 52,
+        "ability": "Rock Head",
+        "held_item": "",
+        "move_set": [
+          "Rock Tomb",
+          "Dragon Claw",
+          "Protect",
+          "Double-Edge"
+        ]
+      },
+      {
+        "species": "Altaria",
+        "level": 54,
+        "ability": "Natural Cure",
+        "held_item": "",
+        "move_set": [
+          "Double-Edge",
+          "Dragon Breath",
+          "Dragon Dance",
+          "Aerial Ace"
+        ]
+      },
+      {
+        "species": "Kingdra",
+        "level": 53,
+        "ability": "Swift Swim",
+        "held_item": "",
+        "move_set": [
+          "Smokescreen",
+          "Dragon Dance",
+          "Surf",
+          "Body Slam"
+        ]
+      },
+      {
+        "species": "Flygon",
+        "level": 53,
+        "ability": "Levitate",
+        "held_item": "",
+        "move_set": [
+          "Flamethrower",
+          "Crunch",
+          "Dragon Breath",
+          "Earthquake"
+        ]
+      },
+      {
+        "species": "Salamence",
+        "level": 55,
+        "ability": "Intimidate",
+        "held_item": "Sitrus Berry",
+        "move_set": [
+          "Flamethrower",
+          "Dragon Claw",
+          "Rock Slide",
+          "Crunch"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Wallace",
+    "amount_of_encounters": 0,
+    "encounter_lvl": "lvl9",
+    "level_up_amount": 58,
+    "text": "Lastly you challenge the champion Wallace!",
+    "team": [
+      {
+        "species": "Wailord",
+        "level": 57,
+        "ability": "Water Veil",
+        "held_item": "",
+        "move_set": [
+          "Rain Dance",
+          "Water Spout",
+          "Double-Edge",
+          "Blizzard"
+        ]
+      },
+      {
+        "species": "Tentacruel",
+        "level": 55,
+        "ability": "Clear Body",
+        "held_item": "",
+        "move_set": [
+          "Toxic",
+          "Hydro Pump",
+          "Sludge Bomb",
+          "Ice Beam"
+        ]
+      },
+      {
+        "species": "Ludicolo",
+        "level": 56,
+        "ability": "Swift Swim",
+        "held_item": "",
+        "move_set": [
+          "Giga Drain",
+          "Surf",
+          "Leech Seed",
+          "Double Team"
+        ]
+      },
+      {
+        "species": "Whiscash",
+        "level": 56,
+        "ability": "Oblivious",
+        "held_item": "",
+        "move_set": [
+          "Earthquake",
+          "Surf",
+          "Amnesia",
+          "Hyper Beam"
+        ]
+      },
+      {
+        "species": "Gyarados",
+        "level": 56,
+        "ability": "Intimidate",
+        "held_item": "",
+        "move_set": [
+          "Dragon Dance",
+          "Earthquake",
+          "Hyper Beam",
+          "Surf"
+        ]
+      },
+      {
+        "species": "Milotic",
+        "level": 58,
+        "ability": "Marvel Scale",
+        "held_item": "Sitrus Berry",
+        "move_set": [
+          "Recover",
+          "Surf",
+          "Ice Beam",
+          "Toxic"
+        ]
+      }
+    ]
+  },
+  {
+    "encounter_name": "Legendary",
+    "amount_of_encounters": 1,
+    "encounter_lvl": "Legendary",
+    "level_up_amount": 70,
+    "text": "While resting at home you hear news of a pokemon attacking a nearby town and you go to help!"
+  },
+  {
+    "encounter_name": "Steven",
+    "amount_of_encounters": 0,
+    "encounter_lvl": "lvl9",
+    "level_up_amount": 77,
+    "text": "After catching {legendary} a man named Steven asks to battle you and you accept!",
+    "team": [
+      {
+        "species": "Skarmory",
+        "level": 77,
+        "ability": "Keen Eye",
+        "held_item": "",
+        "move_set": [
+          "Toxic",
+          "Aerial Ace",
+          "Spikes",
+          "Steel Wing"
+        ]
+      },
+      {
+        "species": "Claydol",
+        "level": 75,
+        "ability": "Levitate",
+        "held_item": "",
+        "move_set": [
+          "Reflect",
+          "Light Screen",
+          "Ancient Power",
+          "Earthquake"
+        ]
+      },
+      {
+        "species": "Aggron",
+        "level": 76,
+        "ability": "Sturdy",
+        "held_item": "",
+        "move_set": [
+          "Thunder",
+          "Earthquake",
+          "Solar Beam",
+          "Dragon Claw"
+        ]
+      },
+      {
+        "species": "Cradily",
+        "level": 76,
+        "ability": "Suction Cups",
+        "held_item": "",
+        "move_set": [
+          "Giga Drain",
+          "Ancient Power",
+          "Ingrain",
+          "Confuse Ray"
+        ]
+      },
+      {
+        "species": "Armaldo",
+        "level": 76,
+        "ability": "Battle Armor",
+        "held_item": "",
+        "move_set": [
+          "Water Pulse",
+          "Ancient Power",
+          "Aerial Ace",
+          "Slash"
+        ]
+      },
+      {
+        "species": "Metagross",
+        "level": 78,
+        "ability": "Clear Body",
+        "held_item": "Sitrus Berry",
+        "move_set": [
+          "Earthquake",
+          "Psychic",
+          "Meteor Mash",
+          "Shadow Ball"
+        ]
+      }
+    ]
+  }
+]

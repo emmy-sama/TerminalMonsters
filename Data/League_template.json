@@ -1,0 +1,25 @@
+[
+  {
+    "encounter_name": "",
+    "amount_of_encounters": 0,
+    "encounter_lvl": "lvl0",
+    "level_up_amount": 0,
+    "text": "",
+    "team": [
+      {
+        "species": "",
+        "level": 0,
+        "ability": "",
+        "held_item": "",
+        "nature": "",
+        "hidden_type": "",
+        "move_set": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    ]
+  }
+  ]

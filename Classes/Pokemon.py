@@ -1,53 +1,35 @@
 import random
 import math
-import json
+from Data_Builders import *
 import time
-
 from bearlibterminal import terminal
-with open("Data/Pokedex.json") as pokedex_json:
-    pokedex = json.load(pokedex_json)
-with open("Data/natures.json") as natures_json:
-    natures = json.load(natures_json)
-with open("Data/Moves.json") as moves_json:
-    moves = json.load(moves_json)
-with open("Data/LearnSets.json") as learn_sets_json:
-    learn_sets = json.load(learn_sets_json)
-with open("Data/TypeEffectiveness.json") as effectiveness_json:
-    types = json.load(effectiveness_json)
-with open("Data/Encounter_Table.json") as encounter_table_json:
-    encounters = json.load(encounter_table_json)
+from Helpers import print_txt
 
-
-class Player:
-    def __init__(self, name, team, starter_type=None):
-        self.name = name
-        self.starter_type = starter_type
-        self.team = team
-        self.active = None
-        self.opponent = None
-        self.reflect = False
-        self.light_screen = False
-        self.mist = 0
-
-
-class Ai:
-    def __init__(self, name, team):
-        self.name = name
-        self.team = team
-        self.active = None
-        self.opponent = None
-        self.reflect = False
-        self.light_screen = False
-        self.mist = 0
+pokedex = get_pokedex()
+natures = get_natures()
+learn_sets = get_learn_sets()
 
 
 class Pokemon:
-    def __init__(self, species, owner, level=5):
+    def __init__(self, species, owner, level=5, custom_data=None):
         self.owner = owner
-        self.level = level
         dex_entry = pokedex.get(species)
-        self.species = dex_entry.get("Species")
+        self.species = species
         self.dex_number = dex_entry.get("dex_number")
+        if custom_data:
+            self.level = custom_data.get("level")
+            self.ability = self.ability_og = custom_data.get("ability")
+            self.held_item = custom_data.get("held_item")
+            self.nature = natures[random.randint(0, 24)]
+            self.hidden_type = custom_data.get("hidden_type", self.get_hidden_type())
+            # move set
+        else:
+            self.level = level
+            self.ability = self.ability_og = random.choice(dex_entry.get("Abilities"))
+            self.held_item = ""
+            self.nature = natures[random.randint(0, 24)]
+            self.hidden_type = self.get_hidden_type()
+        self.gender = self.get_gender(dex_entry.get("Gender Ratio"))
         self.front_sprite = random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 58116),
                                            hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 58117)])
         self.back_sprite = random.choice([hex(list(map(lambda x: x // 2, range(1, 774))).index(self.dex_number) + 57344),
@@ -60,15 +42,9 @@ class Pokemon:
         else:
             self.type_two = None
             self.type_two_og = None
-        self.ability = random.choice(dex_entry.get("Abilities"))
-        self.ability_og = self.ability
-        self.gender = None
-        self.get_gender(dex_entry.get("Gender Ratio"))
         self.catch_rate = dex_entry.get("Catch rate")
         self.height = dex_entry.get("Height")
         self.weight = dex_entry.get("Weight")
-        self.nature = natures[random.randint(0, 24)]
-        self.hidden_type = self.get_hidden_type()
         self.bHp = dex_entry.get("bHP")
         self.bAttack = dex_entry.get("bAttack")
         self.bDefense = dex_entry.get("bDefense")
@@ -130,9 +106,9 @@ class Pokemon:
     def get_gender(self, percent):
         rnum = random.uniform(0.0, 1.0)
         if rnum <= percent:
-            self.gender = "♂"
+            return "♂"
         else:
-            self.gender = "♀"
+            return "♀"
 
     def get_move_set(self):
         ms = []
