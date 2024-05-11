@@ -1,16 +1,18 @@
-from Battle_Engine.BattleSystem import *
+import json
+from random import choice as random_choice
+from time import sleep
+from bearlibterminal import terminal
+from Battle_Engine.Battle_System_Main import Battle
 from Classes import Ai, Player, Pokemon
 from Helpers import get_input, print_txt
-from Data_Builders import get_league_data, get_encounter_tables
-
-pokedex = get_pokedex()
+from Data_Builders import encounter_tables
+from Data_Builders import pokedex
 
 
 class Main:
     def __init__(self):
         self.player = Player()
         self.starter_type = None
-        self.encounter_tables = get_encounter_tables()
 
     def game_play(self):
         print_txt("What is your rival's name?: ", 0)
@@ -24,9 +26,9 @@ class Main:
                 self.print_exp(trainer_battle.get("level_up_amount"))
                 self.poke_center()
                 terminal.clear()
-                legendary = random.choice(self.encounter_tables.get("Legendary"))
+                legendary = random_choice(encounter_tables.get("Legendary"))
                 legendary_trainer = Ai("", [Pokemon(legendary, "", 75)])
-                Battle(self.player, self.select_lead(), legendary_trainer).battle()
+                Battle(self.player, self.select_lead(), legendary_trainer).main()
                 self.catch_legendary(legendary)
             else:
                 for encounter in range(0, trainer_battle.get("amount_of_encounters")):
@@ -38,7 +40,7 @@ class Main:
                 opponenet = Ai(trainer_battle.get("encounter_name").format(name=rival), [])
                 opponenet.team = [Pokemon(pokemon.get("species"), opponenet, custom_data=pokemon)
                                   for pokemon in trainer_battle.get("team")]
-                Battle(self.player, self.select_lead(), opponenet).battle()
+                Battle(self.player, self.select_lead(), opponenet).main()
         print_txt(f"Thank you for playing you have finished the game as it is now!")
         terminal.clear()
 
@@ -62,7 +64,7 @@ class Main:
         elif i == 2:
             player_starter = Pokemon("Squirtle", self.player, 5)
         else:
-            random_starter = random.choice(list(pokedex.keys()))
+            random_starter = random_choice(list(pokedex.keys()))
             player_starter = Pokemon(random_starter, self.player, 5)
         terminal.clear()
         self.starter_type = player_starter.type_one
@@ -76,7 +78,7 @@ class Main:
         else:
             terminal.printf(20, 6, txt)
         terminal.refresh()
-        time.sleep(2)
+        sleep(2)
         terminal.clear()
         for mons in self.player.team:
             mons.level_up(lvl)
@@ -134,22 +136,22 @@ class Main:
             route = "City"
         elif route == 5:
             route = "Night"
-        mon_1 = pokedex.get(random.choice(self.encounter_tables.get(route).get(lvl)))
-        mon_2 = pokedex.get(random.choice(self.encounter_tables.get(route).get(lvl)))
-        mon_3 = pokedex.get(random.choice(self.encounter_tables.get(route).get(lvl)))
+        mon_1 = pokedex.get(random_choice(encounter_tables.get(route).get(lvl)))
+        mon_2 = pokedex.get(random_choice(encounter_tables.get(route).get(lvl)))
+        mon_3 = pokedex.get(random_choice(encounter_tables.get(route).get(lvl)))
         terminal.clear()
         terminal.put(0, 0, 0xF8FC)
         terminal.printf(22, 6, "What pokemon would you like to try and catch?")
         terminal.printf(9, 18, f"1 {mon_1.get("Species")}")
-        terminal.put(14, 12, int(random.choice(
+        terminal.put(14, 12, int(random_choice(
             [hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_1.get("dex_number")) + 58116),
              hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_1.get("dex_number")) + 58117)]), 16))
         terminal.printf(37, 18, f"2 {mon_2.get("Species")}")
-        terminal.put(42, 12, int(random.choice(
+        terminal.put(42, 12, int(random_choice(
             [hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_2.get("dex_number")) + 58116),
              hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_2.get("dex_number")) + 58117)]), 16))
         terminal.printf(69, 18, f"3 {mon_3.get("Species")}")
-        terminal.put(74, 12, int(random.choice(
+        terminal.put(74, 12, int(random_choice(
             [hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_3.get("dex_number")) + 58116),
              hex(list(map(lambda x: x // 2, range(1, 774))).index(mon_3.get("dex_number")) + 58117)]), 16))
         terminal.printf(37, 21, "4 Pass")
@@ -187,7 +189,7 @@ class Main:
         terminal.refresh()
         slot = get_input(len(self.player.team))
         terminal.clear()
-        return self.player.team[slot]
+        self.player.active = self.player.team[slot]
 
     def catch_legendary(self, legendary):
         if len(self.player.team) == 6:
@@ -205,3 +207,9 @@ class Main:
                 self.player.team.insert(i, Pokemon(legendary, self.player, 77))
         else:
             self.player.team.append(Pokemon(legendary, self.player, 77))
+
+
+def get_league_data(league):
+    with open(f"Data/{league}_League.json") as league_data:
+        return json.load(league_data)
+    

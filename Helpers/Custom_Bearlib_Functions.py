@@ -1,9 +1,10 @@
-from bearlibterminal import terminal
 from time import sleep
+from bearlibterminal import terminal
 
 
 def setup_bearlib():
     terminal.open()
+    # sprite setting
     terminal.set("window: size=88x25")
     terminal.set("0xE001: data/pngs/BackSprites.png, size=333x333, align=center")
     terminal.set("0xE305: data/pngs/FrontSprites.png, size=333x333, align=center")
@@ -23,11 +24,14 @@ def setup_bearlib():
     terminal.set("0x2640: data/pngs/Female_symbol.png, align=center")
     terminal.set("0x2642: data/pngs/Male_symbol.png, align=center")
     terminal.set("font: data/pokemon.ttf, size=16")
+    # base window setup
+    terminal.put(0, 0, 0xF8FC)
+    terminal.layer(1)
+    terminal.refresh()
 
 
 def print_txt(txt, delay=2):
-    terminal.clear()
-    terminal.put(0, 0, 0xF8FC)
+    terminal.clear_area(1, 20, 85, 5)
     terminal.printf(1, 20, txt)
     terminal.refresh()
     sleep(delay)

@@ -1,13 +1,8 @@
-import random
 import math
-from Data_Builders import *
+import random
 import time
 from bearlibterminal import terminal
-from Helpers import print_txt
-
-pokedex = get_pokedex()
-natures = get_natures()
-learn_sets = get_learn_sets()
+from Data_Builders import pokedex, natures, learn_sets
 
 
 class Pokemon:

@@ -1,5 +1,7 @@
 from bearlibterminal import terminal
 from Helpers import print_txt
+from random import choice
+from Battle_Engine
 
 
 class Player:
@@ -23,3 +25,6 @@ class Ai:
         self.reflect = False
         self.light_screen = False
         self.mist = 0
+
+    def ai_select_move(self):
+        return choice(self.active.moves)
